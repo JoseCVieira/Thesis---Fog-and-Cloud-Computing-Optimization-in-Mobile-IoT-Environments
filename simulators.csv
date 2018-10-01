@@ -72,11 +72,3 @@ EdgeX Foundry,,,Open source,,,,,,,,,,,Yes,"Collection of open source microservic
 Open Carrier Interface,,,Open source,,,,,,,,,,,Yes,Edge computing framework.,https://github.com/marckoerner/oci, +/-
 SpanEdge,,,Open source,,,,,,,,,,,Yes,"Programming environment that allows programmers to specify parts of their applications that need to be close to the data source, without knowledge of the number of data sources and their geographical distributions.",https://github.com/Telolets/StormOnEdge, +/-
 KD-Cloudlet,,,Open source,,,,,,,,,,,Yes,Software implementation19 of an in-the-field solution for establishing trusted identities in disconnected edge environments.,https://github.com/SEI-TTG/pycloud/wiki, +/-
-,,,,,,,,,,,,,,,,,
-Legend,,,,,,,,,,,,,,,,,
-*Derivatives or extensions of CloudSim,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,
