@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Name,Platform,Programming language,Availability,Graphical support (GUI),Parallel experiments,Energy consumption,Cost Modeling,Energy model,Communication Model,Migration algorithms,Simulation time,Federation Policy,Memory space,Fog/Edge Support,Description,Website,Amount of Info
 iFogSim*,CloudSim,Java,Open source,Yes,,,,,,,,,,Yes,"Toolkit for Modeling and Simulation of Resource Management Techniques in Internet of Things, Edge and Fog Computing Environments.",http://www.cloudbus.org/cloudsim/, +
 CloudSim,SimJava,Java,Open source,Limited (Via CloudAnalyst),No,Limited,Yes,Yes,Limited,Yes,Seconds,Yes,Small,No,Framework for modeling and simulation of cloud computing infrastructures and services.,http://www.cloudbus.org/cloudsim/, +
@@ -80,3 +81,8 @@ Forums,,,,,,,,,,,,,,,,,
 https://www.researchgate.net/post/Could_you_please_suggest_some_tools_for_simulation_of_IoT_and_Fog_Computing,,,,,,,,,,,,,,,,,
 https://www.researchgate.net/post/Is_there_any_simulation_tool_for_fog_computing,,,,,,,,,,,,,,,,,
 https://www.researchgate.net/post/How_can_I_implement_fog_computing_in_NetSim,,,,,,,,,,,,,,,,,
+=======
+| Name | Platform | Programming language | Availability | Graphical support (GUI) | Parallel experiments | Energy consumption | Cost Modeling | Energy model | Communication model | Migration algorithms | Simulation time | Federation Policy | Memory space | Fog/Edge Support | Description | Website | Amount of Info |
+| ---- | -------- | -------------------- | ------------ | ----------------------- | -------------------- | ------------------ | ------------- | ------------ | ------------------- | -------------------- | --------------- | ----------------- | ------------ | ---------------- | ----------- | ------- |--------------- |
+|iFogSim* | CloudSim |Java | Open source | Yes | | | | | | | | | | Yes | Toolkit for Modeling and Simulation of Resource Management Techniques in Internet of Things, Edge and Fog Computing Environments. | http://www.cloudbus.org/cloudsim/ | + |
+>>>>>>> 7f8bea0c2577029294043059934f328326a421f3
