@@ -1,0 +1,67 @@
+﻿,,,,,,,,,,,,,,,,,,
+Name,Title,Date,Themes,,,,,,,,,,,,,,,Description
+,,,Resource management,Distributed resource management,Scheduling algorithms,Energy,Performance,Parallelism,load-balancing,Throughput,Virtualization,Migration,Scalability,Latency,Reliability,Fault tolerance,Privacy,
+mobile fog computing,,,,,,,,,,,,,,,,,,
+1502.01815.pdf,Fog Computing - Focusing on Mobile Users at the Edge,30-Mar-16,,,,,,,,,,,,,,,,"Apresenta as caracteristicas, conceitos e design goals."
+07328146.pdf,Help Your Mobile Applications with Fog Computing,16-Nov-15,,,,,,,,,,,,,,,,Este paper explora os tema mobile application offloading and storage expansion. Fala da forma de prever parametros como largura de banda e latência e assim escolher o processamento no dispositivo na edge ou na cloud.
+07947010.pdf,Fog Computing for the Internet of Mobile Things - issues and challenges,15-Jun-17,,,,,,,,,,,,,,,,"Este paper analisa o que significa providenciar mobilidade em Fog, os principais desafios e trabalho futuro. Aponta para trabalho futuro: serviço de migração proativo vs. reativo, Políticas de trigger do serviço de migração, Fog federation para habilitar mobile roaming, Técnicas de virtualização e de migração, etc. [Boa introdução]"
+08330676.pdf,Dynamic Mobile Cloudlet Clustering for Fog Computing,Jan-18,,,,,,,,,,,,,,,,"Este paper propõe a política dynamic mobile cloudlet cluster policy (DMCCP) para usar cloudlets como suporte para fog server for offloading. Os fog server são implementados na edge da rede em access points (AP). Como estes têm de estar perto dos utilizadores, têm de ser implementados tantos quanto possível. De forma a reduzir o custo de implementação estes têm recursos limitados. Investigações recentes propõem uso de clusters de mobile devices, cloudlet, para offloading de tasks do fog server. Os resultados mostram que a DMCCP agrupa em cluster o número de cloudlets quase ideal para diferentes resource demands de uma task em pouco tempo comparando com o método ideal. Como trabalho futuro propõe o balanceamento da quantidade de recursos das cloudlets."
+MyiFogSim.pdf,MyiFogSim - A Simulator for Virtual Machine Migration in Fog Computing,8-Dec-17,,,,,,,,,,,,,,,,"Este paper introduz o MyiFogSim, uma extensão ao iFogSim que permite a mobilidade dos end users utilizando migração das VMs entre cloudlets. Como trabalho futuro propõe a implementação de políticas melhores que incorporem user behavior e applications requirements."
+p15.pdf,Mobile Fog - A Programming Model for Large–Scale Applications on the Internet of Things,12-Aug-13,,,,,,,,,,,,,,,,"Este paper apresenta um PaaS programming model, chamado Mobile Fog, um modelo de programação de alto nível que escala dinamicamente baseado no workload."
+07396688.pdf,Computing at the Mobile Edge: Designing Elastic Android Applications for Computation Offloading, ,,,,,,,,,,,,,,,,
+07427078.pdf,Multi-agent and Reinforcement Learning Based Code Offloading in Mobile Fog, ,,,,,,,,,,,,,,,,
+07474410.pdf,"Mobile Cloud Networking: Lessons Learnt, Open Research Directions, and Industrial Innovation Opportunities", ,,,,,,,,,,,,,,,,
+07545926.pdf,Scalable Fog Computing with Service Offloading in Bus Networks, ,,,,,,,,,,,,,,,,
+07815059.pdf,Fog Networks in Healthcare Application, ,,,,,,,,,,,,,,,,
+07858573.pdf,Mobile Edge Fog Computing in 5G Era: Architecture and Implementation, ,,,,,,,,,,,,,,,,
+07917154.pdf,Proactive Service Discovery in Fog Computing using Mobile Ad Hoc Social Network in Proximity, ,,,,,,,,,,,,,,,,
+07946412.pdf,Fog Computing Through Public-Resource Computing and Storage, ,,,,,,,,,,,,,,,,
+07946435.pdf,A Critical Overview of Latest Challenges and Solutions of Mobile Cloud Computing, ,,,,,,,,,,,,,,,,
+07950898.pdf,Towards a Secure Mobile Edge Computing Framework for Hajj, ,,,,,,,,,,,,,,,,
+07973801.pdf,Hybrid Mobile Edge Computing: Unleashing the Full Potential of Edge Computing in Mobile Device Use Cases, ,,,,,,,,,,,,,,,,
+07994678.pdf,Fog Vehicular Computing, ,,,,,,,,,,,,,,,,
+08011159.pdf,Energy Efficiency of Fog Computing and Networking Services in 5G Networks, ,,,,,,,,,,,,,,,,
+08016213.pdf,"Comparison of Edge Computing Implementations: Fog Computing, Cloudlet and Mobile Edge Computing", ,,,,,,,,,,,,,,,,
+08016573.pdf,A Survey on Mobile Edge Computing: The Communication Perspective, ,,,,,,,,,,,,,,,,
+08030322.pdf,Mobile Edge Computing: A Survey, ,,,,,,,,,,,,,,,,
+08060526.pdf,The Extended Cloud: Review and Analysis of Mobile Edge Computing and Fog From a Security and Resilience Perspective, ,,,,,,,,,,,,,,,,
+08091384.pdf,Fog Computing: Optical Scheme to Improve Mobile Users in MMVEs, ,,,,,,,,,,,,,,,,
+08114498.pdf,"Converging Mobile Edge Computing, Fog Computing, and IoT Quality Requirements", ,,,,,,,,,,,,,,,,
+08364034.pdf,Keynote Speech 2 City of Barcelona’s deployment of fog computing for improved citizen and city services, ,,,,,,,,,,,,,,,,
+08390464.pdf,Fog Computing and Security Issues: A review, ,,,,,,,,,,,,,,,,
+prof. ag,,,,,,,,,,,,,,,,,,
+08085127.pdf,"A Framework of Fog Computing: Architecture, Challenges, and Optimization",26-Oct-17,,,,,,,,,,,,,,,,"Este paper mostra várias definições e uma tabela de comparação de serviços (Ubiquitous computing, Cloudlet, MCC, FC). Arquitetura de FC composta pelos aspetos de computação e de rede. A estrutura da alocação de recursos para redução de latência com reliability, fault tolerance, privacy, e optimization problems. Application scenario(VANET - Vehicular adhoc) utilizando genetic algorithm para resource optimization combinado com uma abordagem de Dirichlet distribution sampling. Os resultados mostram informações importante sobre a escalabilidade de sistemas de FC. [Boa introdução]"
+589243.pdf,Energy-Efficient Multi-Job Scheduling Model for Cloud Computing and Its Genetic Algorithm,2012,,,,,,,,,,,,,,,,"Este paper foca-se em improvar a eficiência energética dos servidores através de estratégias de scheduling, mantendo ou aumentando a sua performance. Para isso propõe um novo modelo, energy-efficient multi-job scheduling and Its Genetic Algorithm (eficaz e eficiente) baseado na framework de processamento de dados em massa da google, MapReduce."
+43. Manisha.pdf,An architecture for Load Balancing Techniques for Fog Computing Environment,Sep-15,,,,,,,,,,,,,,,,"Este paper propõe uma nova arquitetura baseada em load balancing algorithm num ambiente Fog Computing numa maneira menos complexa e eficaz devido ao aumento rápido de end-users (utiliza Honey Bee Based algorithm). Esta melhora a largura de banda utilizada, reduz os custos, menor latência, maximiza o throughput. Também resolve o problema de disponibilidade do servidor. Propõe como trabalho futuro novos algoritmos de distributed load balancing e novos mecanismos de escalonamento."
+beeswarm.pdf,Fog computing job scheduling optimization based on bees swarm,10-Apr-17,,,,,,,,,,,,,,,,"Este paper propõe um novo algoritmo de otimização bio-inspired (population-based approach based on collaborative behaviors of the individuals of the population), Bees Life Algorithm (BLA), que tem como objetivo abordar o problema de job scheduling. BLA emita os dois principais comportamentos das abelhas: reprodução e procura de fontes de comida. Este distribui tarefas pelos diversos fog nodes. O objetivo é encontrar um tradeoff otimo entre CPU execution time e allocated memory required (para reduzir o custo para o end-user e melhorar a performance do sistema). Os resultados mostram que esta proposta tem melhor performance que os tradicionais swarm optimization e genetic algorithm relativamente a este tradeoff. Como trabalho futuro propõe dynamic job scheduling approach para fog servers estáticos ou móveis. Ainda propõe optimization of the network bandwidth para melhorar a performance de end-to-end processing. [Boa introdução]"
+657465854.pdf,Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching,Oct-17,,,,,,,,,,,,,,,,Este paper considera uma rede de fog computing especifica que é composta por um conjunto de data service operators (DSOs) em que cada um controla um conjunto de fog nodes para fornecer os data service necessários a um conjunto de data service subscribers (DSSs). Usa Stackelberg game (aplicando many-to-many matching game) para analizar problemas de preços e consequente problemas de resource allocation. Resultados mostram que a framework proposta pode melhorar significativamente a performance dos sistemas baseados em redes IoT. Trabalho futuro: dynamic computing resource allocation problem e analysis of cooperative and competitive behaviors among FNs.
+eefa343b874baff0e5886b904ff8014db512.pdf,Real Time Efficient Scheduling Algorithm for Load Balancing in Fog Computing Environment,Apr-16,,,,,,,,,,,,,,,,"Este paper propõe uma nova política de escalonamento, real time efficient scheduling (RTES) load balancing algorithm implementado no simulador CloudSim. Os resultados são extremamente bons: tempo de execução mínimo, rapidez na resposta aos pedidos dos clientes, cumpre os limites temporais em aplicações real-time, mantendo a consistência dos dados e a utilização de largura de banda comparando com algoritmos existentes, como: FCFS(First Come, First Served), Priority e Multi Objective Tasks scheduling algorithm. Tem 90% de eficiencia. trabalho futuro: incluir outros fatores QoS como por exemplo a segurança. [Boa introdução]"
+mobidata15-fog.pdf,"A Survey of Fog Computing: Concepts, Applications and Issues",21-Jun-15,,,,,,,,,,,,,,,,"Definições e conceitos, cenários de aplicação, problemas e oportunidades e desafios como trabalho futuro. Problemas apontados: Fog networking, Quality of Service (QoS), Interfacing and programming model, Computation Offloading, Accounting, billing and monitoring, Provisioning and resource management e Security and Privacy. Oportunidades: reducing cost, trimming data and expanding connectivity, spatio-temporal event processing system to meet the latency requirement, Computation offoading, intrusion detection on both client side and the centralized cloud side."
+1601.02752.pdf,"Fog Computing: Principles, Architectures, and Applications", ,,,,,,,,,,,,,,,,"Principles, Architectures, and Applications"
+definitions.pdf,"Internet of Things Bringing Fog, Edge & Mist Computing", ,,,,,,,,,,,,,,,,"Definições (Cloud, Fog, Edge, Mist Computing)"
+07543455.pdf,Fog Computing: Helping the Internet of Things Realize its Potential, ,,,,,,,,,,,,,,,,Conceitos
+Survey,,,,,,,,,,,,,,,,,,
+All_One_Needs_to_Know_about_Fog_Computing_and_Rela.pdf,All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey,6-Sep-18,,,,,,,,,,,,,,,,
+1804.04365.pdf,A Survey of Fog Computing and Communication: Current Researches and Future Directions,12-Apr-18,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
