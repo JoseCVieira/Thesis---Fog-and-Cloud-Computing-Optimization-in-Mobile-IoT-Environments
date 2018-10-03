@@ -1,6 +1,8 @@
+** All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey **
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-1 - INTRODUÇÃO
+1 - INTRODUCTION
 
 As the data velocity and volume increases, moving the big data
 from IoT devices to the cloud might not be efficient, or might be even
@@ -19,11 +21,23 @@ List of conferences, journals, and magazines that publish state-of-the-art resea
 The data (categories and features/objectives of the papers) of this survey are available in the form of several datasets at 
 https://github.com/ashkan-software/fog-survey-data
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Minimize latency and maximize throughput
+Sense-Process-Actuate
+
+Ver: 
+- SaaS  - Software as a Service
+- IaaS  - Infrastructure as a Service
+- HaaS  - Hardware as a Service
+- PaaS  - Platform as a Service
+- TaaS  - Testing as a Service
+- Ubiquitous computing
+- Cloudlet
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-2 - CONCEITOS - ver figura 4, 6 e 7, tabela 2 e 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+2 - CONCEPTS - ver figura 4, 6 e 7, tabela 2 e 3
 
 - Cloud computing
 O National Institute of Standards and Technology (NIST) define cloud computing como um modelo que promove o acesso omnipresente e on-demand network a recursos computacionais. Cloud data centers são grandes pools de recursos virtuais que são utilizados num pay-as-you-go cost model. Oferece IaaS, PaaS e SaaS (figura 2). Os recursos são disponibilizados e cobrados on-demand visto que é difícil de prever, sendo normalmente sobredimensionado ou subdimensionado (figura 3). 
@@ -70,15 +84,15 @@ A maioria dos papers fala de scheduling, dispatching, offloading, e load balanci
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-3 - PAPERS - MOBILIDADE
+3 - PAPERS - MOBILITY
 
 ✗ | ✓
 
 -----------------------------------------------------------------------------------
 [27]
 
-Mugen Peng, Shi Yan, Kecheng Zhang, and Chonggang Wang. Fog-computingbased
-radio access networks: issues and challenges. IEEE Network, 30(4):46–53, 2016.
+Mugen Peng, Shi Yan, Kecheng Zhang, and Chonggang Wang. **Fog-computing-based
+radio access networks: issues and challenges.** IEEE Network, 30(4):46–53, 2016.
 
 Em C-RAN (cloud-radio access networks), um grande número de low-cost Remote Radio
 Heads (RRHs) são implementados de forma random e ligados à pool Base Band Unit (BBU)
@@ -91,7 +105,7 @@ motivado a se referir à referência [27] para obter mais informações sobre o 
 [54]
 
 Yong Cui, Jian Song, Kui Ren, Minming Li, Zongpeng Li, Qingmei Ren, and
-Yangjun Zhang. Software defined cooperative offloading for mobile cloudlets.
+Yangjun Zhang. **Software defined cooperative offloading for mobile cloudlets.**
 IEEE/ACM Transactions on Networking, 25(3):1746–1760, 2017.
 
 
@@ -104,8 +118,8 @@ fornecedores ou clientes de serviços de computação.
 [97]
 
 Marcelo Yannuzzi, R Milito, René Serral-Gracià, D Montero, and Mario Nemirovsky.
-Key ingredients in an iot recipe: Fog computing, cloud computing,
-and more fog computing. In Computer Aided Modeling and Design of Communication
+**Key ingredients in an iot recipe: Fog computing, cloud computing,
+and more fog computing.** In Computer Aided Modeling and Design of Communication
 Links and Networks (CAMAD), 2014 IEEE 19th International Workshop on,
 pages 325–329. IEEE, 2014.
 
@@ -115,7 +129,7 @@ pages 325–329. IEEE, 2014.
 [112]
 
 Ivan Farris, Roberto Girau, Leonardo Militano, Michele Nitti, Luigi Atzori, Antonio
-Iera, and Giacomo Morabito. Social virtual objects in the edge cloud. IEEE
+Iera, and Giacomo Morabito. **Social virtual objects in the edge cloud.** IEEE
 Cloud Computing, 2(6):20–28, 2015.
 
 ??
@@ -124,7 +138,7 @@ Cloud Computing, 2(6):20–28, 2015.
 [116]
 
 Yotam Harchol, Aisha Mushtaq, James McCauley, Aurojit Panda, and Scott
-Shenker. Cessna: Resilient edge-computing. In Proceedings of the 2018 Workshop
+Shenker. **Cessna: Resilient edge-computing.** In Proceedings of the 2018 Workshop
 on Mobile Edge Communications, pages 1–6. ACM, 2018.
 
 Investigadores da UC Berkeley recentemente propuseram uma estrutura resiliente de
@@ -135,7 +149,7 @@ system design (apresentado com uma futura direção no fim do survey).
 [123]
 
 Sherif Abdelwahab, Sophia Zhang, Ashley Greenacre, Kai Ovesen, Kevin
-Bergman, and Bechir Hamdaoui. When clones flock near the fog. IEEE Internet
+Bergman, and Bechir Hamdaoui. **When clones flock near the fog.** IEEE Internet
 of Things Journal, 2018.
 
 ??
@@ -143,9 +157,9 @@ of Things Journal, 2018.
 -----------------------------------------------------------------------------------
 [130]
 
-Kai Liang, Liqiang Zhao, Xiaoli Chu, and Hsiao-Hwa Chen. An integrated
+Kai Liang, Liqiang Zhao, Xiaoli Chu, and Hsiao-Hwa Chen. **An integrated
 architecture for software defined and virtualized radio access networks with
-fog computing. IEEE Network, 31(1):80–87, 2017.
+fog computing.** IEEE Network, 31(1):80–87, 2017.
 
 As redes fog podem ser implementadas por SDN (software defined networking) e por
 virtualização para reduzir os management costs e melhorar a escalabilidade e a
@@ -161,8 +175,8 @@ sobre a operação da rede.
 -----------------------------------------------------------------------------------
 [143]
 
-Jianhua Li, Jiong Jin, Dong Yuan, and Hongke Zhang. Virtual fog: A virtualization
-enabled fog computing framework for internet of things. IEEE Internet of
+Jianhua Li, Jiong Jin, Dong Yuan, and Hongke Zhang. **Virtual fog: A virtualization
+enabled fog computing framework for internet of things.** IEEE Internet of
 Things Journal, 5(1):121–131, 2018.
 
 Este estudo junta fog computing e information-centric networking (ICN), que permite
@@ -177,9 +191,9 @@ dependência da aplicação sobre a cloud e ao processamento distribuído no fog
 -----------------------------------------------------------------------------------
 [145]
 
-Wenyu Zhang, Zhenjiang Zhang, and Han-Chieh Chao. Cooperative fog computing
+Wenyu Zhang, Zhenjiang Zhang, and Han-Chieh Chao. **Cooperative fog computing
 for dealing with big data in the internet of vehicles: Architecture and
-hierarchical resource management. IEEE Communications Magazine, 55(12):
+hierarchical resource management.** IEEE Communications Magazine, 55(12):
 60–67, 2017.
 
 Introduz os desafios de lidar com big data nos ambientes de IoV. Os autores enfatizam
@@ -193,8 +207,8 @@ a vehicular ad hoc network (VANET), aplicações IoT e mobile cellular networks.
 -----------------------------------------------------------------------------------
 [146]
 
-H. Zhang, Y. Qiu, X. Chu, K. Long, and V. C. M. Leung. Fog radio access networks:
-Mobility management, interference mitigation, and resource optimization. IEEE
+H. Zhang, Y. Qiu, X. Chu, K. Long, and V. C. M. Leung. **Fog radio access networks:
+Mobility management, interference mitigation, and resource optimization.** IEEE
 Wireless Communications, 24(6):120–127, Dec 2017.
 
 Fala sobre mitigação de interferência, otimização de recursos e no gestão de mobilidade 
@@ -208,8 +222,8 @@ otimização de recursos e fornece armazenamento e comunicações centralizadas 
 [149]
 
 Quan Yuan, Haibo Zhou, Jinglin Li, Zhihan Liu, Fangchun Yang, and
-Xuemin Sherman Shen. Toward efficient content delivery for automated driving
-services: An edge computing solution. IEEE Network, 32(1):80–86, 2018.
+Xuemin Sherman Shen. **Toward efficient content delivery for automated driving
+services: An edge computing solution.** IEEE Network, 32(1):80–86, 2018.
 
 Discute a colocação de cache, onde é feita através do paradigma MEC em redes sem fio
 para satisfazer as necessidades dos serviços de condução automatizados. Os requests 
@@ -219,8 +233,8 @@ se podem ser processados localmente ou precisam ser entregues à remote cloud.
 -----------------------------------------------------------------------------------
 [152]
 
-Cesar A Garcia-Perez and Pedro Merino. Enabling low latency services on lte
-networks. In Foundations and Applications of Self* Systems, IEEE International
+Cesar A Garcia-Perez and Pedro Merino. **Enabling low latency services on lte
+networks.** In Foundations and Applications of Self* Systems, IEEE International
 Workshops on, pages 248–255. IEEE, 2016.
 
 ??
@@ -228,8 +242,8 @@ Workshops on, pages 248–255. IEEE, 2016.
 -----------------------------------------------------------------------------------
 [160]
 
-J. He, J. Wei, K. Chen, Z. Tang, Y. Zhou, and Y. Zhang. Multitier fog computing
-with large-scale iot data analytics for smart cities. IEEE Internet of Things Journal,
+J. He, J. Wei, K. Chen, Z. Tang, Y. Zhou, and Y. Zhang. **Multitier fog computing
+with large-scale iot data analytics for smart cities.** IEEE Internet of Things Journal,
 5(2):677–686, April 2018.
 
 Surge na secção Mobile Fog Computing no trabalha futuro apontado pelo servey. (A
@@ -240,8 +254,8 @@ neste paper.
 -----------------------------------------------------------------------------------
 [172]
 
-Xueshi Hou, Yong Li, Min Chen, DiWu, Depeng Jin, and Sheng Chen. Vehicular
-fog computing: A viewpoint of vehicles as the infrastructures. IEEE Transactions
+Xueshi Hou, Yong Li, Min Chen, DiWu, Depeng Jin, and Sheng Chen. **Vehicular
+fog computing: A viewpoint of vehicles as the infrastructures.** IEEE Transactions
 on Vehicular Technology, 65(6):3860–3873, 2016.
 
 Surge na secção Support of High-speed Users no trabalha futuro apontado pelo servey.
@@ -256,8 +270,8 @@ em vez de depender dos servidores remotos, o que reduz os custos de implantaçã
 [175]
 
 I Farris, A Orsino, L Militano, Michele Nitti, Giuseppe Araniti, Luigi Atzori, and
-Antonio Iera. Federations of connected things for delay-sensitive iot services in
-5g environments. In Communications (ICC), 2017 IEEE International Conference
+Antonio Iera. **Federations of connected things for delay-sensitive iot services in
+5g environments.** In Communications (ICC), 2017 IEEE International Conference
 on, pages 1–6. IEEE, 2017.
 
 Analisa os problemas de latência que podem ocorrer em aplicações IoT sensíveis a delay
@@ -271,8 +285,8 @@ suportam o paradigma MIFaaS.
 -----------------------------------------------------------------------------------
 [177]
 
-Ming Tao, Kaoru Ota, and Mianxiong Dong. Foud: integrating fog and cloud
-for 5g-enabled v2g networks. IEEE Network, 31(2):8–13, 2017.
+Ming Tao, Kaoru Ota, and Mianxiong Dong. **Foud: integrating fog and cloud
+for 5g-enabled v2g networks.** IEEE Network, 31(2):8–13, 2017.
 
 Argumenta que a utilização de cloud e fog computing utilizando as atuais redes móveis
 pode não ser totalmente adequada para fornecer os níveis desejados de QoS para a
@@ -287,8 +301,8 @@ localizados na edge das redes V2G para expandir a capacidade de computação.
 [183]
 
 Florian Hagenauer, Christoph Sommer, Takamasa Higuchi, Onur Altintas, and
-Falko Dressler. Vehicular micro clouds as virtual edge servers for efficient
-data collection. In 23rd ACM International Conference on Mobile Computing
+Falko Dressler. **Vehicular micro clouds as virtual edge servers for efficient
+data collection.** In 23rd ACM International Conference on Mobile Computing
 and Networking (MobiCom 2017), 2nd ACM International Workshop on Smart,
 Autonomous, and Connected Vehicular Systems and Services (CarSys 2017), 2017.
 
@@ -300,8 +314,8 @@ ajudam a agregar e pré-processar dados que são transferidos para a cloud.
 [185]
 
 Paolo Bellavista, Stefano Chessa, Luca Foschini, Leo Gioia, and Michele Girolami.
-Human-enabled edge computing: Exploiting the crowd as a dynamic extension
-of mobile edge computing. IEEE Communications Magazine, 56(1):145–155, 2018.
+**Human-enabled edge computing: Exploiting the crowd as a dynamic extension
+of mobile edge computing.** IEEE Communications Magazine, 56(1):145–155, 2018.
 
 Propõe a human-driven edge computing (HEC) como um novo modelo para estender a cobertura
 de soluções tradicionais de MEC fixas, utilizando dispositivos que as pessoas carregam.
@@ -309,8 +323,8 @@ de soluções tradicionais de MEC fixas, utilizando dispositivos que as pessoas 
 -----------------------------------------------------------------------------------
 [186]
 
-Seongah Jeong, Osvaldo Simeone, and Joonhyuk Kang. Mobile edge computing
-via a uav-mounted cloudlet: Optimization of bit allocation and path planning.
+Seongah Jeong, Osvaldo Simeone, and Joonhyuk Kang. **Mobile edge computing
+via a uav-mounted cloudlet: Optimization of bit allocation and path planning.**
 IEEE Transactions on Vehicular Technology, 67(3):2049–2063, 2018.
 
 Neste modelo, os UAVs atuam como fog nodes que fornecem recursos computacionais com
@@ -320,8 +334,8 @@ boa cobertura para IoT nodes.
 [197]
 
 Enrique Saurez, Kirak Hong, Dave Lillethun, Umakishore Ramachandran, and
-Beate Ottenwälder. Incremental deployment and migration of geo-distributed
-situation awareness applications in the fog. In Proceedings of the 10th ACM
+Beate Ottenwälder. **Incremental deployment and migration of geo-distributed
+situation awareness applications in the fog.** In Proceedings of the 10th ACM
 International Conference on Distributed and Event-based Systems, pages 258–269.
 ACM, 2016.
 
@@ -336,8 +350,8 @@ persistentes (com informações de estado) entre fog nodes.
 -----------------------------------------------------------------------------------
 [201]
 
-Nam Ky Giang, Michael Blackstock, Rodger Lea, and Victor CM Leung. Developing
-iot applications in the fog: a distributed dataflow approach. In Internet
+Nam Ky Giang, Michael Blackstock, Rodger Lea, and Victor CM Leung. **Developing
+iot applications in the fog: a distributed dataflow approach.** In Internet
 of Things (IOT), 2015 5th International Conference on the, pages 155–162. IEEE,
 2015.
 
@@ -346,8 +360,8 @@ of Things (IOT), 2015 5th International Conference on the, pages 155–162. IEEE
 -----------------------------------------------------------------------------------
 [205]
 
-Taeyeol Jeong, Jaeyoon Chung, James Won-Ki Hong, and Sangtae Ha. Towards
-a distributed computing framework for fog. In Fog World Congress (FWC), 2017
+Taeyeol Jeong, Jaeyoon Chung, James Won-Ki Hong, and Sangtae Ha. **Towards
+a distributed computing framework for fog.** In Fog World Congress (FWC), 2017
 IEEE, pages 1–6. IEEE, 2017.
 
 Crystal fornece uma abstração para o desenvolvimento de aplicações fog distribuídas
@@ -357,8 +371,8 @@ máximo a transparência da localização, self-healing, auto-scaling e suporte 
 -----------------------------------------------------------------------------------
 [210]
 
-Qiang Fan and Nirwan Ansari. Cost aware cloudlet placement for big data processing
-at the edge. In Communications (ICC), 2017 IEEE International Conference
+Qiang Fan and Nirwan Ansari. **Cost aware cloudlet placement for big data processing
+at the edge.** In Communications (ICC), 2017 IEEE International Conference
 on, pages 1–6. IEEE, 2017.
 
 Aborda o problema de colocar os cloudlets para minimizar o custo de implantação dos
@@ -370,8 +384,8 @@ o custo total de implementação.
 -----------------------------------------------------------------------------------
 [217]
 
-Alberto Ceselli, Marco Premoli, and Stefano Secci. Mobile edge cloud network
-design optimization. IEEE/ACM Transactions on Networking, 25(3):1818–1831,
+Alberto Ceselli, Marco Premoli, and Stefano Secci. **Mobile edge cloud network
+design optimization.** IEEE/ACM Transactions on Networking, 25(3):1818–1831,
 2017.
 
 ??
@@ -379,8 +393,8 @@ design optimization. IEEE/ACM Transactions on Networking, 25(3):1818–1831,
 -----------------------------------------------------------------------------------
 [226]
 
-Chanh Nguyen Le Tan, Cristian Klein, and Erik Elmroth. Location-aware load
-prediction in edge data centers. In Fog and Mobile Edge Computing (FMEC), 2017
+Chanh Nguyen Le Tan, Cristian Klein, and Erik Elmroth. **Location-aware load
+prediction in edge data centers.** In Fog and Mobile Edge Computing (FMEC), 2017
 Second International Conference on, pages 25–31. IEEE, 2017.
 
 É proposta uma location-aware load prediction para edge data centers. Para cada edge
@@ -391,7 +405,7 @@ datacenters vizinhos.
 [231]
 
 Rahul Urgaonkar, Shiqiang Wang, Ting He, Murtaza Zafer, Kevin Chan, and
-Kin K Leung. Dynamic service migration and workload scheduling in edgeclouds.
+Kin K Leung. **Dynamic service migration and workload scheduling in edgeclouds.**
 Performance Evaluation, 91:205–228, 2015.
 
 Aborda o problema de escalonamento e despacho de tasks em edge clouds.
@@ -399,8 +413,8 @@ Aborda o problema de escalonamento e despacho de tasks em edge clouds.
 -----------------------------------------------------------------------------------
 [232]
 
-Wuyang Zhang, Yi Hu, Yanyong Zhang, and Dipankar Raychaudhuri. Segue:
-Quality of service aware edge cloud service migration. In Cloud Computing
+Wuyang Zhang, Yi Hu, Yanyong Zhang, and Dipankar Raychaudhuri. **Segue:
+Quality of service aware edge cloud service migration.** In Cloud Computing
 Technology and Science (CloudCom), 2016 IEEE International Conference on, pages
 344–351. IEEE, 2016.
 
@@ -412,8 +426,8 @@ de migração.
 -----------------------------------------------------------------------------------
 [234]
 
-Ivan Farris, Tarik Taleb, Miloud Bagaa, and Hannu Flick. Optimizing service
-replication for mobile delay-sensitive applications in 5g edge network. In
+Ivan Farris, Tarik Taleb, Miloud Bagaa, and Hannu Flick. **Optimizing service
+replication for mobile delay-sensitive applications in 5g edge network.** In
 Communications (ICC), 2017 IEEE International Conference on, pages 1–6. IEEE,
 2017.
 
@@ -431,8 +445,8 @@ e o custo das replicações de serviços.
 [237]
 
 Beate Ottenwälder, Boris Koldehofe, Kurt Rothermel, and Umakishore Ramachandran.
-Migcep: operator migration for mobility driven distributed complex
-event processing. In Proceedings of the 7th ACM international conference on
+**Migcep: operator migration for mobility driven distributed complex
+event processing.** In Proceedings of the 7th ACM international conference on
 Distributed event-based systems, pages 183–194. ACM, 2013.
 
 ??
@@ -440,8 +454,8 @@ Distributed event-based systems, pages 183–194. ACM, 2013.
 -----------------------------------------------------------------------------------
 [238]
 
-Nam Ky Giang, Michael Blackstock, Rodger Lea, and Victor CM Leung. Developing
-iot applications in the fog: a distributed dataflow approach. In Internet
+Nam Ky Giang, Michael Blackstock, Rodger Lea, and Victor CM Leung. **Developing
+iot applications in the fog: a distributed dataflow approach.** In Internet
 of Things (IOT), 2015 5th International Conference on the, pages 155–162. IEEE,
 2015.
 
@@ -458,8 +472,8 @@ devices.
 [243]
 
 Wei Bao, Dong Yuan, Zhengjie Yang, Shen Wang, Wei Li, Bing Bing Zhou, and
-Albert Y Zomaya. Follow me fog: Toward seamless handover timing schemes
-in a fog computing environment. IEEE Communications Magazine, 55(11):72–78,
+Albert Y Zomaya. **Follow me fog: Toward seamless handover timing schemes
+in a fog computing environment.** IEEE Communications Magazine, 55(11):72–78,
 2017.
 
 Observa que os mecanismos tradicionais de handover de rede móvel não conseguem lidar
@@ -473,8 +487,8 @@ desconectar o dispositivo IoT do fog node existente.
 -----------------------------------------------------------------------------------
 [244]
 
-Lele Ma, Shanhe Yi, and Qun Li. Efficient service handoff across edge servers via
-docker container migration. In Proceedings of the Second ACM/IEEE Symposium
+Lele Ma, Shanhe Yi, and Qun Li. **Efficient service handoff across edge servers via
+docker container migration.** In Proceedings of the Second ACM/IEEE Symposium
 on Edge Computing, page 11. ACM, 2017.
 
 Igual ao [243] mas este utiliza Docker container migration entre edge nodes para
@@ -483,8 +497,8 @@ service handoff.
 -----------------------------------------------------------------------------------
 [246]
 
-Xiang Sun and Nirwan Ansari. Primal: Profit maximization avatar placement
-for mobile edge computing. In Communications (ICC), 2016 IEEE International
+Xiang Sun and Nirwan Ansari. **Primal: Profit maximization avatar placement
+for mobile edge computing.** In Communications (ICC), 2016 IEEE International
 Conference on, pages 1–6. IEEE, 2016.
 
 ??
@@ -493,7 +507,7 @@ Conference on, pages 1–6. IEEE, 2016.
 [247]
 
 Wuyang Zhang, Jiachen Chen, Yanyong Zhang, and Dipankar Raychaudhuri.
-Towards efficient edge cloud augmentation for virtual reality mmogs. In Proceedings
+**Towards efficient edge cloud augmentation for virtual reality mmogs.** In Proceedings
 of the Second ACM/IEEE Symposium on Edge Computing, page 8. ACM,
 2017.
 
@@ -503,8 +517,8 @@ of the Second ACM/IEEE Symposium on Edge Computing, page 8. ACM,
 [249]
 
 Lucas Chaufournier, Prateek Sharma, Franck Le, Erich Nahum, Prashant Shenoy,
-and Don Towsley. Fast transparent virtual machine migration in distributed edge
-clouds. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing,
+and Don Towsley. **Fast transparent virtual machine migration in distributed edge
+clouds.** In Proceedings of the Second ACM/IEEE Symposium on Edge Computing,
 page 10. ACM, 2017.
 
 Sugere o uso de multi-path TCP para live migration de VMs entre edge nodes para
@@ -514,7 +528,7 @@ melhorar o tempo de migração da VM e a transparência de rede das aplicações
 [253]
 
 Seyed Hossein Mortazavi, Bharath Balasubramanian, Eyal de Lara, and Shankaranarayanan
-Puzhavakath Narayanan. Toward session consistency for the edge.
+Puzhavakath Narayanan. **Toward session consistency for the edge.**
 In USENIX Workshop on Hot Topics in Edge Computing (HotEdge 18), Boston, MA,
 2018. USENIX Association.
 
@@ -524,8 +538,8 @@ In USENIX Workshop on Hot Topics in Edge Computing (HotEdge 18), Boston, MA,
 
 [254]
 
-Roberto Bruschi, Franco Davoli, Paolo Lago, and Jane Frances Pajo. Move with
-me: Scalably keeping virtual objects close to users on the move. In 2018 IEEE
+Roberto Bruschi, Franco Davoli, Paolo Lago, and Jane Frances Pajo. **Move with
+me: Scalably keeping virtual objects close to users on the move.** In 2018 IEEE
 International Conference on Communications (ICC), pages 1–6. IEEE, 2018.
 
 ??
@@ -534,8 +548,8 @@ International Conference on Communications (ICC), pages 1–6. IEEE, 2018.
 
 [261]
 
-Ya-Ju Yu, Te-Chuan Chiu, Ai-Chun Pang, Ming-Fan Chen, and Jiajia Liu. Virtual
-machine placement for backhaul traffic minimization in fog radio access networks.
+Ya-Ju Yu, Te-Chuan Chiu, Ai-Chun Pang, Ming-Fan Chen, and Jiajia Liu. **Virtual
+machine placement for backhaul traffic minimization in fog radio access networks.**
 In Communications (ICC), 2017 IEEE International Conference on, pages
 1–7. IEEE, 2017.
 
@@ -554,8 +568,8 @@ como a restrição de largura de banda na edge.
 [270]
 
 Haolong Xiang, Xiaolong Xu, Haoquan Zheng, Shu Li, Taotao Wu, Wanchun
-Dou, and Shui Yu. An adaptive cloudlet placement method for mobile applications
-over gps big data. In Global Communications Conference (GLOBECOM),
+Dou, and Shui Yu. **An adaptive cloudlet placement method for mobile applications
+over gps big data.** In Global Communications Conference (GLOBECOM),
 2016 IEEE, pages 1–6. IEEE, 2016.
 
 Introduz o conceito de cloudlets móveis e explora o problema de como implantar de
@@ -567,8 +581,8 @@ método adaptável de colocação de cloudlet para aplicações móveis.
 
 [274]
 
-Tayebeh Bahreini and Daniel Grosu. Efficient placement of multi-component
-applications in edge computing systems. In Proceedings of the Second ACM/IEEE
+Tayebeh Bahreini and Daniel Grosu. **Efficient placement of multi-component
+applications in edge computing systems.** In Proceedings of the Second ACM/IEEE
 Symposium on Edge Computing, page 5. ACM, 2017.
 
 Os autores abordam o problema do posicionamento de aplicações em vários componentes
@@ -580,8 +594,8 @@ eles.
 
 [277]
 
-Lin Wang, Lei Jiao, Ting He, Jun Li, and Max Mühlhäuser. Service entity
-placement for social virtual reality applications in edge computing. In INFOCOM
+Lin Wang, Lei Jiao, Ting He, Jun Li, and Max Mühlhäuser. **Service entity
+placement for social virtual reality applications in edge computing.** In INFOCOM
 2018-IEEE Conference on Computer Communications, IEEE, pages 1–9. IEEE, 2018.
 
 ??
@@ -590,8 +604,8 @@ placement for social virtual reality applications in edge computing. In INFOCOM
 
 [279]
 
-Nguyen B Truong, Gyu Myoung Lee, and Yacine Ghamri-Doudane. Software
-defined networking-based vehicular adhoc network with fog computing. In
+Nguyen B Truong, Gyu Myoung Lee, and Yacine Ghamri-Doudane. **Software
+defined networking-based vehicular adhoc network with fog computing.** In
 Integrated Network Management (IM), 2015 IFIP/IEEE International Symposium
 on, pages 1202–1207. IEEE, 2015.
 
@@ -610,8 +624,8 @@ do sistema VANET.
 
 [284]
 
-Thomas Rausch, Stefan Nastic, and Schahram Dustdar. Emma: Distributed qosaware
-mqtt middleware for edge computing applications. In Cloud Engineering
+Thomas Rausch, Stefan Nastic, and Schahram Dustdar. **Emma: Distributed qosaware
+mqtt middleware for edge computing applications.** In Cloud Engineering
 (IC2E), 2018 IEEE International Conference on, pages 191–197. IEEE, 2018.
 
 ??
@@ -621,7 +635,7 @@ mqtt middleware for edge computing applications. In Cloud Engineering
 [285]
 
 Yuanguo Bi, Guangjie Han, Chuan Lin, Qingxu Deng, Lei Guo, and Fuliang Li.
-Mobility support for fog computing: An sdn approach. IEEE Communications
+**Mobility support for fog computing: An sdn approach.** IEEE Communications
 Magazine, 56(5):53–59, 2018.
 
 ??
@@ -631,7 +645,7 @@ Magazine, 56(5):53–59, 2018.
 [291]
 
 Luiz F Bittencourt, Javier Diaz-Montes, Rajkumar Buyya, Omer F Rana, and
-Manish Parashar. Mobility-aware application scheduling in fog computing.
+Manish Parashar. **Mobility-aware application scheduling in fog computing.**
 IEEE Cloud Computing, 4(2):26–35, 2017.
 
 ?? (apenas é referido na secção Mobile Fog Computing de trabalho futuro do servey
@@ -639,8 +653,8 @@ como exemplo de fog nodes fixos)
 
 -----------------------------------------------------------------------------------
 
-[300] Yuxuan Sun, Sheng Zhou, and Jie Xu. Emm: Energy-aware mobility management
-for mobile edge computing in ultra dense networks. IEEE Journal on Selected
+[300] Yuxuan Sun, Sheng Zhou, and Jie Xu. **Emm: Energy-aware mobility management
+for mobile edge computing in ultra dense networks.** IEEE Journal on Selected
 Areas in Communications, 35(11):2637–2646, 2017.
 
 ??
@@ -650,8 +664,8 @@ Areas in Communications, 35(11):2637–2646, 2017.
 [322]
 
 Junguk Cho, Karthikeyan Sundaresan, Rajesh Mahindra, Jacobus Van der Merwe,
-and Sampath Rangarajan. Acacia: context-aware edge computing for continuous
-interactive applications over mobile networks. In Proceedings of the 12th International
+and Sampath Rangarajan. **Acacia: context-aware edge computing for continuous
+interactive applications over mobile networks.** In Proceedings of the 12th International
 on Conference on emerging Networking EXperiments and Technologies,
 pages 375–389. ACM, 2016.
 
@@ -663,8 +677,8 @@ ACACIA usa context awareness e implementa LTE-direct para descoberta de serviço
 [325]
 
 Julien Gedeon, Christian Meurisch, Disha Bhat, Michael Stein, Lin Wang, and
-Max Mühlhäuser. Router-based brokering for surrogate discovery in edge
-computing. In Distributed Computing Systems Workshops (ICDCSW), 2017 IEEE
+Max Mühlhäuser. **Router-based brokering for surrogate discovery in edge
+computing.** In Distributed Computing Systems Workshops (ICDCSW), 2017 IEEE
 37th International Conference on, pages 145–150. IEEE, 2017.
 
 O artigo examina o problema de descobrir substitutos, que são micro-clouds, fog nodes
@@ -681,8 +695,8 @@ domésticos.
 [328]
 
 Kazuya Okada, Shigeru Kashihara, Nao Kawanishi, Nobuo Suzuki, Keizo
-Sugiyama, and Youki Kadobayashi. Goedge: A scalable and stateless local
-breakout method. In Proceedings of the 2018 Workshop on Theory and Practice for
+Sugiyama, and Youki Kadobayashi. **Goedge: A scalable and stateless local
+breakout method.** In Proceedings of the 2018 Workshop on Theory and Practice for
 Integrated Cloud, Fog and Edge Computing Paradigms, pages 29–34. ACM, 2018.
 
 ??
@@ -691,8 +705,8 @@ Integrated Cloud, Fog and Edge Computing Paradigms, pages 29–34. ACM, 2018.
 
 [354]
 
-Bozhao Qi, Lei Kang, and Suman Banerjee. A vehicle-based edge computing
-platform for transit and human mobility analytics. In Proceedings of the Second
+Bozhao Qi, Lei Kang, and Suman Banerjee. **A vehicle-based edge computing
+platform for transit and human mobility analytics.** In Proceedings of the Second
 ACM/IEEE Symposium on Edge Computing, page 1. ACM, 2017.
 
 Introduz um sistema de monitorização e rastreamento em barramento baseado em Wi-Fi
@@ -707,8 +721,8 @@ fornece análises úteis aos operadores de trânsito.
 [365]
 
 Yue Cao, Houbing Song, Omprakash Kaiwartya, Bingpeng Zhou, Yuan Zhuang,
-Yang Cao, and Xu Zhang. Mobile edge computing for big-data-enabled electric
-vehicle charging. IEEE Communications Magazine, 56(3):150–156, 2018.
+Yang Cao, and Xu Zhang. **Mobile edge computing for big-data-enabled electric
+vehicle charging.** IEEE Communications Magazine, 56(3):150–156, 2018.
 
 ??
 
@@ -716,8 +730,8 @@ vehicle charging. IEEE Communications Magazine, 56(3):150–156, 2018.
 
 [379]
 
-Zhuangdi Xu, Harshit Gupta, and Umakishore Ramachandran. Sttr: A system
-for tracking all vehicles all the time at the edge of the network. In Proceedings of
+Zhuangdi Xu, Harshit Gupta, and Umakishore Ramachandran. **Sttr: A system
+for tracking all vehicles all the time at the edge of the network.** In Proceedings of
 the 12th ACM International Conference on Distributed and Event-based Systems,
 pages 124–135. ACM, 2018.
 
@@ -728,8 +742,8 @@ pages 124–135. ACM, 2018.
 [381]
 
 Dario Bruneo, Salvatore Distefano, Francesco Longo, Giovanni Merlino, Antonio
-Puliafito, Valeria D’Amico, Marco Sapienza, and Giovanni Torrisi. Stack4things
-as a fog computing platform for smart city applications. In Computer Communications
+Puliafito, Valeria D’Amico, Marco Sapienza, and Giovanni Torrisi. **Stack4things
+as a fog computing platform for smart city applications.** In Computer Communications
 Workshops (INFOCOM WKSHPS), 2016 IEEE Conference on, pages
 848–853. IEEE, 2016.
 
@@ -743,8 +757,8 @@ deles permite a injeção de código em runtime através da cloud, que eles defi
 [385]
 
 Márcio Moraes Lopes, Wilson A Higashino, Miriam AM Capretz, and Luiz Fernando
-Bittencourt. Myifogsim: A simulator for virtual machine migration in
-fog computing. In Companion Proceedings of the10th International Conference
+Bittencourt. **Myifogsim: A simulator for virtual machine migration in
+fog computing.** In Companion Proceedings of the10th International Conference
 on Utility and Cloud Computing, pages 47–52. ACM, 2017.
 
 Uma extensão ao iFogSim para suportar mobilidade através da migração de VMs entre
@@ -754,8 +768,8 @@ cloudlets (MyiFogSim).
 
 [386]
 
-Bastien Confais, Adrien Lebre, and Benoît Parrein. An object store service for a
-fog/edge computing infrastructure based on ipfs and a scale-out nas. In Fog and
+Bastien Confais, Adrien Lebre, and Benoît Parrein. **An object store service for a
+fog/edge computing infrastructure based on ipfs and a scale-out nas.** In Fog and
 Edge Computing (ICFEC), 2017 IEEE 1st International Conference on, pages 41–50.
 IEEE, 2017.
 
@@ -765,8 +779,8 @@ IEEE, 2017.
 
 [388]
 
-Cagatay Sonmez, Atay Ozgovde, and Cem Ersoy. Edgecloudsim: An environment
-for performance evaluation of edge computing systems. In Fog and Mobile Edge
+Cagatay Sonmez, Atay Ozgovde, and Cem Ersoy. **Edgecloudsim: An environment
+for performance evaluation of edge computing systems.** In Fog and Mobile Edge
 Computing (FMEC), 2017 Second International Conference on, pages 39–44. IEEE,
 2017.
 
@@ -785,7 +799,7 @@ camada superior.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-3 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
+4 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
 
 | Challenge | Current Limitation | Research Direction or Potential Solution | Related Features or Objectives | Related Categories |
 | --- | --- | --- | --- | --- |
@@ -807,3 +821,155 @@ camada superior.
 | PaaS for fog computing | Lack of a PaaS for fog systems, where developers can easily develop software across fog, IoT, and cloud. | • Developing a PaaS for fog computing, which is transparent to users and supports different communication- and application-level protocols and APIs. • Developing plugins for PaaS for different fog computing applications | Programmability, Management | Software and Tools; Service Provisioning; Programming Models and Data Modeling
 | Standardizing fog computing | Many independent definitions for fog (and fog-related computing paradigms) are being proposed. | • Unanimous and universally-agreed on the definition of fog computing. | Foundation | Definition and Standards
 | Hardware technologies for fog | Most studies do not use new available hardware or communication technologies. | • Use of new hardware and communication technologies, such as non-volatile storage technologies, optical networks, and FPGAs. | Scalability | Hardware and Protocol Stack
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+5 - SIMULATORS
+
+CloudSim_1_FogComputing.pdf
+Trabalhos relacionados(fazer uma tabela por temas)
+
+CloudSim_2_FogComputing.pdf
+This paper gives a step by step practical approach towards simulating cloud components or cloud environment using the (open source) CloudSim simulator. It shows in-depth analysis and the factors responsible for simulating cloud concepts for your experiments or research or industry specific application.
+
+CloudSim
+The CloudSim simulation framework is based on the SimJava discrete event simulation engine at the lowest layer, while the higher layers implement the GridSim toolkit for the modeling of the cluster, including networks, traffic profiles, resources, etc. CloudSim effectively extends the GridSim core functionalities
+by modeling storage, application services, resource provisioning between virtual machines, and data centre brokerage, and can even simulate federated clouds.
+
+
+---comparation_simulators01---
+Cloud computing can be viewed from two different perspectives: cloud application and cloud infrastructure as the building block for the cloud application.
+
+---comparation_simulators02---
+Resource scheduling in infrastructure as a service (IaaS) is one of the keys for large-scale Cloud applications.
+
+Extensive research on all issues in real environment is extremely difficult because it requires developers to consider network infrastructure and the environment, which may be beyond the control. In addition, the network conditions cannot be controlled or predicted.
+
+Performance evaluations of workload models and Cloud provisioning algorithms in a repeatable manner under different configurations are difficult.
+Therefore, simulators are developed.
+
+establish a detailed ontology of dissecting Cloud into five main layers from top to down: Cloud application (SaaS), Cloud software environment
+(PaaS), Cloud software infrastructure (IaaS), software kernel and hardware (HaaS), and illustrate their interrelations as well as their inter-dependency on preceding technologies.
+
+In a traditional data center, applications are tied to specific physical servers that are often over-provisioned to deal with
+workload surges and unexpected failures [5]. Such configuration rigidity makes data centers expensive to maintain with
+wasted energy and floor space, low resource utilizations and significant management overheads. With virtualization
+technology, today’s Cloud data centers become more flexible, secure and on-demand allocating.
+One key technology plays an important role in Cloud data center is resource scheduling. One of the challenging scheduling
+problems in Cloud data center is to consider allocation and migration of reconfigurable virtual machines and integrated
+features of hosting physical machines.
+
+By using data center simulation system, application developers can evaluate suitable strategies such as distributing
+reasonable data center resources, selecting data center to match special requirements, improving resource utilization and
+load balancing, reducing total energy-consumptions, reducing costs and so on.
+
+| Metrics | Optimization objectives | Simulators
+| Average resource utilization | Maximizing resource utilization | All Four (CloudSim, iCanCloud, GreenCloud, CloudSched)
+| Total number of PMs (hosts) need | Maximizing resource utilization | All Four
+| Average CPU utilization | Load balancing | All
+| Average utilization of all CPUs in a Cloud datacenter | Load balancing | All Four
+| Integrated load imbalance value of a server | Load balancing | CloudSched
+| Imbalance value of all CPUs | Load balancing | CloudSched
+| Average imbalance value a physical server | Load balancing | CloudSched
+| Average imbalance value of a Cloud datacenter | Load balancing | CloudSched
+| Total simulation time | All | All Four
+| Makespan or longest processing time | Load balancing | CloudSim, CloudSched
+| Energy consumption model | Energy-efficiency | CloudSim, GreenCloud, CloudSched
+| Total energy consumption of a Cloud data center | Energy-efficiency | CloudSim, GreenCloud, CloudSched
+| Total number of PMs used | Energy-efficiency | CloudSim, GreenCloud, CloudSched
+| Total power-on time of all PMs | Energy-efficiency | CloudSim, GreenCloud, CloudSched
+| Cost/per task | C/P | iCanCloud
+| Confidence interval | Confidence interval | CloudSched
+-------------------------------------------------------------------------------------------------------
+
+---comparation_simulators03---
+Infrastructure as a service (IaaS):
+According to the IETF (Internet Engineering Task Force),
+the providers of IaaS services offer virtual machines and
+other resources. The cloud user have to install the
+operating system images in order to deploy their cloud
+applications.
+
+Platform as a service (PaaS):
+In this model, the cloud provider delivers a computing
+platform. It includes the operating system, programming
+language execution environment, database and web server.
+
+Software as a service (SaaS):
+Cloud providers in this model provides access to the
+application software and databases to the users.
+
+CloudSim
+Is a Toolkit/library.
+Test new policies, schedulingalgorithms, mapping etc.
+
+SPECI (Simulation Program for Elastic Cloud Infrastructures)
+Scaling and performance.
+
+GreenCloud
+Fine-grained modelling of the energy consumed.
+
+OCT (Open Cloud Testbed)
+Interoperability and benchmarking.
+
+GroudSim
+Event based simulator.
+Calculation of costs, and background load on resources.
+
+NetworkCloudSim
+Scheduling and resource provisioning policies to optimize the performance of a Cloud infrastructure.
+
+---comparation_simulators05---
+IaaS service provides the hardware services to the user. The services includes in this case is processing power, storage, network
+bandwidth or other hardware required to setup the computing environment in an organization. When users get access to these
+resources, he or she can install their operating systems on the provided hardware. The responsibility to maintain hardware security
+lies on the user.
+
+PaaS service provides hardware services with operating systems. User just has to install the required applications on those hardware
+resources. The responsibility to manage the licensing of the software depends on the user of those resources.
+
+In this model the cloud service providers provides the software services to the user. User only needs to run an internet connection
+to have access to the software. The responsibility of maintaining the licensing of the software depends on the cloud service
+providers. The customer uses the provider’s applications running on cloud infrastructure.
+
+---comparation_simulators07---
+SaaS(Software as a Service)
+This type is the most popular way of using cloud computing. It utilizes a multitenant architecture, in which the system is built in a way that allows several customers to
+share infrastructure in an isolated way, without compromising the privacy and security of each customer's data.
+Using multi-tenancy, cloud computing delivers an application through thousands of customers' web browsers. There is no upfront investment in servers or software
+licensing for customers, and maintaining just one application makes the cost low for providers compared to conventional hosting.
+Google Doc, Gmail, and Zoho are some examples in this category.
+
+IaaS(Infrastructure as a Service)
+This type of cloud computing used to be called as HaaS (Hardware as a Service). IT infrastructure was rented out with pre-determined hardware configuration for a specific
+period of time, and the client had to pay for the configuration and time regardless of the actual use. With Iaas customer accesses the resources, IT infrastructure such as
+storage, processing, networking, over the Internet. The client can dynamically scale the configuration, and pay only for the services actually used.
+IaaS is offered in three different models: Private, Public, and Hybrid.
+Private cloud implies that the infrastructure resides at the customer premises, and the internal cloud is based on a private network behind a firewall. That is to say, the cloud
+services are implemented using resources of a single organization.
+Public cloud is located on cloud computing platform vendor's data center and provides public accessible services over the Internet, i.e. a service provider makes resources
+available to the public over the Internet.
+Hybrid cloud is a combination of the aforementioned models with customer choosing the best of each worlds. It allows an organization to provide and manage few of its
+resources in-house and has others externally.
+Amazon S3, Simple Storage Service, is an example in this category.
+
+PaaS(Platform as a Service)
+This type of cloud computing not only deals with operation systems, but also provides a platform that you can run existing applications or develop and test new ones
+without hurting your internal system by allowing the customer to rent virtualized servers and associated services. Using PaaS, enables development teams that are
+geographically distributed to work on a single software development project.
+AppEngine, and Bungee Connect are two examples in this category.
+
+---comparation_simulators10---
+
+
+---comparation_simulators14---
+Experimental comparison of simulation tools for efficient cloud and mobile cloud computing applications.
+Simulators: CloudSim, CloudAnalyst, CloudReports, CloudExp, GreenCloud, and iCanCloud.
+Mobile cloud computing (MCC)
+
+MCC technology provides access
+to cloud services for mobile devices, providing a
+significant number of advantages such as saving mobile
+battery lifetime [2], improving data storage capacity [3],
+and improving reliability and security by storing data
+and applications on many servers [2].
