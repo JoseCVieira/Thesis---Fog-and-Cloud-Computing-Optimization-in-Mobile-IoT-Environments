@@ -787,5 +787,6 @@ camada superior.
 
 3 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
 
-Challenge,Current Limitation,Research Direction or Potential Solution,Related Features or Objectives,Related Categories
-Fog service SLA,SLAs are not defined for fog systems. Current SLAs are defined for cloud services or network infrastructure., • Define new and compatible SLA for fog systems. • Design SLA management techniques and framework for fog computing. • Support for multi-vendor or provider SLA for fog systems,QoS Cost,Architectures and Frameworks for Fog; Control and Monitoring
+| Challenge | Current Limitation | Research Direction or Potential Solution | Related Features or Objectives | Related Categories |
+| --- | --- | --- | --- | --- |
+| Fog service SLA | SLAs are not defined for fog systems. Current SLAs are defined for cloud services or network infrastructure. | • Define new and compatible SLA for fog systems. • Design SLA management techniques and framework for fog computing. • Support for multi-vendor or provider SLA for fog systems | QoS Cost | Architectures and Frameworks for Fog; Control and Monitoring
