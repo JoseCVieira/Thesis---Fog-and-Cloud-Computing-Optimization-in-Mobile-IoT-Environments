@@ -206,45 +206,59 @@ Conceitos.
 
 3 - CONCEPTS - ver figura 4, 6 e 7, tabela 2 e 3
 
-- Cloud computing
+- **Cloud computing**
+
 O National Institute of Standards and Technology (NIST) define cloud computing como um modelo que promove o acesso omnipresente e on-demand network a recursos computacionais. Cloud data centers são grandes pools de recursos virtuais que são utilizados num pay-as-you-go cost model. Oferece IaaS, PaaS e SaaS (figura 2). Os recursos são disponibilizados e cobrados on-demand visto que é difícil de prever, sendo normalmente sobredimensionado ou subdimensionado (figura 3). 
 Existem 4 tipos de clouds: private, community, public e hybrid. Cloud computing tem os problema de latência, largura de banda, privacidade e falta de dispersão geográfica. Para resolver estes problemas é introduzido o paradigma de fog computing.
 
-- Fog computing - ver figura 5
+- **Fog computing** - ver figura 5
+
 Fog computing preenche a lacuna entre cloud e end devices (e.g., IoT nodes) permitindo processamento, armazenamento, rede e gestão de dados em nós de rede próximos. Os serviços mensionados são então realizados não só na cloud mas também pelos dispositivos desde o end device até à cloud, com preferência pelos nós mais próximos. Fog computing é definido pelo OpenFog Consortium [6] como "a horizontal system-level architecture that distributes computing, storage, control and networking functions closer to the users along a cloud-to-thing continuum". A natureza descentralizada de fog computing permite que um dispositivo atue como um fog node (server) ou use fog resources (cliente). Comparatiamente à cloud, fog computing oferece capacidade de processamento moderada e com baixos consumos. Clouds usam grandes datacenters. Fog utiliza pequenos servers, routers, switches, gateways, set-top boxes ou access points (AP). Fog ocupa menos espaço (menos hardware) e assim pode estar mais proximo dos end devices. É acedido através de dispositivos ligados desde a edge network até a network core. Cloud computing é apenas acedível apartir da network core. O acesso à internet continuo não é necessário para serviços fog-based, isto é, eles funcionam normalmente e mandam os updates para a cloud quando existe conexão. Cloud computing requer uma conexão continua quando o serviço está a correr. Tem vantagens em termos de energy, manufacturing, transportation, healthcare, smart cities, entre outros. Existem diferenças claras entre fog e cloud, no entanto, estes complementam-se e um não consegue substituir a necessidade do outro. Juntando os dois, os serviços que os dispositivos ligados utilizam são ainda mais otimizados. [fog RAN?? - paper 27]
 
-- Mobile computing
+- **Mobile computing**
+
 O avanço em fog e cloud computing é influenciado pelo desenvlvimento de mobile computing. Mobile/nomadic computing acontece quando o processamento é feito por mobile devices (laptops, tablets, or mobile phones). Tem como objetivo a adaptação em ambientes de pouco poder de processamento e conexão esparça ou intermitente. Devido aos requisitos envolvidos de conexão de dispositivos do utilizador, mobile computing sozinho não é apropriado para computing. Com fog e cloud computing, a computação já não está limitada a uma rede local, expandindo assim o alcance de mobile computing. O único hardware necessário são os dispositivos móveis, que podem utilizar conexões via Bluetooth, WiFi, ZigBee etc. No caso de fog e cloud são necessários recursos de hardware mais avançados com capacidades de virtualização. A segurança em mobile computing é obrigatoriamente garantida no dispositivo móvel. Os dispositivos têm recursos mais restritos que em fog e cloud, no entanto nos últimos anos tem existido grande evolução neste sentido. Tem a grande vantagem da sua arquitetura distribuída visto que não é necessário uma localização central de operação. Tem as desvantagens de poucos recursos, balanceamento entre autonomia e interdependência (dependência de outros dispositivos móveis - que prevalece em todas as arquiteturas distribuídas), latência na comunicação e a necessidade de clientes móveis. Isto leva a que mobile computing seja inviável para aplicações atuais que requerem low-latency e robustez, ou que necessitem que grandes quantidades de dados sejam gerados, processados e armazenados.
 
-- Mobile Cloud Computing
+- **Mobile Cloud Computing**
+
 Cloud computing tornou-se um complemento valioso para mobile computing, onde esta combinação resultou em mobile cloud computing (MCC). MCC é definido como uma infra-estrutura onde o processamento e armazenamento ocorrem fora do dispositivo móvel. Aplicações móveis podem ser repartidas em runtime para que as partes computacionalmente mais intensas sejam tratadas por offloading adaptativo do dispositivo móvel para a cloud, diminuindo o consumo de bateria. Comparativamente a mobile computing, os serviços cloud-based em MCC são consideravelmente maiores. A computação pode também ser realizada no próprio dispositivo. Ao nível de segurança, deve ser implementada no dispositivo e na cloud. Desvantagens: Enquanto que uma arquitetura centralizada em MCC é melhor para partilha de pool de recursos computacionais, esta pode não ser adequado para aplicações onde os dispositivos são omnipresentes (pervasive). Como cloud computing e MCC requerem cloud-based services, e o seu acesso é feito pela rede core por WAN, as aplicações requerem ligação à internet todo o tempo. Offloading da computação para a cloud, causa latência relativamente alta para aplicações delay-sensitive.
 
-- Mobile ad hoc Cloud Computing
+- **Mobile ad hoc Cloud Computing**
+
 Apesar da natureza difundida do MCC, este paradigma de computação nem sempre é adequado para cenários em que há falta de infra-estrutura ou de uma cloud centralizada. Uma rede móvel ad hoc consiste em nós que formam uma rede dinâmica e temporária por meio de protocolos de roteamento e transporte. Dispositivos móveis Ad hoc podem formar clouds que podem ser utilizadas para rede, armazenamento e computação. Inclui casos de uso como desastres naturais, streaming de vídeo ao vivo em grupo e sistemas de veículos não tripulados.
 
-- Edge Computing
+- **Edge Computing**
+
 Tal como MCC, edge computing melhora a gestão, armazenamento e a capacidade de processamento dos dados gerados pelos dispositivos conectados. Ao contrário de MCC, edge computing está localizado na edge da rede, perto dos dispositivos IoT (edge não está localizado nos dispositivos IoT, mas está tão próximo como um hop para eles; se estiver na rede local pode estar a mais do que um hop). Edge computing é definida como a computação feita na edge da rede por pequenos data centers que estão próximos dos end users. Alguns problemas que a edge computing lida bem são a privacidade, latência (se tiver poder computacional suficiente; latência = latência envio + latência de processamento + latência de receção) e conectividade. Service availability é também maior porque não tem de esperar por uma plataforma centralizada para fornecer um serviço, nem são dispositivos conectados limitados por recursos limitados como mobile computing. EC e FG movem a computação e armazenamento para a edge da rede perto dos end users, no entanto estes paradigmas são bem distintos. Fog é hierárquico e fornece computação, rede, armazenamento, controlo e aceleração em qualquer lado desde a cloud aos end devices (things). Edge computing está limitado à computação na edge. Neste contexto, edge refere-se à rede local onde os dispositivos IoT estão. Podem ser utilizados, por exemplo, WiFi access points ou gateways. General Electric diz que fog computing se foca nas interações entre edge devices (e.g., RANs, base stations, or edge routers), enquanto edge computing se foca nas tecnologias ligadas as things (e.g., WiFi access points).
 
-- Multi-access Edge Computing
+- **Multi-access Edge Computing**
+
 Analogamente, mobile cloud computing é uma extensão de mobile computing por cloud computing e multi-access edge computing (MEC) é uma extensão de mobile computing através de edge computing. ETSI define que MAC é uma plataforma que fornece capacidades de IT e cloud-computing dentro de Access Network (RAN) em 4G e 5G, na proximidade dos mobile subscribers. MEC extende edge computing fornecendo computação e armazenamento aos dispositivos. MAC permite aos RAN operators adicionar funcionalidades de edge computing às base stations. Similarmente a edge computing, small-scale data centers com capacidades de virtualização podem ser usadas em MEC. Comparativamente a cloud computing, o hardware utilizado em MEC e edge computing é de nível moderado. Aplicações de low-latency podem ser suportadas em MEC. Estas podem benificiar de real-time radio e da informação de rede. Tal como edge computing, MEC pode operar com pouca ou nenhuma Internet. MEC utiliza WAN, WiFi, e cellular connections enquanto edge computing usa qualquer forma de ligação (e.g., LAN, WiFi, cellular). MCC foca-se na relação entre cloud service users (em mobile devices) e cloud service providers, enquanto MEC foca-se em (RAN-based) network infrastructure providers. MEC permite que edge computing seja acedível por um grande número de dispositivos móveis com latência reduzida e redes móveis core eficientes. MEC permiter aplicações críticas delay-sensitive sobre a rede móvel. Incorpora também a utilização de SDN que permite virtual networking devices para serem facilmente geridos por software APIs e network function virtualization (NFV) que permite tempos de implementação reduzidos para serviços de rede através de infra-estruturas virtualizadas.
 
-- Cloudlet Computing
+- **Cloudlet Computing**
+
 Cloudlet computing é outra direção na computação móvel que compartilha muitas características com MCC e MEC. Cloudlet é um computador ou cluster de computadores com forte ligação à internet que é utilizada por dispostitos móveis próximos. Cloudlets são pequenos data centers (miniature clouds), que está tipicamente a um hop de distância dos dispositivos móveis. A ideia é transferir a computação dos dispositivos móveis para VM-based cloudlets localizadas na edge. Cloudlet é a tier do meio numa arquitetura 3-tier: mobile-devicecloudlet-cloud. O pequeno footprint de hardware das cloudlets resulta em recursos computacionais moderados mas com baixa latência e baixo consumo energético comparado com cloud computing. Cloudlet necessita de uma infra-estrutura com virtualização em forma de virtual machine (VM), tem suporte para mobilidade e support para real-time IoT applications. Cloudlets suporta serviços locais para clientes móveis dividindo tasks pelos cloudlet nodes próximos do dispositivo móvel. Fog computing oferece uma alternativa mais genérica que nativamente suporta grandes quantidades de tráfego e permite que os recursos estejam em qualquer lado entre a cloud e as things. O conceito de mobile cloudlets é similar a cloudlets em que as cloudlets são um grupo de dispositivos móveis próximos que estão conectados sem fios (e.g., using WiFi or Bluetooth). Em mobile cloudlets, os dispositivos móveis podem ser tanto providers como clients de um serviço computacional.
 
-- Mist Computing
+- **Mist Computing**
+
 Recentemente foi introduzido para capturar uma edge mais exterma - os endpoints - dos dispositivos conectados. Este paradigma descreve uma computação dispersa na extreme edge (os próprios dispositivos IoT) e foi proposto com futuros sistemas auto-conscientes e autónomos em mente. Pode ser visto como o primeiro ponto de computação na 3-tier IoT-fog-cloud. Mist computing extende computação, armazenamento e rede pelo fog através das things. Mist computing é um superset de MACC visto que em mist, a rede pode não ser necessariamente ad hoc e os dispositivos podem não ser móveis.
 
-- Other Similar Computing Paradigms
-	- Micro Data Center (MDC)
+- **Other Similar Computing Paradigms**
+
+	- **Micro Data Center (MDC)**
+
 	Cloudlet são por vezes referidas como MDC. um MDC pode ser um edge node ou uma cloudlet que é implementada entre os dispositivos IoT e a cloud.
 
-	- Cloud of Things (CoT)
+	- **Cloud of Things (CoT)**
+
 	Parecido a mist computing, no entanto em mist a computação é feita nos dispositivos IoT e não necessariamente numa cloud de pooled resources. Em CoT, a computação é feira sobre a cloud que é formada por pooled resources de IoT devices.
 
-	- Edge Cloud
+	- **Edge Cloud**
+
 	Quando falamos de cloud computing, falamos de "core" ou "distant" clouds que estão distantes do end users que são responsáveis pela computação "pesada". Ao contrário, "edge" clouds são mais pequenas e estão mais próximas. Edge cloud é parecido a edge computing. Edge cloud extende capacidades da cloud na edge aproveitando os compute nodes (user ou operator-contributed) na edge da rede. À semelhança do fog, em edge clouds a habilidade de correr uma aplicação numa forma coordenada tanto na edge com na distante cloud é previsto. Edge clouds são nós na edge como  micro data centers, cloudlets, e MEC.
 
-- Offline vs. Online
+- **Offline vs. Online**
+
 A maioria dos papers fala de scheduling, dispatching, offloading, e load balancing de forma "centralizada" (referida como offline). Nesta configuração, toda a informação das tasks, rede e nós são conhecidas. A entidade centralizada é responsável por decidir para onde a task pode ser enviada. Mesmo que haja grande investigação nesta área, uma configuração mais desafiante é a versão "distribuída" do problema (referido como online) onde não existe uma entidade central, não existe informação total sobre tasks, rede ou sobre os nós. Neste caso, a informação de cada job é desconhecida antes do seu lançamento.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
