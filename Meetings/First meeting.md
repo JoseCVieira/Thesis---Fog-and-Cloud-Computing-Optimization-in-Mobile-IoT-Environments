@@ -826,21 +826,20 @@ camada superior.
 
 5 - SIMULATORS
 
-CloudSim_1_FogComputing.pdf
+- CloudSim_1_FogComputing.pdf
 Trabalhos relacionados(fazer uma tabela por temas)
 
-CloudSim_2_FogComputing.pdf
+- CloudSim_2_FogComputing.pdf
 This paper gives a step by step practical approach towards simulating cloud components or cloud environment using the (open source) CloudSim simulator. It shows in-depth analysis and the factors responsible for simulating cloud concepts for your experiments or research or industry specific application.
 
-CloudSim
+- CloudSim
 The CloudSim simulation framework is based on the SimJava discrete event simulation engine at the lowest layer, while the higher layers implement the GridSim toolkit for the modeling of the cluster, including networks, traffic profiles, resources, etc. CloudSim effectively extends the GridSim core functionalities
 by modeling storage, application services, resource provisioning between virtual machines, and data centre brokerage, and can even simulate federated clouds.
 
-
----comparation_simulators01---
+- comparation_simulators01
 Cloud computing can be viewed from two different perspectives: cloud application and cloud infrastructure as the building block for the cloud application.
 
----comparation_simulators02---
+- comparation_simulators02
 Resource scheduling in infrastructure as a service (IaaS) is one of the keys for large-scale Cloud applications.
 
 Extensive research on all issues in real environment is extremely difficult because it requires developers to consider network infrastructure and the environment, which may be beyond the control. In addition, the network conditions cannot be controlled or predicted.
@@ -863,7 +862,8 @@ By using data center simulation system, application developers can evaluate suit
 reasonable data center resources, selecting data center to match special requirements, improving resource utilization and
 load balancing, reducing total energy-consumptions, reducing costs and so on.
 
-| Metrics | Optimization objectives | Simulators
+| Metrics | Optimization objectives | Simulators |
+| --- | --- | --- |
 | Average resource utilization | Maximizing resource utilization | All Four (CloudSim, iCanCloud, GreenCloud, CloudSched)
 | Total number of PMs (hosts) need | Maximizing resource utilization | All Four
 | Average CPU utilization | Load balancing | All
@@ -880,9 +880,8 @@ load balancing, reducing total energy-consumptions, reducing costs and so on.
 | Total power-on time of all PMs | Energy-efficiency | CloudSim, GreenCloud, CloudSched
 | Cost/per task | C/P | iCanCloud
 | Confidence interval | Confidence interval | CloudSched
--------------------------------------------------------------------------------------------------------
 
----comparation_simulators03---
+- comparation_simulators03
 Infrastructure as a service (IaaS):
 According to the IETF (Internet Engineering Task Force),
 the providers of IaaS services offer virtual machines and
@@ -919,7 +918,7 @@ Calculation of costs, and background load on resources.
 NetworkCloudSim
 Scheduling and resource provisioning policies to optimize the performance of a Cloud infrastructure.
 
----comparation_simulators05---
+- comparation_simulators05
 IaaS service provides the hardware services to the user. The services includes in this case is processing power, storage, network
 bandwidth or other hardware required to setup the computing environment in an organization. When users get access to these
 resources, he or she can install their operating systems on the provided hardware. The responsibility to maintain hardware security
@@ -932,7 +931,7 @@ In this model the cloud service providers provides the software services to the 
 to have access to the software. The responsibility of maintaining the licensing of the software depends on the cloud service
 providers. The customer uses the provider’s applications running on cloud infrastructure.
 
----comparation_simulators07---
+- comparation_simulators07
 SaaS(Software as a Service)
 This type is the most popular way of using cloud computing. It utilizes a multitenant architecture, in which the system is built in a way that allows several customers to
 share infrastructure in an isolated way, without compromising the privacy and security of each customer's data.
@@ -959,10 +958,10 @@ without hurting your internal system by allowing the customer to rent virtualize
 geographically distributed to work on a single software development project.
 AppEngine, and Bungee Connect are two examples in this category.
 
----comparation_simulators10---
+- comparation_simulators10
 
 
----comparation_simulators14---
+- comparation_simulators14
 Experimental comparison of simulation tools for efficient cloud and mobile cloud computing applications.
 Simulators: CloudSim, CloudAnalyst, CloudReports, CloudExp, GreenCloud, and iCanCloud.
 Mobile cloud computing (MCC)
