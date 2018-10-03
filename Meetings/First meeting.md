@@ -55,7 +55,7 @@ processamento no dispositivo na edge ou na cloud.
 
 -----------------------------------------------------------------------------------
 
-**Fog Computing for the Internet of Mobile Things - issues and challenges.** 20175.
+**Fog Computing for the Internet of Mobile Things - issues and challenges.** 2017.
 
 Este paper analisa o que significa providenciar mobilidade em Fog, os principais
 desafios e trabalho futuro. Aponta para trabalho futuro: serviço de migração proativo
