@@ -827,19 +827,24 @@ camada superior.
 5 - SIMULATORS
 
 - CloudSim_1_FogComputing.pdf
+
 Trabalhos relacionados(fazer uma tabela por temas)
 
 - CloudSim_2_FogComputing.pdf
+
 This paper gives a step by step practical approach towards simulating cloud components or cloud environment using the (open source) CloudSim simulator. It shows in-depth analysis and the factors responsible for simulating cloud concepts for your experiments or research or industry specific application.
 
 - CloudSim
+
 The CloudSim simulation framework is based on the SimJava discrete event simulation engine at the lowest layer, while the higher layers implement the GridSim toolkit for the modeling of the cluster, including networks, traffic profiles, resources, etc. CloudSim effectively extends the GridSim core functionalities
 by modeling storage, application services, resource provisioning between virtual machines, and data centre brokerage, and can even simulate federated clouds.
 
 - comparation_simulators01
+
 Cloud computing can be viewed from two different perspectives: cloud application and cloud infrastructure as the building block for the cloud application.
 
 - comparation_simulators02
+
 Resource scheduling in infrastructure as a service (IaaS) is one of the keys for large-scale Cloud applications.
 
 Extensive research on all issues in real environment is extremely difficult because it requires developers to consider network infrastructure and the environment, which may be beyond the control. In addition, the network conditions cannot be controlled or predicted.
@@ -882,6 +887,7 @@ load balancing, reducing total energy-consumptions, reducing costs and so on.
 | Confidence interval | Confidence interval | CloudSched
 
 - comparation_simulators03
+
 Infrastructure as a service (IaaS):
 According to the IETF (Internet Engineering Task Force),
 the providers of IaaS services offer virtual machines and
@@ -919,6 +925,7 @@ NetworkCloudSim
 Scheduling and resource provisioning policies to optimize the performance of a Cloud infrastructure.
 
 - comparation_simulators05
+
 IaaS service provides the hardware services to the user. The services includes in this case is processing power, storage, network
 bandwidth or other hardware required to setup the computing environment in an organization. When users get access to these
 resources, he or she can install their operating systems on the provided hardware. The responsibility to maintain hardware security
@@ -932,36 +939,41 @@ to have access to the software. The responsibility of maintaining the licensing 
 providers. The customer uses the provider’s applications running on cloud infrastructure.
 
 - comparation_simulators07
-SaaS(Software as a Service)
-This type is the most popular way of using cloud computing. It utilizes a multitenant architecture, in which the system is built in a way that allows several customers to
-share infrastructure in an isolated way, without compromising the privacy and security of each customer's data.
-Using multi-tenancy, cloud computing delivers an application through thousands of customers' web browsers. There is no upfront investment in servers or software
-licensing for customers, and maintaining just one application makes the cost low for providers compared to conventional hosting.
-Google Doc, Gmail, and Zoho are some examples in this category.
 
-IaaS(Infrastructure as a Service)
-This type of cloud computing used to be called as HaaS (Hardware as a Service). IT infrastructure was rented out with pre-determined hardware configuration for a specific
-period of time, and the client had to pay for the configuration and time regardless of the actual use. With Iaas customer accesses the resources, IT infrastructure such as
-storage, processing, networking, over the Internet. The client can dynamically scale the configuration, and pay only for the services actually used.
-IaaS is offered in three different models: Private, Public, and Hybrid.
-Private cloud implies that the infrastructure resides at the customer premises, and the internal cloud is based on a private network behind a firewall. That is to say, the cloud
-services are implemented using resources of a single organization.
-Public cloud is located on cloud computing platform vendor's data center and provides public accessible services over the Internet, i.e. a service provider makes resources
-available to the public over the Internet.
-Hybrid cloud is a combination of the aforementioned models with customer choosing the best of each worlds. It allows an organization to provide and manage few of its
-resources in-house and has others externally.
-Amazon S3, Simple Storage Service, is an example in this category.
+	- SaaS(Software as a Service)
 
-PaaS(Platform as a Service)
-This type of cloud computing not only deals with operation systems, but also provides a platform that you can run existing applications or develop and test new ones
-without hurting your internal system by allowing the customer to rent virtualized servers and associated services. Using PaaS, enables development teams that are
-geographically distributed to work on a single software development project.
-AppEngine, and Bungee Connect are two examples in this category.
+	This type is the most popular way of using cloud computing. It utilizes a multitenant architecture, in which the system is built in a way that allows several customers to
+	share infrastructure in an isolated way, without compromising the privacy and security of each customer's data.
+	Using multi-tenancy, cloud computing delivers an application through thousands of customers' web browsers. There is no upfront investment in servers or software
+	licensing for customers, and maintaining just one application makes the cost low for providers compared to conventional hosting.
+	Google Doc, Gmail, and Zoho are some examples in this category.
+
+	- IaaS(Infrastructure as a Service)
+
+	This type of cloud computing used to be called as HaaS (Hardware as a Service). IT infrastructure was rented out with pre-determined hardware configuration for a specific
+	period of time, and the client had to pay for the configuration and time regardless of the actual use. With Iaas customer accesses the resources, IT infrastructure such as
+	storage, processing, networking, over the Internet. The client can dynamically scale the configuration, and pay only for the services actually used.
+	IaaS is offered in three different models: Private, Public, and Hybrid.
+	Private cloud implies that the infrastructure resides at the customer premises, and the internal cloud is based on a private network behind a firewall. That is to say, the cloud
+	services are implemented using resources of a single organization.
+	Public cloud is located on cloud computing platform vendor's data center and provides public accessible services over the Internet, i.e. a service provider makes resources
+	available to the public over the Internet.
+	Hybrid cloud is a combination of the aforementioned models with customer choosing the best of each worlds. It allows an organization to provide and manage few of its
+	resources in-house and has others externally.
+	Amazon S3, Simple Storage Service, is an example in this category.
+
+	- PaaS(Platform as a Service)
+
+	This type of cloud computing not only deals with operation systems, but also provides a platform that you can run existing applications or develop and test new ones
+	without hurting your internal system by allowing the customer to rent virtualized servers and associated services. Using PaaS, enables development teams that are
+	geographically distributed to work on a single software development project.
+	AppEngine, and Bungee Connect are two examples in this category.
 
 - comparation_simulators10
 
 
 - comparation_simulators14
+
 Experimental comparison of simulation tools for efficient cloud and mobile cloud computing applications.
 Simulators: CloudSim, CloudAnalyst, CloudReports, CloudExp, GreenCloud, and iCanCloud.
 Mobile cloud computing (MCC)
