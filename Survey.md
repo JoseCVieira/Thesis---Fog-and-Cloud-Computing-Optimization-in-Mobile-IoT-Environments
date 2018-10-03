@@ -1,4 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 1 - INTRODUÇÃO
 
 As the data velocity and volume increases, moving the big data
@@ -21,6 +22,7 @@ https://github.com/ashkan-software/fog-survey-data
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 2 - CONCEITOS - ver figura 4, 6 e 7, tabela 2 e 3
 
 - Cloud computing
@@ -67,6 +69,7 @@ A maioria dos papers fala de scheduling, dispatching, offloading, e load balanci
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 3 - PAPERS - MOBILIDADE
 
 ✗ | ✓
@@ -813,6 +816,7 @@ camada superior.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 3 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
 
 Challenge,Current Limitation,Research Direction or Potential Solution,Related Features or Objectives,Related Categories
