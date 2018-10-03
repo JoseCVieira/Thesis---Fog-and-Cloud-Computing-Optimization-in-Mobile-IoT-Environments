@@ -31,13 +31,179 @@ Ver:
 - PaaS  - Platform as a Service
 - TaaS  - Testing as a Service
 - Ubiquitous computing
-- Cloudlet
+- Fog and Mobile Edge Computing - FMEC
+- Follow Me Cloud - FMC
+- Follow Me Edge - FME
+- Papers anotados sobre sistemas hibridos (cloud/fog)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+2 - INITIAL PAPERS
+
+-----------------------------------------------------------------------------------
+**Fog Computing - Focusing on Mobile Users at the Edge.** 2016.
+
+Apresenta as caracteristicas, conceitos e design goals.
+
+-----------------------------------------------------------------------------------
+
+**Help Your Mobile Applications with Fog Computing.** 2015.
+
+Este paper explora os tema mobile application offloading and storage expansion. Fala
+da forma de prever parametros como largura de banda e latência e assim escolher o
+processamento no dispositivo na edge ou na cloud.
+
+-----------------------------------------------------------------------------------
+
+**Fog Computing for the Internet of Mobile Things - issues and challenges.** 20175.
+
+Este paper analisa o que significa providenciar mobilidade em Fog, os principais
+desafios e trabalho futuro. Aponta para trabalho futuro: serviço de migração proativo
+vs. reativo, Políticas de trigger do serviço de migração, Fog federation para
+habilitar mobile roaming, Técnicas de virtualização e de migração, etc.
+[Boa introdução]
+
+-----------------------------------------------------------------------------------
+
+**Dynamic Mobile Cloudlet Clustering for Fog Computing.** 2018.
+
+Este paper propõe a política dynamic mobile cloudlet cluster policy (DMCCP) para usar
+cloudlets como suporte para fog server for offloading. Os fog server são implementados
+na edge da rede em access points (AP). Como estes têm de estar perto dos utilizadores,
+têm de ser implementados tantos quanto possível. De forma a reduzir o custo de
+implementação estes têm recursos limitados. Investigações recentes propõem uso de
+clusters de mobile devices, cloudlet, para offloading de tasks do fog server. Os
+resultados mostram que a DMCCP agrupa em cluster o número de cloudlets quase ideal para
+diferentes resource demands de uma task em pouco tempo comparando com o método ideal.
+Como trabalho futuro propõe o balanceamento da quantidade de recursos das cloudlets.
+
+-----------------------------------------------------------------------------------
+
+**MyiFogSim - A Simulator for Virtual Machine Migration in Fog Computing.** 2017.
+
+Este paper introduz o MyiFogSim, uma extensão ao iFogSim que permite a mobilidade dos
+end users utilizando migração das VMs entre cloudlets. Como trabalho futuro propõe a
+implementação de políticas melhores que incorporem user behavior e applications
+requirements.
+
+-----------------------------------------------------------------------------------
+
+**Mobile Fog - A Programming Model for Large–Scale Applications on the Internet of Things.** 2013.
+
+Este paper apresenta um PaaS programming model, chamado Mobile Fog, um modelo de
+programação de alto nível que escala dinamicamente baseado no workload.
+
+-----------------------------------------------------------------------------------
+
+**A Framework of Fog Computing: Architecture, Challenges, and Optimization.** 2017.
+
+Este paper mostra várias definições e uma tabela de comparação de serviços (Ubiquitous
+computing, Cloudlet, MCC, FC). Arquitetura de FC composta pelos aspetos de computação
+e de rede. A estrutura da alocação de recursos para redução de latência com reliability,
+fault tolerance, privacy, e optimization problems. Application scenario(VANET -
+Vehicular adhoc) utilizando genetic algorithm para resource optimization combinado
+com uma abordagem de Dirichlet distribution sampling. Os resultados mostram informações
+importante sobre a escalabilidade de sistemas de FC. [Boa introdução]
+
+-----------------------------------------------------------------------------------
+
+**Energy-Efficient Multi-Job Scheduling Model for Cloud Computing and Its Genetic Algorithm.** 2012.
+
+Este paper foca-se em improvar a eficiência energética dos servidores através de
+estratégias de scheduling, mantendo ou aumentando a sua performance. Para isso propõe
+um novo modelo, energy-efficient multi-job scheduling and Its Genetic Algorithm
+(eficaz e eficiente) baseado na framework de processamento de dados em massa da
+google, MapReduce.
+
+-----------------------------------------------------------------------------------
+
+**An architecture for Load Balancing Techniques for Fog Computing Environment.** 2015.
+
+Este paper propõe uma nova arquitetura baseada em load balancing algorithm num ambiente
+Fog Computing numa maneira menos complexa e eficaz devido ao aumento rápido de end-users
+(utiliza Honey Bee Based algorithm). Esta melhora a largura de banda utilizada, reduz os
+custos, menor latência, maximiza o throughput. Também resolve o problema de disponibilidade
+do servidor. Propõe como trabalho futuro novos algoritmos de distributed load balancing e
+novos mecanismos de escalonamento.
+
+-----------------------------------------------------------------------------------
+
+**Fog computing job scheduling optimization based on bees swarm.** 2017.
+
+Este paper propõe um novo algoritmo de otimização bio-inspired (population-based
+approach based on collaborative behaviors of the individuals of the population),
+Bees Life Algorithm (BLA), que tem como objetivo abordar o problema de job
+scheduling. BLA emita os dois principais comportamentos das abelhas: reprodução
+e procura de fontes de comida. Este distribui tarefas pelos diversos fog nodes.
+O objetivo é encontrar um tradeoff otimo entre CPU execution time e allocated
+memory required (para reduzir o custo para o end-user e melhorar a performance do
+sistema). Os resultados mostram que esta proposta tem melhor performance que os
+tradicionais swarm optimization e genetic algorithm relativamente a este tradeoff.
+Como trabalho futuro propõe dynamic job scheduling approach para fog servers
+estáticos ou móveis. Ainda propõe optimization of the network bandwidth para
+melhorar a performance de end-to-end processing. [Boa introdução]
+
+-----------------------------------------------------------------------------------
+
+**Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching.** 2017.
+
+Este paper considera uma rede de fog computing especifica que é composta por um
+conjunto de data service operators (DSOs) em que cada um controla um conjunto de
+fog nodes para fornecer os data service necessários a um conjunto de data service
+subscribers (DSSs). Usa Stackelberg game (aplicando many-to-many matching game)
+para analizar problemas de preços e consequente problemas de resource allocation.
+Resultados mostram que a framework proposta pode melhorar significativamente a
+performance dos sistemas baseados em redes IoT. Trabalho futuro: dynamic computing
+resource allocation problem e analysis of cooperative and competitive behaviors
+among FNs.
+
+-----------------------------------------------------------------------------------
+
+**Real Time Efficient Scheduling Algorithm for Load Balancing in Fog Computing Environment.** 2016.
+
+Este paper propõe uma nova política de escalonamento, real time efficient scheduling
+(RTES) load balancing algorithm implementado no simulador CloudSim. Os resultados são
+extremamente bons: tempo de execução mínimo, rapidez na resposta aos pedidos dos
+clientes, cumpre os limites temporais em aplicações real-time, mantendo a consistência
+dos dados e a utilização de largura de banda comparando com algoritmos existentes,
+como: FCFS(First Come, First Served), Priority e Multi Objective Tasks scheduling
+algorithm. Tem 90% de eficiencia. trabalho futuro: incluir outros fatores QoS como
+por exemplo a segurança. [Boa introdução]
+
+-----------------------------------------------------------------------------------
+
+**A Survey of Fog Computing: Concepts, Applications and Issues.** 2015.
+
+Definições e conceitos, cenários de aplicação, problemas e oportunidades e desafios
+como trabalho futuro. Problemas apontados: Fog networking, Quality of Service (QoS),
+Interfacing and programming model, Computation Offloading, Accounting, billing and
+monitoring, Provisioning and resource management e Security and Privacy. Oportunidades:
+reducing cost, trimming data and expanding connectivity, spatio-temporal event
+processing system to meet the latency requirement, Computation offoading, intrusion
+detection on both client side and the centralized cloud side.
+
+-----------------------------------------------------------------------------------
+
+**Fog Computing: Principles, Architectures, and Applications.**
+
+Principles, Architectures, and Applications.
+
+-----------------------------------------------------------------------------------
+
+**Internet of Things Bringing Fog, Edge & Mist Computing.**
+
+Definições (Cloud, Fog, Edge, Mist Computing).
+
+-----------------------------------------------------------------------------------
+
+**Fog Computing: Helping the Internet of Things Realize its Potential.**
+
+Conceitos.
+
+-----------------------------------------------------------------------------------
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-2 - CONCEPTS - ver figura 4, 6 e 7, tabela 2 e 3
+3 - CONCEPTS - ver figura 4, 6 e 7, tabela 2 e 3
 
 - Cloud computing
 O National Institute of Standards and Technology (NIST) define cloud computing como um modelo que promove o acesso omnipresente e on-demand network a recursos computacionais. Cloud data centers são grandes pools de recursos virtuais que são utilizados num pay-as-you-go cost model. Oferece IaaS, PaaS e SaaS (figura 2). Os recursos são disponibilizados e cobrados on-demand visto que é difícil de prever, sendo normalmente sobredimensionado ou subdimensionado (figura 3). 
@@ -82,9 +248,7 @@ A maioria dos papers fala de scheduling, dispatching, offloading, e load balanci
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-3 - PAPERS - MOBILITY
+4 - PAPERS - MOBILITY
 
 ✗ | ✓
 
@@ -797,9 +961,7 @@ camada superior.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-4 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
+5 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
 
 | Challenge | Current Limitation | Research Direction or Potential Solution | Related Features or Objectives | Related Categories |
 | --- | --- | --- | --- | --- |
@@ -824,7 +986,7 @@ camada superior.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-5 - SIMULATORS
+6 - SIMULATORS
 
 - CloudSim_1_FogComputing.pdf
 
@@ -984,3 +1146,5 @@ significant number of advantages such as saving mobile
 battery lifetime [2], improving data storage capacity [3],
 and improving reliability and security by storing data
 and applications on many servers [2].
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
