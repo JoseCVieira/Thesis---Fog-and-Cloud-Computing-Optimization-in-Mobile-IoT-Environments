@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 1 - INTRODUÇÃO
 
 As the data velocity and volume increases, moving the big data
@@ -18,9 +18,9 @@ List of conferences, journals, and magazines that publish state-of-the-art resea
 The data (categories and features/objectives of the papers) of this survey are available in the form of several datasets at 
 https://github.com/ashkan-software/fog-survey-data
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 2 - CONCEITOS - ver figura 4, 6 e 7, tabela 2 e 3
 
 - Cloud computing
@@ -64,9 +64,9 @@ Recentemente foi introduzido para capturar uma edge mais exterma - os endpoints 
 - Offline vs. Online
 A maioria dos papers fala de scheduling, dispatching, offloading, e load balancing de forma "centralizada" (referida como offline). Nesta configuração, toda a informação das tasks, rede e nós são conhecidas. A entidade centralizada é responsável por decidir para onde a task pode ser enviada. Mesmo que haja grande investigação nesta área, uma configuração mais desafiante é a versão "distribuída" do problema (referido como online) onde não existe uma entidade central, não existe informação total sobre tasks, rede ou sobre os nós. Neste caso, a informação de cada job é desconhecida antes do seu lançamento.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 3 - PAPERS - MOBILIDADE
 
 ✗ | ✓
@@ -810,9 +810,9 @@ vários edge servers são executados em coordenados com soluções de cloud de
 camada superior.
 ----------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 3 - CHALLENGES AND FUTURE RESEARCH DIRECTIONS
 
 Challenge,Current Limitation,Research Direction or Potential Solution,Related Features or Objectives,Related Categories
