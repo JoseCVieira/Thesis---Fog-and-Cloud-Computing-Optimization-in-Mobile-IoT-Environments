@@ -1180,7 +1180,7 @@ and applications on many servers [2].
 		- iFogSim: https://github.com/Cloudslab/iFogSim
 		- MyiFogSim: https://github.com/marciocomp/myifogsim
 		
-	- Introduction report
+	- Introduction of the report
 		- Context: Cloud, Fog, Edge...
 		- Motivation: Application examples (e.g., bus with computational resources)
-		- Work Objectives
+		- Work objectives
