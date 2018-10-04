@@ -1171,7 +1171,7 @@ and applications on many servers [2].
 
 - Thesis objectives
 
-	- Provide mobility to fog nodes (e.g., in MyiFogSim)
+	- Provide mobility support to fog nodes (e.g., in MyiFogSim)
 	- Implement a optimization algorithm based on latency (e.g., Genetic Algorithm)
 	- Multi-objective optimization (e.g., QoS, QoE, Cost, Energy, Bandwidth)
 
