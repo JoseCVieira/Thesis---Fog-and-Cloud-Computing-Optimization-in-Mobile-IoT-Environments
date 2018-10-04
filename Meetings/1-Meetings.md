@@ -1,4 +1,4 @@
-1st meeting - 04/10/2018
+**1st meeting - 04/10/2018**
 
 - Thesis objectives
 	- Provide mobility support to fog nodes (e.g., in MyiFogSim)
@@ -14,3 +14,4 @@
 		- Context: Cloud, Fog, Edge...
 		- Motivation: Application examples (e.g., bus with computational resources)
 		- Work objectives
+-----
