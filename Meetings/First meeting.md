@@ -21,6 +21,9 @@ List of conferences, journals, and magazines that publish state-of-the-art resea
 The data (categories and features/objectives of the papers) of this survey are available in the form of several datasets at 
 https://github.com/ashkan-software/fog-survey-data
 
+Start a research:
+https://www.slideshare.net/MiguelLPardal/master-beginners-workshop-september-2018
+
 Minimize latency and maximize throughput
 Sense-Process-Actuate
 
@@ -1181,4 +1184,5 @@ and applications on many servers [2].
 
 - TODO
 	- Test both iFogSim and MyiFogSim simulators
-
+		- iFogSim: https://github.com/Cloudslab/iFogSim
+		- MyiFogSim: https://github.com/marciocomp/myifogsim
