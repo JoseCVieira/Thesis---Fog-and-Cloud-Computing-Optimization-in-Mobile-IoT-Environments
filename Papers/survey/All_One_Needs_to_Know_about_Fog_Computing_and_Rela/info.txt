@@ -1,0 +1,929 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1 - INTRODUÇÃO
+
+As the data velocity and volume increases, moving the big data
+from IoT devices to the cloud might not be efficient, or might be even
+infeasible in some cases due to bandwidth constraints. On the other
+hand, as time-sensitive and location-aware applications emerge
+(such as patient monitoring, real-time manufacturing, self-driving
+cars, flocks of drones, or cognitive assistance), the distant cloud
+will not be able to satisfy the ultra-low latency requirements of
+these applications, provide location-aware services, or scale to the
+magnitude of the data that these applications produce [5]. Moreover,
+in some applications, sending the data to the cloud may not be a
+feasible solution due to privacy concerns.
+
+List of conferences, journals, and magazines that publish state-of-the-art research papers on fog computing and its related edge computing paradigms: https://anrlutdallas.github.io/resource/projects/fog-computing-conferences.html
+
+The data (categories and features/objectives of the papers) of this survey are available in the form of several datasets at 
+https://github.com/ashkan-software/fog-survey-data
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+2 - CONCEITOS - ver figura 4, 6 e 7, tabela 2 e 3
+
+- Cloud computing
+O National Institute of Standards and Technology (NIST) define cloud computing como um modelo que promove o acesso omnipresente e on-demand network a recursos computacionais. Cloud data centers são grandes pools de recursos virtuais que são utilizados num pay-as-you-go cost model. Oferece IaaS, PaaS e SaaS (figura 2). Os recursos são disponibilizados e cobrados on-demand visto que é difícil de prever, sendo normalmente sobredimensionado ou subdimensionado (figura 3). 
+Existem 4 tipos de clouds: private, community, public e hybrid. Cloud computing tem os problema de latência, largura de banda, privacidade e falta de dispersão geográfica. Para resolver estes problemas é introduzido o paradigma de fog computing.
+
+- Fog computing - ver figura 5
+Fog computing preenche a lacuna entre cloud e end devices (e.g., IoT nodes) permitindo processamento, armazenamento, rede e gestão de dados em nós de rede próximos. Os serviços mensionados são então realizados não só na cloud mas também pelos dispositivos desde o end device até à cloud, com preferência pelos nós mais próximos. Fog computing é definido pelo OpenFog Consortium [6] como "a horizontal system-level architecture that distributes computing, storage, control and networking functions closer to the users along a cloud-to-thing continuum". A natureza descentralizada de fog computing permite que um dispositivo atue como um fog node (server) ou use fog resources (cliente). Comparatiamente à cloud, fog computing oferece capacidade de processamento moderada e com baixos consumos. Clouds usam grandes datacenters. Fog utiliza pequenos servers, routers, switches, gateways, set-top boxes ou access points (AP). Fog ocupa menos espaço (menos hardware) e assim pode estar mais proximo dos end devices. É acedido através de dispositivos ligados desde a edge network até a network core. Cloud computing é apenas acedível apartir da network core. O acesso à internet continuo não é necessário para serviços fog-based, isto é, eles funcionam normalmente e mandam os updates para a cloud quando existe conexão. Cloud computing requer uma conexão continua quando o serviço está a correr. Tem vantagens em termos de energy, manufacturing, transportation, healthcare, smart cities, entre outros. Existem diferenças claras entre fog e cloud, no entanto, estes complementam-se e um não consegue substituir a necessidade do outro. Juntando os dois, os serviços que os dispositivos ligados utilizam são ainda mais otimizados. [fog RAN?? - paper 27]
+
+- Mobile computing
+O avanço em fog e cloud computing é influenciado pelo desenvlvimento de mobile computing. Mobile/nomadic computing acontece quando o processamento é feito por mobile devices (laptops, tablets, or mobile phones). Tem como objetivo a adaptação em ambientes de pouco poder de processamento e conexão esparça ou intermitente. Devido aos requisitos envolvidos de conexão de dispositivos do utilizador, mobile computing sozinho não é apropriado para computing. Com fog e cloud computing, a computação já não está limitada a uma rede local, expandindo assim o alcance de mobile computing. O único hardware necessário são os dispositivos móveis, que podem utilizar conexões via Bluetooth, WiFi, ZigBee etc. No caso de fog e cloud são necessários recursos de hardware mais avançados com capacidades de virtualização. A segurança em mobile computing é obrigatoriamente garantida no dispositivo móvel. Os dispositivos têm recursos mais restritos que em fog e cloud, no entanto nos últimos anos tem existido grande evolução neste sentido. Tem a grande vantagem da sua arquitetura distribuída visto que não é necessário uma localização central de operação. Tem as desvantagens de poucos recursos, balanceamento entre autonomia e interdependência (dependência de outros dispositivos móveis - que prevalece em todas as arquiteturas distribuídas), latência na comunicação e a necessidade de clientes móveis. Isto leva a que mobile computing seja inviável para aplicações atuais que requerem low-latency e robustez, ou que necessitem que grandes quantidades de dados sejam gerados, processados e armazenados.
+
+- Mobile Cloud Computing
+Cloud computing tornou-se um complemento valioso para mobile computing, onde esta combinação resultou em mobile cloud computing (MCC). MCC é definido como uma infra-estrutura onde o processamento e armazenamento ocorrem fora do dispositivo móvel. Aplicações móveis podem ser repartidas em runtime para que as partes computacionalmente mais intensas sejam tratadas por offloading adaptativo do dispositivo móvel para a cloud, diminuindo o consumo de bateria. Comparativamente a mobile computing, os serviços cloud-based em MCC são consideravelmente maiores. A computação pode também ser realizada no próprio dispositivo. Ao nível de segurança, deve ser implementada no dispositivo e na cloud. Desvantagens: Enquanto que uma arquitetura centralizada em MCC é melhor para partilha de pool de recursos computacionais, esta pode não ser adequado para aplicações onde os dispositivos são omnipresentes (pervasive). Como cloud computing e MCC requerem cloud-based services, e o seu acesso é feito pela rede core por WAN, as aplicações requerem ligação à internet todo o tempo. Offloading da computação para a cloud, causa latência relativamente alta para aplicações delay-sensitive.
+
+- Mobile ad hoc Cloud Computing
+Apesar da natureza difundida do MCC, este paradigma de computação nem sempre é adequado para cenários em que há falta de infra-estrutura ou de uma cloud centralizada. Uma rede móvel ad hoc consiste em nós que formam uma rede dinâmica e temporária por meio de protocolos de roteamento e transporte. Dispositivos móveis Ad hoc podem formar clouds que podem ser utilizadas para rede, armazenamento e computação. Inclui casos de uso como desastres naturais, streaming de vídeo ao vivo em grupo e sistemas de veículos não tripulados.
+
+- Edge Computing
+Tal como MCC, edge computing melhora a gestão, armazenamento e a capacidade de processamento dos dados gerados pelos dispositivos conectados. Ao contrário de MCC, edge computing está localizado na edge da rede, perto dos dispositivos IoT (edge não está localizado nos dispositivos IoT, mas está tão próximo como um hop para eles; se estiver na rede local pode estar a mais do que um hop). Edge computing é definida como a computação feita na edge da rede por pequenos data centers que estão próximos dos end users. Alguns problemas que a edge computing lida bem são a privacidade, latência (se tiver poder computacional suficiente; latência = latência envio + latência de processamento + latência de receção) e conectividade. Service availability é também maior porque não tem de esperar por uma plataforma centralizada para fornecer um serviço, nem são dispositivos conectados limitados por recursos limitados como mobile computing. EC e FG movem a computação e armazenamento para a edge da rede perto dos end users, no entanto estes paradigmas são bem distintos. Fog é hierárquico e fornece computação, rede, armazenamento, controlo e aceleração em qualquer lado desde a cloud aos end devices (things). Edge computing está limitado à computação na edge. Neste contexto, edge refere-se à rede local onde os dispositivos IoT estão. Podem ser utilizados, por exemplo, WiFi access points ou gateways. General Electric diz que fog computing se foca nas interações entre edge devices (e.g., RANs, base stations, or edge routers), enquanto edge computing se foca nas tecnologias ligadas as things (e.g., WiFi access points).
+
+- Multi-access Edge Computing
+Analogamente, mobile cloud computing é uma extensão de mobile computing por cloud computing e multi-access edge computing (MEC) é uma extensão de mobile computing através de edge computing. ETSI define que MAC é uma plataforma que fornece capacidades de IT e cloud-computing dentro de Access Network (RAN) em 4G e 5G, na proximidade dos mobile subscribers. MEC extende edge computing fornecendo computação e armazenamento aos dispositivos. MAC permite aos RAN operators adicionar funcionalidades de edge computing às base stations. Similarmente a edge computing, small-scale data centers com capacidades de virtualização podem ser usadas em MEC. Comparativamente a cloud computing, o hardware utilizado em MEC e edge computing é de nível moderado. Aplicações de low-latency podem ser suportadas em MEC. Estas podem benificiar de real-time radio e da informação de rede. Tal como edge computing, MEC pode operar com pouca ou nenhuma Internet. MEC utiliza WAN, WiFi, e cellular connections enquanto edge computing usa qualquer forma de ligação (e.g., LAN, WiFi, cellular). MCC foca-se na relação entre cloud service users (em mobile devices) e cloud service providers, enquanto MEC foca-se em (RAN-based) network infrastructure providers. MEC permite que edge computing seja acedível por um grande número de dispositivos móveis com latência reduzida e redes móveis core eficientes. MEC permiter aplicações críticas delay-sensitive sobre a rede móvel. Incorpora também a utilização de SDN que permite virtual networking devices para serem facilmente geridos por software APIs e network function virtualization (NFV) que permite tempos de implementação reduzidos para serviços de rede através de infra-estruturas virtualizadas.
+
+- Cloudlet Computing
+Cloudlet computing é outra direção na computação móvel que compartilha muitas características com MCC e MEC. Cloudlet é um computador ou cluster de computadores com forte ligação à internet que é utilizada por dispostitos móveis próximos. Cloudlets são pequenos data centers (miniature clouds), que está tipicamente a um hop de distância dos dispositivos móveis. A ideia é transferir a computação dos dispositivos móveis para VM-based cloudlets localizadas na edge. Cloudlet é a tier do meio numa arquitetura 3-tier: mobile-devicecloudlet-cloud. O pequeno footprint de hardware das cloudlets resulta em recursos computacionais moderados mas com baixa latência e baixo consumo energético comparado com cloud computing. Cloudlet necessita de uma infra-estrutura com virtualização em forma de virtual machine (VM), tem suporte para mobilidade e support para real-time IoT applications. Cloudlets suporta serviços locais para clientes móveis dividindo tasks pelos cloudlet nodes próximos do dispositivo móvel. Fog computing oferece uma alternativa mais genérica que nativamente suporta grandes quantidades de tráfego e permite que os recursos estejam em qualquer lado entre a cloud e as things. O conceito de mobile cloudlets é similar a cloudlets em que as cloudlets são um grupo de dispositivos móveis próximos que estão conectados sem fios (e.g., using WiFi or Bluetooth). Em mobile cloudlets, os dispositivos móveis podem ser tanto providers como clients de um serviço computacional.
+
+- Mist Computing
+Recentemente foi introduzido para capturar uma edge mais exterma - os endpoints - dos dispositivos conectados. Este paradigma descreve uma computação dispersa na extreme edge (os próprios dispositivos IoT) e foi proposto com futuros sistemas auto-conscientes e autónomos em mente. Pode ser visto como o primeiro ponto de computação na 3-tier IoT-fog-cloud. Mist computing extende computação, armazenamento e rede pelo fog através das things. Mist computing é um superset de MACC visto que em mist, a rede pode não ser necessariamente ad hoc e os dispositivos podem não ser móveis.
+
+- Other Similar Computing Paradigms
+	- Micro Data Center (MDC)
+	Cloudlet são por vezes referidas como MDC. um MDC pode ser um edge node ou uma cloudlet que é implementada entre os dispositivos IoT e a cloud.
+
+	- Cloud of Things (CoT)
+	Parecido a mist computing, no entanto em mist a computação é feita nos dispositivos IoT e não necessariamente numa cloud de pooled resources. Em CoT, a computação é feira sobre a cloud que é formada por pooled resources de IoT devices.
+
+	- Edge Cloud
+	Quando falamos de cloud computing, falamos de "core" ou "distant" clouds que estão distantes do end users que são responsáveis pela computação "pesada". Ao contrário, "edge" clouds são mais pequenas e estão mais próximas. Edge cloud é parecido a edge computing. Edge cloud extende capacidades da cloud na edge aproveitando os compute nodes (user ou operator-contributed) na edge da rede. À semelhança do fog, em edge clouds a habilidade de correr uma aplicação numa forma coordenada tanto na edge com na distante cloud é previsto. Edge clouds são nós na edge como  micro data centers, cloudlets, e MEC.
+
+- Offline vs. Online
+A maioria dos papers fala de scheduling, dispatching, offloading, e load balancing de forma "centralizada" (referida como offline). Nesta configuração, toda a informação das tasks, rede e nós são conhecidas. A entidade centralizada é responsável por decidir para onde a task pode ser enviada. Mesmo que haja grande investigação nesta área, uma configuração mais desafiante é a versão "distribuída" do problema (referido como online) onde não existe uma entidade central, não existe informação total sobre tasks, rede ou sobre os nós. Neste caso, a informação de cada job é desconhecida antes do seu lançamento.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+3 - PAPERS - MOBILIDADE
+
+-----------------------------------------------------------------------------------
+[27]
+
+Mugen Peng, Shi Yan, Kecheng Zhang, and Chonggang Wang. Fog-computingbased
+radio access networks: issues and challenges. IEEE Network, 30(4):46–53, 2016.
+
+In C-RAN a large number of low-cost Remote Radio Heads (RRHs)
+are randomly deployed and connected to the Base Band Unit (BBU)
+pool through the front-haul links. Both F-RAN and C-RAN are
+suited for mobile networks with base stations and are candidates
+for 5G deployments. Also, the use of F-RAN and C-RAN brings a
+more energy efficient form of network operation. We encourage
+the motivated reader to refer to reference [27] for more information
+about F-RAN.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[54] [VER ESTE PAPER]
+
+Yong Cui, Jian Song, Kui Ren, Minming Li, Zongpeng Li, Qingmei Ren, and
+Yangjun Zhang. Software defined cooperative offloading for mobile cloudlets.
+IEEE/ACM Transactions on Networking, 25(3):1746–1760, 2017.
+
+The concept of mobile cloudlets is similar to cloudlets, in which the
+cloudlets are a group of nearby mobile devices that are connected
+wirelessly, e.g., using WiFi or Bluetooth [54]. In mobile cloudlets,
+mobile devices can be providers as well as clients of computing service.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[97]
+
+Marcelo Yannuzzi, R Milito, René Serral-Gracià, D Montero, and Mario Nemirovsky.
+Key ingredients in an iot recipe: Fog computing, cloud computing,
+and more fog computing. In Computer Aided Modeling and Design of Communication
+Links and Networks (CAMAD), 2014 IEEE 19th International Workshop on,
+pages 325–329. IEEE, 2014.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[112]
+
+Ivan Farris, Roberto Girau, Leonardo Militano, Michele Nitti, Luigi Atzori, Antonio
+Iera, and Giacomo Morabito. Social virtual objects in the edge cloud. IEEE
+Cloud Computing, 2(6):20–28, 2015.
+
+Desc: ??
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[116]
+
+Yotam Harchol, Aisha Mushtaq, James McCauley, Aurojit Panda, and Scott
+Shenker. Cessna: Resilient edge-computing. In Proceedings of the 2018 Workshop
+on Mobile Edge Communications, pages 1–6. ACM, 2018.
+
+Desc: Researchers of UC Berkeley recently
+have proposed a resilient edge computing framework [116], which
+is a good starting point in the direction of resilient fog system
+design.
+-----------------------------------------------------------------------------------
+
+----
+
+[123] Sherif Abdelwahab, Sophia Zhang, Ashley Greenacre, Kai Ovesen, Kevin
+Bergman, and Bechir Hamdaoui. When clones flock near the fog. IEEE Internet
+of Things Journal, 2018.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[130]
+
+Kai Liang, Liqiang Zhao, Xiaoli Chu, and Hsiao-Hwa Chen. An integrated
+architecture for software defined and virtualized radio access networks with
+fog computing. IEEE Network, 31(1):80–87, 2017.
+
+Fog networks can be implemented by SDN and virtualization to
+reduce the management costs, and to improve the scalability and
+resource utilization. The authors in [130] propose an integrated
+network architecture for software-defined and virtualized radio
+access networks with fog computing. The proposed architecture
+is hierarchical and has two control levels: the higher level that is
+the SDN controller and the lower layer that is the local controller,
+which could be collocated with fog nodes. The SDN controller
+instructs the local controllers how to process specific applications
+or requests. The authors further introduce a SaaS called OpenPine
+that enables virtualization at the network level and user control of
+network operation.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[143]
+
+Jianhua Li, Jiong Jin, Dong Yuan, and Hongke Zhang. Virtual fog: A virtualization
+enabled fog computing framework for internet of things. IEEE Internet of
+Things Journal, 5(1):121–131, 2018.
+
+4.3.5 ICN-based Fog Architecture. The study in [143] brings together
+fog computing and information-centric networking (ICN),
+which enables flexible and efficient data distribution at the network
+layer. In the introduced ICN-Fog architecture, at the lowest layer
+are heterogeneous end devices that connect to fog nodes, which
+run ICN-specific protocols to communicate with other fog nodes.
+Apart from connecting to other fog nodes, each fog node is also
+connected to the cloud. The authors note that ICN-Fog relies on
+the principles of ICN for building smart, horizontal fog-to-fog data
+communication that leads to reducing the application’s dependency
+on the cloud and distributed processing in the fog.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[145]
+
+Wenyu Zhang, Zhenjiang Zhang, and Han-Chieh Chao. Cooperative fog computing
+for dealing with big data in the internet of vehicles: Architecture and
+hierarchical resource management. IEEE Communications Magazine, 55(12):
+60–67, 2017.
+
+The paper [145] introduces
+the challenges of handling big data in the IoV environments. The
+authors emphasize on the role of fog servers and describe a regional
+cooperative fog computing (CFC) architecture to support IoV
+applications. The proposed CFC-IoV architecture consists of two
+layers - the fog layer and edge layer. The fog layer is a federation
+of geographically distributed fog servers, a coordinator server, and
+the cloud servers, whereas the edge layer includes the vehicular ad
+hoc network (VANET), IoT applications, and mobile cellular networks.
+
+A research direction is to develop quick or stateless
+handshake and authentication protocols for high-speed users
+and automotive communication. Note that there have been already
+some early efforts in this field, such as the articles [100, 145, 172];
+nevertheless, we are still far from having a working and resilient
+communication protocol for high-speed users and automotive communication
+for fog computing. One can use machine-learning-based
+mobility prediction algorithms in the design of the handshake and
+authentication protocols, to predict the location of the high-speed
+users and analyze their mobility patterns for fog computing.
+In addition to handshake and authentication protocols for highspeed
+users, fog service provisioning for IoT applications is required
+to be dynamic and proactive due to the rapid changes (such as
+connectivity, bandwidth fluctuations, or failure) in mobile and highspeed
+IoT environments. To address dynamic and proactive fog
+service provisioning, predicting the behavior and location of IoT
+devices and high-speed users based on historical data or machine
+learning methods is another potential solution that requires further
+investigation.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[146]
+
+H. Zhang, Y. Qiu, X. Chu, K. Long, and V. C. M. Leung. Fog radio access networks:
+Mobility management, interference mitigation, and resource optimization. IEEE
+Wireless Communications, 24(6):120–127, Dec 2017.
+
+Similarly, [146]
+focuses on interference mitigation, resource optimization, and mobility
+management in F-RAN. The authors first present the system
+architecture that illustrates how the various components in F-RAN,
+such as macro RRHs (MRRHs), small RRHs (SRRHs), fog computing
+access points (F-APs), and smart user equipment (F-UE), work
+together for the successful implementation of F-RAN. The MRRHs,
+SRRHs and the F-APs connect to the BBU pool which supports
+resource optimization and provides centralized storage and communications
+in F-RAN.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[149]
+
+Quan Yuan, Haibo Zhou, Jinglin Li, Zhihan Liu, Fangchun Yang, and
+Xuemin Sherman Shen. Toward efficient content delivery for automated driving
+services: An edge computing solution. IEEE Network, 32(1):80–86, 2018.
+
+Another study
+on cache placement is discussed in [149], where cache placement
+is done via the MEC paradigm in wireless networks to satisfy the
+demands of automated driving services. The service requests submitted
+by autonomous vehicles are first processed by the edge
+server to determine if they can be processed locally or need to be
+handed to the remote cloud.
+-----------------------------------------------------------------------------------
+
+----
+
+[152] Cesar A Garcia-Perez and Pedro Merino. Enabling low latency services on lte
+networks. In Foundations and Applications of Self* Systems, IEEE International
+Workshops on, pages 248–255. IEEE, 2016.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[160]
+
+J. He, J. Wei, K. Chen, Z. Tang, Y. Zhou, and Y. Zhang. Multitier fog computing
+with large-scale iot data analytics for smart cities. IEEE Internet of Things Journal,
+5(2):677–686, April 2018.
+
+Desc: 5.0.5 Mobile Fog Computing. Most of the existing literature assumes
+that the fog nodes are fixed, or only considers the mobility
+of IoT devices (e.g., [146, 291]). Less attention has been paid to mobile
+fog computing and how the mobile fog nodes can improve the
+QoS, cost, and energy consumption. When fog nodes are mobile,
+fog resource availability, resource discovery, task offloading, and
+resources provisioning will be more challenging. Mobile fog computing,
+where fog nodes can move and form new networks, is an
+interesting and challenging research direction. Moreover, designing
+a scheme for management or federation of mobile fog nodes is
+another possible direction. Along with mobile fog computing, there
+needs to exist new provisioning methods for mobile fog services,
+such that fog services are available for IoT nodes and users. Similarly,
+one could design a task offloading and scheduling scheme
+when fog nodes are mobile. An early effort for mobile fog nodes
+can be found in [160].
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[172]
+Xueshi Hou, Yong Li, Min Chen, DiWu, Depeng Jin, and Sheng Chen. Vehicular
+fog computing: A viewpoint of vehicles as the infrastructures. IEEE Transactions
+on Vehicular Technology, 65(6):3860–3873, 2016.
+
+4.4.1 Vehicular Fog Computing. The authors in [172, 176] proposed
+the idea of vehicular fog computing (VFC) by utilizing vehicles
+as the infrastructures for communication and computation. VFC
+takes advantage of a dynamic group of vehicles to help increase
+computational power and decrease latency issues. Different from
+the vehicular cloud computing, the proposed VFC supports geodistribution,
+local decision making, and real-time load-balancing.
+Moreover, VFC depends on the collaboration of near-located vehicles,
+instead of relying on the remote servers, which reduces the
+deployment costs and delay.
+
+5.0.9 Support of High-speed Users. Current communication protocols
+that are proposed for fog computing environments do not support
+high-speed users, such as users in cars, users on trains, and vehicular
+computing. A research direction is to develop quick or stateless
+handshake and authentication protocols for high-speed users
+and automotive communication. Note that there have been already
+some early efforts in this field, such as the articles [100, 145, 172];
+nevertheless, we are still far from having a working and resilient
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[175]
+
+I Farris, A Orsino, L Militano, Michele Nitti, Giuseppe Araniti, Luigi Atzori, and
+Antonio Iera. Federations of connected things for delay-sensitive iot services in
+5g environments. In Communications (ICC), 2017 IEEE International Conference
+on, pages 1–6. IEEE, 2017.
+
+The study in [175] looks at the latency issues that may be experienced
+by delay-sensitive IoT applications due to the geographical
+distances between the physical IoT devices and the data centers.
+The authors consider the mobile IoT federation as a service (MIFaaS)
+paradigm that leverages the pool of devices managed by individual
+cloud providers as a whole in order to help support delay-sensitive
+applications. The network model considered is a cellular IoT environment
+with multiple LTE femtocells as the network edge nodes
+that supports the MIFaaS paradigm.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[177]
+
+Ming Tao, Kaoru Ota, and Mianxiong Dong. Foud: integrating fog and cloud
+for 5g-enabled v2g networks. IEEE Network, 31(2):8–13, 2017.
+
+The study in [177] argues that cloud and fog computing using
+the current mobile networks may not be ideally suited to provide
+the desired levels of QoS for moving electric vehicles in vehicle-togrid
+(V2G) services. They propose a hybrid computing model called
+“Foud,” in which the cloud and fog come together and are made
+available to the V2G systems. In the proposed model, the cloud
+allows virtualized computing, storage, and network resources to be
+available to the V2G system entities, whereas the fog temporarily
+integrates the stationary and mobile computing resources located
+at the edge of V2G networks to expand the computing capacity.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[183]
+
+Florian Hagenauer, Christoph Sommer, Takamasa Higuchi, Onur Altintas, and
+Falko Dressler. Vehicular micro clouds as virtual edge servers for efficient
+data collection. In 23rd ACM International Conference on Mobile Computing
+and Networking (MobiCom 2017), 2nd ACM International Workshop on Smart,
+Autonomous, and Connected Vehicular Systems and Services (CarSys 2017), 2017.
+
+Similar to VFC, unmanned aerial vehicles (UAVs) have been
+considered as means to provide computing capabilities [186]. In this
+model, UAVs act as fog nodes and provide computing capabilities
+with enhanced coverage for IoT nodes. Similarly, the concept of
+vehicular micro clouds based on map information is introduced,
+and, by a simulation study, investigated in [183]. Vehicular micro
+clouds are virtual edge servers and are essentially clusters of cars
+that help to aggregate and preprocess data that is transferred to the
+cloud.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[185]
+
+Paolo Bellavista, Stefano Chessa, Luca Foschini, Leo Gioia, and Michele Girolami.
+Human-enabled edge computing: Exploiting the crowd as a dynamic extension
+of mobile edge computing. IEEE Communications Magazine, 56(1):145–155, 2018.
+
+The authors in [185] propose human-driven edge
+computing (HEC) as a new model to ease the provisioning and to
+extend the coverage of traditional fixed MEC solutions by utilizing
+devices that humans carry.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[186]
+
+Seongah Jeong, Osvaldo Simeone, and Joonhyuk Kang. Mobile edge computing
+via a uav-mounted cloudlet: Optimization of bit allocation and path planning.
+IEEE Transactions on Vehicular Technology, 67(3):2049–2063, 2018.
+
+Similar to VFC, unmanned aerial vehicles (UAVs) have been
+considered as means to provide computing capabilities [186]. In this
+model, UAVs act as fog nodes and provide computing capabilities
+with enhanced coverage for IoT nodes.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[197]
+
+Enrique Saurez, Kirak Hong, Dave Lillethun, Umakishore Ramachandran, and
+Beate Ottenwälder. Incremental deployment and migration of geo-distributed
+situation awareness applications in the fog. In Proceedings of the 10th ACM
+International Conference on Distributed and Event-based Systems, pages 258–269.
+ACM, 2016.
+
+Saurez et al. propose Foglets, a programming model that facilitates
+distributed programming across fog nodes [197]. Foglets
+provides APIs for spatio-temporal data abstraction for storing and
+retrieving application-generated data on the local nodes. Through
+the Foglets API, Foglets processes are set for a certain geospatial
+region and Foglets manages the application components on the Fog
+nodes. Foglets is implemented through container-based visualization.
+The Foglets API takes into account QoS and load balancing
+when migrating persistent (stateful) data between fog nodes.
+-----------------------------------------------------------------------------------
+
+----
+
+[201] Nam Ky Giang, Michael Blackstock, Rodger Lea, and Victor CM Leung. Developing
+iot applications in the fog: a distributed dataflow approach. In Internet
+of Things (IOT), 2015 5th International Conference on the, pages 155–162. IEEE,
+2015.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[205]
+
+Taeyeol Jeong, Jaeyoon Chung, James Won-Ki Hong, and Sangtae Ha. Towards
+a distributed computing framework for fog. In Fog World Congress (FWC), 2017
+IEEE, pages 1–6. IEEE, 2017.
+
+Crystal [205] provides an abstraction for fault-tolerant and distributed 
+fog application development. A fog application using Crystal can take full 
+advantage of location transparency, self-healing, auto-scaling, and mobility
+support.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[210]
+
+Qiang Fan and Nirwan Ansari. Cost aware cloudlet placement for big data processing
+at the edge. In Communications (ICC), 2017 IEEE International Conference
+on, pages 1–6. IEEE, 2017.
+
+Fan et al. address the problem of placing the cloudlets to minimize
+the deployment cost of cloudlet providers and to minimize the endto-
+end delay of user requests [210]. Since the total deployment cost
+of a cloudlet provider depends on the location of cloudlets and the
+amount of resources for cloudlets, cloudlet providers must take
+into account both the end-to-end delay of user requests and the
+deployment cost.
+-----------------------------------------------------------------------------------
+
+----
+
+[217] Alberto Ceselli, Marco Premoli, and Stefano Secci. Mobile edge cloud network
+design optimization. IEEE/ACM Transactions on Networking, 25(3):1818–1831,
+2017.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[226]
+
+Chanh Nguyen Le Tan, Cristian Klein, and Erik Elmroth. Location-aware load
+prediction in edge data centers. In Fog and Mobile Edge Computing (FMEC), 2017
+Second International Conference on, pages 25–31. IEEE, 2017.
+
+In [226], a location-aware load prediction
+for edge data centers is proposed. For each edge data center, the
+load is predicted using its historical load time series and those of
+its neighboring data centers.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[231]
+
+Rahul Urgaonkar, Shiqiang Wang, Ting He, Murtaza Zafer, Kevin Chan, and
+Kin K Leung. Dynamic service migration and workload scheduling in edgeclouds.
+Performance Evaluation, 91:205–228, 2015.
+
+Desc: The problem of task scheduling and dispatching in edge clouds has been
+studied extensively by several researchers in the area.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[232]
+
+Wuyang Zhang, Yi Hu, Yanyong Zhang, and Dipankar Raychaudhuri. Segue:
+Quality of service aware edge cloud service migration. In Cloud Computing
+Technology and Science (CloudCom), 2016 IEEE International Conference on, pages
+344–351. IEEE, 2016.
+
+4.8.2 Service Migration. The authors of [232] study the service migration
+problem in edge clouds, in response to user movement and
+network performance. The solution is based on based on Markov
+Decision Process (MDP) that considers network state and server
+response time in making migration decisions.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[234]
+
+Ivan Farris, Tarik Taleb, Miloud Bagaa, and Hannu Flick. Optimizing service
+replication for mobile delay-sensitive applications in 5g edge network. In
+Communications (ICC), 2017 IEEE International Conference on, pages 1–6. IEEE,
+2017.
+
+Farris et al. define two integer linear programming (ILP) optimization
+schemes to minimize QoE degradation and cost of replica
+deployment in service replication for MEC [234]. They distinguish
+classic reactive service migration from proactive migration: reactive
+service migration is dependent on user movement and accommodates
+this movement by locating the most suitable target edge and
+then starting the process for migration; however, proactive service
+migration deploys multiple replicas of the user service to neighboring
+nodes. As a future direction, one could study path-oriented
+proactive migration and trade-offs between the probability of reactive
+migration and the cost of service replications.
+-----------------------------------------------------------------------------------
+
+----
+
+[237] Beate Ottenwälder, Boris Koldehofe, Kurt Rothermel, and Umakishore Ramachandran.
+Migcep: operator migration for mobility driven distributed complex
+event processing. In Proceedings of the 7th ACM international conference on
+Distributed event-based systems, pages 183–194. ACM, 2013.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[238]
+
+Nam Ky Giang, Michael Blackstock, Rodger Lea, and Victor CM Leung. Developing
+iot applications in the fog: a distributed dataflow approach. In Internet
+of Things (IOT), 2015 5th International Conference on the, pages 155–162. IEEE,
+2015.
+
+Desc: 4.10.2 Virtualization for Control and Monitoring. Some studies
+suggest bringing virtualization of network services to the edge
+devices. The authors in [238] argue that the heavy footprint of
+today’s virtualization platforms is responsible for preventing them
+from being utilized at the network edge. They present Glasgow Network
+Functions (GNF), a container-based NFV platform that runs
+and orchestrates lightweight VNFs. They show that the presented
+framework has low VNF instantiation time and memory requirements
+as compared with other existing virtualization technologies,
+making it suited to run on a variety of edge devices.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[243]
+
+Wei Bao, Dong Yuan, Zhengjie Yang, Shen Wang, Wei Li, Bing Bing Zhou, and
+Albert Y Zomaya. Follow me fog: Toward seamless handover timing schemes
+in a fog computing environment. IEEE Communications Magazine, 55(11):72–78,
+2017.
+
+The authors in [243] observe
+that traditional mobile network handover mechanisms cannot handle
+the demands of fog computation resources and the low-latency
+requirements of mobile IoT applications. The authors propose Follow
+Me Fog framework to guarantee service continuity and reduce
+latency during handovers. The key idea proposed is to continuously
+monitor the received signal strength of the fog nodes at the mobile
+IoT device, and to trigger pre-migration of computation jobs before
+disconnecting the IoT device from the existing fog node.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[244]
+
+Lele Ma, Shanhe Yi, and Qun Li. Efficient service handoff across edge servers via
+docker container migration. In Proceedings of the Second ACM/IEEE Symposium
+on Edge Computing, page 11. ACM, 2017.
+
+Comparably, the authors in [244] use Docker container migration between
+edge nodes for service handoff.
+-----------------------------------------------------------------------------------
+
+----
+
+[246] Xiang Sun and Nirwan Ansari. Primal: Profit maximization avatar placement
+for mobile edge computing. In Communications (ICC), 2016 IEEE International
+Conference on, pages 1–6. IEEE, 2016.
+
+Desc: ??
+
+----
+
+[247] Wuyang Zhang, Jiachen Chen, Yanyong Zhang, and Dipankar Raychaudhuri.
+Towards efficient edge cloud augmentation for virtual reality mmogs. In Proceedings
+of the Second ACM/IEEE Symposium on Edge Computing, page 8. ACM,
+2017.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[249]
+
+Lucas Chaufournier, Prateek Sharma, Franck Le, Erich Nahum, Prashant Shenoy,
+and Don Towsley. Fast transparent virtual machine migration in distributed edge
+clouds. In Proceedings of the Second ACM/IEEE Symposium on Edge Computing,
+page 10. ACM, 2017.
+
+In [249], it is suggested
+to use multi-path TCP for live migration of VMs across edge
+nodes to improve VM migration time and network transparency of
+applications.
+-----------------------------------------------------------------------------------
+
+----
+
+[253] Seyed Hossein Mortazavi, Bharath Balasubramanian, Eyal de Lara, and Shankaranarayanan
+Puzhavakath Narayanan. Toward session consistency for the edge.
+In USENIX Workshop on Hot Topics in Edge Computing (HotEdge 18), Boston, MA,
+2018. USENIX Association.
+
+Desc: ??
+
+----
+
+[254] Roberto Bruschi, Franco Davoli, Paolo Lago, and Jane Frances Pajo. Move with
+me: Scalably keeping virtual objects close to users on the move. In 2018 IEEE
+International Conference on Communications (ICC), pages 1–6. IEEE, 2018.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[261]
+
+Ya-Ju Yu, Te-Chuan Chiu, Ai-Chun Pang, Ming-Fan Chen, and Jiajia Liu. Virtual
+machine placement for backhaul traffic minimization in fog radio access networks.
+In Communications (ICC), 2017 IEEE International Conference on, pages
+1–7. IEEE, 2017.
+
+Desc: 4.9.2 VM Placement. The paper [261] analyzes the VM placement
+problem in fog radio access networks (F-RANs) with the objective
+to minimize the overall back-haul traffic. The back-haul traffic is
+incurred in two ways: the VM replication and data transmission
+to the cloud. When a user connects to a fog node and requests an
+application service, there is no back-haul bandwidth consumption
+if the fog node has the application VM. Otherwise, the VM has to
+be replicated on the fog node, or the request is forwarded to the
+cloud. They formulate the replica-based VM placement problem by
+considering the computing and storage of fog nodes, the user service
+constraint, as well as the edge bandwidth constraint. Similarly, the
+study [265] addresses the issues of launching VM replicas and
+migrating them for latency-sensitive, computation and memory
+intensive applications in a MEC environment.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[270]
+
+Haolong Xiang, Xiaolong Xu, Haoquan Zheng, Shu Li, Taotao Wu, Wanchun
+Dou, and Shui Yu. An adaptive cloudlet placement method for mobile applications
+over gps big data. In Global Communications Conference (GLOBECOM),
+2016 IEEE, pages 1–6. IEEE, 2016.
+
+Similar to cache
+placement, the cloudlet placement problem is of prominent importance.
+[270] introduces the concept of movable cloudlets and
+explores the problem of how to cost-effectively deploy these movable
+cloudlets to enhance cloud services for dynamic context-aware
+mobile applications. To this end, the authors propose an adaptive
+cloudlet placement method for mobile applications.
+-----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
+[274]
+
+Tayebeh Bahreini and Daniel Grosu. Efficient placement of multi-component
+applications in edge computing systems. In Proceedings of the Second ACM/IEEE
+Symposium on Edge Computing, page 5. ACM, 2017.
+
+Desc: The authors
+in [274] address the problem of multi-component application placement
+on fog nodes. Each application could be modeled as a graph,
+where each node is a component of the application, and the edges
+indicate the communication between them.
+-----------------------------------------------------------------------------------
+
+----
+
+[277] Lin Wang, Lei Jiao, Ting He, Jun Li, and Max Mühlhäuser. Service entity
+placement for social virtual reality applications in edge computing. In INFOCOM
+2018-IEEE Conference on Computer Communications, IEEE, pages 1–9. IEEE, 2018.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[279]
+
+Nguyen B Truong, Gyu Myoung Lee, and Yacine Ghamri-Doudane. Software
+defined networking-based vehicular adhoc network with fog computing. In
+Integrated Network Management (IM), 2015 IFIP/IEEE International Symposium
+on, pages 1202–1207. IEEE, 2015.
+
+4.10.3 Control and Monitoring Other Networks via Fog. Vehicular
+ad hoc networks (VANETs) face many issues such as unreliable
+connectivity, delay constraints, and poor scalability. The authors
+of [279] suggest that using principles of fog computing along with
+SDN could solve many of the current problems with VANETs. In
+their architecture, the vehicles, which act as end-users, are SDN
+wireless nodes. These wireless nodes send their data to Road Side
+Units (RSUs) which are installed alongside road systems. Once
+the data is sent to an RSU, it is then sent to an RSU controller
+(RSUC) which is a cluster of RSUs connected by broadband. The
+RSUC is capable of data storage and processing. Finally, the RSUCs
+communicate with the SDN controller, which has global knowledge
+of the VANET system.
+-----------------------------------------------------------------------------------
+
+----
+
+[284] Thomas Rausch, Stefan Nastic, and Schahram Dustdar. Emma: Distributed qosaware
+mqtt middleware for edge computing applications. In Cloud Engineering
+(IC2E), 2018 IEEE International Conference on, pages 191–197. IEEE, 2018.
+
+Desc: ??
+
+----
+
+[285] Yuanguo Bi, Guangjie Han, Chuan Lin, Qingxu Deng, Lei Guo, and Fuliang Li.
+Mobility support for fog computing: An sdn approach. IEEE Communications
+Magazine, 56(5):53–59, 2018.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[291]
+
+Luiz F Bittencourt, Javier Diaz-Montes, Rajkumar Buyya, Omer F Rana, and
+Manish Parashar. Mobility-aware application scheduling in fog computing.
+IEEE Cloud Computing, 4(2):26–35, 2017.
+
+Desc: 5.0.5 Mobile Fog Computing. Most of the existing literature assumes
+that the fog nodes are fixed, or only considers the mobility
+of IoT devices (e.g., [146, 291]). Less attention has been paid to mobile
+fog computing and how the mobile fog nodes can improve the
+QoS, cost, and energy consumption. When fog nodes are mobile,
+fog resource availability, resource discovery, task offloading, and
+resources provisioning will be more challenging. Mobile fog computing,
+where fog nodes can move and form new networks, is an
+interesting and challenging research direction. Moreover, designing
+a scheme for management or federation of mobile fog nodes is
+another possible direction. Along with mobile fog computing, there
+needs to exist new provisioning methods for mobile fog services,
+such that fog services are available for IoT nodes and users. Similarly,
+one could design a task offloading and scheduling scheme
+when fog nodes are mobile. An early effort for mobile fog nodes
+can be found in [160].
+-----------------------------------------------------------------------------------
+
+----
+
+[300] Yuxuan Sun, Sheng Zhou, and Jie Xu. Emm: Energy-aware mobility management
+for mobile edge computing in ultra dense networks. IEEE Journal on Selected
+Areas in Communications, 35(11):2637–2646, 2017.
+
+Desc: ??
+
+----
+
+-----------------------------------------------------------------------------------
+[322]
+
+Junguk Cho, Karthikeyan Sundaresan, Rajesh Mahindra, Jacobus Van der Merwe,
+and Sampath Rangarajan. Acacia: context-aware edge computing for continuous
+interactive applications over mobile networks. In Proceedings of the 12th International
+on Conference on emerging Networking EXperiments and Technologies,
+pages 375–389. ACM, 2016.
+
+ACACIA [322] uses context awareness and employs LTE-direct
+for service discovery, which is a proximity service discovery technique
+using D2D communication in IoT.
+-----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+[325]
+
+Julien Gedeon, Christian Meurisch, Disha Bhat, Michael Stein, Lin Wang, and
+Max Mühlhäuser. Router-based brokering for surrogate discovery in edge
+computing. In Distributed Computing Systems Workshops (ICDCSW), 2017 IEEE
+37th International Conference on, pages 145–150. IEEE, 2017.
+
+4.12.2 Fog Resource Discovery and Selection. The paper [325] examines
+the problem of discovering surrogates, which are micro-clouds,
+fog nodes, or cloudlets, used by client devices to offload computation
+tasks in a fog computing environment. In order to enable
+the discovery and selection of available surrogates, the authors
+propose a brokering mechanism in which available surrogates advertise
+themselves to the broker. The broker receives client requests
+and considers a number of attributes such as network information,
+hardware capabilities, and distance to find the best available
+surrogate for the client. The proposed mechanism is implemented
+on off-the-shelf home routers.
+----------------------------------------------------------------------------------
+
+----
+
+[328] Kazuya Okada, Shigeru Kashihara, Nao Kawanishi, Nobuo Suzuki, Keizo
+Sugiyama, and Youki Kadobayashi. Goedge: A scalable and stateless local
+breakout method. In Proceedings of the 2018 Workshop on Theory and Practice for
+Integrated Cloud, Fog and Edge Computing Paradigms, pages 29–34. ACM, 2018.
+
+Desc: ??
+
+----
+
+----------------------------------------------------------------------------------
+[354]
+
+Bozhao Qi, Lei Kang, and Suman Banerjee. A vehicle-based edge computing
+platform for transit and human mobility analytics. In Proceedings of the Second
+ACM/IEEE Symposium on Edge Computing, page 1. ACM, 2017.
+
+4.13.3 Data Analytics. Another study to make use of edge computing
+is the work in [354] that introduces a Wi-Fi-based in-bus
+monitoring and tracking system that observes mobile devices and
+provides analytics about people both within and outside the vehicle.
+The system can further use the data that is collected by the
+vehicle-mounted wireless device to track passenger movements,
+detect pedestrian flows, and evaluate how external factors impact
+human mobility, which provides useful analytics to transit operators.
+----------------------------------------------------------------------------------
+
+----
+
+[365] Yue Cao, Houbing Song, Omprakash Kaiwartya, Bingpeng Zhou, Yuan Zhuang,
+Yang Cao, and Xu Zhang. Mobile edge computing for big-data-enabled electric
+vehicle charging. IEEE Communications Magazine, 56(3):150–156, 2018.
+
+Desc: ??
+
+----
+
+[379] Zhuangdi Xu, Harshit Gupta, and Umakishore Ramachandran. Sttr: A system
+for tracking all vehicles all the time at the edge of the network. In Proceedings of
+the 12th ACM International Conference on Distributed and Event-based Systems,
+pages 124–135. ACM, 2018.
+
+Desc: ??
+
+----
+
+----------------------------------------------------------------------------------
+[381]
+
+Dario Bruneo, Salvatore Distefano, Francesco Longo, Giovanni Merlino, Antonio
+Puliafito, Valeria D’Amico, Marco Sapienza, and Giovanni Torrisi. Stack4things
+as a fog computing platform for smart city applications. In Computer Communications
+Workshops (INFOCOM WKSHPS), 2016 IEEE Conference on, pages
+848–853. IEEE, 2016.
+
+Bruneo et al. designed Stack4Things12, a framework based on
+OpenStack IaaS middleware that adopts a cloud-oriented model
+for IoT resource provisioning [381]. Their framework allows injected
+code at runtime through the cloud, which they define as
+"contextualization."
+----------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------
+[385]
+
+Márcio Moraes Lopes, Wilson A Higashino, Miriam AM Capretz, and Luiz Fernando
+Bittencourt. Myifogsim: A simulator for virtual machine migration in
+fog computing. In Companion Proceedings of the10th International Conference
+on Utility and Cloud Computing, pages 47–52. ACM, 2017.
+
+An extension of iFogSim to support mobility through migration of
+VMs between cloudlets is implemented in [385].
+----------------------------------------------------------------------------------
+
+----
+
+[386] Bastien Confais, Adrien Lebre, and Benoît Parrein. An object store service for a
+fog/edge computing infrastructure based on ipfs and a scale-out nas. In Fog and
+Edge Computing (ICFEC), 2017 IEEE 1st International Conference on, pages 41–50.
+IEEE, 2017.
+
+Desc: ??
+
+----
+
+----------------------------------------------------------------------------------
+[388]
+
+Cagatay Sonmez, Atay Ozgovde, and Cem Ersoy. Edgecloudsim: An environment
+for performance evaluation of edge computing systems. In Fog and Mobile Edge
+Computing (FMEC), 2017 Second International Conference on, pages 39–44. IEEE,
+2017.
+
+Similarly, the authors in [388] propose another edge computing
+simulation environment, EdgeCloudSim, that considers both
+network and computational resources and covers all aspects of
+edge computing simulation modeling, including network and computational
+modeling. Similar to iFogSim, EdgeCloudSim relies on
+CloudSim as well. Additionally, EdgeCloudSim provides a modular
+architecture to provide support for a variety of critical functionality
+and supports simulating multi-tier scenarios where multiple
+edge servers are running in coordination with upper layer cloud
+solutions.
+----------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
