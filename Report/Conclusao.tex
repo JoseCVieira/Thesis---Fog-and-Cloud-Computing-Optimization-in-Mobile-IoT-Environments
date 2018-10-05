@@ -1,0 +1,89 @@
+\chapter{Conclusões}
+O presente capítulo aborda todas as conclusões obtidas do funcionamento da U3C, tais como, desempenho dos diversos módulos constituintes, e as futuras melhorias a implementar numa segunda interação do projeto. Neste também são apresentadas as características técnicas finais da unidade central, onde são indicados os limites para os quais a U3C funciona corretamente.
+\section{Desempenho e funcionamento da U3C}
+\subsection{Testes de desempenho da fonte de alimentação}
+A fonte de alimentação da U3C tem de gerar várias tensões fixas e constantes (5 V e 3.3 V) independentemente da corrente instantânea consumida pelos vários circuitos da U3C. Para além disso, a fonte de alimentação da unidade recetora deve suportar variações bruscas de corrente, cujos máximos podem ser significativamente elevados devido ao funcionamento do módulo GSM. Este módulo pode gerar picos de corrente entre 1 a 2 A. \\[6pt]
+A corrente a considerar nos testes de desempenho deve ser por isso igual à soma da corrente de consumo de todos os componentes/módulos da U3C e deve ter um perfil temporal semelhante ao que é gerado pela U3C em funcionamento normal. Assim, os testes de desempenho efetuados utilizaram diversas cargas fixas e variáveis. As cargas variáveis foram implementadas com o auxílio de relés que eram ativados através de sinais digitais com diferentes frequências e \textit{duty cycles} para simular o funcionamento dos diversos módulos internos, nomeadamente dos módulos GSM e RF. Os testes efetuados permitiram otimizar o circuito da fonte de alimentação, tal como já foi referido anteriormente.\\[6pt]
+Um dos testes efetuados à alimentação principal de 5 V utilizou em paralelo uma carga fixa de 6.25 $\Omega$ (corrente de 800 mA) e uma carga variável constituída por uma resistência de 4.2 $\Omega$ em série com um relé, sendo este atuado por uma onda quadrada com frequência de 8 Hz (período de 125 ms) e \textit{duty cycle} próximo de 20\% (25 ms). Assim, a corrente exigida pela carga à fonte varia entre os 800 mA e os 2 A. Os resultados obtidos estão ilustrados na figura \ref{fig:linha5v}. Com se pode observar, existe um pequeno \textit{ripple} de 250 mV na alimentação de 5 V. Verificou-se ainda que quando a carga diminuía (redução da corrente exigida à fonte), a recuperação do valor da tensão para um valor muito perto dos 5 V é bastante rápida.\\[6pt]
+
+Outro dos testes efetuado utilizou também o módulo GSM como carga para que se pudesse verificar se as variações na tensão de alimentação principal de 5 V tinham consequências no desempenho do referido módulo. Nesse teste, para além do módulo GSM, foram adicionadas nas alimentações de 5 V, 3.3 V e na dos 5 V isolados cargas correspondentes a correntes de 650 mA, 247 mA e 90 mA, respetivamente. Desta forma, a fonte de alimentação foi sujeita a uma carga semelhante à da U3C. Na figura \ref{fig:s1} podem-se ver as várias tensões medidas quando o módulo GSM está em modo de receção e as cargas fixas estão todas presentes. Na figura, o canal 1 é referente à tensão de entrada da fonte, o canal 2 diz respeito à alimentação principal de 5 V, a alimentação de 3.3 V é mostrada no canal 3 e no canal 4 está representada a tensão isolada de 5 V. Como se pode ver, quando a carga não varia todas as alimentações são constantes e têm o valor esperado.\\[6pt]
+Na figura \ref{fig:s2}, são apresentadas as mesmas tensões que na figura \ref{fig:s1}, mas em condições de carga diferentes. Os resultados mostrados são obtidos com as mesmas cargas fixas utilizadas no teste anterior mas agora com o módulo GSM a receber uma chamada telefónica. Tal como referido anteriormente, o módulo GSM tem um consumo elevado durante as chamadas telefónicas. Os picos de corrente (1 a 2 A) verificados devido ao módulo GSM ocorrem com um período próximo de 4.6 ms e têm uma duração aproximada de 577 $\mu$s. Como se pode ver pelos resultados apresentados na figura \ref{fig:s2}, a tensão da entrada (fonte de alimentação DC externa) apresenta variações na ordem dos 400 mV, a alimentação principal de 5 V tem uma variação aproximada de 150 mV, a alimentação de 3.3 V de 20 mV (com picos de 80 mV) e nos 5 V isolados de 500 mV. Pelos dados adquiridos, as variações obtidas não são problemáticas para o correto funcionamento do sistema.\\[6pt]
+A figura \ref{fig:s3} apresenta as tensões, com algum detalhe, em condições de funcionamento normal, isto é, sem a receção de uma chamada, contudo o módulo GSM encontra-se ativo e o módulo RF em modo de receção. Como se pode observar, as variações que se encontravam na figura \ref{fig:s2}, não se verificam com tanta intensidade na figura \ref{fig:s3}.
+Nas figuras \ref{fig:s1}, \ref{fig:s2} e \ref{fig:s3} o canal 1 corresponde a entrada da fonte, o canal 2 à linha de 5 V, o canal 3 à linha de 3.3 V e o canal 4 à linha de 5 V isolados.
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=0cm 0cm 1.7cm 0cm, width=0.45\linewidth]{Figuras/Validacao/linha5v}
+	\caption{Tensão da linha de 5 V.}
+	\label{fig:linha5v}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.63\linewidth]{Figuras/Validacao/s1}
+	\caption{Tensões de saída com cargas fixas (1-entrada da fonte, 2-linha de 5 V, 3-linha de 3.3 V, 4-linha de 5 V isolados).}
+	\label{fig:s1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.63\linewidth]{Figuras/Validacao/s2}
+	\caption{Tensões medidas no processo de receção de uma chamada telefónica.}
+	\label{fig:s2}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.63\linewidth]{Figuras/Validacao/s3}
+	\caption{Tensões medidas no processo de receção de uma chamada telefónica.}
+	\label{fig:s3}
+\end{figure}
+Para além dos testes de carga efetuados à fonte de alimentação, foram também realizados alguns testes de desempenho térmico. Tendo a U3C que funcionar em condições de temperatura ambiente variável, podendo ser por vezes sujeita a amplitudes térmicas elevadas (de baixas a altas temperaturas), houve a necessidade de efetuar alguns testes em laboratório de forma a obter o desempenho térmico da fonte de alimentação, a partir de uma câmara termográfica (figura \ref{fig:med_temperatura}). Para tal, adquiriu-se a temperatura ambiente local e foi medida continuamente a temperatura do circuito integrado da fonte comutada quando este era sujeito a variações de tensão e de carga (corrente exigida). Estes testes foram realizados com o sistema a funcionar normalmente e com a adição de carga adicionais e a uma temperatura ambiente de 27 ºC. Os resultados obtidos estão ilustrados nas figuras \ref{fig:stand}, \ref{fig:chamada} e \ref{fig:carga}. Na figura \ref{fig:stand} os resultados são obtidos com o módulo GSM da U3C em \textit{standby} para 3 tensões de entrada distintas. A corrente indicada é a corrente média exigida pela U3C e gerada pela fonte de alimentação externa.  Na figura \ref{fig:chamada}, os resultados apresentados são referentes ao funcionamento da U3C quando o módulo GSM está a receber uma chamada telefónica. Os resultados apresentados na figura \ref{fig:carga} são obtidos com uma carga adicional (500 mA) ligada à saída da fonte comutada.\\[6pt]
+Pelos resultados apresentados, e apesar dos testes terem sido efetuados com a PCI de teste, não sendo esta a versão final, pode-se observar que a variação de tensão de entrada da fonte faz com que a temperatura do circuito integrado aumente. Apesar das temperaturas registadas não ultrapassarem os valores limites indicados pelo fabricante, na versão final da PCI da U3C o plano de dissipação do circuito integrado foi aumentado consideravelmente e foram também adicionadas vias entres os planos de massa da face superior e inferior por forma a facilitar a dissipação do calor.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=2cm 10cm 3cm 12cm, width=0.7\linewidth]{Figuras/Validacao/t1}
+	\caption{Evolução da temperatura em modo \textit{standby}.}
+	\label{fig:stand}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=2cm 10cm 3cm 12cm, width=0.7\linewidth]{Figuras/Validacao/t2}
+	\caption{Evolução da temperatura em processo de uma chamada telefónica.}
+	\label{fig:chamada}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=2cm 10cm 3cm 12cm, width=0.7\linewidth]{Figuras/Validacao/t3}
+	\caption{Evolução da temperatura em carga.}
+	\label{fig:carga}
+\end{figure}
+
+\subsection{Testes de desempenho da U3C}
+Numa primeira fase o sistema foi separado num sistema com apenas um módulo GSM e outro com apenas o módulo RF. Desta forma, e após os testes de funcionamento de cada um desses módulos (feitos de forma independente), efetuou-se a junção de todos os módulos, incluindo os de comunicação e o da fonte de alimentação. Esta abordagem permitiu verificar a compatibilidade entre os módulos, quer na sua integridade como no \textit{firmware} desenvolvido para cada módulo. O resultado dessa integração foi a obtenção da versão de teste da U3C que está representada na figura \ref{fig:juncaomodulos}.\\[6pt]
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, width=0.5\linewidth]{Figuras/Validacao/temperatura}
+	\caption{Junção dos módulos da unidade central.}
+	\label{fig:med_temperatura}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, width=0.4\linewidth]{Figuras/Validacao/juncaomodulos}
+	\caption{Junção dos módulos da unidade central.}
+	\label{fig:juncaomodulos}
+\end{figure}
+Para garantir um bom plano de massa entre todos os módulos da versão de teste da U3C foi utilizada uma placa em cobre. Na parte superior desta foram posicionados todos os módulos e respetivas interligações, com o cuidado de minimizar o comprimento de todos os condutores de ligação para atenuar, ou mesmo eliminar, os efeitos das interferências eletromagnéticas existente entre os módulos. Isto é particularmente importante para minimizar os efeitos do módulo GSM quando este recebe uma chamada telefónica.\\[6pt]
+Para a avaliação do desempenho global da U3C efetuaram-se diversos testes elétricos e funcionais ou comportamentais, tais como, verificação da integridade dos sinais (alimentações e digitais), análise dos efeitos das interferências, determinação da distância de comunicação máxima entre o comando (unidade transmissora) e a U3C, verificação da atuação através dos comandos e do smartphone, adição de novos comandos e utilizadores, entre outros. Todos os testes efetuados permitiram concluir que a unidade de controlo e comando implementada e a aplicação Android desenvolvida apresentam o funcionamento definido inicialmente. As características técnicas finais da U3C estão indicadas na tabela \ref{fig:tabela_caracteristicas}. Nesta tabela estão definidos os níveis de tensão mínimos e máximos admitidos, o consumo da U3C em \textit{standby} e no máximo funcionamento, os limites de temperatura suportados, e outras características físicas e de funcionamento. 
+
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=3.45cm 8.5cm 3.45cm 8.5cm, width=0.55\linewidth]{Figuras/Validacao/tabela_caracteristicas}
+	\caption{Características técnicas da U3C.}
+	\label{fig:tabela_caracteristicas}
+\end{table}
+
+\section{Trabalho futuro}
+No que diz respeito ao \textit{firmware} foram identificadas algumas melhorias a implementar num futuro desenvolvimento, tais como, a implementação de um histórico de acesso local (útil para empresas), a utilização da encriptação dos rooling codes (melhorando a segurança do sistema), a implementação da comunicação por pacotes via RF (433 MHz) possibilitando a comunicação de dados entre a central e um computador com um módulo adicional. Seria também interessante a realização de uma interface via UART (porta série) com funções relevantes, tais como permitir a configuração da central e obtenção do historial de acessos.\\[6pt]
+Em termos físicos a adição de uma interface de configuração local de forma a permitir uma configuração por parte do instalador na própria central seria uma mais-valia para a U3C. Isso podia ser feito com a adição de um \textit{display} e mais alguns botões de configuração. O desenvolvimento de uma antena integrada para 868 MHz e do respetivo circuito de adaptação, melhorando desta forma o módulo existente, é outra melhoria que podia ser implementada. Este iria aumentar a competitividade da U3C no mercado. Podia também ser feito o estudo mais aprofundado de antenas para este tipo de sistemas, incluindo o estudo dos diagramas de radiação, para a otimização destas.\\[6pt]
+Na aplicação identificaram-se também algumas melhorias que ao serem implementadas permitem facilitar a sua utilização. Assim, devia ser adicionada a possibilidade da aplicação estar noutras línguas, o que facilitaria a globalização do sistema, permitir formatos de ecrãs de diferentes dimensões e, por fim, adicionar outras funcionalidades de possam enriquecer a aplicação. Devia ainda desenvolver-se uma aplicação para dispositivos como sistema operativo IOS.
+

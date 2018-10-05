@@ -1,0 +1,265 @@
+\chapter{Desenvolvimento da unidade central de controlo e comando}
+Este capítulo apresenta e descreve o projeto e  desenvolvimento dos circuito eletrónicos da U3C. Para isso, é considerada a arquitetura da U3C apresentada no capítulo anterior. Para cada módulo constituinte da U3C são apresentados e descritos os respetivos circuitos. Assim, o capítulo inicia como dimensionamento e na escolha dos componentes para cada bloco constituinte da U3C e termina com na junção de todos os módulos desenvolvidos.
+\section{Sistema de processamento e controlo}
+O módulo de processamento e controlo é um dos mais complexos da U3C já que se encontra ligado a todos os outros dispositivos eletrónicos internos e é onde o controlo do funcionamento de todo o sistema é feito. Na figura \ref{fig:arquitetura} pode-se ver a que módulos está ligado e quais os barramentos que tem de disponibilizar.\\ [6pt]
+O circuito integrado (CI) central do módulo de processamento e controlo é o microcontrolador. Os requisitos mínimos necessários para o microcontrolador são: ter pelo menos um bloco físico e um barramento de comunicação \textit{serial peripheral interface} (SPI), dois blocos físicos independentes \textit{universal synchronous teceiver}/\textit{transmitter} (UART), sistema de interrupções externas, memória flash (necessária para guardar todos os dados indispensáveis ao correto funcionamento do sistema), 20 entradas e 23 saídas para o controlo e sinalização. Na figura \ref{fig:diagramamicro} encontra-se representado o diagrama de blocos do sistema de processamento e controlo.
+\subsection{Microcontrolador}
+O microcontrolador escolhido foi o PIC18F66K22 [\ref{picpdf}] da Microchip, que contem 64 pinos num encapsulamento \textit{thin quad flat package} (TQFP). Na figura \ref{fig:pic} é apresentado o seu \textit{pinout}.
+\subsubsection{Interface de ligação do microcontrolador}
+O PIC18F66K22 é composto por 64 pinos, tendo alguns deles uma função específica que não pode ser alterada, tais como, os pinos referentes às comunicações SPI e UART, os osciladores, as alimentações, o \textit{reset}, entre outros. Os restantes pinos são multifuncionais, ou seja, podem operar tanto como entradas ou saídas. Para a U3C, houve contudo o cuidado de reservar os pinos para as interrupções externas. No anexo [\ref{fig:pinout}] é apresentada a tabela de correspondências entre os pinos do microcontrolador e os periféricos.
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=7cm 4.5cm 8cm 5cm, width=0.75\linewidth]{Figuras/Desenvolvimento/diagramamicrocontrolador}
+	\caption{Diagrama de blocos do sistema de controlo e processamento.}
+	\label{fig:diagramamicro}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=3cm 9.8cm 2.4cm 6.3cm, width=0.95\linewidth]{Figuras/Desenvolvimento/pic}
+	\caption{\textit{Pinout} do microcontrolador PIC18F66K22.}
+	\label{fig:pic}
+\end{figure}
+\subsubsection{Pinos de alimentação do microcontrolador}
+O microcontrolador dispõe de diversos pinos de alimentação que estão distribuídos ao longo do circuito integrado. As linhas de alimentação do microcontrolador devem ser desacopladas por condensadores. Estes condensadores devem ser colocados o mais perto possível dos pinos de alimentação do microcontrolador para que a variação da tensão (\textit{ripple}) de alimentação provocada pelas comutações dos circuitos digitais (variações bruscas da corrente de alimentação) do microcontrolador seja minimizada.
+
+\subsubsection{Relógio externo}
+Para que o sistema de controlo e comando funcione convenientemente é necessário utilizar um relógio em tempo real (RTC). A existência deste circuito permite criar calendários e definir restrições temporais para cada utilizador do sistema. Assim, foi adicionado um cristal externo com frequência característica de 32.768 kHz. Através do sinal gerado pelo oscilador da RTC, é possível contar o tempo com uma precisão bastante elevada. O microcontrolador PIC18F66K22, incorpora internamente a interface de implementação de uma RTC onde apenas é necessária a ligação de um cristal externo nos pinos correspondentes. Na figura \ref{fig:rtc} encontra-se representado o circuito que foi implementado, estando este de acordo com a informação disponibilizada pelo fabricante.
+
+\subsubsection{Interface de programação}
+Para que seja possível programar o microcontrolador foi incorporada uma ficha de programação. A partir destas ligações, além da programação, é também possível efetuar o \textit{debug} de funcionamento do sistema recorrendo a \textit{software} específico. Na figura \ref{fig:prog} encontram-se representadas as ligações necessárias para a realização destas duas ações.
+
+\subsection{Ligação ao módulo GSM}
+A U3C pode incluir, ou não, o módulo GSM. Assim, e dependendo das necessidades do utilizador e do preço de venda, a unidade central poderá ser comercializada com ou sem comunicação GSM. Para além disso, a U3C deve funcionar corretamente numa eventual avaria do módulo GSM, durante a troca do cartão \textit{subscriber identity module} (SIM) (este encontra-se na face inferior da PCI do módulo) ou mesmo quando o módulo é GSM é substituído por outro resultante de um novo desenvolvimento ou outro módulo GSM existente no mercado. Para que a U3C funcione corretamente quer o módulo GSM esteja disponível, quer não esteja, as ligações entre o microcontrolador e o módulo GSM têm de ser feitas levando isto em conta assim como a programação do microcontrolador. Assim, e atendendo ao exposto, foram utilizados dois barramentos distintos paralelos que receberão as ligações do módulo GSM, respeitando o seu \textit{pinout}. Estas ligações incluem as linhas utilizadas pelo protocolo de comunicação série (UART) que são utilizadas para toda a comunicação com o módulo, desde a sua configuração por \textit{attention commands} (AT) ao envio e receção de dados entre com o microcontrolador. Incluem, também, o pino de \textit{reset} do módulo para repor as configurações de fábrica, o \textit{powerkey}, onde é feita a habilitação do módulo e ainda as alimentações (pino dos 5V e massa).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=6.5cm 9.2cm 12.2cm 18.8cm, width=0.25\linewidth]{Figuras/Desenvolvimento/picsquematic}
+	\caption{Circuito do oscilador RTC.}
+	\label{fig:rtc}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=1.85cm 9.2cm 15.35cm 17.6cm, width=0.35\linewidth]{Figuras/Desenvolvimento/picsquematic}
+	\caption{Ficha de programação do microcontrolador.}
+	\label{fig:prog}
+\end{figure}
+
+\subsection{Ligação ao módulo RF}
+Da mesma forma que para o módulo GSM, o módulo RF poderá existir ou não. No caso deste módulo não existir, a comando dos automatismos é feito apenas via comunicação GSM. Ainda assim, a grande vantagem é possibilitar a sua substituição por um \textit{transceiver} que funcione noutras frequências utilizadas no mercado, nomeadamente os 868 MHz. Esta ligação é efetuada a partir de um barramento, apresentado na figura \ref{fig:esquematico_lig_rf}, onde a placa do módulo RF é soldada à placa principal (\textit{motherboard}) da U3C.\\[6pt]
+Neste barramento encontram-se as ligações do protocolo SPI, através do qual é feita a programação do módulo, os pinos de alimentação e ainda todas as linhas digitais, DIOs. Os DIOs servem para várias funções, onde a sua correspondência com os pinos é também definida por SPI. As funcionalidades implementadas e sobre as quais foram desenvolvidas das rotinas de programação, foram: a linha de dados, para onde os dados previamente desmodelados são enviados e o \textit{received signal strength indicator} (RSSI) que corresponde a uma \textit{flag} que é despoletada quando o limite definido (\textit{threshold}) para a potência do sinal de entrada for excedido.
+
+\subsection{Ligação ao sistema de alerta sonoro}
+Como já tinha sido referido anteriormente, o sistema possui diversos meios de sinalização visual e aviso sonoro para que o instalador/utilizador possa agir em conformidade. Desta forma, foi implementado um circuito, apresentado na figura \ref{fig:besouro}, que permite o microcontrolador alimentar um sinalizador sonoro, besouro (\textit{buzzer}), com ou sem oscilador interno. Caso o sinalizador sonoro não possua oscilador interno, é necessário gerar, apartir do microcontrolador, uma saída em \textit{pulse-width modulation} (PWM) com uma frequência dentro da gama de frequências audíveis, caso contrário apenas é necessário alimenta-lo, colocando a saída com o nível lógico alto.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=11.7cm 8.2cm 12.5cm 7.1cm, width=0.35\linewidth]{Figuras/Desenvolvimento/esq_lig_rf}
+	\caption{Barramento de ligação do módulo RF.}
+	\label{fig:esquematico_lig_rf}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=12.4cm 9.8cm 5.85cm 17.3cm, width=0.3\linewidth]{Figuras/Desenvolvimento/picsquematic}
+	\caption{Circuito de controlo do sinalizador sonoro.}
+	\label{fig:besouro}
+\end{figure}
+Sendo a corrente de funcionamento do besouro superior à corrente máxima que as saídas do microcontrolador podem fornecer, foi necessário adicionar alguma eletrónica extra. Na figura \ref{fig:besouro} encontra-se o circuito utilizado. Este, ao utilizar um \textit{metal oxide semiconductor field effect transistor} (MOSFET) como interruptor, faz com que quando a gate do transístor recebe um sinal positivo (maior que a tensão de limiar), o canal seja criado, permitindo que o besouro seja alimentado. Quando a tensão na gate é 0 V, o canal está aberto, e portanto a alimentação do besouro está desligada. A resistência R12 é utilizada para manter a gate do MOSFET a 0 V enquanto o pino (a saída) do microcontrolador que o controla estiver em alta-impedância. A existência da resistência R11 permite a utilização de um transístor de junção bipolar (BJT) em vez de um MOSFET.
+
+\subsection{Ligação ao indicador luminoso do nível de rede}
+O nível de rede do sinal GSM é um fator importante para o instalador. De forma a possibilitar a visualização do nível de sinal de rede GSM, foi adicionado um indicador luminoso tricolor (\textit{light emitting diode} (LED) \textit{red, green, and blue} (RGB)) para efetuar uma escala de sinal. Este é controlado a partir do microcontrolador, que periodicamente solicita ao módulo GSM o nível de rede e a sinaliza. Na figura \ref{fig:rgb} encontra-se o circuito implementado, podendo ver-se que são necessárias três saídas do microcontrolador para controlar a cor do indicador luminoso.
+
+\section{Módulos de comunicação}
+Uma das funcionalidades propostas para a U3C era que esta pudesse acionar automatismos (e.g. portões, sistemas de rega, luminárias, entre outros) de forma eficiente e segura tanto da forma tradicional, via comando, como através de um dispositivo \textit{Android}. Assim, a unidade central desenvolvida possibilita duas vias independentes de comunicação entre a unidade central de controlo e comando e o utilizador. Para isso foi implementado um módulo transcetor (\textit{transceiver}), capaz de receber os códigos gerados e transmitidos pela maioria dos comandos (unidades transmissoras) existente no mercado, e um módulo GSM, capaz de realizar a comunicação entre um dispositivo móvel GSM (e.g., \textit{smartphone}) e a U3C. Na figura \ref{fig:diagramacomunicacao} encontra-se representado o diagrama de blocos dos módulos de comunicação.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=15.5cm 12.5cm 1.5cm 15.3cm, width=0.42\linewidth]{Figuras/Desenvolvimento/rgb}
+	\caption{Circuito de indicação luminoso do nível de rede GSM.}
+	\label{fig:rgb}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=8cm 6.1cm 8cm 8cm, width=0.67\linewidth]{Figuras/Desenvolvimento/diagramacomunicacao}
+	\caption{Diagrama de blocos dos módulos de comunicação.}
+	\label{fig:diagramacomunicacao}
+\end{figure}
+
+\subsection{Módulo GSM}
+Este módulo tem como função estabelecer a comunicação via GSM entre o utilizador e a central. Assim, a partir de um dispositivo móvel GSM é possível comandar e monitorizar remotamente os automatismos ligados à U3C.\\[6pt]
+O projeto deste módulo foi baseado no dispositivo GSM A6 da Ai-Thinker [\ref{gsmpdf}] que está ilustrado na figura \ref{fig:gsm}. Este permite que a comunicação de dados seja efetuada com comandos AT. A comunicação entre o microcontrolador da U3C e o módulo GSM é feita através do barramento UART. Optou-se por utilizar este módulo e, portanto, não desenvolver e implementar o circuito completo, uma vez que a análise feita ao custo das duas soluções demonstrou que a aquisição do módulo da Ai-Thinker era mais vantajosa.\\[6pt]
+O módulo GSM A6 necessita de uma alimentação de 5 V. A corrente é menor que 3 mA quando o módulo está em \textit{standby}, mas esta aumenta consideravelmente durante a transmissão, podendo atingir os 2 A. Este valor de pico foi tido em conta no dimensionamento da fonte de alimentação da U3C. O módulo GSM funciona em \textit{dual-band} 850/1900 MHz ou 900/1800 MHz GSM/GPRS (\textit{general packet radio services}), apresenta uma sensibilidade de -105 dBm, dispõe de um serviço de mensagens curtas (com um máximo de 160 caracteres), incorpora um conector de antena do tipo \textit{subminiature version A} (SMA) e um suporte de cartão SIM (micro SIM). A comunicação UART (interface série) suporta velocidades até 115.2 kbps e, como referido anteriormente, é compatível com comandos AT. O módulo GSM A6 funciona entre temperaturas de 30ºC e 80ºC.
+
+\subsubsection{Adaptador de níveis de tensão (UART)}
+Na U3C foi adicionado um circuito de adaptação de níveis de tensões para a comunicação UART na eventualidade de futuramente ser utilizado um módulo GSM diferente. Este circuito está representado na figura \ref{fig:uart}. Como se pode ver, o circuito adaptador de níveis de tensão é simplesmente um divisor de tensão, o qual deve ser dimensionado para os valores de tensão pretendidos (o circuito permite apenas a redução de tensão, sendo esta a necessidade mais vulgar nos módulos existentes). Apesar deste circuito ter sido considerado no esquema final da U3C, este não necessita de ser montado pois para o módulo GSM selecionado os níveis de tensão de todos os sinais do barramento UART são semelhantes aos do microcontrolador. 
+
+\subsubsection{Controlo de alimentação e \textit{reset}}
+O módulo GSM utilizado inclui um botão de arranque (\textit{boot}) do módulo que é necessário ser pressionado para que o módulo funcione.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=1.2cm 2.1cm 1cm 1.6cm, width=0.25\linewidth]{Figuras/Desenvolvimento/gsm}
+	\caption{Módulo GSM A6 - Ai-Thinker [\ref{gsmimagem}].}
+	\label{fig:gsm}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=1.65cm 15.45cm 15.3cm 12.28cm, width=0.42\linewidth]{Figuras/Desenvolvimento/rgb}
+	\caption{Adaptação de tensões para comunicação UART.}
+	\label{fig:uart}
+\end{figure}
+
+Para isso, foi desenvolvido o circuito representado na figura \ref{fig:gsmalmientacao}, onde o díodo foi utilizado para proteger o módulo, pois a tensão máxima permitida é de 4.6 V. Este díodo permite que, logo que a alimentação de 5 V esteja disponível, o módulo seja imediatamente inicializado, entrando em funcionamento. Foi também adicionado o circuito representado na figura \ref{fig:gsmreset} que permite reiniciar o módulo através de um sinal de \textit{reset}. Este reinício faz a reconfiguração de fábrica do módulo. A necessidade da implementação deste circuito deve-se ao consumo excessivo associado ao \textit{reset}, 70 mA, sendo recomendado pelo fabricante a utilização de um controlo com auxílio de um MOSFET.\\[6pt]
+O circuito da figura \ref{fig:gsmreset} permite que a entrada \textit{reset} do módulo GSM fique a 0 V quando é aplicado na \textit{gate} do MOSFET uma tensão positiva, neste caso 3.3 V, que tem de ser superior à tensão de limiar do transístor. A resistência R21 serve para manter a tensão gate source do T3 igual a 0 V quando a saída do microcontrolador correspondente ao \textit{reset} do módulo GSM está em alta impedância e, assim, manter o canal aberto. O circuito projetado permite também a utilização de transístores BJTs em vez de MOSFETs, ou seja, se for utilizado um BJT há a necessidade de proteger a base do transístor, sendo isso feito com a resistência R20. No caso de se utilizar um MOSFET, a resistência R20 não é necessária, sendo, contudo, indispensável a colocação de uma resistência de 0 $\Omega$ no seu lugar.\\[6pt]
+Com o objetivo de poder desligar e ligar o módulo GSM a partir do microcontrolador, foi adicionado eletrónica adicional que permite o corte da sua alimentação. Para isso foi utilizado um circuito com um MOSFET semelhante ao representado na figura \ref{fig:gsmreset}.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[clip, trim=15.5cm 15.85cm 1.5cm 12.2cm, width=1\linewidth]{Figuras/Desenvolvimento/rgb}
+		\captionsetup{labelformat=empty}
+		\caption{(a) Habilitação do módulo.}
+		\label{fig:gsmalmientacao}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[clip, trim=1.65cm 9.3cm 15.3cm 18.4cm, width=0.85\linewidth]{Figuras/Desenvolvimento/rgb}
+		\captionsetup{labelformat=empty}
+		\caption{(b) \textit{Reset} do módulo.}
+		\label{fig:gsmreset}
+	\end{subfigure}
+	\caption{Circuitos de alimentação e \textit{reset} do módulo GSM.}
+\end{figure}
+
+\subsection{Módulo RF}
+Para além de todas as outras funcionalidades já referidas, a U3C deve desempenhar o papel de um recetor universal, ou seja, deve ser compatível com as normas de comunicação utilizadas pelos comandos disponíveis no mercado. Estas normas incluem diversos parâmetros, entre eles: frequência central de transmissão, largura de banda de transmissão, tipo de modelação, débito binário/simbólico, códigos de linha, composição da trama, entre outros. Para além de tudo isto, a U3C deve possuir uma antena integrada na sua PCI para evitar uma ligação externa de uma antena.\\[6pt]
+A partir dos dados obtidos na pesquisa inicial dos sistemas de controlo de automatismos comerciais, apenas estava em falta um dado para a escolha do módulo transcetor. Esse dado, era o tipo de modelação mais utilizada pelos comandos existentes no mercado, pois, pelo estudo realizado \ref{fig:tx}, a informação obtida não foi conclusiva. Na prática foi possível observar, através de um analisador espetral, que o tipo de modelação utilizada pelos comandos de diversas marcas era do tipo OOK.\\[6pt]
+Esta conclusão teve como base, diversos comandos de teste, de várias marcas, inclusive comandos universais. Para todos os comandos analisados verificou-se que a frequência da portadora do sinal era fixa e que a modulação era de amplitude (OOK). Assim, estavam reunidos todos os parâmetros cruciais para a escolha do módulo transcetor a implementar. Para ações futuras, foi ainda tido como característica fundamental a possibilidade de receber sinais modelados em ASK. Para além de todas estas características, era necessário que o módulo transcetor de RF tivesse um consumo e um custo reduzidos.
+Para responder às especificações indicadas, foi utilizado o circuito integrado SX123 [\ref{sx1231pdf}]. Este CI é um transcetor de baixo consumo, que atua na banda de frequências de \textit{ultra high frequency} (UHF). Abrange, por exemplo, as frequências de 433, 868 e 915 MHz, que são frequências ISM, livres de licenciamento. Todos os principais parâmetros de comunicação RF são programáveis e a maioria deles podem ser configurados de forma dinâmica.
+
+\subsubsection{Circuito eletrónico}
+Relativamente à elaboração do circuito eletrónico do módulo transcetor, foram tidas em conta as recomendações do fabricante de forma a otimizar o funcionamento do módulo. O circuito final está representado na figura \ref{fig:rfhard1}. Na figura \ref{fig:rfhard2} encontra-se representado o circuito de adaptação de 50 $\Omega$ para a frequência central de 433 MHz
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=3cm 4.3cm 12cm 8.2cm, width=0.8\linewidth]{Figuras/Desenvolvimento/rfhard}
+	\caption{Circuito eletrónico do módulo RF.}
+	\label{fig:rfhard1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=11.2cm 13.1cm 4.5cm 3cm, width=0.7\linewidth]{Figuras/Desenvolvimento/rfhard}
+	\caption{Circuito eletrónico de alimentação e adaptação da linha de sinal RF.}
+	\label{fig:rfhard2}
+\end{figure}
+\subsubsection{Antena integrada}
+De forma a implementar um módulo completo e a diminuir o preço do produto, retirando a necessidade de adicionar conectores SMA e antenas externas ao sistema, foi desenvolvida uma antena integrada em PCI. Para isso foi efetuada uma pesquisa onde foram escolhidos alguns artigos acerca de antenas integradas de frequência de funcionamento na zona dos 433 MHz, nomeadamente em \textit{papers} publicados na biblioteca digital do \textit{Institute of Electrical and Electronics Engineers} (IEEE) [\ref{ieee}] e em diversos \textit{application notes} [\ref{paperantena1}] - [\ref{appnoteantena2}].
+
+\section{Sistema de interface da U3C}
+\subsection{Entradas}
+Para a possibilitar a ligação de sensores à U3C, foi implementado um sistema de entradas. Como estas são propícias a erros de ligação, é necessário proteger/isolar esta parte dos restantes circuitos da U3C. Na figura \ref{fig:diagramaentrada} encontra-se representado o diagrama de blocos das entradas do sistema de interface da U3C. Tal como referido anteriormente, foi desenvolvida uma fonte isolada de 5 V para alimentar apenas as entradas de forma a isolar esta alimentação das alimentações internas da U3C, e um outro isolamento galvânico, por optoacoplador, para isolar as partes elétricas das entradas do restante circuito. Nestas apenas podem estar ligados dispositivos sensoriais com saída em contacto (sensores passivos). O circuito implementado está ilustrado na figura \ref{fig:entradas}. Na entrada foi dimensionada uma resistência para que a corrente típica fosse de 20 mA. A saída do circuito é um \textit{pull-up}, tipicamente utilizado em saídas digitais. O circuito de entrada descrito foi replicado para as 8 entradas da U3C. \\[6pt]
+Tendo em conta que o optoacoplador tem um máximo absoluto de 6 V de tensão inversa à entrada, se for ligado um sensor que na saída forneça até 11 V e este for ligado com o positivo no pino 2 e o negativo no pino 1 do \textit{header}, o isolador aguenta e nada acontece, mas caso a esse valor seja ultrapassado, a entrada do isolador irá sofrer uma rotura. Caso contrário, isto é, caso seja ligado na entrada uma tensão negativa (positivo no pino 1 e a negativo no pino 2), a corrente máxima suportada é de 50 mA que corresponde a uma tensão de entrada de 5.2 V.
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=2cm 14.5cm 2cm 10cm, width=0.8\linewidth]{Figuras/Desenvolvimento/diagramaentrada}
+	\caption{Diagrama de blocos das entradas do sistema.}
+	\label{fig:diagramaentrada}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=1cm 15.4cm 19cm 2.9cm, width=0.7\linewidth]{Figuras/Desenvolvimento/entrada}
+	\caption{Circuito de uma entrada externa.}
+	\label{fig:entradas}
+\end{figure}
+\subsection{Saídas}
+Tal como referido anteriormente, são disponibilizadas ao utilizador até 4 saídas, podendo estas ser adicionadas ou removidas conforme a necessidade. Na figura \ref{fig:diagramasaida} encontra-se representado o diagrama de blocos das saídas do sistema de interface da U3C.\\[6pt]
+Tendo em conta o circuito apresentado na figura \ref{fig:saidas}, mais uma vez é utilizado um MOSFET para conseguir fornecer a corrente necessária ao relé, tipicamente de 89.3 mA. Da mesma forma que para outros fins já apresentados, é boa prática deixar uma resistência na gate do MOSFET para o caso de se implementar o circuito com um transístor bipolar de junção. Também foi utilizada uma resistência entre a \textit{gate} e a \textit{source} para a tensão V{gs} possa estar sempre referenciada, mesmo quando a saída do microcontrolador está em alta impedância. Para além disso, nos terminais de entrada do relé foi colocado um díodo para proteger o transístor quando o relé é aberto.
+\section{Sistema da memória}
+De forma a guardar os dados necessários em memória para posterior uso na decisão de acionamento  dos mecanismos, adicionar ou remover utilizadores, listagem de histórico, entre outros, foi utilizada uma memória electrically EEPROM na U3C.
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=2cm 7.5cm 2cm 17cm, width=0.8\linewidth]{Figuras/Desenvolvimento/diagramaentrada}
+	\caption{Diagrama de blocos das saídas do sistema.}
+	\label{fig:diagramasaida}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=1cm 8.5cm 19cm 7.8cm, width=0.63\linewidth]{Figuras/Desenvolvimento/entrada}
+	\caption{Circuito de uma saída externa.}
+	\label{fig:saidas}
+\end{figure}
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=1.3cm 13cm 7cm 1.8cm, width=0.35\linewidth]{Figuras/Desenvolvimento/bytes}
+	\caption{Número de \textit{bytes} por utilizador.}
+	\label{fig:bytes}
+\end{table}
+Na tabela \ref{fig:bytes} encontra-se apresentada a informação que é necessária guardar em cada um dos modos de funcionamento (por comando e GSM), bem como o número de bytes que cada um deles ocupa. Foi imposta a condição da U3C ter a capacidade de guardar pelo menos 200 utilizadores, em que cada um deles poderia utilizar ambos os modos de comunicação.\\[6pt]
+Relativamente ao módulo GSM são necessários 35 bytes por utilizador, o que significa que são necessários no total 7 kB. Já no módulo RF, a posição dos bits referentes ao botão não é fixa (varia com o tipo de trama que lhe está associada). Caso a posição fosse conhecida era possível guardar apenas o número de série do comando e associar-lhe as saídas alocadas aos respetivos botões, não sendo é necessário guardar a trama completa para cada botão, sendo considerado como um utilizador. Como existem 4 saídas, foi guardado espaço em memória para 800 utilizadores (200 utilizadores por saída), assim para este módulo são necessários 9.6 kB. A soma das memórias necessárias em cada módulo forma um total de 16.6 kB.\\[6pt]
+Como num futuro desenvolvimento podem ser associados os comandos aos números de telefone, e podem ser adicionados novos dados, tais como um histórico de acessos à unidade central, para fins estatísticos ou de segurança, foi implementada uma memória de 128 kB.
+\section{Módulo de alimentação}
+A fonte de alimentação é responsável por gerar todas as tensões e correntes necessárias aos circuitos que compõem a U3C. Na figura \ref{fig:diagramafonte} encontra-se representado o diagrama de blocos do módulo de alimentação. Como se pode ver, é necessário que o módulo de alimentação disponibilize tensões de 5 V e de 3.3 V. Para além disso, e para ser possível alimentar de forma isolada parte dos circuitos de entrada (para ligação de sensores passivos), é necessário ter também uma alimentação isolada de 5 V.
+\subsection{Estimativa de consumos}
+Para que o projeto do módulo de alimentação possa ser efetuado, é necessário identificar não só as tensões de alimentação necessárias a cada módulo interno da U3C mas também as correntes. Na figura \ref{fig:graficoconsumos} estão ilustrados os consumos totais da U3C. Este levantamento baseou-se nas características dos circuitos integrados e da eletrónica associada a cada módulo. Os resultados do consumo ilustrados na figura permitem determinar a corrente total que a fonte comutada abaixadora (conversor DC-DC do tipo \textit{Buck}) tem de garantir.\\[6pt]
+Na figura \ref{fig:graficoconsumos} podem ser observados os consumos de cada um dos módulos cujo consumo é relevante.
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=8cm 5.5cm 8cm 4.7cm, width=0.6\linewidth]{Figuras/Desenvolvimento/diagramafonte}
+	\caption{Diagrama de blocos do módulo de alimentação.}
+	\label{fig:diagramafonte}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=2cm 10.1cm 2cm 12cm, width=0.9\linewidth]{Figuras/Desenvolvimento/graficoconsumos}
+	\caption{Corrente consumida pelos diversos módulos da U3C.}
+	\label{fig:graficoconsumos}
+\end{figure}
+Indicado a azul estão representados os consumos típicos, que quando considerados globalmente apontam para um consumo de aproximadamente 1 A. Num dimensionamento conservativo, apresentado a laranja, foram considerados consumos superiores para garantir uma margem de segurança (cerca de 30~\% acima). Assim, no total o consumo considerado para o dimensionamento da fonte comutada foi de 1.042 A. Os picos de corrente do módulo GSM não foram considerados na soma dos consumos médios do sistema pois têm a duração na ordem centenas de microssegundos. Contudo, na escolha e dimensionamento da fonte comutada foi tido o cuidado de verificar se esta suportava esses picos de corrente.
+\subsection{Retificação com filtragem}
+Uma das especificações definidas para a U3C foi que esta pudesse ser alimentada externamente a partir de uma fonte de alimentação continua (de 9 V a 30 V) ou alternada (de 9 Vrms a 24 Vrms). Para que a U3C pudesse ser alimentada a partir de uma fonte de corrente alternada foi necessário utilizar um retificador de onda completa com filtragem, tal como se pode ver no diagrama esquemático representado na figura \ref{fig:alimentacao}. Na retificação, devido a dois semicondutores se encontrar em funcionamento em cada alternância, existe uma queda de tensão de 0.95 V em cada semicondutor, ou seja, um total de 1.9 V, para uma corrente até 2 A, o que permitirá uma tensão superior de entrada da U3C, contudo a tensão mínima de entrada torna-se mais elevada. De forma a proteger o sistema foi adicionado um varístor (VR1) que curto-circuitará a entrada de alimentação caso a tensão de entrada exceda o valor máximo definido para a tensão de entrada. Para além disso, foi também adicionado um fusível (F2.5A) para aumentar a proteção dos circuitos da U3C. Este interromperá a alimentação da U3C em caso de sobrealimentação ou quando a corrente consumida pela U3C ultrapassa os 2.5 A.\\[6pt]
+Relativamente ao andar de filtragem foi dimensionado para uma frequência de 50 Hz (frequência da rede elétrica em Portugal), que depois de retificada será de 100 Hz. Foi definido, também, que a corrente média seria de 700 mA, que corresponde ao consumo de 1.042 A, anteriormente definido (ver figura \ref{fig:graficoconsumos}), menos o consumo e 3 relés ($3\times100~mA~=~300~mA$), pois, como são saídas pulsadas, haverá no máximo uma saída ativa de cada vez. Para além disso foi dimensionado um $V_{\textit{ripple}}$ de 5 V, pois, entre os transformadores \textit{standard} que estão dentro das especificações da U3C, o valor mínimo é de $9~Vrms~\approx~12.73~V$, com este valor de \textit{ripple}, a linha de entrada irá variar entre 12.73 V e 7.73 V, que está acima dos 4.75 V (valor mínimo de entrada da fonte comutada). Substituindo os valores mencionados na equação \ref{eq:cap}, é obtido um valor do condensador de filtragem de 1.4 mF.
+\begin{equation}
+I =\frac{C \times \Delta V}{\Delta t}
+\label{eq:cap}
+\end{equation}
+Devido às dimensões destes condensadores e à área reduzida disponível para a sua implementação, foi necessário diminuir o seu valor, sendo no fim definido a implementação um condensador de 330 uF e outro de 100 uF, equivalente a um condensador de 430 uF. 
+\begin{figure}
+	\centering
+	\includegraphics[clip, trim=1.95cm 17cm 12.77cm 10cm, width=0.57\linewidth]{Figuras/Desenvolvimento/alimentacao}
+	\caption{Circuito de retificação de onda completa com filtragem e respetivas proteções.}
+	\label{fig:alimentacao}
+\end{figure}
+\subsection{Fonte comutada}
+A utilização de uma fonte comutada trás várias vantagens, nomeadamente, obter uma tensão de saída com elevadas correntes e eficiência elevada relativamente a outras soluções, ocupar uma área de placa de circuito impresso reduzida, o que é possível devido à frequência de comutação ser elevada (dezenas a centenas de kHz) e, ainda, permitir tensões variáveis à sua entrada.\\[6pt]
+O circuito integrado utilizado para o efeito foi o IFX91041EJ-V50 [\ref{stepdown}] da Infineon. Este gera uma tensão de 5 V, permite uma corrente de saída máxima de 1.8 A (cumpre a corrente máxima definida anteriormente), funciona numa gama de tensão de entrada entre os 4.75 V e os 45 V (cumpre as especificações indicadas no capítulo 2), apresenta uma boa regulação de linha (\textit{line regulation}) e de carga (\textit{load regulation}) e está preparado para funcionar a temperaturas relativamente elevadas. A frequência de comutação é elevada podendo atingir valores de 370 kHz. Este CI é responsável pelo fornecimento de energia a todo o circuito da U3C, alimentando diretamente o módulo GSM, os relés das saídas externas, o circuito de alimentação isolada de 5 V e indiretamente (através de um regulador linear) o microcontrolador, o módulo RF e os restantes periféricos.\\[6pt]
+Seguindo as recomendações do \textit{datasheet}, foi efetuada a montagem do circuito com os componentes recomendados pelo fabricante. Após a realização de testes de desempenho e funcionamento, foi removida a bobina de entrada de 47 uF, pois, quando o módulo GSM tinha os picos de corrente, esta bobina limitava a corrente fornecida, refletindo-se num decaimento da tensão de saída (oscilações na linha de 5 V), o que permitiu reduzir a área necessária de implementação, obtendo-se o circuito final apresentado na figura \ref{fig:comutada}.
+\begin{figure}
+	\centering
+	\includegraphics[clip, trim=8.25cm 16.4cm 2cm 10cm, width=0.9\linewidth]{Figuras/Desenvolvimento/alimentacao}
+	\caption{Circuito da fonte comutada.}
+	\label{fig:comutada}
+\end{figure}
+\subsection{Fonte isolada}
+A U3C tem disponíveis 8 entradas externas para ligação de sensores, tal como referido anteriormente. Assim, e se não existirem proteções adequadas ou alimentações distintas e isoladas das dos circuitos internos da U3C, qualquer ligação incorreta por parte do instalador/utilizador pode danificar permanentemente a unidade central. De forma a evitar danos graves e permanentes, foi desenvolvido um sistema de alimentação isolado das alimentações dos restantes circuitos internos e dedicado apenas às alimentações das entradas externas. Com o objetivo de ocupar o mínimo espaço possível, foi escolhido o CI B0505S [\ref{isolado}] pelas suas dimensões, funcionalidade, desempenho e custo. Este conversor DC-DC assegura uma saída de 5 V e uma corrente máxima de 200 mA. No dimensionamento do circuito foram seguidas as recomendações do fabricante, tendo sido necessário adicionar uma carga de 250 $\Omega$ para garantir que o conversor DC-DC esteja sempre a funcionar e a gerar uma corrente mínima de 20 mA para que o circuito seja sempre estável. Na figura \ref{fig:isolada} encontra-se ilustrado o circuito implementado. Como pode ser visto, o circuito é extremamente simples, necessitando apenas de 3 componentes externos.
+
+\subsection{Fonte 3.3 V}
+A tensão de alimentação de 3.3 V deve ser bastante precisa, estável e sem qualquer ruído, nomeadamente ruído de comutação (das fontes comutadas e dos circuitos digitais), e interferências. Em termos espectrais, a tensão de 3.3 V não deve apresentar qualquer espúria pois todos os circuitos e módulos principais (microcontrolador e transcetor de radiofrequência) da U3C são alimentados por esta fonte. Para isso, foi utilizado o regulador de tensão linear REG1117-3.3 [\ref{33pdf}] de 3.3 V que para funcionar corretamente necessita de uma queda de tensão entrada saída (\textit{dropout voltage}) reduzida. Este regulador apresenta ainda uma boa regulação de linha e de carga e uma boa rejeição do \textit{ripple} da tensão de entrada (tensão de 5 V gerada pela fonte comutada principal). Assim, e atendendo às características do regulador, este consegue atenuar razoavelmente as variações (\textit{ripple}) presentes na tensão de 5 V que maioritariamente são causadas pelos consumos repentinos e elevados do módulo GSM.\\[6pt]
+O circuito da fonte de 3.3 V está representado na figura \ref{fig:3v}. Este circuito pode ser utilizado com reguladores fixos ou ajustáveis quando os CIs utilizados pertencem ao mesmo fabricante e são todos da mesma família de reguladores. No caso da utilização de um regulador com saída fixa a resistência R5 não é colocada e a resistência R6 passa a ser um curto-circuito (resistência de 0 $\Omega$).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=6.5cm 13.4cm 6.3cm 14.1cm, width=0.67\linewidth]{Figuras/Desenvolvimento/alimentacao}
+	\caption{Circuito da fonte isolada.}
+	\label{fig:isolada}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=6.5cm 10cm 6.3cm 17cm, width=0.67\linewidth]{Figuras/Desenvolvimento/alimentacao}
+	\caption{Circuito da fonte de 3.3 V.}
+	\label{fig:3v}
+\end{figure}
+
+\section{Sumário}
+O presente capítulo abordou todo o processo de desenvolvimento dos circuitos eletrónicos da unidade central de controlo e comando. Foram descritos todos os aspetos relevantes do desenvolvimento, começando numa abordagem geral, apresentando um diagrama de cada módulo constituinte da U3C, depois uma apresentação das especificações e por fim os circuitos esquemáticos utilizados para cada um deles.
+\vfill\pagebreak\thispagestyle{plain}

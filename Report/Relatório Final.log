@@ -1,0 +1,4244 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.14)  21 JUL 2017 12:38
+entering extended mode
+**"./RelatÃ³rio Final.tex"
+("RelatÃ³rio Final.tex"
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk11.clo"
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\mathptmx.sty"
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 145.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\wasysym.sty"
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks17
+\SOUL@lasttoken=\toks18
+\SOUL@cmds=\toks19
+\SOUL@buffer=\toks20
+\SOUL@token=\toks21
+\SOUL@spaceskip=\skip43
+\SOUL@ttwidth=\dimen106
+\SOUL@uldp=\dimen107
+\SOUL@ulht=\dimen108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count90
+\float@exts=\toks22
+\float@box=\box26
+\@float@everytoks=\toks23
+\@floatcapt=\box27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count91
+\mult@box=\box28
+\multicol@leftmargin=\dimen109
+\c@unbalance=\count92
+\c@collectmore=\count93
+\doublecol@number=\count94
+\multicoltolerance=\count95
+\multicolpretolerance=\count96
+\full@width=\dimen110
+\page@free=\dimen111
+\premulticols=\dimen112
+\postmulticols=\dimen113
+\multicolsep=\skip44
+\multicolbaselineskip=\skip45
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen114
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count97
+\c@finalcolumnbadness=\count98
+\last@try=\dimen115
+\multicolovershoot=\dimen116
+\multicolundershoot=\dimen117
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count99
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box54
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip46
+\enit@outerparindent=\dimen118
+\enit@toks=\toks24
+\enit@inbox=\box55
+\enitdp@description=\count100
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+)
+\c@ContinuedFloat=\count101
+Package caption Info: float package is loaded.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count102
+\c@subtable=\count103
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2017/06/14 v0.5i Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
+\calc@Askip=\skip47
+\calc@Bskip=\skip48
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count106
+\calc@Cskip=\skip49
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)))
+\AM@pagewidth=\dimen128
+\AM@pageheight=\dimen129
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2017/06/14 v0.5i Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box56
+\AM@global@opts=\toks25
+\AM@toc@title=\toks26
+\c@AM@survey=\count107
+\AM@templatesizebox=\box57
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen130
+\Hy@linkcounter=\count108
+\Hy@pagecounter=\count109
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count110
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `final' set `true' on input line 4362.
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4735.
+\c@Hy@tempcnt=\count111
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5088.
+\XeTeXLinkMargin=\dimen131
+\Fld@menulength=\count112
+\Field@Width=\dimen132
+\Fld@charsize=\dimen133
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring OFF on input line 6362.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
+\Hy@abspage=\count113
+\c@Item=\count114
+\c@Hfootnote=\count115
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
+\Fld@listcount=\count116
+\c@bookmark@seq@number=\count117
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
+\Gm@bindingoffset=\dimen134
+\Gm@wd@mp=\dimen135
+\Gm@odd@mp=\dimen136
+\Gm@even@mp=\dimen137
+\Gm@layoutwidth=\dimen138
+\Gm@layoutheight=\dimen139
+\Gm@layouthoffset=\dimen140
+\Gm@layoutvoffset=\dimen141
+\Gm@dimlist=\toks27
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip51
+\f@nch@O@elh=\skip52
+\f@nch@O@erh=\skip53
+\f@nch@O@olh=\skip54
+\f@nch@O@orh=\skip55
+\f@nch@O@elf=\skip56
+\f@nch@O@erf=\skip57
+\f@nch@O@olf=\skip58
+\f@nch@O@orf=\skip59
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen142
+\lightrulewidth=\dimen143
+\cmidrulewidth=\dimen144
+\belowrulesep=\dimen145
+\belowbottomsep=\dimen146
+\aboverulesep=\dimen147
+\abovetopsep=\dimen148
+\cmidrulesep=\dimen149
+\cmidrulekern=\dimen150
+\defaultaddspace=\dimen151
+\@cmidla=\count121
+\@cmidlb=\count122
+\@aboverulesep=\dimen152
+\@belowrulesep=\dimen153
+\@thisruleclass=\count123
+\@lastruleclass=\count124
+\@thisrulewidth=\dimen154
+)
+("RelatÃ³rio Final.aux" (capa2.aux) (capa.aux) (Dedicatoria.aux)
+(Agradecimentos.aux) (Resumo.aux) (Abreviaturas.aux) (Introducao.aux)
+(Sistemas.aux) (Desenvolvimento.aux) (Placas.aux) (Software.aux) (Conclusao.aux
+) (Bibliografia.aux
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+
+LaTeX Warning: Label `a' multiply defined.
+
+) (Apendices.aux))
+\openout1 = `"RelatÃ³rio Final.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 31.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 31.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+\big@size=\dimen155
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count125
+\scratchdimen=\dimen156
+\scratchbox=\box58
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen157
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks29
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box59
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package hyperref Info: Link coloring OFF on input line 31.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count131
+)
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
+
+("RelatÃ³rio Final.out") ("RelatÃ³rio Final.out")
+\@outlinefile=\write3
+\openout3 = `"RelatÃ³rio Final.out"'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=441.01773pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-33.0119pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\openout2 = `capa2.aux'.
+
+(capa2.tex <Fotos/estg.png, id=395, 148.30406pt x 45.92157pt>
+File: Fotos/estg.png Graphic file (type png)
+
+<use Fotos/estg.png>
+Package pdftex.def Info: Fotos/estg.png used on input line 18.
+(pdftex.def)             Requested size: 148.30368pt x 45.92145pt.
+
+Overfull \hbox (15.99702pt too wide) in paragraph at lines 18--18
+[]  
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 18
+.
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 18
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 18
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 18
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 21.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+ [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Fotos/estg.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \leavevmode\thispagestyle{empty}\newpage
+                                              [2
+
+]
+\openout2 = `capa.aux'.
+
+ (capa.tex
+File: Fotos/estg.png Graphic file (type png)
+
+<use Fotos/estg.png>
+Package pdftex.def Info: Fotos/estg.png used on input line 19.
+(pdftex.def)             Requested size: 148.30368pt x 45.92145pt.
+
+Overfull \hbox (15.99702pt too wide) in paragraph at lines 19--19
+[]  
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 40.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 \end{titlepage}
+                     [1
+
+
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 \leavevmode\thispagestyle{empty}\newpage
+                                              [2
+
+]
+\openout2 = `Dedicatoria.aux'.
+
+ (Dedicatoria.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 4.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 43.
+ [1
+
+]
+\openout2 = `Agradecimentos.aux'.
+
+
+(Agradecimentos.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [2
+
+
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 6.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 44.
+ [3]
+\openout2 = `Resumo.aux'.
+
+ (Resumo.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [4
+
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 45.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+ [6
+
+
+] ("RelatÃ³rio Final.lof"
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+ [7]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 99.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 99.
+ [8])
+\tf@lof=\write4
+\openout4 = `"RelatÃ³rio Final.lof"'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+ [9]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+ [10
+
+] ("RelatÃ³rio Final.lot")
+\tf@lot=\write5
+\openout5 = `"RelatÃ³rio Final.lot"'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 50.
+
+[11]
+\openout2 = `Abreviaturas.aux'.
+
+ (Abreviaturas.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [12
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 50.
+ [13]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+ [14
+
+
+] ("RelatÃ³rio Final.toc"
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 60.
+ [15]
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 95.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 109.
+ [16])
+\tf@toc=\write6
+\openout6 = `"RelatÃ³rio Final.toc"'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+
+[17]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+ [18]
+\openout2 = `Introducao.aux'.
+
+ (Introducao.tex
+Cap\'{\i }tulo 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/estatiscasmartphone.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/estatiscasmartphone.pdf, id=803, 845.07724pt x 597.55246pt>
+File: Figuras/estatiscasmartphone.pdf Graphic file (type pdf)
+
+<use Figuras/estatiscasmartphone.pdf>
+Package pdftex.def Info: Figuras/estatiscasmartphone.pdf used on input line 10.
+
+(pdftex.def)             Requested size: 313.12555pt x 189.78244pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 13.
+[1
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 17.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/cenario.pdf): PDF inclusion: found
+ PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/cenario.pdf, id=812, 845.07724pt x 597.55246pt>
+File: Figuras/cenario.pdf Graphic file (type pdf)
+
+<use Figuras/cenario.pdf>
+Package pdftex.def Info: Figuras/cenario.pdf used on input line 24.
+(pdftex.def)             Requested size: 113.5184pt x 110.37656pt.
+File: Figuras/cenario.pdf Graphic file (type pdf)
+ <use Figuras/cenario.pdf>
+Package pdftex.def Info: Figuras/cenario.pdf used on input line 31.
+(pdftex.def)             Requested size: 132.43887pt x 110.37656pt.
+File: Figuras/cenario.pdf Graphic file (type pdf)
+ <use Figuras/cenario.pdf>
+Package pdftex.def Info: Figuras/cenario.pdf used on input line 38.
+(pdftex.def)             Requested size: 117.15593pt x 109.3552pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--45
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+[2 <./Figuras/estatiscasmartphone.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 52.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 55.
+[3 <./Figuras/cenario.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 56.
+ [4]
+\openout2 = `Sistemas.aux'.
+
+ (Sistemas.tex
+Cap\'{\i }tulo 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/tx.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<Figuras/tx.pdf, id=880, 845.07724pt x 597.55246pt>
+File: Figuras/tx.pdf Graphic file (type pdf)
+ <use Figuras/tx.pdf>
+Package pdftex.def Info: Figuras/tx.pdf used on input line 11.
+(pdftex.def)             Requested size: 441.01773pt x 303.98444pt.
+
+<Figuras/motorline.jpg, id=882, 368.1253pt x 338.01282pt>
+File: Figuras/motorline.jpg Graphic file (type jpg)
+
+<use Figuras/motorline.jpg>
+Package pdftex.def Info: Figuras/motorline.jpg used on input line 19.
+(pdftex.def)             Requested size: 72.76833pt x 66.81224pt.
+
+<Figuras/bft.jpg, id=886, 188.95593pt x 188.20313pt>
+File: Figuras/bft.jpg Graphic file (type jpg)
+ <use Figuras/bft.jpg>
+Package pdftex.def Info: Figuras/bft.jpg used on input line 25.
+(pdftex.def)             Requested size: 69.85696pt x 66.42374pt.
+
+<Figuras/ditec.jpg, id=890, 329.73187pt x 428.35031pt>
+File: Figuras/ditec.jpg Graphic file (type jpg)
+ <use Figuras/ditec.jpg>
+Package pdftex.def Info: Figuras/ditec.jpg used on input line 31.
+(pdftex.def)             Requested size: 50.21031pt x 65.22365pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 37.
+
+[5
+
+
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/rx1.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
+<Figuras/rx1.pdf, id=904, 845.07724pt x 597.55246pt>
+File: Figuras/rx1.pdf Graphic file (type pdf)
+ <use Figuras/rx1.pdf>
+Package pdftex.def Info: Figuras/rx1.pdf used on input line 45.
+(pdftex.def)             Requested size: 432.19548pt x 374.881pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 48.
+
+[6 <./Figuras/tx.pdf> <./Figuras/motorline.jpg> <./Figuras/bft.jpg> <./Figuras/
+ditec.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+ [7 <./Figuras/rx1.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/rx2.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
+<Figuras/rx2.pdf, id=985, 845.07724pt x 597.55246pt>
+File: Figuras/rx2.pdf Graphic file (type pdf)
+ <use Figuras/rx2.pdf>
+Package pdftex.def Info: Figuras/rx2.pdf used on input line 51.
+(pdftex.def)             Requested size: 441.01773pt x 351.20328pt.
+
+<Figuras/motorlinereceiver.jpg, id=988, 513.41812pt x 399.74344pt>
+File: Figuras/motorlinereceiver.jpg Graphic file (type jpg)
+
+<use Figuras/motorlinereceiver.jpg>
+Package pdftex.def Info: Figuras/motorlinereceiver.jpg used on input line 61.
+(pdftex.def)             Requested size: 111.13615pt x 86.52872pt.
+
+<Figuras/rogerreceiver.jpg, id=992, 299.61937pt x 223.58531pt>
+File: Figuras/rogerreceiver.jpg Graphic file (type jpg)
+
+<use Figuras/rogerreceiver.jpg>
+Package pdftex.def Info: Figuras/rogerreceiver.jpg used on input line 68.
+(pdftex.def)             Requested size: 117.48819pt x 87.67212pt.
+
+<Figuras/bftreceiver.png, id=996, 376.40625pt x 398.99063pt>
+File: Figuras/bftreceiver.png Graphic file (type png)
+
+<use Figuras/bftreceiver.png>
+Package pdftex.def Info: Figuras/bftreceiver.png used on input line 75.
+(pdftex.def)             Requested size: 82.75914pt x 87.7234pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 83.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 83.
+ [8 <./Figuras/rx2.pdf> <./Figuras/motorlinereceiver.jpg> <./Figuras/rogerrecei
+ver.jpg> <./Figuras/bftreceiver.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 83.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 89.
+
+<Figuras/codificacoes.pdf, id=1039, 597.23125pt x 845.1575pt>
+File: Figuras/codificacoes.pdf Graphic file (type pdf)
+
+<use Figuras/codificacoes.pdf>
+Package pdftex.def Info: Figuras/codificacoes.pdf used on input line 96.
+(pdftex.def)             Requested size: 214.33614pt x 100.98137pt.
+
+<Figuras/simbolos.pdf, id=1041, 597.23125pt x 845.1575pt>
+File: Figuras/simbolos.pdf Graphic file (type pdf)
+
+<use Figuras/simbolos.pdf>
+Package pdftex.def Info: Figuras/simbolos.pdf used on input line 103.
+(pdftex.def)             Requested size: 176.40439pt x 97.6162pt.
+
+<Figuras/tempoSimb.png, id=1043, 944.02687pt x 386.19281pt>
+File: Figuras/tempoSimb.png Graphic file (type png)
+
+<use Figuras/tempoSimb.png>
+Package pdftex.def Info: Figuras/tempoSimb.png used on input line 114.
+(pdftex.def)             Requested size: 330.76329pt x 135.31093pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
+ [9 <./Figuras/codificacoes.pdf> <./Figuras/simbolos.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 125.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 125.
+ [10 <./Figuras/tempoSimb.png>]
+<Figuras/EV1527.png, id=1072, 600.74437pt x 83.5622pt>
+File: Figuras/EV1527.png Graphic file (type png)
+
+<use Figuras/EV1527.png>
+Package pdftex.def Info: Figuras/EV1527.png used on input line 130.
+(pdftex.def)             Requested size: 242.5611pt x 33.73921pt.
+
+<Figuras/comandodip.png, id=1075, 472.76625pt x 410.2828pt>
+File: Figuras/comandodip.png Graphic file (type png)
+
+<use Figuras/comandodip.png>
+Package pdftex.def Info: Figuras/comandodip.png used on input line 138.
+(pdftex.def)             Requested size: 63.94608pt x 90.84877pt.
+File: Figuras/comandodip.png Graphic file (type png)
+ <use Figuras/comandodip.png>
+Package pdftex.def Info: Figuras/comandodip.png used on input line 144.
+(pdftex.def)             Requested size: 49.61583pt x 88.15274pt.
+
+<Figuras/rolling.png, id=1080, 1169.87062pt x 249.18094pt>
+File: Figuras/rolling.png Graphic file (type png)
+
+<use Figuras/rolling.png>
+Package pdftex.def Info: Figuras/rolling.png used on input line 153.
+(pdftex.def)             Requested size: 374.86775pt x 79.84598pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/jma.pdf): PDF inclusion: found PDF
+ version <1.7>, but at most version <1.5> allowed
+<Figuras/jma.pdf, id=1084, 597.55246pt x 845.07724pt>
+File: Figuras/jma.pdf Graphic file (type pdf)
+ <use Figuras/jma.pdf>
+Package pdftex.def Info: Figuras/jma.pdf used on input line 159.
+(pdftex.def)             Requested size: 119.07666pt x 172.80241pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 163.
+
+[11 <./Figuras/comandodip.png> <./Figuras/rolling.png> <./Figuras/EV1527.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 167.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 178.
+
+[12 <./Figuras/jma.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 198.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/especificacoesU3Ciniciais.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/especificacoesU3Ciniciais.pdf, id=1148, 845.07724pt x 597.55246pt>
+File: Figuras/especificacoesU3Ciniciais.pdf Graphic file (type pdf)
+
+<use Figuras/especificacoesU3Ciniciais.pdf>
+Package pdftex.def Info: Figuras/especificacoesU3Ciniciais.pdf used on input li
+ne 202.
+(pdftex.def)             Requested size: 441.01773pt x 67.32742pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 206.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 206.
+ [13 <./Figuras/especificacoesU3Ciniciais.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Arquitetura/arquitetura.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Arquitetura/arquitetura.pdf, id=1164, 597.55246pt x 845.07724pt>
+File: Figuras/Arquitetura/arquitetura.pdf Graphic file (type pdf)
+
+<use Figuras/Arquitetura/arquitetura.pdf>
+Package pdftex.def Info: Figuras/Arquitetura/arquitetura.pdf used on input line
+ 208.
+(pdftex.def)             Requested size: 299.88882pt x 424.45761pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 225.
+ [14 <./Figuras/Arquitetura/arquitetura.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 239.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 239.
+ [15]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 243.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 58.
+ [16]
+\openout2 = `Desenvolvimento.aux'.
+
+ (Desenvolvimento.tex
+Cap\'{\i }tulo 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/diagramamicrocontr
+olador.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
+allowed
+
+<Figuras/Desenvolvimento/diagramamicrocontrolador.pdf, id=1229, 845.07724pt x 5
+97.55246pt>
+File: Figuras/Desenvolvimento/diagramamicrocontrolador.pdf Graphic file (type p
+df)
+ <use Figuras/Desenvolvimento/diagramamicrocontrolador.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/diagramamicrocontrolador.pdf u
+sed on input line 12.
+(pdftex.def)             Requested size: 330.76329pt x 258.77536pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/pic.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/pic.pdf, id=1231, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/pic.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/pic.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/pic.pdf used on input line 18.
+
+(pdftex.def)             Requested size: 418.96548pt x 365.23886pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+ [17
+
+
+
+]
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 18 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+[18 <./Figuras/Desenvolvimento/diagramamicrocontrolador.pdf> <./Figuras/Desenvo
+lvimento/pic.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 31.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/picsquematic.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Desenvolvimento/picsquematic.pdf, id=1280, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/picsquematic.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/picsquematic.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/picsquematic.pdf used on input
+ line 36.
+(pdftex.def)             Requested size: 110.25443pt x 81.48961pt.
+File: Figuras/Desenvolvimento/picsquematic.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/picsquematic.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/picsquematic.pdf used on input
+ line 42.
+(pdftex.def)             Requested size: 154.35889pt x 117.80304pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+ [19 <./Figuras/Desenvolvimento/picsquematic.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/esq_lig_rf.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/esq_lig_rf.pdf, id=1319, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/esq_lig_rf.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/esq_lig_rf.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/esq_lig_rf.pdf used on input l
+ine 56.
+(pdftex.def)             Requested size: 154.35889pt x 159.98709pt.
+File: Figuras/Desenvolvimento/picsquematic.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/picsquematic.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/picsquematic.pdf used on input
+ line 62.
+(pdftex.def)             Requested size: 132.30666pt x 125.08258pt.
+
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 20 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 66.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 66.
+[20 <./Figuras/Desenvolvimento/esq_lig_rf.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 71.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/rgb.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/rgb.pdf, id=1349, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/rgb.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/rgb.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rgb.pdf used on input line 76.
+
+(pdftex.def)             Requested size: 185.22664pt x 88.0059pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/diagramacomunicaca
+o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
+ed
+
+<Figuras/Desenvolvimento/diagramacomunicacao.pdf, id=1351, 845.07724pt x 597.55
+246pt>
+File: Figuras/Desenvolvimento/diagramacomunicacao.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/diagramacomunicacao.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/diagramacomunicacao.pdf used o
+n input line 83.
+(pdftex.def)             Requested size: 295.48106pt x 148.84605pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 87.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 87.
+ [21 <./Figuras/Desenvolvimento/rgb.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 88.
+
+<Figuras/Desenvolvimento/gsm.jpg, id=1389, 526.96875pt x 526.96875pt>
+File: Figuras/Desenvolvimento/gsm.jpg Graphic file (type jpg)
+
+<use Figuras/Desenvolvimento/gsm.jpg>
+Package pdftex.def Info: Figuras/Desenvolvimento/gsm.jpg used on input line 101
+.
+(pdftex.def)             Requested size: 110.25443pt x 100.121pt.
+File: Figuras/Desenvolvimento/rgb.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/rgb.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rgb.pdf used on input line 107
+.
+(pdftex.def)             Requested size: 185.22664pt x 90.12144pt.
+
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 22 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 110.
+[22 <./Figuras/Desenvolvimento/diagramacomunicacao.pdf>]
+File: Figuras/Desenvolvimento/rgb.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/rgb.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rgb.pdf used on input line 120
+.
+(pdftex.def)             Requested size: 220.50887pt x 90.99191pt.
+File: Figuras/Desenvolvimento/rgb.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/rgb.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rgb.pdf used on input line 127
+.
+(pdftex.def)             Requested size: 187.43387pt x 92.58333pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 135.
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 140.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 140.
+ [23 <./Figuras/Desenvolvimento/gsm.jpg>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/rfhard.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/rfhard.pdf, id=1429, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/rfhard.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/rfhard.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rfhard.pdf used on input line 
+146.
+(pdftex.def)             Requested size: 352.81552pt x 204.0303pt.
+File: Figuras/Desenvolvimento/rfhard.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/rfhard.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rfhard.pdf used on input line 
+152.
+(pdftex.def)             Requested size: 308.71106pt x 108.08054pt.
+
+Underfull \vbox (badness 3460) has occurred while \output is active []
+
+
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 24 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 156.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 156.
+[24 <./Figuras/Desenvolvimento/rfhard.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 159.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 160.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/diagramaentrada.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Desenvolvimento/diagramaentrada.pdf, id=1468, 597.55246pt x 845.07724p
+t>
+File: Figuras/Desenvolvimento/diagramaentrada.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/diagramaentrada.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/diagramaentrada.pdf used on in
+put line 165.
+(pdftex.def)             Requested size: 352.81552pt x 107.93538pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/entrada.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/entrada.pdf, id=1470, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/entrada.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/entrada.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/entrada.pdf used on input line
+ 171.
+(pdftex.def)             Requested size: 308.71106pt x 85.97711pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 175.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 175.
+ [25 <./Figuras/Desenvolvimento/diagramaentrada.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 175.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 178.
+File: Figuras/Desenvolvimento/diagramaentrada.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/diagramaentrada.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/diagramaentrada.pdf used on in
+put line 182.
+(pdftex.def)             Requested size: 352.81552pt x 107.93538pt.
+File: Figuras/Desenvolvimento/entrada.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/entrada.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/entrada.pdf used on input line
+ 188.
+(pdftex.def)             Requested size: 277.84332pt x 134.66414pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/bytes.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/bytes.pdf, id=1494, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/bytes.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/bytes.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/bytes.pdf used on input line 1
+94.
+(pdftex.def)             Requested size: 154.35889pt x 181.09006pt.
+
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 26 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 198.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 198.
+[26 <./Figuras/Desenvolvimento/entrada.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 201.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 203.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/diagramafonte.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Desenvolvimento/diagramafonte.pdf, id=1524, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/diagramafonte.pdf Graphic file (type pdf)
+<use Figuras/Desenvolvimento/diagramafonte.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/diagramafonte.pdf used on inpu
+t line 208.
+(pdftex.def)             Requested size: 264.61333pt x 208.62358pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/graficoconsumos.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Desenvolvimento/graficoconsumos.pdf, id=1526, 597.55246pt x 845.07724p
+t>
+File: Figuras/Desenvolvimento/graficoconsumos.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/graficoconsumos.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/graficoconsumos.pdf used on in
+put line 214.
+(pdftex.def)             Requested size: 396.91325pt x 177.45903pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 217.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 217.
+ [27 <./Figuras/Desenvolvimento/bytes.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 219.
+
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 28 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 222.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 222.
+[28 <./Figuras/Desenvolvimento/diagramafonte.pdf> <./Figuras/Desenvolvimento/gr
+aficoconsumos.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/alimentacao.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/alimentacao.pdf, id=1586, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/alimentacao.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/alimentacao.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/alimentacao.pdf used on input 
+line 229.
+(pdftex.def)             Requested size: 251.38333pt x 108.09987pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 233.
+File: Figuras/Desenvolvimento/alimentacao.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/alimentacao.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/alimentacao.pdf used on input 
+line 239.
+(pdftex.def)             Requested size: 396.91325pt x 121.8656pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 243.
+ [29 <./Figuras/Desenvolvimento/alimentacao.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 243.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 246.
+File: Figuras/Desenvolvimento/alimentacao.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/alimentacao.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/alimentacao.pdf used on input 
+line 252.
+(pdftex.def)             Requested size: 295.48106pt x 79.30255pt.
+File: Figuras/Desenvolvimento/alimentacao.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/alimentacao.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/alimentacao.pdf used on input 
+line 258.
+(pdftex.def)             Requested size: 295.48106pt x 97.31706pt.
+
+Overfull \hbox (13.02808pt too wide) has occurred while \output is active
+\T1/ptm/m/n/10.95 30 \T1/ptm/m/sl/10.95 CAPÍTULO 3.  DESENVOLVIMENTO DA UNIDADE
+ CENTRAL DE CONTROLO E COMANDO
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 261.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 261.
+[30]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 263.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 265.
+ [31])
+\openout2 = `Placas.aux'.
+
+ (Placas.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [32
+
+
+
+]
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 12.
+[33]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+ [34]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/modulos.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/modulos.pdf, id=1667, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/modulos.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/modulos.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/modulos.pdf used on input line
+ 39.
+(pdftex.def)             Requested size: 176.40439pt x 251.76025pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 42.
+ [35]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/3d.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/3d.pdf, id=1673, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/3d.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/3d.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/3d.pdf used on input line 45.
+(pdftex.def)             Requested size: 220.50887pt x 165.01877pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+ [36 <./Figuras/Desenvolvimento/modulos.pdf> <./Figuras/Desenvolvimento/3d.pdf>
+]
+<Figuras/Desenvolvimento/Ant17top.jpg, id=1704, 249.18094pt x 177.66376pt>
+File: Figuras/Desenvolvimento/Ant17top.jpg Graphic file (type jpg)
+
+<use Figuras/Desenvolvimento/Ant17top.jpg>
+Package pdftex.def Info: Figuras/Desenvolvimento/Ant17top.jpg used on input lin
+e 64.
+(pdftex.def)             Requested size: 154.35553pt x 110.0555pt.
+
+<Figuras/Desenvolvimento/Ant17bott.jpg, id=1706, 578.91281pt x 414.04688pt>
+File: Figuras/Desenvolvimento/Ant17bott.jpg Graphic file (type jpg)
+
+<use Figuras/Desenvolvimento/Ant17bott.jpg>
+Package pdftex.def Info: Figuras/Desenvolvimento/Ant17bott.jpg used on input li
+ne 70.
+(pdftex.def)             Requested size: 154.35553pt x 110.3979pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/set17.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/set17.pdf, id=1708, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/set17.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/set17.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/set17.pdf used on input line 8
+1.
+(pdftex.def)             Requested size: 220.50887pt x 191.69087pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/smithnaoadaptada.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Desenvolvimento/smithnaoadaptada.pdf, id=1710, 597.55246pt x 845.07724
+pt>
+File: Figuras/Desenvolvimento/smithnaoadaptada.pdf Graphic file (type pdf)
+ <use Figuras/Desenvolvimento/smithnaoadaptada.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/smithnaoadaptada.pdf used on i
+nput line 87.
+(pdftex.def)             Requested size: 220.50887pt x 191.69087pt.
+
+Underfull \vbox (badness 2158) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 93.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 93.
+ [37]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/set17Adapt.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/set17Adapt.pdf, id=1716, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/set17Adapt.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/set17Adapt.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/set17Adapt.pdf used on input l
+ine 98.
+(pdftex.def)             Requested size: 220.50887pt x 191.69087pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/smithadaptada.pdf)
+: PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Desenvolvimento/smithadaptada.pdf, id=1718, 597.55246pt x 845.07724pt>
+File: Figuras/Desenvolvimento/smithadaptada.pdf Graphic file (type pdf)
+<use Figuras/Desenvolvimento/smithadaptada.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/smithadaptada.pdf used on inpu
+t line 104.
+(pdftex.def)             Requested size: 220.50887pt x 191.69087pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 111.
+
+Underfull \vbox (badness 7796) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 113.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 113.
+ [38 <./Figuras/Desenvolvimento/Ant17top.jpg> <./Figuras/Desenvolvimento/Ant17b
+ott.jpg> <./Figuras/Desenvolvimento/set17.pdf> <./Figuras/Desenvolvimento/smith
+naoadaptada.pdf> <./Figuras/Desenvolvimento/set17Adapt.pdf> <./Figuras/Desenvol
+vimento/smithadaptada.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 113.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 115.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/rfcortop.pdf): PDF
+ inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/rfcortop.pdf, id=1752, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/rfcortop.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/rfcortop.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rfcortop.pdf used on input lin
+e 121.
+(pdftex.def)             Requested size: 220.50887pt x 155.91617pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Desenvolvimento/rfcorbott.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Desenvolvimento/rfcorbott.pdf, id=1754, 845.07724pt x 597.55246pt>
+File: Figuras/Desenvolvimento/rfcorbott.pdf Graphic file (type pdf)
+
+<use Figuras/Desenvolvimento/rfcorbott.pdf>
+Package pdftex.def Info: Figuras/Desenvolvimento/rfcorbott.pdf used on input li
+ne 127.
+(pdftex.def)             Requested size: 220.50887pt x 155.91617pt.
+
+<Figuras/Desenvolvimento/aspetoFinal.jpg, id=1756, 2432.08624pt x 1033.8625pt>
+File: Figuras/Desenvolvimento/aspetoFinal.jpg Graphic file (type jpg)
+
+<use Figuras/Desenvolvimento/aspetoFinal.jpg>
+Package pdftex.def Info: Figuras/Desenvolvimento/aspetoFinal.jpg used on input 
+line 136.
+(pdftex.def)             Requested size: 343.99329pt x 146.22266pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 140.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 140.
+ [39 <./Figuras/Desenvolvimento/rfcortop.pdf> <./Figuras/Desenvolvimento/rfcorb
+ott.pdf> <./Figuras/Desenvolvimento/aspetoFinal.jpg>])
+\openout2 = `Software.aux'.
+
+ (Software.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [40
+
+
+
+]
+Cap\'{\i }tulo 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 13.
+[41] <Figuras/Software/gsm.pdf, id=1777, 614.295pt x 794.97pt>
+File: Figuras/Software/gsm.pdf Graphic file (type pdf)
+
+<use Figuras/Software/gsm.pdf>
+Package pdftex.def Info: Figuras/Software/gsm.pdf used on input line 16.
+(pdftex.def)             Requested size: 176.40439pt x 216.74963pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 21.
+
+<Figuras/codigoComando.jpg, id=1780, 256.96pt x 192.72pt>
+File: Figuras/codigoComando.jpg Graphic file (type jpg)
+
+<use Figuras/codigoComando.jpg>
+Package pdftex.def Info: Figuras/codigoComando.jpg used on input line 27.
+(pdftex.def)             Requested size: 264.61333pt x 198.4744pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+ [42 <./Figuras/Software/gsm.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 38.
+ [43 <./Figuras/codigoComando.jpg>]
+<Figuras/DiagramafuncionalRF.pdf, id=1795, 597.23125pt x 845.1575pt>
+File: Figuras/DiagramafuncionalRF.pdf Graphic file (type pdf)
+
+<use Figuras/DiagramafuncionalRF.pdf>
+Package pdftex.def Info: Figuras/DiagramafuncionalRF.pdf used on input line 41.
+
+(pdftex.def)             Requested size: 441.01773pt x 617.79846pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+ [44 <./Figuras/DiagramafuncionalRF.pdf>]
+<Figuras/tempoSimbolo.pdf, id=1808, 597.23125pt x 845.1575pt>
+File: Figuras/tempoSimbolo.pdf Graphic file (type pdf)
+
+<use Figuras/tempoSimbolo.pdf>
+Package pdftex.def Info: Figuras/tempoSimbolo.pdf used on input line 58.
+(pdftex.def)             Requested size: 405.7355pt x 200.02373pt.
+
+
+LaTeX Warning: Reference `fig:simbolos' on page 45 undefined on input line 65.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 69.
+[45 <./Figuras/tempoSimbolo.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/obtencaoTempos.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/obtencaoTempos.pdf, id=1822, 597.55246pt x 845.07724pt>
+File: Figuras/obtencaoTempos.pdf Graphic file (type pdf)
+
+<use Figuras/obtencaoTempos.pdf>
+Package pdftex.def Info: Figuras/obtencaoTempos.pdf used on input line 72.
+(pdftex.def)             Requested size: 176.40439pt x 86.60933pt.
+
+<Figuras/amostragem.pdf, id=1825, 597.23125pt x 845.1575pt>
+File: Figuras/amostragem.pdf Graphic file (type pdf)
+
+<use Figuras/amostragem.pdf>
+Package pdftex.def Info: Figuras/amostragem.pdf used on input line 81.
+(pdftex.def)             Requested size: 220.50887pt x 78.27911pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
+ [46 <./Figuras/obtencaoTempos.pdf>]
+<Figuras/DiagramaTMR5.pdf, id=1833, 597.23125pt x 845.1575pt>
+File: Figuras/DiagramaTMR5.pdf Graphic file (type pdf)
+
+<use Figuras/DiagramaTMR5.pdf>
+Package pdftex.def Info: Figuras/DiagramaTMR5.pdf used on input line 88.
+(pdftex.def)             Requested size: 441.01773pt x 531.7058pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 92.
+ [47 <./Figuras/amostragem.pdf> <./Figuras/DiagramaTMR5.pdf>]
+<Figuras/Diagramacodigo.pdf, id=1848, page=1, 845.1575pt x 599.23875pt>
+File: Figuras/Diagramacodigo.pdf Graphic file (type pdf)
+
+<use Figuras/Diagramacodigo.pdf, page 1>
+Package pdftex.def Info: Figuras/Diagramacodigo.pdf, page1 used on input line 9
+8.
+(pdftex.def)             Requested size: 782.55965pt x 570.78465pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+ [48 <./Figuras/Diagramacodigo.pdf>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 122.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 122.
+
+[49]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/diagramaaplicacao.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/diagramaaplicacao.pdf, id=1863, 1194.98447pt x 845.07724pt>
+File: Figuras/Software/diagramaaplicacao.pdf Graphic file (type pdf)
+
+<use Figuras/Software/diagramaaplicacao.pdf>
+Package pdftex.def Info: Figuras/Software/diagramaaplicacao.pdf used on input l
+ine 125.
+(pdftex.def)             Requested size: 396.91325pt x 315.96196pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p1.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p1.pdf, id=1866, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p1.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p1.pdf>
+Package pdftex.def Info: Figuras/Software/p1.pdf used on input line 135.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p2.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p2.pdf, id=1868, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p2.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p2.pdf>
+Package pdftex.def Info: Figuras/Software/p2.pdf used on input line 141.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p3.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p3.pdf, id=1870, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p3.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p3.pdf>
+Package pdftex.def Info: Figuras/Software/p3.pdf used on input line 152.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p4.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p4.pdf, id=1872, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p4.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p4.pdf>
+Package pdftex.def Info: Figuras/Software/p4.pdf used on input line 158.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 165.
+ [50 <./Figuras/Software/diagramaaplicacao.pdf> <./Figuras/Software/p1.pdf> <./
+Figuras/Software/p2.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p5.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p5.pdf, id=1934, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p5.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p5.pdf>
+Package pdftex.def Info: Figuras/Software/p5.pdf used on input line 173.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p6.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p6.pdf, id=1936, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p6.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p6.pdf>
+Package pdftex.def Info: Figuras/Software/p6.pdf used on input line 179.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p7.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p7.pdf, id=1939, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p7.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p7.pdf>
+Package pdftex.def Info: Figuras/Software/p7.pdf used on input line 189.
+(pdftex.def)             Requested size: 110.25443pt x 169.76349pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 192.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 192.
+ [51 <./Figuras/Software/p3.pdf> <./Figuras/Software/p4.pdf> <./Figuras/Softwar
+e/p5.pdf> <./Figuras/Software/p6.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p11.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p11.pdf, id=1995, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p11.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p11.pdf>
+Package pdftex.def Info: Figuras/Software/p11.pdf used on input line 198.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p12.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p12.pdf, id=1997, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p12.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p12.pdf>
+Package pdftex.def Info: Figuras/Software/p12.pdf used on input line 204.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p8.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p8.pdf, id=2000, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p8.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p8.pdf>
+Package pdftex.def Info: Figuras/Software/p8.pdf used on input line 214.
+(pdftex.def)             Requested size: 110.25443pt x 169.76349pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 218.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 218.
+ [52 <./Figuras/Software/p7.pdf> <./Figuras/Software/p11.pdf> <./Figuras/Softwa
+re/p12.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p9.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p9.pdf, id=2044, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p9.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p9.pdf>
+Package pdftex.def Info: Figuras/Software/p9.pdf used on input line 224.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p10.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p10.pdf, id=2046, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p10.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p10.pdf>
+Package pdftex.def Info: Figuras/Software/p10.pdf used on input line 231.
+(pdftex.def)             Requested size: 110.25443pt x 166.3934pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Software/p13.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Software/p13.pdf, id=2049, 597.55246pt x 845.07724pt>
+File: Figuras/Software/p13.pdf Graphic file (type pdf)
+
+<use Figuras/Software/p13.pdf>
+Package pdftex.def Info: Figuras/Software/p13.pdf used on input line 242.
+(pdftex.def)             Requested size: 110.25443pt x 169.76349pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 246.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 246.
+ [53 <./Figuras/Software/p8.pdf> <./Figuras/Software/p9.pdf> <./Figuras/Softwar
+e/p10.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 247.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 63.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 63.
+ [54 <./Figuras/Software/p13.pdf>]
+\openout2 = `Conclusao.aux'.
+
+ (Conclusao.tex
+Cap\'{\i }tulo 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+<Figuras/Validacao/linha5v.png, id=2118, 257.46187pt x 193.47281pt>
+File: Figuras/Validacao/linha5v.png Graphic file (type png)
+
+<use Figuras/Validacao/linha5v.png>
+Package pdftex.def Info: Figuras/Validacao/linha5v.png used on input line 15.
+(pdftex.def)             Requested size: 198.45662pt x 183.64166pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 18.
+ [55
+
+
+
+]
+<Figuras/Validacao/s1.jpg, id=2124, 602.25pt x 361.35pt>
+File: Figuras/Validacao/s1.jpg Graphic file (type jpg)
+
+<use Figuras/Validacao/s1.jpg>
+Package pdftex.def Info: Figuras/Validacao/s1.jpg used on input line 21.
+(pdftex.def)             Requested size: 277.84332pt x 166.71375pt.
+
+<Figuras/Validacao/s2.jpg, id=2125, 803.0pt x 481.8pt>
+File: Figuras/Validacao/s2.jpg Graphic file (type jpg)
+
+<use Figuras/Validacao/s2.jpg>
+Package pdftex.def Info: Figuras/Validacao/s2.jpg used on input line 27.
+(pdftex.def)             Requested size: 277.84332pt x 166.70638pt.
+
+<Figuras/Validacao/s3.jpg, id=2126, 803.0pt x 481.8pt>
+File: Figuras/Validacao/s3.jpg Graphic file (type jpg)
+
+<use Figuras/Validacao/s3.jpg>
+Package pdftex.def Info: Figuras/Validacao/s3.jpg used on input line 33.
+(pdftex.def)             Requested size: 277.84332pt x 166.70638pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+ [56 <./Figuras/Validacao/linha5v.png> <./Figuras/Validacao/s1.jpg>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Validacao/t1.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Validacao/t1.pdf, id=2141, 597.55246pt x 845.07724pt>
+File: Figuras/Validacao/t1.pdf Graphic file (type pdf)
+
+<use Figuras/Validacao/t1.pdf>
+Package pdftex.def Info: Figuras/Validacao/t1.pdf used on input line 42.
+(pdftex.def)             Requested size: 308.71106pt x 148.57272pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Validacao/t2.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Validacao/t2.pdf, id=2143, 597.55246pt x 845.07724pt>
+File: Figuras/Validacao/t2.pdf Graphic file (type pdf)
+
+<use Figuras/Validacao/t2.pdf>
+Package pdftex.def Info: Figuras/Validacao/t2.pdf used on input line 48.
+(pdftex.def)             Requested size: 308.71106pt x 148.57272pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+ [57 <./Figuras/Validacao/s2.jpg> <./Figuras/Validacao/s3.jpg>]
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Validacao/t3.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Validacao/t3.pdf, id=2150, 597.55246pt x 845.07724pt>
+File: Figuras/Validacao/t3.pdf Graphic file (type pdf)
+
+<use Figuras/Validacao/t3.pdf>
+Package pdftex.def Info: Figuras/Validacao/t3.pdf used on input line 54.
+(pdftex.def)             Requested size: 308.71106pt x 148.57272pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+<Figuras/Validacao/temperatura.jpg, id=2153, 963.6pt x 820.06375pt>
+File: Figuras/Validacao/temperatura.jpg Graphic file (type jpg)
+
+<use Figuras/Validacao/temperatura.jpg>
+Package pdftex.def Info: Figuras/Validacao/temperatura.jpg used on input line 6
+4.
+(pdftex.def)             Requested size: 220.50887pt x 187.6597pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 68.
+ [58 <./Figuras/Validacao/t1.pdf> <./Figuras/Validacao/t2.pdf> <./Figuras/Valid
+acao/t3.pdf>]
+<Figuras/Validacao/juncaomodulos.jpg, id=2189, 775.39688pt x 813.0375pt>
+File: Figuras/Validacao/juncaomodulos.jpg Graphic file (type jpg)
+
+<use Figuras/Validacao/juncaomodulos.jpg>
+Package pdftex.def Info: Figuras/Validacao/juncaomodulos.jpg used on input line
+ 71.
+(pdftex.def)             Requested size: 176.40439pt x 184.96011pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Validacao/tabela_caracteristicas.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Figuras/Validacao/tabela_caracteristicas.pdf, id=2192, 597.55246pt x 845.07724
+pt>
+File: Figuras/Validacao/tabela_caracteristicas.pdf Graphic file (type pdf)
+ <use Figuras/Validacao/tabela_caracteristicas.pdf>
+Package pdftex.def Info: Figuras/Validacao/tabela_caracteristicas.pdf used on i
+nput line 80.
+(pdftex.def)             Requested size: 242.5611pt x 218.47316pt.
+
+Underfull \vbox (badness 3250) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 84.
+ [59 <./Figuras/Validacao/temperatura.jpg> <./Figuras/Validacao/juncaomodulos.j
+pg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 85.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 64.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 64.
+
+[60 <./Figuras/Validacao/tabela_caracteristicas.pdf>]
+\openout2 = `Bibliografia.aux'.
+
+ (Bibliografia.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+[]\T1/ptm/m/n/10.95 Roger Te-ch-no-logy. Se-rie E80 RA-DI-O-CO-MANDI. [On-line]
+. Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+[]\T1/ptm/m/n/10.95 JCM Te-ch-no-lo-gies. Ac-cess units, GO 868 MHz trans-mit-t
+ers. [On-line]. Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]\T1/ptm/m/n/10.95 Automatismos Pu-jol, Somfy Group. Va-rio re-mote con-troll.
+ [On-line]. Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\T1/ptm/m/n/10.95 Remote4gates. NOR-TON TXCD4 ME Re-mote con-trol. [On-line].
+ Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+[]\T1/ptm/m/n/10.95 CELINSA Au-to-ma-tis-mos para Pu-er-tas. EMI-SO-RES. [On-li
+ne]. Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]\T1/ptm/m/n/10.95 EasyGates. Apri-ma-tic Re-mote Con-trols. [On-line]. Avai-l
+a-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\T1/ptm/m/n/10.95 DEA, move as you like. RE-MOTE CON-TROLS. [On-line]. Avai-l
+a-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+[]\T1/ptm/m/n/10.95 EasyGates, Ma-nu-als. Flo Trans-mit-ter. [On-line]. Avai-la
+-ble:
+ []
+
+
+Underfull \hbox (badness 5924) in paragraph at lines 20--21
+[]\T1/ptm/m/n/10.95 Beninca, Te-ch-no-logy to open. EMIS-SO-RES TO.GO ARC K. [O
+n-line]. Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]\T1/ptm/m/n/10.95 Seav. RA-DIO CON-TROL BEHAPPY SE-RIES ``S'' NEW. [On-line].
+ Avai-la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]\T1/ptm/m/n/10.95 http://www.seav.it/sites/default/files/prodotti/schede_tecn
+iche/BeHappy%20S%201-2-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+\T1/ptm/m/n/10.95 familia/telecomandos-rolling-code-433-mhz-com-acabamentos-sof
+t-touch-kleio/#kleio-b-rca02-
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 24.
+[61
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 	\bibitem a
+                EasyGates, Manuals. BIXLR12-22 - GOL. [Online]. Available: \...
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]\T1/ptm/m/n/10.95 EasyGates, Ma-nu-als. BIXLR12-22 - GOL. [On-line]. Avai-la-
+ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 	\bibitem a
+                Remote pro. Nice Flor-S Compatible Remote. [Online]. Availab...
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\T1/ptm/m/n/10.95 Remote pro. Nice Flor-S Com-pa-ti-ble Re-mote. [On-line]. A
+vai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 	\bibitem a
+                Motorline professional. MX4SP. [Online]. Available: \href{ht...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 	\bibitem a
+                EasyGates, Manuals. 868 SLH SYSTEM. [Online]. Available: \hr...
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+[]\T1/ptm/m/n/10.95 EasyGates, Ma-nu-als. 868 SLH SYS-TEM. [On-line]. Avai-la-b
+le:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 	\bibitem a
+                EasyGates, Manuals. TOP 432 NA. [Online]. Available: \href{h...
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+[]\T1/ptm/m/n/10.95 EasyGates, Ma-nu-als. TOP 432 NA. [On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 	\bibitem a
+                EasyGates, Manuals. GTX4 - GTX4C. [Online]. Available: \href...
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+[]\T1/ptm/m/n/10.95 EasyGates, Ma-nu-als. GTX4 - GTX4C. [On-line]. Avai-la-ble:
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 	\bibitem a
+                [Online]. Available: \href{https://images-na.ssl-images-amaz...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 	\bibitem a
+                [Online]. Available: \href{https://www.fastaccesssecurity.co...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 	\bibitem a
+                [Online]. Available: \href{http://www.lockitup.com.au/wp-con...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 	\bibitem a
+                Roger Technology. Series H93  RADIO RECEIVERS. [Online]. Ava...
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]\T1/ptm/m/n/10.95 Roger Te-ch-no-logy. Se-ries H93 RA-DIO RE-CEI-VERS. [On-li
+ne]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 	\bibitem a
+                Roger Technology. Series H93 RADIO RECEIVERS. [Online]. Avai...
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[]\T1/ptm/m/n/10.95 Roger Te-ch-no-logy. Se-ries H93 RA-DIO RE-CEI-VERS. [On-li
+ne]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 	\bibitem a
+                Roger Technology. Series R93 RADIO RECEIVERS. [Online]. Avai...
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+[]\T1/ptm/m/n/10.95 Roger Te-ch-no-logy. Se-ries R93 RA-DIO RE-CEI-VERS. [On-li
+ne]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 	\bibitem a
+                Bft, Be ahead. CLONIX 2E AC U-LINK 230. [Online]. Available:...
+
+Underfull \hbox (badness 2050) in paragraph at lines 43--44
+[]\T1/ptm/m/n/10.95 Bft, Be ahead. CLO-NIX 2E AC U-LINK 230. [On-line]. Avai-la
+-ble: []https://www.bft-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 	\bibitem a
+                Bft, Be ahead. CLONIX UNI AC U-LINK 230 V. [Online]. Availab...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 	\bibitem a
+                Bft, Be ahead. CLONIX 4 RTE. [Online]. Available: \href{http...
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[]\T1/ptm/m/n/10.95 Bft, Be ahead. CLO-NIX 4 RTE. [On-line]. Avai-la-ble: []htt
+ps://www.bft-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 	\bibitem a
+                Automatismos Pujol, Somfy Group. junior D Pro. [Online]. Ava...
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+[]\T1/ptm/m/n/10.95 Automatismos Pu-jol, Somfy Group. ju-nior D Pro. [On-line].
+ Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 	\bibitem a
+                Dama, centrum kovovÃ½roby. FAST R2 GB.[Online]. Available: \...
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+[]\T1/ptm/m/n/10.95 Dama, cen-trum ko-vovÃ\TS1/ptm/m/n/10.95 ½\T1/ptm/m/n/10.95
+ roby. FAST R2 GB.[Online]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 	\bibitem a
+                Dama, centrum kovovÃ½roby. DIGITAL LIFE TECHNOLOGY.[Online]....
+
+Underfull \hbox (badness 7963) in paragraph at lines 48--49
+[]\T1/ptm/m/n/10.95 Dama, cen-trum ko-vovÃ\TS1/ptm/m/n/10.95 ½\T1/ptm/m/n/10.95
+ roby. DI-GI-TAL LIFE TE-CH-NO-LOGY.[Online]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 	\bibitem a
+                Ditec entrematic. Ditec BIXLR22 - BIXLR42 - GOL868R4 - Self-...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 	\bibitem a
+                Ditec entrematic. Ditec BIXLR22 - BIXLR42 - GOL868R4 - Self-...
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+[62pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.51 	\bibitem a
+                Ditec entrematic. Ditec BIXLR22 - BIXLR42 - GOL868R4 - Self-...
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 	\bibitem a
+                Ditec entrematic. Ditec BIXLR22 - BIXLR42 - GOL868R4 - Self-...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 	\bibitem a
+                Downee. NET230N Operating Instructions.[Online]. Available: ...
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\T1/ptm/m/n/10.95 Downee. NET230N Ope-ra-ting Ins-truc-ti-ons.[Online]. Avai-
+la-ble:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\T1/ptm/m/n/10.95 http://www.downee.com.au/Media/Default/installation_guides/
+automation/NET230N-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 	\bibitem a
+                Autogate. BENINCA ONE.2WI Plug-in Radio Receiver.[Online]. A...
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+[]\T1/ptm/m/n/10.95 Autogate. BE-NINCA ONE.2WI Plug-in Ra-dio Re-cei-ver.[Onlin
+e]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.54 	\bibitem a
+                Autogate. Odbiornik 2-kanalowy ONE.2QI Beninca.[Online]. Ava...
+
+Underfull \hbox (badness 1215) in paragraph at lines 54--55
+[]\T1/ptm/m/n/10.95 Autogate. Od-bi-or-nik 2-kanalowy ONE.2QI Be-ninca.[Online]
+. Avai-la-ble: []https://emarket-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+\T1/ptm/m/n/10.95 automatyka.pl/akcesoria-do-napedow-odbiorniki-radiowe/1480-od
+biornik-2-kanalowy-one2qi-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55 	\bibitem a
+                JCM Technologies. BASELEC500.[Online]. Available: \href{http...
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\T1/ptm/m/n/10.95 JCM Te-ch-no-lo-gies. BA-SE-LEC500.[Online]. Avai-la-ble: [
+]https://www.jcm-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 	\bibitem a
+                Qualified hardware. 433 MHz TRANSMITTERS \& RECEIVER USER'S ...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 	\bibitem a
+                ERREKA Automatismos. RECEPTOR INDEPENDENTE.[Online]. Availab...
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+[]\T1/ptm/m/n/10.95 ERREKA Au-to-ma-tis-mos. RE-CEP-TOR IN-DE-PEN-DENTE.[Online
+]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 	\bibitem a
+                CELINSA Automatismos para Puertas. RECEPTORES.[Online]. Avai...
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+[]\T1/ptm/m/n/10.95 CELINSA Au-to-ma-tis-mos para Pu-er-tas. RE-CEP-TO-RES.[Onl
+ine]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 	\bibitem a
+                Seav. RXXÂ 2224Â DUALÂ CHANNELÂ RECEIVER.[Online]. Available...
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+[]\T1/ptm/m/n/10.95 Seav. RXXÂ 2224Â DU-ALÂ CHAN-NELÂ RE-CEI-VER.[Online]. Avai
+-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 	\bibitem a
+                EasyGates, Manuals. RXXÂ 2167 .[Online]. Available: \href{ht...
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+[]\T1/ptm/m/n/10.95 EasyGates, Ma-nu-als. RXXÂ 2167 .[On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.61 	\bibitem a
+                V2, Value moves the world. RXP4. [Online]. Available: \href{...
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+[]\T1/ptm/m/n/10.95 V2, Va-lue mo-ves the world. RXP4. [On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 	\bibitem a
+                V2, Value moves the world. RXP4. [Online]. Available: \href{...
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]\T1/ptm/m/n/10.95 V2, Va-lue mo-ves the world. RXP4. [On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 	\bibitem a
+                Inforsolutions. GateControl GSM. [Online]. Available: \href{...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 	\bibitem a
+                [Online]. Available: \href{http://motorline.pt/wp-content/up...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 	\bibitem a
+                [Online]. Available: \href{http://www.rogertechnology.com/pu...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.70 	\bibitem a
+                [Online]. Available: \href{https://www.bft-automation.com/fi...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 	\bibitem a
+                Microchip. HCS301, KEELOQ Code Hopping Encoder [Online]. Ava...
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
+[]\T1/ptm/m/n/10.95 Microchip. HCS301, KE-E-LOQ Code Hop-ping En-co-der [On-lin
+e]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.75 	\bibitem a
+                DatasheetsPDF. EV1527 Datasheet PDF - Silvan Chip [Online]. ...
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+[]\T1/ptm/m/n/10.95 DatasheetsPDF. EV1527 Da-tasheet PDF - Sil-van Chip [On-lin
+e]. Avai-la-ble:
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+[63]pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 	\bibitem a
+                [Online]. Available: \href{http://desembola.com/wp-content/u...
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+[]\T1/ptm/m/n/10.95 [Online]. Avai-la-ble: []http://desembola.com/wp-content/up
+loads/2017/05/contemporary-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 	\bibitem a
+                JMA, Altuna Portugal. Comandos SR-4V , SR-48, SR-Q [Online]....
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+[]\T1/ptm/m/n/10.95 JMA, Al-tuna Por-tu-gal. Co-man-dos SR-4V , SR-48, SR-Q [On
+-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 	\bibitem a
+                Infineon. IFX91041, 1.8A DC/DC Step-Down Voltage Regulator [...
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+[]\T1/ptm/m/n/10.95 Infineon. IFX91041, 1.8A DC/DC Step-Down Vol-tage Re-gu-la-
+tor [On-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/ptm/m/n/10.95 line]. Avai-la-ble: []https://www.infineon.com/dgdl/Infineon-
+IFX91041-DS-v01_01-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.84 	\bibitem a
+                Mornsun. B0505S, 1W, FIXED INPUT ISOLATED \& UNREGULATED
+Underfull \hbox (badness 6575) in paragraph at lines 84--87
+[]\T1/ptm/m/n/10.95 Mornsun. B0505S, 1W, FI-XED IN-PUT ISO-LA-TED & UN-RE-GU-LA
+-TED SIN-GLE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
+\T1/ptm/m/n/10.95 OUT-PUT MI-NI-A-TURE SIP/DIP PAC-KAGE [On-line]. Avai-la-ble:
+ []http://mornsun-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 	\bibitem a
+                Texas Instruments. REG1117, 1W, 800mA and 1A Low Dropout Pos...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 	\bibitem a
+                Microchip. PIC18F87K22 Family Data Sheet [Online]. Available...
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+[]\T1/ptm/m/n/10.95 Microchip. PIC18F87K22 Fa-mily Data Sheet [On-line]. Avai-l
+a-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91 	\bibitem a
+                Ai-Thinker[Online]. Available: \href{http://wiki.ai-thinker....
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 	\bibitem a
+                [Online]. Available: \href{http://img.dxcdn.com/productimage...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 	\bibitem a
+                Semtech. Low Power Integrated UHF Transceiver. [Online]. Ava...
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+[]\T1/ptm/m/n/10.95 Semtech. Low Power In-te-gra-ted UHF Trans-cei-ver. [On-lin
+e]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 	\bibitem a
+                IEEE Xplore Digital Library. [Online]. Available: \href{http...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.101 	\bibitem a
+                 IEEE Xplore Digital Library. Dual UHF RFID band miniaturize...
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+[]\T1/ptm/m/n/10.95 IEEE Xplore Di-gi-tal Li-brary. Dual UHF RFID band mi-ni-a-
+tu-ri-zed mul-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+\T1/ptm/m/n/10.95 pur-pose pla-nar an-tenna for com-pact wi-re-less sys-tems. [
+On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 	\bibitem a
+                 IEEE Xplore Digital Library. A Small Implantable Antenna fo...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 	\bibitem a
+                 IEEE Xplore Digital Library. Design and measurement of a pl...
+
+Underfull \hbox (badness 4328) in paragraph at lines 104--105
+[]\T1/ptm/m/n/10.95 IEEE Xplore Di-gi-tal Li-brary. De-sign and me-a-su-re-ment
+ of a pla-nar dual-band an-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+\T1/ptm/m/n/10.95 tenna for the Tyn-dall Mul-ti-ra-dio wi-re-less sen-sing plat
+-form. [On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 	\bibitem a
+                 IEEE Xplore Digital Library. Design and Analysis of a Dual-...
+
+Underfull \hbox (badness 3291) in paragraph at lines 105--106
+[]\T1/ptm/m/n/10.95 IEEE Xplore Di-gi-tal Li-brary. De-sign and Analy-sis of a 
+Dual-Band Inverted-F An-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+\T1/ptm/m/n/10.95 tenna With Ortho-go-nal Frequency-Controlled Ra-di-a-tion Pla
+-nes. [On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.106 	\bibitem a
+                 IEEE Xplore Digital Library. Set of new compact antennas su...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 	\bibitem a
+                 IEEE Xplore Digital Library. Miniaturized meander PCB anten...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108 	\bibitem a
+                 SlidePlayer. Practical Radio design. [Online]. Available: \...
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 	\bibitem a
+                 Texas Instruments. Application Note AN058. [Online]. Availa...
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+[]\T1/ptm/m/n/10.95 Texas Ins-tru-ments. Ap-pli-ca-tion Note AN058. [On-line]. 
+Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 	\bibitem a
+                 Texas Instruments. Design Note DN031. [Online]. Available: ...
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+[]\T1/ptm/m/n/10.95 Texas Ins-tru-ments. De-sign Note DN031. [On-line]. Avai-la
+-ble:
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 111.
+[64]pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.111 	\bibitem a
+                 Texas Instruments. Design Note DN038. [Online]. Available: ...
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+[]\T1/ptm/m/n/10.95 Texas Ins-tru-ments. De-sign Note DN038. [On-line]. Avai-la
+-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 	\bibitem a
+                 Texas Instruments. Antenna Selection Quick Guide DN035. [On...
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
+[]\T1/ptm/m/n/10.95 Texas Ins-tru-ments. An-tenna Se-lec-tion Quick Guide DN035
+. [On-line]. Avai-la-ble:
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.a}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.118 	\bibitem a
+                 Saturn PCB design. Turnkey Eletronic Engineering Solucions[...
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+[]\T1/ptm/m/n/10.95 Saturn PCB de-sign. Turn-key Ele-tro-nic En-gi-ne-e-ring So
+-lu-ci-ons[Online]. Avai-la-ble:
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 120.
+[65])
+\openout2 = `Apendices.aux'.
+
+ (Apendices.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+ [66
+
+
+
+]
+Ap\^endice A.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 2.
+<Figuras/prototop.png, id=2361, 694.09312pt x 745.28438pt>
+File: Figuras/prototop.png Graphic file (type png)
+
+<use Figuras/prototop.png>
+Package pdftex.def Info: Figuras/prototop.png used on input line 7.
+(pdftex.def)             Requested size: 169.34993pt x 181.84003pt.
+
+<Figuras/protobott.png, id=2362, 695.59875pt x 744.53156pt>
+File: Figuras/protobott.png Graphic file (type png)
+
+<use Figuras/protobott.png>
+Package pdftex.def Info: Figuras/protobott.png used on input line 14.
+(pdftex.def)             Requested size: 169.34993pt x 181.25871pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 20.
+
+<Figuras/placa_comandos.png, id=2363, 761.84625pt x 514.17094pt>
+File: Figuras/placa_comandos.png Graphic file (type png)
+
+<use Figuras/placa_comandos.png>
+Package pdftex.def Info: Figuras/placa_comandos.png used on input line 23.
+(pdftex.def)             Requested size: 264.61333pt x 178.5817pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 25.
+ [67 <./Figuras/prototop.png> <./Figuras/protobott.png> <./Figuras/placa_comand
+os.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
+ [68
+
+]
+Ap\^endice B.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 27.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24.88> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 27.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/Anexos/pinout.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/Anexos/pinout.pdf, id=2375, 597.55246pt x 845.07724pt>
+File: Figuras/Anexos/pinout.pdf Graphic file (type pdf)
+
+<use Figuras/Anexos/pinout.pdf>
+Package pdftex.def Info: Figuras/Anexos/pinout.pdf used on input line 30.
+(pdftex.def)             Requested size: 282.25107pt x 483.38617pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 33.
+ [69 <./Figuras/Anexos/pinout.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+ [70
+
+]
+Ap\^endice C.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 35.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Antena433MHz/Antena433Mhz.pdf): PD
+F inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Antena433MHz/Antena433Mhz.pdf, id=2406, 597.55246pt x 845.07724pt>
+File: Antenas/Antena433MHz/Antena433Mhz.pdf Graphic file (type pdf)
+
+<use Antenas/Antena433MHz/Antena433Mhz.pdf>
+Package pdftex.def Info: Antenas/Antena433MHz/Antena433Mhz.pdf used on input li
+ne 43.
+(pdftex.def)             Requested size: 352.81552pt x 282.2464pt.
+
+<Antenas/Antena433MHz/Antena433MHz_fig.png, id=2408, 782.17218pt x 164.11313pt>
+File: Antenas/Antena433MHz/Antena433MHz_fig.png Graphic file (type png)
+<use Antenas/Antena433MHz/Antena433MHz_fig.png>
+Package pdftex.def Info: Antenas/Antena433MHz/Antena433MHz_fig.png used on inpu
+t line 52.
+(pdftex.def)             Requested size: 176.40439pt x 37.01149pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 59.
+
+<Antenas/Set0/set0top.jpg, id=2409, 506.6428pt x 362.10281pt>
+File: Antenas/Set0/set0top.jpg Graphic file (type jpg)
+
+<use Antenas/Set0/set0top.jpg>
+Package pdftex.def Info: Antenas/Set0/set0top.jpg used on input line 67.
+(pdftex.def)             Requested size: 132.30666pt x 94.5589pt.
+
+<Antenas/Set0/set0bott.jpg, id=2410, 184.43906pt x 131.74219pt>
+File: Antenas/Set0/set0bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set0/set0bott.jpg>
+Package pdftex.def Info: Antenas/Set0/set0bott.jpg used on input line 74.
+(pdftex.def)             Requested size: 132.30666pt x 94.5045pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set0/Set0.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set0/Set0.pdf, id=2411, 597.55246pt x 845.07724pt>
+File: Antenas/Set0/Set0.pdf Graphic file (type pdf)
+
+<use Antenas/Set0/Set0.pdf>
+Package pdftex.def Info: Antenas/Set0/Set0.pdf used on input line 82.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 89.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 89.
+ [71 <./Antenas/Antena433MHz/Antena433Mhz.pdf> <./Antenas/Antena433MHz/Antena43
+3MHz_fig.png>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 89.
+ <Antenas/Set1/set1top.jpg, id=2422, 486.31688pt x 347.04657pt>
+File: Antenas/Set1/set1top.jpg Graphic file (type jpg)
+
+<use Antenas/Set1/set1top.jpg>
+Package pdftex.def Info: Antenas/Set1/set1top.jpg used on input line 97.
+(pdftex.def)             Requested size: 132.30666pt x 94.41342pt.
+
+<Antenas/Set1/set1bott.jpg, id=2423, 194.22563pt x 137.01187pt>
+File: Antenas/Set1/set1bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set1/set1bott.jpg>
+Package pdftex.def Info: Antenas/Set1/set1bott.jpg used on input line 104.
+(pdftex.def)             Requested size: 132.30666pt x 93.33408pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set1/Set1.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set1/Set1.pdf, id=2424, 597.55246pt x 845.07724pt>
+File: Antenas/Set1/Set1.pdf Graphic file (type pdf)
+
+<use Antenas/Set1/Set1.pdf>
+Package pdftex.def Info: Antenas/Set1/Set1.pdf used on input line 112.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 119.
+
+<Antenas/Set2/set2top.jpg, id=2426, 390.70969pt x 279.29344pt>
+File: Antenas/Set2/set2top.jpg Graphic file (type jpg)
+
+<use Antenas/Set2/set2top.jpg>
+Package pdftex.def Info: Antenas/Set2/set2top.jpg used on input line 127.
+(pdftex.def)             Requested size: 132.30666pt x 94.57495pt.
+
+<Antenas/Set2/set2bott.jpg, id=2427, 155.83218pt x 110.66344pt>
+File: Antenas/Set2/set2bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set2/set2bott.jpg>
+Package pdftex.def Info: Antenas/Set2/set2bott.jpg used on input line 134.
+(pdftex.def)             Requested size: 132.30666pt x 93.95796pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set2/Set2.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set2/Set2.pdf, id=2428, 597.55246pt x 845.07724pt>
+File: Antenas/Set2/Set2.pdf Graphic file (type pdf)
+
+<use Antenas/Set2/Set2.pdf>
+Package pdftex.def Info: Antenas/Set2/Set2.pdf used on input line 142.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 149.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 149.
+ [72 <./Antenas/Set0/Set0.pdf> <./Antenas/Set1/Set1.pdf> <./Antenas/Set0/set0to
+p.jpg> <./Antenas/Set0/set0bott.jpg> <./Antenas/Set1/set1top.jpg> <./Antenas/Se
+t1/set1bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 149.
+ <Antenas/Set3/set3top.jpg, id=2446, 590.95781pt x 422.32782pt>
+File: Antenas/Set3/set3top.jpg Graphic file (type jpg)
+
+<use Antenas/Set3/set3top.jpg>
+Package pdftex.def Info: Antenas/Set3/set3top.jpg used on input line 157.
+(pdftex.def)             Requested size: 132.30666pt x 94.54922pt.
+
+<Antenas/Set3/set3bott.jpg, id=2447, 283.0575pt x 159.59625pt>
+File: Antenas/Set3/set3bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set3/set3bott.jpg>
+Package pdftex.def Info: Antenas/Set3/set3bott.jpg used on input line 164.
+(pdftex.def)             Requested size: 132.30666pt x 74.59868pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set3/Set3.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set3/Set3.pdf, id=2448, 597.55246pt x 845.07724pt>
+File: Antenas/Set3/Set3.pdf Graphic file (type pdf)
+
+<use Antenas/Set3/Set3.pdf>
+Package pdftex.def Info: Antenas/Set3/Set3.pdf used on input line 172.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 179.
+
+<Antenas/Set4/set4top.jpg, id=2450, 789.95125pt x 564.1075pt>
+File: Antenas/Set4/set4top.jpg Graphic file (type jpg)
+
+<use Antenas/Set4/set4top.jpg>
+Package pdftex.def Info: Antenas/Set4/set4top.jpg used on input line 187.
+(pdftex.def)             Requested size: 132.30666pt x 94.47675pt.
+
+<Antenas/Set4/set4bott.jpg, id=2451, 783.92876pt x 559.08875pt>
+File: Antenas/Set4/set4bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set4/set4bott.jpg>
+Package pdftex.def Info: Antenas/Set4/set4bott.jpg used on input line 194.
+(pdftex.def)             Requested size: 132.30666pt x 94.35281pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set4/Set4.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set4/Set4.pdf, id=2452, 597.55246pt x 845.07724pt>
+File: Antenas/Set4/Set4.pdf Graphic file (type pdf)
+
+<use Antenas/Set4/Set4.pdf>
+Package pdftex.def Info: Antenas/Set4/Set4.pdf used on input line 202.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (9.54414pt too wide) has occurred while \output is active
+\T1/ptm/m/sl/10.95 C.4.  ANTENA PIFA(PLANAR INVERTED F ANTENNA) COM UM PARALELO
+ MEANDRO (2) \T1/ptm/m/n/10.95 73
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 209.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 209.
+[73 <./Antenas/Set2/Set2.pdf> <./Antenas/Set3/Set3.pdf> <./Antenas/Set2/set2top
+.jpg> <./Antenas/Set2/set2bott.jpg> <./Antenas/Set3/set3top.jpg> <./Antenas/Set
+3/set3bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 209.
+ <Antenas/Set5/set5top.jpg, id=2470, 1505.625pt x 517.18219pt>
+File: Antenas/Set5/set5top.jpg Graphic file (type jpg)
+
+<use Antenas/Set5/set5top.jpg>
+Package pdftex.def Info: Antenas/Set5/set5top.jpg used on input line 218.
+(pdftex.def)             Requested size: 132.30666pt x 45.44745pt.
+
+<Antenas/Set5/set5bott.jpg, id=2471, 1455.18657pt x 514.17094pt>
+File: Antenas/Set5/set5bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set5/set5bott.jpg>
+Package pdftex.def Info: Antenas/Set5/set5bott.jpg used on input line 225.
+(pdftex.def)             Requested size: 132.30666pt x 46.74413pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set5/Set5.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set5/Set5.pdf, id=2472, 597.55246pt x 845.07724pt>
+File: Antenas/Set5/Set5.pdf Graphic file (type pdf)
+
+<use Antenas/Set5/Set5.pdf>
+Package pdftex.def Info: Antenas/Set5/Set5.pdf used on input line 233.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 240.
+
+<Antenas/Set6/set6top.jpg, id=2474, 999.735pt x 713.66624pt>
+File: Antenas/Set6/set6top.jpg Graphic file (type jpg)
+
+<use Antenas/Set6/set6top.jpg>
+Package pdftex.def Info: Antenas/Set6/set6top.jpg used on input line 248.
+(pdftex.def)             Requested size: 132.30666pt x 94.44598pt.
+
+<Antenas/Set6/set6bott.jpg, id=2475, 1029.8475pt x 735.74875pt>
+File: Antenas/Set6/set6bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set6/set6bott.jpg>
+Package pdftex.def Info: Antenas/Set6/set6bott.jpg used on input line 255.
+(pdftex.def)             Requested size: 132.30666pt x 94.5168pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set6/Set6.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set6/Set6.pdf, id=2476, 597.55246pt x 845.07724pt>
+File: Antenas/Set6/Set6.pdf Graphic file (type pdf)
+
+<use Antenas/Set6/Set6.pdf>
+Package pdftex.def Info: Antenas/Set6/Set6.pdf used on input line 263.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 270.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 270.
+ [74 <./Antenas/Set4/Set4.pdf> <./Antenas/Set5/Set5.pdf> <./Antenas/Set4/set4to
+p.jpg> <./Antenas/Set4/set4bott.jpg> <./Antenas/Set5/set5top.jpg> <./Antenas/Se
+t5/set5bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 270.
+ <Antenas/Set7/set7top.jpg, id=2494, 2872.7325pt x 2051.665pt>
+File: Antenas/Set7/set7top.jpg Graphic file (type jpg)
+
+<use Antenas/Set7/set7top.jpg>
+Package pdftex.def Info: Antenas/Set7/set7top.jpg used on input line 278.
+(pdftex.def)             Requested size: 132.30666pt x 94.48103pt.
+
+<Antenas/Set7/set7bott.jpg, id=2495, 3237.09375pt x 2312.64pt>
+File: Antenas/Set7/set7bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set7/set7bott.jpg>
+Package pdftex.def Info: Antenas/Set7/set7bott.jpg used on input line 285.
+(pdftex.def)             Requested size: 132.30666pt x 94.50125pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set7/Set7.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set7/Set7.pdf, id=2496, 597.55246pt x 845.07724pt>
+File: Antenas/Set7/Set7.pdf Graphic file (type pdf)
+
+<use Antenas/Set7/Set7.pdf>
+Package pdftex.def Info: Antenas/Set7/Set7.pdf used on input line 293.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 300.
+
+<Antenas/Set8/set8top.jpg, id=2498, 1570.86874pt x 1122.1925pt>
+File: Antenas/Set8/set8top.jpg Graphic file (type jpg)
+
+<use Antenas/Set8/set8top.jpg>
+Package pdftex.def Info: Antenas/Set8/set8top.jpg used on input line 308.
+(pdftex.def)             Requested size: 132.30666pt x 94.50325pt.
+
+<Antenas/Set8/set8bott.jpg, id=2499, 1809.76125pt x 1291.82625pt>
+File: Antenas/Set8/set8bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set8/set8bott.jpg>
+Package pdftex.def Info: Antenas/Set8/set8bott.jpg used on input line 315.
+(pdftex.def)             Requested size: 132.30666pt x 94.43854pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set8/Set8.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set8/Set8.pdf, id=2500, 597.55246pt x 845.07724pt>
+File: Antenas/Set8/Set8.pdf Graphic file (type pdf)
+
+<use Antenas/Set8/Set8.pdf>
+Package pdftex.def Info: Antenas/Set8/Set8.pdf used on input line 323.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+ [75 <./Antenas/Set6/Set6.pdf> <./Antenas/Set7/Set7.pdf> <./Antenas/Set6/set6to
+p.jpg> <./Antenas/Set6/set6bott.jpg> <./Antenas/Set7/set7top.jpg> <./Antenas/Se
+t7/set7bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 330.
+ <Antenas/Set9/set9top.jpg, id=2519, 943.525pt x 673.51625pt>
+File: Antenas/Set9/set9top.jpg Graphic file (type jpg)
+
+<use Antenas/Set9/set9top.jpg>
+Package pdftex.def Info: Antenas/Set9/set9top.jpg used on input line 338.
+(pdftex.def)             Requested size: 132.30666pt x 94.4355pt.
+
+<Antenas/Set9/set9bott.jpg, id=2520, 1056.94875pt x 754.82pt>
+File: Antenas/Set9/set9bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set9/set9bott.jpg>
+Package pdftex.def Info: Antenas/Set9/set9bott.jpg used on input line 345.
+(pdftex.def)             Requested size: 132.30666pt x 94.47896pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set9/Set9.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set9/Set9.pdf, id=2521, 597.55246pt x 845.07724pt>
+File: Antenas/Set9/Set9.pdf Graphic file (type pdf)
+
+<use Antenas/Set9/Set9.pdf>
+Package pdftex.def Info: Antenas/Set9/Set9.pdf used on input line 353.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 360.
+
+<Antenas/Set10/set10top.jpg, id=2523, 1198.4775pt x 855.195pt>
+File: Antenas/Set10/set10top.jpg Graphic file (type jpg)
+
+<use Antenas/Set10/set10top.jpg>
+Package pdftex.def Info: Antenas/Set10/set10top.jpg used on input line 368.
+(pdftex.def)             Requested size: 132.30666pt x 94.39796pt.
+
+<Antenas/Set10/set10bott.jpg, id=2524, 1160.335pt x 829.0975pt>
+File: Antenas/Set10/set10bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set10/set10bott.jpg>
+Package pdftex.def Info: Antenas/Set10/set10bott.jpg used on input line 375.
+(pdftex.def)             Requested size: 132.30666pt x 94.52821pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set10/Set10.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set10/Set10.pdf, id=2525, 597.55246pt x 845.07724pt>
+File: Antenas/Set10/Set10.pdf Graphic file (type pdf)
+
+<use Antenas/Set10/Set10.pdf>
+Package pdftex.def Info: Antenas/Set10/Set10.pdf used on input line 383.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 390.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 390.
+ [76 <./Antenas/Set8/Set8.pdf> <./Antenas/Set9/Set9.pdf> <./Antenas/Set8/set8to
+p.jpg> <./Antenas/Set8/set8bott.jpg> <./Antenas/Set9/set9top.jpg> <./Antenas/Se
+t9/set9bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 390.
+ <Antenas/Set11/set11top.jpg, id=2543, 1405.25pt x 1003.75pt>
+File: Antenas/Set11/set11top.jpg Graphic file (type jpg)
+
+<use Antenas/Set11/set11top.jpg>
+Package pdftex.def Info: Antenas/Set11/set11top.jpg used on input line 398.
+(pdftex.def)             Requested size: 132.30666pt x 94.49954pt.
+
+<Antenas/Set11/set11bott.jpg, id=2544, 1542.76375pt x 1102.1175pt>
+File: Antenas/Set11/set11bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set11/set11bott.jpg>
+Package pdftex.def Info: Antenas/Set11/set11bott.jpg used on input line 405.
+(pdftex.def)             Requested size: 132.30666pt x 94.51118pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set11/Set11.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set11/Set11.pdf, id=2545, 597.55246pt x 845.07724pt>
+File: Antenas/Set11/Set11.pdf Graphic file (type pdf)
+
+<use Antenas/Set11/Set11.pdf>
+Package pdftex.def Info: Antenas/Set11/Set11.pdf used on input line 413.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 420.
+
+<Antenas/Set12/set12top.jpg, id=2547, 1376.14125pt x 982.67125pt>
+File: Antenas/Set12/set12top.jpg Graphic file (type jpg)
+
+<use Antenas/Set12/set12top.jpg>
+Package pdftex.def Info: Antenas/Set12/set12top.jpg used on input line 428.
+(pdftex.def)             Requested size: 132.30666pt x 94.46431pt.
+
+<Antenas/Set12/set12bott.jpg, id=2548, 1836.8625pt x 1175.39125pt>
+File: Antenas/Set12/set12bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set12/set12bott.jpg>
+Package pdftex.def Info: Antenas/Set12/set12bott.jpg used on input line 435.
+(pdftex.def)             Requested size: 132.30666pt x 84.65321pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set12/Set12.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set12/Set12.pdf, id=2549, 597.55246pt x 845.07724pt>
+File: Antenas/Set12/Set12.pdf Graphic file (type pdf)
+
+<use Antenas/Set12/Set12.pdf>
+Package pdftex.def Info: Antenas/Set12/Set12.pdf used on input line 443.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 450.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 450.
+ [77 <./Antenas/Set10/Set10.pdf> <./Antenas/Set11/Set11.pdf> <./Antenas/Set10/s
+et10top.jpg> <./Antenas/Set10/set10bott.jpg> <./Antenas/Set11/set11top.jpg> <./
+Antenas/Set11/set11bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 450.
+
+<Antenas/Set13/set13top.jpg, id=2567, 1476.51625pt x 997.7275pt>
+File: Antenas/Set13/set13top.jpg Graphic file (type jpg)
+
+<use Antenas/Set13/set13top.jpg>
+Package pdftex.def Info: Antenas/Set13/set13top.jpg used on input line 458.
+(pdftex.def)             Requested size: 132.30666pt x 89.39577pt.
+
+<Antenas/Set13/set13bott.jpg, id=2568, 1422.31375pt x 955.57pt>
+File: Antenas/Set13/set13bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set13/set13bott.jpg>
+Package pdftex.def Info: Antenas/Set13/set13bott.jpg used on input line 465.
+(pdftex.def)             Requested size: 132.30666pt x 88.88458pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set13/Set13.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set13/Set13.pdf, id=2569, 597.55246pt x 845.07724pt>
+File: Antenas/Set13/Set13.pdf Graphic file (type pdf)
+
+<use Antenas/Set13/Set13.pdf>
+Package pdftex.def Info: Antenas/Set13/Set13.pdf used on input line 473.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 480.
+
+<Antenas/Set14/set14top.jpg, id=2571, 253.69781pt x 181.42781pt>
+File: Antenas/Set14/set14top.jpg Graphic file (type jpg)
+
+<use Antenas/Set14/set14top.jpg>
+Package pdftex.def Info: Antenas/Set14/set14top.jpg used on input line 488.
+(pdftex.def)             Requested size: 132.30666pt x 94.61984pt.
+
+<Antenas/Set14/set14bott.jpg, id=2572, 249.93375pt x 178.41656pt>
+File: Antenas/Set14/set14bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set14/set14bott.jpg>
+Package pdftex.def Info: Antenas/Set14/set14bott.jpg used on input line 495.
+(pdftex.def)             Requested size: 132.30666pt x 94.45142pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set14/Set14.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set14/Set14.pdf, id=2573, 597.55246pt x 845.07724pt>
+File: Antenas/Set14/Set14.pdf Graphic file (type pdf)
+
+<use Antenas/Set14/Set14.pdf>
+Package pdftex.def Info: Antenas/Set14/Set14.pdf used on input line 503.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 510.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 510.
+ [78 <./Antenas/Set12/Set12.pdf> <./Antenas/Set13/Set13.pdf> <./Antenas/Set12/s
+et12top.jpg> <./Antenas/Set12/set12bott.jpg> <./Antenas/Set13/set13top.jpg> <./
+Antenas/Set13/set13bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 510.
+
+<Antenas/Set15/set15top.jpg, id=2591, 268.75406pt x 191.21437pt>
+File: Antenas/Set15/set15top.jpg Graphic file (type jpg)
+
+<use Antenas/Set15/set15top.jpg>
+Package pdftex.def Info: Antenas/Set15/set15top.jpg used on input line 518.
+(pdftex.def)             Requested size: 132.30666pt x 94.1335pt.
+
+<Antenas/Set15/set15bott.jpg, id=2592, 291.33844pt x 207.77625pt>
+File: Antenas/Set15/set15bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set15/set15bott.jpg>
+Package pdftex.def Info: Antenas/Set15/set15bott.jpg used on input line 525.
+(pdftex.def)             Requested size: 132.30666pt x 94.36078pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set15/Set15.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set15/Set15.pdf, id=2593, 597.55246pt x 845.07724pt>
+File: Antenas/Set15/Set15.pdf Graphic file (type pdf)
+
+<use Antenas/Set15/Set15.pdf>
+Package pdftex.def Info: Antenas/Set15/Set15.pdf used on input line 533.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 540.
+
+<Antenas/Set16/set16top.jpg, id=2595, 257.46187pt x 183.68625pt>
+File: Antenas/Set16/set16top.jpg Graphic file (type jpg)
+
+<use Antenas/Set16/set16top.jpg>
+Package pdftex.def Info: Antenas/Set16/set16top.jpg used on input line 548.
+(pdftex.def)             Requested size: 132.30666pt x 94.39626pt.
+
+<Antenas/Set16/set16bott.jpg, id=2596, 265.74281pt x 190.46156pt>
+File: Antenas/Set16/set16bott.jpg Graphic file (type jpg)
+
+<use Antenas/Set16/set16bott.jpg>
+Package pdftex.def Info: Antenas/Set16/set16bott.jpg used on input line 555.
+(pdftex.def)             Requested size: 132.30666pt x 94.82657pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Antenas/Set16/Set16.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Antenas/Set16/Set16.pdf, id=2597, 597.55246pt x 845.07724pt>
+File: Antenas/Set16/Set16.pdf Graphic file (type pdf)
+
+<use Antenas/Set16/Set16.pdf>
+Package pdftex.def Info: Antenas/Set16/Set16.pdf used on input line 563.
+(pdftex.def)             Requested size: 277.83806pt x 222.26833pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+ [79 <./Antenas/Set14/Set14.pdf> <./Antenas/Set15/Set15.pdf> <./Antenas/Set14/s
+et14top.jpg> <./Antenas/Set14/set14bott.jpg> <./Antenas/Set15/set15top.jpg> <./
+Antenas/Set15/set15bott.jpg>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+ [80 <./Antenas/Set16/Set16.pdf> <./Antenas/Set16/set16top.jpg> <./Antenas/Set1
+6/set16bott.jpg>]
+Ap\^endice D.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 570.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 571.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/1protplacagsm.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/1protplacagsm.pdf, id=2625, 597.55246pt x 845.07724pt>
+File: Figuras/anexos/1protplacagsm.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/1protplacagsm.pdf>
+Package pdftex.def Info: Figuras/anexos/1protplacagsm.pdf used on input line 57
+4.
+(pdftex.def)             Requested size: 286.65883pt x 250.8222pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 578.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/1protplacarf.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/1protplacarf.pdf, id=2627, 597.55246pt x 845.07724pt>
+File: Figuras/anexos/1protplacarf.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/1protplacarf.pdf>
+Package pdftex.def Info: Figuras/anexos/1protplacarf.pdf used on input line 581
+.
+(pdftex.def)             Requested size: 286.65883pt x 128.25058pt.
+LaTeX Font Info:    Font shape `TS1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `TS1/ptm/b/n' tried instead on input line 585.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 585.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/1protplaca.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/1protplaca.pdf, id=2629, 597.55246pt x 845.07724pt>
+File: Figuras/anexos/1protplaca.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/1protplaca.pdf>
+Package pdftex.def Info: Figuras/anexos/1protplaca.pdf used on input line 588.
+(pdftex.def)             Requested size: 308.71106pt x 272.39653pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 592.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 592.
+ [81
+
+ <./Figuras/anexos/1protplacagsm.pdf> <./Figuras/anexos/1protplacarf.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 593.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 593.
+ [82 <./Figuras/anexos/1protplaca.pdf>]
+Ap\^endice E.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 593.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 594.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/top-view-central.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/top-view-central.pdf, id=2654, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/top-view-central.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/top-view-central.pdf>
+Package pdftex.def Info: Figuras/anexos/top-view-central.pdf used on input line
+ 599.
+(pdftex.def)             Requested size: 211.68661pt x 293.57845pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/bottom-view-central.pdf): P
+DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/bottom-view-central.pdf, id=2656, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/bottom-view-central.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/bottom-view-central.pdf>
+Package pdftex.def Info: Figuras/anexos/bottom-view-central.pdf used on input l
+ine 607.
+(pdftex.def)             Requested size: 211.68661pt x 293.57845pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 614.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 614.
+ [83
+
+ <./Figuras/anexos/top-view-central.pdf> <./Figuras/anexos/bottom-view-central.
+pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 614.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/rfpretotop.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/rfpretotop.pdf, id=2666, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/rfpretotop.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/rfpretotop.pdf>
+Package pdftex.def Info: Figuras/anexos/rfpretotop.pdf used on input line 619.
+(pdftex.def)             Requested size: 211.68661pt x 146.69586pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/rfpretobott.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/rfpretobott.pdf, id=2668, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/rfpretobott.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/rfpretobott.pdf>
+Package pdftex.def Info: Figuras/anexos/rfpretobott.pdf used on input line 627.
+
+(pdftex.def)             Requested size: 211.68661pt x 146.69586pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 634.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/pcb-3d-top.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/pcb-3d-top.pdf, id=2670, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/pcb-3d-top.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/pcb-3d-top.pdf>
+Package pdftex.def Info: Figuras/anexos/pcb-3d-top.pdf used on input line 639.
+(pdftex.def)             Requested size: 211.68661pt x 295.82838pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/pcb-3d-bottom.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/pcb-3d-bottom.pdf, id=2672, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/pcb-3d-bottom.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/pcb-3d-bottom.pdf>
+Package pdftex.def Info: Figuras/anexos/pcb-3d-bottom.pdf used on input line 64
+7.
+(pdftex.def)             Requested size: 211.68661pt x 295.82838pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 654.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 654.
+ [84 <./Figuras/anexos/rfpretotop.pdf> <./Figuras/anexos/rfpretobott.pdf> <./Fi
+guras/anexos/pcb-3d-top.pdf> <./Figuras/anexos/pcb-3d-bottom.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 654.
+
+
+pdfTeX warning: pdflatex.exe (file ./Figuras/anexos/3drf.pdf): PDF inclusion: f
+ound PDF version <1.7>, but at most version <1.5> allowed
+<Figuras/anexos/3drf.pdf, id=2698, 845.07724pt x 597.55246pt>
+File: Figuras/anexos/3drf.pdf Graphic file (type pdf)
+
+<use Figuras/anexos/3drf.pdf>
+Package pdftex.def Info: Figuras/anexos/3drf.pdf used on input line 657.
+(pdftex.def)             Requested size: 242.5611pt x 192.51727pt.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 67.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 67.
+ [85 <./Figuras/anexos/3drf.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
+
+("RelatÃ³rio Final.aux" (capa2.aux) (capa.aux) (Dedicatoria.aux)
+(Agradecimentos.aux) (Resumo.aux) (Abreviaturas.aux) (Introducao.aux)
+(Sistemas.aux) (Desenvolvimento.aux) (Placas.aux) (Software.aux) (Conclusao.aux
+) (Bibliografia.aux) (Apendices.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
+Package rerunfilecheck Info: File `"RelatÃ³rio Final".out' has not changed.
+(rerunfilecheck)             Checksum: E07402A6A0AB09C143EAF18944F700AB;7236.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 68.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 53 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 11206 strings out of 493333
+ 176365 string characters out of 3139188
+ 266503 words of memory out of 3000000
+ 13924 multiletter control sequences out of 15000+200000
+ 79045 words of font info for 105 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,13n,43p,1707b,579s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/symbol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/symb
+ol/usyr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on "RelatÃ³rio Final.pdf" (107 pages, 26483139 bytes).
+PDF statistics:
+ 2821 PDF objects out of 2984 (max. 8388607)
+ 333 named destinations out of 1000 (max. 500000)
+ 2194 words of extra memory for PDF output out of 10000 (max. 10000000)
+

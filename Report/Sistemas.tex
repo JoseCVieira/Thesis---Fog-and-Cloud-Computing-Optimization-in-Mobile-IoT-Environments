@@ -1,0 +1,245 @@
+\chapter{Arquitetura da unidade central}
+Neste capítulo são apresentados os sistemas de controlo de automatismos comerciais disponíveis no mercado, tanto ao nível dos transmissores como dos recetores, e descritas as suas características técnicas principais. Para além disso, são enumerados e descritos o tipo de código mais utilizados neste tipo de sistemas e mostradas as principais características e a composição da trama de um código fixo e de um \textit{rolling code}. O capítulo termina com a definição e descrição da arquitetura do sistema a implementar. Esta foi desenvolvida tendo em conta as características e funcionalidades dos dispositivos existentes no mercado e os cenários de aplicação apresentados e descritos no capítulo anterior.
+\section{Sistema de controlo de automatismos comerciais}
+Um sistema de controlo de automatismos residenciais e industriais é composto por dois subsistemas: os transmissores (comandos remotos) e os recetores (unidades de controlo e comando). Quando um dos botões do comando é acionado, este transmite um sinal que é composto por um dado código identificativo do comando e do botão/canal. Posteriormente, recetor deteta esse sinal e recupera a informação contida nele. Após a verificação da sua existência em memória, pressionado o automatismo do canal que lhe está alocado.\\[6pt] 
+Atualmente existem diversas marcas/fabricantes que disponibilizam sistemas de controlo de automatismos residenciais e industriais. As subsecções seguintes apresentam alguns dos equipamentos desenvolvidos por algumas dessas empresas e descrevem também algumas das características principais desses equipamentos. Esta análise de mercado é essencial pois para a conceção de um novo produto é importante que as especificações e funcionalidades definidas para o novo equipamento sejam superiores às dos produtos já existentes no mercado. Só assim a introdução de um novo equipamento pode ter sucesso comercial e ser concorrente com as demais soluções disponíveis. 
+\subsection{Unidades transmissoras}
+Na tabela \ref{fig:tx} estão indicados alguns transmissores (comandos remotos) comerciais e algumas das suas características técnicas principais. Como é possível observar, a frequência central dos sinais transmitidos pelos comandos é de 433 MHz ou de 868 MHz (bandas ISM), sendo contudo a primeira a mais utilizada. Outra característica importante que se conseguiu obter, foi o tipo de codificação utilizado pelos vários comandos. Estes geralmente utilizam os códigos fixos ou os \textit{rolling codes}. Pela tabela verifica-se ainda que a distância de transmissão está entre os 50 m e os 150 m. Esta distância é obtida em espaço livre e depende muito do recetor utilizado (depende da sensibilidade do recetor).\\[6pt]
+Na figura \ref{fig:comandosmarcas} são apresentados alguns exemplos de comandos remotos existentes no mercado, nela pode-se verificar, tal como na tabela dos transmissores, que o número de botões disponíveis é variável (tipicamente entre de 2 a 4).
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=1.6cm 2cm 3cm 1.7cm, width=1\linewidth]{Figuras/tx}
+	\caption{Características de alguns transmissores existentes no mercado.}
+	\label{fig:tx}
+\end{table}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.33\textwidth}
+		\centering
+		\includegraphics[clip, width=0.5\linewidth]{Figuras/motorline}
+		\captionsetup{labelformat=empty}
+		\caption{(a) Comando da Motorline [\ref{motorlineremotelink}].}
+	\end{subfigure}%
+	\begin{subfigure}{.33\textwidth}
+		\centering
+		\includegraphics[clip, trim=0cm 0.3cm 0cm 0cm, width=0.48\linewidth]{Figuras/bft}
+		\captionsetup{labelformat=empty}
+		\caption{(b) Comando da BFT [\ref{bftremotelink}].}
+	\end{subfigure}
+	\begin{subfigure}{.33\textwidth}
+		\centering
+		\includegraphics[clip, width=0.345\linewidth]{Figuras/ditec}
+		\captionsetup{labelformat=empty}
+		\caption{(c) Comando da Dítec [\ref{ditecremotelink}].}
+	\end{subfigure}
+	\caption{Exemplos de comandos remotos existentes no mercado.}
+	\label{fig:comandosmarcas}
+\end{figure}
+\subsection{Unidades recetoras}
+No mercado existem disponíveis bastantes unidades centrais, tal como se pode verificar pelos dados constantes nas tabelas \ref{fig:rx1} e \ref{fig:rx2}. Estas tabelas apresentam as características técnicas principais de vários recetores comerciais. Como se pode constatar, a frequência de operação e o tipo de codificação utilizados nas unidades recetoras estão de acordo com os dados apresentados para os comandos. A frequência de operação destas unidades é sempre única, apesar de poder ser de 433 MHz ou de 868 MHz. Apesar de existirem modelos de determinadas marcas que permitem a operação em qualquer uma das duas, é necessário optar por uma, porque o circuito externo de adaptação de impedância é diferente consoante a frequência. Relativamente aos tipos de codificação, existem recetores que apenas permitem a receção de códigos fixos, outros detetam apenas os \textit{rolling codes} e existem ainda os que permitem a receção de ambos. A nível das modelações utilizadas pelos recetores, os dados apurados não são conclusivos. Como se pode verificar, apenas uma das marcas fornece essa informação onde refere a utilização de uma modelação \textit{amplitude-shift keying} (ASK).\\[6pt]
+É possível observar ainda nas tabelas \ref{fig:rx1} e \ref{fig:rx2}, que o número de canais/saídas de um recetor, isto é, o número de mecanismos que um recetor consegue acionar, varia de modelo para modelo, sendo tipicamente de 2 a 4. O número de comandos que cada recetor é capaz de memorizar também é variável, existindo modelos que guardam centenas utilizadores e outros têm a capacidade de suportar até milhares de utilizadores. A operação de guardar em memória estes comandos/utilizadores, bem como a escolha do tipo de codificação reconhecida (nos recetores onde é necessária a escolha), é feita por botão de pressão ou por DIP \textit{switch}.\\[6pt]
+O tipo de comunicação sem fios utilizado por cada modelo está também indicado nas tabelas \ref{fig:rx1} e \ref{fig:rx2}. Como se pode verificar, existem modelos onde a comunicação é feita numa das bandas ISM (433 MHz ou 868 MHz), enquanto noutros é utilizada a banda dedicada ao GSM (900 MHz). É importante referir que não foram encontrados modelos que utilizem ambas as bandas ou ambos os métodos de comunicação.\\[6pt]
+Numa perspetiva mais técnica, ainda são possíveis observar dados como o consumo e a gama de temperatura de operação. Como se pode ver, a maioria dos recetores funcionam com alimentações de 12 V/24 V AC/DC, existindo, no entanto, alguns que são alimentados diretamente a partir da rede elétrica (230 V).
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=0.6cm 2.2cm 9.5cm 1.8cm, width=0.98\linewidth]{Figuras/rx1}
+	\caption{Características de alguns recetores existentes no mercado.}
+	\label{fig:rx1}
+\end{table}\vfill\pagebreak
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=0.4cm 2cm 7.7cm 1.8cm, width=1\linewidth]{Figuras/rx2}
+	\caption{Continuação das características dos recetores.}
+	\label{fig:rx2}
+\end{table}
+Os consumos destas unidades são variáveis de modelo para modelo, tipicamente abaixo dos 100 mA, contudo é de salientar que nestes apenas há existência de um módulo rádio para a receção de comandos, onde o seu consumo é baixo, e também não há informações sobre o estado de funcionamento, isto é, em que condições é que os recetores apresentam estes consumos (e.g., estado das saídas). Relativamente às temperatura de operação, estes recetores estão preparados para funcionarem numa gama de temperaturas compreendidas entre os -20 ªC até aos 55 ºC (tipicamente), suportando assim uma vasta gama de temperaturas ambiente. Existe ainda um modelo que permite o funcionamento da unidade recetora alimentado a bateria durante 60 h, no caso de falha de alimentação externa.\\[6pt]
+Na figura \ref{fig:recetoressmarcas} são apresentados alguns dos recetores existentes no mercado.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.36\textwidth}
+		\centering
+		\includegraphics[clip, width=0.7\linewidth]{Figuras/motorlinereceiver}
+		\captionsetup{labelformat=empty}
+		\caption{(a) Recetor da Motorline [\ref{motorlinereceiverlink}].}
+		\label{fig:motorlinereceiver}
+	\end{subfigure}%
+	\begin{subfigure}{.36\textwidth}
+		\centering
+		\includegraphics[clip, width=0.74\linewidth]{Figuras/rogerreceiver}
+		\captionsetup{labelformat=empty}
+		\caption{(b) Recetor da Roger Technology [\ref{rogerreceiverlink}].}
+		\label{fig:rogerreceiver}
+	\end{subfigure}
+	\begin{subfigure}{.27\textwidth}
+		\centering
+		\includegraphics[clip, width=0.695\linewidth]{Figuras/bftreceiver}
+		\captionsetup{labelformat=empty}
+		\caption{(c) Recetor da BFT [\ref{bftreceiverlink}].}
+		\label{fig:bftreceiver}
+	\end{subfigure}
+	\caption{Exemplos de recetores existentes no mercado.}
+	\label{fig:recetoressmarcas}
+\end{figure}\vfill\pagebreak
+\section{Símbolos, tramas e códigos}
+A comunicação entre o comando (unidade transmissora) e o recetor (unidade de controlo e comando) é essencial para o correto funcionamento do sistema de controlo e comando de automatismos. Como referido na secção anterior, a modelação utilizada para a transmissão de dados não foi conclusiva, contudo na prática foi possível observar, através de um analisador espetral, que tipicamente se trata de uma modelação \textit{on-off keying} (OOK). Antes da transmissão ser efetuada, os dados a transmitir (sinal em banda base) pelo comando são codificados e encapsulados numa trama digital através de um codificador (\textit{encoder}). Esta trama modula em OOK, é recuperada pelo recetor após a desmodulação do sinal. Nesta secção são apresentados os símbolos, os diversos campos que compõem as tramas e os tipos de códigos utilizados nos comandos remotos.
+\subsection{Códigos de linha}
+A grande maioria dos comandos disponíveis no mercado utiliza uma das codificações de linha apresentadas na figura \ref{fig:tempocodificacoestab}. Para ambos os tipos de codificação, o tempo de bit é dividido em três intervalos de tempo iguais. A informação digital (``0s'' ou ``1'') a transmitir está na sua essência contida no intervalo de tempo central. Os restantes dois intervalos temporais servem para introduzir redundância para deteção e possível correção de erros. Na codificação A tem-se sempre o valor lógico alto no primeiro intervalo de tempo e zero no último. Já na codificação B, verifica-se exatamente o contrário.
+Estes tipos de códigos garantem um conteúdo espectral reduzido em baixa frequência (em torno de 0 Hz) e duas transições (flancos ascendentes ou descendentes) por cada símbolo mesmo quando se transmitem longas sequências de ``0s'' ou ``1s''. Devido ao elevado número de transições, as sincronizações de portadora, de trama e de símbolo que têm de ser efetuadas no recetor são facilitadas.
+Apesar das codificações indicadas na Figura \ref{fig:tempocodificacoestab} serem as mais conhecidas e utilizadas nos sistemas de controlo e comando de automatismos, existem outras, sendo, no entanto, codificações proprietárias. Na figura \ref{fig:codificacoestab} são apresentadas as formas de símbolo para o valor lógico '1' e '0' em cada uma das codificações.
+\subsection{Composição das tramas}
+Para que a transmissão da informação possa ser feita de forma eficiente, os dados transmitidos pelos comandos são organizados em tramas. Dependendo do fabricante, cada trama pode estar dividida em vários blocos.\\[6pt]
+Pelos \textit{datasheets} dos \textit{encoders} apresentados na tabela \ref{fig:tx}, foi recolhida a informação apresentada na figura \ref{fig:temposimb}. Como é possível observar, existem algumas relações (fatores multiplicativos) entre os tempos dos diversos campos existentes na trama. Por exemplo é possível observar que meio período de preâmbulo, $T_{E}$, é 3 vezes menor que um período de símbolo, $T_{BP}$, isto é: $3T_{E}=T_{BP}$. Ainda se pode verificar que o tempo de \textit{header} (parte da trama onde são transmitidos zeros), $T_{H}$, é 10 vezes maior que $T_{E}$, ou seja, $T_{H} = 10T_{E}$.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.6\textwidth}
+		\centering
+		\includegraphics[clip, trim=3.5cm 21.2cm 7.4cm 3.75cm, width=0.81\linewidth]{Figuras/codificacoes}
+		\captionsetup{labelformat=empty}
+		\caption{(a) Tipos de codificações.}
+		\label{fig:tempocodificacoestab}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[clip, trim=0cm 26.5cm 15.2cm 0cm, width=1\linewidth]{Figuras/simbolos}
+		\captionsetup{labelformat=empty}
+		\caption{(b) Tipo de símbolos.}
+		\label{fig:codificacoestab}
+	\end{subfigure}
+	\caption{Codificações A e B.}
+	\label{fig:codificacoes}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, width=0.75\linewidth]{Figuras/tempoSimb}
+	\caption{Tempos de trama [\ref{hcs301}].}
+	\label{fig:temposimb}
+\end{figure}
+Na prática isto apenas se verifica à saída do \textit{encoder}. Após a desmodelação por parte do transcetor estas condições deixam de ser verdadeiras. Para além disso não é garantido que em todos os comandos estas relações se verifiquem.\\[6pt]
+Nas tramas com mais do que um bloco, o primeiro é sempre um bloco de preâmbulo. O preâmbulo é composto por uma sequência de ``0s'' e ``1s'', ou seja, pode ser visto como um ``pedaço'' do relógio (\textit{clock}) utilizado na geração dos dados que se pretendem transmitir. A sua duração ou tamanho depende do \textit{encoder} utilizado (depende do fabricante). O preâmbulo é utilizado neste tipo de sistemas para facilitar a captura e geração dos vários sinais de sincronismo no recetor e assim evitar perdas de informação durante a comunicação entre o comando e a unidade de receção.\\[6pt]
+O transcetor ao receber os dados modelados em OOK vindos de um comando à frequência de 433 MHz (com possibilidade de deslocamento da frequência na ordem dos kilohertz), tem como objetivo colocar esse sinal em banda base (BB) ou numa frequência intermédia (IF), isto é, realizar a sua desmodelação ou deslocar o sinal na frequência, respetivamente. Para isso é utilizada uma malha de captura de fase (PLL), um cristal e um misturador (\textit{mixer}). Enquanto o sinal de saída do misturador não estiver na frequência desejava, a PLL vai sofrer ajustes, pelo controlo automático de frequência (AFC) até a obter (tempo de bloqueio). Como o preâmbulo é caracterizado por ter elevado número de comutações e como a desmodelação é feita por deteção síncrona (sem detetor de envolvente), este é utilizado neste tipo de sistemas para o sincronismo do recetor. O preâmbulo é o primeiro bloco da trama a ser transmitido e assim servirá para a fixação da PLL. Como este é caracterizado, neste caso, por apenas conter informação temporal, isto é, relações temporais entre os vários elementos que compõem a trama, não é crítico que enquanto a PLL não estiver bloqueada, sejam perdidos alguns períodos da onda, pois estes vão repetir-se várias vezes. No fim da receção deste bloco, ao começar a receber o próximo (bloco de dados), a PLL já se encontra bloqueada, o que se traduz numa receção total e sem perdas de informação.
+\subsection{Códigos}
+Na pesquisa efetuada, tanto das unidades transmissoras como das recetoras, foi possível observar a existência de 3 tipos de código: o código fixo, o \textit{rolling code} que utiliza o algoritmo \textit{KeeLoq} e o \textit{rolling code} que não utiliza esse algoritmo. Apesar de todos eles terem em comum a possibilidade de existência de preâmbulo, possuírem bits de identificação do botão/canal e ainda possuírem o número de série do comando, os códigos têm diferenças nas tramas geradas pelos \textit{encoders}, tanto na sua organização como na sua composição.
+\subsubsection{Código fixo}
+O código fixo é um dos tipos de código utilizado nos comandos e recetores de sistemas de controlo remoto de automatismos. Estes podem conter um ou dois bloco de trama, isto é, podem possuir preâmbulo ou não. Para além disso são caracterizados pela existência de apenas 4 bits identificadores de saída/canal e um número de identificação único do comando, número de série. O EV1527 [\ref{ev1527}], apresentado na figura \ref{fig:ev1527}, é um exemplo de codificador deste tipo de trama. Como forma de impedir a clonagem do comando ou o seu uso indevido, existem comandos com a possibilidade de escolha do código transmitido através de pequenos interruptores (DIP \textit{switches}), tal como se pode ver na figura \ref{fig:dipswitchremote}. Estes funcionam como um cadeado de segredo, isto é, os utilizadores têm a possibilidade de utilizar o código correto para o acionamento do mecanismo e escolher um código incorreto quando não for necessário a sua utilização.
+\subsubsection{\textit{Rolling code}}
+O \textit{rolling code} é outro tipo de código utilizado nos referidos sistemas. Este tipo de código foi criado para aumentar a sua segurança e impossibilitar a cópia do código associado a cada comando. Este tipo de ação, conhecida como clonagem ou \textit{replay attack}, pode ser efetuada facilmente se a codificação utilizada for a fixa. Como os \textit{encoders} destes comandos nunca geram o mesmo código sequencialmente, o código apesar de poder ser copiado, acaba por não ser aceite pela unidade central pois já o recebeu anteriormente. A trama gerada por um \textit{encoder} que utiliza a codificação \textit{rolling code} está ilustrada na figura \ref{fig:rolling}.\\[6pt]
+Como se pode verificar, o segundo bloco da trama é composto por uma parte fixa, de 34 bits, e por uma parte encriptada, de 32 bits. Na parte fixa da trama, existe um bit (\textit{Repeat}), que indica que a trama está a ser repetida pelo mesmo comando e não por outro, isto é, como acima referido o \textit{encoder} nunca gera o mesmo código sequencialmente, contudo a trama só muda quando o botão for pressionado novamente, assim para que o recetor saiba que a trama repetida está a ser enviada pelo mesmo comando e não por um outro (clonagem), este bit fica a '1' enquanto o botão do comando estiver pressionado. Caso seja efetivamente uma colagem, a primeira trama gerada por esse, enviará '0' nesse bit e assim o recetor sabe que não pode acionar o mecanismo.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.55\linewidth]{Figuras/EV1527}
+	\caption{Trama gerada pelo \textit{encoder} EV1527 [\ref{ev1527}].}
+	\label{fig:ev1527}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[clip, trim=0cm 2.4cm 9cm 1.2cm, width=0.29\linewidth]{Figuras/comandodip}
+		\captionsetup{labelformat=empty}
+		\caption{(a) Astro 43 \textit{type} P43/2T.}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[clip, trim=8.5cm 0cm 0cm 0cm, width=0.225\linewidth]{Figuras/comandodip}
+		\captionsetup{labelformat=empty}
+		\caption{(b) Astro 43 \textit{type} 43/2T.}
+	\end{subfigure}
+	\caption{Exemplos de comandos remotos programáveis por DIP \textit{switch} [\ref{dipremote}].}
+	\label{fig:dipswitchremote}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, width=0.85\linewidth]{Figuras/rolling}
+	\caption{Constituição de uma trama \textit{rolling code} [\ref{hcs301}].}
+	\label{fig:rolling}
+\end{figure}
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=1.2cm 11.4cm 8.5cm 1.9cm, width=0.27\linewidth]{Figuras/jma}
+	\caption{Tipo de \textit{rolling code} implementado pelos diversos fabricantes [\ref{jmalink}].}
+	\label{fig:jma}
+\end{table}
+Pode ainda ver-se que existe um bit (\textit{$V_{LOW}$}) que indica se a bateria do comando está fraca e existem ainda 4 bits que permitem identificar qual o botão que está a ser pressionado para que a unidade central de controlo saiba qual a saída que deve ativar. Os restantes 28 bits da parte fixa correspondem ao número de série do comando, que é um número identificador único.\\[6pt]
+Um dos tipos de \textit{rolling code} mais utilizado é o \textit{KeeLoq}, tal como se pode observar pela tabela \ref{fig:jma}. Os códigos que não são do tipo \textit{KeeLoq} são usualmente codificações desenvolvidas e implementadas por marcas específicas (codificações proprietárias), sendo por isso uma minoria. O algoritmo \textit{KeeLoq}, está presente em \textit{encoders} da Microchip, como é caso das séries HCS3XX e HCS2XX (e.g., HCS301 [\ref{hcs301}]).
+\section{Arquitetura do sistema}
+Antes do projeto e implementação de um dado sistema eletrónico é imperativo definir a topologia ou arquitetura do sistema. Para isso, é necessário identificar todas as funcionalidades pretendidas e definir as especificações iniciais do sistema. Esta informação é crucial para definir o diagrama de blocos do sistema, fazer o projeto dos circuitos eletrónicos, definir os algoritmos de funcionamento e para desenvolver o respetivo código (\textit{firmware} e \textit{software}).
+\subsection{Funcionalidades e especificações iniciais}
+As características técnicas e os modos de funcionamento dos sistemas comerciais existentes e o tipo e forma dos dados que são utilizados pelos comandos e recetores apresentados nas secções anteriores são essenciais para definir as funcionalidades e especificações da U3C. Além disso, os cenários de aplicação definidos no capítulo \ref{introducao} são também essenciais para coligir todas as funcionalidades e definir a arquitetura da U3C. Assim, e atendendo ao exposto, foi definido que:
+\begin{itemize}[topsep=5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+	\item a U3C pudesse ser utilizada em ambientes/aplicações residenciais e industriais;
+	\item a ordem de comando remota pudesse ser feita de duas formas distintas, via comando remoto (banda ISM 433 MHz, utilizada pela maioria dos comandos existentes no mercado) e via telemóvel/\textit{smartphone} (GSM);
+	\item a unidade central de controlo e comando fosse universal, ou seja, fosse compatível com os protocolos de comunicação utilizados pela maioria das marcas existentes no  mercado, onde:
+	\begin{itemize}[topsep=1pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+		\item os algoritmos detetáveis pela unidade fossem o códigos fixos e os \textit{rolling codes} - \textit{KeeLoq} para que o produto final possa ser competitivo a nível do mercado;
+		\item as codificações detetadas e reconhecidas fossem do tipo A e B (ver figura \ref{fig:codificacoes});
+		\item a possibilidade de existência de preâmbulo;
+		\item o tamanho do preâmbulo pode ser variável;
+		\item o tempo de símbolo pode ser variável (\textit{bit rate});
+		\item o tempo de \textit{header} pode ser variável (ver figura \ref{fig:temposimb});
+		\item o tamanho de trama pode ser variável;
+		\item o tempo entre tramas pode ser variável (ver figura \ref{fig:temposimb});
+		\item a relação entre o período do preâmbulo e tempo de símbolo não existe;
+		\item a relação entre o período do preâmbulo e tempo de \textit{header} não existe.
+	\end{itemize}\vspace*{5pt}
+	\item o controlo via smartphone fosse feito através de uma aplicação \textit{Android};
+	\item a U3C ser configurável a partir de uma aplicação \textit{Android} específica (a desenvolver);
+	\item existisse uma interface na U3C para a gravação dos comandos remotos;
+	\item na unidade recetora fosse utilizada uma memória \textit{erasable programmable read-only memory} (EEPROM) capaz de armazenar todos os dados necessários;	
+	\item a U3C tivesse vários sinalizadores luminosos e sonoros para configuração ou indicação de erros;
+	\item a alimentação dos circuitos da U3C pudesse ser proveniente de uma fonte externa alternada (de 9 Vrms a 24 Vrms) ou de corrente contínua (de 9 V a 30 V);
+	\item a unidade recetora possuísse 4 saídas a relé para que possa atuar, de forma isolada, 4 automatismos
+	\item U3C tivesse 8 entradas digitais isoladas para auxílio ao controlo ou para informação do estado dos automatismos ligados às suas saídas;
+	\item a U3C possa funcionar em ambientes com elevado ruído eletromagnético (ambiente industrial), sujeito a vibrações e impactos;
+	\item a unidade central de controlo e comando pudesse ser imediatamente comercializada.
+\end{itemize}
+Relativamente aos algoritmos detetáveis e implementados pela unidade, fator de decisão na identificação do tipo de algoritmo é o número de bits que compõem a trama, pois esse número é conhecido no caso dos \textit{rolling code}, 66 bits (ver figura \ref{fig:rolling}). Nos \textit{rolling code} a parte encriptada não é utilizada, contudo é guardada em memória para que num futuro desenvolvimento possa ser utilizada como método de acréscimo de segurança e robustez do sistema.\\[6pt]
+As especificações técnicas para a U3C definidas após o levantamento das funcionalidades e características técnicas dos sistemas existentes estão indicadas na tabela \ref{fig:especificacoesu3c}. Como se pode ver e comparar com as caraterísticas dos outros sistemas comerciais (ver tabelas \ref{fig:rx1} e \ref{fig:rx2}), a U3C garante as mesmas funcionalidades e características técnicas dos melhores sistemas, disponibilizando ainda o controlo \textit{dual}, ou seja, via comando e via \textit{smartphone}, que nenhum dos outros sistemas garante.
+\subsection{Diagrama modular}
+Com base no funcionamento descrito anteriormente e nas especificações indicadas, foi desenvolvido o diagrama de blocos geral da U3C apresentado na figura \ref{fig:arquitetura}. Neste pode-se observar, de uma forma simplificada, a interligação de todos os módulos do sistema.
+\begin{table}[H]
+	\centering
+	\includegraphics[clip, trim=1.7cm 15.4cm 3.1cm 1.8cm, width=1\linewidth]{Figuras/especificacoesU3Ciniciais}
+	\caption{Especificações técnicas iniciais da U3C.}
+	\label{fig:especificacoesu3c}
+\end{table}\vfill\pagebreak
+\begin{figure}[H]
+	\centering
+	\includegraphics[clip, trim=4cm 6.8cm 4cm 4.5cm, width=0.68\linewidth]{Figuras/Arquitetura/arquitetura}
+	\caption{Diagrama de blocos da arquitetura do sistema.}
+	\label{fig:arquitetura}
+\end{figure}
+\subsubsection{Transmissor}
+O transmissor é o comando remoto de radiofrequência comum que é utilizado na maioria dos sistemas de controlo de automatismos existentes. Estes emitem um código de identificação único gerado por um \textit{encoder}. Assim, o objetivo é que a U3C seja compatível com a maioria dos comandos disponibilizados pelos fabricantes existentes, tais como, Roger, Life, Motorline, Ditec, BFT, DEA, Doorman, entre outros.
+\subsubsection{Dispositivo móvel}
+Trata-se de um dispositivo que utiliza um meio de comunicação GSM para efetuar atuações e/ou configurações da unidade central. Incorpora uma interface gráfica, uma aplicação \textit{Android}, possibilitando ao utilizador uma interação simples e de fácil utilização. As configurações possíveis poderão ser:
+\begin{itemize}[topsep=5pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+	\item adicionar ou remover utilizadores;
+	\item adicionar restrições a utilizadores;
+	\item listar utilizadores adicionados;
+	\item aceder a dados relevantes da unidade central;
+	\item atuar em saídas a partir de uma chamada ou \textit{short message service} (SMS).
+\end{itemize}
+\subsubsection{Módulo RF}
+Trata-se de um módulo transcetor que possibilita outra via de comunicação, a mais vulgar em sistemas de controlo de automatismos existentes. Receberá dados provenientes de comandos remotos, que ao serem desmodulados são enviados para o microcontrolador. No fim serão tomadas as decisões apropriadas ao comando recebido. Também permite o envio de dados por pacotes para a comunicação entre a U3C e um dispositivo com uma interface RF, tal como descrito anteriormente.
+\subsubsection{Memória EEPROM}
+Módulo de memória que armazena todos os dados indispensáveis para o correto funcionamento da unidade central. Neste serão guardados dados que dizem respeito aos comandos remotos, também aos dados dos utilizadores adicionados através da aplicação \textit{Android} e ainda aos dados que formam o histórico de acessos.
+\subsubsection{Módulo GSM}
+Permite a comunicação via sistema GSM à unidade central, podendo a U3C receber e enviar curtas mensagens de texto e receber chamadas telefónicas. Este módulo recebe de uma forma codificada os comandos de atuação ou configuração enviados pelo utilizador, com o auxílio da aplicação \textit{Android}.
+\subsubsection{Entradas}
+As entradas servirão para a ligação de dispositivos sensoriais para que a U3C atue, em conformidade, um dado automatismo ou ainda para receber informação do estado de funcionamento das saídas ou dos automatismos ligados às saídas. Os sensores que podem ser utilizados são sensores comuns, tais como: interruptores, fins-de-curso, fotocélulas, entre outros. Os dispositivos sensoriais devem ser passivos, ou seja, apenas de contacto, não sendo permitido o uso de sensores que forneçam tensão ou corrente (sensores ativos). Estas entradas deverão ter isolamento galvânico, tanto na fonte que alimenta parte do circuito de entrada, como na interface de ligação entre as entradas e o microcontrolador. Ter-se-á um conjunto de 8 entradas com o intuito de 2 entradas estarem associadas a uma saída.
+\subsubsection{Saídas}
+As saídas são a interface da U3C que faz o acionamento direto dos mecanismos que lhe estão associados. Serão disponibilizadas 4 saídas que terão um isolamento galvânico, utilizando relés para esse efeito. Nestas saídas poderão ser ligados atuadores, tais como, lâmpadas, controladores de portões, de cancelas, estores, entre outros sistemas.
+\subsubsection{Microcontrolador}
+É responsável por todo o processamento de dados e comandos da U3C, sendo por isso a interface entre todos os módulos. O microcontrolador está ligado a todos os periféricos e faz a gestão dos protocolos de comunicação essenciais para a transmissão de dados entre módulos. O microcontrolador é também responsável pela gestão das comunicações sem fios (ISM e GSM). 
+\subsubsection{Interfaces}
+Para que seja possível configurar a U3C localmente (e.g., memorizar/apagar comandos) deve ser disponibilizado ao utilizador/instalador uma interface de utilização simples. Este interface deve ser constituído apenas por um botão de pressão (\textit{switch}) que terá associado várias sequências de configuração identificadas por indicadores luminosos.
+\subsubsection{Avisos}
+O conjunto de indicadores luminosos e sonoros que deverão existir na U3C permitirão ao utilizador/instalador visualizar os estados das entradas ou saídas, auxiliar a configuração, obter informações de cobertura rede e a identificar erros/avarias que ocorram no funcionamento da unidade central.
+\subsubsection{Comunicação UART}
+Barramentos de comunicação utilizados para obtenção dos dados contidos na unidade central e para a comunicação entre o microcontrolador e os módulos internos da U3C.
+\subsubsection{Fonte de alimentação}
+Módulo responsável por fornecer toda a energia necessária aos restantes módulos constituintes da unidade central. Este receberá a energia fornecida por uma fonte de alimentação externa, podendo esta ser de corrente alternada ou contínua. A fonte de alimentação interna deve ser dimensionada de forma a gerar todas as tensões e correntes DC necessárias ao correto funcionamento da U3C.
+\section{Sumário}
+Este capítulo começa por apresentar vários sistemas de controlo e comando de automatismos existentes no mercado. Este levantamento permitiu identificar o funcionamento e as características técnicas que um sistema deste tipo deve possuir. O formato das tramas e códigos utilizados nestes sistemas foram também apresentados e descritos. O capítulo termina com a apresentação e descrição da arquitetura da U3C.
+\vfill\thispagestyle{plain}

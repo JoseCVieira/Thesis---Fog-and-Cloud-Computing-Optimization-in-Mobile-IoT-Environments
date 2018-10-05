@@ -1,0 +1,106 @@
+\select@language {portuguese}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces N\'umero de utilizadores de \textit {smartphones} em todo o mundo entre 2014 e 2020 [\ref {estatiscasmart}].\relax }}{2}{figure.caption.8}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Cen\'arios de aplica\c c\~ao.\relax }}{3}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplos de comandos remotos existentes no mercado.\relax }}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplos de recetores existentes no mercado.\relax }}{8}{figure.caption.14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Codifica\c c\~oes A e B.\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Tempos de trama [\ref {hcs301}].\relax }}{10}{figure.caption.16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Trama gerada pelo \textit {encoder} EV1527 [\ref {ev1527}].\relax }}{11}{figure.caption.19}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Exemplos de comandos remotos program\'aveis por DIP \textit {switch} [\ref {dipremote}].\relax }}{11}{figure.caption.20}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Constitui\c c\~ao de uma trama \textit {rolling code} [\ref {hcs301}].\relax }}{11}{figure.caption.21}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Diagrama de blocos da arquitetura do sistema.\relax }}{14}{figure.caption.24}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de blocos do sistema de controlo e processamento.\relax }}{18}{figure.caption.38}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \textit {Pinout} do microcontrolador PIC18F66K22.\relax }}{18}{figure.caption.39}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Circuito do oscilador RTC.\relax }}{19}{figure.caption.43}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ficha de programa\c c\~ao do microcontrolador.\relax }}{20}{figure.caption.44}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Barramento de liga\c c\~ao do m\'odulo RF.\relax }}{20}{figure.caption.45}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Circuito de controlo do sinalizador sonoro.\relax }}{21}{figure.caption.46}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Circuito de indica\c c\~ao luminoso do n\IeC {\'\i }vel de rede GSM.\relax }}{21}{figure.caption.47}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de blocos dos m\'odulos de comunica\c c\~ao.\relax }}{22}{figure.caption.48}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces M\'odulo GSM A6 - Ai-Thinker [\ref {gsmimagem}].\relax }}{23}{figure.caption.51}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Adapta\c c\~ao de tens\~oes para comunica\c c\~ao UART.\relax }}{23}{figure.caption.52}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Circuitos de alimenta\c c\~ao e \textit {reset} do m\'odulo GSM.\relax }}{23}{figure.caption.53}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Circuito eletr\'onico do m\'odulo RF.\relax }}{24}{figure.caption.55}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Circuito eletr\'onico de alimenta\c c\~ao e adapta\c c\~ao da linha de sinal RF.\relax }}{25}{figure.caption.56}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de blocos das entradas do sistema.\relax }}{25}{figure.caption.58}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Circuito de uma entrada externa.\relax }}{26}{figure.caption.59}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de blocos das sa\IeC {\'\i }das do sistema.\relax }}{26}{figure.caption.60}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Circuito de uma sa\IeC {\'\i }da externa.\relax }}{26}{figure.caption.61}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diagrama de blocos do m\'odulo de alimenta\c c\~ao.\relax }}{28}{figure.caption.63}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Corrente consumida pelos diversos m\'odulos da U3C.\relax }}{28}{figure.caption.64}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Circuito de retifica\c c\~ao de onda completa com filtragem e respetivas prote\c c\~oes.\relax }}{29}{figure.caption.65}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Circuito da fonte comutada.\relax }}{30}{figure.caption.66}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Circuito da fonte isolada.\relax }}{31}{figure.caption.67}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Circuito da fonte de 3.3 V.\relax }}{31}{figure.caption.68}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Disposi\c c\~ao dos m\'odulos na PCI.\relax }}{36}{figure.caption.69}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Modelo 3D do interior da U3C.\relax }}{36}{figure.caption.70}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Antena desenvolvida para implementa\c c\~ao no m\'odulo RF.\relax }}{38}{figure.caption.71}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Par\^ametros da antena integrada sem adapta\c c\~ao.\relax }}{38}{figure.caption.72}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Par\^ametros da antena integrada com adapta\c c\~ao.\relax }}{38}{figure.caption.73}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Implementa\c c\~ao do m\'odulo RF em PCI.\relax }}{39}{figure.caption.74}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Aspeto final da unidade central.\relax }}{39}{figure.caption.75}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Fluxograma do processo de envio de comandos para m\'odulo GSM.\relax }}{42}{figure.caption.76}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Sequ\^encia de dados de um comando de teste.\relax }}{43}{figure.caption.78}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Fluxograma da obten\c c\~ao de comandos.\relax }}{44}{figure.caption.80}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Tempos entre vertentes de codifica\c c\~ao A e B.\relax }}{45}{figure.caption.81}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Obten\c c\~ao de tempos.\relax }}{46}{figure.caption.82}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Amostragem do sinal.\relax }}{47}{figure.caption.83}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Diagrama do c\'alculo do tempo de amostragem.\relax }}{47}{figure.caption.84}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Diagrama da obten\c c\~ao de c\'odigos.\relax }}{48}{figure.caption.85}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagrama estrutural da aplica\c c\~ao \textit {Android}.\relax }}{50}{figure.caption.86}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Janelas iniciais da aplica\c c\~ao \textit {Android}.\relax }}{50}{figure.caption.87}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Janelas da aplica\c c\~ao \textit {Android}.\relax }}{51}{figure.caption.88}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Janelas de gest\~ao de utilizadores.\relax }}{51}{figure.caption.89}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Janela de configura\c c\~ao t\'ecnica da unidade central.\relax }}{52}{figure.caption.90}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Janelas informativas da aplica\c c\~ao \textit {Android}.\relax }}{52}{figure.caption.91}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Janela de configura\c c\~ao geral.\relax }}{53}{figure.caption.92}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Janelas de configura\c c\~ao de automatismos.\relax }}{53}{figure.caption.93}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Miniaplica\c c\~ao de interface com a unidade central.\relax }}{54}{figure.caption.94}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Tens\~ao da linha de 5 V.\relax }}{56}{figure.caption.95}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Tens\~oes de sa\IeC {\'\i }da com cargas fixas (1-entrada da fonte, 2-linha de 5 V, 3-linha de 3.3 V, 4-linha de 5 V isolados).\relax }}{56}{figure.caption.96}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Tens\~oes medidas no processo de rece\c c\~ao de uma chamada telef\'onica.\relax }}{57}{figure.caption.97}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Tens\~oes medidas no processo de rece\c c\~ao de uma chamada telef\'onica.\relax }}{57}{figure.caption.98}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Evolu\c c\~ao da temperatura em modo \textit {standby}.\relax }}{58}{figure.caption.99}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Evolu\c c\~ao da temperatura em processo de uma chamada telef\'onica.\relax }}{58}{figure.caption.100}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Evolu\c c\~ao da temperatura em carga.\relax }}{58}{figure.caption.101}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Jun\c c\~ao dos m\'odulos da unidade central.\relax }}{59}{figure.caption.102}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Jun\c c\~ao dos m\'odulos da unidade central.\relax }}{59}{figure.caption.103}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces PCI do primeiro prot\'otipo.\relax }}{67}{figure.caption.106}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Placa de comandos utilizados para teste.\relax }}{67}{figure.caption.107}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Tabela de correspond\^encia dos pinos do microcontrolador.\relax }}{69}{figure.caption.108}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Antena de 433 MHz existente no mercado.\relax }}{71}{figure.caption.109}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Antena monopolo com meandro (0).\relax }}{72}{figure.caption.110}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Antena monopolo com meandro (1).\relax }}{72}{figure.caption.111}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Antena PIFA(Planar Inverted F Antenna) com um paralelo meandro (2).\relax }}{73}{figure.caption.112}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Antena PIFA com meandro (3).\relax }}{73}{figure.caption.113}
+\contentsline {figure}{\numberline {C.6}{\ignorespaces Antena planar com meandro (4).\relax }}{74}{figure.caption.114}
+\contentsline {figure}{\numberline {C.7}{\ignorespaces Antena monopolo (5).\relax }}{74}{figure.caption.115}
+\contentsline {figure}{\numberline {C.8}{\ignorespaces Antena monopolo planar (6).\relax }}{75}{figure.caption.116}
+\contentsline {figure}{\numberline {C.9}{\ignorespaces Antena PIFA com meandro (7).\relax }}{75}{figure.caption.117}
+\contentsline {figure}{\numberline {C.10}{\ignorespaces Antena de teste 8.\relax }}{76}{figure.caption.118}
+\contentsline {figure}{\numberline {C.11}{\ignorespaces Antena monopolo com meandro (9).\relax }}{76}{figure.caption.119}
+\contentsline {figure}{\numberline {C.12}{\ignorespaces Antena monopolo com meandro (10).\relax }}{77}{figure.caption.120}
+\contentsline {figure}{\numberline {C.13}{\ignorespaces Antena monopolo com meandro (11).\relax }}{77}{figure.caption.121}
+\contentsline {figure}{\numberline {C.14}{\ignorespaces Antena monopolo com meandro (12).\relax }}{78}{figure.caption.122}
+\contentsline {figure}{\numberline {C.15}{\ignorespaces Antena monopolo com meandro (13).\relax }}{78}{figure.caption.123}
+\contentsline {figure}{\numberline {C.16}{\ignorespaces Antena monopolo com meandro (14).\relax }}{79}{figure.caption.124}
+\contentsline {figure}{\numberline {C.17}{\ignorespaces Antena monopolo de duas camadas em espiral (15).\relax }}{79}{figure.caption.125}
+\contentsline {figure}{\numberline {C.18}{\ignorespaces Antena monopolo de duas camadas em espiral (16).\relax }}{80}{figure.caption.126}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces PCI GSM inicial.\relax }}{81}{figure.caption.127}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces PCI RF inicial.\relax }}{81}{figure.caption.128}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces PCI RF inicial.\relax }}{82}{figure.caption.129}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Camadas de cobre da placa principal da U3C.\relax }}{83}{figure.caption.130}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Camadas de cobre da placa RF.\relax }}{84}{figure.caption.131}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Camadas de cobre da placa RF.\relax }}{84}{figure.caption.132}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Vista superior da PCI do m\'odulo RF em 3D.\relax }}{85}{figure.caption.133}
