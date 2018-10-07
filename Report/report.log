@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  7 OCT 2018 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  7 OCT 2018 19:29
 entering extended mode
 **./report.tex
 (report.tex
@@ -689,23 +689,18 @@ Package caption Info: End \AtBeginDocument code.
  [2
 
 ] (Sections/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
- []
+LaTeX Warning: Reference `sec:Goals' on page 3 undefined on input line 23.
 
-[3]
-
-LaTeX Warning: Reference `sec:Goals' on page 4 undefined on input line 34.
-
-) (Sections/related_work.tex) (Sections/architecture.tex
-<images/architectureTiers.png, id=16, 396.4411pt x 329.23pt>
+) (Sections/related_work.tex [3]) (Sections/architecture.tex
+<images/architectureTiers.png, id=17, 396.4411pt x 329.23pt>
 File: images/architectureTiers.png Graphic file (type png)
 <use images/architectureTiers.png>
 Package pdftex.def Info: images/architectureTiers.png  used on input line 16.
 (pdftex.def)             Requested size: 256.0748pt x 212.66066pt.
 )
-(Sections/evaluation.tex [4]) (Sections/schedule.tex) (Sections/conclusion.tex)
-(report.bbl) [5 <./images/architectureTiers.png>] (report.aux)
+(Sections/evaluation.tex) (Sections/schedule.tex) (Sections/conclusion.tex)
+(report.bbl [4 <./images/architectureTiers.png>]) [5] (report.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -714,23 +709,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8675 strings out of 492973
- 141786 string characters out of 3127135
- 237000 words of memory out of 3000000
- 12363 multiletter control sequences out of 15000+200000
- 7567 words of font info for 27 fonts, out of 3000000 for 9000
+ 8677 strings out of 492973
+ 141807 string characters out of 3127135
+ 234000 words of memory out of 3000000
+ 12364 multiletter control sequences out of 15000+200000
+ 7913 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,42p,2424b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,6n,42p,1552b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (5 pages, 653926 bytes).
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users
+/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pf
+b>
+Output written on report.pdf (5 pages, 666158 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
