@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {subsection}{\numberline {1.1}Context}{3}
 \contentsline {subsection}{\numberline {1.2}The problem}{3}
-\contentsline {subsection}{\numberline {1.3}Alternatives}{3}
+\contentsline {subsection}{\numberline {1.3}Alternatives}{4}
 \contentsline {subsection}{\numberline {1.4}Our approach}{4}
 \contentsline {subsection}{\numberline {1.5}Contributions}{4}
 \contentsline {section}{\numberline {2}Related Work}{4}
