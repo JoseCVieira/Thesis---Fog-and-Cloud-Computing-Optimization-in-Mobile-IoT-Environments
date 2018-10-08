@@ -1,0 +1,17 @@
+% Encoding: UTF-8
+
+@Article{mell2011nist,
+  author    = {Mell, Peter and Grance, Tim and others},
+  title     = {The NIST definition of cloud computing},
+  year      = {2011},
+  publisher = {Computer Security Division, Information Technology Laboratory, National Institute of Standards and Technology Gaithersburg},
+}
+
+@Article{yousefpour2018all,
+  author  = {Yousefpour, Ashkan and Fung, Caleb and Nguyen, Tam and Kadiyala, Krishna and Jalali, Fatemeh and Niakanlahiji, Amirreza and Kong, Jian and Jue, Jason P},
+  title   = {All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey},
+  journal = {arXiv preprint arXiv:1808.05283},
+  year    = {2018},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

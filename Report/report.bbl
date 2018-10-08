@@ -21,8 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Armbrust:10}
-M.~Armbrust \emph{et~al.}, ``A view of cloud computing,'' \emph{Communications
-  of the ACM}, vol.~53, no.~4, pp. 50--58, Apr. 2010.
+\bibitem{mell2011nist}
+P.~Mell, T.~Grance \emph{et~al.}, ``The nist definition of cloud computing,''
+  2011.
+
+\bibitem{yousefpour2018all}
+A.~Yousefpour, C.~Fung, T.~Nguyen, K.~Kadiyala, F.~Jalali, A.~Niakanlahiji,
+  J.~Kong, and J.~P. Jue, ``All one needs to know about fog computing and
+  related edge computing paradigms: A complete survey,'' \emph{arXiv preprint
+  arXiv:1808.05283}, 2018.
 
 \end{thebibliography}
