@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  8 OCT 2018 09:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  8 OCT 2018 10:55
 entering extended mode
 **./report.tex
 (report.tex
@@ -690,26 +690,26 @@ Package caption Info: End \AtBeginDocument code.
 
 ] (Sections/introduction.tex
 
-LaTeX Warning: Citation `Armbrust:10' on page 3 undefined on input line 17.
+LaTeX Warning: Citation `Armbrust:10' on page 3 undefined on input line 19.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 [3]
 
-LaTeX Warning: Reference `sec:Goals' on page 4 undefined on input line 30.
+LaTeX Warning: Reference `sec:Goals' on page 4 undefined on input line 32.
 
 ) (Sections/related_work.tex) (Sections/architecture.tex
 <images/architectureTiers.png, id=17, 396.4411pt x 329.23pt>
