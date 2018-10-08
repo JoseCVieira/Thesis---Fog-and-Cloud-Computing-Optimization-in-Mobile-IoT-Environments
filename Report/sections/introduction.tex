@@ -6,6 +6,15 @@
 Cloud computing became popular at the beginning of the twenty-first century. The \textit{National Institute of Standards and Technology} (NIST) defines cloud computing as a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction \cite{mell2011nist}. Cloud computing has been instrumental in expanding the reach and capabilities of computing, storage, and networking infrastructure to the applications. In this model, clients outsource the allocation and management of resources (hardware or software) that they rely upon to external entities known as clouds. Clouds provide consumers online accesses to computing services and centralized data storage, running on data centers where large groups of servers, disks, and routers are networked. Since the demand for cloud resources change over time, setting a fixed amount of resources results in either over-provisioning or under-provisioning, so \textit{cloud service providers} (CSPs) afford dynamic resources for a scalable workload, applying a pay-as-you-go cost model where clients only pay for the amount of resources they actually use.\\
 %CSPs offer three main types of services, namely infrastructure, platform, and software as services (IaaS, PaaS, SaaS), in descending order of flexibility, which users may choose depending on their application needs. IaaS allows cloud customers to directly accesses IT infrastructure for processing, storage, networking, over the Internet. Clients can configure the IaaS (often offered as a standalone VM), in terms of hardware (e.g., number of CPU cores, RAM capacity) and corresponding software for his need. PaaS offer users a framework they can build upon to develop or customize applications. It manages the underlying low-level processes and allows users to focus on managing software for its applications. Finally, SaaS is the most popular way of using cloud computing. It utilizes the internet to deliver applications to its users, which are managed by a third-party vendor. This service is helpful if the user likes to get full software packages, and do not want to take care of software issues, such as database scalability, socket management, etc.\\
 %Cloud computing provides customers with yet another feature that they may use taking into account both security and configurability levels that their applications require, which includes private cloud, community cloud, public cloud, and hybrid cloud.\\
+IoT apps...
+The prosperity of Internet of Things (IoT) and the
+success of rich Cloud services have expedited the emergence of
+a new computing paradigm called Fog computing, which promotes
+the processing of data at the proximity of their sources.
+Complementary to the Cloud, Fog promises to offer many appealing
+features, such as low latency, low cost, high multitenancy, high
+scalability, and to consolidate the IoT ecosystem.
+
 \noindent\tab Although cloud computing has bring forth many advantages, the time required to access cloud-based services may not be suitable for some applications with ultra-low latency requirements. Also, the rapid growth in the number of connected IoT devices has brought new needs, such as greater demand for high-bandwidth, geographically-dispersed, low-latency, and privacy-sensitive data processing. These demands require cloud resources to be closer to end-devices, making plenty of paradigms such as \textit{Fog Computing} (FC) to emerge. %Each of them focus on different environments with different characteristics, being FC the most general one.\\
 %Among those paradigms are \textit{Fog Computing} (FC), \textit{Mobile Computing} (MC), \textit{Mobile Cloud Computing} (MCC), \textit{Mobile Ad hoc Cloud Computing} (MACC), \textit{Edge Computing} (EC),\textit{ Multi-access Edge Computing} (MEC), \textit{Cloudlet Computing} (CC), \textit{Mist Computing} (mist) [ref].\\[6pt]
 
@@ -17,6 +26,54 @@ Although fog computing is intended to provide strong support for the Internet of
 %The problem
 \subsection{The problem}
 \noindent\tab Despite the benefits of using fog computing, the current model suffer from several problems. \cite{Armbrust:10} \\
+
+\subsection{Motivation}
+The motivation of this paper is to fill the gap by proposing
+a layered Fog framework to better support IoT applications,
+encompassing all the layers along the Cloud-to-Things continuum
+through virtualization. In particular, the virtualization
+refers to the creation of hardware, operating system, storage
+device, network resource and event processing by abstraction,
+orchestration and isolation. In our context, the virtualization is
+further divided into object virtualization [17], network function
+virtualization [18], and service virtualization [19].
+
+[17] C. Sarkar et al., “DIAT: A scalable distributed architecture for IoT,”
+IEEE Internet Things J., vol. 2, no. 3, pp. 230–239, Jun. 2015.
+[18] R. Mijumbi et al., “Network function virtualization: State-of-the-art
+and research challenges,” IEEE Commun. Surveys Tuts., vol. 18, no. 1,
+pp. 236–262, 1st Quart., 2015.
+[19] H. Ko, J. Jin, and S. L. Keoh, “Secure service virtualization in IoT
+by dynamic service dependency verification,” IEEE Internet Things J.,
+vol. 3, no. 6, pp. 1006–1014, Dec. 2016.
+
+For example, heterogeneous sensory
+nodes (sensors, controllers, actuators, etc.) on a driverless car
+are estimated to generate about 1 GB data per second [3]
+
+A. D. Angelica. Google’s Self-Driving Car Gathers Nearly 1 GB/Sec.
+Accessed: Dec. 6, 2016. [Online]. Available: http://www.kurzweilai.net/
+googles-self-driving-car-gathers-nearly-1-gbsec
+
+
+The concept of “Fog” was initially proposed in [5], where
+its role was defined as an extension of Cloud to support some
+appealing features, such as low latency, heterogeneity, and
+mobility. More specifically, Fog might be specified in terms
+of functionality as Fog edge nodes (FENs), Fog server (FS),
+and Foglet, where FENs and FS are hardware nodes, and
+Foglet is the middleware in charge of data exchange, as
+presented in Fig. 1 [6].
+
+[5] F. Bonomi, R. Milito, J. Zhu, and S. Addepalli, “Fog computing and its
+role in the Internet of Things,” in Proc. MCC Workshop Mobile Cloud
+Comput., Helsinki, Finland, Aug. 2012, pp. 13–16.
+[6] J. Li, J. Jin, D. Yuan, M. Palaniswami, and K. Moessner, “EHOPES:
+Data-centered Fog platform for smart living,” in Proc. Telecommun.
+Netw. Appl. Conf. (ITNAC), Sydney, NSW, Australia, Nov. 2015,
+pp. 308–313.
+
+
 
 \subsection{Alternatives}
 \noindent\tab [Alternatives]\\

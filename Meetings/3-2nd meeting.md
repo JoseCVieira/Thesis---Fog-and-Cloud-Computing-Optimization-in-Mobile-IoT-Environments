@@ -97,6 +97,19 @@ Kai Liang, Liqiang Zhao, Xiaoli Chu, and Hsiao-Hwa Chen. **An integrated
 architecture for software defined and virtualized radio access networks with
 fog computing.** IEEE Network, 31(1):80–87, 2017.
 
+Fog networks can be implemented by SDN and virtualization to
+reduce the management costs, and to improve the scalability and
+resource utilization. The authors in [130] propose an integrated
+network architecture for software-defined and virtualized radio
+access networks with fog computing. The proposed architecture
+is hierarchical and has two control levels: the higher level that is
+the SDN controller and the lower layer that is the local controller,
+which could be collocated with fog nodes. The SDN controller
+instructs the local controllers how to process specific applications
+or requests. The authors further introduce a SaaS called OpenPine
+that enables virtualization at the network level and user control of
+network operation.
+
 As redes fog podem ser implementadas por SDN (software defined networking) e por
 virtualização para reduzir os management costs e melhorar a escalabilidade e a
 utilização de recursos. Os autores propõem uma arquitetura de rede integrada para
@@ -109,86 +122,101 @@ um SaaS chamado OpenPine, que permite a virtualização ao nível da rede e user
 sobre a operação da rede.
 
 -----------------------------------------------------------------------------------
-[143]
+[143] ✓
 
 Jianhua Li, Jiong Jin, Dong Yuan, and Hongke Zhang. **Virtual fog: A virtualization
 enabled fog computing framework for internet of things.** IEEE Internet of
 Things Journal, 5(1):121–131, 2018.
 
-Este estudo junta fog computing e information-centric networking (ICN), que permite
-uma distribuição de dados flexível e eficiente na camada de rede. Na arquitetura
-ICN-Fog, na camada mais baixa estão os end devices heterogéneos que se ligam aos
-fog nodes, que executam protocolos específicos da ICN para comunicar com outros fog
-nodes. Além de se ligarem a outros fog nodes, cada fog nodes também está ligado à cloud.
-Os autores mostram que ICN-Fog se baseia nos princípios do ICN para a construção de uma
-comunicação inteligente de dados horizontal (fog-to-fog), que leva à redução da
-dependência da aplicação sobre a cloud e ao processamento distribuído no fog.
+Propose a layered Fog framework to better support IoT applications through virtualization.
+The virtualization is divided into object virtualization (VOs) to address the protocol
+inconsistency (lack of unified networking protocols -> exaggerate the overhead), network
+function virtualization maps standard networking services to VOs, thus, minimize the
+communication process between consumers and producers by minimizing latency, improving
+security and scalability, and service virtualization that composes the community and
+Cloud Apps from various vendors to serve local Fog users with high quality of experience
+(QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple
+independent virtual instances, Fog network infrastructures, and software platforms.
 
 -----------------------------------------------------------------------------------
-[145]
+[145] ✗
 
 Wenyu Zhang, Zhenjiang Zhang, and Han-Chieh Chao. **Cooperative fog computing
 for dealing with big data in the internet of vehicles: Architecture and
 hierarchical resource management.** IEEE Communications Magazine, 55(12):
 60–67, 2017.
 
-Introduz os desafios de lidar com big data nos ambientes de IoV. Os autores enfatizam
-o papel dos fog servers e descrevem uma arquitetura CFC (cooperative fog computing)
-para suportar aplicações IoV. A arquitetura CFC-IoV proposta consiste em duas camadas:
-fog layer e edge layer. A camada de fog é uma federação de servidores geograficamente
-distribuídos, um servidor coordenador e os cloud servers, enquanto a edge layer inclui
-a vehicular ad hoc network (VANET), aplicações IoT e mobile cellular networks.
-(Também é mencionado como trabalho futuro neste servey - redes IoV)
+The paper introduces the challenges of handling big data in the IoV environments. The
+authors emphasize on the role of fog servers and describe a regional cooperative fog
+computing (CFC) architecture to support IoV applications. The proposed CFC-IoV
+architecture consists of two layers - the fog layer and edge layer. The fog layer is
+a federation of geographically distributed fog servers, a coordinator server, and the 
+cloud servers, whereas the edge layer includes the vehicular ad hoc network (VANET),
+IoT applications, and mobile cellular networks.
 
 -----------------------------------------------------------------------------------
-[146]
+[146] ✗
 
 H. Zhang, Y. Qiu, X. Chu, K. Long, and V. C. M. Leung. **Fog radio access networks:
 Mobility management, interference mitigation, and resource optimization.** IEEE
 Wireless Communications, 24(6):120–127, Dec 2017.
 
-Fala sobre mitigação de interferência, otimização de recursos e no gestão de mobilidade 
-em F-RAN. Primeiro, apresenta a arquitetura do sistema que ilustra como os vários 
-componentes em F-RAN, como macro RRHs (MRRHs), small RRHs (SRRHs), fog computing access 
-points (F-APs) e smart user equipment (F-UE), trabalham em conjunto para o bom 
-funcionamento do do F-RAN. Estes componentes conectam-se à BBU pool que suporta a 
-otimização de recursos e fornece armazenamento e comunicações centralizadas em F-RAN.
+They focuses on interference mitigation, resource optimization, and mobility management
+in F-RAN. The authors first present the system architecture that illustrates how the
+various components in F-RAN, such as macro RRHs (MRRHs), small RRHs (SRRHs), fog
+computing access points (F-APs), and smart user equipment (F-UE), work together for the
+successful implementation of F-RAN. The MRRHs, SRRHs and the F-APs connect to the BBU
+pool which supports resource optimization and provides centralized storage and
+communications in F-RAN.
 
 -----------------------------------------------------------------------------------
-[149]
+[149] ✗
 
 Quan Yuan, Haibo Zhou, Jinglin Li, Zhihan Liu, Fangchun Yang, and
 Xuemin Sherman Shen. **Toward efficient content delivery for automated driving
 services: An edge computing solution.** IEEE Network, 32(1):80–86, 2018.
 
-Discute a colocação de cache, onde é feita através do paradigma MEC em redes sem fio
-para satisfazer as necessidades dos serviços de condução automatizados. Os requests 
-enviados por veículos autónomos são primeiro processadas pelo edge server para determinar
-se podem ser processados localmente ou precisam ser entregues à remote cloud.
+They propose a two-level edge computing architecture for automated driving services in
+order to make full use of the intelligence at the wireless edge (i.e., base stations
+and autonomous vehicles) for coordinated content delivery. We then investigate the
+research challenges of wireless edge caching and vehicular content sharing. Finally,
+we propose potential solutions to these challenges and evaluate them using real and
+synthetic traces. Simulation results demonstrate that the proposed solutions can
+significantly reduce the backhaul and wireless bottlenecks of cellular networks while
+ensuring the quality of automated driving services.
 
 -----------------------------------------------------------------------------------
-[152]
+[152] ✗
 
 Cesar A Garcia-Perez and Pedro Merino. **Enabling low latency services on lte
 networks.** In Foundations and Applications of Self* Systems, IEEE International
 Workshops on, pages 248–255. IEEE, 2016.
 
-??
+In this paper, they propose an LTE compliant architecture to reduce latency for some
+scenarios combining FOG, MEC and SDN. Our aim is to modify the behavior of the General
+Packet Radio Service (GPRS) Tunneling Protocol (GTP) tunnels to analyze the traffic in
+order to decide on further optimizations, for example to implement a kind of device-to-device
+communication for some services.
 
 -----------------------------------------------------------------------------------
-[160]
+[160] ✗ ?
 
 J. He, J. Wei, K. Chen, Z. Tang, Y. Zhou, and Y. Zhang. **Multitier fog computing
 with large-scale iot data analytics for smart cities.** IEEE Internet of Things Journal,
 5(2):677–686, April 2018.
 
-Surge na secção Mobile Fog Computing no trabalha futuro apontado pelo servey. (A
-maioria dos papers assume que os fog nodes são fixos e apenas consideram a mobilidade
-dos dispositivos IoT). Um esforço inicial para fog nodes móveis pode ser encontrado
-neste paper.
+In this paper a multitier fog computing model with large-scale data analytics service
+is proposed for smart cities applications. The multitier fog is consisted of ad-hoc
+fogs and dedicated fogs with opportunistic and dedicated computing resources, respectively.
+They run analytics benchmark experiments over fogs formed by Rapsberry Pis with a distributed
+computing engine to measure computing performance. QoS aware admission control, offloading,
+and resource allocation schemes are designed to support data analytics services, and maximize
+analytics service utilities. Availability and cost models of networking and computing resources
+are taken into account in QoS scheme design. A scalable system level simulator is developed to
+evaluate the fog-based analytics service and the QoS management schemes.
 
 -----------------------------------------------------------------------------------
-[172]
+[172] ✓
 
 Xueshi Hou, Yong Li, Min Chen, DiWu, Depeng Jin, and Sheng Chen. **Vehicular
 fog computing: A viewpoint of vehicles as the infrastructures.** IEEE Transactions
@@ -202,8 +230,22 @@ vehicular cloud computing, o VFC suporta geodistribuição, tomada de decisão l
 real-time load-balancing. Além disso, o VFC depende da colaboração de veículos próximos,
 em vez de depender dos servidores remotos, o que reduz os custos de implantação e o atraso.
 
+This paper presents the idea of utilizing vehicles as the infrastructures for communication
+and computation, named vehicular fog computing (VFC), which is an architecture that utilizes
+a collaborative multitude of end-user clients or near-user edge devices to carry out
+communication and computation, based on better utilization of individual communication and
+computational resources of each vehicle. By aggregating abundant resources of individual
+vehicles, the quality of services and applications can be enhanced greatly. In particular,
+by discussing four types of scenarios of moving and parked vehicles as the communication and
+computational infrastructures, we carry on a quantitative analysis of the capacities of VFC.
+We unveil an interesting relationship among the communication capability, connectivity,
+and mobility of vehicles, and we also find out the characteristics about the pattern
+of parking behavior, which benefits from the understanding of utilizing the vehicular
+resources. Finally, we discuss the challenges and open problems in implementing the proposed
+VFC system as the infrastructures.
+
 -----------------------------------------------------------------------------------
-[175]
+[175] ✗
 
 I Farris, A Orsino, L Militano, Michele Nitti, Giuseppe Araniti, Luigi Atzori, and
 Antonio Iera. **Federations of connected things for delay-sensitive iot services in
@@ -219,7 +261,7 @@ todo para ajudar a suportar aplicações sensíveis a delay. O modelo de rede co
 suportam o paradigma MIFaaS.
 
 -----------------------------------------------------------------------------------
-[177]
+[177] ✗
 
 Ming Tao, Kaoru Ota, and Mianxiong Dong. **Foud: integrating fog and cloud
 for 5g-enabled v2g networks.** IEEE Network, 31(2):8–13, 2017.
