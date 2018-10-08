@@ -78,13 +78,17 @@ edge processing is stateful. They propose an initial design for meeting this cha
 Client-Edge-Server for Stateful Network Applications (CESSNA).
 
 -----------------------------------------------------------------------------------
-[123]
+[123] ✓
 
 Sherif Abdelwahab, Sophia Zhang, Ashley Greenacre, Kai Ovesen, Kevin
 Bergman, and Bechir Hamdaoui. **When clones flock near the fog.** IEEE Internet
 of Things Journal, 2018.
 
-??
+They design self-deploying brokering clones that discover cloud/edge hosting platforms and
+autonomously migrate clones between them according to self-measured weighted tail end-to-end
+latency without the need of a central monitoring and control unit, not having to sacrifice
+computation offloading gain in cloud platforms. Finally, it is simple and requires no change
+in existing cloud platforms controllers.
 
 -----------------------------------------------------------------------------------
 [130]
