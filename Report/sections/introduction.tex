@@ -23,6 +23,170 @@ scalability, and to consolidate the IoT ecosystem.
 %OpenFog Consortium defines fog computing as a horizontal system-level architecture that distributes computing, storage, control and networking functions closer to the users along a cloud-to-thing continuum \textbf{[ref]}
 Although fog computing is intended to provide strong support for the Internet of Things, it does not replace the needs of cloud-based services. In fact, fog and cloud complement each other; one cannot replace the need of the other. By coupling cloud and fog computing, the services can be optimized even further, allowing enhanced capabilities for data aggregation, processing, and storage. Fog nodes can be placed close to IoT source nodes, due to low hardware footprint and low power consumption (e.g., small servers, routers, switches, gateways, set-top boxes, access points), allowing latency to be much smaller compared to traditional cloud computing. Also, the decentralized nature of fog computing allows devices to either serve as fog nodes themselves or use fog resources as a client ?????. Moreover, Internet connectivity is not essential for the fog-based services to work, what means that services can work independently and send necessary updates to the cloud whenever the connection is available \cite{yousefpour2018all}.
 
+
+MOBILE devices are ubiquitous in people’s everyday
+life, with a remarkable growth of mobile data traffic
+over recent years [2]. As mobile applications become increasingly
+resource-hungry, the gap between required resources.
+To bridge this gap, cloud computing can be used to expand
+mobile devices resources. To deal with high latency of distant
+cloud center, the concept of cloudlet was introduced in [3]
+where it is defined as a trusted, resource-rich computer or
+cluster of computers well-connected to the Internet and available
+for use by nearby mobile devices. A cloudlet represents
+a container for virtual machines (VMs): connected users
+are associated with VMs supporting low-latency application
+offloading use-cases.
+Cloudlet concept is expected to be supported by 3-tier
+hierarchical network provisioning as presented in [4] and [5].
+In this hierarchy the cloudlet is the primal resource for the
+augmentation of the mobile device capabilities, while a remote
+cloud is used as last available resource, or for delay-tolerant
+resource-intensive applications.
+
+[2] “CVN index: Global mobile data traffic forecast update, 2015–2020,”
+Cisco, San Jose, CA, USA, White Paper no. c11-520862, 2016.
+[3] M. Satyanarayanan, P. Bahl, R. Caceres, and N. Davies, “The case for
+VM-based cloudlets in mobile computing,” IEEE Pervasive Comput.,
+vol. 8, no. 4, pp. 14–23, Oct./Dec. 2009.
+[4] Y. Jararweh et al., “Resource efficient mobile computing using cloudlet
+infrastructure,” in Proc. IEEE MSN, Dec. 2013, pp. 373–377.
+[5] (Dec. 2016). Elijah. [Online]. Available: http://elijah.cs.cmu.edu
+
+
+
+
+Here,
+it is envisioned that entities (such as basestations in a cellular network) closer to the network edge would host smallersized
+cloud-like infrastructure distributed across the network. This idea has been variously termed as Cloudlets [1], Fog Computing [2], Edge Computing [3], and Follow Me Cloud [4], to name a few. The trend towards edge-clouds is expected
+to accelerate as more users perform a majority of their computations on handhelds and as newer mobile applications get
+adopted.
+[1] M. Satyanarayanan, Cloudlets: At the leading edge of cloud-mobile convergence, in: Proceedings of the 9th International ACM Sigsoft Conference on
+Quality of Software Architectures, Ser. QoSA’13, ACM, New York, NY, USA, 2013, pp. 1–2.
+[2] F. Bonomi, R. Milito, J. Zhu, S. Addepalli, Fog computing and its role in the Internet of things, in: Proceedings of the First Edition of the MCC Workshop
+on Mobile Cloud Computing, ACM, 2012, pp. 13–16.
+[3] S. Davy, J. Famaey, J. Serrat-Fernandez, J. Gorricho, A. Miron, M. Dramitinos, P. Neves, S. Latre, E. Goshen, Challenges to support edge-as-a-service, IEEE
+Commun. Mag. 52 (1) (2014) 132–139.
+[4] T. Taleb, A. Ksentini, Follow me cloud: interworking federated clouds and distributed mobile networks, IEEE Netw. 27 (5) (2013) 12–19.
+
+
+Rather than applying
+the Fog concept to a specific area, this paper is focused on
+the realization of Fog.
+
+One of the key design issues in edge-clouds is service migration: should a service currently running in one of the edge-clouds
+be migrated as the user locations change, and if yes, where? This question stems from the basic tradeoff between the
+cost of service migration vs. the reduction in network overhead and latency for users that can be achieved after migration.
+While conceptually simple, it is challenging to make this decision in an optimal manner because of the uncertainty in user
+mobility and request patterns. Because edge-clouds are distributed at the edge of the network, their performance is closely
+related to user dynamics. These decisions get even more complicated when the number of users and applications is large
+and there is heterogeneity across edge-clouds. Note that the service migration decisions affect workload scheduling as well
+(and vice versa), so that in principle these decisions must be made jointly.
+[231 - all one needs to know...]
+
+
+Augmented
+reality applications that use head-tracked systems, for example,
+require end-to-end latencies to be less than 16 ms [1]. Cloudbased
+virtual desktop applications require end-to-end latency
+below 60 ms if they are to match QoS of local execution [2].
+Remotely rendered video conference, on the other hand,
+demand end-to-end latency below 150 ms [3]. Limited battery
+life, computation and storage capacity constraints inherent
+to mobile devices mean that application executions must be
+offloaded to cloud servers, which then return processed results
+to the mobile devices through the Internet. When cloud servers
+reside in remote data centers, end-to-end communication may
+translate into long delays characteristic of multi-hops transmissions
+over the Internet. Moving cloud computing to the edge of
+a network has helped to lessen these otherwise unacceptable
+delays while leveraging the benefits of a high-performance
+cloud, e.g., Fog Computing [4], Cloudlets, [5] and Follow Me
+Cloud [6]. While this improvement is not trivial, delivering
+cloud services from the edge of the network is not, by itself,
+sufficient to meet latency QoS. When a mobile client initially
+secures a one-hop away edge cloud server to ensure the shortest
+network delay, client mobility may cause the server to be
+be multi-hops away. The increased network distance, and the
+potential bottleneck bandwidth that might be introduced by the
+intermediate links may result in poor connectivity to the cloud
+service. Even when a mobile user moves around the originally
+connected edge cloud, service latency may increase because of
+unexpected crowds of mobile clients seeking to connect to the
+same edge cloud simultaneously. Thus, increased network or
+server processing delays may violate acceptable latency QoS
+constraints.
+Cloud service migration may effectively provide expected
+QoS with respect to user mobility, dynamic networks and
+varying edge cloud states. To date, previous CloudNet [7]
+and VM Handoff [8] studies introduced virtual machine (VM)
+migration in real time under the assumption that the allimportant
+variables of when and where to migrate were known.
+These assumptions cannot be made in the real world for
+two reasons. First of all, conditions that may or may not
+trigger migration of a cloud service may vary widely. One
+central consideration that must be accounted for is the tradeoff
+between the cost of migration and any real QoS improvement.
+Secondly, we need to quantify long-term performance of cloud
+servers with respect to any requested service migration to
+ensure that the best server is chosen, wherein that best choice
+is realized by the maximization of promised QoS for any
+mobile user over time.
+Previous work [9], [10] proposed a static distance-based
+MDP model that solved the problem of where to migrate
+by defining each edge cloud migration possibility according
+to hop counts between it and a mobile user. A cost/reward
+function in MDP may be used to measure the trade-off
+between migration costs and performance gains, and it may
+be used to calibrate the long-term performance improvements
+by each edge server with respect to any prospective mobile
+client. Therefore, these studies did work to prove the feasibility
+of applying MDP with respect to the where to migrate
+decision. But the static distance-based MDP models did not
+fully support real-time mobile applications due to its inherent
+limitation to reflect the two ruling factors in any where to
+migration decision: 1)network state, and 2) server state.
+The inherent limitation of previous distance-based models
+to reflect the two ruling factors in any where to migration decision
+can be illustrated in the fairly common instance of two
+edge clouds deemed identical because they both share an equal
+hop count to a mobile user. Yet, no two edge clouds are ever
+precisely identical because they are characterized by different
+network delays and different server processing delays. These
+differences provide a real difference in the choice between
+one edge cloud and another of equal hop count. For example,
+one edge cloud may become heavily loaded and congested
+because it has the smallest hop count for the client, and,
+accordingly, be the chosen destination for a specific migration.
+Another unaddressed problem exists, because a previous MDP
+edge cloud service migration model recalculates optimal edge
+cloud migration for mobile users without specifying an optimal
+interval period for such recalculation. Since running MDP
+is a computing intensive task, short recalculation intervals
+introduce the heavy overhead to the server. Conversely, longer
+recalculation intervals may translate into lazy migration resulting
+in periods of transgression of QoS guarantees. Finally, of
+course, operating MDP for edge cloud migration requires realtime
+feeds of pertinent parameters into the MDP model, while
+previous MDP models assume the parameters as static. Such
+assumptions make these models impractical, if not impossible,
+to apply to dynamic applications, network states or server
+states in the real world of real time.
+
+
+With the advance of wireless technologies, the rapid
+mobile data traffic growth will lead to severe network resource
+consumption and exceptionally long latency to access services,
+especially for cloud-based applications.
+
+
+
+Simply applying existing radio access-oriented
+MM (mobility management) schemes leads to poor performance mainly due to the
+co-provisioning of radio access and computing services of the
+MEC-enabled (mobile edge computing) BSs (base stations).
+
+
 %The problem
 \subsection{The problem}
 \noindent\tab Despite the benefits of using fog computing, the current model suffer from several problems. \cite{Armbrust:10} \\
