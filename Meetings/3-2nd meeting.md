@@ -1,6 +1,125 @@
-**All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey**
+Fog Computing - Focusing on Mobile Users at the Edge. 2016.
+
+Apresenta as caracteristicas, conceitos e design goals.
+
+Help Your Mobile Applications with Fog Computing. 2015.
+
+Este paper explora os tema mobile application offloading and storage expansion. Fala da forma de prever parametros como largura de banda e latência e assim escolher o processamento no dispositivo na edge ou na cloud.
+
+Fog Computing for the Internet of Mobile Things - issues and challenges. 2017.
+
+Este paper analisa o que significa providenciar mobilidade em Fog, os principais desafios e trabalho futuro. Aponta para trabalho futuro: serviço de migração proativo vs. reativo, Políticas de trigger do serviço de migração, Fog federation para habilitar mobile roaming, Técnicas de virtualização e de migração, etc. [Boa introdução]
+
+Dynamic Mobile Cloudlet Clustering for Fog Computing. 2018.
+
+Este paper propõe a política dynamic mobile cloudlet cluster policy (DMCCP) para usar cloudlets como suporte para fog server for offloading. Os fog server são implementados na edge da rede em access points (AP). Como estes têm de estar perto dos utilizadores, têm de ser implementados tantos quanto possível. De forma a reduzir o custo de implementação estes têm recursos limitados. Investigações recentes propõem uso de clusters de mobile devices, cloudlet, para offloading de tasks do fog server. Os resultados mostram que a DMCCP agrupa em cluster o número de cloudlets quase ideal para diferentes resource demands de uma task em pouco tempo comparando com o método ideal. Como trabalho futuro propõe o balanceamento da quantidade de recursos das cloudlets.
+
+MyiFogSim - A Simulator for Virtual Machine Migration in Fog Computing. 2017.
+
+Este paper introduz o MyiFogSim, uma extensão ao iFogSim que permite a mobilidade dos end users utilizando migração das VMs entre cloudlets. Como trabalho futuro propõe a implementação de políticas melhores que incorporem user behavior e applications requirements.
+
+Mobile Fog - A Programming Model for Large–Scale Applications on the Internet of Things. 2013.
+
+Este paper apresenta um PaaS programming model, chamado Mobile Fog, um modelo de programação de alto nível que escala dinamicamente baseado no workload.
+
+Real Time Efficient Scheduling Algorithm for Load Balancing in Fog Computing Environment. 2016.
+
+Este paper propõe uma nova política de escalonamento, real time efficient scheduling (RTES) load balancing algorithm implementado no simulador CloudSim. Os resultados são extremamente bons: tempo de execução mínimo, rapidez na resposta aos pedidos dos clientes, cumpre os limites temporais em aplicações real-time, mantendo a consistência dos dados e a utilização de largura de banda comparando com algoritmos existentes, como: FCFS(First Come, First Served), Priority e Multi Objective Tasks scheduling algorithm. Tem 90% de eficiencia. trabalho futuro: incluir outros fatores QoS como por exemplo a segurança. [Boa introdução]
+
+Fog Computing: Principles, Architectures, and Applications.
+
+Principles, Architectures, and Applications.
+
+Fog Computing: Helping the Internet of Things Realize its Potential.
+
+Conceitos.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+**Proposed by the professor**
+
+-----------------------------------------------------------------------------------
+?
+
+2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.**
+
+This paper, propose a new architecture based on load balancing algorithm in Fog Computing
+environment. Users sent the request to the nearby Fog servers which are consistently
+maintaining the frequently used data. In case, the users don’t get the desired resource
+in nearby Fog Servers who are also communicating with each other, then that request is
+forwarded to the cloud servers. To implement this load balancing algorithm they use
+modified Honey Bee Based algorithm.
+
+-----------------------------------------------------------------------------------
+?
+
+2017 **A Framework of Fog Computing: Architecture, Challenges, and Optimization.**
+
+They investigate an application scenario (VANET - Vehicular adhoc) and conduct resource
+optimization by formulating the optimization problem and solving it via a genetic
+algorithm combined with a Dirichlet distribution sampling approach.
+
+-----------------------------------------------------------------------------------
+?
+
+2012 **Energy-Efficient Multi-Job Scheduling Model for Cloud Computing and Its
+Genetic Algorithm.**
+
+For the problem that the energy efficiency of the cloud computing data center is low,
+they propose a new energy-efficient multi-job scheduling model. To solve this model,
+they design a encoding and decoding method for the individuals and construct an overall
+energy efficiency function of the servers. Meanwhile, in order to accelerate the
+convergent speed of our algorithm and enhance its searching ability, a local search
+operator is introduced.
+
+-----------------------------------------------------------------------------------
+?
+
+2017 **Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint
+Optimization Approach Combining Stackelberg Game and Matching.**
+
+This paper consider a specific fog computing network consisting of a set of data service
+operators (DSOs) each of which controls a set of fog nodes (FNs) to provide the required
+data service to a set of data service subscribers (DSSs). They abord the problem of how
+to allocate the limited computing resources of FNs to all the DSSs to achieve an optimal
+and stable performance. Therefore, they propose a joint optimization in a distributed
+fashion. In the framework, they formulate a Stackelberg game to analyze the pricing
+problem for the DSOs as well as the resource allocation problem for the DSSs.
+
+-----------------------------------------------------------------------------------
+✗
+
+2015 **A Survey of Fog Computing: Concepts, Applications and Issues.**
+
+This survey dis- cusses the de nition of fog computing and similar concepts, introduces
+representative application scenarios, and identi- es various aspects of issues we may
+encounter when de- signing and implementing fog computing systems. It also highlights some
+opportunities and challenges, as direction of potential future work, in related techniques
+that need to be considered in the context of fog computing.
+
+-----------------------------------------------------------------------------------
+✗
+
+2017 **Internet of Things Bringing Fog, Edge & Mist Computing.**
+
+Definitions (Cloud, Fog, Edge, Mist).
+
+
+-----------------------------------------------------------------------------------
+?
+
+2017 **Fog computing job scheduling optimization based on bees swarm.**
+
+This paper propose a new bio-inspired optimization approach called BeesLife Algorithm
+(BLA) aimed at addressing the job scheduling problem in the fog computing environment.
+This approach is based on the optimized distribution of a set of tasks among all the fog
+computing nodes. The objective is to find an optimal tradeoff between CPU execution time
+and allocated memory required by fog computing services established by mobile users.
+
+-----------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+**All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey**
 
 TODO:
 corretor ortografico
@@ -19,20 +138,22 @@ In C-RAN a large number of low-cost Remote Radio Heads (RRHs) are randomly deplo
 and connected to the Base Band Unit (BBU) pool through the front-haul links. Both
 F-RAN and C-RAN are suited for mobile networks with base stations and are candidates
 for 5G deployments. Also, the use of F-RAN and C-RAN brings a more energy efficient
-form of network operation. We encourage the motivated reader to refer to reference
-[27] for more information about F-RAN.
+form of network operation.
 
 -----------------------------------------------------------------------------------
-[54] ✓
+[54] ✓ ?
 
 Yong Cui, Jian Song, Kui Ren, Minming Li, Zongpeng Li, Qingmei Ren, and
 Yangjun Zhang. **Software defined cooperative offloading for mobile cloudlets.**
 IEEE/ACM Transactions on Networking, 25(3):1746–1760, 2017.
 
-The concept of mobile cloudlets is similar to cloudlets, in which the cloudlets are a
-group of nearby mobile devices that are connected wirelessly, e.g., using WiFi or
-Bluetooth [54]. In mobile cloudlets, mobile devices can be providers as well as
-clients of computing service.
+They leverage SDN to design our framework SDCOM, which aims to save energy of mobile
+devices and reduce traffic on LTE-Advanced access links. Based on distributed device
+information, a Controller makes task scheduling decisions periodically. We formulate
+the minimum-energy task scheduling problem as a 0-1 knapsack problem, and design
+offline algorithms to compute the optimal solution as a performance benchmark. We
+further propose an Online Task Scheduling Algorithm for realtime decision making, and
+extend it into a Proportional Fair Online Task Scheduling Algorithm.
 
 -----------------------------------------------------------------------------------
 [97] ✓
@@ -52,12 +173,6 @@ years. They show that as long as the technological requirements and constraints 
 applications are properly fulfilled, it is up to the platform designer to decide whether
 an endpoint should be served by the Cloud, the Fog, or an adequate combination of the two
 at any given time during the service lifetime.
-
-Resumo: Fala sobre os requisitos de mobilidade, controlo e atuação fiáveis e escalabilidade
-em cenários IoT em tempo real e grandes áreas geográficas. Mostram que fog computing é a
-plataforma natural para IoT a imprescindível interação entre fog e cloud. Mostram que desde
-que as restrições sejam cumpridas, cabe ao platform designer decidir quando um disp. IoT deve
-ser servido pela cloud, fog ou por uma combinação dos dois.
 
 -----------------------------------------------------------------------------------
 [112] ✗
@@ -102,35 +217,19 @@ computation offloading gain in cloud platforms. Finally, it is simple and requir
 in existing cloud platforms controllers.
 
 -----------------------------------------------------------------------------------
-[130]
+[130] ✗
 
 Kai Liang, Liqiang Zhao, Xiaoli Chu, and Hsiao-Hwa Chen. **An integrated
 architecture for software defined and virtualized radio access networks with
 fog computing.** IEEE Network, 31(1):80–87, 2017.
 
-Fog networks can be implemented by SDN and virtualization to
-reduce the management costs, and to improve the scalability and
-resource utilization. The authors in [130] propose an integrated
-network architecture for software-defined and virtualized radio
-access networks with fog computing. The proposed architecture
-is hierarchical and has two control levels: the higher level that is
-the SDN controller and the lower layer that is the local controller,
-which could be collocated with fog nodes. The SDN controller
-instructs the local controllers how to process specific applications
-or requests. The authors further introduce a SaaS called OpenPine
-that enables virtualization at the network level and user control of
-network operation.
-
-As redes fog podem ser implementadas por SDN (software defined networking) e por
-virtualização para reduzir os management costs e melhorar a escalabilidade e a
-utilização de recursos. Os autores propõem uma arquitetura de rede integrada para
-software-defined e virtualized radio access networks com fog computing. A
-arquitetura proposta é hierárquica e possui dois níveis de controlo: o nível superior
-que é o controlador SDN e a layer inferior que é o controlador local, que pode ser
-colocado com junto aos fog nodes. O controlador SDN instrui os controladores locais
-sobre como processar aplicações específicas ou requests. Os autores ainda introduzem
-um SaaS chamado OpenPine, que permite a virtualização ao nível da rede e user control
-sobre a operação da rede.
+The authors propose an integrated network architecture for software-defined and
+virtualized radio access networks with fog computing. The proposed architecture is
+hierarchical and has two control levels: the higher level that is the SDN controller
+and the lower layer that is the local controller, which could be collocated with fog
+nodes. The SDN controller instructs the local controllers how to process specific
+applications or requests. The authors further introduce a SaaS called OpenPine that
+enables virtualization at the network level and user control of network operation.
 
 -----------------------------------------------------------------------------------
 [143] ✓
@@ -778,54 +877,58 @@ implemented on off-the-shelf home routers.
 
 ----------------------------------------------------------------------------------
 
-[328]
+[328] ✗
 
 Kazuya Okada, Shigeru Kashihara, Nao Kawanishi, Nobuo Suzuki, Keizo
 Sugiyama, and Youki Kadobayashi. **Goedge: A scalable and stateless local
 breakout method.** In Proceedings of the 2018 Workshop on Theory and Practice for
 Integrated Cloud, Fog and Edge Computing Paradigms, pages 29–34. ACM, 2018.
 
-??
+This paper presented the design and implementation of the scalable and stateless local
+breakout for MEC, GoEdge. GoEdge employs matured DNS and IP anycast manners for a local
+breakout of MEC.
 
 ----------------------------------------------------------------------------------
 
-[354]
+[354] ✗
 
 Bozhao Qi, Lei Kang, and Suman Banerjee. **A vehicle-based edge computing
 platform for transit and human mobility analytics.** In Proceedings of the Second
 ACM/IEEE Symposium on Edge Computing, page 1. ACM, 2017.
 
-Introduz um sistema de monitorização e rastreamento em barramento baseado em Wi-Fi
-que observa dispositivos móveis e fornece análises sobre pessoas dentro e fora do
-veículo. O sistema pode usar ainda mais os dados obtidos pelo dispositivo sem fios
-montado no veículo para rastrear movimentos de passageiros, detectar fluxos de
-pedestres e avaliar como os fatores externos afetam a mobilidade humana, o que
-fornece análises úteis aos operadores de trânsito.
+Introduces a Wi-Fi-based in-bus monitoring and tracking system that observes mobile
+devices and provides analytics about people both within and outside the vehicle. The
+system can further use the data that is collected by the vehicle-mounted wireless
+device to track passenger movements, detect pedestrian flows, and evaluate how external
+factors impact human mobility, which provides useful analytics to transit operators.
 
 ----------------------------------------------------------------------------------
 
-[365]
+[365] ✗
 
 Yue Cao, Houbing Song, Omprakash Kaiwartya, Bingpeng Zhou, Yuan Zhuang,
 Yang Cao, and Xu Zhang. **Mobile edge computing for big-data-enabled electric
 vehicle charging.** IEEE Communications Magazine, 56(3):150–156, 2018.
 
-??
+This paper proposes a MEC-based system enabled by big data analytics for the EV
+charging use case.
 
 ----------------------------------------------------------------------------------
 
-[379]
+[379] ✗
 
 Zhuangdi Xu, Harshit Gupta, and Umakishore Ramachandran. **Sttr: A system
 for tracking all vehicles all the time at the edge of the network.** In Proceedings of
 the 12th ACM International Conference on Distributed and Event-based Systems,
 pages 124–135. ACM, 2018.
 
-??
+They propose a radically different approach to smart surveillance for vehicle tracking.
+Specifically, this paper explore a smart camera surveillance system aimed at tracking
+all vehicles in real time.
 
 ----------------------------------------------------------------------------------
 
-[381]
+[381] ✗
 
 Dario Bruneo, Salvatore Distefano, Francesco Longo, Giovanni Merlino, Antonio
 Puliafito, Valeria D’Amico, Marco Sapienza, and Giovanni Torrisi. **Stack4things
@@ -833,50 +936,68 @@ as a fog computing platform for smart city applications.** In Computer Communica
 Workshops (INFOCOM WKSHPS), 2016 IEEE Conference on, pages
 848–853. IEEE, 2016.
 
-Apresenta o Stack4Things12, uma framework baseada no OpenStack IaaS middleware que
-adota um modelo cloud-oriented para o "abastecimento" de recursos de IoT. A framework
-deles permite a injeção de código em runtime através da cloud, que eles definem como
-"contextualization".
+They designed Stack4Things, a framework based on OpenStack IaaS middleware that adopts
+a cloud-oriented model for IoT resource provisioning. Their framework allows injected
+code at runtime through the cloud, which they define as "contextualization."
 
 ----------------------------------------------------------------------------------
 
-[385]
+[385] ✓
 
 Márcio Moraes Lopes, Wilson A Higashino, Miriam AM Capretz, and Luiz Fernando
 Bittencourt. **Myifogsim: A simulator for virtual machine migration in
 fog computing.** In Companion Proceedings of the10th International Conference
 on Utility and Cloud Computing, pages 47–52. ACM, 2017.
 
-Uma extensão ao iFogSim para suportar mobilidade através da migração de VMs entre
-cloudlets (MyiFogSim).
+An extension of iFogSim to support mobility through migration of VMs between cloudlets.
 
 ---------------------------------------------------------------------------------
 
-[386]
+[386] ✗
 
 Bastien Confais, Adrien Lebre, and Benoît Parrein. **An object store service for a
 fog/edge computing infrastructure based on ipfs and a scale-out nas.** In Fog and
 Edge Computing (ICFEC), 2017 IEEE 1st International Conference on, pages 41–50.
 IEEE, 2017.
 
-??
+Their proposal is built with Scale-out Network Attached Storage systems (NAS) and IPFS,
+a BitTorrent-based object store spread throughout the Fog/Edge infrastructure.
 
 ----------------------------------------------------------------------------------
 
-[388]
+[388] ✗
 
 Cagatay Sonmez, Atay Ozgovde, and Cem Ersoy. **Edgecloudsim: An environment
 for performance evaluation of edge computing systems.** In Fog and Mobile Edge
 Computing (FMEC), 2017 Second International Conference on, pages 39–44. IEEE,
 2017.
 
-Propõe outro ambiente de simulação de edge computing, EdgeCloudSim, que considera
-recursos de rede e computacionais e abrange todos os aspectos da edge computing
-simulation modeling, incluindo modelagem de rede e computacional. À semelhança do
-iFogSim, o EdgeCloudSim também se baseia no CloudSim. Além disso, o EdgeCloudSim
-fornece uma arquitetura modular para fornecer suporte para uma variedade de
-funcionalidades críticas e suporta a simulação de cenários multi-tier em que
-vários edge servers são executados em coordenados com soluções de cloud de
-camada superior.
+The authors propose another edge computing simulation environment, EdgeCloudSim,
+that considers both network and computational resources and covers all aspects of
+edge computing simulation modeling, including network and computational modeling.
+Similar to iFogSim, EdgeCloudSim relies on CloudSim as well. Additionally,
+EdgeCloudSim provides a modular architecture to provide support for a variety of
+critical functionality and supports simulating multi-tier scenarios where multiple
+edge servers are running in coordination with upper layer cloud solutions.
 
 ----------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+**Other papers**
+
+-----------------------------------------------------------------------------------
+✓
+
+2016 **Scalable Fog Computing with Service Offloading in Bus Networks.**
+
+In this paper, they leverage the characteristics of buses and propose a scalable fog
+computing paradigm with servicing offloading in bus networks. The bus fog servers not
+only provide fog computing services for the mobile users on bus, but also are motivated
+to accomplish the computation tasks offloaded by roadside cloudlets. By this way, the
+computing capability of roadside cloudlets is significantly extended. We consider an
+allocation strategy using genetic algorithm (GA). With this strategy, the roadside
+cloudlets spend the least cost to offload their computation tasks. Meanwhile, the user
+experience of mobile users are maintained.
+
+-----------------------------------------------------------------------------------
