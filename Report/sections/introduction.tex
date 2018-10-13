@@ -1,110 +1,33 @@
 %!TEX encoding = UTF-8 Unicode
 \section{Introduction}\label{sec:Introduction}
 %Context - CLOUD COMPUTING
-\subsection{Context}
 \noindent
-Cloud computing became popular at the beginning of the twenty-first century. The \textit{National Institute of Standards and Technology} (NIST) defines cloud computing as a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction \cite{mell2011nist}. Cloud computing has been instrumental in expanding the reach and capabilities of computing, storage, and networking infrastructure to the applications. In this model, clients outsource the allocation and management of resources (hardware or software) that they rely upon to external entities known as clouds. Clouds provide consumers online accesses to computing services and centralized data storage, running on data centers where large groups of servers, disks, and routers are networked. Since the demand for cloud resources change over time, setting a fixed amount of resources results in either over-provisioning or under-provisioning, so \textit{cloud service providers} (CSPs) afford dynamic resources for a scalable workload, applying a pay-as-you-go cost model where clients only pay for the amount of resources they actually use.\\
-%CSPs offer three main types of services, namely infrastructure, platform, and software as services (IaaS, PaaS, SaaS), in descending order of flexibility, which users may choose depending on their application needs. IaaS allows cloud customers to directly accesses IT infrastructure for processing, storage, networking, over the Internet. Clients can configure the IaaS (often offered as a standalone VM), in terms of hardware (e.g., number of CPU cores, RAM capacity) and corresponding software for his need. PaaS offer users a framework they can build upon to develop or customize applications. It manages the underlying low-level processes and allows users to focus on managing software for its applications. Finally, SaaS is the most popular way of using cloud computing. It utilizes the internet to deliver applications to its users, which are managed by a third-party vendor. This service is helpful if the user likes to get full software packages, and do not want to take care of software issues, such as database scalability, socket management, etc.\\
+Cloud computing is a computing technology that became popular at the beginning of the twenty-first century, wich provide users online accesses to services, employing large groups of computers, servers, disks, and routers interlinked together in a distributed and complex manner. Cloud computing has been imperative in expanding the reach and capabilities of computing, storage, data management, and networking infrastructure to the applications. The key idea in this model is that clients outsource the allocation and management of resources (hardware or software) that they rely upon to the cloud. Clouds can provide different service models according to the end user applications needs, like infrastructure as a service (IaaS), platform as a service (PaaS) and software as a service (SaaS). Since the demand for cloud resources will change over time, setting a fixed amount of resources results in either over- or under-provisioning, so cloud service providers (CSPs) afford dynamic resources for a scalable workload, applying a pay-as-you-go cost model where clients only pay for the amount of resources they actually use. Cloud computing bring many advantages to the end user applications like high availability, flexibility, scalability, reliability, to mention a few.
+%The \textit{National Institute of Standards and Technology} (NIST) defines cloud computing as a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction \cite{mell2011nist}.
+%IaaS allows cloud customers to directly accesses IT infrastructure for processing, storage, networking, over the Internet. Clients can configure the IaaS (often offered as a standalone VM), in terms of hardware (e.g., number of CPU cores, RAM capacity) and corresponding software for his need. PaaS offer users a framework they can build upon to develop or customize applications. It manages the underlying low-level processes and allows users to focus on managing software for its applications. Finally, SaaS is the most popular way of using cloud computing. It utilizes the internet to deliver applications to its users, which are managed by a third-party vendor. This service is helpful if the user likes to get full software packages, and do not want to take care of software issues, such as database scalability, socket management, etc.\\
 %Cloud computing provides customers with yet another feature that they may use taking into account both security and configurability levels that their applications require, which includes private cloud, community cloud, public cloud, and hybrid cloud.\\
-IoT apps...
-The prosperity of Internet of Things (IoT) and the
-success of rich Cloud services have expedited the emergence of
-a new computing paradigm called Fog computing, which promotes
-the processing of data at the proximity of their sources.
-Complementary to the Cloud, Fog promises to offer many appealing
-features, such as low latency, low cost, high multitenancy, high
-scalability, and to consolidate the IoT ecosystem.
-
-\noindent\tab Although cloud computing has bring forth many advantages, the time required to access cloud-based services may not be suitable for some applications with ultra-low latency requirements. Also, the rapid growth in the number of connected IoT devices has brought new needs, such as greater demand for high-bandwidth, geographically-dispersed, low-latency, and privacy-sensitive data processing. These demands require cloud resources to be closer to end-devices, making plenty of paradigms such as \textit{Fog Computing} (FC) to emerge. %Each of them focus on different environments with different characteristics, being FC the most general one.\\
+\noindent\tab Although cloud computing has bring forth many advantages, it has certain limitations. Since cloud servers reside in remote data centers, end-to-end communication may have long delays, characteristic of multi-hops transmissions over the Internet, so the time required to access cloud-based services may not be suitable for some applications with ultra-low latency requirements (real-time). Augmented reality applications that use head-tracked systems, for example, require end-to-end latencies to be less than 16 ms [1]. Cloudbased virtual desktop applications require end-to-end latency
+below 60 ms if they are to match QoS of local execution [2]. Remotely rendered video conference, on the other hand, demand end-to-end latency below 150 ms [3]. Despite the fact that mobile devices have evolved radically in the last years, battery life, computation and storage capacity remain limited, have means that application executions must be offloaded to cloud servers, which then return processed results. The solution that has already been proposed is to bring the cloud closer to the end users, where entities such as basestations would host smaller sized clouds. This idea has been variously termed as Cloudlets [4], Fog Computing [5], Edge Computing [6], and Follow Me Cloud [7], to name a few.\\
 %Among those paradigms are \textit{Fog Computing} (FC), \textit{Mobile Computing} (MC), \textit{Mobile Cloud Computing} (MCC), \textit{Mobile Ad hoc Cloud Computing} (MACC), \textit{Edge Computing} (EC),\textit{ Multi-access Edge Computing} (MEC), \textit{Cloudlet Computing} (CC), \textit{Mist Computing} (mist) [ref].\\[6pt]
-
 %Context - FOG COMPUTING
-\noindent\tab Fog computing is a new computing architecture that aims to enable computing, storage, networking, and data management not only in the cloud, but also along the IoT-to-Cloud path as data traverses to the cloud (preferably close to the IoT devices).
+\noindent\tab Fog computing is a new computing architecture introduced in 2012 by Bonomi et al. [8]. Later in 2015 big compagnies like Cisco Systems, ARM Holdings, Dell, Intel, Microsoft, and Princeton University, founded the OpenFog Consortium, to promote interests and development in this field [9]. It aims to enable computing, storage, networking, and data management not only in the cloud, but also along the cloud-to-thing path as data traverses to the cloud (preferably close to the IoT devices).
 %OpenFog Consortium defines fog computing as a horizontal system-level architecture that distributes computing, storage, control and networking functions closer to the users along a cloud-to-thing continuum \textbf{[ref]}
-Although fog computing is intended to provide strong support for the Internet of Things, it does not replace the needs of cloud-based services. In fact, fog and cloud complement each other; one cannot replace the need of the other. By coupling cloud and fog computing, the services can be optimized even further, allowing enhanced capabilities for data aggregation, processing, and storage. Fog nodes can be placed close to IoT source nodes, due to low hardware footprint and low power consumption (e.g., small servers, routers, switches, gateways, set-top boxes, access points), allowing latency to be much smaller compared to traditional cloud computing. Also, the decentralized nature of fog computing allows devices to either serve as fog nodes themselves or use fog resources as a client ?????. Moreover, Internet connectivity is not essential for the fog-based services to work, what means that services can work independently and send necessary updates to the cloud whenever the connection is available \cite{yousefpour2018all}.
-
-
-MOBILE devices are ubiquitous in people’s everyday
-life, with a remarkable growth of mobile data traffic
-over recent years [2]. As mobile applications become increasingly
-resource-hungry, the gap between required resources.
-To bridge this gap, cloud computing can be used to expand
-mobile devices resources. To deal with high latency of distant
-cloud center, the concept of cloudlet was introduced in [3]
-where it is defined as a trusted, resource-rich computer or
-cluster of computers well-connected to the Internet and available
-for use by nearby mobile devices. A cloudlet represents
-a container for virtual machines (VMs): connected users
-are associated with VMs supporting low-latency application
-offloading use-cases.
-Cloudlet concept is expected to be supported by 3-tier
-hierarchical network provisioning as presented in [4] and [5].
-In this hierarchy the cloudlet is the primal resource for the
-augmentation of the mobile device capabilities, while a remote
-cloud is used as last available resource, or for delay-tolerant
-resource-intensive applications.
-
-[2] “CVN index: Global mobile data traffic forecast update, 2015–2020,”
-Cisco, San Jose, CA, USA, White Paper no. c11-520862, 2016.
-[3] M. Satyanarayanan, P. Bahl, R. Caceres, and N. Davies, “The case for
-VM-based cloudlets in mobile computing,” IEEE Pervasive Comput.,
-vol. 8, no. 4, pp. 14–23, Oct./Dec. 2009.
-[4] Y. Jararweh et al., “Resource efficient mobile computing using cloudlet
-infrastructure,” in Proc. IEEE MSN, Dec. 2013, pp. 373–377.
-[5] (Dec. 2016). Elijah. [Online]. Available: http://elijah.cs.cmu.edu
+Fog nodes can be placed close to IoT source nodes, due to low hardware footprint and low power consumption (e.g., small servers, routers, switches, gateways, set-top boxes, access points). This allows latency to be much smaller, through geographical distribution, compared to traditional cloud computing. Nevertheless, cloud is still more suitable than fog for massive data processing. So even though, fog computing has been proposed to grant support for IoT applications, it does not replace the needs of cloud-based services. In fact, fog and cloud complement each other and one cannot replace the need of the other. Fog computing can be seen as a cloud computing extension, namely cloudlets (smaller sized cloud datacenters), located in access points at the edge of the network and hence able to provide lower latencies than the cloud [10]. Together they offer services even further optimized, allowing enhanced capabilities for data aggregation, processing, and storage, where cloudlets are fundamental to both improving latencies and reducing network traffic to the cloud. Moreover, Internet connectivity is not essential for the fog-based services to work, what means that services can work independently and send necessary updates to the cloud whenever the connection is available \cite{yousefpour2018all}.\\
+%The problem
+\noindent\tab Despite the benefits that fog promises to offer such as low latency, heterogeneity, scalability and mobility, the current model suffer from some limitations that still require further efforts to overcome them. 
+%These are related to a variety of features or objectives like QoS, Cost, Energy, Bandwidth, mobility to mention a few [11].
+We ment to tackle two of the current limitations which are, to the best of our knowledge, untreated problems in the literature. They are the lack of support for mobility of fog nodes and few goals on fog systems design, two closely related issues that are crucial to the proper functioning of fog computing.\\
+%The problem - Mobile fog computing
+\noindent\tab The first feature that we want to achieve is provide support for mobility of fog nodes. Most of the existing literature assumes fog nodes are fixed, or focus on the mobility of IoT devices. If fog nodes are mobile, resource availability, offloading, and resources provisioning will be more challenging [11]. As aforementioned, fog computing aims to provide mobility support to users so as they move from one access point to another, data and processing related their device(s) and application(s) move also. This support can be done trougth virtual machines (VMs) migration trougth cloudlets. Comparatible, in cloud computing, migration of VMs is important to support load balancing, power efficiency, fault tolerance, and system maintenance [16], in fog computing is also important to support user mobility. Although fog computing aims to support IoT, without mobility support, fog will have a lot of applications that will no have support. For instansce, heterogeneous sensory nodes (sensors, controllers, actuators, etc.) on a driverless/authonomous vehicule, are estimated to generate about 1 GB data per second [12]. As the number of features grow, the data deluge grows out of control. Moreover, this type of systems, where peoples' life depends on it, are hard real-time what means that it is abuslutly imperative that all deadlines are met. Offloading tasks to fog nodes will be the best solution however it is necessary to handle mobility so VMs can be migrated while the car moves. Also in this context, Puliafito et al. address three types os applications where mobility is also required, namely, Citizen's healthcare, Drones for smart urban surveillance and Tourists as time travelers [13]. On top of all this, the number of mobile devices are predicted to reach 11.6 billion by 2021, where the subset of IoT ones are expected to become 929 million in the same year [14]. Zhang et al. shows another example of application where it is referred the Massively Multiplayer Online Games
+(MMOGs) and Virtual Reality (VR) technologies, VR-MMOGs and the challanges associated with mobility and others[15]. As the above mentioned, there existis plenty of diferent ones so computing and data capacities should be maintained close to end devices to keep latencies as low as possible and mobility should be provided through VM migration. In this field, there already exists some efforts to this need, however mobility support to the IoT devices will not be suficient to achieve the necessary QoS and QoE that users need. As aforementioned, the number of devices is growing up and support at fog nodes will be essential. Cloudlets are less powerfull than clouds and if a large number of IoT devices make requests to a single one fog node, it will not have enought computational and storage power, so it apears the need of ofloading tasks from the cloudlets where there is litle research and development.\\
+%The problem - Multi-objective fog system design
+\noindent\tab The second feature is multi-objective fog system design. Many schemes (e.g., offloading, load balancing) consider few objectives and ignore other objectives [11]. This feature is closely related to the first one because, it raises the question of should a service currently running in one cloudlet be migrated as the user moves, and if yes, where? This question stems from the basic tradeoff between the cost of service migration vs. the reduction in network overhead and latency for users that can be achieved after migration [17]. On top of that, another question that arises is, should a fog node be moved to provide offloading support to a overloaded cloudlet and leave the current area with less computing and storage capabilities, and if yes, where should it be placed? While conceptually simple, it is challenging to make this decisions in an optimal manner. This kind of decisions fit perfectly in this system design.\\[20pt]
 
 
 
 
-Here,
-it is envisioned that entities (such as basestations in a cellular network) closer to the network edge would host smallersized
-cloud-like infrastructure distributed across the network. This idea has been variously termed as Cloudlets [1], Fog Computing [2], Edge Computing [3], and Follow Me Cloud [4], to name a few. The trend towards edge-clouds is expected
-to accelerate as more users perform a majority of their computations on handhelds and as newer mobile applications get
-adopted.
-[1] M. Satyanarayanan, Cloudlets: At the leading edge of cloud-mobile convergence, in: Proceedings of the 9th International ACM Sigsoft Conference on
-Quality of Software Architectures, Ser. QoSA’13, ACM, New York, NY, USA, 2013, pp. 1–2.
-[2] F. Bonomi, R. Milito, J. Zhu, S. Addepalli, Fog computing and its role in the Internet of things, in: Proceedings of the First Edition of the MCC Workshop
-on Mobile Cloud Computing, ACM, 2012, pp. 13–16.
-[3] S. Davy, J. Famaey, J. Serrat-Fernandez, J. Gorricho, A. Miron, M. Dramitinos, P. Neves, S. Latre, E. Goshen, Challenges to support edge-as-a-service, IEEE
-Commun. Mag. 52 (1) (2014) 132–139.
-[4] T. Taleb, A. Ksentini, Follow me cloud: interworking federated clouds and distributed mobile networks, IEEE Netw. 27 (5) (2013) 12–19.
 
-
-Rather than applying
-the Fog concept to a specific area, this paper is focused on
-the realization of Fog.
-
-One of the key design issues in edge-clouds is service migration: should a service currently running in one of the edge-clouds
-be migrated as the user locations change, and if yes, where? This question stems from the basic tradeoff between the
-cost of service migration vs. the reduction in network overhead and latency for users that can be achieved after migration.
-While conceptually simple, it is challenging to make this decision in an optimal manner because of the uncertainty in user
-mobility and request patterns. Because edge-clouds are distributed at the edge of the network, their performance is closely
-related to user dynamics. These decisions get even more complicated when the number of users and applications is large
-and there is heterogeneity across edge-clouds. Note that the service migration decisions affect workload scheduling as well
-(and vice versa), so that in principle these decisions must be made jointly.
-[231 - all one needs to know...]
-
-
-Augmented
-reality applications that use head-tracked systems, for example,
-require end-to-end latencies to be less than 16 ms [1]. Cloudbased
-virtual desktop applications require end-to-end latency
-below 60 ms if they are to match QoS of local execution [2].
-Remotely rendered video conference, on the other hand,
-demand end-to-end latency below 150 ms [3]. Limited battery
-life, computation and storage capacity constraints inherent
-to mobile devices mean that application executions must be
-offloaded to cloud servers, which then return processed results
-to the mobile devices through the Internet. When cloud servers
-reside in remote data centers, end-to-end communication may
-translate into long delays characteristic of multi-hops transmissions
-over the Internet. Moving cloud computing to the edge of
-a network has helped to lessen these otherwise unacceptable
-delays while leveraging the benefits of a high-performance
-cloud, e.g., Fog Computing [4], Cloudlets, [5] and Follow Me
-Cloud [6]. While this improvement is not trivial, delivering
-cloud services from the edge of the network is not, by itself,
-sufficient to meet latency QoS. When a mobile client initially
+When a mobile client initially
 secures a one-hop away edge cloud server to ensure the shortest
 network delay, client mobility may cause the server to be
 be multi-hops away. The increased network distance, and the
@@ -116,6 +39,7 @@ unexpected crowds of mobile clients seeking to connect to the
 same edge cloud simultaneously. Thus, increased network or
 server processing delays may violate acceptable latency QoS
 constraints.
+
 Cloud service migration may effectively provide expected
 QoS with respect to user mobility, dynamic networks and
 varying edge cloud states. To date, previous CloudNet [7]
@@ -172,14 +96,12 @@ previous MDP models assume the parameters as static. Such
 assumptions make these models impractical, if not impossible,
 to apply to dynamic applications, network states or server
 states in the real world of real time.
+[232 - all one needs to know...]
 
 
-With the advance of wireless technologies, the rapid
-mobile data traffic growth will lead to severe network resource
-consumption and exceptionally long latency to access services,
-especially for cloud-based applications.
-
-
+Rather than applying
+the Fog concept to a specific area, this paper is focused on
+the realization of Fog.
 
 Simply applying existing radio access-oriented
 MM (mobility management) schemes leads to poor performance mainly due to the
@@ -187,77 +109,11 @@ co-provisioning of radio access and computing services of the
 MEC-enabled (mobile edge computing) BSs (base stations).
 
 
-Cloud computing is an emerging computing technology that uses internet to maintain large
-applications and data servers to provide services to end users belonging to different organization. It has make
-availability of resources in a secure and flexible manner thereby enhancing the throughput and performance .It
-has certain limitation that the load balancing of data and hosting of cloud data centers in the internet create large
-and unpredictable network latency. It is then resolved by new sort of computing model called Fog Computing.
-Fog is analogous to cloud only difference is that it is located at the edge of network. Another advantage is that
-the applications which requires location dependence can be make feasible through it..
-
-Cloud computing is a newest computing paradigm which make resources like applications and files available
-through internet having thousands of computers interlinked together in a distributed and complex manner and
-you have to pay for the resources as you use them .Cloud Computing uses the concepts of virtualization,
-distributed computing, networking, software and web computing for its implementation. A cloud consists of
-several elements such as clients, datacenter and distributed server. The focus in cloud computing is to reduce
-execution time of tasks on the machines which are known as virtual machines that run in parallel with each
-other. Cloud Computing provide different service models according to different user needs like Infrastructure as
-a service known as IAAS, Platform as a service known as PAAS, Software as a service known as SAAS
-providing a cost effective manner to pay for services on utility costing basis. In this multiple users are able to
-access more than one server without purchasing and considering the updating of license for different software
-applications. So it is basically SOA (service oriented architecture). It offer many advantages like fault tolerance,
-high availability, reduced overhead, flexibility, scalability, reliability, location independence, elimination of
-system administrative functions.
-
-
-Limitations of Cloud Computing:
-Though cloud computing offer many advantages but it has certain limitations too providing high speed reliable
-internet connectivity, high latency, multi-homing to avoid link outages ,requirement of high capacity bandwidth,
-security and privacy as data has to travel a long path from server to users though if we encrypt data. The
-emerging trend of Internet of things[10] that want every device or objects to be connected on the Internet,
-sensor network , real time applications, mobile data applications that require fast transfer of data and bandwidth
-put limitation on cloud computing. Real time applications which require high speed streaming of data when user
-directly interact with them suffer from delay jitter caused by latency in network which need to be solved by
-cloud computing.
-These shortcomings can be resolved by the introduction of Fog Computing which provides better quality of
-service in terms of reduced data traffic, low latency, location awareness, low bandwidth, mobility which is made
-feasible by making fog computing systems very close to end users.
-The other difference between fog computing and cloud computing is that in former the distance between client
-and server require one hop in while in later it requires multiple hops as the signal get weak while passing
-through various servers, also cloud computing required leased line while fog computing is entirely based on
-wireless network. Despite of many differences both Fog and Cloud complement each other as Cloud Computing
-will be preferred for high end batch processing jobs and Fog Computing will be preferred for more resilient and
-providing more security to the emerging technology.
-
-
-Introduction to Fog Computing:
-Fog Computing is a term which is introduced by the Cisco systems, it is basically extended or new model of
-cloud computing in which we will connect enormous wireless data objects in distributed environment by placing
-the data and resources at the edge of cloud rather than hosting and working from a centralized cloud. In this
-bandwidth can be reduced as there is no need for transferring every bit of information over cloud network rather
-we can aggregate data at some access points which lower costs , increases efficiency, throughput ,reduced data
-traffic ,lower power delay also provide security as data transfer has not to follow a long path.
-Fog is nothing but a virtualized platform like cloud only difference lies in the fact it is closer to the ground.
-Hence Fog Computing is called as an edge computing because Fog System operate from network ends. In
-this decision are taken as close to the place where data is generated as much as possible and stop it sending to
-reach Global network which is done initially by training fraction of data on machine learning models after the
-results are found accurate then this model is implemented in to the devices.
-
-
-Fog computing is a new computing architecture, composed of a set of
-near-user edge devices called fog nodes, which collaborate together in
-order to perform computational services such as running applications,
-storing an important amount of data, and transmitting messages. Fog
-computing extends cloud computing by deploying digital resources at
-the premise of mobile users. In this new paradigm, management and
-operating functions, such as job scheduling aim at providing high-performance,
-cost-effective services requested by mobile users and executed
-by fog nodes.
-
-
-%The problem
-\subsection{The problem}
-\noindent\tab Despite the benefits of using fog computing, the current model suffer from several problems. \cite{Armbrust:10} \\
+More specifically, Fog might be specified in terms
+of functionality as Fog edge nodes (FENs), Fog server (FS),
+and Foglet, where FENs and FS are hardware nodes, and
+Foglet is the middleware in charge of data exchange, as
+presented in Fig. 1 [6].
 
 \subsection{Motivation}
 The motivation of this paper is to fill the gap by proposing
@@ -288,44 +144,12 @@ Accessed: Dec. 6, 2016. [Online]. Available: http://www.kurzweilai.net/
 googles-self-driving-car-gathers-nearly-1-gbsec
 
 
-The concept of “Fog” was initially proposed in [5], where
-its role was defined as an extension of Cloud to support some
-appealing features, such as low latency, heterogeneity, and
-mobility. More specifically, Fog might be specified in terms
-of functionality as Fog edge nodes (FENs), Fog server (FS),
-and Foglet, where FENs and FS are hardware nodes, and
-Foglet is the middleware in charge of data exchange, as
-presented in Fig. 1 [6].
 
-[5] F. Bonomi, R. Milito, J. Zhu, and S. Addepalli, “Fog computing and its
-role in the Internet of Things,” in Proc. MCC Workshop Mobile Cloud
-Comput., Helsinki, Finland, Aug. 2012, pp. 13–16.
-[6] J. Li, J. Jin, D. Yuan, M. Palaniswami, and K. Moessner, “EHOPES:
-Data-centered Fog platform for smart living,” in Proc. Telecommun.
-Netw. Appl. Conf. (ITNAC), Sydney, NSW, Australia, Nov. 2015,
-pp. 308–313.
 
 
 Starting from available simulators a significant programming
 effort is required to obtain a simulation tool meeting the actual
 needs. (deve estar no trabalho a realizar, não na intro..)
-
-keyworks:
-
-the main reasons lie on Fig. 1
-Observe that
-As a matter of fact,
-In a nutshell,
-As we shall show,
-aforementioned benefits
-continuum
-We tackle the edge cloud network design problem
-which is, to the best of our knowledge, an untreated problem in the literature
-The trend towards edge-clouds is expected
-Meanwhile, in order
-have been considered as means to provide computing capabilities
-Furthermore, 
-
 
 
 \subsection{Alternatives}
