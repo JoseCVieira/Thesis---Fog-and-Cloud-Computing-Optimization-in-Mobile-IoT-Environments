@@ -1,13 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
 The style file: IEEEtran.bst
 Database file #1: ./references/report.bib
-Repeated entry---line 68 of file ./references/report.bib
- : @inproceedings{bonomi2012fog
- :                             ,
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in lidynamic
+Warning--empty year in lidynamic
 
 Done.
-(There was 1 error message)
+(There were 2 warnings)
