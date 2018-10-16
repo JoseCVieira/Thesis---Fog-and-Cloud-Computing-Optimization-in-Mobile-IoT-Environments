@@ -61,7 +61,7 @@ In C-RAN numerous low-cost Remote Radio Heads (RRHs) are randomly deployed and c
 They leverage SDN to design their framework SDCOM, which aims to save energy of mobile devices and reduce traffic on LTE-Advanced access links. Based on distributed device information, a Controller makes task scheduling decisions periodically. They formulate the minimum-energy task scheduling problem as a 0-1 knapsack problem, and design offline algorithms to compute the optimal solution as a performance benchmark. They further propose an Online Task Scheduling Algorithm for real-time decision-making, and extend it into a Proportional Fair Online Task Scheduling Algorithm.
 
 -----------------------------------------------------------------------------------
-[97] 2014 **Key ingredients in an iot recipe: Fog computing, cloud computing, and more fog computing.** ✓
+[97] 2014 **Key ingredients in an iot recipe: Fog computing, cloud computing, and more fog computing.** ✓ -> ✗
 
 This paper analysis is particularly centred on mobility, reliable control and actuation and scalability requirements, especially, in IoT scenarios that span large geographical areas and require real-time decisions based on data analytics. They expose the reasons why Fog Computing is the natural platform for IoT, and discuss the unavoidable interplay of the Fog and the Cloud (for an adaptable and scalable platform for IoT) in the coming years. They show that as long as the technological requirements and constraints of the IoT applications are properly fulfilled, it is up to the platform designer to decide whether an endpoint should be served by the Cloud, the Fog, or an adequate combination of the two at any given time during the service lifetime.
 
@@ -76,7 +76,7 @@ Propose adopting edge cloud technologies in the implementation of the Social Int
 By offloading computation from clients and/or servers to the edge, is obtained a latency reduction, backbone bandwidth and computational requirements on clients, however, it raises the question of how one can design such a client-edge-server system to tolerate edge failures and client mobility. The key challenge is to ensure correctness when the edge processing is stateful. They propose an initial design for meeting this challenge Client-Edge-Server for Stateful Network Applications (CESSNA).
 
 -----------------------------------------------------------------------------------
-[123] 2018 **When clones flock near the fog.** ✓
+[123] 2018 **When clones flock near the fog.** ✓ -> ?
 
 They design self-deploying brokering clones that discover cloud/edge hosting platforms and autonomously migrate clones between them according to self-measured weighted tail end-to-end latency without the need of a central monitoring and control unit, not having to sacrifice computation offloading gain in cloud platforms. Finally, it is simple and requires no change in existing cloud platforms controllers.
 
@@ -86,7 +86,7 @@ They design self-deploying brokering clones that discover cloud/edge hosting pla
 This paper proposes an integrated network architecture for software-defined and virtualized radio access networks with fog computing. The proposed architecture is hierarchical and has two control levels: the higher level that is the SDN controller and the lower layer that is the local controller, which could be collocated with fog nodes. The SDN controller instructs the local controllers how to process specific applications or requests. Also, they further introduce a SaaS called OpenPine that enables virtualization at the network level and user control of network operation.
 
 -----------------------------------------------------------------------------------
-[143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ✓
+[143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ✓ -> ?
 
 They propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization 
 (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.

@@ -106,13 +106,6 @@ H.~Gupta, A.~Vahid~Dastjerdi, S.~K. Ghosh, and R.~Buyya, ``ifogsim: A toolkit
   of things, edge and fog computing environments,'' \emph{Software: Practice
   and Experience}, vol.~47, no.~9, pp. 1275--1296, 2017.
 
-\bibitem{yannuzzi2014key}
-M.~Yannuzzi, R.~Milito, R.~Serral-Graci{\`a}, D.~Montero, and M.~Nemirovsky,
-  ``Key ingredients in an iot recipe: Fog computing, cloud computing, and more
-  fog computing,'' in \emph{2014 IEEE 19th International Workshop on Computer
-  Aided Modeling and Design of Communication Links and Networks (CAMAD)}.\hskip
-  1em plus 0.5em minus 0.4em\relax IEEE, 2014, pp. 325--329.
-
 \bibitem{abdelwahab2018clones}
 S.~Abdelwahab, S.~Zhang, A.~Greenacre, K.~Ovesen, K.~Bergman, and B.~Hamdaoui,
   ``When clones flock near the fog,'' \emph{IEEE Internet of Things Journal},
