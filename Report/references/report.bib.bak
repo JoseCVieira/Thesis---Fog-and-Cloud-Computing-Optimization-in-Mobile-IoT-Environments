@@ -1,17 +1,137 @@
 % Encoding: UTF-8
 
-@Article{yousefpour2018all,
-  author  = {Yousefpour, Ashkan and Fung, Caleb and Nguyen, Tam and Kadiyala, Krishna and Jalali, Fatemeh and Niakanlahiji, Amirreza and Kong, Jian and Jue, Jason P},
-  title   = {All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey},
-  journal = {arXiv preprint arXiv:1808.05283},
-  year    = {2018},
+@inproceedings{ellis2004generalizeability,
+  title={Generalizeability of latency detection in a variety of virtual environments},
+  author={Ellis, Stephen R and Mania, Katerina and Adelstein, Bernard D and Hill, Michael I},
+  booktitle={Proceedings of the Human Factors and Ergonomics Society Annual Meeting},
+  volume={48},
+  number={23},
+  pages={2632--2636},
+  year={2004},
+  organization={SAGE Publications Sage CA: Los Angeles, CA}
 }
 
-@Article{mell2011nist,
-  author    = {Mell, Peter and Grance, Tim and others},
-  title     = {The NIST definition of cloud computing},
-  year      = {2011},
-  publisher = {Computer Security Division, Information Technology Laboratory, National Institute of Standards and Technology Gaithersburg},
+@article{taylor2015virtual,
+  title={Virtual Machines for Remote Computing: Measuring the User Experience},
+  author={Taylor, Brandon and Abe, Yoshihisa and Dey, Anind and Satyanarayanan, Mahadev and Siewiorek, Dan and Smailagic, Asim},
+  journal={Carnegie Mellon University},
+  year={2015}
+}
+
+@book{szigeti2005end,
+  title={End-to-end qos network design},
+  author={Szigeti, Tim and Hattingh, Christina},
+  year={2005},
+  publisher={Cisco press}
+}
+
+@inproceedings{satyanarayanan2013cloudlets,
+  title={Cloudlets: at the leading edge of cloud-mobile convergence},
+  author={Satyanarayanan, Mahadev},
+  booktitle={Proceedings of the 9th international ACM Sigsoft conference on Quality of software architectures},
+  pages={1--2},
+  year={2013},
+  organization={ACM}
+}
+
+@inproceedings{bonomi2012fog,
+  title={Fog computing and its role in the internet of things},
+  author={Bonomi, Flavio and Milito, Rodolfo and Zhu, Jiang and Addepalli, Sateesh},
+  booktitle={Proceedings of the first edition of the MCC workshop on Mobile cloud computing},
+  pages={13--16},
+  year={2012},
+  organization={ACM}
+}
+
+@article{davy2014challenges,
+  title={Challenges to support edge-as-a-service},
+  author={Davy, Steven and Famaey, Jeroen and Serrat-Fernandez, Joan and Gorricho, Juan Luis and Miron, Avi and Dramitinos, Manos and Neves, Pedro Miguel and Latr{\'e}, Steven and Goshen, Ezer},
+  journal={IEEE Communications Magazine},
+  volume={52},
+  number={1},
+  pages={132--139},
+  year={2014},
+  publisher={IEEE}
+}
+
+@article{taleb2013follow,
+  title={Follow me cloud: interworking federated clouds and distributed mobile networks},
+  author={Taleb, Tarik and Ksentini, Adlen},
+  journal={IEEE Network},
+  volume={27},
+  number={5},
+  pages={12--19},
+  year={2013},
+  publisher={IEEE}
+}
+
+@inproceedings{bonomi2012fog,
+  title={Fog computing and its role in the internet of things},
+  author={Bonomi, Flavio and Milito, Rodolfo and Zhu, Jiang and Addepalli, Sateesh},
+  booktitle={Proceedings of the first edition of the MCC workshop on Mobile cloud computing},
+  pages={13--16},
+  year={2012},
+  organization={ACM}
+}
+
+@misc{msv_2016,
+  title={Is Fog Computing The Next Big Thing In Internet of Things?},
+  url={https://www.forbes.com/sites/janakirammsv/2016/04/18/is-fog-computing-the-next-big-thing-in-internet-of-things/#6bc7b2c4608d},
+  journal={Forbes},
+  publisher={Forbes Magazine},
+  author={MSV, Janakiram},
+  year={2016},
+  month={Apr}
+}
+
+@article{yousefpour2018all,
+  title={All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey},
+  author={Yousefpour, Ashkan and Fung, Caleb and Nguyen, Tam and Kadiyala, Krishna and Jalali, Fatemeh and Niakanlahiji, Amirreza and Kong, Jian and Jue, Jason P},
+  journal={arXiv preprint arXiv:1808.05283},
+  year={2018}
+}
+
+@misc{angelica2013google,
+  title={Google’s self-driving car gathers nearly 1GB/sec},
+  author={Angelica, AD},
+  year={2013},
+  url={http://www.kurzweilai.net/googles-self-driving-car-gathers-nearly-1-gbsec},
+  publisher={kurzweilai}
+}
+
+@inproceedings{puliafito2017fog,
+  title={Fog computing for the internet of mobile things: issues and challenges},
+  author={Puliafito, Carlo and Mingozzi, Enzo and Anastasi, Giuseppe},
+  booktitle={Smart Computing (SMARTCOMP), 2017 IEEE International Conference on},
+  pages={1--6},
+  year={2017},
+  organization={IEEE}
+}
+
+@misc{cisco_2017,
+  title={Cisco Visual Networking Index: Global Mobile Data Traffic Forecast Update, 2016–2021 White Paper},
+  url={https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-c11-520862.html},
+  journal={Cisco},
+  year={2017},
+  month={Mar}
+}
+
+@inproceedings{zhang2017towards,
+  title={Towards efficient edge cloud augmentation for virtual reality MMOGs},
+  author={Zhang, Wuyang and Chen, Jiachen and Zhang, Yanyong and Raychaudhuri, Dipankar},
+  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
+  pages={8},
+  year={2017},
+  organization={ACM}
+}
+
+@inproceedings{ye2016scalable,
+  title={Scalable fog computing with service offloading in bus networks},
+  author={Ye, Dongdong and Wu, Maoqiang and Tang, Shensheng and Yu, Rong},
+  booktitle={Cyber Security and Cloud Computing (CSCloud), 2016 IEEE 3rd International Conference on},
+  pages={247--251},
+  year={2016},
+  organization={IEEE}
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

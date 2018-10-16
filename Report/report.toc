@@ -1,16 +1,13 @@
 \babel@toc {english}{}
 \authcount {1}
 \contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {subsection}{\numberline {1.1}Motivation}{6}
-\contentsline {subsection}{\numberline {1.2}Alternatives}{6}
-\contentsline {subsection}{\numberline {1.3}Our approach}{6}
-\contentsline {subsection}{\numberline {1.4}Contributions}{7}
-\contentsline {section}{\numberline {2}Related Work}{7}
-\contentsline {subsection}{\numberline {2.1}xxxx}{7}
-\contentsline {subsection}{\numberline {2.2}xxxx}{7}
-\contentsline {subsection}{\numberline {2.3}xxxx}{7}
-\contentsline {subsection}{\numberline {2.4}xxxx}{7}
-\contentsline {section}{\numberline {3}Architecture}{7}
-\contentsline {section}{\numberline {4}Evaluation}{8}
-\contentsline {section}{\numberline {5}Schedule of Future Work}{8}
-\contentsline {section}{\numberline {6}Conclusion}{8}
+\contentsline {section}{\numberline {2}Objectives}{5}
+\contentsline {section}{\numberline {3}Related Work}{5}
+\contentsline {subsection}{\numberline {3.1}xxxx}{5}
+\contentsline {subsection}{\numberline {3.2}xxxx}{5}
+\contentsline {subsection}{\numberline {3.3}xxxx}{5}
+\contentsline {subsection}{\numberline {3.4}xxxx}{5}
+\contentsline {section}{\numberline {4}Architecture}{5}
+\contentsline {section}{\numberline {5}Evaluation}{6}
+\contentsline {section}{\numberline {6}Schedule of Future Work}{6}
+\contentsline {section}{\numberline {7}Conclusion}{6}
