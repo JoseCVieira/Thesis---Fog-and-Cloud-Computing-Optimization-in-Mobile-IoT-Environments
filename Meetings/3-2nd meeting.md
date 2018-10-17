@@ -257,7 +257,7 @@ The authors address the problem of multi-component application placement on fog 
 Conduct the first formal study of the service entity placement problem for social VR applications in edge computing.
 
 -----------------------------------------------------------------------------------
-[279] 2015 **Software defined networking-based vehicular adhoc network with fog computing.** ✗ VER APARTIR DAQUI
+[279] 2015 **Software defined networking-based vehicular adhoc network with fog computing.** ✗
 
 Vehicular ad hoc networks (VANETs) face many issues such as unreliable connectivity, delay constraints, and poor scalability. The authors suggest that using principles of fog computing along with SDN could solve many of the current problems with VANETs. In their architecture, the vehicles, which act as end-users, are SDN wireless nodes. These wireless nodes send their data to Road Side Units (RSUs) which are installed alongside road systems. Once the data is sent to an RSU, it is then sent to an RSU controller (RSUC) which is a cluster of RSUs connected by broadband. The RSUC is capable of data storage and processing. Finally, the RSUCs communicate with the SDN controller, which has global knowledge of the VANET system.
 
@@ -267,7 +267,7 @@ Vehicular ad hoc networks (VANETs) face many issues such as unreliable connectiv
 Present EMMA, an edge-enabled publish–subscribe middleware that continuously monitors network QoS and orchestrates a network of MQTT protocol brokers. It transparently migrates MQTT clients to brokers in proximity to optimize QoS.
 
 -----------------------------------------------------------------------------------
-[285] 2018 **Mobility support for fog computing: An sdn approach.** ✓
+[285] 2018 **Mobility support for fog computing: An sdn approach.** ✓ -> ✗
 
 Study of mobility support issue in fog computing for guaranteeing service continuity. Propose a novel SDN enabled architecture that is able to facilitate mobility management in fog computing by decoupling mobility management and data forwarding functions. Design an efficient handover scheme by migrating mobility management and route optimization logic to the SDN controller. By employing link layer information, the SDN controller can pre-compute the optimal path by estimating the performance gain of each path.
 
@@ -277,7 +277,7 @@ Study of mobility support issue in fog computing for guaranteeing service contin
 This paper discusses the problem of resource allocation considering the hierarchical infrastructure composed of edge capacity and cloud data centers, analysing application classes along with different scheduling policies. To address this challenge, they introduce a number of scheduling approaches that consider user mobility and edge computing capacity, in the context of a Fog Computing infrastructure. Also, they discuss the benefits of combining the application classes with scheduling policies in scenarios that illustrate these scheduling approaches, especially in the context of user mobility.
 
 -----------------------------------------------------------------------------------
-[300] 2017 **Emm: Energy-aware mobility management for mobile edge computing in ultra dense networks.** ✗
+[300] 2017 **Emm: Energy-aware mobility management for mobile edge computing in ultra dense networks.** ✗ -> ?
 
 Develop a novel user-centric energy-aware mobility management (EMM) scheme, in order to optimize the delay, under energy consumption constraint of the user. Based on Lyapunov optimization and multi-armed bandit theories, EMM works in an online fashion. Theoretical analysis explicitly takes radio handover and computation migration cost into consideration and proves a bounded deviation on both the delay performance and energy consumption compared with the oracle solution with exact and complete future system information. The proposed algorithm also effectively handles the scenario in which candidate BSs randomly switch ON/OFF during the offloading process of a task.
 
@@ -287,9 +287,9 @@ Develop a novel user-centric energy-aware mobility management (EMM) scheme, in o
 They propose ACACIA, a service abstraction framework that enables continuous interactive (CI) applications on edge clouds in mobile networks. ACACIA uses context awareness and employs LTE-direct for service discovery, which is a proximity service discovery technique using D2D communication in IoT.
 
 -----------------------------------------------------------------------------------
-[325] 2017 **Router-based brokering for surrogate discovery in edge computing.** ✗
+[325] 2017 **Router-based brokering for surrogate discovery in edge computing.** ✗ -> ?
 
-This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers.
+This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers. They look at the problem of surrogate discovery in the context of an urban area, where they are faced with a high mobility of devices and users. Multiple brokers are interconnected using Distributed Hash Tables (DHTs) in order to exchange information. In addition, their approach introduces only a small overhead on the devices (routers) and therefore does not impede their normal function.
 
 ----------------------------------------------------------------------------------
 [328] 2018 **Goedge: A scalable and stateless local breakout method.** ✗
@@ -327,7 +327,7 @@ An extension of iFogSim to support mobility through migration of VMs between clo
 Their proposal is built with Scale-out Network Attached Storage systems (NAS) and IPFS, a BitTorrent-based object store spread throughout the Fog/Edge infrastructure.
 
 ----------------------------------------------------------------------------------
-[388] 2017 **Edgecloudsim: An environment for performance evaluation of edge computing systems.** ✗
+[388] 2017 **Edgecloudsim: An environment for performance evaluation of edge computing systems.** ✗ -> ?
 
 The authors propose another edge computing simulation environment, EdgeCloudSim, that considers both network and computational resources and covers all aspects of edge computing simulation , including network and computational modelling. Similar to iFogSim, EdgeCloudSim relies on CloudSim as well. Additionally, EdgeCloudSim provides a modular architecture to provide support for a variety of critical functionality and supports simulating multi-tier scenarios where multiple edge servers are running in coordination with upper layer cloud solutions.
 
