@@ -1,4 +1,4 @@
-** Dúvidas **
+[Dúvidas]
 -----------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ This paper proposes a new bio-inspired optimization approach called BeesLife Alg
 
 **Nota: job scheduling ?**
 
-** Toolkits **
+[Toolkits]
 -----------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ An extension of iFogSim to support mobility through migration of VMs between clo
 
 **Nota: importante?**
 
-** Migration optimization**
+[Migration optimization]
 -----------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
@@ -176,6 +176,6 @@ This paper analyse what means provide mobility in Fog computing, the main challa
 
 Fog Computing is one of the solutions for offloading the task of a mobile. However the capability of fog server is still limited due to the high deployment cost. In this paper, is proposed a dynamic mobile cloudlet cluster policy (DMCCP) to use cloudlets as a supplement for the fog server for offloading. The main idea is that by monitoring each mobile device resource amount, the DMCCP system clusters the optimal cloudlet to meet the requests of different tasks from the local mobile device.
 
-** Ver **
+[Ver]
 -----------------------------------------------------------------------------------
 - google scholar - movable cloudlets and mobile cloudlets
