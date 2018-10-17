@@ -40,7 +40,7 @@ This paper proposes a new bio-inspired optimization approach called BeesLife Alg
 
 -----------------------------------------------------------------------------------
 
-2017 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments.** ✓
+2017 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments.** ✓ -> (importante)
 
 In this paper they propose a simulator, called iFogSim, to model IoT and Fog environments and measure the impact of resource management techniques in latency, network congestion, energy consumption, and cost.
 
@@ -117,7 +117,7 @@ In this paper, they propose an LTE compliant architecture to reduce latency for 
 In this paper a multi tier fog computing model with large-scale data analytics service is proposed for smart cities applications. It is consisted of ad-hoc fogs and dedicated fogs with opportunistic and dedicated computing resources, respectively. They run analytics benchmark experiments over fogs formed by Raspberry Pis with a distributed computing engine to measure computing performance. QoS aware admission control, offloading, and resource allocation schemes are designed to support data analytics services, and maximize analytics service utilities. Availability and cost models of networking and computing resources are taken into account in QoS scheme design. A scalable system level simulator is developed to evaluate the fog-based analytics service and the QoS management schemes.
 
 -----------------------------------------------------------------------------------
-[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.** ✓
+[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.** ✓ -> (boa introdução, não apresenta um modelo, serirá para referencias introdutórias)
 
 This paper presents the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle.
 
@@ -142,34 +142,34 @@ The concept of vehicular micro clouds based on map information is introduced, an
 The authors propose human-driven edge computing (HEC) as a new model to ease the provisioning and to extend the coverage of traditional fixed MEC solutions by utilizing devices that humans carry.
 
 -----------------------------------------------------------------------------------
-[186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning.** ✓
+[186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning.** ✓ -> (boa introdução, apresenta modelo energético, serirá para referencias introdutórias)
 
 Unmanned aerial vehicles (UAVs) have been considered as means to provide computing capabilities. In this model, UAVs act as fog nodes and provide computing capabilities with enhanced coverage for IoT nodes. The system aims at minimizing the total mobile energy consumption while satisfying QoS requirements of the offloaded mobile application. This architecture is based on a UAV-mounted cloudlet which provides the offloading opportunities to multiple static mobile devices. They aim to minimize the mobile energy and optimize UAV’s trajectory.
 
 -----------------------------------------------------------------------------------
-[197] 2016 **Incremental deployment and migration of geo-distributed situation awareness applications in the fog.** ✓
+[197] 2016 **Incremental deployment and migration of geo-distributed situation awareness applications in the fog.** ✓ -> ✗
 
-They propose Foglets, a programming model that facilitates distributed programming across fog nodes. Foglets provides APIs for spatio-temporal data abstraction for storing and retrieving application-generated data on the local nodes. Through the Foglets API, Foglets processes are set for a certain geospatial region and Foglets manages the application components on the Fog nodes. Foglets is implemented through container-based visualization. The Foglets API takes into account QoS and load balancing when migrating persistent (stateful) data between fog nodes.
+Enrique Saurez et al. propose Foglets, a programming model that facilitates distributed programming across fog nodes. Foglets provides APIs for spatio-temporal data abstraction for storing and retrieving application-generated data on the local nodes. Through the API, Foglets processes are set for a certain geospatial region and Foglets manages the application components on the Fog nodes. Foglets is implemented through container-based visualization. The API takes into account QoS and load balancing when migrating persistent (stateful) data between fog nodes. It provides various functionalities: automatically discovers fog computing resources deploys application components onto the fog computing resources commensurate with the latency requirements of each component in the application. It supports multi-application collocation on any compute node. Provides communication APIs for components that are deployed at different physical levels of the network hierarchy to communicate with one another to exchange application state. Lastly, it supports both latency- and workload-driven resource adaptation and state migration over space (geographic) and time to deal with the dynamism in situation awareness application.
 
 -----------------------------------------------------------------------------------
 [201] 2015 **Developing iot applications in the fog: a distributed dataflow approach.** ✗
 
-This paper proposes a Distributed Dataflow (DDF) programming model for the IoT that utilises computing infrastructures across the Fog and the Cloud. Also, evaluate their proposal by implementing a DDF framework based on Node-RED (Distributed Node-RED or D-NR), a visual programming tool that uses a flow-based model for building IoT applications.
+This paper proposes a Distributed Dataflow (DDF) programming model for the IoT that utilizes computing infrastructures across the Fog and the Cloud. Also, evaluate their proposal by implementing a DDF framework based on Node-RED (Distributed Node-RED or D-NR), a visual programming tool that uses a flow-based model for building IoT applications.
 
 -----------------------------------------------------------------------------------
 [205] 2017 **Towards a distributed computing framework for fog.** ✗
 
-This paper presents Crystal, a distributed computing framework for fog. An application consisting of one or multiple Crystal instances offers distributed processing and computing while taking advantage of location transparency, self-healing, auto-scaling and mobility support. This prototype implementation of MapReduce on Crystal shows benefits of fog computing – fault-tolerant distributed processing over heterogeneous, unreliable, fog nodes while reducing overall latency, thanks to the framework enabling processing close to the data source.
+This paper presents Crystal, a distributed computing framework for fog. An application consisting of one or multiple Crystal instances offers distributed processing and computing while taking advantage of location transparency, self-healing, auto-scaling and mobility support. This prototype implementation of MapReduce on Crystal shows benefits of fog computing – fault-tolerant distributed processing over heterogeneous, unreliable, fog nodes while reducing overall latency, thanks to the framework enabling processing close to the data source. Crystal framework, applications can leverage fog resources along the cloud to things continuum by allowing decomposed components of an application to reside across the things, fog, and cloud.
 
 -----------------------------------------------------------------------------------
-[210] 2017 **Cost aware cloudlet placement for big data processing at the edge.** ✗
+[210] 2017 **Cost aware cloudlet placement for big data processing at the edge.** ✗ (introdução)
 
-Address the problem of placing the cloudlets to minimize the deployment cost of cloudlet providers and to minimize the end-to-end delay of user requests. Since the total deployment cost of a cloudlet provider depends on the location of cloudlets and the amount of resources for cloudlets, cloudlet providers must take into account both the end-to-end delay of user requests and the deployment cost.
+The locations and number of cloudlets and their servers have a crucial impact on both the deployment cost and E2E delay of user requests. Therefore, Qiang Fan et al. \cite{fan2017cost}  propose the Cost Aware cloudlet PlAcement in moBiLe Edge computing strategy (CAPABLE) to optimize the tradeoff between the deployment cost and E2E delay. When cloudlets are already placed in the network, they also design a load allocation scheme to minimize the E2E delay of user requests by assigning the workload of each region to the suitable cloudlets.
 
 -----------------------------------------------------------------------------------
-[217] 2017**Mobile edge cloud network design optimization.** ✓
+[217] 2017**Mobile edge cloud network design optimization.** ✓ -> (introdução, ver melhor)
 
-This paper presents link-path formulations supported by heuristics to compute solutions in reasonable time. Qualify the advantage in considering mobility for both users and VMs. Compare two VM mobility modes, determining that high preference should be given to live migration and bulk migration seem to be a feasible alternative on delay-stringent tiny-disk services, such as augmented reality support, and only with further relaxation on network constraints. Also, they focus on the potential medium-term planning of an edge cloud network in mobile access networks. They study two design cases: 1) network in a static state 2) network state variations in terms of load and service level, caused by user mobility.
+Alberto Ceselli et al. present a link-path formulations supported by heuristics to compute solutions in reasonable time to firstly determining where to install cloudlet facilities and secondly assigning sets of access points, such as base stations to cloudlets and lastly supporting VM orchestration and considering partial user mobility information, as well as the satisfaction of service-level agreements. Qualify the advantage in considering mobility for both users and VMs. Compare two VM mobility modes, determining that high preference should be given to live migration and bulk migration seem to be a feasible alternative on delay-stringent tiny-disk services, such as augmented reality support, and only with further relaxation on network constraints. Also, they focus on the potential medium-term planning of an edge cloud network in mobile access networks. They study two design cases: 1) network in a static state 2) network state variations in terms of load and service level, caused by user mobility.
 
 -----------------------------------------------------------------------------------
 [226] 2017 **Location-aware load prediction in edge data centers.** ✗
@@ -177,49 +177,49 @@ This paper presents link-path formulations supported by heuristics to compute so
 A location-aware load prediction for edge data centers is proposed. For each edge data center, the load is predicted using its historical load time series and those of its neighboring data centers.
 
 -----------------------------------------------------------------------------------
-[231] 2015 **Dynamic service migration and workload scheduling in edge-clouds.** ✓
+[231] 2015 **Dynamic service migration and workload scheduling in edge-clouds.** ✓ -> (introdução, não muito importante - o 231 é melhor)
 
-This paper presents a model to optimize operational costs while providing rigorous performance guarantees as a sequential decision-making Markov Decision Problem (MDP). This model is different from the traditional solution methods (such as dynamic programming) that require extensive statistical knowledge and are computationally prohibitive. First they establish a decoupling property of the MDP that reduces it to two independent MDPs. Then, using the technique of Lyapunov optimization over renewals they design an online control algorithm that is provably cost-optimal.
-
------------------------------------------------------------------------------------
-[232] 2016 **Segue: Quality of service aware edge cloud service migration.** ✓
-
-This paper proposes SEGUE, a service that achieves optimal migration decisions by providing a long-term optimal QoS to mobile users. This model arises to overcome the limitations of previous studies that propose a distance-based Markov Decision Process (MDP) for optimizing migration decisions that fails to consider dynamic network and server states. SEGUE is a MDP-based model which incorporates the two dominant factors in making migration decisions: 1) network state, and 2) server state.
+This paper, Rahul Urgaonkar et al. present a model to optimize operational costs while providing rigorous performance guarantees as a sequential decision-making Markov Decision Problem (MDP). This model is different from the traditional solution methods (such as dynamic programming) that require extensive statistical knowledge and are computationally prohibitive. First they establish a decoupling property of the MDP that reduces it to two independent MDPs. Then, using the technique of Lyapunov optimization over renewals they design an online control algorithm that is provably cost-optimal. When the decoupling property holds, it enables the design of simple online control algorithms that do not require any knowledge of the underlying statistics of the MDPs, yet are provably optimal. This technique was applied to dynamic service migration and workload scheduling.
 
 -----------------------------------------------------------------------------------
-[234] 2017 **Optimizing service replication for mobile delay-sensitive applications in 5g edge network.** ✓
+[232] 2016 **Segue: Quality of service aware edge cloud service migration.** ✓ -> (introdução, importante)
 
-Define two integer linear programming (ILP) optimization schemes to minimize QoE degradation and cost of replica deployment in service replication for MEC. They distinguish classic reactive service migration from proactive migration: reactive service migration is dependent on user movement and accommodates this movement by locating the most suitable target edge and then starting the process for migration; however, proactive service migration deploys multiple replicas of the user service to neighbouring nodes.
+Wuyang Zhang et al. propose SEGUE, a service that achieves optimal migration decisions by providing a long-term optimal QoS to mobile users. This model arises to overcome the limitations of previous studies that propose a static distance-based Markov Decision Process (MDP) for optimizing migration decisions that although it works, it fails to consider dynamic network and server states. SEGUE is a MDP-based model which incorporates the two dominant factors in making migration decisions: 1) network state, and 2) server state. On top of that SEGUE answers the question of when to recalculate the MDP model, because to short intervals would create heavy overhead, and long intervals may translate into lazy migration. SEGUE adopts a QoS aware scheme to activate the MDP model when a QoS violation is predicted to solve for the when to migrate variable.Two components of SEGUE work together to achieve this. One module monitors network states, server workloads and user mobility and the other is responsible for QoS prediction. This allows SEGUE to avoid unnecessary migration costs and bypass any possible QoS violations.
 
 -----------------------------------------------------------------------------------
-[237] 2013 **Migcep: operator migration for mobility driven distributed complex event processing.** ✓
+[234] 2017 **Optimizing service replication for mobile delay-sensitive applications in 5g edge network.** ✓ -> ✗
 
-This paper presents a placement and migration method for providers of infrastructures that incorporate cloud and fog resources. It ensures application-defined end-to-end latency restrictions and reduces the network utilization by planning the migration ahead of time. Furthermore, present how the application knowledge of the CEP system can be used to improve current live migration techniques for Virtual Machines (VMs) to reduce the required bandwidth during the migration.
+To guarantee the strict latency requirements, new solutions are required to cope with the user mobility in a distributed edge cloud environment. The use of proactive replication mechanism seems promising to avoid QoE degradation during service migration between different edge nodes. However, accounting for the limited resources of edge micro data-centers, appropriate optimization solutions must be developed to reduce the cost of service deployment, while guaranteeing the desired QoE. In this paper, Ivan Farris et al., by leveraging on prediction schemes of user mobility patterns, have proposed two linear optimization solutions for replication-based service migration in cellular 5G networks: the min-RM approach aims at minimizing the QoE degradation during user handover; min-NSR approach favors the reduction of service replication cost. Simulation results proved the efficiency of each solution in achieving its design goal and provides useful information for network and service orchestrators in nextgeneration 5G cloud-based networks.
+
+-----------------------------------------------------------------------------------
+[237] 2013 **Migcep: operator migration for mobility driven distributed complex event processing.** ✓ -> ✗ (usa estatisticas para conseguir calcular a migração antecipadamente)
+
+Most work studying the placement of operators in such an environment completely disregards the migration costs. However, the mobility of users requires frequent migration of operators, together with possibly large state information, to meet latency restrictions and save bandwidth in the infrastructure. In this papers, Beate Ottenwälder et al. present a placement and migration method for providers of infrastructures that incorporate cloud and fog resources. It ensures application-defined end-to-end latency restrictions and reduces the network utilization by planning the migration ahead of time using predicted mobility patterns. Furthermore, present how the application knowledge of the CEP system can be used to improve current live migration techniques for Virtual Machines (VMs) to reduce the required bandwidth during the migration. First, it allows us to amortize the migration costs by selecting migration targets that ensure a low expected network utilization for a suficiently long time. Second, it allows us to serialize the operator for the migration and migrating parts of the operator a priori in away where unnecessary events are not migrated and bandwidth is reduced.
 
 -----------------------------------------------------------------------------------
 [238] 2015 **Developing iot applications in the fog: a distributed dataflow approach.** ✗
 
-To address challenges of the intrinsic nature of the IoT (heterogeneous devices/resources, a tightly coupled perception-action cycle and widely distributed devices and processing), they propose a Distributed Dataflow (DDF) programming model for the IoT that utilises computing infrastructures across the Fog and the Cloud. Also, they evaluate their proposal by implementing a DDF framework based on Node-RED (Distributed Node-RED or D-NR), a visual programming tool that uses a flow-based model for building IoT applications.
+To address challenges of the intrinsic nature of the IoT (heterogeneous devices/resources, a tightly coupled perception-action cycle and widely distributed devices and processing), they propose a Distributed Dataflow (DDF) programming model for the IoT that utilities computing infrastructures across the Fog and the Cloud. Also, they evaluate their proposal by implementing a DDF framework based on Node-RED (Distributed Node-RED or D-NR), a visual programming tool that uses a flow-based model for building IoT applications.
 
 -----------------------------------------------------------------------------------
-[243] 2017 **Follow me fog: Toward seamless handover timing schemes in a fog computing environment.** ✓
+[243] 2017 **Follow me fog: Toward seamless handover timing schemes in a fog computing environment.** ✓ -> ✗ (pode ser importante, também é referido no myifogsim)
 
-The authors in observe that traditional mobile network handover mechanisms cannot handle the demands of fog computation resources and the low-latency requirements of mobile IoT applications. The authors propose Follow Me Fog framework to guarantee service continuity and reduce latency during handovers. The key idea proposed is to continuously monitor the received signal strength of the fog nodes at the mobile IoT device, and to trigger pre-migration of computation jobs before disconnecting the IoT device from the existing fog node.
+The authors observe that traditional mobile network handover mechanisms cannot handle the demands of fog computation resources and the low-latency requirements of mobile IoT applications. The authors propose Follow Me Fog framework to guarantee service continuity and reduce latency during handovers. The key idea proposed is to continuously monitor the received signal strength of the fog nodes at the mobile IoT device, and to trigger pre-migration of computation jobs before disconnecting the IoT device from the existing fog node.
 
 -----------------------------------------------------------------------------------
-[244] 2017 **Efficient service handoff across edge servers via docker container migration.** ✓
+[244] 2017 **Efficient service handoff across edge servers via docker container migration.** ✓ -> ✗ (pode ser importante, também é referido no myifogsim)
 
 Present a novel service handoff system which seamlessly migrates offloading services to the nearest edge server, while the mobile client is moving. Service handoff is achieved via container migration. They have identified an important performance problem during Docker container migration, proposing a migration method which leverages the layered storage system to reduce file system synchronization overhead, without dependence on the distributed file system.
 
 -----------------------------------------------------------------------------------
 [246] 2016 **Primal: Profit maximization avatar placement for mobile edge computing.** ✓
 
-By considering the gain (i.e., the end-to-end delay reduction) and the cost (i.e., the migration overheads) of the live Avatar (a software clone located in a cloudlet) migration, they propose a PRofIt Maximization Avatar pLacement (PRIMAL) strategy for the cloudlet network in order to optimize the trade-off between the migration gain and the migration cost by selectively migrating the Avatars to their optimal locations.
+User Equipment (UE) are moving in the network, and so the E2E (between UE and its Avatar) may become worse, degrading QoS. The live Avatar migration is triggered to adjust the location of the UE’s Avatar. However, the migration process consumes extra resources of the Avatar that may degrade the performance of applications running in the Avatar. By considering the gain (i.e., the end-to-end delay reduction) and the cost (i.e., the migration overheads) of the live Avatar (a software clone; high performance Virtual Machine (VM) located in a cloudlet) migration, they propose a PRofIt Maximization Avatar pLacement (PRIMAL) strategy for the cloudlet network in order to optimize the trade-off between the migration gain and the migration cost by selectively migrating the Avatars to their optimal locations.
 
 -----------------------------------------------------------------------------------
-[247] 2017 **Towards efficient edge cloud augmentation for virtual reality mmogs.** ✓
+[247] 2017 **Towards efficient edge cloud augmentation for virtual reality mmogs.** ✓ -> (introdução, importante no seguimento de MDP)
 
-Propose a hybrid gaming architecture that achieves clever work distribution. It places local view change updates on edge clouds for immediate responses, frame rendering on edge clouds for high bandwidth, and global game state updates on the center cloud for user scalability. In addition, they propose an efficient service placement algorithm based on a Markov decision process. This algorithm dynamically places a user’s gaming service on edge clouds while the user moves through different access points. It also co-places multiple users to facilitate game world sharing and reduce the overall migration overhead. Also, they derive optimal solutions and devise efficient heuristic approaches and study different algorithm implementations to speed up the runtime.
+One problem remains unsolved: how to distribute the work among the user device, the edge clouds, and the center cloud to meet all three requirements especially when users are mobile. et al. propose a hybrid gaming architecture that achieves clever work distribution. It places local view change updates on edge clouds for immediate responses, frame rendering on edge clouds for high bandwidth, and global game state updates on the center cloud for user scalability. In addition, they propose an efficient service placement algorithm based on a Markov decision process. This algorithm dynamically places a user’s gaming service on edge clouds while the user moves through different access points taking into account the presence of dynamic network states and server workload states, and user mobility. However, unlike many of the service migration solutions which assumes an ignorable service transition time, they acknowledge that it is impossible to migrate an edge service from one edge to another instantly given the size of a VR game world. Therefore, they propose a mechanism to ensure a new edge cloud is activated when a player connects to the new one. It also co-places multiple users to facilitate game world sharing and reduce the overall migration overhead. Also, they derive optimal solutions and devise efficient heuristic approaches and study different algorithm implementations to speed up the runtime.
 
 -----------------------------------------------------------------------------------
 [249] 2017 **Fast transparent virtual machine migration in distributed edge clouds.** ✗
@@ -232,12 +232,12 @@ It is suggested to use multi-path TCP for live migration of VMs across edge node
 It presents a novel storage system that provides session consistency even when the client switches between replicas in different edge locations. Their client reconciliation algorithm enforces session consistency at minimal costs, by tracking the accessed or affected keys and reconciling them on the destination replica.
 
 -----------------------------------------------------------------------------------
-[254] 2018 **Move with me: Scalably keeping virtual objects close to users on the move.** ✓
+[254] 2018 **Move with me: Scalably keeping virtual objects close to users on the move.** ✓ -> ✗
 
-It is proposed a VO clustering and migration policy that jointly considers user proximity and inter-VO affinity to scalably support user mobility, while allowing service differentiation among users.
+With the state-of-the-art virtualization technologies, services can be implemented in modular software as a graph/chain of portable VOs that can be dynamically migrated around the Telco infrastructure. It is proposed a VO clustering and migration policy that jointly considers user proximity and inter-VO affinity to scalably support user mobility, while allowing service differentiation among users.
 
 -----------------------------------------------------------------------------------
-[261] 2017 **Virtual machine placement for backhaul traffic minimization in fog radio access networks.** ✓
+[261] 2017 **Virtual machine placement for backhaul traffic minimization in fog radio access networks.** ✓ -> ? (introdução)
 
 Analyses the VM placement problem in fog radio access networks (F-RANs) with the objective to minimize the overall back-haul traffic. The back-haul traffic is incurred in two ways: the VM replication and data transmission to the cloud. When a user connects to a fog node and requests an application service, there is no back-haul bandwidth consumption if the fog node has the application VM. Otherwise, the VM has to be replicated on the fog node, or the request is forwarded to the cloud. They formulate the replica-based VM placement problem by considering the computing and storage of fog nodes, the user service constraint, as well as the edge bandwidth constraint.
 
@@ -257,7 +257,7 @@ The authors address the problem of multi-component application placement on fog 
 Conduct the first formal study of the service entity placement problem for social VR applications in edge computing.
 
 -----------------------------------------------------------------------------------
-[279] 2015 **Software defined networking-based vehicular adhoc network with fog computing.** ✗
+[279] 2015 **Software defined networking-based vehicular adhoc network with fog computing.** ✗ VER APARTIR DAQUI
 
 Vehicular ad hoc networks (VANETs) face many issues such as unreliable connectivity, delay constraints, and poor scalability. The authors suggest that using principles of fog computing along with SDN could solve many of the current problems with VANETs. In their architecture, the vehicles, which act as end-users, are SDN wireless nodes. These wireless nodes send their data to Road Side Units (RSUs) which are installed alongside road systems. Once the data is sent to an RSU, it is then sent to an RSU controller (RSUC) which is a cluster of RSUs connected by broadband. The RSUC is capable of data storage and processing. Finally, the RSUCs communicate with the SDN controller, which has global knowledge of the VANET system.
 
@@ -317,7 +317,7 @@ They propose a radically different approach to smart surveillance for vehicle tr
 They designed Stack4Things, a framework based on OpenStack IaaS middleware that adopts a cloud-oriented model for IoT resource provisioning. Their framework allows injected code at runtime through the cloud, which they define as "contextualization."
 
 ----------------------------------------------------------------------------------
-[385] 2017 **Myifogsim: A simulator for virtual machine migration in fog computing.** ✓
+[385] 2017 **Myifogsim: A simulator for virtual machine migration in fog computing.** ✓ -> (importante)
 
 An extension of iFogSim to support mobility through migration of VMs between cloudlets.
 
@@ -361,3 +361,10 @@ Fog Computing is one of the solutions for offloading the task of a mobile. Howev
 
 **Dúvida**
 Os temas VM/resource scheduling e data placement são para se ter em conta?
+Aplicações decompostas por módulos?
+handover?
+predicted mobility patterns?
+virtual objects?
+
+google scholar
+movable cloudlets and mobile cloudlets
