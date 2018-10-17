@@ -1,16 +1,16 @@
 ** Dúvidas **
 -----------------------------------------------------------------------------------
-VM/resource scheduling
-Data placement
-Aplicações decompostas por módulos
-handover
-predicted mobility patterns
-virtual objects
+- VM/resource scheduling
+- Data placement
+- Aplicações decompostas por módulos
+- Handover
+- Predicted mobility patterns
+- Virtual objects
 
 
 ** Ver **
 -----------------------------------------------------------------------------------
-google scholar - movable cloudlets and mobile cloudlets
+- google scholar - movable cloudlets and mobile cloudlets
 
 
 ** Papers **
@@ -20,42 +20,49 @@ google scholar - movable cloudlets and mobile cloudlets
 2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.** 
 
 This paper proposes a new architecture based on load balancing algorithm in Fog Computing environment. Users sent the request to the nearby Fog servers which are consistently maintaining the frequently used data. In case, the users don’t get the desired resource in nearby Fog Servers who are also communicating with each other, then that request is forwarded to the cloud servers. To implement this load balancing algorithm they use modified Honey Bee Based algorithm.
+
 **Nota: load balancing ?**
 
 -----------------------------------------------------------------------------------
 2012 **Energy-Efficient Multi-Job Scheduling Model for Cloud Computing and Its Genetic Algorithm**
 
 For the problem that the energy efficiency of the cloud computing data center is low, they propose a new energy-efficient multi-job scheduling model. To solve this model, they design an encoding and decoding method for the individuals and construct an overall energy efficiency function of the servers. Meanwhile, in order to accelerate the convergent speed of this algorithm and enhance its searching ability, a local search operator is introduced.
+
 **Nota: job scheduling ?**
 
 -----------------------------------------------------------------------------------
 2017 **Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching**
 
 This paper considers a specific fog computing network consisting of a set of data service operators (DSOs) each of which controls a set of fog nodes (FNs) to provide the required data service to a set of data service subscribers (DSSs). They address the problem of how to allocate the limited computing resources of FNs to all the DSSs to achieve an optimal and stable performance. Therefore, they propose a joint optimization in a distributed fashion. In the framework, they formulate a Stackelberg game to analyze the pricing problem for the DSOs as well as the resource allocation problem for the DSSs.
+
 **Nota: resource allocation ?**
 
 -----------------------------------------------------------------------------------
 2017 **Fog computing job scheduling optimization based on bees swarm**
 
 This paper proposes a new bio-inspired optimization approach called BeesLife Algorithm (BLA) aimed at addressing the job scheduling problem in the fog computing environment. This approach is based on the optimized distribution of a set of tasks among all the fog computing nodes. The objective is to find an optimal trade-off between CPU execution time and allocated memory required by fog computing services established by mobile users.
+
 **Nota: job scheduling ?**
 
 -----------------------------------------------------------------------------------
 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments**
 
 In this paper they propose a simulator, called iFogSim, to model IoT and Fog environments and measure the impact of resource management techniques in latency, network congestion, energy consumption, and cost.
+
 **Nota: importante**
 
 -----------------------------------------------------------------------------------
 [123] 2018 **When clones flock near the fog**
 
 Abdelwahab et al. design FogMQ, a self-deploying brokering clones that discover cloud/edge hosting platforms and autonomously migrate clones between them according to self-measured weighted tail end-to-end latency without the need of a central monitoring and control unit, not having to sacrifice computation offloading gain in cloud platforms. Finally, it is simple and requires no change in existing cloud platforms controllers.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things**
 
 Jianhua Li et al. propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
@@ -63,12 +70,14 @@ Jianhua Li et al. propose a layered Fog framework to better support IoT applicat
 [145] 2017 **Cooperative fog computing for dealing with big data in the internet of vehicles: Architecture and hierarchical resource management**
 
 This paper introduces the challenges of handling big data in the IoV environments. The authors emphasize on the role of fog servers and describe a regional cooperative fog computing (CFC) architecture to support IoV applications. The proposed CFC-IoV architecture consists of two layers. The fog layer is a federation of geographically distributed fog servers, a coordinator server, and the cloud servers, whereas the edge layer includes the vehicular ad hoc network (VANET), IoT applications, and mobile cellular networks.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [149] 2018 **Toward efficient content delivery for automated driving services: An edge computing solution**
 
 They propose a two-level edge computing architecture for automated driving services in order to make full use of the intelligence at the wireless edge (i.e., base stations and autonomous vehicles) for coordinated content delivery. Then they investigate the research challenges of wireless edge caching and vehicular content sharing. Finally, they propose potential solutions to these challenges and evaluate them using real and synthetic traces.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
@@ -80,78 +89,91 @@ Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures 
 [175] 2017 **Federations of connected things for delay-sensitive iot services in 5g environments**
 
 This study looks at the latency issues that may be experienced by delay-sensitive IoT applications due to the geographical distances between the physical IoT devices and the data centers. The authors consider the mobile IoT federation as a service (MIFaaS) paradigm that leverages the pool of devices managed by individual cloud providers as a whole in order to help support delay-sensitive applications. The network model considered is a cellular IoT environment with multiple LTE femtocells as the network edge nodes that supports the MIFaaS paradigm.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [177] 2017 **Foud: integrating fog and cloud for 5g-enabled v2g networks**
 
 This paper argues that cloud and fog computing using the current mobile networks may not be ideally suited to provide the desired levels of QoS for moving electric vehicles in vehicle-to-grid (V2G) services. They propose a hybrid computing model called "Foud" in which the cloud and fog come together and are made available to the V2G networks in 5G. In the proposed model, the cloud allows virtualized computing, storage, and network resources to be available to the V2G system entities, whereas the fog temporarily integrates the stationary and mobile computing resources located at the edge of V2G networks to expand the computing capacity.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [183] 2017 **Vehicular micro clouds as virtual edge servers for efficient data collection**
 
 The concept of vehicular micro clouds based on map information is introduced, and, by a simulation study, investigated. Vehicular micro clouds are virtual edge servers and are essentially clusters of cars that help to aggregate and preprocess data that is transferred to the cloud.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [279] 2015 **Software defined networking-based vehicular adhoc network with fog computing**
 
 Vehicular ad hoc networks (VANETs) face many issues such as unreliable connectivity, delay constraints, and poor scalability. The authors suggest that using principles of fog computing along with SDN could solve many of the current problems with VANETs. In their architecture, the vehicles, which act as end-users, are SDN wireless nodes. These wireless nodes send their data to Road Side Units (RSUs) which are installed alongside road systems. Once the data is sent to an RSU, it is then sent to an RSU controller (RSUC) which is a cluster of RSUs connected by broadband. The RSUC is capable of data storage and processing. Finally, the RSUCs communicate with the SDN controller, which has global knowledge of the VANET system.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [354] 2017 **A vehicle-based edge computing platform for transit and human mobility analytics**
 
 Introduces a Wi-Fi-based in-bus monitoring and tracking system that observes mobile devices and provides analytics about people both within and outside the vehicle. The system can further use the data that is collected by the vehicle-mounted wireless device to track passenger movements, detect pedestrian flows, and evaluate how external factors impact human mobility, which provides useful analytics to transit operators.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [365] 2018 **Mobile edge computing for big-data-enabled electric vehicle charging**
 
 This paper proposes a MEC-based system enabled by big data analytics for the EV charging use case.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [379] 2018 **Sttr: A system for tracking all vehicles all the time at the edge of the network**
 
 They propose a radically different approach to smart surveillance for vehicle tracking. Specifically, this paper explores a smart camera surveillance system aimed at tracking all vehicles in real time.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 2017 **Fog Vehicular Computing Augmentation of Fog Computing Using Vehicular Cloud Computing**
 
 In accordance with the resource restrictions of fog computing, only a limited number of clients are able to use fog computing simultaneously. To alleviate this problem, they presented FVC as a new concept in which many unused resources of vehicles can be leveraged to augment fog computing resources. They also depicted the cross-layer architecture for FVC and elucidated its constitutive components along with their role in the construction of FVC.
+
 **Nota: Ver novamente**
 
 -----------------------------------------------------------------------------------
 [186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning**
 
 Unmanned aerial vehicles (UAVs) have been considered as means to provide computing capabilities. In this model, UAVs act as fog nodes and provide computing capabilities with enhanced coverage for IoT nodes. The system aims at minimizing the total mobile energy consumption while satisfying QoS requirements of the offloaded mobile application. This architecture is based on a UAV-mounted cloudlet which provides the offloading opportunities to multiple static mobile devices. They aim to minimize the mobile energy consumption, while satisfying QoS requirements and optimize UAV’s trajectory.
+
 **Nota: boa introdução, apresenta modelo energético, serirá para referencias introdutórias**
 
 -----------------------------------------------------------------------------------
 [217] 2017 **Mobile edge cloud network design optimization**
 
 Alberto Ceselli et al. present a link-path formulations supported by heuristics to compute solutions in reasonable time to firstly determining where to install cloudlet facilities and secondly assigning sets of access points, such as base stations to cloudlets and lastly supporting VM orchestration and considering partial user mobility information, as well as the satisfaction of service-level agreements. Qualify the advantage in considering mobility for both users and VMs. Compare two VM mobility modes, determining that high preference should be given to live migration and bulk migration seem to be a feasible alternative on delay-stringent tiny-disk services, such as augmented reality support, and only with further relaxation on network constraints. Also, they focus on the potential medium-term planning of an edge cloud network in mobile access networks. They study two design cases: 1) network in a static state 2) network state variations in terms of load and service level, caused by user mobility.
+
 **Nota: introdução, ver melhor**
 
 -----------------------------------------------------------------------------------
 [231] 2015 **Dynamic service migration and workload scheduling in edge-clouds**
 \label{subsec:paper09}
 This paper, Rahul Urgaonkar et al. present a model to optimize operational costs while providing rigorous performance guarantees as a sequential decision-making Markov Decision Problem (MDP). This model is different from the traditional solution methods (such as dynamic programming) that require extensive statistical knowledge and are computationally prohibitive. First they establish a decoupling property of the MDP that reduces it to two independent MDPs. Then, using the technique of Lyapunov optimization over renewals they design an online control algorithm that is provably cost-optimal. When the decoupling property holds, it enables the design of simple online control algorithms that do not require any knowledge of the underlying statistics of the MDPs, yet are provably optimal. This technique was applied to dynamic service migration and workload scheduling.
+
 **Nota: introdução, não muito importante - o 232 é melhor**
 
 -----------------------------------------------------------------------------------
 [232] 2016 **Segue: Quality of service aware edge cloud service migration**
 
 Wuyang Zhang et al. propose SEGUE, a service that achieves optimal migration decisions by providing a long-term optimal QoS to mobile users. This model arises to overcome the limitations of previous studies that propose a static distance-based Markov Decision Process (MDP) for optimizing migration decisions that although it works, it fails to consider dynamic network and server states. SEGUE is a MDP-based model which incorporates the two dominant factors in making migration decisions: 1) network state, and 2) server state. On top of that SEGUE answers the question of when to recalculate the MDP model, because to short intervals would create heavy overhead, and long intervals may translate into lazy migration. SEGUE adopts a QoS aware scheme to activate the MDP model when a QoS violation is predicted to solve for the when to migrate variable.Two components of SEGUE work together to achieve this. One module monitors network states, server workloads and user mobility and the other is responsible for QoS prediction. This allows SEGUE to avoid unnecessary migration costs and bypass any possible QoS violations.
+
 **Nota: introdução, importante**
 
 -----------------------------------------------------------------------------------
 [237] 2013 **Migcep: operator migration for mobility driven distributed complex event processing**
 \label{subsec:paper12}
 Most work studying the placement of operators in such an environment completely disregards the migration costs. However, the mobility of users requires frequent migration of operators, together with possibly large state information, to meet latency restrictions and save bandwidth in the infrastructure. In this papers, Beate Ottenwälder et al. present a placement and migration method for providers of infrastructures that incorporate cloud and fog resources. It ensures application-defined end-to-end latency restrictions and reduces the network utilization by planning the migration ahead of time using predicted mobility patterns. Furthermore, present how the application knowledge of the CEP system can be used to improve current live migration techniques for Virtual Machines (VMs) to reduce the required bandwidth during the migration. First, it allows us to amortize the migration costs by selecting migration targets that ensure a low expected network utilization for a suficiently long time. Second, it allows us to serialize the operator for the migration and migrating parts of the operator a priori in away where unnecessary events are not migrated and bandwidth is reduced.
+
 **Nota: usa estatisticas para conseguir calcular a migração antecipadamente**
 
 -----------------------------------------------------------------------------------
@@ -163,24 +185,28 @@ User Equipment (UE) are moving in the network, and so the E2E (between UE and it
 [247] 2017 **Towards efficient edge cloud augmentation for virtual reality mmogs**
 \label{subsec:paper16}
 One problem remains unsolved: how to distribute the work among the user device, the edge clouds, and the center cloud to meet all three requirements especially when users are mobile. Wuyang Zhang et al. propose a hybrid gaming architecture that achieves clever work distribution. It places local view change updates on edge clouds for immediate responses, frame rendering on edge clouds for high bandwidth, and global game state updates on the center cloud for user scalability. In addition, they propose an efficient service placement algorithm based on a Markov decision process. This algorithm dynamically places a user’s gaming service on edge clouds while the user moves through different access points taking into account the presence of dynamic network states and server workload states, and user mobility. However, unlike many of the service migration solutions which assumes an ignorable service transition time, they acknowledge that it is impossible to migrate an edge service from one edge to another instantly given the size of a VR game world. Therefore, they propose a mechanism to ensure a new edge cloud is activated when a player connects to the new one. It also co-places multiple users to facilitate game world sharing and reduce the overall migration overhead. Also, they derive optimal solutions and devise efficient heuristic approaches and study different algorithm implementations to speed up the runtime.
+
 **Nota: introdução, importante no seguimento de MDP**
 
 -----------------------------------------------------------------------------------
 [261] 2017 **Virtual machine placement for backhaul traffic minimization in fog radio access networks**
 \label{subsec:paper18}
 How to appropriately place virtual machines (VMs) into fog nodes in F-RAN systems is very challenging, and will significantly affect the bandwidth consumption of backhaul links. Thus, Ya-Ju Yu et al. analyse the VM placement problem in fog radio access networks (F-RANs) with the objective to minimize the overall back-haul traffic. The back-haul traffic is incurred in two ways: the VM replication and data transmission to the cloud. When a user connects to a fog node and requests an application service, there is no back-haul bandwidth consumption if the fog node has the application VM. Otherwise, the VM has to be replicated on the fog node, or the request is forwarded to the cloud. They formulate the replica-based VM placement problem by considering the computing and storage of fog nodes, the user service constraint, as well as the edge bandwidth constraint.
+
 **Nota: introdução**
 
 -----------------------------------------------------------------------------------
 [270] 2016 **An adaptive cloudlet placement method for mobile applications over gps big data**
 
 Introduces the concept of movable cloudlets and explores the problem of how to cost-effectively deploy these movable cloudlets to enhance cloud services for dynamic context-aware mobile applications. To this end, Haolong Xiang et al. propose an adaptive cloudlet placement (via GPS) method for mobile applications. Specifically, the gathering regions of the mobile devices are identified based on position clustering, and the cloudlet destination locations are confirmed accordingly. Besides, the traces between the origin and destination locations of these mobile cloudlets are also achieved.
+
 **Nota: introdução, importante?**
 
 -----------------------------------------------------------------------------------
 [385] 2017 **Myifogsim: A simulator for virtual machine migration in fog computing**
 
 An extension of iFogSim to support mobility through migration of VMs between cloudlets.
+
 **Nota: importante?**
 
 -----------------------------------------------------------------------------------
