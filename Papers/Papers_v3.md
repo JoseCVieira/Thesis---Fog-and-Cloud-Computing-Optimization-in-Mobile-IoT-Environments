@@ -1,20 +1,13 @@
 ** Dúvidas **
 -----------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------
 - VM/resource scheduling
 - Data placement
-- Aplicações decompostas por módulos
+- Virtual objects / application decomposition in modules
 - Handover
 - Predicted mobility patterns
 - Virtual objects
-
-
-** Ver **
------------------------------------------------------------------------------------
-- google scholar - movable cloudlets and mobile cloudlets
-
-
-** Papers **
------------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
 2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.** 
@@ -44,6 +37,9 @@ This paper proposes a new bio-inspired optimization approach called BeesLife Alg
 
 **Nota: job scheduling ?**
 
+** Toolkits **
+-----------------------------------------------------------------------------------
+
 -----------------------------------------------------------------------------------
 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments**
 
@@ -51,49 +47,15 @@ In this paper they propose a simulator, called iFogSim, to model IoT and Fog env
 
 **Nota: importante**
 
-
-
-
-
-
-
-
 -----------------------------------------------------------------------------------
-[123] 2018 **When clones flock near the fog**
+[385] 2017 **Myifogsim: A simulator for virtual machine migration in fog computing**
 
-Abdelwahab et al. design FogMQ, a self-deploying brokering clones that discover cloud/edge hosting platforms and autonomously migrate clones between them according to self-measured weighted tail end-to-end latency without the need of a central monitoring and control unit, not having to sacrifice computation offloading gain in cloud platforms. Finally, it is simple and requires no change in existing cloud platforms controllers.
+An extension of iFogSim to support mobility through migration of VMs between cloudlets.
 
-**Nota: Ver novamente**
+**Nota: importante?**
 
+** Migration optimization**
 -----------------------------------------------------------------------------------
-[143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things**
-
-Jianhua Li et al. propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.
-
-**Nota: Ver novamente**
-
------------------------------------------------------------------------------------
-[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures**
-
-Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle. They discussed four types of scenarios of moving and parked vehicles or congested traffic. Also, they point out the advantages against vehicular cloud computing (VCC) and the advantages in scenarios like of emergency operations for natural disaster and terrorist attack.
-
------------------------------------------------------------------------------------
-[186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning**
-
-Unmanned aerial vehicles (UAVs) have been considered as means to provide computing capabilities. In this model, UAVs act as fog nodes and provide computing capabilities with enhanced coverage for IoT nodes. The system aims at minimizing the total mobile energy consumption while satisfying QoS requirements of the offloaded mobile application. This architecture is based on a UAV-mounted cloudlet which provides the offloading opportunities to multiple static mobile devices. They aim to minimize the mobile energy consumption, while satisfying QoS requirements and optimize UAV’s trajectory.
-
-**Nota: boa introdução, apresenta modelo energético, serirá para referencias introdutórias**
-
------------------------------------------------------------------------------------
-[217] 2017 **Mobile edge cloud network design optimization**
-
-Alberto Ceselli et al. present a link-path formulations supported by heuristics to compute solutions in reasonable time to firstly determining where to install cloudlet facilities and secondly assigning sets of access points, such as base stations to cloudlets and lastly supporting VM orchestration and considering partial user mobility information, as well as the satisfaction of service-level agreements. Qualify the advantage in considering mobility for both users and VMs. Compare two VM mobility modes, determining that high preference should be given to live migration and bulk migration seem to be a feasible alternative on delay-stringent tiny-disk services, such as augmented reality support, and only with further relaxation on network constraints. Also, they focus on the potential medium-term planning of an edge cloud network in mobile access networks. They study two design cases: 1) network in a static state 2) network state variations in terms of load and service level, caused by user mobility.
-
-**Nota: introdução, ver melhor**
-
-
-
-
 
 -----------------------------------------------------------------------------------
 [237] 2013 **Migcep: operator migration for mobility driven distributed complex event processing**
@@ -117,16 +79,66 @@ Wuyang Zhang et al. propose SEGUE, a service that achieves optimal migration dec
 **Nota: introdução, importante**
 
 -----------------------------------------------------------------------------------
+[217] 2017 **Mobile edge cloud network design optimization**
 
+Alberto Ceselli et al. present a link-path formulations supported by heuristics to compute solutions in reasonable time to firstly determining where to install cloudlet facilities and secondly assigning sets of access points, such as base stations to cloudlets and lastly supporting VM orchestration and considering partial user mobility information, as well as the satisfaction of service-level agreements. Qualify the advantage in considering mobility for both users and VMs. Compare two VM mobility modes, determining that high preference should be given to live migration and bulk migration seem to be a feasible alternative on delay-stringent tiny-disk services, such as augmented reality support, and only with further relaxation on network constraints. Also, they focus on the potential medium-term planning of an edge cloud network in mobile access networks. They study two design cases: 1) network in a static state 2) network state variations in terms of load and service level, caused by user mobility.
 
+**Nota: introdução, ver melhor**
 
-
-
-
-
+-----------------------------------------------------------------------------------
 [246] 2016 **Primal: Profit maximization avatar placement for mobile edge computing**
 
 User Equipment (UE) are moving in the network, and so the E2E (between UE and its Avatar) may become worse, degrading QoS. The live Avatar migration is triggered to adjust the location of the UE’s Avatar. However, the migration process consumes extra resources of the Avatar that may degrade the performance of applications running in the Avatar. By considering the gain (i.e., the end-to-end delay reduction) and the cost (i.e., the migration overheads) of the live Avatar (a software clone; high performance Virtual Machine (VM) located in a cloudlet) migration, Xiang Sun et al. propose a PRofIt Maximization Avatar pLacement (PRIMAL) strategy for the cloudlet network in order to optimize the trade-off between the migration gain and the migration cost by selectively migrating the Avatars to their optimal locations.
+
+-----------------------------------------------------------------------------------
+
+
+
+
+
+-----------------------------------------------------------------------------------
+[123] 2018 **When clones flock near the fog**
+
+Abdelwahab et al. design FogMQ, a self-deploying brokering clones that discover cloud/edge hosting platforms and autonomously migrate clones between them according to self-measured weighted tail end-to-end latency without the need of a central monitoring and control unit, not having to sacrifice computation offloading gain in cloud platforms. Finally, it is simple and requires no change in existing cloud platforms controllers.
+
+**Nota: Ver novamente**
+
+-----------------------------------------------------------------------------------
+[143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things**
+
+Jianhua Li et al. propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.
+
+**Nota: Ver novamente**
+
+
+
+
+
+
+-----------------------------------------------------------------------------------
+[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures**
+
+Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle. They discussed four types of scenarios of moving and parked vehicles or congested traffic. Also, they point out the advantages against vehicular cloud computing (VCC) and the advantages in scenarios like of emergency operations for natural disaster and terrorist attack.
+
+-----------------------------------------------------------------------------------
+[186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning**
+
+Unmanned aerial vehicles (UAVs) have been considered as means to provide computing capabilities. In this model, UAVs act as fog nodes and provide computing capabilities with enhanced coverage for IoT nodes. The system aims at minimizing the total mobile energy consumption while satisfying QoS requirements of the offloaded mobile application. This architecture is based on a UAV-mounted cloudlet which provides the offloading opportunities to multiple static mobile devices. They aim to minimize the mobile energy consumption, while satisfying QoS requirements and optimize UAV’s trajectory.
+
+**Nota: boa introdução, apresenta modelo energético, serirá para referencias introdutórias**
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -----------------------------------------------------------------------------------
 [247] 2017 **Towards efficient edge cloud augmentation for virtual reality mmogs**
@@ -150,13 +162,6 @@ Introduces the concept of movable cloudlets and explores the problem of how to c
 **Nota: introdução, importante?**
 
 -----------------------------------------------------------------------------------
-[385] 2017 **Myifogsim: A simulator for virtual machine migration in fog computing**
-
-An extension of iFogSim to support mobility through migration of VMs between cloudlets.
-
-**Nota: importante?**
-
------------------------------------------------------------------------------------
 2016 **Scalable Fog Computing with Service Offloading in Bus Networks**
 
 In this paper, they leverage the characteristics of buses and propose a scalable fog computing paradigm with servicing offloading in bus networks. The bus fog servers not only provide fog computing services for the mobile users on bus, but also are motivated to accomplish the computation tasks offloaded by roadside cloudlets. By this way, the computing capability of roadside cloudlets is significantly extended. They consider an allocation strategy using genetic algorithm (GA). With this strategy, the roadside cloudlets spend the least cost to offload their computation tasks. Meanwhile, the user experience of mobile users are maintained.
@@ -170,3 +175,7 @@ This paper analyse what means provide mobility in Fog computing, the main challa
 2018 **Dynamic Mobile Cloudlet Clustering for Fog Computing**
 
 Fog Computing is one of the solutions for offloading the task of a mobile. However the capability of fog server is still limited due to the high deployment cost. In this paper, is proposed a dynamic mobile cloudlet cluster policy (DMCCP) to use cloudlets as a supplement for the fog server for offloading. The main idea is that by monitoring each mobile device resource amount, the DMCCP system clusters the optimal cloudlet to meet the requests of different tasks from the local mobile device.
+
+** Ver **
+-----------------------------------------------------------------------------------
+- google scholar - movable cloudlets and mobile cloudlets
