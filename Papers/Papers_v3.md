@@ -138,7 +138,7 @@ Introduces the concept of movable cloudlets and explores the problem of how to c
 **Note: introduction, important?**
 
 -----------------------------------------------------------------------------------
-[325] 2017 **Router-based brokering for surrogate discovery in edge computing.** ✗ -> ?
+[325] 2017 **Router-based brokering for surrogate discovery in edge computing.**
 
 This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers. They look at the problem of surrogate discovery in the context of an urban area, where they are faced with a high mobility of devices and users. Multiple brokers are interconnected using Distributed Hash Tables (DHTs) in order to exchange information. In addition, their approach introduces only a small overhead on the devices (routers) and therefore does not impede their normal function.
 
@@ -162,16 +162,6 @@ Present a novel service handoff system which seamlessly migrates offloading serv
 This paper introduces the challenges of handling big data in the IoV environments. The authors emphasize on the role of fog servers and describe a regional cooperative fog computing (CFC) architecture to support IoV applications. The proposed CFC-IoV architecture consists of two layers. The fog layer is a federation of geographically distributed fog servers, a coordinator server, and the cloud servers, whereas the edge layer includes the vehicular ad hoc network (VANET), IoT applications, and mobile cellular networks.
 
 -----------------------------------------------------------------------------------
-[149] 2018 **Toward efficient content delivery for automated driving services: An edge computing solution**
-
-They propose a two-level edge computing architecture for automated driving services in order to make full use of the intelligence at the wireless edge (i.e., base stations and autonomous vehicles) for coordinated content delivery. Then they investigate the research challenges of wireless edge caching and vehicular content sharing. Finally, they propose potential solutions to these challenges and evaluate them using real and synthetic traces.
-
------------------------------------------------------------------------------------
-[175] 2017 **Federations of connected things for delay-sensitive iot services in 5g environments**
-
-This study looks at the latency issues that may be experienced by delay-sensitive IoT applications due to the geographical distances between the physical IoT devices and the data centers. The authors consider the mobile IoT federation as a service (MIFaaS) paradigm that leverages the pool of devices managed by individual cloud providers as a whole in order to help support delay-sensitive applications. The network model considered is a cellular IoT environment with multiple LTE femtocells as the network edge nodes that supports the MIFaaS paradigm.
-
------------------------------------------------------------------------------------
 [177] 2017 **Foud: integrating fog and cloud for 5g-enabled v2g networks**
 
 This paper argues that cloud and fog computing using the current mobile networks may not be ideally suited to provide the desired levels of QoS for moving electric vehicles in vehicle-to-grid (V2G) services. They propose a hybrid computing model called "Foud" in which the cloud and fog come together and are made available to the V2G networks in 5G. In the proposed model, the cloud allows virtualized computing, storage, and network resources to be available to the V2G system entities, whereas the fog temporarily integrates the stationary and mobile computing resources located at the edge of V2G networks to expand the computing capacity.
@@ -182,29 +172,9 @@ This paper argues that cloud and fog computing using the current mobile networks
 The concept of vehicular micro clouds based on map information is introduced, and, by a simulation study, investigated. Vehicular micro clouds are virtual edge servers and are essentially clusters of cars that help to aggregate and preprocess data that is transferred to the cloud.
 
 -----------------------------------------------------------------------------------
-[279] 2015 **Software defined networking-based vehicular adhoc network with fog computing**
-
-Vehicular ad hoc networks (VANETs) face many issues such as unreliable connectivity, delay constraints, and poor scalability. The authors suggest that using principles of fog computing along with SDN could solve many of the current problems with VANETs. In their architecture, the vehicles, which act as end-users, are SDN wireless nodes. These wireless nodes send their data to Road Side Units (RSUs) which are installed alongside road systems. Once the data is sent to an RSU, it is then sent to an RSU controller (RSUC) which is a cluster of RSUs connected by broadband. The RSUC is capable of data storage and processing. Finally, the RSUCs communicate with the SDN controller, which has global knowledge of the VANET system.
-
------------------------------------------------------------------------------------
-[354] 2017 **A vehicle-based edge computing platform for transit and human mobility analytics**
-
-Introduces a Wi-Fi-based in-bus monitoring and tracking system that observes mobile devices and provides analytics about people both within and outside the vehicle. The system can further use the data that is collected by the vehicle-mounted wireless device to track passenger movements, detect pedestrian flows, and evaluate how external factors impact human mobility, which provides useful analytics to transit operators.
-
------------------------------------------------------------------------------------
-[365] 2018 **Mobile edge computing for big-data-enabled electric vehicle charging**
-
-This paper proposes a MEC-based system enabled by big data analytics for the EV charging use case.
-
------------------------------------------------------------------------------------
 2017 **Fog Vehicular Computing Augmentation of Fog Computing Using Vehicular Cloud Computing**
 
 In accordance with the resource restrictions of fog computing, only a limited number of clients are able to use fog computing simultaneously. To alleviate this problem, they presented FVC as a new concept in which many unused resources of vehicles can be leveraged to augment fog computing resources. They also depicted the cross-layer architecture for FVC and elucidated its constitutive components along with their role in the construction of FVC.
-
------------------------------------------------------------------------------------
-[379] 2018 **Sttr: A system for tracking all vehicles all the time at the edge of the network**
-
-They propose a radically different approach to smart surveillance for vehicle tracking. Specifically, this paper explores a smart camera surveillance system aimed at tracking all vehicles in real time.
 
 -----------------------------------------------------------------------------------
 [Others]
