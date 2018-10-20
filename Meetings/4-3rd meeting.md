@@ -1,13 +1,21 @@
-[Doubts]
+[Fields]
 -----------------------------------------------------------------------------------
 
 -----------------------------------------------------------------------------------
-- Load balancing / resource allocation / data placement (muito por alto, não é para referir explissitamente mas sim que o algoritmo no final deve ser capaz)
-- VM/resource/job scheduling (Não)
-- Virtual objects / application decomposition in modules / foglets (Sim este e aplicações por inteiro (tudo numa VM); VOs - menos E2E restrictions vao para a cloud e E2E mais restritos ficam na edge...)
-- Handover (Sim)
-- Predicted mobility patterns (Não)
-- Data/session consistency ?
+- QoS																- Yes
+- QoE																- Yes
+- Cost 																- Yes
+- Energy 															- Yes
+- Handover 															- Yes
+- Bandwidth 														- Yes
+- Data/session consistency 											- ?
+- VM/resource/job scheduling 										- No
+- Predicted mobility patterns 										- No
+- Load balancing / Resource allocation / Data placement 			- Yes
+	- Not explicitly but, the algorithm should achieve this feature
+- Virtual objects / Application decomposition in modules / Foglets 	- Yes
+	- Both all in one VM and application decomposition in modules
+	- For instance, modules with different E2E restrictions
 
 -----------------------------------------------------------------------------------
 
