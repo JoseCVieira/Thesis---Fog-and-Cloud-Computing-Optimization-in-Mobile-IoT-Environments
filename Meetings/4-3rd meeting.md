@@ -13,6 +13,7 @@
 - Data/Session Consistency 											- ?
 - VM/Resource/Job scheduling 										- No
 - Predicted Mobility Patterns 										- No
+- Proactive vs. Eeactive Service Migration 							- ?
 - Load Balancing / Resource Allocation / Data placement 			- Yes
 	- Not explicitly but, the algorithm should achieve this feature
 - Virtual Objects / Foglets 										- Yes
@@ -342,6 +343,8 @@ How to appropriately place virtual machines (VMs) into fog nodes in F-RAN system
 [160] 2018 **Multitier fog computing with large-scale iot data analytics for smart cities.** ?
 
 In this paper a multi tier fog computing model with large-scale data analytics service is proposed for smart cities applications. It is consisted of ad-hoc fogs and dedicated fogs with opportunistic and dedicated computing resources, respectively. They run analytics benchmark experiments over fogs formed by Raspberry Pis with a distributed computing engine to measure computing performance. QoS aware admission control, offloading, and resource allocation schemes are designed to support data analytics services, and maximize analytics service utilities. Availability and cost models of networking and computing resources are taken into account in QoS scheme design. A scalable system level simulator is developed to evaluate the fog-based analytics service and the QoS management schemes.
+
+**Note: An early effort for mobile fog nodes**
 
 ----------
 ----------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  17 OCT 2018 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  22 OCT 2018 12:12
 entering extended mode
 **./report.tex
 (report.tex
@@ -537,20 +537,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks39
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
-fg")) (report.aux
-
-LaTeX Warning: Label `subsec:paper22' multiply defined.
-
-
-LaTeX Warning: Label `subsec:paper22@cref' multiply defined.
-
-
-LaTeX Warning: Label `subsec:paper22' multiply defined.
-
-
-LaTeX Warning: Label `subsec:paper22@cref' multiply defined.
-
-)
+fg")) (report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -695,54 +682,47 @@ bil-ity, op-ti-miza-tion, multi-objective
 
  [2
 
-] (Sections/introduction.tex) (Sections/goals.tex [3]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4])
-(Sections/related_work.tex [5] [6] [7] [8] [9] [10] [11] [12])
-(Sections/architecture.tex
-<images/architectureTiers.png, id=44, 396.4411pt x 329.23pt>
+] (Sections/introduction.tex [3] [4]) (Sections/related_work.tex [5]) (Sections
+/architecture.tex
+<images/architectureTiers.png, id=23, 396.4411pt x 329.23pt>
 File: images/architectureTiers.png Graphic file (type png)
 <use images/architectureTiers.png>
 Package pdftex.def Info: images/architectureTiers.png  used on input line 16.
 (pdftex.def)             Requested size: 256.0748pt x 212.66066pt.
-) (Sections/evaluation.tex [13])
-(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [14 <./images/arc
-hitectureTiers.png>]
-Underfull \hbox (badness 1584) in paragraph at lines 98--102
+) (Sections/evaluation.tex)
+(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl
+Underfull \hbox (badness 1769) in paragraph at lines 26--30
 []\OT1/cmr/m/n/9 ``Cisco vi-sual net-work-ing in-dex: Global mo-bile data traf-
 fic fore-
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 98--102
+Underfull \hbox (badness 1577) in paragraph at lines 26--30
 \OT1/cmr/m/n/9 cast up-date, 2016{2021 white pa-per,'' Mar 2017. [On-line]. Ava
 il-
  []
 
-[15]) [16] (report.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[6 <./images/architectureTiers.png>]) [7] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 8734 strings out of 492973
- 142885 string characters out of 3127135
- 242850 words of memory out of 3000000
- 12419 multiletter control sequences out of 15000+200000
- 7567 words of font info for 27 fonts, out of 3000000 for 9000
+ 8684 strings out of 492973
+ 141976 string characters out of 3127135
+ 238993 words of memory out of 3000000
+ 12371 multiletter control sequences out of 15000+200000
+ 7913 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,42p,1524b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (16 pages, 718965 bytes).
+ 44i,6n,42p,1547b,312s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Jose/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/J
+ose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on report.pdf (7 pages, 681923 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,41 +1,10 @@
 \babel@toc {english}{}
 \authcount {1}
 \contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {2}Objectives}{5}
-\contentsline {section}{\numberline {3}Related Work}{6}
-\contentsline {subsection}{\numberline {3.1}2015 An architecture for Load Balancing Techniques for Fog Computing Environment}{6}
-\contentsline {subsection}{\numberline {3.2}2012 Energy-Efficient Multi-Job Scheduling Model for Cloud Computing and Its Genetic Algorithm}{6}
-\contentsline {subsection}{\numberline {3.3}2017 Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching}{6}
-\contentsline {subsection}{\numberline {3.4}2017 Fog computing job scheduling optimization based on bees swarm}{6}
-\contentsline {subsection}{\numberline {3.5}iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments}{7}
-\contentsline {subsection}{\numberline {3.6}[123] 2018 When clones flock near the fog}{7}
-\contentsline {subsection}{\numberline {3.7}[143] 2018 Virtual fog: A virtualization enabled fog computing framework for internet of things}{7}
-\contentsline {subsection}{\numberline {3.8}Vehicular fog computing}{7}
-\contentsline {subsubsection}{\numberline {3.8.1}[145] 2017 Cooperative fog computing for dealing with big data in the internet of vehicles: Architecture and hierarchical resource management}{7}
-\contentsline {subsubsection}{\numberline {3.8.2}[149] 2018 Toward efficient content delivery for automated driving services: An edge computing solution}{8}
-\contentsline {subsubsection}{\numberline {3.8.3}[172] 2016 Vehicular fog computing: A viewpoint of vehicles as the infrastructures}{8}
-\contentsline {subsubsection}{\numberline {3.8.4}[175] 2017 Federations of connected things for delay-sensitive iot services in 5g environments}{8}
-\contentsline {subsubsection}{\numberline {3.8.5}[177] 2017 Foud: integrating fog and cloud for 5g-enabled v2g networks}{8}
-\contentsline {subsubsection}{\numberline {3.8.6}[183] 2017 Vehicular micro clouds as virtual edge servers for efficient data collection}{9}
-\contentsline {subsubsection}{\numberline {3.8.7}[279] 2015 Software defined networking-based vehicular adhoc network with fog computing}{9}
-\contentsline {subsubsection}{\numberline {3.8.8}[354] 2017 A vehicle-based edge computing platform for transit and human mobility analytics}{9}
-\contentsline {subsubsection}{\numberline {3.8.9}[365] 2018 Mobile edge computing for big-data-enabled electric vehicle charging}{9}
-\contentsline {subsubsection}{\numberline {3.8.10}[379] 2018 Sttr: A system for tracking all vehicles all the time at the edge of the network}{9}
-\contentsline {subsubsection}{\numberline {3.8.11}2017 Fog Vehicular Computing Augmentation of Fog Computing Using Vehicular Cloud Computing}{10}
-\contentsline {subsection}{\numberline {3.9}[186] 2018 Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning}{10}
-\contentsline {subsection}{\numberline {3.10}[217] 2017 Mobile edge cloud network design optimization}{10}
-\contentsline {subsection}{\numberline {3.11}[231] 2015 Dynamic service migration and workload scheduling in edge-clouds}{10}
-\contentsline {subsection}{\numberline {3.12}[232] 2016 Segue: Quality of service aware edge cloud service migration}{11}
-\contentsline {subsection}{\numberline {3.13}[237] 2013 Migcep: operator migration for mobility driven distributed complex event processing}{11}
-\contentsline {subsection}{\numberline {3.14}[246] 2016 Primal: Profit maximization avatar placement for mobile edge computing}{11}
-\contentsline {subsection}{\numberline {3.15}[247] 2017 Towards efficient edge cloud augmentation for virtual reality mmogs}{12}
-\contentsline {subsection}{\numberline {3.16}[261] 2017 Virtual machine placement for backhaul traffic minimization in fog radio access networks}{12}
-\contentsline {subsection}{\numberline {3.17}[270] 2016 An adaptive cloudlet placement method for mobile applications over gps big data}{12}
-\contentsline {subsection}{\numberline {3.18}[385] 2017 Myifogsim: A simulator for virtual machine migration in fog computing}{13}
-\contentsline {subsection}{\numberline {3.19}2016 Scalable Fog Computing with Service Offloading in Bus Networks}{13}
-\contentsline {subsection}{\numberline {3.20}2017 Fog Computing for the Internet of Mobile Things: issues and challenges}{13}
-\contentsline {subsection}{\numberline {3.21}2018 Dynamic Mobile Cloudlet Clustering for Fog Computing}{13}
-\contentsline {section}{\numberline {4}Architecture}{13}
-\contentsline {section}{\numberline {5}Evaluation}{14}
-\contentsline {section}{\numberline {6}Schedule of Future Work}{14}
-\contentsline {section}{\numberline {7}Conclusion}{14}
+\contentsline {subsection}{\numberline {1.1}Motivation}{4}
+\contentsline {subsection}{\numberline {1.2}Objectives}{4}
+\contentsline {section}{\numberline {2}Related Work}{6}
+\contentsline {section}{\numberline {3}Architecture}{6}
+\contentsline {section}{\numberline {4}Evaluation}{6}
+\contentsline {section}{\numberline {5}Schedule of Future Work}{6}
+\contentsline {section}{\numberline {6}Conclusion}{6}
