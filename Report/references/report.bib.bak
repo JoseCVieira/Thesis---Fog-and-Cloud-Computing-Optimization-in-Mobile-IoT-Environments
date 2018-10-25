@@ -1,5 +1,14 @@
 % Encoding: UTF-8
 
+@misc{cisco_2017,
+  title={Cisco Visual Networking Index: Global Mobile Data Traffic Forecast Update, 2016–2021 White Paper},
+  url={https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-c11-520862.html},
+  journal={Cisco},
+  year={2017},
+  month={Mar}
+  note = {(Accessed on 10/24/2018)}
+}
+
 @inproceedings{ellis2004generalizeability,
   title={Generalizeability of latency detection in a variety of virtual environments},
   author={Ellis, Stephen R and Mania, Katerina and Adelstein, Bernard D and Hill, Michael I},
@@ -65,6 +74,87 @@
   publisher={IEEE}
 }
 
+@article{yousefpour2018all,
+  title={All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey},
+  author={Yousefpour, Ashkan and Fung, Caleb and Nguyen, Tam and Kadiyala, Krishna and Jalali, Fatemeh and Niakanlahiji, Amirreza and Kong, Jian and Jue, Jason P},
+  journal={arXiv preprint arXiv:1808.05283},
+  year={2018}
+}
+
+@misc{WhatIsFo95:online,
+  author = {},
+  title = {What Is Fog Computing? : OpenFog Consortium},
+  howpublished = {\url{https://www.openfogconsortium.org/page-section/definition-of-fog-computing/}},
+  month = {},
+  year = {},
+  note = {(Accessed on 10/24/2018)}
+}
+
+@inproceedings{satyanarayanan1996fundamental,
+  title={Fundamental challenges in mobile computing},
+  author={Satyanarayanan, Mahadev},
+  booktitle={Proceedings of the fifteenth annual ACM symposium on Principles of distributed computing},
+  pages={1--7},
+  year={1996},
+  organization={Acm}
+}
+
+@article{shiraz2013review,
+  title={A review on distributed application processing frameworks in smart mobile devices for mobile cloud computing},
+  author={Shiraz, Muhammad and Gani, Abdullah and Khokhar, Rashid Hafeez and Buyya, Rajkumar},
+  journal={IEEE Communications Surveys \& Tutorials},
+  volume={15},
+  number={3},
+  pages={1294--1313},
+  year={2013},
+  publisher={IEEE}
+}
+
+@misc{OpenEdge73:online,
+  author = {},
+  title = {Open Edge Computing},
+  howpublished = {\url{http://openedgecomputing.org/about.html}},
+  month = {},
+  year = {},
+  note = {(Accessed on 10/24/2018)}
+}
+
+@misc{WhatisEd69:online,
+  author = {},
+  title = {What is Edge Computing?},
+  journal={GE Digital},
+  howpublished = {\url{https://www.ge.com/digital/blog/what-edge-computing\#to-section-index=section-8}},
+  month = {},
+  year = {},
+  note = {(Accessed on 10/24/2018)}
+}
+
+@misc{ETSIMult81:online,
+  author = {},
+  title = {ETSI - Multi-access Edge Computing},
+  howpublished = {\url{https://www.etsi.org/technologies-clusters/technologies/multi-access-edge-computing}},
+  month = {},
+  year = {},
+  note = {(Accessed on 10/25/2018)}
+}
+
+@misc{OpenFogR66:online,
+  author = {},
+  title = {OpenFog\_Reference\_Architecture\_2\_09\_17-FINAL-1.pdf},
+  howpublished = {\url{https://www.openfogconsortium.org/wp-content/uploads/OpenFog_Reference_Architecture_2_09_17-FINAL-1.pdf}},
+  month = {},
+  year = {},
+  note = {(Accessed on 10/25/2018)}
+}
+
+
+
+
+
+
+
+
+
 @InProceedings{Bonomi2012,
   author       = {Bonomi, Flavio and Milito, Rodolfo and Zhu, Jiang and Addepalli, Sateesh},
   title        = {Fog computing and its role in the internet of things},
@@ -74,22 +164,17 @@
   organization = {ACM},
 }
 
-@misc{msv_2016,
-  title={Is Fog Computing The Next Big Thing In Internet of Things?},
-  url={https://www.forbes.com/sites/janakirammsv/2016/04/18/is-fog-computing-the-next-big-thing-in-internet-of-things/#6bc7b2c4608d},
-  journal={Forbes},
-  publisher={Forbes Magazine},
-  author={MSV, Janakiram},
-  year={2016},
-  month={Apr}
+@Misc{msv_2016,
+  author    = {MSV, Janakiram},
+  title     = {Is Fog Computing The Next Big Thing In Internet of Things?},
+  month     = {Apr},
+  year      = {2016},
+  journal   = {Forbes},
+  publisher = {Forbes Magazine},
+  url       = {https://www.forbes.com/sites/janakirammsv/2016/04/18/is-fog-computing-the-next-big-thing-in-internet-of-things/\#6bc7b2c4608d},
 }
 
-@article{yousefpour2018all,
-  title={All One Needs to Know about Fog Computing and Related Edge Computing Paradigms: A Complete Survey},
-  author={Yousefpour, Ashkan and Fung, Caleb and Nguyen, Tam and Kadiyala, Krishna and Jalali, Fatemeh and Niakanlahiji, Amirreza and Kong, Jian and Jue, Jason P},
-  journal={arXiv preprint arXiv:1808.05283},
-  year={2018}
-}
+
 
 @misc{angelica2013google,
   title={Google’s self-driving car gathers nearly 1GB/sec},
@@ -99,48 +184,40 @@
   publisher={kurzweilai}
 }
 
-@inproceedings{lopes2017myifogsim,
-  title={Myifogsim: A simulator for virtual machine migration in fog computing},
-  author={Lopes, M{\'a}rcio Moraes and Higashino, Wilson A and Capretz, Miriam AM and Bittencourt, Luiz Fernando},
-  booktitle={Companion Proceedings of the10th International Conference on Utility and Cloud Computing},
-  pages={47--52},
-  year={2017},
-  organization={ACM}
+@InProceedings{Lopes2017,
+  author       = {Lopes, M{\'a}rcio Moraes and Higashino, Wilson A and Capretz, Miriam AM and Bittencourt, Luiz Fernando},
+  title        = {Myifogsim: A simulator for virtual machine migration in fog computing},
+  booktitle    = {Companion Proceedings of the10th International Conference on Utility and Cloud Computing},
+  year         = {2017},
+  pages        = {47--52},
+  organization = {ACM},
 }
 
-@inproceedings{puliafito2017fog,
-  title={Fog computing for the internet of mobile things: issues and challenges},
-  author={Puliafito, Carlo and Mingozzi, Enzo and Anastasi, Giuseppe},
-  booktitle={Smart Computing (SMARTCOMP), 2017 IEEE International Conference on},
-  pages={1--6},
-  year={2017},
-  organization={IEEE}
+@InProceedings{Puliafito2017,
+  author       = {Puliafito, Carlo and Mingozzi, Enzo and Anastasi, Giuseppe},
+  title        = {Fog computing for the internet of mobile things: issues and challenges},
+  booktitle    = {Smart Computing (SMARTCOMP), 2017 IEEE International Conference on},
+  year         = {2017},
+  pages        = {1--6},
+  organization = {IEEE},
 }
 
-@misc{cisco_2017,
-  title={Cisco Visual Networking Index: Global Mobile Data Traffic Forecast Update, 2016–2021 White Paper},
-  url={https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-c11-520862.html},
-  journal={Cisco},
-  year={2017},
-  month={Mar}
+@InProceedings{Zhang2017,
+  author       = {Zhang, Wuyang and Chen, Jiachen and Zhang, Yanyong and Raychaudhuri, Dipankar},
+  title        = {Towards efficient edge cloud augmentation for virtual reality MMOGs},
+  booktitle    = {Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
+  year         = {2017},
+  pages        = {8},
+  organization = {ACM},
 }
 
-@inproceedings{zhang2017towards,
-  title={Towards efficient edge cloud augmentation for virtual reality MMOGs},
-  author={Zhang, Wuyang and Chen, Jiachen and Zhang, Yanyong and Raychaudhuri, Dipankar},
-  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
-  pages={8},
-  year={2017},
-  organization={ACM}
-}
-
-@inproceedings{ye2016scalable,
-  title={Scalable fog computing with service offloading in bus networks},
-  author={Ye, Dongdong and Wu, Maoqiang and Tang, Shensheng and Yu, Rong},
-  booktitle={Cyber Security and Cloud Computing (CSCloud), 2016 IEEE 3rd International Conference on},
-  pages={247--251},
-  year={2016},
-  organization={IEEE}
+@InProceedings{Ye2016,
+  author       = {Ye, Dongdong and Wu, Maoqiang and Tang, Shensheng and Yu, Rong},
+  title        = {Scalable fog computing with service offloading in bus networks},
+  booktitle    = {Cyber Security and Cloud Computing (CSCloud), 2016 IEEE 3rd International Conference on},
+  year         = {2016},
+  pages        = {247--251},
+  organization = {IEEE},
 }
 
 @article{gupta2017ifogsim,
@@ -152,15 +229,6 @@
   pages={1275--1296},
   year={2017},
   publisher={Wiley Online Library}
-}
-
-@inproceedings{yannuzzi2014key,
-  title={Key ingredients in an IoT recipe: Fog Computing, Cloud computing, and more Fog Computing},
-  author={Yannuzzi, Marcelo and Milito, R and Serral-Graci{\`a}, Ren{\'e} and Montero, D and Nemirovsky, Mario},
-  booktitle={2014 IEEE 19th International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD)},
-  pages={325--329},
-  year={2014},
-  organization={IEEE}
 }
 
 @article{abdelwahab2018clones,
@@ -202,15 +270,6 @@
   publisher={IEEE}
 }
 
-@inproceedings{saurez2016incremental,
-  title={Incremental deployment and migration of geo-distributed situation awareness applications in the fog},
-  author={Saurez, Enrique and Hong, Kirak and Lillethun, Dave and Ramachandran, Umakishore and Ottenw{\"a}lder, Beate},
-  booktitle={Proceedings of the 10th ACM International Conference on Distributed and Event-based Systems},
-  pages={258--269},
-  year={2016},
-  organization={ACM}
-}
-
 @article{ceselli2017mobile,
   title={Mobile edge cloud network design optimization},
   author={Ceselli, Alberto and Premoli, Marco and Secci, Stefano},
@@ -241,41 +300,12 @@
   organization={IEEE}
 }
 
-@inproceedings{farris2017optimizing,
-  title={Optimizing service replication for mobile delay-sensitive applications in 5g edge network},
-  author={Farris, Ivan and Taleb, Tarik and Bagaa, Miloud and Flick, Hannu},
-  booktitle={Communications (ICC), 2017 IEEE International Conference on},
-  pages={1--6},
-  year={2017},
-  organization={IEEE}
-}
-
 @inproceedings{ottenwalder2013migcep,
   title={MigCEP: operator migration for mobility driven distributed complex event processing},
   author={Ottenw{\"a}lder, Beate and Koldehofe, Boris and Rothermel, Kurt and Ramachandran, Umakishore},
   booktitle={Proceedings of the 7th ACM international conference on Distributed event-based systems},
   pages={183--194},
   year={2013},
-  organization={ACM}
-}
-
-@article{bao2017follow,
-  title={Follow Me Fog: Toward Seamless Handover Timing Schemes in a Fog Computing Environment},
-  author={Bao, Wei and Yuan, Dong and Yang, Zhengjie and Wang, Shen and Li, Wei and Zhou, Bing Bing and Zomaya, Albert Y},
-  journal={IEEE Communications Magazine},
-  volume={55},
-  number={11},
-  pages={72--78},
-  year={2017},
-  publisher={IEEE}
-}
-
-@inproceedings{ma2017efficient,
-  title={Efficient service handoff across edge servers via docker container migration},
-  author={Ma, Lele and Yi, Shanhe and Li, Qun},
-  booktitle={Proceedings of the Second ACM/IEEE Symposium on Edge Computing},
-  pages={11},
-  year={2017},
   organization={ACM}
 }
 
@@ -297,15 +327,6 @@
   organization={ACM}
 }
 
-@inproceedings{bruschi2018move,
-  title={Move with Me: Scalably Keeping Virtual Objects Close to Users on the Move},
-  author={Bruschi, Roberto and Davoli, Franco and Lago, Paolo and Pajo, Jane Frances},
-  booktitle={2018 IEEE International Conference on Communications (ICC)},
-  pages={1--6},
-  year={2018},
-  organization={IEEE}
-}
-
 @inproceedings{yu2017virtual,
   title={Virtual machine placement for backhaul traffic minimization in fog radio access networks},
   author={Yu, Ya-Ju and Chiu, Te-Chuan and Pang, Ai-Chun and Chen, Ming-Fan and Liu, Jiajia},
@@ -322,17 +343,6 @@
   pages={1--6},
   year={2016},
   organization={IEEE}
-}
-
-@article{bi2018mobility,
-  title={Mobility Support for Fog Computing: An SDN Approach},
-  author={Bi, Yuanguo and Han, Guangjie and Lin, Chuan and Deng, Qingxu and Guo, Lei and Li, Fuliang},
-  journal={IEEE Communications Magazine},
-  volume={56},
-  number={5},
-  pages={53--59},
-  year={2018},
-  publisher={IEEE}
 }
 
 @inproceedings{lopes2017myifogsim,

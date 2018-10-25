@@ -1,8 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
 The style file: IEEEtran.bst
 Database file #1: ./references/report.bib
+Warning--I didn't find a database entry for "cisco_2017"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty booktitle in OpenFog0208
 
 Done.
+(There were 2 warnings)
