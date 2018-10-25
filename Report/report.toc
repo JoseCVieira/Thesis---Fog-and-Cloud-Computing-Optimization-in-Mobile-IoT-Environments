@@ -12,15 +12,15 @@
 \contentsline {subsubsection}{\numberline {2.1.5}Multi-access Edge Computing}{8}
 \contentsline {subsubsection}{\numberline {2.1.6}Cloudlet Computing}{9}
 \contentsline {subsubsection}{\numberline {2.1.7}Mist Computing}{9}
-\contentsline {subsubsection}{\numberline {2.1.8}Other Similar Computing Paradigms}{9}
-\contentsline {subsubsection}{\numberline {2.1.9}Fog computing}{10}
+\contentsline {subsubsection}{\numberline {2.1.8}Fog computing}{9}
+\contentsline {subsubsection}{\numberline {2.1.9}Other Similar Computing Paradigms}{10}
 \contentsline {subsubsection}{\numberline {2.1.10}Concluding Remarks}{10}
 \contentsline {subsection}{\numberline {2.2}Mobile Fog Computing}{11}
-\contentsline {subsection}{\numberline {2.3}Data placement}{11}
-\contentsline {subsection}{\numberline {2.4}Migration Optimization}{11}
-\contentsline {subsection}{\numberline {2.5}Multi-objective}{11}
-\contentsline {subsection}{\numberline {2.6}Toolkits}{11}
-\contentsline {section}{\numberline {3}Architecture}{11}
-\contentsline {section}{\numberline {4}Evaluation}{12}
-\contentsline {section}{\numberline {5}Schedule of Future Work}{12}
-\contentsline {section}{\numberline {6}Conclusion}{12}
+\contentsline {subsection}{\numberline {2.3}Data placement}{12}
+\contentsline {subsection}{\numberline {2.4}Migration Optimization}{12}
+\contentsline {subsection}{\numberline {2.5}Multi-objective}{12}
+\contentsline {subsection}{\numberline {2.6}Toolkits}{12}
+\contentsline {section}{\numberline {3}Architecture}{13}
+\contentsline {section}{\numberline {4}Evaluation}{13}
+\contentsline {section}{\numberline {5}Schedule of Future Work}{13}
+\contentsline {section}{\numberline {6}Conclusion}{13}

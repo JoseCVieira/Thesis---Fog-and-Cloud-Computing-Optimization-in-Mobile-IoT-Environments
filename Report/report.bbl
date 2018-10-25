@@ -21,6 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{CiscoVis16:online}
+``Cisco visual networking index: Global mobile data traffic forecast update,
+  2016–2021 white paper - cisco,''
+  \url{https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-
+  c11-520862.html}, (Accessed on 10/25/2018).
+
 \bibitem{ellis2004generalizeability}
 S.~R. Ellis, K.~Mania, B.~D. Adelstein, and M.~I. Hill, ``Generalizeability of
   latency detection in a variety of virtual environments,'' in
@@ -95,6 +101,39 @@ P.~by~the OpenFog, C.~Architecture, and W.~Group, ``Openfog reference
 ``Mobile edge computing vs. multi-access edge computing,''
   \url{https://www.sdxcentral.com/mec/definitions/mobile-edge-computing-vs-multi-access-edge-computing/},
   (Accessed on 10/25/2018).
+
+\bibitem{taleb2017multi}
+T.~Taleb, K.~Samdanis, B.~Mada, H.~Flinck, S.~Dutta, and D.~Sabella, ``On
+  multi-access edge computing: A survey of the emerging 5g network edge cloud
+  architecture and orchestration,'' \emph{IEEE Communications Surveys \&
+  Tutorials}, vol.~19, no.~3, pp. 1657--1681, 2017.
+
+\bibitem{kadiyala2017inter}
+K.~P. Kadiyala and J.~A. Cobb, ``Inter-as traffic engineering with sdn,'' in
+  \emph{Network Function Virtualization and Software Defined Networks
+  (NFV-SDN), 2017 IEEE Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2017, pp. 1--7.
+
+\bibitem{satyanarayanan2009case}
+M.~Satyanarayanan, V.~Bahl, R.~Caceres, and N.~Davies, ``The case for vm-based
+  cloudlets in mobile computing,'' \emph{IEEE pervasive Computing}, 2009.
+
+\bibitem{jararweh2013resource}
+Y.~Jararweh, L.~Tawalbeh, F.~Ababneh, and F.~Dosari, ``Resource efficient
+  mobile computing using cloudlet infrastructure,'' in \emph{Mobile Ad-hoc and
+  Sensor Networks (MSN), 2013 IEEE Ninth International Conference on}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2013, pp. 373--377.
+
+\bibitem{Ciscopus95:online}
+``Cisco pushes iot analytics to the extreme edge with mist computing -
+  rethink,''
+  \url{https://rethinkresearch.biz/articles/cisco-pushes-iot-analytics-extreme-edge-mist-computing-2/},
+  (Accessed on 10/25/2018).
+
+\bibitem{preden2015benefits}
+J.~S. Preden, K.~Tammem{\"a}e, A.~Jantsch, M.~Leier, A.~Riid, and E.~Calis,
+  ``The benefits of self-awareness and attention in fog and mist computing,''
+  \emph{Computer}, vol.~48, no.~7, pp. 37--45, 2015.
 
 \bibitem{WhatIsFo95:online}
 ``What is fog computing? : Openfog consortium,''

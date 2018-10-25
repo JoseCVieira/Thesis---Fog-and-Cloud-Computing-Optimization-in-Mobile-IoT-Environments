@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  25 OCT 2018 18:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  25 OCT 2018 23:21
 entering extended mode
 **./report.tex
 (report.tex
@@ -689,60 +689,68 @@ bil-ity, op-ti-miza-tion, multi-objective
 
  [2
 
-] (Sections/introduction.tex
-
-LaTeX Warning: Citation `cisco_2017' on page 3 undefined on input line 10.
-
-[3] [4]) (Sections/related_work.tex [5] [6] [7] [8] [9]
-<images/computing_paradigms.png, id=36, 836.52525pt x 491.436pt>
+] (Sections/introduction.tex [3] [4]) (Sections/related_work.tex [5] [6] [7] [8
+] [9] [10]
+<images/computing_paradigms.png, id=39, 836.52525pt x 491.436pt>
 File: images/computing_paradigms.png Graphic file (type png)
 <use images/computing_paradigms.png>
-Package pdftex.def Info: images/computing_paradigms.png  used on input line 81.
+Package pdftex.def Info: images/computing_paradigms.png  used on input line 80.
 
 (pdftex.def)             Requested size: 256.0748pt x 150.4389pt.
- [10])
+ [11 <./images/computing_paradigms.png>]) [12]
 (Sections/architecture.tex
-<images/architectureTiers.png, id=41, 396.4411pt x 329.23pt>
+<images/architectureTiers.png, id=48, 396.4411pt x 329.23pt>
 File: images/architectureTiers.png Graphic file (type png)
 <use images/architectureTiers.png>
 Package pdftex.def Info: images/architectureTiers.png  used on input line 16.
 (pdftex.def)             Requested size: 256.0748pt x 212.66066pt.
-) (Sections/evaluation.tex [11 <./images/computing_paradigms.png>]) (Sections/s
-chedule.tex) (Sections/conclusion.tex) (report.bbl
-[12 <./images/architectureTiers.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+) (Sections/evaluation.tex) (Sections/schedule.tex)
+(Sections/conclusion.tex) (report.bbl [13 <./images/architectureTiers.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 []\OT1/cmr/m/n/9 ``Etsi - multi-access edge com-put-ing,'' https://www.etsi.org
 /technologies-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 []\OT1/cmr/m/n/9 ``Mobile edge com-put-ing vs. multi-access edge com-put-ing,''
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 \OT1/cmr/m/n/9 https://www.sdxcentral.com/mec/definitions/mobile-edge-computing
 -vs-multi-access-edge-
  []
 
-) [13] (report.aux)
+
+Underfull \hbox (badness 2662) in paragraph at lines 128--132
+[]\OT1/cmr/m/n/9 ``Cisco pushes iot an-a-lyt-ics to the ex-treme edge with mist
+ com-put-ing - re-think,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--132
+\OT1/cmr/m/n/9 https://rethinkresearch.biz/articles/cisco-pushes-iot-analytics-
+extreme-edge-mist-computing-
+ []
+
+[14]) [15] (report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8712 strings out of 492973
- 142557 string characters out of 3127135
- 239423 words of memory out of 3000000
- 12398 multiletter control sequences out of 15000+200000
+ 8719 strings out of 492973
+ 142696 string characters out of 3127135
+ 239458 words of memory out of 3000000
+ 12405 multiletter control sequences out of 15000+200000
  7913 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,6n,42p,1873b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -755,9 +763,9 @@ ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppDat
 a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users
 /Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pf
 b>
-Output written on report.pdf (13 pages, 975989 bytes).
+Output written on report.pdf (15 pages, 980758 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
