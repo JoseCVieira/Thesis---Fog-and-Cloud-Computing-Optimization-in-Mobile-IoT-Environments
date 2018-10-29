@@ -15,12 +15,12 @@
 \contentsline {subsubsection}{\numberline {2.1.8}Fog computing}{9}
 \contentsline {subsubsection}{\numberline {2.1.9}Other Similar Computing Paradigms}{10}
 \contentsline {subsubsection}{\numberline {2.1.10}Concluding Remarks}{10}
-\contentsline {subsection}{\numberline {2.2}Mobile Fog Computing}{11}
-\contentsline {subsection}{\numberline {2.3}Data placement}{12}
-\contentsline {subsection}{\numberline {2.4}Migration Optimization}{12}
-\contentsline {subsection}{\numberline {2.5}Multi-objective}{12}
-\contentsline {subsection}{\numberline {2.6}Toolkits}{12}
-\contentsline {section}{\numberline {3}Architecture}{13}
-\contentsline {section}{\numberline {4}Evaluation}{13}
-\contentsline {section}{\numberline {5}Schedule of Future Work}{13}
-\contentsline {section}{\numberline {6}Conclusion}{13}
+\contentsline {subsection}{\numberline {2.2}Mobile Fog Computing}{13}
+\contentsline {subsection}{\numberline {2.3}Data placement}{15}
+\contentsline {subsection}{\numberline {2.4}Migration Optimization}{16}
+\contentsline {subsection}{\numberline {2.5}Multi-objective}{18}
+\contentsline {subsection}{\numberline {2.6}Toolkits}{18}
+\contentsline {section}{\numberline {3}Architecture}{19}
+\contentsline {section}{\numberline {4}Evaluation}{19}
+\contentsline {section}{\numberline {5}Schedule of Future Work}{19}
+\contentsline {section}{\numberline {6}Conclusion}{19}

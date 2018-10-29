@@ -140,4 +140,61 @@ J.~S. Preden, K.~Tammem{\"a}e, A.~Jantsch, M.~Leier, A.~Riid, and E.~Calis,
   \url{https://www.openfogconsortium.org/page-section/definition-of-fog-computing/},
   (Accessed on 10/24/2018).
 
+\bibitem{bittencourt2017mobility}
+L.~F. Bittencourt, J.~Diaz-Montes, R.~Buyya, O.~F. Rana, and M.~Parashar,
+  ``Mobility-aware application scheduling in fog computing,'' \emph{IEEE Cloud
+  Computing}, vol.~4, no.~2, pp. 26--35, 2017.
+
+\bibitem{Lopes2017}
+M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
+  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
+  \emph{Companion Proceedings of the10th International Conference on Utility
+  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
+  47--52.
+
+\bibitem{ye2016scalable}
+D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
+  offloading in bus networks,'' in \emph{Cyber Security and Cloud Computing
+  (CSCloud), 2016 IEEE 3rd International Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2016, pp. 247--251.
+
+\bibitem{ottenwalder2013migcep}
+B.~Ottenw{\"a}lder, B.~Koldehofe, K.~Rothermel, and U.~Ramachandran, ``Migcep:
+  operator migration for mobility driven distributed complex event
+  processing,'' in \emph{Proceedings of the 7th ACM international conference on
+  Distributed event-based systems}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2013, pp. 183--194.
+
+\bibitem{urgaonkar2015dynamic}
+R.~Urgaonkar, S.~Wang, T.~He, M.~Zafer, K.~Chan, and K.~K. Leung, ``Dynamic
+  service migration and workload scheduling in edge-clouds,'' \emph{Performance
+  Evaluation}, vol.~91, pp. 205--228, 2015.
+
+\bibitem{zhang2016segue}
+W.~Zhang, Y.~Hu, Y.~Zhang, and D.~Raychaudhuri, ``Segue: Quality of service
+  aware edge cloud service migration,'' in \emph{Cloud Computing Technology and
+  Science (CloudCom), 2016 IEEE International Conference on}.\hskip 1em plus
+  0.5em minus 0.4em\relax IEEE, 2016, pp. 344--351.
+
+\bibitem{ceselli2017mobile}
+A.~Ceselli, M.~Premoli, and S.~Secci, ``Mobile edge cloud network design
+  optimization,'' \emph{IEEE/ACM Transactions on Networking (TON)}, vol.~25,
+  no.~3, pp. 1818--1831, 2017.
+
+\bibitem{sun2016primal}
+X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
+  edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
+  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
+
+\bibitem{abdelwahab2018clones}
+S.~Abdelwahab, S.~Zhang, A.~Greenacre, K.~Ovesen, K.~Bergman, and B.~Hamdaoui,
+  ``When clones flock near the fog,'' \emph{IEEE Internet of Things Journal},
+  2018.
+
+\bibitem{Zhang2017}
+W.~Zhang, J.~Chen, Y.~Zhang, and D.~Raychaudhuri, ``Towards efficient edge
+  cloud augmentation for virtual reality mmogs,'' in \emph{Proceedings of the
+  Second ACM/IEEE Symposium on Edge Computing}.\hskip 1em plus 0.5em minus
+  0.4em\relax ACM, 2017, p.~8.
+
 \end{thebibliography}

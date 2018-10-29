@@ -18,7 +18,7 @@ mobility-aware systems xxx. Section \ref{sec:Dataplacement} xxx. \ref{sec:Migrat
 
 \subsection{Computing paradigms}
 \label{sec:Computingparadigms}
-In what concerns about standardizing fog computing, there is a lack of unanimity. As aforementioned, fog has been variously termed as cloudlets, edge computing, etc. Different research teams are proposing many independent definitions of fog (and fog-related computing paradigms). As there is a research gap in the definitions and standards for fog computing, this work follows the definitions that Ashkan Yousefpour et al. \cite{yousefpour2018all} proposed. Below, are described some of the paradigms that were raised in order to bring cloud closer to the end devices, as well as their pros and cons. As a conclusion we show why fog computing is the natural platform for IoT.
+In what concerns about standardizing fog computing, there is a lack of unanimity. As aforementioned, fog has been variously termed as cloudlets, edge computing, etc. Different research teams are proposing many independent definitions of fog (and fog-related computing paradigms). As there is a research gap in the definitions and standards for fog computing, this work follows the definitions that Ashkan Yousefpour et al. \cite{yousefpour2018all} present. Below, are described some of the paradigms that were raised in order to bring cloud closer to the end devices, as well as their pros and cons. As a conclusion we show why fog computing is the natural platform for IoT.
 
 \subsubsection{Mobile computing}\label{subsec:MC}
 Mobile/nomadic computing (MC) is characterized by the processing being performed by mobile devices (e.g., laptops, tablets, or mobile phones). It raises to overcome the inherent limitations of environments where connectivity is sparse or intermittent and where there is low computing power. As this model only uses mobile devices to provide services to clients, there is no need for extra hardware, once they already have communication modules such as Bluetooth, WiFi, ZigBee, etc. As already mentioned, mobile devices have evolved in recent years, however their resources are more restricted, compared to fog and cloud. This computing paradigm has the advantage of being characterized by a distributed architecture, once mobile machines do not need a centralized location to operate. The disadvantages of MC are mainly due to their hardware nature (i.e. low resources, balancing between autonomy and the dependency of other mobile devices; characteristic that prevails in all distributed architectures) and the need of mobile clients to efficiently adapt to changing environments \cite{satyanarayanan1996fundamental}. MC alone may not be able to meet the requirements of some applications. On the one hand it is limited due to autonomy constraints and in the order hand low computational power and low storage capacity further restricts the applications where this paradigm is feasible. For instance it is unsuitable for applications that require low-latency or that generates large amounts of data that needs to be stored or processed. Nonetheless, MC can use both fog and cloud computing to enhance its capacities, not being restricted to a local network; expanding the scope of mobile computing and the number of applications where it can be used.\vfill\pagebreak
@@ -69,8 +69,9 @@ Fog computing bridges the gap between the cloud and IoT devices by enabling comp
 	centers, cloudlets, e MEC.
 \end{itemize}
 
+% continuar ....
 \subsubsection{Concluding Remarks}
-As the above mentioned, there are some other similar computing paradigms such as follow me cloud (FMC), follow me edge (FME), Follow Me edge-Cloud (FMeC), etc. However, this state-of-the-art had as objective to investigate the most treated ones in the literature. The purpose was to understand their characteristics and identify where to tackle the current limitations of delay sensitive IoT applications and consequently their deployment.
+As the above mentioned, there are some other similar computing paradigms such as follow me cloud (FMC), follow me edge (FME), Follow Me edge-Cloud (FMeC), etc. However, this state-of-the-art had as objective to investigate the most treated ones in the literature. The purpose was to understand their characteristics and identify where to tackle the current limitations which oppose the deployment of delay-sensitive IoT systems in mobile environments.
 
 The previous discussion about fog computing and related paradigms demonstrate the importance of understanding the characteristics of these platforms in the changing IT landscape. As demonstrated by the strength and weaknesses attributed to these computing paradigms, some paradigms may be better suited for a particular
 use case than others. Even so, fog computing is suited for a large number of use cases in the current landscape of IoT and connected devices. The versatility of fog computing makes it suitable for many cases of data-driven computing and low-latency applications, even though it may not be suitable for a few extreme applications, such as disaster zones or sparse network topologies where ad hoc computing (e.g., MACC) or extreme edge clouds (e.g., mist, CoT) may be a better fit. Nonetheless, fog computing is considered a more general form of computing when compared to other similar paradigms (e.g., EC, MEC, cloudlet), because of its comprehensive definition scope, generality, and extensive presence along the thing-to-cloud continuum. Tables 2 and 3 summarize these characteristics. Fog computing offers a bright future for an open-standards environment of connected devices, as it is evident by IEEE Standard’s adoption of OpenFog Reference Architecture [69]. There does not yet exist a globally unanimous distinction between fog computing and related computing paradigms, such as edge computing, mist computing, and cloudlets across researchers and industries, as shown in the previous sections of this paper. We attempt in this survey paper to clarify the distinctions between fog computing and the related computing paradigms. A comparison of the underlying infrastructure of fog computing and its related computing paradigms from the networking perspective is shown in Fig. 7. In the rest of this paper, we will mainly survey and discuss the recent literature on fog computing, but mention the studies on other related computing paradigms that could be easily extended or directly applied in fog.
@@ -79,27 +80,75 @@ use case than others. Even so, fog computing is suited for a large number of use
 	\centering
 	\includegraphics[width=90mm]{images/computing_paradigms}
 	\caption{A classification of scope of fog computing and its related computing paradigms.}
-	\label{architecture}
+	\label{computing_paradigms}
 \end{figure}
 
+%neste relatório consideramos que as cloudlets estão nos APs?
+%falar melhor da arquitetura para explicar depois as secçoes abaixo
+%A arquitetura dos Buses é boa (APs com várias cloudlets etc....)
+
+\begin{figure}
+	\centering
+	\includegraphics[width=90mm]{images/fog_architecture}
+	\caption{Typical architecture of fog computing.}
+	\label{fog_architecture}
+\end{figure}
+
+DESCRICAO DA ARQUITETURA DE FOG COMPUTING
+which is the most typical one; a hierarchical, bi-directional computing infrastructure which consists in: a cloud, several cloudlets located at the access points (i.e. at the edge of the network) and several end devices. In this architecture, end devices communicate with cloudlets and cloudlets communicate with clouds. These cloudlets, which are capable of provide computing and storage services, can communicate with each other to perform data and process management in order to support application requirements, and to exchange fog control/management data (such as user device and application state).
+
+In fog computing, processing and storage capacity is one hop away from the data production/consumption, which can benefit different types of applications
+
+\begin{itemize}
+	\item Applications with low latency requirements, such as pedestrian and traffic security, surveillance, applications for vision, hearing, or mobilityimpaired users, online gaming, augmented reality, and tactile computing can benefit from lower latencies because of a single hop connection to a cloudlet.
+	\item Raw data collected by many devices often does not need to be transferred to the cloud for longterm storage: data can be processed, filtered, or aggregated to extract knowledge and produce reduced data sets, which in turn are to be stored; or it can be processed and utilized right-away to other edge devices in the so-called sensor/actuator loop. In both cases, the fog computing paradigm can reduce network traffic from the edge to data centers.
+\end{itemize}
+
+Cloudlets can provide reduced latencies and help in avoiding/reducing traffic congestion in the network core. However, this comes at a price: more complex and sophisticated resource management and scheduling mechanisms are needed. This raises new challenges to be overcome, e.g., dynamically deciding what, when, and where (device/fog/cloud) to carry out processing of requests to meet their quality of service requirements. Furthermore, with smart and wearable devices, such mechanisms must incorporate mobility of data sources and sinks in the fog. Traditional resource management and scheduling models for distributed systems do not consider mobility and timeliness of data production and consumption in the resource management and allocation process. Fog computing scheduling must bring users location to the resource allocation policies to uphold the benefits of fog computing proximity to the user.
+
+
+
+
+
+
+
+
+
+\vfill\pagebreak
 \subsection{Mobile Fog Computing}
 \label{sec:Mobility}
-Mobile Fog Computing is the ability to provide mobility support for both IoT and
-Fog nodes. This means that users holding end devices, can outsource the
-allocation and management of resources to the fog infrastructure, where both iot
-and fog nodes are able to move, ensuring that QoS requirements of the IoT
-applications are met.\\
-Several studies were already done in order to provide mobile support for IoT
-devices, however, the purpose of this study is to support mobile Fog Computing,
-once in smart cities, fog nodes cloud be anything from things to the cloud.
+Mobile Fog Computing is the ability to provide mobility support for both IoT and Fog nodes. This means that users holding end devices, can outsource the allocation and management of resources to the fog infrastructure, where both iot and fog nodes are able to move, ensuring that QoS requirements of the IoT applications are met.\\
 
-This distributed middle tier, in a 3-tier architecture, things-fog-cloud, can
-use as fog nodes any physical device that has facilities or infrastructures that
-can provide resources and visualization capabilities.  This, may include movable
-fog nodes, such as cars, buses, unmanned aerial vehicles (UAVs), etc.\\
-In this field there are already some early efforts
+Similar to cloud computing, fog uses the concept of virtualization. Virtualization is a vital technology at different levels. For instance, it is important to provide: (1) isolation between untrusted user-level computations, (2) mechanisms for authentication, access control, and metering, (3) dynamic resource allocation for user-level computations, (4) the ability to support a very wide range of user-level computations, with minimal restrictions on their process structure, programming languages or operating systems, (5) mobility, migration and tasks offloading mechanisms, (6) power efficiency, (7) fault tolerance.\\
+\noindent\tab IoT applications may span many different operating systems and application environments (e.g., Android, iOS, Linux, Windows), as well as diverse approaches to partitioning and offloading computation. There is churn in this space from new OS versions, patches to existing OS versions, new libraries, new language runtime systems, and so on. In order to cloudlets can support all these variants, it is introduced a level of abstraction that cleanly encapsulate this messy complexity in a VM. Also, it enables VMs to coexist in a physical server (host) to share resources. Meanwhile, in fog computing the use of VMs is also crucial to provide mobility. As the end devices become more distant from the current access point, either by user or cloudlet movement, its application needs to be migrated to the most favorable access point, towards meeting its QoS (e.g., latency requirements) and improve quality of experience (QoE). This migration can be achieved through migration capabilities of VMs, which can be used to move applications and data through cloudlets according to device mobility.\\
 
-falar dos vários exemplos que o stor gosou. no final referir que a cloud utiliza VMs para .... (wikipedia), e que fog para além disto utiliza as VMs para sportar a mobilidade. Falar das possibilidades VM num todo ou floglets...........
+In this context, Luiz F. Bittencourt et al. \cite{bittencourt2017mobility} took into account the same architecture shown in Fig. \ref{fog_architecture}. With the use of two applications (electroencephalography (EEG) tractor beam game to test near-real-time applications and video surveillance / object tracking application for delay-tolerant applications) to test tree different scheduling strategies (Concurrent, the First Come-First Served (FCFS), and the Delay-priority strategies), and check how scheduling decision and the change of cloudlet by the players impact the network traffic and the delays.\\
+
+MM Lopes et al. \cite{Lopes2017} discuss resource allocation in fog computing in the face of users’ mobility, where mobility is achieved through migration of virtual machines between cloudlets. They present a new migration technique composed of two modules: migration policy which defines when the user VM should be migrated, considering aspects such as the user's speed, direction and geographical position and migration strategy, the destination cloudlet, and how the migration is performed. This work had the objective of study the impact of different migration strategies in the latency with users’ mobility.\\
+
+[325] 2017 **Router-based brokering for surrogate discovery in edge computing.**
+This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers. They look at the problem of surrogate discovery in the context of an urban area, where they are faced with a high mobility of devices and users. Multiple brokers are interconnected using Distributed Hash Tables (DHTs) in order to exchange information. In addition, their approach introduces only a small overhead on the devices (routers) and therefore does not impede their normal function.\\
+
+2018 **Dynamic Mobile Cloudlet Clustering for Fog Computing.**
+Fog Computing is one of the solutions for offloading the task of a mobile. However the capability of fog server is still limited due to the high deployment cost. In this paper, is proposed a dynamic mobile cloudlet cluster policy (DMCCP) to use cloudlets as a supplement for the fog server for offloading. The main idea is that by monitoring each mobile device resource amount, the DMCCP system clusters the optimal cloudlet to meet the requests of different tasks from the local mobile device.\\
+
+\noindent\tab Although several studies were already done in order to provide mobile support for IoT devices, the purpose of this study is to support mobile fog computing, once fog nodes can be anything in the path that connects things to the cloud. This distributed middle tier, in the 3-tier architecture (things-fog-cloud), can use as fog nodes any physical device that has facilities or infrastructures that can provide resources and visualization capabilities. This, may include movable fog nodes, such as cars, buses, unmanned aerial vehicles (UAVs), etc. The importance of mobile fog nodes cannot be overlooked, once they may represent a way to offload fixed cloudlet tasks and thus improve fog features. In this field there are already some early efforts.\\
+
+Dongdong Ye et al. \cite{ye2016scalable} show a use case where buses are used as mobile cloudlets. They leverage the characteristics of buses (e.g., the same routes, many stops) and propose a scalable fog computing paradigm with servicing offloading in bus networks. The bus fog servers not only provide fog computing services for the mobile users on bus, but also are motivated to accomplish the computation tasks offloaded by roadside cloudlets. By this way, the computing capability of roadside cloudlets is significantly extended.\\
+
+[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.**
+Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle. They discussed four types of scenarios of moving and parked vehicles or congested traffic. Also, they point out the advantages against vehicular cloud computing (VCC) and the advantages in scenarios like of emergency operations for natural disaster and terrorist attack.\\
+
+[186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning.**
+Unmanned aerial vehicles (UAVs) have been considered as means to provide computing capabilities. In this model, UAVs act as fog nodes and provide computing capabilities with enhanced coverage for IoT nodes. The system aims at minimizing the total mobile energy consumption while satisfying QoS requirements of the offloaded mobile application. This architecture is based on a UAV-mounted cloudlet which provides the offloading opportunities to multiple static mobile devices. They aim to minimize the mobile energy consumption, while satisfying QoS requirements and optimize UAV’s trajectory.\\
+
+[270] 2016 **An adaptive cloudlet placement method for mobile applications over gps big data.**
+Introduces the concept of movable cloudlets and explores the problem of how to cost-effectively deploy these movable cloudlets to enhance cloud services for dynamic context-aware mobile applications. To this end, Haolong Xiang et al. propose an adaptive cloudlet placement (via GPS) method for mobile applications. Specifically, the gathering regions of the mobile devices are identified based on position clustering, and the cloudlet destination locations are confirmed accordingly. Besides, the traces between the origin and destination locations of these mobile cloudlets are also achieved.\\
+
+
+
+
+
 
 %\noindent\tab Fog computing will be crucial in a diversity of scenarios. For
 %instance, heterogeneous sensory nodes (e.g., sensors, controllers, actuators)
@@ -129,13 +178,67 @@ falar dos vários exemplos que o stor gosou. no final referir que a cloud utiliz
 
 %\subsubsection{Virtual Machines} \label{subsec:VirtualMachines}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\vfill\pagebreak
 \subsection{Migration Optimization}
 \label{sec:Migration}
+As aforementioned, in section \ref{sec:Mobility}, mobility in fog computing is supported through VM migration. Therefore, considering an environment where both users and cloudlets are mobile, the decision-making of where to send the VMs, so that users' applications have their requirements fulfilled, is a major concern is such a dynamic environment. In the section \ref{sec:Dataplacement} it was verified that applications cloud be seen as a whole, or as set of modules that may have different requirements. Regardless of their type, whenever justifies, it is necessary to re-adapt the whole system, where this is performed through the exchange of applications or modules between cloudlets, making use of VMs for this purpose. With this, it is necessary to answer the two questions: \textit{When is this exchange justified? And how is it made?}\\
+
+\cite{ottenwalder2013migcep}
+Most work studying the placement of operators in such an environment completely disregards the migration costs. However, the mobility of users requires frequent migration of operators, together with possibly large state information, to meet latency restrictions and save bandwidth in the infrastructure. In this papers, Beate Ottenwälder et al. present a placement and migration method for providers of infrastructures that incorporate cloud and fog resources. It ensures application-defined end-to-end latency restrictions and reduces the network utilization by planning the migration ahead of time using predicted mobility patterns. Furthermore, present how the application knowledge of the complex event processing (CEP) system can be used to improve current live migration techniques for Virtual Machines (VMs) to reduce the required bandwidth during the migration. First, it allows us to amortize the migration costs by selecting migration targets that ensure a low expected network utilization for a sufficiently long time. Second, it allows us to serialize the operator for the migration and migrating parts of the operator a priori in away where unnecessary events are not migrated and bandwidth is reduced.\\
+
+\cite{urgaonkar2015dynamic}
+This paper, Rahul Urgaonkar et al. present a model to optimize operational costs while providing rigorous performance guarantees as a sequential decision-making Markov Decision Problem (MDP). This model is different from the traditional solution methods (such as dynamic programming) that require extensive statistical knowledge and are computationally prohibitive. First they establish a decoupling property of the MDP that reduces it to two independent MDPs. Then, using the technique of Lyapunov optimization over renewals they design an online control algorithm that is provably cost-optimal. When the decoupling property holds, it enables the design of simple online control algorithms that do not require any knowledge of the underlying statistics of the MDPs, yet are provably optimal. This technique was applied to dynamic service migration and workload scheduling.\\
+
+\cite{zhang2016segue}
+Wuyang Zhang et al. propose SEGUE, a service that achieves optimal migration decisions by providing a long-term optimal QoS to mobile users. This model arises to overcome the limitations of previous studies that propose a static distance-based Markov Decision Process (MDP) for optimizing migration decisions that although works, it fails to consider dynamic network and server states. SEGUE is a MDP-based model which incorporates the two dominant factors in making migration decisions: 1) network state, and 2) server state. On top of that SEGUE answers the question of when to recalculate the MDP model, because to short intervals would create heavy overhead, and long intervals may translate into lazy migration. SEGUE adopts a QoS aware scheme to activate the MDP model when a QoS violation is predicted to solve for the when to migrate variable. Two components of SEGUE work together to achieve this. One module monitors network states, server workloads and user mobility and the other is responsible for QoS prediction. This allows SEGUE to avoid unnecessary migration costs and bypass any possible QoS violations.\\
+
+\cite{ceselli2017mobile}
+Alberto Ceselli et al. present a link-path formulations supported by heuristics to compute solutions in reasonable time to firstly determining where to install cloudlet facilities and secondly assigning sets of access points, such as base stations to cloudlets and lastly supporting VM orchestration and considering partial user mobility information, as well as the satisfaction of service-level agreements. Qualify the advantage in considering mobility for both users and VMs. Compare two VM mobility modes, determining that high preference should be given to live migration and bulk migration seem to be a feasible alternative on delay-stringent tiny-disk services, such as augmented reality support, and only with further relaxation on network constraints. Also, they focus on the potential medium-term planning of an edge cloud network in mobile access networks. They study two design cases: 1) network in a static state 2) network state variations in terms of load and service level, caused by user mobility.\\
+
+\cite{sun2016primal}
+User Equipment (UE) are moving in the network, and so the E2E (between UE and its Avatar) may become worse, degrading QoS. The live Avatar migration is triggered to adjust the location of the UE’s Avatar. However, the **migration process consumes extra resources** of the Avatar that may degrade the performance of applications running in the Avatar. By considering the **gain (i.e., the end-to-end delay reduction)** and the **cost (i.e., the migration overheads)** of the live Avatar (a software clone; high performance Virtual Machine (VM) located in a cloudlet) migration, Xiang Sun et al. propose a PRofIt Maximization Avatar pLacement **(PRIMAL) strategy for the cloudlet network in order to optimize the trade-off between the migration gain and the migration cost by selectively migrating the Avatars to their optimal locations.\\
+
+\cite{abdelwahab2018clones}
+Abdelwahab et al. design FogMQ, a self-deploying brokering clones that discover cloud/edge hosting platforms and autonomously migrate clones between them according to self-measured weighted tail end-to-end latency without the need of a central monitoring and control unit, not having to sacrifice computation offloading gain in cloud platforms. Finally, it is simple and requires no change in existing cloud platforms controllers.\\
+
+\cite{Zhang2017}
+One problem remains unsolved: how to distribute the work among the user device, the edge clouds, and the center cloud to meet all three requirements especially when users are mobile. Wuyang Zhang et al. propose a hybrid gaming architecture that achieves clever work distribution. It places local view change updates on edge clouds for immediate responses, frame rendering on edge clouds for high bandwidth, and global game state updates on the center cloud for user scalability. In addition, they propose an efficient service placement algorithm based on a Markov decision process. This algorithm dynamically places a user’s gaming service on edge clouds while the user moves through different access points taking into account the presence of dynamic network states and server workload states, and user mobility. However, unlike many of the service migration solutions which assumes an ignorable service transition time, they acknowledge that it is impossible to migrate an edge service from one edge to another instantly given the size of a VR game world. Therefore, they propose a mechanism to ensure a new edge cloud is activated when a player connects to the new one. It also co-places multiple users to facilitate game world sharing and reduce the overall migration overhead. Also, they derive optimal solutions and devise efficient heuristic approaches and study different algorithm implementations to speed up the runtime.\\
+
+\cite{ye2016scalable}
+In this paper, they leverage the characteristics of buses and propose a scalable fog computing paradigm with servicing offloading in bus networks. The bus fog servers not only provide fog computing services for the mobile users on bus, but also are motivated to accomplish the computation tasks offloaded by roadside cloudlets. By this way, the computing capability of roadside cloudlets is significantly extended. They consider an allocation strategy using genetic algorithm (GA). With this strategy, the roadside cloudlets spend the least cost to offload their computation tasks. Meanwhile, the user experience of mobile users are maintained.
+
+
+%There are two possibilities to answer the question: \textit{when is this exchange justified?}
+%In both, it is necessary to monitor the relevant system parameters, however in a different way. The first is to 
+
+
 
 \subsection{Multi-objective}
 \label{sec:Multiobjective}
 QoS, QoE, Cost, Energy, Handover, Mobility, Bandwidth
 \subsection{Toolkits}
 \label{sec:Toolkits}
+
+
 
 \vfill\pagebreak
