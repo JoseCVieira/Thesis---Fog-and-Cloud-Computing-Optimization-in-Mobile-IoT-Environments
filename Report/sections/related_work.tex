@@ -87,6 +87,11 @@ use case than others. Even so, fog computing is suited for a large number of use
 %falar melhor da arquitetura para explicar depois as secçoes abaixo
 %A arquitetura dos Buses é boa (APs com várias cloudlets etc....)
 
+%Fog computing is composed by fog nodes, also known as fog servers,
+%Fog nodes, also known as fog servers or cloudlets (smaller sized clouds with lower computational capacity), are virtual-machine (VM) based, which means that they promote flexibility and mobility.
+
+%\noindent\tab NIST, defines the essential characteristics of fog ... (Fog Computing Conceptual Model.pdf)
+
 \begin{figure}
 	\centering
 	\includegraphics[width=100mm]{images/fog_architecture/fog_architecture}
@@ -110,9 +115,6 @@ Cloudlets can provide reduced latencies and help in avoiding/reducing traffic co
 \subsection{Mobile Fog Computing}
 \label{sec:Mobility}
 Mobile Fog Computing is the ability to provide mobility support for both IoT and Fog nodes. This means that users holding end devices, can outsource the allocation and management of resources to the fog infrastructure, where both iot and fog nodes are able to move, ensuring that QoS requirements of the IoT applications are met.\\
-
-Similar to cloud computing, fog uses the concept of virtualization. Virtualization is a vital technology at different levels. For instance, it is important to provide: (1) isolation between untrusted user-level computations, (2) mechanisms for authentication, access control, and metering, (3) dynamic resource allocation for user-level computations, (4) the ability to support a very wide range of user-level computations, with minimal restrictions on their process structure, programming languages or operating systems, (5) mobility, migration and tasks offloading mechanisms, (6) power efficiency, (7) fault tolerance.\\
-\noindent\tab IoT applications may span many different operating systems and application environments (e.g., Android, iOS, Linux, Windows), as well as diverse approaches to partitioning and offloading computation. There is churn in this space from new OS versions, patches to existing OS versions, new libraries, new language runtime systems, and so on. In order to cloudlets can support all these variants, it is introduced a level of abstraction that cleanly encapsulate this messy complexity in a VM. Also, it enables VMs to coexist in a physical server (host) to share resources. Meanwhile, in fog computing the use of VMs is also crucial to provide mobility. As the end devices become more distant from the current access point, either by user or cloudlet movement, its application needs to be migrated to the most favorable access point, towards meeting its QoS (e.g., latency requirements) and improve quality of experience (QoE). This migration can be achieved through migration capabilities of VMs, which can be used to move applications and data through cloudlets according to device mobility.\\
 
 In this context, Luiz F. Bittencourt et al. \cite{bittencourt2017mobility} took into account the same architecture shown in Fig. \ref{fog_architecture}. With the use of two applications (electroencephalography (EEG) tractor beam game to test near-real-time applications and video surveillance / object tracking application for delay-tolerant applications) to test tree different scheduling strategies (Concurrent, the First Come-First Served (FCFS), and the Delay-priority strategies), and check how scheduling decision and the change of cloudlet by the players impact the network traffic and the delays.\\
 
