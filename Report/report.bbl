@@ -158,6 +158,64 @@ D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
   (CSCloud), 2016 IEEE 3rd International Conference on}.\hskip 1em plus 0.5em
   minus 0.4em\relax IEEE, 2016, pp. 247--251.
 
+\bibitem{bao2017follow}
+W.~Bao, D.~Yuan, Z.~Yang, S.~Wang, W.~Li, B.~B. Zhou, and A.~Y. Zomaya,
+  ``Follow me fog: Toward seamless handover timing schemes in a fog computing
+  environment,'' \emph{IEEE Communications Magazine}, vol.~55, no.~11, pp.
+  72--78, 2017.
+
+\bibitem{ma2017efficient}
+L.~Ma, S.~Yi, and Q.~Li, ``Efficient service handoff across edge servers via
+  docker container migration,'' in \emph{Proceedings of the Second ACM/IEEE
+  Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2017, p.~11.
+
+\bibitem{sun2017emm}
+Y.~Sun, S.~Zhou, and J.~Xu, ``Emm: Energy-aware mobility management for mobile
+  edge computing in ultra dense networks,'' \emph{IEEE Journal on Selected
+  Areas in Communications}, vol.~35, no.~11, pp. 2637--2646, 2017.
+
+\bibitem{bi2018mobility}
+Y.~Bi, G.~Han, C.~Lin, Q.~Deng, L.~Guo, and F.~Li, ``Mobility support for fog
+  computing: An sdn approach,'' \emph{IEEE Communications Magazine}, vol.~56,
+  no.~5, pp. 53--59, 2018.
+
+\bibitem{farris2017optimizing}
+I.~Farris, T.~Taleb, M.~Bagaa, and H.~Flick, ``Optimizing service replication
+  for mobile delay-sensitive applications in 5g edge network,'' in
+  \emph{Communications (ICC), 2017 IEEE International Conference on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 1--6.
+
+\bibitem{saurez2016incremental}
+E.~Saurez, K.~Hong, D.~Lillethun, U.~Ramachandran, and B.~Ottenw{\"a}lder,
+  ``Incremental deployment and migration of geo-distributed situation awareness
+  applications in the fog,'' in \emph{Proceedings of the 10th ACM International
+  Conference on Distributed and Event-based Systems}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2016, pp. 258--269.
+
+\bibitem{li2018virtual}
+J.~Li, J.~Jin, D.~Yuan, and H.~Zhang, ``Virtual fog: A virtualization enabled
+  fog computing framework for internet of things,'' \emph{IEEE Internet Things
+  J}, vol.~5, pp. 121--131, 2018.
+
+\bibitem{giang2015developing}
+N.~K. Giang, M.~Blackstock, R.~Lea, and V.~C. Leung, ``Developing iot
+  applications in the fog: a distributed dataflow approach,'' in \emph{Internet
+  of Things (IOT), 2015 5th International Conference on the}.\hskip 1em plus
+  0.5em minus 0.4em\relax IEEE, 2015, pp. 155--162.
+
+\bibitem{bahreini2017efficient}
+T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
+  in edge computing systems,'' in \emph{Proceedings of the Second ACM/IEEE
+  Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2017, p.~5.
+
+\bibitem{bruschi2018move}
+R.~Bruschi, F.~Davoli, P.~Lago, and J.~F. Pajo, ``Move with me: Scalably
+  keeping virtual objects close to users on the move,'' in \emph{2018 IEEE
+  International Conference on Communications (ICC)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2018, pp. 1--6.
+
 \bibitem{ottenwalder2013migcep}
 B.~Ottenw{\"a}lder, B.~Koldehofe, K.~Rothermel, and U.~Ramachandran, ``Migcep:
   operator migration for mobility driven distributed complex event
@@ -196,5 +254,17 @@ W.~Zhang, J.~Chen, Y.~Zhang, and D.~Raychaudhuri, ``Towards efficient edge
   cloud augmentation for virtual reality mmogs,'' in \emph{Proceedings of the
   Second ACM/IEEE Symposium on Edge Computing}.\hskip 1em plus 0.5em minus
   0.4em\relax ACM, 2017, p.~8.
+
+\bibitem{gupta2017ifogsim}
+H.~Gupta, A.~Vahid~Dastjerdi, S.~K. Ghosh, and R.~Buyya, ``ifogsim: A toolkit
+  for modeling and simulation of resource management techniques in the internet
+  of things, edge and fog computing environments,'' \emph{Software: Practice
+  and Experience}, vol.~47, no.~9, pp. 1275--1296, 2017.
+
+\bibitem{sonmez2017edgecloudsim}
+C.~Sonmez, A.~Ozgovde, and C.~Ersoy, ``Edgecloudsim: An environment for
+  performance evaluation of edge computing systems,'' in \emph{Fog and Mobile
+  Edge Computing (FMEC), 2017 Second International Conference on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 39--44.
 
 \end{thebibliography}
