@@ -2,7 +2,7 @@
 \authcount {1}
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {subsection}{\numberline {1.1}Motivation}{4}
-\contentsline {subsection}{\numberline {1.2}Objectives}{4}
+\contentsline {subsection}{\numberline {1.2}Objectives}{5}
 \contentsline {section}{\numberline {2}Related Work}{6}
 \contentsline {subsection}{\numberline {2.1}Computing paradigms}{6}
 \contentsline {subsubsection}{\numberline {2.1.1}Mobile computing}{6}

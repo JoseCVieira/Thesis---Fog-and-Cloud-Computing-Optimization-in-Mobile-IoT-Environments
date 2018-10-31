@@ -2,46 +2,13 @@
 \section{Introduction}\label{sec:Introduction}
 %Context - IoT
 \noindent
-There’s no doubt that the internet of things (IoT) is a great resource. It
-comprises \textit{things} that have unique identities and are connected to the
-Internet (e.g., vehicles, home appliances, wearable devices). The number of
-mobile devices are predicted to reach 11.6 billion by 2021, exceeding the
-world’s projected population at that time (7.8 billion), where the subset of IoT ones are expected to be 929 million \cite{CiscoVis16:online}.\\
-\noindent\tab Although this kind of device has evolved radically in the last
-years, battery life, computation and storage capacity remain limited. This means
-that they are not suitable for running heavy applications, being necessary, in
-this case, to resort to third parties.\\
+World is growing at a fast pace and so is data. Agility and flexibility of big data applications are gradually taking the form of the Internet of Things (IoT) and there’s no doubt that it is a great resource. It comprises \textit{things} that have unique identities and are connected to the Internet (e.g., vehicles, home appliances, wearable devices). The number of mobile devices are predicted to reach 11.6 billion by 2021, exceeding the world’s projected population at that time (7.8 billion), where the subset of IoT ones are expected to be 929 million \cite{CiscoVis16:online}.\\
+\noindent\tab Although this kind of devices has evolved radically in the last years, battery life, computation and storage capacity remain limited. This means that they are not suitable for running heavy applications, being necessary, in this case, to resort to third parties.\\
 %Context - CLOUD COMPUTING
-\noindent\tab Cloud computing (CC) has been imperative in expanding the reach and
-capabilities of IoT devices. It enables that clients outsource the allocation
-and management of resources (hardware or software) that they rely upon to the
-cloud. In addition, to avoid over- or under-provisioning, cloud service
-providers also afford dynamic resources for a scalable workload, applying a
-pay-as-you-go cost model. This way, besides overcoming the aforementioned
-limitations, it also brings other advantages such as availability, flexibility,
-scalability, reliability, to mention a few.\\
-\noindent\tab Despite the benefits of using cloud computing, two main problems,
-linked to IoT applications, remain unresolved and they can not be
-underestimated. The first, and the most obvious, is the fact that cloud servers
-reside in remote data centers and, consequently, the end-to-end communication
-have long delays (characteristic of multi-hops transmissions over the Internet).
-Some applications, with ultra-low latency requirements, can't support such
-delays.  Augmented reality applications that use head-tracked systems, for
-example, require end-to-end latencies to be less than 16 ms
-\cite{ellis2004generalizeability}. Cloud-based virtual desktop applications
-require end-to-end latency below 60 ms if they are to match QoS of local
-execution \cite{taylor2015virtual}. Remotely rendered video conference, on the
-other hand, demand end-to-end latency below 150 ms \cite{szigeti2005end}. The
-other problem is related with the constantly growing number of IoT devices. In a
-sense-process-actuate model, where the processing is done in the cloud, core
-network traffic (i.e. bandwidth usage) grows depending on the number of IoT
-devices.\\
-\noindent\tab To overcome this limitations, the solution that has already been
-proposed is to bring the cloud closer to the end devices, where entities such as
-base-stations would host smaller sized clouds. This idea has been variously
-termed as Cloudlets \cite{satyanarayanan2013cloudlets}, Fog Computing
-\cite{bonomi2012fog}, Edge Computing \cite{davy2014challenges}, and Follow Me
-Cloud \cite{taleb2013follow}, to name a few.\\
+\noindent\tab Cloud computing (CC) is a resource-rich environment that has been imperative in expanding the reach and capabilities of IoT devices. It enables that clients outsource the allocation and management of resources (hardware or software) that they rely upon to the cloud. In addition, to avoid over- or under-provisioning, cloud service providers (CSPs) also afford dynamic resources for a scalable workload, applying a pay-as-you-go cost model. So, cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing. %[https://aws.amazon.com/what-is-cloud-computing/].
+This way, besides overcoming the aforementioned limitations, it also brings other advantages such as availability, flexibility, scalability, reliability, to mention a few.\\
+\noindent\tab Despite the benefits of using cloud computing, two main problems, linked to IoT applications, remain unresolved and they can not be underestimated. The first, and the most obvious, is the fact that cloud servers reside in remote data centers and, consequently, the end-to-end communication have long delays (characteristic of multi-hops transmissions over the Internet). Some applications, with ultra-low latency requirements, can't support such delays. Augmented reality applications that use head-tracked systems, for example, require end-to-end latencies to be less than 16 ms \cite{ellis2004generalizeability}. Cloud-based virtual desktop applications require end-to-end latency below 60 ms if they are to match QoS of local execution \cite{taylor2015virtual}. Remotely rendered video conference, on the other hand, demand end-to-end latency below 150 ms \cite{szigeti2005end}. On the other hand, the constantly growing number of IoT devices raises the other problem. The basic premise is that as the number of connected devices increases, the bandwidth required to support them becomes too large for centralized processing (i.e. CC). As a fallout of this sense-process-actuate model, where the processing is done in the cloud, there are two immediately apparent options: (1) increase the number of centralized cloud data centers, what will be too costly, and (2) get more efficient with the data sent to the cloud.\\
+\noindent\tab To overcome this limitations, the solution that has already been proposed is to bring the cloud closer to the end devices, where entities such as base-stations would host smaller sized clouds. This idea has brought the emergence of several computing paradigms such as cloudlets \cite{satyanarayanan2013cloudlets}, fog computing \cite{bonomi2012fog}, edge computing \cite{davy2014challenges}, and follow me cloud \cite{taleb2013follow}, to name a few. However, they all share the same goal, achieve the option number (2), doing more processing in the things-to-cloud continuum instead of in the cloud.\\
 %Context - FOG COMPUTING
 \noindent\tab Fog computing is a new computing architecture that aims to enable
 computing, storage, networking, and data management not only in the cloud, but

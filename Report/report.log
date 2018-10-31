@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  30 OCT 2018 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  31 OCT 2018 09:32
 entering extended mode
 **./report.tex
 (report.tex
@@ -682,8 +682,11 @@ bil-ity, op-ti-miza-tion, multi-objective
 
  [2
 
-] (Sections/introduction.tex [3] [4]) (Sections/related_work.tex [5] [6] [7] [8
-] [9] [10]
+] (Sections/introduction.tex [3]
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [4])
+(Sections/related_work.tex [5] [6] [7] [8] [9] [10]
 <images/computing_paradigms.png, id=39, 836.52525pt x 491.436pt>
 File: images/computing_paradigms.png Graphic file (type png)
 <use images/computing_paradigms.png>
@@ -894,7 +897,7 @@ extreme-edge-mist-computing-
 Here is how much of TeX's memory you used:
  8744 strings out of 492973
  143265 string characters out of 3127135
- 239569 words of memory out of 3000000
+ 237569 words of memory out of 3000000
  12429 multiletter control sequences out of 15000+200000
  7913 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -908,7 +911,7 @@ s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pf
 b><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (23 pages, 710088 bytes).
+Output written on report.pdf (23 pages, 710763 bytes).
 PDF statistics:
  153 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
