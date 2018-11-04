@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  31 OCT 2018 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  4 NOV 2018 19:59
 entering extended mode
 **./report.tex
 (report.tex
@@ -683,7 +683,7 @@ bil-ity, op-ti-miza-tion, multi-objective
  [2
 
 ] (Sections/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--17
+Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
 
@@ -691,92 +691,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--17
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4])
-(Sections/related_work.tex [5] [6] [7] [8] [9] [10]
-<images/computing_paradigms.png, id=39, 836.52525pt x 491.436pt>
+(Sections/related_work.tex [5] [6] [7] [8]
+<images/computing_paradigms.png, id=33, 836.19785pt x 487.45872pt>
 File: images/computing_paradigms.png Graphic file (type png)
 <use images/computing_paradigms.png>
-Package pdftex.def Info: images/computing_paradigms.png  used on input line 81.
+Package pdftex.def Info: images/computing_paradigms.png  used on input line 47.
 
-(pdftex.def)             Requested size: 256.0748pt x 150.4389pt.
-<images/fog_architecture/fog_architecture.pdf, id=41, 566.115pt x 474.77374pt>
+(pdftex.def)             Requested size: 256.0748pt x 149.27345pt.
+ [9]
+<images/fog_architecture/fog_architecture.pdf, id=38, 601.24625pt x 493.845pt>
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
-input line 97.
-(pdftex.def)             Requested size: 284.52756pt x 238.62509pt.
- [11 <./images/computing_paradigms.png>] [12 <./images/fog_architecture/fog_arc
-hitecture.pdf
+input line 73.
+(pdftex.def)             Requested size: 397.485pt x 326.48878pt.
+ [10 <./images/computing_paradigms.png>]
+Underfull \vbox (badness 1472) has occurred while \output is active []
+
+ [11 <./images/fog_architecture/fog_architecture.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
->]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+>] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+
+ []
+
+[13] [14]
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 125--128
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+
+ []
+
+
+Underfull \vbox (badness 6575) has occurred while \output is active []
+
+ [18]
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
@@ -785,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
-[15]
+
 Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
@@ -795,42 +846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--212
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
-
- []
-
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 225--227
 
  []
@@ -840,80 +856,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
-
- []
-
-
-Overfull \hbox (5.43246pt too wide) in paragraph at lines 252--254
+Overfull \hbox (5.43246pt too wide) in paragraph at lines 231--233
 []\OT1/cmr/m/n/10 [[]] The au-thors pro-pose an-other edge com-put-ing sim-u-la
 -tion en-vi-ron-ment, Edge-CloudSim,
  []
 
-) [19] (Sections/architecture.tex) (Sections/evaluation.tex)
-(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [20]
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+) [20] (Sections/architecture.tex) (Sections/evaluation.tex)
+(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [21]
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
+Underfull \hbox (badness 10000) in paragraph at lines 110--113
 []\OT1/cmr/m/n/9 ``Etsi - multi-access edge com-put-ing,'' https://www.etsi.org
 /technologies-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 []\OT1/cmr/m/n/9 ``Mobile edge com-put-ing vs. multi-access edge com-put-ing,''
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--108
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 \OT1/cmr/m/n/9 https://www.sdxcentral.com/mec/definitions/mobile-edge-computing
 -vs-multi-access-edge-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 132--136
+Underfull \hbox (badness 2662) in paragraph at lines 136--140
 []\OT1/cmr/m/n/9 ``Cisco pushes iot an-a-lyt-ics to the ex-treme edge with mist
  com-put-ing - re-think,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--136
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 \OT1/cmr/m/n/9 https://rethinkresearch.biz/articles/cisco-pushes-iot-analytics-
 extreme-edge-mist-computing-
  []
 
-[21]) [22] (report.aux) ) 
+[22]) [23] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 8745 strings out of 492973
- 143284 string characters out of 3127135
- 241574 words of memory out of 3000000
- 12430 multiletter control sequences out of 15000+200000
- 7913 words of font info for 28 fonts, out of 3000000 for 9000
+ 8756 strings out of 492973
+ 143399 string characters out of 3127135
+ 242578 words of memory out of 3000000
+ 12435 multiletter control sequences out of 15000+200000
+ 9889 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,6n,42p,1904b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,42p,2190b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Jose/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Jose/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
-s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pf
+s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
 b><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (22 pages, 711736 bytes).
+cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on report.pdf (23 pages, 912325 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 167 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

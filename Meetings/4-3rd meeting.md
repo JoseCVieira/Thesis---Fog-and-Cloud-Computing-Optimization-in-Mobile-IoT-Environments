@@ -142,7 +142,7 @@ With the state-of-the-art virtualization technologies, services can be implement
 [Migration Optimization]
 ----------
 ----------
-[237] 2013 **Migcep: operator migration for mobility driven distributed complex event processing.** ✓ [REPORT - MIGRATION OPTIMIZATION]
+[237] 2013 **Migcep: operator migration for mobility driven distributed complex event processing.** ✓
 
 Most work studying the placement of operators in such an environment completely disregards the migration costs. However, the mobility of users requires frequent migration of operators, together with possibly large state information, to meet latency restrictions and save bandwidth in the infrastructure. In this papers, Beate Ottenwälder et al. **present a placement and migration method** for providers of infrastructures that incorporate cloud and fog resources. **It ensures application-defined end-to-end latency restrictions and reduces the network utilization by planning the migration ahead of time using predicted mobility patterns.** Furthermore, present how the application **knowledge of the complex event processing (CEP) system can be used to improve current live migration techniques for Virtual Machines (VMs) to reduce the required bandwidth during the migration.** First, **it allows us to amortize the migration costs by selecting migration targets that ensure a low expected network utilization for a sufficiently long time.** Second, it allows us to serialize the operator for the migration and migrating parts of the operator a priori in away where unnecessary events are not migrated and bandwidth is reduced.
 
@@ -152,6 +152,7 @@ Most work studying the placement of operators in such an environment completely 
 - Assegura as restrições de latência end-to-end;
 - Complex event processing (CEP) pode ser utilizado para melhorar as técnicas de live migration de VMs;
 - Minimiza custos de migração selecionando alvos que asseguram uma previsão de utilização de rede reduzida durante um tempo suficientemente longo;
+- Não considera mobilidade dos fog nodes. Apenas considera mobilidade dos sensores e consumidores.
 
 ----------
 [231] 2015 **Dynamic service migration and workload scheduling in edge-clouds.** ✓ [REPORT - MIGRATION OPTIMIZATION]
@@ -232,7 +233,7 @@ Abdelwahab et al. design **FogMQ, a self-deploying brokering clones that discove
 - Não ignora o facto das migrações terem um custo temporal então propõe um mecanismo para suavizar esta transição.
 
 ----------
-2016 **Scalable Fog Computing with Service Offloading in Bus Networks.** ✓ [REPORT - MOBILE FOG COMPUTING & MIGRATION OPTIMIZATION]
+2016 **Scalable Fog Computing with Service Offloading in Bus Networks.** ✓ [REPORT - MOBILE FOG COMPUTING]
 
 In this paper, they **leverage the characteristics of buses** and propose a scalable fog computing paradigm with servicing offloading in bus networks. **The bus fog servers not only provide fog computing services for the mobile users on bus, but also are motivated to accomplish the computation tasks offloaded by roadside cloudlets. By this way, the computing capability of roadside cloudlets is significantly extended. They consider an allocation strategy using genetic algorithm (GA). With this strategy, the roadside cloudlets spend the least cost to offload their computation tasks. Meanwhile, the user experience of mobile users are maintained.**
 

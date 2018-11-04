@@ -6,22 +6,21 @@
 \contentsline {section}{\numberline {2}Related Work}{6}
 \contentsline {subsection}{\numberline {2.1}Computing paradigms}{6}
 \contentsline {subsubsection}{\numberline {2.1.1}Mobile computing}{6}
-\contentsline {subsubsection}{\numberline {2.1.2}Mobile Cloud Computing}{7}
+\contentsline {subsubsection}{\numberline {2.1.2}Mobile Cloud Computing}{6}
 \contentsline {subsubsection}{\numberline {2.1.3}Mobile ad hoc Cloud Computing}{7}
 \contentsline {subsubsection}{\numberline {2.1.4}Edge Computing}{7}
 \contentsline {subsubsection}{\numberline {2.1.5}Multi-access Edge Computing}{8}
-\contentsline {subsubsection}{\numberline {2.1.6}Cloudlet Computing}{9}
+\contentsline {subsubsection}{\numberline {2.1.6}Cloudlet Computing}{8}
 \contentsline {subsubsection}{\numberline {2.1.7}Mist Computing}{9}
-\contentsline {subsubsection}{\numberline {2.1.8}Fog computing}{9}
-\contentsline {subsubsection}{\numberline {2.1.9}Other Similar Computing Paradigms}{10}
-\contentsline {subsubsection}{\numberline {2.1.10}Concluding Remarks}{10}
-\contentsline {subsection}{\numberline {2.2}Mobile Fog Computing}{13}
-\contentsline {subsection}{\numberline {2.3}Handover}{14}
-\contentsline {subsection}{\numberline {2.4}Data placement}{15}
-\contentsline {subsection}{\numberline {2.5}Migration Optimization}{17}
-\contentsline {subsection}{\numberline {2.6}Multi-objective}{19}
-\contentsline {subsection}{\numberline {2.7}Toolkits}{19}
-\contentsline {section}{\numberline {3}Architecture}{20}
-\contentsline {section}{\numberline {4}Evaluation}{20}
-\contentsline {section}{\numberline {5}Schedule of Future Work}{20}
-\contentsline {section}{\numberline {6}Conclusion}{20}
+\contentsline {subsubsection}{\numberline {2.1.8}Concluding Remarks}{9}
+\contentsline {subsection}{\numberline {2.2}Fog computing architecture}{10}
+\contentsline {subsection}{\numberline {2.3}Data placement}{13}
+\contentsline {subsection}{\numberline {2.4}Migration Optimization}{15}
+\contentsline {subsection}{\numberline {2.5}Mobile Fog Computing}{17}
+\contentsline {subsubsection}{\numberline {2.5.1}Handover}{19}
+\contentsline {subsection}{\numberline {2.6}Multi-objective}{20}
+\contentsline {subsection}{\numberline {2.7}Toolkits}{20}
+\contentsline {section}{\numberline {3}Architecture}{21}
+\contentsline {section}{\numberline {4}Evaluation}{21}
+\contentsline {section}{\numberline {5}Schedule of Future Work}{21}
+\contentsline {section}{\numberline {6}Conclusion}{21}
