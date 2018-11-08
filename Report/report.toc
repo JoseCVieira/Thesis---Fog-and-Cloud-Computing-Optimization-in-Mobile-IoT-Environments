@@ -16,11 +16,13 @@
 \contentsline {subsection}{\numberline {2.2}Fog computing architecture}{10}
 \contentsline {subsection}{\numberline {2.3}Data placement}{13}
 \contentsline {subsection}{\numberline {2.4}Migration Optimization}{15}
+\contentsline {subsubsection}{\numberline {2.4.1}Mobility of end devices}{15}
+\contentsline {subsubsection}{\numberline {2.4.2}Mobility of fog servers}{17}
 \contentsline {subsection}{\numberline {2.5}Mobile Fog Computing}{17}
 \contentsline {subsubsection}{\numberline {2.5.1}Handover}{19}
 \contentsline {subsection}{\numberline {2.6}Multi-objective}{20}
 \contentsline {subsection}{\numberline {2.7}Toolkits}{20}
-\contentsline {section}{\numberline {3}Architecture}{21}
-\contentsline {section}{\numberline {4}Evaluation}{21}
-\contentsline {section}{\numberline {5}Schedule of Future Work}{21}
-\contentsline {section}{\numberline {6}Conclusion}{21}
+\contentsline {section}{\numberline {3}Architecture}{22}
+\contentsline {section}{\numberline {4}Evaluation}{22}
+\contentsline {section}{\numberline {5}Schedule of Future Work}{22}
+\contentsline {section}{\numberline {6}Conclusion}{22}

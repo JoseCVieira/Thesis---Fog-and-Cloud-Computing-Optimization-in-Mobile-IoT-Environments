@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  4 NOV 2018 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  8 NOV 2018 10:36
 entering extended mode
 **./report.tex
 (report.tex
@@ -714,41 +714,76 @@ pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--108
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+(sections/subsections/migration_optimization.tex [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+)
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-[15]
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
@@ -759,57 +794,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
@@ -817,53 +812,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--172
 Underfull \vbox (badness 6575) has occurred while \output is active []
 
  [18]
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--186
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--230
+Underfull \hbox (badness 10000) in paragraph at lines 198--200
 
  []
 
 
-Overfull \hbox (5.43246pt too wide) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
+
+ []
+
+
+Overfull \hbox (5.43246pt too wide) in paragraph at lines 204--206
 []\OT1/cmr/m/n/10 [[]] The au-thors pro-pose an-other edge com-put-ing sim-u-la
 -tion en-vi-ron-ment, Edge-CloudSim,
  []
 
-) [20] (Sections/architecture.tex) (Sections/evaluation.tex)
-(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [21]
+[20]) [21] (Sections/architecture.tex) (Sections/evaluation.tex)
+(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [22]
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
@@ -899,12 +894,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--140
 extreme-edge-mist-computing-
  []
 
-[22]) [23] (report.aux) ) 
+[23]) [24] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 8756 strings out of 492973
- 143399 string characters out of 3127135
+ 8762 strings out of 492973
+ 143657 string characters out of 3127135
  242578 words of memory out of 3000000
- 12435 multiletter control sequences out of 15000+200000
+ 12436 multiletter control sequences out of 15000+200000
  9889 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,10n,42p,2190b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -919,9 +914,9 @@ cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (23 pages, 912325 bytes).
+Output written on report.pdf (24 pages, 913865 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
+ 170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
