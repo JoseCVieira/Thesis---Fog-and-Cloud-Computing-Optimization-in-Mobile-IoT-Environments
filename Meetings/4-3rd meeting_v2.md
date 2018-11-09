@@ -108,6 +108,8 @@ Study of mobility support issue in fog computing for guaranteeing service contin
 
 To guarantee the strict latency requirements, new solutions are required to cope with the user mobility in a distributed edge cloud environment. The use of proactive replication mechanism seems promising to avoid QoE degradation during service migration between different edge nodes. However, accounting for the limited resources of edge micro data-centers, appropriate optimization solutions must be developed to reduce the cost of service deployment, while guaranteeing the desired QoE. In this paper, Ivan Farris et al., by leveraging on prediction schemes of user mobility patterns, have proposed two linear optimization solutions for replication-based service migration in cellular 5G networks: the min-RM approach aims at minimizing the QoE degradation during user handover; min-NSR approach favors the reduction of service replication cost. Simulation results proved the efficiency of each solution in achieving its design goal and provides useful information for network and service orchestrators in next-generation 5G cloud-based networks.
 
+- Avaptive avatar handoff in the cloudlet network (2017)
+
 ----------
 [Virtual Objects / Foglets]
 ----------
@@ -139,11 +141,11 @@ The authors address the problem of multi-component application placement on fog 
 With the state-of-the-art virtualization technologies, services can be implemented in modular software as a graph/chain of portable VOs that can be dynamically migrated around the Telco infrastructure. It is proposed a VO clustering and migration policy that jointly considers user proximity and inter-VO affinity to scalably support user mobility, while allowing service differentiation among users.
 
 ----------
-[Migration Optimization]
+[Migration optimization in mobile fog environments]
 ----------
 ----------
 
-- Mobile IoT devices
+- Latency-aware with mobile IoT devices
 	- [237] Migcep: operator migration for mobility driven distributed complex event processing (2013)
 	- [231] Dynamic service migration and workload scheduling in edge-clouds (2015)
 	- [232] Segue: Quality of service aware edge cloud service migration (2016)
@@ -151,11 +153,19 @@ With the state-of-the-art virtualization technologies, services can be implement
 	- [123] When clones flock near the fog (2018)
 	- [217] Mobile edge cloud network design optimization (2017)
 	- [247] Towards efficient edge cloud augmentation for virtual reality mmogs (2017)
-- Mobile fog servers
+- Latency-aware with mobile fog servers
 	- Scalable Fog Computing with Service Offloading in Bus Networks (2016)
-
-	10 42(energy) 43? 45 (pricing problems with the buyer and the vendor)
-	46 47 48 49 50 51 52 53 54
+- Energy-aware
+	- Study of migration policies in energy-aware virtual router networks - energy
+	- Energy efficient vm scheduling for cloud data centers: Exact allocation and migration algorithms - energy
+	- A solution of dynamic VMs placement problem for energy consumption optimization based on evolutionary game theory
+	- Joint virtual machine placement and migration scheme for datacenters (energy - cloud computing)??
+	- Delay-constrained hybrid computation offloading with cloud and fog computing - energy
+- Others
+	- Cost of virtual machine live migration in clouds: A performance evaluation
+	- Live virtual machine migration with adaptive, memory compression
+	- Adaptive vm handoff across cloudlets
+	- Particle swarm optimization for bi-level pricing problems in supply chains - pricing problems with the buyer and the vendor
 
 ----------
 [Mobility]
@@ -284,3 +294,8 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 - Foglets
 - Bayesian optimization
 - fog architecture
+- falta chapters dos algoritmos de optimização
+
+IEEE infocom
+Globecom
+IFIP newtorking

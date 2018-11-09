@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  8 NOV 2018 10:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  9 NOV 2018 10:33
 entering extended mode
 **./report.tex
 (report.tex
@@ -691,19 +691,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--16
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4])
-(Sections/related_work.tex [5] [6] [7] [8]
+(Sections/related_work.tex [5]
+(sections/subsections/related_computing_paradigms.tex [6] [7] [8]
 <images/computing_paradigms.png, id=33, 836.19785pt x 487.45872pt>
 File: images/computing_paradigms.png Graphic file (type png)
 <use images/computing_paradigms.png>
-Package pdftex.def Info: images/computing_paradigms.png  used on input line 47.
+Package pdftex.def Info: images/computing_paradigms.png  used on input line 35.
 
 (pdftex.def)             Requested size: 256.0748pt x 149.27345pt.
- [9]
+) [9]
 <images/fog_architecture/fog_architecture.pdf, id=38, 601.24625pt x 493.845pt>
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
-input line 73.
+input line 36.
 (pdftex.def)             Requested size: 397.485pt x 326.48878pt.
  [10 <./images/computing_paradigms.png>]
 Underfull \vbox (badness 1472) has occurred while \output is active []
@@ -714,7 +715,93 @@ pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
+
+ []
+
+(sections/subsections/migration_optimization_in_mobile_fog_environments.tex
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
@@ -733,132 +820,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-(sections/subsections/migration_optimization.tex [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
-
- []
-
-
-Underfull \vbox (badness 6575) has occurred while \output is active []
-
- [18]
-Underfull \hbox (badness 10000) in paragraph at lines 142--144
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
-
- []
-
-
-Overfull \hbox (5.43246pt too wide) in paragraph at lines 204--206
+Overfull \hbox (5.43246pt too wide) in paragraph at lines 169--171
 []\OT1/cmr/m/n/10 [[]] The au-thors pro-pose an-other edge com-put-ing sim-u-la
 -tion en-vi-ron-ment, Edge-CloudSim,
  []
 
-[20]) [21] (Sections/architecture.tex) (Sections/evaluation.tex)
-(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [22]
+) [21] (Sections/algorithms.tex) (Sections/architecture.tex)
+(Sections/evaluation.tex) (Sections/schedule.tex) (Sections/conclusion.tex)
+(report.bbl [22]
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
@@ -896,13 +904,13 @@ extreme-edge-mist-computing-
 
 [23]) [24] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 8762 strings out of 492973
- 143657 string characters out of 3127135
- 242578 words of memory out of 3000000
- 12436 multiletter control sequences out of 15000+200000
+ 8769 strings out of 492973
+ 144029 string characters out of 3127135
+ 242614 words of memory out of 3000000
+ 12437 multiletter control sequences out of 15000+200000
  9889 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,42p,2190b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,42p,2296b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Jose/AppData/Local/P
@@ -914,7 +922,7 @@ cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (24 pages, 913865 bytes).
+Output written on report.pdf (24 pages, 916481 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
