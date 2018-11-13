@@ -206,10 +206,6 @@ X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
   edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
   Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
 
-\bibitem{sun2017avaptive}
-------, ``Avaptive avatar handoff in the cloudlet network,'' \emph{IEEE
-  Transactions on Cloud Computing}, no.~1, pp. 1--1, 2017.
-
 \bibitem{ye2016scalable}
 D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
   offloading in bus networks,'' in \emph{Cyber Security and Cloud Computing
@@ -227,6 +223,10 @@ M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
   \emph{Companion Proceedings of the10th International Conference on Utility
   and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
   47--52.
+
+\bibitem{sun2017avaptive}
+X.~Sun and N.~Ansari, ``Avaptive avatar handoff in the cloudlet network,''
+  \emph{IEEE Transactions on Cloud Computing}, no.~1, pp. 1--1, 2017.
 
 \bibitem{bao2017follow}
 W.~Bao, D.~Yuan, Z.~Yang, S.~Wang, W.~Li, B.~B. Zhou, and A.~Y. Zomaya,

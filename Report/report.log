@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  9 NOV 2018 10:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.27)  13 NOV 2018 21:44
 entering extended mode
 **./report.tex
 (report.tex
@@ -537,36 +537,70 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks39
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.c
-fg")) (report.aux)
+fg"))
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\bbding.sty"
+Package: bbding 1999/04/15 v1.01 Dingbats symbols
+)
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\makecell\makecell.s
+ty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen185
+\c@nlinenum=\count163
+\TeXr@lab=\toks40
+) ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count164
+\calc@Bcount=\count165
+\calc@Adimen=\dimen186
+\calc@Bdimen=\dimen187
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count166
+\calc@Cskip=\skip64
+)
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.st
+y"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.s
+ty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count163
-\scratchdimen=\dimen185
+\scratchcounter=\count167
+\scratchdimen=\dimen188
 \scratchbox=\box69
-\nofMPsegments=\count164
-\nofMParguments=\count165
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count166
-\MPscratchDim=\dimen186
-\MPnumerator=\count167
-\makeMPintoPDFobject=\count168
-\everyMPtoPDFconversion=\toks41
+\nofMPsegments=\count168
+\nofMParguments=\count169
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count170
+\MPscratchDim=\dimen189
+\MPnumerator=\count171
+\makeMPintoPDFobject=\count172
+\everyMPtoPDFconversion=\toks42
 )
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
 ase.sty"
@@ -666,8 +700,17 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
+
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 (Sections/abstract.tex)
-Overfull \hbox (1.37086pt too wide) in paragraph at lines 5--83
+Overfull \hbox (1.37086pt too wide) in paragraph at lines 5--93
 \OT1/cmr/bx/n/9 Keywords:\OT1/cmr/m/n/9 Cloud com-put-ing, fog com-put-ing, mo-
 bil-ity, op-ti-miza-tion, multi-objective 
  []
@@ -848,25 +891,187 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+[20] (sections/subsections/toolkits.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
 
-Overfull \hbox (5.43246pt too wide) in paragraph at lines 169--171
+Overfull \hbox (5.43246pt too wide) in paragraph at lines 11--13
 []\OT1/cmr/m/n/10 [[]] The au-thors pro-pose an-other edge com-put-ing sim-u-la
 -tion en-vi-ron-ment, Edge-CloudSim,
  []
 
-) [21] (Sections/algorithms.tex) (Sections/architecture.tex)
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+ding on input line 14.
+("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\uding.fd"
+File: Uding.fd 1996/02/01 v1.0 BBding font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `htbp') on input line 19.
+
+
+Overfull \hbox (1.76843pt too wide) in paragraph at lines 27--27
+ []|[]| 
+ []
+
+
+Overfull \hbox (0.83511pt too wide) in paragraph at lines 33--33
+ []|[]| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 40--40
+ []|\OT1/cmr/m/n/7 2016| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 41--41
+ []|\OT1/cmr/m/n/7 2015| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 42--42
+ []|\OT1/cmr/m/n/7 2016| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 43--43
+ []|\OT1/cmr/m/n/7 2015| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 44--44
+ []|\OT1/cmr/m/n/7 2015| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 45--45
+ []|\OT1/cmr/m/n/7 2009| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 46--46
+ []|\OT1/cmr/m/n/7 2017| 
+ []
+
+
+Overfull \hbox (1.338pt too wide) in paragraph at lines 47--47
+ []|\OT1/cmr/m/n/7 N/A| 
+ []
+
+
+Overfull \hbox (1.338pt too wide) in paragraph at lines 47--47
+ []|\OT1/cmr/m/n/7 N/A| 
+ []
+
+
+Overfull \hbox (1.338pt too wide) in paragraph at lines 47--47
+ []|\OT1/cmr/m/n/7 N/A| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 47--47
+ []|\OT1/cmr/m/n/7 2012| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 48--48
+ []|\OT1/cmr/m/n/7 2013| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 49--49
+ []|\OT1/cmr/m/n/7 2014| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 50--50
+ []|\OT1/cmr/m/n/7 2018| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 51--51
+ []|\OT1/cmr/m/n/7 2018| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 52--52
+ []|\OT1/cmr/m/n/7 2018| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 53--53
+ []|\OT1/cmr/m/n/7 2015| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 54--54
+ []|\OT1/cmr/m/n/7 2016| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 55--55
+ []|\OT1/cmr/m/n/7 2015| 
+ []
+
+
+Overfull \hbox (1.338pt too wide) in paragraph at lines 56--56
+ []|\OT1/cmr/m/n/7 N/A| 
+ []
+
+
+Overfull \hbox (1.338pt too wide) in paragraph at lines 56--56
+ []|\OT1/cmr/m/n/7 N/A| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 57--57
+ []|\OT1/cmr/m/n/7 2016| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 58--58
+ []|\OT1/cmr/m/n/7 2017| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 59--59
+ []|\OT1/cmr/m/n/7 2018| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 60--60
+ []|\OT1/cmr/m/n/7 2018| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 61--61
+ []|\OT1/cmr/m/n/7 2018| 
+ []
+
+
+Overfull \hbox (1.49075pt too wide) in paragraph at lines 62--62
+ []|\OT1/cmr/m/n/7 2016| 
+ []
+
+)) [21] [22] (Sections/algorithms.tex) (Sections/architecture.tex)
 (Sections/evaluation.tex) (Sections/schedule.tex) (Sections/conclusion.tex)
-(report.bbl [22]
+(report.bbl [23]
 Underfull \hbox (badness 10000) in paragraph at lines 102--104
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
@@ -902,29 +1107,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--140
 extreme-edge-mist-computing-
  []
 
-[23]) [24] (report.aux) ) 
+[24] [25]) [26] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 8769 strings out of 492973
- 144029 string characters out of 3127135
- 242614 words of memory out of 3000000
- 12437 multiletter control sequences out of 15000+200000
- 9889 words of font info for 35 fonts, out of 3000000 for 9000
+ 9428 strings out of 492973
+ 152447 string characters out of 3127135
+ 281920 words of memory out of 3000000
+ 13059 multiletter control sequences out of 15000+200000
+ 12611 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,42p,2296b,404s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Jose/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Jose/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
-s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on report.pdf (24 pages, 916481 bytes).
+ 44i,15n,42p,2296b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\public\bbding\dpi420\bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\public\bbding\dpi600\bbding10.pk><C:/Users/Jose/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr6.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Use
+rs/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/m
+sbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfd
+ing/uzdr.pfb>
+Output written on report.pdf (26 pages, 945446 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
+ 195 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

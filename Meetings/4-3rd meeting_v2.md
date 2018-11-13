@@ -155,6 +155,9 @@ With the state-of-the-art virtualization technologies, services can be implement
 	- [247] Towards efficient edge cloud augmentation for virtual reality mmogs (2017)
 - Latency-aware with mobile fog servers
 	- Scalable Fog Computing with Service Offloading in Bus Networks (2016)
+
+
+- TODO:
 - Energy-aware
 	- Study of migration policies in energy-aware virtual router networks - energy
 	- Energy efficient vm scheduling for cloud data centers: Exact allocation and migration algorithms - energy
@@ -299,3 +302,6 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 IEEE infocom
 Globecom
 IFIP newtorking
+
+The fog layer is a federation of geographically distributed fog servers, a coordinator server, and the cloud servers,
+check where bus papers was performed

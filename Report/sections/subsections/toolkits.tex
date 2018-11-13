@@ -1,0 +1,80 @@
+%!TEX encoding = UTF-8 Unicode
+\subsection{Toolkits}
+\label{sec:Toolkits}
+
+\cite{gupta2017ifogsim}
+In this paper they propose a simulator, called iFogSim, to model IoT and Fog environments and measure the impact of resource management techniques in latency, network congestion, energy consumption, and cost.\\
+
+\cite{Lopes2017}
+An extension of iFogSim to support mobility through migration of VMs between cloudlets.\\
+
+\cite{sonmez2017edgecloudsim}
+The authors propose another edge computing simulation environment, EdgeCloudSim, that considers both network and computational resources and covers all aspects of edge computing simulation ,including network and computational modelling. Similar to iFogSim, EdgeCloudSim relies on CloudSim as well. Additionally, EdgeCloudSim provides a modular architecture to provide support for a variety of critical functionality and supports simulating multi-tier scenarios where multiple edge servers are running in coordination with upper layer cloud solutions.\\
+
+\Checkmark\textsuperscript{\kern-0.9em$\diagdown$}\\
+
+\halfcorrect
+
+
+\begin{table}[]
+	\scriptsize
+	\begin{tabular}{| >{\centering\arraybackslash}m{1in} | >{\centering\arraybackslash}m{0.3in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} | >{\centering\arraybackslash}m{0.2in} |}
+		\toprule
+		Simulation Platform &
+		\begin{turn}{90}\shortstack{Programming\\language}\end{turn} &
+		\begin{turn}{90}\shortstack{Source code\\available}\end{turn} &
+		\begin{turn}{90}\shortstack{Documentation\\available}\end{turn} &
+		\begin{turn}{90}\shortstack{Graphical\\support (GUI)}\end{turn} &
+		\begin{turn}{90}\shortstack{Energy-aware}\end{turn} &
+		\begin{turn}{90}\shortstack{Cost-aware}\end{turn} &
+		\begin{turn}{90}\shortstack{Virtual machine\\(VM) support}\end{turn} &
+		\begin{turn}{90}\shortstack{Application\\Models}\end{turn} &
+		\begin{turn}{90}\shortstack{Communication\\model}\end{turn} &
+		\begin{turn}{90}\shortstack{Migration\\Support}\end{turn} &
+		\begin{turn}{90}\shortstack{Mobility-aware/\\Location-aware}\end{turn} &
+		\begin{turn}{90}\shortstack{Fog/Edge support}\end{turn} &
+		\begin{turn}{90}\shortstack{Last commit}\end{turn} &
+		\begin{turn}{90}\shortstack{Web page(s)}\end{turn} &
+		\begin{turn}{90}\shortstack{Paper(s)}\end{turn} \\
+		\midrule
+		CloudSim & Java & \Checkmark & \Checkmark &  & \Checkmark & \Checkmark & \Checkmark & \Checkmark & \Checkmark \Checkmark\textsuperscript{\kern-0.75em\ding{55}} & \Checkmark &  &  & 2016 & & \\ \midrule
+		CloudNetSim++ & C++ & OK &  & OK & OK & OK & OK & OK & OK & OK &  &  & 2015 \\ \midrule
+		GreenCloud & \shortstack{C++/\\ Otcl} & OK & OK &  & OK &  & OK & OK & OK & OK &  &  & 2016 \\ \midrule
+		iCanCloud & C++ & OK & OK & OK & OK & OK & OK & OK & OK &  &  &  & 2015 \\ \midrule
+		CloudSched & Java & OK &  & OK & OK &  & OK &  &  &  &  &  & 2015 \\ \midrule
+		CloudAnalyst* & Java & OK &  & OK &  & OK & OK & OK & (l) & OK & OK &  & 2009 \\ \midrule
+		DynamicCloudSim* & Java & OK &  &  & OK & OK & OK & OK & (l) & OK &  &  & 2017 \\ \midrule
+		CloudReports* & Java & OK &  & OK & OK & N/A & OK & N/A & N/A & OK &  &  & 2012 \\ \midrule
+		RealCloudSim* & Java & OK & (l) & OK & OK & OK & OK & OK & OK & OK &  &  & 2013 \\ \midrule
+		DCSim & Java & OK & (l) &  & OK &  & OK & OK & (l) & OK &  &  & 2014 \\ \midrule
+		CloudSim Plus* & Java & OK & OK &  & OK & OK & OK & OK & OK & OK &  &  & 2018 \\ \midrule
+		CloudSim Plus Automation* & Java & OK & OK &  & OK & OK & OK & OK & OK & OK &  &  & 2018 \\ \midrule
+		DISSECT-CF & Java & OK & OK &  & OK &  & OK &  & (l) & OK &  &  & 2018 \\ \midrule
+		WorkflowSim* & Java & OK & OK &  & OK & OK & OK & OK & (l) & OK &  &  & 2015 \\ \midrule
+		Cloud2Sim* & Java & OK &  &  & OK & OK & OK & OK & (l) & OK &  &  & 2016 \\ \midrule
+		CloudSimDisk* & Java & OK &  &  & OK & OK & OK & OK & (l) & OK &  &  & 2015 \\ \midrule
+		RECAP & Java &  &  & N/A & OK & OK & OK & OK & OK & OK & OK & OK & N/A \\ \midrule
+		iFogSim* & Java & OK & OK & OK & OK & OK & OK & OK & (l) &  &  & OK & 2016 \\ \midrule
+		MyiFogSim** & Java & OK &  & OK & OK & OK & OK & OK & (l) & OK & OK & OK & 2017 \\ \midrule
+		\shortstack{iFogSimWithData-\\Placement**} & Java & OK &  & OK & OK & OK & OK & OK & (l) &  &  & OK & 2018 \\ \midrule
+		EdgeCloudSim & Java & OK & OK &  &  & OK & OK & OK & OK &  & OK & OK & 2018 \\ \midrule
+		YAFS & \shortstack{Pyth-\\on} & OK & OK &  & (l) &  &  & (l) & (l) &  &  & OK & 2018 \\ \midrule
+		FogTorch & Java & OK &  &  &  &  & OK & OK & (l) &  &  & OK & 2016 \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+	\centering
+	\caption{Data Units, Sources, and Dates}
+	\renewcommand{\arraystretch}{1.5}% Spread rows out...
+	\begin{tabular}{|>{\centering\bfseries}m{1in}|>{\centering}m{1in}|    >{\centering}m{1in} | >{\centering\arraybackslash}m{1in}}
+		\toprule
+		Variable & \textbf{Dates} & \textbf{Units} & \textbf{Source} \\
+		\midrule
+		Nominal Physical Capital Stock & 1950-1990 & Billions  US\$ & Nehru and Dhareshwar (1993) \\
+		Total Population & 1950-1990 & Billions & Nehru and Dhareshwar (1993) \\
+		Nominal GDP & 1950-1990 & Billions  US\$ & PWT \\
+		Real GDP per capita & 1950-1990 & 2005 US\$ per capita & PWT \\
+		\bottomrule
+	\end{tabular}
+\end{table}
