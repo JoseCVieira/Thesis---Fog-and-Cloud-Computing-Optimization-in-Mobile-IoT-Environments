@@ -142,6 +142,23 @@ Y.~Jararweh, L.~Tawalbeh, F.~Ababneh, and F.~Dosari, ``Resource efficient
 M.~Iorga, L.~Feldman, R.~Barton, M.~J. Martin, N.~S. Goren, and C.~Mahmoudi,
   ``Fog computing conceptual model,'' Tech. Rep., 2018.
 
+\bibitem{openfog2017openfog}
+O.~C. A.~W. Group \emph{et~al.}, ``Openfog reference architecture for fog
+  computing,'' \emph{OPFRA001}, vol. 20817, p. 162, 2017.
+
+\bibitem{bonomi2014fog}
+F.~Bonomi, R.~Milito, P.~Natarajan, and J.~Zhu, ``Fog computing: A platform for
+  internet of things and analytics,'' in \emph{Big data and internet of things:
+  A roadmap for smart environments}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2014, pp. 169--186.
+
+\bibitem{gedeon2017router}
+J.~Gedeon, C.~Meurisch, D.~Bhat, M.~Stein, L.~Wang, and M.~M{\"u}hlh{\"a}user,
+  ``Router-based brokering for surrogate discovery in edge computing,'' in
+  \emph{Distributed Computing Systems Workshops (ICDCSW), 2017 IEEE 37th
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2017, pp. 145--150.
+
 \bibitem{saurez2016incremental}
 E.~Saurez, K.~Hong, D.~Lillethun, U.~Ramachandran, and B.~Ottenw{\"a}lder,
   ``Incremental deployment and migration of geo-distributed situation awareness
@@ -256,16 +273,218 @@ I.~Farris, T.~Taleb, M.~Bagaa, and H.~Flick, ``Optimizing service replication
   \emph{Communications (ICC), 2017 IEEE International Conference on}.\hskip 1em
   plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 1--6.
 
+\bibitem{kliazovich2012greencloud}
+D.~Kliazovich, P.~Bouvry, and S.~U. Khan, ``Greencloud: a packet-level
+  simulator of energy-aware cloud computing data centers,'' \emph{The Journal
+  of Supercomputing}, vol.~62, no.~3, pp. 1263--1283, 2012.
+
+\bibitem{malik2017cloudnetsim++}
+A.~W. Malik, K.~Bilal, S.~Malik, Z.~Anwar, K.~Aziz, D.~Kliazovich, N.~Ghani,
+  S.~U. Khan, and R.~Buyya, ``Cloudnetsim++: a gui based framework for modeling
+  and simulation of data centers in omnet++,'' \emph{IEEE Transactions on
+  Services Computing}, no.~4, pp. 506--519, 2017.
+
+\bibitem{wickremasinghe2010cloudanalyst}
+B.~Wickremasinghe, R.~N. Calheiros, and R.~Buyya, ``Cloudanalyst: A
+  cloudsim-based visual modeller for analysing cloud computing environments and
+  applications,'' in \emph{Advanced Information Networking and Applications
+  (AINA), 2010 24th IEEE International Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2010, pp. 446--452.
+
+\bibitem{lopes2017myifogsim}
+M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
+  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
+  \emph{Companion Proceedings of the10th International Conference on Utility
+  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
+  47--52.
+
+\bibitem{TheCLOUD47:online}
+``The clouds lab: Flagship projects - gridbus and cloudbus,''
+  \url{http://www.cloudbus.org/cloudsim/}, (Accessed on 11/15/2018).
+
+\bibitem{calheiros2011cloudsim}
+R.~N. Calheiros, R.~Ranjan, A.~Beloglazov, C.~A. De~Rose, and R.~Buyya,
+  ``Cloudsim: a toolkit for modeling and simulation of cloud computing
+  environments and evaluation of resource provisioning algorithms,''
+  \emph{Software: Practice and experience}, vol.~41, no.~1, pp. 23--50, 2011.
+
+\bibitem{cloudnet14:online}
+``cloudnetsim.seecs.edu.pk,'' \url{http://cloudnetsim.seecs.edu.pk/}, (Accessed
+  on 11/15/2018).
+
+\bibitem{Greenclo13:online}
+``Greencloud - the green cloud simulator,''
+  \url{https://greencloud.gforge.uni.lu/}, (Accessed on 11/15/2018).
+
+\bibitem{Website18:online}
+``Web site,'' \url{https://www.arcos.inf.uc3m.es/old/icancloud/Home.html},
+  (Accessed on 11/15/2018).
+
+\bibitem{nunez2012icancloud}
+A.~N{\'u}{\~n}ez, J.~L. V{\'a}zquez-Poletti, A.~C. Caminero, G.~G.
+  Casta{\~n}{\'e}, J.~Carretero, and I.~M. Llorente, ``icancloud: A flexible
+  and scalable cloud infrastructure simulator,'' \emph{Journal of Grid
+  Computing}, vol.~10, no.~1, pp. 185--209, 2012.
+
+\bibitem{CloudSch23:online}
+``Cloudsched download | sourceforge.net,''
+  \url{https://sourceforge.net/projects/cloudsched/}, (Accessed on 11/15/2018).
+
+\bibitem{tian2015toolkit}
+W.~Tian, Y.~Zhao, M.~Xu, Y.~Zhong, and X.~Sun, ``A toolkit for modeling and
+  simulation of real-time virtual machine allocation in a cloud data center,''
+  \emph{IEEE Transactions on Automation Science and Engineering}, vol.~12,
+  no.~1, pp. 153--161, 2015.
+
+\bibitem{marcbuxd5:online}
+``marcbux/dynamiccloudsim: Automatically exported from
+  code.google.com/p/dynamiccloudsim,''
+  \url{https://github.com/marcbux/dynamiccloudsim}, (Accessed on 11/15/2018).
+
+\bibitem{bux2015dynamiccloudsim}
+M.~Bux and U.~Leser, ``Dynamiccloudsim: Simulating heterogeneity in
+  computational clouds,'' \emph{Future Generation Computer Systems}, vol.~46,
+  pp. 85--99, 2015.
+
+\bibitem{thiagott93:online}
+``thiagotts/cloudreports: An extensible simulation tool for energy-aware cloud
+  computing environments,'' \url{https://github.com/thiagotts/CloudReports},
+  (Accessed on 11/15/2018).
+
+\bibitem{RealClou60:online}
+``Realcloudsim download | sourceforge.net,''
+  \url{https://sourceforge.net/projects/realcloudsim/}, (Accessed on
+  11/15/2018).
+
+\bibitem{digsuwod49:online}
+``digs-uwo/dcsim: Dcsim: A data centre simulation tool for evaluating dynamic
+  virtualized resource management,'' \url{https://github.com/digs-uwo/dcsim},
+  (Accessed on 11/15/2018).
+
+\bibitem{tighe2012dcsim}
+M.~Tighe, G.~Keller, M.~Bauer, and H.~Lutfiyya, ``Dcsim: A data centre
+  simulation tool for evaluating dynamic virtualized resource management,'' in
+  \emph{Network and service management (cnsm), 2012 8th international
+  conference and 2012 workshop on systems virtualiztion management
+  (svm)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2012, pp. 385--392.
+
+\bibitem{CloudSim79:online}
+``Cloudsim plus | a modern, full-featured, highly extensible and easier-to-use
+  java 8 framework for modeling and simulation of cloud computing
+  infrastructures and services,'' \url{http://cloudsimplus.org/}, (Accessed on
+  11/15/2018).
+
+\bibitem{silva2017cloudsim}
+M.~C. Silva~Filho, R.~L. Oliveira, C.~C. Monteiro, P.~R. In{\'a}cio, and M.~M.
+  Freire, ``Cloudsim plus: a cloud computing simulation framework pursuing
+  software engineering principles for improved modularity, extensibility and
+  correctness,'' in \emph{Integrated Network and Service Management (IM), 2017
+  IFIP/IEEE Symposium on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017,
+  pp. 400--406.
+
+\bibitem{manoelca57:online}
+``manoelcampos/cloudsim-plus-automation: Human readable scenario specification
+  for automated creation of simulations on cloudsim plus and cloudsim,''
+  \url{https://github.com/manoelcampos/cloudsim-plus-automation}, (Accessed on
+  11/15/2018).
+
+\bibitem{kecskeme90:online}
+``kecskemeti/dissect-cf: Discrete event based energy consumption simulator for
+  clouds and federations,'' \url{https://github.com/kecskemeti/dissect-cf},
+  (Accessed on 11/15/2018).
+
+\bibitem{kecskemeti2015dissect}
+G.~Kecskemeti, ``Dissect-cf: a simulator to foster energy-aware scheduling in
+  infrastructure clouds,'' \emph{Simulation Modelling Practice and Theory},
+  vol.~58, pp. 188--218, 2015.
+
+\bibitem{Workflow31:online}
+``Workflowsim/workflowsim-1.0: Wiki pages,''
+  \url{https://github.com/WorkflowSim/WorkflowSim-1.0}, (Accessed on
+  11/15/2018).
+
+\bibitem{chen2012workflowsim}
+W.~Chen and E.~Deelman, ``Workflowsim: A toolkit for simulating scientific
+  workflows in distributed environments,'' in \emph{E-science (e-science), 2012
+  IEEE 8th International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2012, pp. 1--8.
+
+\bibitem{Cloud2Si98:online}
+``Cloud2sim download | sourceforge.net,''
+  \url{https://sourceforge.net/projects/cloud2sim/}, (Accessed on 11/15/2018).
+
+\bibitem{kathiravelu2014adaptive}
+P.~Kathiravelu and L.~Veiga, ``An adaptive distributed simulator for cloud and
+  mapreduce algorithms and architectures,'' in \emph{Utility and Cloud
+  Computing (UCC), 2014 IEEE/ACM 7th International Conference on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2014, pp. 79--88.
+
+\bibitem{Udacity231:online}
+``Udacity2048/cloudsimdisk: A new storage modeling for cloudsim simulator.''
+  \url{https://github.com/Udacity2048/CloudSimDisk}, (Accessed on 11/15/2018).
+
+\bibitem{louis2015cloudsimdisk}
+B.~Louis, K.~Mitra, S.~Saguna, and C.~{\AA}hlund, ``Cloudsimdisk: Energy-aware
+  storage simulation in cloudsim,'' in \emph{Utility and Cloud Computing (UCC),
+  2015 IEEE/ACM 8th International Conference on}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2015, pp. 11--15.
+
+\bibitem{RECAPRel99:online}
+``Recap | reliable capacity provisioning and enhanced remediation for
+  distributed cloud applications,'' \url{https://recap-project.eu/}, (Accessed
+  on 11/15/2018).
+
+\bibitem{Cloudsla14:online}
+``Cloudslab/ifogsim: The ifogsim toolkit for modeling and simulation of
+  resource management techniques in internet of things, edge and fog computing
+  environments,'' \url{https://github.com/Cloudslab/iFogSim}, (Accessed on
+  11/15/2018).
+
 \bibitem{gupta2017ifogsim}
 H.~Gupta, A.~Vahid~Dastjerdi, S.~K. Ghosh, and R.~Buyya, ``ifogsim: A toolkit
   for modeling and simulation of resource management techniques in the internet
   of things, edge and fog computing environments,'' \emph{Software: Practice
   and Experience}, vol.~47, no.~9, pp. 1275--1296, 2017.
 
+\bibitem{marcioco38:online}
+``marciocomp/myifogsim: Myifogsim is a simulator for fog computing concerns. it
+  extends the ifogsim simulator to support virtual machine migration policies
+  for mobile users,'' \url{https://github.com/marciocomp/myifogsim}, (Accessed
+  on 11/15/2018).
+
+\bibitem{medislam49:online}
+``medislam/ifogsimwithdataplacement,''
+  \url{https://github.com/medislam/iFogSimWithDataPlacement}, (Accessed on
+  11/15/2018).
+
+\bibitem{naas2018extension}
+M.~I. Naas, J.~Boukhobza, P.~R. Parvedy, and L.~Lemarchand, ``An extension to
+  ifogsim to enable the design of data placement strategies,'' in \emph{Fog and
+  Edge Computing (ICFEC), 2018 IEEE 2nd International Conference on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2018, pp. 1--8.
+
+\bibitem{CagatayS20:online}
+``Cagataysonmez/edgecloudsim: Edgecloudsim: An environment for performance
+  evaluation of edge computing systems,''
+  \url{https://github.com/CagataySonmez/EdgeCloudSim}, (Accessed on
+  11/15/2018).
+
 \bibitem{sonmez2017edgecloudsim}
 C.~Sonmez, A.~Ozgovde, and C.~Ersoy, ``Edgecloudsim: An environment for
   performance evaluation of edge computing systems,'' in \emph{Fog and Mobile
   Edge Computing (FMEC), 2017 Second International Conference on}.\hskip 1em
   plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 39--44.
+
+\bibitem{yafsPyP38:online}
+``yafs pypi,'' \url{https://pypi.org/project/yafs/}, (Accessed on 11/15/2018).
+
+\bibitem{diunipis47:online}
+``di-unipi-socc/fogtorch,'' \url{https://github.com/di-unipi-socc/FogTorch},
+  (Accessed on 11/15/2018).
+
+\bibitem{brogi2017qos}
+A.~Brogi and S.~Forti, ``Qos-aware deployment of iot applications through the
+  fog,'' \emph{IEEE Internet of Things Journal}, vol.~4, no.~5, pp. 1185--1192,
+  2017.
 
 \end{thebibliography}

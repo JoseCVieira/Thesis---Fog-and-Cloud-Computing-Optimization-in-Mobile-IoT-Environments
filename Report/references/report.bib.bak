@@ -4,6 +4,16 @@
 % introduction %
 %%%%%%%%
 
+@article{evans2011internet,
+  title={The internet of things: How the next evolution of the internet is changing everything},
+  author={Evans, Dave},
+  journal={CISCO white paper},
+  volume={1},
+  number={2011},
+  pages={1--11},
+  year={2011}
+}
+
 @misc{CiscoVis16:online,
   author = {},
   title = {Cisco Visual Networking Index: Global Mobile Data Traffic Forecast Update, 2016–2021 White Paper - Cisco},
@@ -11,6 +21,15 @@
   month = {},
   year = {},
   note = {(Accessed on 10/25/2018)}
+}
+
+@misc{WhatisCl79:online,
+  author = {},
+  title = {What is Cloud Computing? - Amazon Web Services},
+  howpublished = {\url{https://aws.amazon.com/what-is-cloud-computing/}},
+  month = {},
+  year = {},
+  note = {(Accessed on 11/01/2018)}
 }
 
 @inproceedings{ellis2004generalizeability,
@@ -76,6 +95,15 @@
   pages={12--19},
   year={2013},
   publisher={IEEE}
+}
+
+@misc{Cloudlet83:online,
+  author = {},
+  title = {Cloudlet - Wikipedia},
+  howpublished = {\url{https://en.wikipedia.org/wiki/Cloudlet}},
+  month = {},
+  year = {},
+  note = {(Accessed on 10/31/2018)}
 }
 
 @article{yousefpour2018all,
@@ -312,6 +340,15 @@
   organization = {ACM},
 }
 
+@article{sun2017avaptive,
+  title={Avaptive avatar handoff in the cloudlet network},
+  author={Sun, Xiang and Ansari, Nirwan},
+  journal={IEEE Transactions on Cloud Computing},
+  number={1},
+  pages={1--1},
+  year={2017},
+  publisher={IEEE}
+}
 
 %%%%%%%
 % handover %
@@ -421,6 +458,193 @@
 % toolkits %
 %%%%%%
 
+@article{calheiros2011cloudsim,
+  title={CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms},
+  author={Calheiros, Rodrigo N and Ranjan, Rajiv and Beloglazov, Anton and De Rose, C{\'e}sar AF and Buyya, Rajkumar},
+  journal={Software: Practice and experience},
+  volume={41},
+  number={1},
+  pages={23--50},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{malik2017cloudnetsim++,
+  title={CloudNetSim++: a GUI based framework for modeling and simulation of data centers in OMNeT++},
+  author={Malik, Asad W and Bilal, Kashif and Malik, SU and Anwar, Zahid and Aziz, Khurram and Kliazovich, Dzmitry and Ghani, Nasir and Khan, Samee U and Buyya, Rajkumar},
+  journal={IEEE Transactions on Services Computing},
+  number={4},
+  pages={506--519},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{kliazovich2012greencloud,
+  title={GreenCloud: a packet-level simulator of energy-aware cloud computing data centers},
+  author={Kliazovich, Dzmitry and Bouvry, Pascal and Khan, Samee Ullah},
+  journal={The Journal of Supercomputing},
+  volume={62},
+  number={3},
+  pages={1263--1283},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{nunez2012icancloud,
+  title={iCanCloud: A flexible and scalable cloud infrastructure simulator},
+  author={N{\'u}{\~n}ez, Alberto and V{\'a}zquez-Poletti, Jose L and Caminero, Agustin C and Casta{\~n}{\'e}, Gabriel G and Carretero, Jesus and Llorente, Ignacio M},
+  journal={Journal of Grid Computing},
+  volume={10},
+  number={1},
+  pages={185--209},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{tian2015toolkit,
+  title={A toolkit for modeling and simulation of real-time virtual machine allocation in a cloud data center},
+  author={Tian, Wenhong and Zhao, Yong and Xu, Minxian and Zhong, Yuanliang and Sun, Xiashuang},
+  journal={IEEE Transactions on Automation Science and Engineering},
+  volume={12},
+  number={1},
+  pages={153--161},
+  year={2015},
+  publisher={IEEE}
+}
+
+@inproceedings{wickremasinghe2010cloudanalyst,
+  title={Cloudanalyst: A cloudsim-based visual modeller for analysing cloud computing environments and applications},
+  author={Wickremasinghe, Bhathiya and Calheiros, Rodrigo N and Buyya, Rajkumar},
+  booktitle={Advanced Information Networking and Applications (AINA), 2010 24th IEEE International Conference on},
+  pages={446--452},
+  year={2010},
+  organization={IEEE}
+}
+
+@article{bux2015dynamiccloudsim,
+  title={Dynamiccloudsim: Simulating heterogeneity in computational clouds},
+  author={Bux, Marc and Leser, Ulf},
+  journal={Future Generation Computer Systems},
+  volume={46},
+  pages={85--99},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@inproceedings{tighe2012dcsim,
+  title={DCSim: A data centre simulation tool for evaluating dynamic virtualized resource management},
+  author={Tighe, Michael and Keller, Gaston and Bauer, Michael and Lutfiyya, Hanan},
+  booktitle={Network and service management (cnsm), 2012 8th international conference and 2012 workshop on systems virtualiztion management (svm)},
+  pages={385--392},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{silva2017cloudsim,
+  title={CloudSim plus: a cloud computing simulation framework pursuing software engineering principles for improved modularity, extensibility and correctness},
+  author={Silva Filho, Manoel C and Oliveira, Raysa L and Monteiro, Claudio C and In{\'a}cio, Pedro RM and Freire, M{\'a}rio M},
+  booktitle={Integrated Network and Service Management (IM), 2017 IFIP/IEEE Symposium on},
+  pages={400--406},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{kecskemeti2015dissect,
+  title={DISSECT-CF: a simulator to foster energy-aware scheduling in infrastructure clouds},
+  author={Kecskemeti, Gabor},
+  journal={Simulation Modelling Practice and Theory},
+  volume={58},
+  pages={188--218},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@inproceedings{chen2012workflowsim,
+  title={Workflowsim: A toolkit for simulating scientific workflows in distributed environments},
+  author={Chen, Weiwei and Deelman, Ewa},
+  booktitle={E-science (e-science), 2012 IEEE 8th International Conference on},
+  pages={1--8},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{kathiravelu2014adaptive,
+  title={An adaptive distributed simulator for cloud and mapreduce algorithms and architectures},
+  author={Kathiravelu, Pradeeban and Veiga, Luis},
+  booktitle={Utility and Cloud Computing (UCC), 2014 IEEE/ACM 7th International Conference on},
+  pages={79--88},
+  year={2014},
+  organization={IEEE}
+}
+
+@inproceedings{louis2015cloudsimdisk,
+  title={Cloudsimdisk: Energy-aware storage simulation in cloudsim},
+  author={Louis, Baptiste and Mitra, Karan and Saguna, Saguna and {\AA}hlund, Christer},
+  booktitle={Utility and Cloud Computing (UCC), 2015 IEEE/ACM 8th International Conference on},
+  pages={11--15},
+  year={2015},
+  organization={IEEE}
+}
+
+%%%%% recap
+
+@article{gupta2017ifogsim,
+  title={iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments},
+  author={Gupta, Harshit and Vahid Dastjerdi, Amir and Ghosh, Soumya K and Buyya, Rajkumar},
+  journal={Software: Practice and Experience},
+  volume={47},
+  number={9},
+  pages={1275--1296},
+  year={2017},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{lopes2017myifogsim,
+  title={Myifogsim: A simulator for virtual machine migration in fog computing},
+  author={Lopes, M{\'a}rcio Moraes and Higashino, Wilson A and Capretz, Miriam AM and Bittencourt, Luiz Fernando},
+  booktitle={Companion Proceedings of the10th International Conference on Utility and Cloud Computing},
+  pages={47--52},
+  year={2017},
+  organization={ACM}
+}
+
+@inproceedings{naas2018extension,
+  title={An Extension to iFogSim to Enable the Design of Data Placement Strategies},
+  author={Naas, Mohammed Islam and Boukhobza, Jalil and Parvedy, Philippe Raipin and Lemarchand, Laurent},
+  booktitle={Fog and Edge Computing (ICFEC), 2018 IEEE 2nd International Conference on},
+  pages={1--8},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{sonmez2017edgecloudsim,
+  title={EdgeCloudSim: An environment for performance evaluation of Edge Computing systems},
+  author={Sonmez, Cagatay and Ozgovde, Atay and Ersoy, Cem},
+  booktitle={Fog and Mobile Edge Computing (FMEC), 2017 Second International Conference on},
+  pages={39--44},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{brogi2017qos,
+  title={QoS-aware deployment of IoT applications through the fog},
+  author={Brogi, Antonio and Forti, Stefano},
+  journal={IEEE Internet of Things Journal},
+  volume={4},
+  number={5},
+  pages={1185--1192},
+  year={2017},
+  publisher={IEEE}
+}
+
+
+
+
+
+
+
+
+
 @article{gupta2017ifogsim,
   title={iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments},
   author={Gupta, Harshit and Vahid Dastjerdi, Amir and Ghosh, Soumya K and Buyya, Rajkumar},
@@ -440,6 +664,24 @@
   year={2017},
   organization={IEEE}
 }
+
+
+
+
+
+
+
+
+
+@techreport{iorga2018fog,
+  title={Fog Computing Conceptual Model},
+  author={Iorga, Michaela and Feldman, Larry and Barton, Robert and Martin, Michael J and Goren, Nedim S and Mahmoudi, Charif},
+  year={2018}
+}
+
+
+
+
 
 
 
@@ -538,13 +780,13 @@
   organization={IEEE}
 }
 
-@inproceedings{ye2016scalable,
-  title={Scalable fog computing with service offloading in bus networks},
-  author={Ye, Dongdong and Wu, Maoqiang and Tang, Shensheng and Yu, Rong},
-  booktitle={Cyber Security and Cloud Computing (CSCloud), 2016 IEEE 3rd International Conference on},
-  pages={247--251},
-  year={2016},
-  organization={IEEE}
+@InProceedings{Ye2016,
+  author       = {Ye, Dongdong and Wu, Maoqiang and Tang, Shensheng and Yu, Rong},
+  title        = {Scalable fog computing with service offloading in bus networks},
+  booktitle    = {Cyber Security and Cloud Computing (CSCloud), 2016 IEEE 3rd International Conference on},
+  year         = {2016},
+  pages        = {247--251},
+  organization = {IEEE},
 }
 
 @inproceedings{puliafito2017fog,

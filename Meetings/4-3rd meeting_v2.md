@@ -1,6 +1,5 @@
 [Fields]
 ----------
-----------
 - QoS																- Yes
 - QoE																- Yes
 - Cost 																- Yes
@@ -20,6 +19,13 @@
 	- Both all in one VM and application decomposition in modules
 	- For instance, modules with different E2E restrictions
 - Toolkits
+
+
+Introduction
+----------
+- [325] Router-based brokering for surrogate discovery in edge computing (2017)
+
+This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers. They look at the problem of surrogate discovery in the context of an urban area, where they are faced with a high mobility of devices and users. Multiple brokers are interconnected using Distributed Hash Tables (DHTs) in order to exchange information. In addition, their approach introduces only a small overhead on the devices (routers) and therefore does not impede their normal function.
 
 ----------
 [Load Balancing / Resource Allocation / Data placement]
@@ -64,11 +70,7 @@ In this paper they propose a simulator, called iFogSim, to model IoT and Fog env
 **Note: important**
 
 ----------
-[385] 2017 **Myifogsim: A simulator for virtual machine migration in fog computing.** ✓ [REPORT - TOOLKITS]
-
-An extension of iFogSim to support mobility through migration of VMs between cloudlets.
-
-**Note: important**
+- [385] Myifogsim: A simulator for virtual machine migration in fog computing (2017)
 
 ----------
 [388] 2017 **Edgecloudsim: An environment for performance evaluation of edge computing systems.** ? [REPORT - TOOLKITS]
@@ -195,11 +197,6 @@ Introduces the concept of movable cloudlets and explores the problem of how to c
 **Note: introduction, important?**
 
 ----------
-[325] 2017 **Router-based brokering for surrogate discovery in edge computing.** ? [REPORT - MOBILE FOG COMPUTING]
-
-This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers. They look at the problem of surrogate discovery in the context of an urban area, where they are faced with a high mobility of devices and users. Multiple brokers are interconnected using Distributed Hash Tables (DHTs) in order to exchange information. In addition, their approach introduces only a small overhead on the devices (routers) and therefore does not impede their normal function.
-
-----------
 2018 **Dynamic Mobile Cloudlet Clustering for Fog Computing.** ✓ [REPORT - MOBILE FOG COMPUTING]
 
 Fog Computing is one of the solutions for offloading the task of a mobile. However the capability of fog server is still limited due to the high deployment cost. In this paper, is proposed a dynamic mobile cloudlet cluster policy (DMCCP) to use cloudlets as a supplement for the fog server for offloading. The main idea is that by monitoring each mobile device resource amount, the DMCCP system clusters the optimal cloudlet to meet the requests of different tasks from the local mobile device.
@@ -298,6 +295,7 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 - Bayesian optimization
 - fog architecture
 - falta chapters dos algoritmos de optimização
+- No final verificar todas as abreviaturas
 
 IEEE infocom
 Globecom
@@ -305,3 +303,7 @@ IFIP newtorking
 
 The fog layer is a federation of geographically distributed fog servers, a coordinator server, and the cloud servers,
 check where bus papers was performed
+
+organizar bibtex
+falta paper do recap e do cloudreports
+referencia à imagem dos paradigmas (circulos) no survey
