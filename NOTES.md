@@ -21,20 +21,21 @@ Fields
 | Foglets | ✓ | ✓ | - |
 | Toolkits | ✓ | ✓ | - |
 
-Introduction
-----------
+- **Introduction**
+- **Related Work**
+	- **Related Computing Paradigms**
+	- **Fog Computing Architecture**
+		-asda
+		- **Overview**
+			- aasdas
+		- **Data placement**
+			- [197] Incremental deployment and migration of geo-distributed situation awareness applications in the fog (2016)
+			- [325] Router-based brokering for surrogate discovery in edge computing (2017)
 
+- Algorithms
 
 [Load Balancing / Resource Allocation / Data placement]
 ----------
-
-[197] 2016 **Incremental deployment and migration of geo-distributed situation awareness applications in the fog.** ✓ [REPORT - DATA PLACEMENT]
-
-Enrique Saurez et al. propose Foglets, a programming model that facilitates distributed programming across fog nodes. Foglets provides APIs for spatio-temporal data abstraction for storing and retrieving application-generated data on the local nodes. Through the API, Foglets processes are set for a certain geospatial region and Foglets manages the application components on the Fog nodes. Foglets is implemented through container-based visualization. The API takes into account QoS and load balancing when migrating persistent (stateful) data between fog nodes. It provides various functionalities: automatically discovers fog computing resources deploys application components onto the fog computing resources commensurate with the latency requirements of each component in the application. It supports multi-application collocation on any compute node. Provides communication APIs for components that are deployed at different physical levels of the network hierarchy to communicate with one another to exchange application state. Lastly, it supports both latency- and workload-driven resource adaptation and state migration over space (geographic) and time to deal with the dynamism in situation awareness application.
-
-
-
-- [325] Router-based brokering for surrogate discovery in edge computing (2017)
 
 2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.** ?
 
