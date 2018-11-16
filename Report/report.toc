@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {1.2}Objectives}{5}
 \contentsline {section}{\numberline {2}Related Work}{6}
 \contentsline {subsection}{\numberline {2.1}Related computing paradigms}{6}
-\contentsline {subsubsection}{\numberline {2.1.1}Mobile computing}{6}
+\contentsline {subsubsection}{\numberline {2.1.1}Mobile Computing}{6}
 \contentsline {subsubsection}{\numberline {2.1.2}Mobile Cloud Computing}{6}
 \contentsline {subsubsection}{\numberline {2.1.3}Mobile ad hoc Cloud Computing}{7}
 \contentsline {subsubsection}{\numberline {2.1.4}Edge Computing}{7}
@@ -14,8 +14,10 @@
 \contentsline {subsubsection}{\numberline {2.1.7}Mist Computing}{9}
 \contentsline {subsubsection}{\numberline {2.1.8}Concluding Remarks}{9}
 \contentsline {subsection}{\numberline {2.2}Fog computing architecture}{10}
-\contentsline {subsubsection}{\numberline {2.2.1}Data Placement}{13}
-\contentsline {subsubsection}{\numberline {2.2.2}Orchestration}{13}
+\contentsline {subsubsection}{\numberline {2.2.1}Overview}{11}
+\contentsline {subsubsection}{\numberline {2.2.2}Data Placement}{13}
+\contentsline {subsubsection}{\numberline {2.2.3}Visualization Mechanism}{13}
+\contentsline {subsubsection}{\numberline {2.2.4}Orchestration}{13}
 \contentsline {subsection}{\numberline {2.3}Data placement}{14}
 \contentsline {subsection}{\numberline {2.4}Migration optimization in mobile fog environments}{16}
 \contentsline {subsubsection}{\numberline {2.4.1}Latency-aware with mobile end-devices}{16}

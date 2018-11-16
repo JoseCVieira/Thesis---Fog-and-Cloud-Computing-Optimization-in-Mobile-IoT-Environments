@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  15 NOV 2018 21:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  16 NOV 2018 11:36
 entering extended mode
 **./report.tex
 (report.tex
@@ -905,30 +905,21 @@ Package pdftex.def Info: images/computing_paradigms.png  used on input line 35.
 
 (pdftex.def)             Requested size: 256.0748pt x 149.27345pt.
 )
-(sections/subsections/fog_architecture.tex [9]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-[10 <./images/computing_paradigms.png>]
+(sections/subsections/fog_architecture.tex [9] [10 <./images/computing_paradigm
+s.png>]
 <images/fog_architecture/fog_architecture.pdf, id=44, 601.24625pt x 493.845pt>
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
-input line 21.
+input line 22.
 (pdftex.def)             Requested size: 357.73407pt x 293.83765pt.
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1577) has occurred while \output is active []
 
  [12 <./images/fog_architecture/fog_architecture.pdf
 
@@ -936,16 +927,26 @@ pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-) (sections/subsections/data_placement.tex [13]
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+) (sections/subsections/data_placement.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
  []
@@ -960,13 +961,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-) (sections/subsections/migration_optimization_in_mobile_fog_environments.tex
-Underfull \hbox (badness 10000) in paragraph at lines 18--2
+[14])
+(sections/subsections/migration_optimization_in_mobile_fog_environments.tex
+Underfull \hbox (badness 10000) in paragraph at lines 15--2
 
  []
 
@@ -1220,7 +1217,7 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm5.pfb><
 C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
 bols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /zapfding/uzdr.pfb>
-Output written on report.pdf (29 pages, 959700 bytes).
+Output written on report.pdf (29 pages, 959890 bytes).
 PDF statistics:
  218 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,36 +1,41 @@
 [Fields]
 ----------
-- QoS																- Yes
-- QoE																- Yes
-- Cost 																- Yes
-- Energy 															- Yes
-- Handover 															- Yes
-- Mobility 															- Yes
-- Bandwidth 														- Yes
-- Migration Optimization 											- Yes
-- Vehicular Fog Computing 											- Yes
-- Data/Session Consistency 											- ?
-- VM/Resource/Job scheduling 										- No
-- Predicted Mobility Patterns 										- No
-- Proactive vs. Eeactive Service Migration 							- ?
-- Load Balancing / Resource Allocation / Data placement 			- Yes
-	- Not explicitly but, the algorithm should achieve this feature
-- Virtual Objects / Foglets 										- Yes
-	- Both all in one VM and application decomposition in modules
-	- For instance, modules with different E2E restrictions
-- Toolkits
-
+| Field | Address in the report | Implemented | Notes |
+| --- | --- | --- | --- |
+| QoS | ✓ | ✗ | - |
+| QoE | ✓ | ✗ | - |
+| Cost | ✓ | ✗ | - |
+| Energy | ✓ | ✗ | - |
+| Handover | ✓ | ✗ | - |
+| Mobility | ✓ | ✗ | - |
+| Bandwidth | ✓ | ✗ | - |
+| Migration Optimization | ✓ | ✗ | - |
+| Vehicular Fog Computing | ✓ | ✗ | - |
+| Data/Session Consistency | ✗ | - | - |
+| VM/Resource/Job scheduling | ✗ | - | - |
+| Predicted Mobility Patterns | ? | ? | - |
+| Proactive vs. Eeactive Service Migration | ? | ? | - |
+| Load Balancing / Resource Allocation / Data placement | ✓ | ✗ | - |
+| VM/Resource/Job scheduling | ✗ | - | Not explicitly but, the algorithm should achieve this feature |
+| Virtual Objects (application vs decomposition in modules) | ✓ | ✓ | - |
+| Foglets | ✓ | ✓ | - |
+| Toolkits | ✓ | ✓ | - |
 
 Introduction
 ----------
-- [325] Router-based brokering for surrogate discovery in edge computing (2017)
 
-This paper examines the problem of discovering surrogates, which are micro-clouds, fog nodes, or cloudlets, used by client devices to offload computation tasks in a fog computing environment. In order to enable the discovery and selection of available surrogates, the authors propose a brokering mechanism in which available surrogates advertise themselves to the broker. The broker receives client requests and considers a number of attributes such as network information, hardware capabilities, and distance to find the best available surrogate for the client. The proposed mechanism is implemented on off-the-shelf home routers. They look at the problem of surrogate discovery in the context of an urban area, where they are faced with a high mobility of devices and users. Multiple brokers are interconnected using Distributed Hash Tables (DHTs) in order to exchange information. In addition, their approach introduces only a small overhead on the devices (routers) and therefore does not impede their normal function.
 
-----------
 [Load Balancing / Resource Allocation / Data placement]
 ----------
-----------
+
+[197] 2016 **Incremental deployment and migration of geo-distributed situation awareness applications in the fog.** ✓ [REPORT - DATA PLACEMENT]
+
+Enrique Saurez et al. propose Foglets, a programming model that facilitates distributed programming across fog nodes. Foglets provides APIs for spatio-temporal data abstraction for storing and retrieving application-generated data on the local nodes. Through the API, Foglets processes are set for a certain geospatial region and Foglets manages the application components on the Fog nodes. Foglets is implemented through container-based visualization. The API takes into account QoS and load balancing when migrating persistent (stateful) data between fog nodes. It provides various functionalities: automatically discovers fog computing resources deploys application components onto the fog computing resources commensurate with the latency requirements of each component in the application. It supports multi-application collocation on any compute node. Provides communication APIs for components that are deployed at different physical levels of the network hierarchy to communicate with one another to exchange application state. Lastly, it supports both latency- and workload-driven resource adaptation and state migration over space (geographic) and time to deal with the dynamism in situation awareness application.
+
+
+
+- [325] Router-based brokering for surrogate discovery in edge computing (2017)
+
 2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.** ?
 
 This paper **proposes a new architecture based on load balancing algorithm in Fog Computing environment. Users sent the request to the nearby Fog servers which are consistently maintaining the frequently used data. In case, the users don’t get the desired resource in nearby Fog Servers who are also communicating with each other, then that request is forwarded to the cloud servers. To implement this load balancing algorithm they use modified Honey Bee Based algorithm.**
@@ -115,11 +120,6 @@ To guarantee the strict latency requirements, new solutions are required to cope
 ----------
 [Virtual Objects / Foglets]
 ----------
-----------
-[197] 2016 **Incremental deployment and migration of geo-distributed situation awareness applications in the fog.** ✓ [REPORT - DATA PLACEMENT]
-
-Enrique Saurez et al. propose Foglets, a programming model that facilitates distributed programming across fog nodes. Foglets provides APIs for spatio-temporal data abstraction for storing and retrieving application-generated data on the local nodes. Through the API, Foglets processes are set for a certain geospatial region and Foglets manages the application components on the Fog nodes. Foglets is implemented through container-based visualization. The API takes into account QoS and load balancing when migrating persistent (stateful) data between fog nodes. It provides various functionalities: automatically discovers fog computing resources deploys application components onto the fog computing resources commensurate with the latency requirements of each component in the application. It supports multi-application collocation on any compute node. Provides communication APIs for components that are deployed at different physical levels of the network hierarchy to communicate with one another to exchange application state. Lastly, it supports both latency- and workload-driven resource adaptation and state migration over space (geographic) and time to deal with the dynamism in situation awareness application.
-
 ----------
 [143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ✓ [REPORT - DATA PLACEMENT]
 
@@ -307,3 +307,4 @@ check where bus papers was performed
 organizar bibtex
 falta paper do recap e do cloudreports
 referencia à imagem dos paradigmas (circulos) no survey
+capitulos todos com iniciais maiusculas
