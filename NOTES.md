@@ -1,6 +1,6 @@
 Fields
 ----------
-| Field | Address in the report | Implemented | Notes |
+| Field | Report | Implemented | Notes |
 | --- | :---: | :---: | :---: |
 | QoS | ✓ | ✗ | - |
 | QoE | ✓ | ✗ | - |
