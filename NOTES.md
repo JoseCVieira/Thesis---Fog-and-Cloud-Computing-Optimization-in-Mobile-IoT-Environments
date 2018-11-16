@@ -294,3 +294,6 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 	- capitulos todos com iniciais maiusculas
 	- falta chapters dos algoritmos de optimização
 	- No final verificar todas as abreviaturas
+- Doubts
+	- É necessário fazer referência às gateways na arquitetura? -> Assessment of the Suitability of Fog Computing in the Context of Internet of Things
+	- Similar to the traditional cloud computing, fog offers tree types of service models: Software as a Service (SaaS), Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) ?

@@ -16,18 +16,18 @@
 \contentsline {subsection}{\numberline {2.2}Fog computing architecture}{10}
 \contentsline {subsubsection}{\numberline {2.2.1}Overview}{11}
 \contentsline {subsubsection}{\numberline {2.2.2}Data Placement}{13}
-\contentsline {subsubsection}{\numberline {2.2.3}Virtualization Mechanisms}{14}
+\contentsline {subsubsection}{\numberline {2.2.3}Virtualization Mechanisms}{13}
 \contentsline {subsubsection}{\numberline {2.2.4}Orchestration}{14}
 \contentsline {subsubsection}{\numberline {2.2.5}Concluding Remarks}{15}
-\contentsline {subsection}{\numberline {2.3}Migration optimization in mobile fog environments}{16}
-\contentsline {subsubsection}{\numberline {2.3.1}Latency-aware with mobile end-devices}{16}
-\contentsline {subsubsection}{\numberline {2.3.2}Latency-aware with mobile fog servers}{18}
-\contentsline {subsection}{\numberline {2.4}Mobile Fog Computing}{19}
-\contentsline {subsubsection}{\numberline {2.4.1}Handover}{20}
+\contentsline {subsection}{\numberline {2.3}Migration optimization in mobile fog environments}{15}
+\contentsline {subsubsection}{\numberline {2.3.1}Latency-aware with mobile end-devices}{15}
+\contentsline {subsubsection}{\numberline {2.3.2}Latency-aware with mobile fog servers}{17}
+\contentsline {subsection}{\numberline {2.4}Mobile Fog Computing}{18}
+\contentsline {subsubsection}{\numberline {2.4.1}Handover}{19}
 \contentsline {subsection}{\numberline {2.5}Multi-objective}{21}
-\contentsline {subsection}{\numberline {2.6}Toolkits}{22}
-\contentsline {section}{\numberline {3}Algoritms}{24}
-\contentsline {section}{\numberline {4}Architecture}{24}
-\contentsline {section}{\numberline {5}Evaluation}{25}
-\contentsline {section}{\numberline {6}Schedule of Future Work}{25}
-\contentsline {section}{\numberline {7}Conclusion}{25}
+\contentsline {subsection}{\numberline {2.6}Toolkits}{21}
+\contentsline {section}{\numberline {3}Algoritms}{23}
+\contentsline {section}{\numberline {4}Architecture}{23}
+\contentsline {section}{\numberline {5}Evaluation}{24}
+\contentsline {section}{\numberline {6}Schedule of Future Work}{24}
+\contentsline {section}{\numberline {7}Conclusion}{24}
