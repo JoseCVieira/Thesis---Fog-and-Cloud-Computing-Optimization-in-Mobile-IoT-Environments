@@ -72,9 +72,7 @@ This paper considers a specific **fog computing network consisting of** a set of
 - Propõe joint optimization de forma distribuída;
 - Formulam um Stackelberg game para analisar o problema de pricing para os DSOs e resource allocation para os DSSs.
 
-----------
 [Toolkits]
-----------
 ----------
 2017 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments.** ✓ [REPORT - TOOLKITS]
 
@@ -95,9 +93,7 @@ The authors propose another edge computing simulation environment, EdgeCloudSim,
 - Fornece uma arquitetura modelar;
 - Suporta simulações de cenários multi-tier onde vários edge servers correm em coordenação com uma layer superior de cloud solutions.
 
-----------
 [Handover]
-----------
 ----------
 [243] 2017 **Follow me fog: Toward seamless handover timing schemes in a fog computing environment.** ✓ [REPORT - HANDOVER]
 
@@ -125,9 +121,7 @@ To guarantee the strict latency requirements, new solutions are required to cope
 
 - Avaptive avatar handoff in the cloudlet network (2017)
 
-----------
 [Virtual Objects / Foglets]
-----------
 ----------
 [143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ✓ [REPORT - DATA PLACEMENT]
 
@@ -150,9 +144,7 @@ The authors address the problem of multi-component application placement on fog 
 
 With the state-of-the-art virtualization technologies, services can be implemented in modular software as a graph/chain of portable VOs that can be dynamically migrated around the Telco infrastructure. It is proposed a VO clustering and migration policy that jointly considers user proximity and inter-VO affinity to scalably support user mobility, while allowing service differentiation among users.
 
-----------
 [Migration optimization in mobile fog environments]
-----------
 ----------
 
 - Latency-aware with mobile IoT devices
@@ -180,9 +172,7 @@ With the state-of-the-art virtualization technologies, services can be implement
 	- Adaptive vm handoff across cloudlets
 	- Particle swarm optimization for bi-level pricing problems in supply chains - pricing problems with the buyer and the vendor
 
-----------
 [Mobility]
-----------
 ----------
 [172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.** ✓ [REPORT - MOBILE FOG COMPUTING]
 
@@ -209,9 +199,7 @@ Introduces the concept of movable cloudlets and explores the problem of how to c
 
 Fog Computing is one of the solutions for offloading the task of a mobile. However the capability of fog server is still limited due to the high deployment cost. In this paper, is proposed a dynamic mobile cloudlet cluster policy (DMCCP) to use cloudlets as a supplement for the fog server for offloading. The main idea is that by monitoring each mobile device resource amount, the DMCCP system clusters the optimal cloudlet to meet the requests of different tasks from the local mobile device.
 
-----------
 [Vehicular Fog Computing]
-----------
 ----------
 [145] 2017 **Cooperative fog computing for dealing with big data in the internet of vehicles: Architecture and hierarchical resource management.** ? 
 
@@ -247,9 +235,7 @@ They propose a two-level edge computing architecture for automated driving servi
 
 **Note: See again**
 
-----------
 [Introductory reference]
-----------
 ----------
 2017 **Fog Computing for the Internet of Mobile Things: issues and challenges.** ✓
 
@@ -264,9 +250,7 @@ How to appropriately place virtual machines (VMs) into fog nodes in F-RAN system
 
 **Note: introduction**
 
-----------
 [Others]
-----------
 ----------
 [160] 2018 **Multitier fog computing with large-scale iot data analytics for smart cities.** ?
 
@@ -274,45 +258,39 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 
 **Note: An early effort for mobile fog nodes**
 
-----------
-----------
 [QoS]
 ----------
-----------
-----------
+
 [QoE]
 ----------
-----------
-----------
+
 [Cost]
 ----------
-----------
-----------
+
 [Energy]
 ----------
-----------
-----------
+
 [Bandwidth]
 ----------
-----------
-----------
+
 [Further research]
 ----------
 - Movable cloudlets and mobile cloudlets
-- Foglets
 - Bayesian optimization
-- fog architecture
-- falta chapters dos algoritmos de optimização
-- No final verificar todas as abreviaturas
 
-IEEE infocom
-Globecom
-IFIP newtorking
+[Notes]
+----------
 
-The fog layer is a federation of geographically distributed fog servers, a coordinator server, and the cloud servers,
-check where bus papers was performed
-
-organizar bibtex
-falta paper do recap e do cloudreports
-referencia à imagem dos paradigmas (circulos) no survey
-capitulos todos com iniciais maiusculas
+- Publication papers
+	- IEEE infocom
+	- Globecom
+	- IFIP newtorking
+- TODO
+	- The fog layer is a federation of geographically distributed fog servers, a coordinator server, and the cloud servers,
+	- check where bus papers was performed
+	- organizar bibtex
+	- falta paper do recap e do cloudreports
+	- referencia à imagem dos paradigmas (circulos) no survey
+	- capitulos todos com iniciais maiusculas
+	- falta chapters dos algoritmos de optimização
+	- No final verificar todas as abreviaturas

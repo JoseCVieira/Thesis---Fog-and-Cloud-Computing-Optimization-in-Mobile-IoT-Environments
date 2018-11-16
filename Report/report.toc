@@ -16,16 +16,16 @@
 \contentsline {subsection}{\numberline {2.2}Fog computing architecture}{10}
 \contentsline {subsubsection}{\numberline {2.2.1}Overview}{11}
 \contentsline {subsubsection}{\numberline {2.2.2}Data Placement}{13}
-\contentsline {subsubsection}{\numberline {2.2.3}Visualization Mechanism}{13}
-\contentsline {subsubsection}{\numberline {2.2.4}Orchestration}{13}
-\contentsline {subsection}{\numberline {2.3}Data placement}{14}
-\contentsline {subsection}{\numberline {2.4}Migration optimization in mobile fog environments}{16}
-\contentsline {subsubsection}{\numberline {2.4.1}Latency-aware with mobile end-devices}{16}
-\contentsline {subsubsection}{\numberline {2.4.2}Latency-aware with mobile fog servers}{18}
-\contentsline {subsection}{\numberline {2.5}Mobile Fog Computing}{19}
-\contentsline {subsubsection}{\numberline {2.5.1}Handover}{20}
-\contentsline {subsection}{\numberline {2.6}Multi-objective}{21}
-\contentsline {subsection}{\numberline {2.7}Toolkits}{22}
+\contentsline {subsubsection}{\numberline {2.2.3}Virtualization Mechanisms}{14}
+\contentsline {subsubsection}{\numberline {2.2.4}Orchestration}{14}
+\contentsline {subsubsection}{\numberline {2.2.5}Concluding Remarks}{15}
+\contentsline {subsection}{\numberline {2.3}Migration optimization in mobile fog environments}{16}
+\contentsline {subsubsection}{\numberline {2.3.1}Latency-aware with mobile end-devices}{16}
+\contentsline {subsubsection}{\numberline {2.3.2}Latency-aware with mobile fog servers}{18}
+\contentsline {subsection}{\numberline {2.4}Mobile Fog Computing}{19}
+\contentsline {subsubsection}{\numberline {2.4.1}Handover}{20}
+\contentsline {subsection}{\numberline {2.5}Multi-objective}{21}
+\contentsline {subsection}{\numberline {2.6}Toolkits}{22}
 \contentsline {section}{\numberline {3}Algoritms}{24}
 \contentsline {section}{\numberline {4}Architecture}{24}
 \contentsline {section}{\numberline {5}Evaluation}{25}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  16 NOV 2018 11:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  16 NOV 2018 12:22
 entering extended mode
 **./report.tex
 (report.tex
@@ -893,10 +893,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4])
 (Sections/related_work.tex [5]
-
-LaTeX Warning: Reference `sec:Dataplacement' on page 6 undefined on input line 
-12.
-
 (sections/subsections/related_computing_paradigms.tex [6] [7] [8]
 <images/computing_paradigms.png, id=33, 836.19785pt x 487.45872pt>
 File: images/computing_paradigms.png Graphic file (type png)
@@ -914,7 +910,7 @@ Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on
 input line 22.
 (pdftex.def)             Requested size: 357.73407pt x 293.83765pt.
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
@@ -927,46 +923,50 @@ pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-
- []
-
-) (sections/subsections/data_placement.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 [14])
 (sections/subsections/migration_optimization_in_mobile_fog_environments.tex
-Underfull \hbox (badness 10000) in paragraph at lines 15--2
-
- []
-
 [15]
 
 LaTeX Warning: Reference `sec:Dataplacement' on page 16 undefined on input line
@@ -1008,72 +1008,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--29
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
@@ -1191,10 +1191,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10024 strings out of 492970
- 161316 string characters out of 3127037
- 295850 words of memory out of 3000000
- 13643 multiletter control sequences out of 15000+200000
+ 10019 strings out of 492970
+ 161134 string characters out of 3127037
+ 295801 words of memory out of 3000000
+ 13641 multiletter control sequences out of 15000+200000
  13285 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,42p,2296b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1217,7 +1217,7 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm5.pfb><
 C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
 bols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /zapfding/uzdr.pfb>
-Output written on report.pdf (29 pages, 959890 bytes).
+Output written on report.pdf (29 pages, 959789 bytes).
 PDF statistics:
  218 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
