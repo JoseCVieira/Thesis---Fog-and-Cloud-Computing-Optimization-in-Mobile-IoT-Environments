@@ -1,7 +1,7 @@
-[Fields]
+Fields
 ----------
 | Field | Address in the report | Implemented | Notes |
-| --- | --- | --- | --- |
+| --- | :---: | :---: | :---: |
 | QoS | ✓ | ✗ | - |
 | QoE | ✓ | ✗ | - |
 | Cost | ✓ | ✗ | - |
