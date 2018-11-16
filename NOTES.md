@@ -22,17 +22,24 @@ Fields
 | Toolkits | ✓ | ✓ | - |
 
 - **Introduction**
+	- **Motivation**
+	- **Objectives**
 - **Related Work**
 	- **Related Computing Paradigms**
 	- **Fog Computing Architecture**
-		-asda
 		- **Overview**
-			- aasdas
 		- **Data placement**
-			- [197] Incremental deployment and migration of geo-distributed situation awareness applications in the fog (2016)
-			- [325] Router-based brokering for surrogate discovery in edge computing (2017)
-
-- Algorithms
+			- Incremental deployment and migration of geo-distributed situation awareness applications in the fog (2016)
+			- Router-based brokering for surrogate discovery in edge computing (2017)
+		- **Virtualization Mechanisms**
+		- **Orchestration**
+	- **Migration Optimization In Mobile Fog Environments**
+	- **Toolkits**
+- **Algorithms**
+- **Architecture**
+- **Evaluation**
+- **Schedule of Future Work**
+- **Conclusion**
 
 [Load Balancing / Resource Allocation / Data placement]
 ----------
