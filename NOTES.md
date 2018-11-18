@@ -15,9 +15,10 @@ Fields
 | VM/Resource/Job scheduling | ✗ | - | - |
 | Predicted Mobility Patterns | ? | ? | - |
 | Proactive vs. Eeactive Service Migration | ? | ? | - |
-| Load Balancing / Resource Allocation / Data placement | ✓ | ✗ | - |
-| VM/Resource/Job scheduling | ✗ | - | Not explicitly but, the algorithm should achieve this feature |
-| Virtual Objects (application vs decomposition in modules) | ✓ | ✓ | - |
+| Load Balancing | ✓ | ✗ | Not explicitly but, the algorithm should achieve this feature |
+| Data placement | ✓ | ✗ | - |
+| VM/Resource/Job scheduling | ✗ | - | - |
+| Virtual Objects | ✓ | ✓ | - |
 | Foglets | ✓ | ✓ | - |
 | Toolkits | ✓ | ✓ | - |
 
@@ -27,12 +28,9 @@ Fields
 - **Related Work**
 	- **Related Computing Paradigms**
 	- **Fog Computing Architecture**
-		- **Overview**
-		- **Data placement**
+			- Developing iot applications in the fog: a distributed dataflow approach (2015)
 			- Incremental deployment and migration of geo-distributed situation awareness applications in the fog (2016)
 			- Router-based brokering for surrogate discovery in edge computing (2017)
-		- **Virtualization Mechanisms**
-		- **Orchestration**
 	- **Migration Optimization In Mobile Fog Environments**
 	- **Toolkits**
 - **Algorithms**
@@ -41,7 +39,7 @@ Fields
 - **Schedule of Future Work**
 - **Conclusion**
 
-[Load Balancing / Resource Allocation / Data placement]
+Load Balancing / Resource Allocation / Data placement
 ----------
 
 2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.** ?
@@ -72,7 +70,7 @@ This paper considers a specific **fog computing network consisting of** a set of
 - Propõe joint optimization de forma distribuída;
 - Formulam um Stackelberg game para analisar o problema de pricing para os DSOs e resource allocation para os DSSs.
 
-[Toolkits]
+Toolkits
 ----------
 2017 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments.** ✓ [REPORT - TOOLKITS]
 
@@ -99,6 +97,12 @@ The authors propose another edge computing simulation environment, EdgeCloudSim,
 
 The authors observe that traditional mobile network handover mechanisms cannot handle the demands of fog computation resources and the low-latency requirements of mobile IoT applications. The authors propose Follow Me Fog framework to guarantee service continuity and reduce latency during handovers. The key idea proposed is to continuously monitor the received signal strength of the fog nodes at the mobile IoT device, and to trigger pre-migration of computation jobs before disconnecting the IoT device from the existing fog node.
 
+[DOCKER ->
+- https://opensource.com/resources/what-docker
+-(PODE CORRER DENTRO DE MAQUINAS VISTUAIS LINUX (DE QUALQUER DISTRIBUIÇÃO))
+- Incremental deployment and migration of geo-distributed situation awareness applications in the fog
+]
+
 ----------
 [244] 2017 **Efficient service handoff across edge servers via docker container migration.** ✓ [REPORT - HANDOVER]
 
@@ -121,30 +125,7 @@ To guarantee the strict latency requirements, new solutions are required to cope
 
 - Avaptive avatar handoff in the cloudlet network (2017)
 
-[Virtual Objects / Foglets]
-----------
-[143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ✓ [REPORT - DATA PLACEMENT]
-
-They propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization  (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.
-
-**Note: See again**
-
-----------
-[201] 2015 **Developing iot applications in the fog: a distributed dataflow approach.** ? [REPORT - DATA PLACEMENT]
-
-This paper proposes a Distributed Dataflow (DDF) programming model for the IoT that utilizes computing infrastructures across the Fog and the Cloud. Also, evaluate their proposal by implementing a DDF framework based on Node-RED (Distributed Node-RED or D-NR), a visual programming tool that uses a flow-based model for building IoT applications. To address challenges of the intrinsic nature of the IoT (heterogeneous devices/resources, a tightly coupled perception-action cycle and widely distributed devices and processing), they propose a Distributed Dataflow (DDF) programming model for the IoT that utilities computing infrastructures across the Fog and the Cloud. Also, they evaluate their proposal by implementing a DDF framework based on Node-RED (Distributed Node-RED or D-NR), a visual programming tool that uses a flow-based model for building IoT applications.
-
-----------
-[274] 2017 **Efficient placement of multi-component applications in edge computing systems.** ? [REPORT - DATA PLACEMENT]
-
-The authors address the problem of multi-component application placement on fog nodes. Each application could be modeled as a graph, where each node is a component of the application, and the edges indicate the communication between them.
-
-----------
-[254] 2018 **Move with me: Scalably keeping virtual objects close to users on the move.** ? [REPORT - DATA PLACEMENT]
-
-With the state-of-the-art virtualization technologies, services can be implemented in modular software as a graph/chain of portable VOs that can be dynamically migrated around the Telco infrastructure. It is proposed a VO clustering and migration policy that jointly considers user proximity and inter-VO affinity to scalably support user mobility, while allowing service differentiation among users.
-
-[Migration optimization in mobile fog environments]
+Migration optimization in mobile fog environments
 ----------
 
 - Latency-aware with mobile IoT devices
@@ -250,7 +231,7 @@ How to appropriately place virtual machines (VMs) into fog nodes in F-RAN system
 
 **Note: introduction**
 
-[Others]
+Others
 ----------
 [160] 2018 **Multitier fog computing with large-scale iot data analytics for smart cities.** ?
 
@@ -258,29 +239,41 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 
 **Note: An early effort for mobile fog nodes**
 
-[QoS]
+Efficient placement of multi-component applications in edge computing systems (2017) (data placement (ainda não falei nisto mas parece interessante!))
+
+[143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ? (acho que não é interessante)
+
+They propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization  (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.
+
+**Note: See again**
+
+----------
+[254] 2018 **Move with me: Scalably keeping virtual objects close to users on the move.** ? (não sei, ver melhor)
+
+With the state-of-the-art virtualization technologies, services can be implemented in modular software as a graph/chain of portable VOs that can be dynamically migrated around the Telco infrastructure. It is proposed a VO clustering and migration policy that jointly considers user proximity and inter-VO affinity to scalably support user mobility, while allowing service differentiation among users.
+
+QoS
 ----------
 
-[QoE]
+QoE
 ----------
 
-[Cost]
+Cost
 ----------
 
-[Energy]
+Energy
 ----------
 
-[Bandwidth]
+Bandwidth
 ----------
 
-[Further research]
+Further research
 ----------
 - Movable cloudlets and mobile cloudlets
 - Bayesian optimization
 
-[Notes]
+Notes
 ----------
-
 - Publication papers
 	- IEEE infocom
 	- Globecom
@@ -297,3 +290,22 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 - Doubts
 	- É necessário fazer referência às gateways na arquitetura? -> Assessment of the Suitability of Fog Computing in the Context of Internet of Things
 	- Similar to the traditional cloud computing, fog offers tree types of service models: Software as a Service (SaaS), Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) ?
+
+Keyworks
+----------
+- The main reasons lie on Fig. 1
+- Observe that
+- As a matter of fact,
+- In a nutshell,
+- As we shall show,
+- Aforementioned benefits
+- Continuum
+- We tackle the edge cloud network design problem
+- Which is, to the best of our knowledge, an untreated problem in the literature
+- The trend towards edge-clouds is expected
+- Meanwhile, in order
+- have been considered as means to provide computing capabilities
+- Furthermore,
+- At first sight it seems
+- Ease
+- It is also worth emphasizing that

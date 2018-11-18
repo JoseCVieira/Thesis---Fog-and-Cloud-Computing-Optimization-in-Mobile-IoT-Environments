@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  16 NOV 2018 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  16 NOV 2018 15:58
 entering extended mode
 **./report.tex
 (report.tex
@@ -891,79 +891,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--16
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4])
-(Sections/related_work.tex [5]
-(sections/subsections/related_computing_paradigms.tex [6] [7] [8]
-<images/computing_paradigms.png, id=33, 836.19785pt x 487.45872pt>
+ [4]
+[5]) (Sections/related_work.tex [6]
+(sections/subsections/related_computing_paradigms.tex [7] [8] [9]
+<images/computing_paradigms.png, id=36, 836.19785pt x 487.45872pt>
 File: images/computing_paradigms.png Graphic file (type png)
 <use images/computing_paradigms.png>
 Package pdftex.def Info: images/computing_paradigms.png  used on input line 35.
 
 (pdftex.def)             Requested size: 256.0748pt x 149.27345pt.
 )
-(sections/subsections/fog_architecture.tex [9] [10 <./images/computing_paradigm
-s.png>]
-<images/fog_architecture/fog_architecture.pdf, id=44, 601.24625pt x 493.845pt>
+(sections/subsections/fog_architecture.tex [10] [11 <./images/computing_paradig
+ms.png>]
+<images/fog_architecture/fog_architecture.pdf, id=47, 601.24625pt x 493.845pt>
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
-input line 22.
+input line 21.
 (pdftex.def)             Requested size: 357.73407pt x 293.83765pt.
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
-
- []
-
-
-Underfull \vbox (badness 1577) has occurred while \output is active []
-
  [12 <./images/fog_architecture/fog_architecture.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-) (sections/subsections/migration_optimization_in_mobile_fog_environments.tex
-[14]
+[14])
+(sections/subsections/migration_optimization_in_mobile_fog_environments.tex
 
 LaTeX Warning: Reference `sec:Dataplacement' on page 15 undefined on input line
  5.
@@ -1023,12 +1005,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[18]
+
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
@@ -1189,7 +1171,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  10019 strings out of 492970
  161134 string characters out of 3127037
- 292801 words of memory out of 3000000
+ 292802 words of memory out of 3000000
  13641 multiletter control sequences out of 15000+200000
  13285 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1213,7 +1195,7 @@ pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm5.pfb><
 C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
 bols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 /zapfding/uzdr.pfb>
-Output written on report.pdf (28 pages, 959223 bytes).
+Output written on report.pdf (28 pages, 956975 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
