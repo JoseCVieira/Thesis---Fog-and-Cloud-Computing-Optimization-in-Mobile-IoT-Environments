@@ -146,11 +146,11 @@ M.~Iorga, L.~Feldman, R.~Barton, M.~J. Martin, N.~S. Goren, and C.~Mahmoudi,
 O.~C. A.~W. Group \emph{et~al.}, ``Openfog reference architecture for fog
   computing,'' \emph{OPFRA001}, vol. 20817, p. 162, 2017.
 
-\bibitem{bonomi2014fog}
-F.~Bonomi, R.~Milito, P.~Natarajan, and J.~Zhu, ``Fog computing: A platform for
-  internet of things and analytics,'' in \emph{Big data and internet of things:
-  A roadmap for smart environments}.\hskip 1em plus 0.5em minus 0.4em\relax
-  Springer, 2014, pp. 169--186.
+\bibitem{giang2015developing}
+N.~K. Giang, M.~Blackstock, R.~Lea, and V.~C. Leung, ``Developing iot
+  applications in the fog: a distributed dataflow approach,'' in \emph{Internet
+  of Things (IOT), 2015 5th International Conference on the}.\hskip 1em plus
+  0.5em minus 0.4em\relax IEEE, 2015, pp. 155--162.
 
 \bibitem{gedeon2017router}
 J.~Gedeon, C.~Meurisch, D.~Bhat, M.~Stein, L.~Wang, and M.~M{\"u}hlh{\"a}user,
@@ -165,29 +165,6 @@ E.~Saurez, K.~Hong, D.~Lillethun, U.~Ramachandran, and B.~Ottenw{\"a}lder,
   applications in the fog,'' in \emph{Proceedings of the 10th ACM International
   Conference on Distributed and Event-based Systems}.\hskip 1em plus 0.5em
   minus 0.4em\relax ACM, 2016, pp. 258--269.
-
-\bibitem{li2018virtual}
-J.~Li, J.~Jin, D.~Yuan, and H.~Zhang, ``Virtual fog: A virtualization enabled
-  fog computing framework for internet of things,'' \emph{IEEE Internet Things
-  J}, vol.~5, pp. 121--131, 2018.
-
-\bibitem{giang2015developing}
-N.~K. Giang, M.~Blackstock, R.~Lea, and V.~C. Leung, ``Developing iot
-  applications in the fog: a distributed dataflow approach,'' in \emph{Internet
-  of Things (IOT), 2015 5th International Conference on the}.\hskip 1em plus
-  0.5em minus 0.4em\relax IEEE, 2015, pp. 155--162.
-
-\bibitem{bahreini2017efficient}
-T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
-  in edge computing systems,'' in \emph{Proceedings of the Second ACM/IEEE
-  Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
-  2017, p.~5.
-
-\bibitem{bruschi2018move}
-R.~Bruschi, F.~Davoli, P.~Lago, and J.~F. Pajo, ``Move with me: Scalably
-  keeping virtual objects close to users on the move,'' in \emph{2018 IEEE
-  International Conference on Communications (ICC)}.\hskip 1em plus 0.5em minus
-  0.4em\relax IEEE, 2018, pp. 1--6.
 
 \bibitem{ottenwalder2013migcep}
 B.~Ottenw{\"a}lder, B.~Koldehofe, K.~Rothermel, and U.~Ramachandran, ``Migcep:
@@ -229,17 +206,51 @@ D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
   (CSCloud), 2016 IEEE 3rd International Conference on}.\hskip 1em plus 0.5em
   minus 0.4em\relax IEEE, 2016, pp. 247--251.
 
-\bibitem{bittencourt2017mobility}
-L.~F. Bittencourt, J.~Diaz-Montes, R.~Buyya, O.~F. Rana, and M.~Parashar,
-  ``Mobility-aware application scheduling in fog computing,'' \emph{IEEE Cloud
-  Computing}, vol.~4, no.~2, pp. 26--35, 2017.
-
-\bibitem{Lopes2017}
+\bibitem{lopes2017myifogsim}
 M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
   ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
   \emph{Companion Proceedings of the10th International Conference on Utility
   and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
   47--52.
+
+\bibitem{chang2017energy}
+Z.~Chang, Z.~Zhou, T.~Ristaniemi, and Z.~Niu, ``Energy efficient optimization
+  for computation offloading in fog computing system,'' in \emph{GLOBECOM
+  2017-2017 IEEE Global Communications Conference}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2017, pp. 1--6.
+
+\bibitem{dinh2017offloading}
+T.~Q. Dinh, J.~Tang, Q.~D. La, and T.~Q. Quek, ``Offloading in mobile edge
+  computing: Task allocation and computational frequency scaling,'' \emph{IEEE
+  Transactions on Communications}, vol.~65, no.~8, pp. 3571--3584, 2017.
+
+\bibitem{xiao2017qoe}
+Y.~Xiao and M.~Krunz, ``Qoe and power efficiency tradeoff for fog computing
+  networks with fog node cooperation,'' in \emph{INFOCOM 2017-IEEE Conference
+  on Computer Communications, IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2017, pp. 1--9.
+
+\bibitem{deng2016optimal}
+R.~Deng, R.~Lu, C.~Lai, T.~H. Luan, and H.~Liang, ``Optimal workload allocation
+  in fog-cloud computing toward balanced delay and power consumption,''
+  \emph{IEEE Internet of Things Journal}, vol.~3, no.~6, pp. 1171--1181, 2016.
+
+\bibitem{kattepur2016resource}
+A.~Kattepur, H.~Dohare, V.~Mushunuri, H.~K. Rath, and A.~Simha, ``Resource
+  constrained offloading in fog computing,'' in \emph{Proceedings of the 1st
+  Workshop on Middleware for Edge Clouds \& Cloudlets}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2016, p.~1.
+
+\bibitem{anglano2018profit}
+C.~Anglano, M.~Canonico, and M.~Guazzone, ``Profit-aware resource management
+  for edge computing systems,'' in \emph{Proceedings of the 1st International
+  Workshop on Edge Systems, Analytics and Networking}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2018, pp. 25--30.
+
+\bibitem{nan2017adaptive}
+Y.~Nan, W.~Li, W.~Bao, F.~C. Delicato, P.~F. Pires, Y.~Dou, and A.~Y. Zomaya,
+  ``Adaptive energy-aware computation offloading for cloud of things systems,''
+  \emph{IEEE Access}, vol.~5, pp. 23\,947--23\,957, 2017.
 
 \bibitem{sun2017avaptive}
 X.~Sun and N.~Ansari, ``Avaptive avatar handoff in the cloudlet network,''
@@ -290,13 +301,6 @@ B.~Wickremasinghe, R.~N. Calheiros, and R.~Buyya, ``Cloudanalyst: A
   applications,'' in \emph{Advanced Information Networking and Applications
   (AINA), 2010 24th IEEE International Conference on}.\hskip 1em plus 0.5em
   minus 0.4em\relax IEEE, 2010, pp. 446--452.
-
-\bibitem{lopes2017myifogsim}
-M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
-  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
-  \emph{Companion Proceedings of the10th International Conference on Utility
-  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
-  47--52.
 
 \bibitem{TheCLOUD47:online}
 ``The clouds lab: Flagship projects - gridbus and cloudbus,''

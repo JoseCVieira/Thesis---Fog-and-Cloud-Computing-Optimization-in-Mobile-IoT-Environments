@@ -18,26 +18,10 @@ The solution proposed in this document leverages knowledge obtained from studyin
 \subsection{Mobile Fog Computing}
 \label{sec:Mobility}
 The concept of mobile fog computing is similar to fog computing, in which both IoT and fog nodes are mobile components. Those are connected wirelessly (e.g., via WiFi or Bluetooth). The challenge with implementing fog computing in mobile environments lies in the underlying complexity of data placement management and decision-making to ensure the QoS to all users (i.e. ensure that all latency constraints of users' applications are met).\\
-
-In this context, Luiz F. Bittencourt et al. \cite{bittencourt2017mobility} took into account the same architecture shown in Fig. \ref{fog_architecture}. With the use of two applications (electroencephalography (EEG) tractor beam game to test near-real-time applications and video surveillance / object tracking application for delay-tolerant applications) to test tree different scheduling strategies (Concurrent, the First Come-First Served (FCFS), and the Delay-priority strategies), and check how scheduling decision and the change of cloudlet by the players impact the network traffic and the delays.\\
-
-MM Lopes et al. \cite{Lopes2017} discuss resource allocation in fog computing in the face of users’ mobility, where mobility is achieved through migration of virtual machines between cloudlets. They present a new migration technique composed of two modules: migration policy which defines when the user VM should be migrated, considering aspects such as the user's speed, direction and geographical position and migration strategy, the destination cloudlet, and how the migration is performed. This work had the objective of study the impact of different migration strategies in the latency with users’ mobility.\\
-
-2018 **Dynamic Mobile Cloudlet Clustering for Fog Computing.**
-Fog Computing is one of the solutions for offloading the task of a mobile. However the capability of fog server is still limited due to the high deployment cost. In this paper, is proposed a dynamic mobile cloudlet cluster policy (DMCCP) to use cloudlets as a supplement for the fog server for offloading. The main idea is that by monitoring each mobile device resource amount, the DMCCP system clusters the optimal cloudlet to meet the requests of different tasks from the local mobile device.\\
-
 \noindent\tab Although several studies were already done in order to provide mobile support for IoT devices, the purpose of this study is to support mobile fog computing, once fog nodes can be anything in the path that connects things to the cloud. This distributed middle tier, in the 3-tier architecture (things-fog-cloud), can use as fog nodes any physical device that has facilities or infrastructures that can provide resources and visualization capabilities. This, may include movable fog nodes, such as cars, buses, unmanned aerial vehicles (UAVs), etc. The importance of mobile fog nodes cannot be overlooked, once they may represent a way to offload fixed cloudlet tasks and thus improve fog features. In this field there are already some early efforts.\\
-
-Dongdong Ye et al. \cite{ye2016scalable} show a use case where buses are used as mobile cloudlets. They leverage the characteristics of buses (e.g., the same routes, many stops) and propose a scalable fog computing paradigm with servicing offloading in bus networks. The bus fog servers not only provide fog computing services for the mobile users on bus, but also are motivated to accomplish the computation tasks offloaded by roadside cloudlets. By this way, the computing capability of roadside cloudlets is significantly extended.\\
 
 [172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.**
 Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle. They discussed four types of scenarios of moving and parked vehicles or congested traffic. Also, they point out the advantages against vehicular cloud computing (VCC) and the advantages in scenarios like of emergency operations for natural disaster and terrorist attack.\\
-
-[186] 2018 **Mobile edge computing via a uav-mounted cloudlet: Optimization of bit allocation and path planning.**
-Unmanned aerial vehicles (UAVs) have been considered as means to provide computing capabilities. In this model, UAVs act as fog nodes and provide computing capabilities with enhanced coverage for IoT nodes. The system aims at minimizing the total mobile energy consumption while satisfying QoS requirements of the offloaded mobile application. This architecture is based on a UAV-mounted cloudlet which provides the offloading opportunities to multiple static mobile devices. They aim to minimize the mobile energy consumption, while satisfying QoS requirements and optimize UAV’s trajectory.\\
-
-[270] 2016 **An adaptive cloudlet placement method for mobile applications over gps big data.**
-Introduces the concept of movable cloudlets and explores the problem of how to cost-effectively deploy these movable cloudlets to enhance cloud services for dynamic context-aware mobile applications. To this end, Haolong Xiang et al. propose an adaptive cloudlet placement (via GPS) method for mobile applications. Specifically, the gathering regions of the mobile devices are identified based on position clustering, and the cloudlet destination locations are confirmed accordingly. Besides, the traces between the origin and destination locations of these mobile cloudlets are also achieved.\\
 
 \subsubsection{Handover}
 
@@ -73,13 +57,6 @@ To guarantee the strict latency requirements, new solutions are required to cope
 %required, namely, citizen's healthcare, drones for smart urban surveillance and
 %tourists as time travellers \cite{puliafito2017fog}, addressing the needs of
 %low latency and mobility support.\\
-
-
-%\subsubsection{Mobile IoT nodes} \label{subsec:MobileIoTnodes}
-
-%\subsubsection{Mobile Fog nodes} \label{subsec:MobileFognodes}
-
-%\subsubsection{Mobile Fog computing} \label{subsec:MobilityFog}
 
 
 \subsection{Multi-objective}
