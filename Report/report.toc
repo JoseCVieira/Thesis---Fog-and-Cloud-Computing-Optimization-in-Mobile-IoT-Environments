@@ -18,12 +18,16 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Latency-aware with mobile end-devices}{15}
 \contentsline {subsubsection}{\numberline {2.3.2}Latency-aware with mobile fog servers}{17}
 \contentsline {subsubsection}{\numberline {2.3.3}Energy-aware}{17}
-\contentsline {subsection}{\numberline {2.4}Mobile Fog Computing}{19}
-\contentsline {subsubsection}{\numberline {2.4.1}Handover}{19}
-\contentsline {subsection}{\numberline {2.5}Multi-objective}{21}
-\contentsline {subsection}{\numberline {2.6}Toolkits}{21}
-\contentsline {section}{\numberline {3}Algoritms}{23}
-\contentsline {section}{\numberline {4}Architecture}{23}
-\contentsline {section}{\numberline {5}Evaluation}{24}
-\contentsline {section}{\numberline {6}Schedule of Future Work}{24}
-\contentsline {section}{\numberline {7}Conclusion}{24}
+\contentsline {subsubsection}{\numberline {2.3.4}Bandwidth-aware}{19}
+\contentsline {subsubsection}{\numberline {2.3.5}Cost-aware}{19}
+\contentsline {subsubsection}{\numberline {2.3.6}QoS-aware}{19}
+\contentsline {subsubsection}{\numberline {2.3.7}Workload-aware}{19}
+\contentsline {subsubsection}{\numberline {2.3.8}Handover}{19}
+\contentsline {subsection}{\numberline {2.4}Toolkits}{20}
+\contentsline {section}{\numberline {3}Algoritms}{22}
+\contentsline {subsection}{\numberline {3.1}Genetic Algorithm}{23}
+\contentsline {subsection}{\numberline {3.2}??}{23}
+\contentsline {section}{\numberline {4}Description of the project}{23}
+\contentsline {section}{\numberline {5}Evaluation}{23}
+\contentsline {section}{\numberline {6}Schedule of Future Work}{23}
+\contentsline {section}{\numberline {7}Conclusion}{23}

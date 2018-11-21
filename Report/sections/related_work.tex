@@ -9,59 +9,9 @@
 % synthesis, a table about various solutions, which features are interesting,
 % which we want. Finnish sections with a work summary on a single sentence.
 
-The solution proposed in this document leverages knowledge obtained from studying several concepts and systems from the current state-of-the-art. In this section, an overview of those concepts and systems will be given, stating for each of them their advantages and disadvantages. This section is structured as follows. Section \ref{sec:Computingparadigms} presents different methods to push intelligence and computing power closer to the source of the data and why this work adopted fog computing for this purpose. Section \ref{sec:Mobility} presents mobility-aware systems xxx. \ref{sec:Migration} xxx. \ref{sec:Multiobjective} xxx. Section \ref{sec:Toolkits} xxx.
+The solution proposed in this document leverages knowledge obtained from studying several concepts and systems from the current state-of-the-art. In this section, an overview of those concepts and systems will be given, stating for each of them their advantages and disadvantages. This section is structured as follows. Section \ref{sec:Computingparadigms} presents different methods to push intelligence and computing power closer to the source of the data and why this work adopted fog computing for this purpose. Finally, Section \ref{sec:fog_architecture} xxx, and \ref{sec:Migration} xxx. \ref{sec:Toolkits} xxx.
 
-\input{./sections/subsections/related_computing_paradigms}
-\input{./sections/subsections/fog_architecture}
-\input{./sections/subsections/migration_optimization_in_mobile_fog_environments}
-
-\subsection{Mobile Fog Computing}
-\label{sec:Mobility}
-The concept of mobile fog computing is similar to fog computing, in which both IoT and fog nodes are mobile components. Those are connected wirelessly (e.g., via WiFi or Bluetooth). The challenge with implementing fog computing in mobile environments lies in the underlying complexity of data placement management and decision-making to ensure the QoS to all users (i.e. ensure that all latency constraints of users' applications are met).\\
-\noindent\tab Although several studies were already done in order to provide mobile support for IoT devices, the purpose of this study is to support mobile fog computing, once fog nodes can be anything in the path that connects things to the cloud. This distributed middle tier, in the 3-tier architecture (things-fog-cloud), can use as fog nodes any physical device that has facilities or infrastructures that can provide resources and visualization capabilities. This, may include movable fog nodes, such as cars, buses, unmanned aerial vehicles (UAVs), etc. The importance of mobile fog nodes cannot be overlooked, once they may represent a way to offload fixed cloudlet tasks and thus improve fog features. In this field there are already some early efforts.\\
-
-[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.**
-Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle. They discussed four types of scenarios of moving and parked vehicles or congested traffic. Also, they point out the advantages against vehicular cloud computing (VCC) and the advantages in scenarios like of emergency operations for natural disaster and terrorist attack.\\
-
-\subsubsection{Handover}
-
-\noindent\tab X Sun et al. \cite{sun2017avaptive} shows an architecture where each User Equipment (UE) has its own Avatar (a private computing and storage resources for the UE) which is deployed to a cloudlet, being the communication characterized by low end-to-end (E2E) latency. When UEs roam away, in order to maintain the end-to-end latency, their Avatars should be handed off among cloudlets accordingly. However, moving such amount of data (the Avatar’s virtual disk) during the handoff time may both incur unbearable migration time and network congestion. In order to overcome those limitations, they propose LatEncy Aware Replica placemeNt (LEARN) algorithm to place a number of replicas of each Avatar’s virtual disk into suitable cloudlets. Meanwhile, by considering the capacity limitation of each cloudlet, they propose the LatEncy aware Avatar hanDoff (LEAD) algorithm to place
-UEs’ Avatars among the cloudlets such that the average E2E delay is minimized.\\ %nao sei se devia estar aqui!
-
-\cite{bao2017follow}
-The authors observe that traditional mobile network handover mechanisms cannot handle the demands of fog computation resources and the low-latency requirements of mobile IoT applications. The authors propose Follow Me Fog framework to guarantee service continuity and reduce latency during handovers. The key idea proposed is to continuously monitor the received signal strength of the fog nodes at the mobile IoT device, and to trigger pre-migration of computation jobs before disconnecting the IoT device from the existing fog node.\\
-
-\cite{ma2017efficient}
-Present a novel service handoff system which seamlessly migrates offloading services to the nearest edge server, while the mobile client is moving. Service handoff is achieved via container migration. They have identified an important performance problem during Docker container migration, proposing a migration method which leverages the layered storage system to reduce file system synchronization overhead, without dependence on the distributed file system.\\
-
-\cite{sun2017emm}
-Develop a novel user-centric energy-aware mobility management (EMM) scheme, in order to optimize the delay, under energy consumption constraint of the user. Based on Lyapunov optimization and multi-armed bandit theories, EMM works in an online fashion. Theoretical analysis explicitly takes radio handover and computation migration cost into consideration and proves a bounded deviation on both the delay performance and energy consumption compared with the oracle solution with exact and complete future system information. The proposed algorithm also effectively handles the scenario in which candidate BSs randomly switch ON/OFF during the offloading process of a task.\\
-
-\cite{bi2018mobility}
-Study of mobility support issue in fog computing for guaranteeing service continuity. Propose a novel SDN enabled architecture that is able to facilitate mobility management in fog computing by decoupling mobility management and data forwarding functions. Design an efficient handover scheme by migrating mobility management and route optimization logic to the SDN controller. By employing link layer information, the SDN controller can pre-compute the optimal path by estimating the performance gain of each path.\\
-
-\cite{farris2017optimizing}
-To guarantee the strict latency requirements, new solutions are required to cope with the user mobility in a distributed edge cloud environment. The use of proactive replication mechanism seems promising to avoid QoE degradation during service migration between different edge nodes. However, accounting for the limited resources of edge micro data-centers, appropriate optimization solutions must be developed to reduce the cost of service deployment, while guaranteeing the desired QoE. In this paper, Ivan Farris et al., by leveraging on prediction schemes of user mobility patterns, have proposed two linear optimization solutions for replication-based service migration in cellular 5G networks: the min-RM approach aims at minimizing the QoE degradation during user handover; min-NSR approach favors the reduction of service replication cost. Simulation results proved the efficiency of each solution in achieving its design goal and provides useful information for network and service orchestrators in next-generation 5G cloud-based networks.
-
-
-%\noindent\tab Fog computing will be crucial in a diversity of scenarios. For
-%instance, heterogeneous sensory nodes (e.g., sensors, controllers, actuators)
-%on a self-driving vehicle, are estimated to generate about 1GB data per second
-%\cite{angelica2013google}. As the number of features grow, the data deluge
-%grows out of control. Moreover, these types of systems, where people's lives
-%depends on it, are hard real-time what means that it is absolutely imperative
-%that all deadlines are met. Offloading tasks to fog nodes will be the best
-%solution, once a big effort in mobility support has been done through the
-%migration of VMs using cloudlets \cite{lopes2017myifogsim}. Also, in this
-%context, Puliafito et al. address three types of applications where fog is
-%required, namely, citizen's healthcare, drones for smart urban surveillance and
-%tourists as time travellers \cite{puliafito2017fog}, addressing the needs of
-%low latency and mobility support.\\
-
-
-\subsection{Multi-objective}
-\label{sec:Multiobjective}
-In section \ref{sec:Migration} the focus was in minimizing end to end latecy and the bandwith usage however those objectives are not everything. we need to keep in mind that migration also brings costs for the providers... (ver o resto dos problemas abaixo e os que são apresentados na introdução)
-QoS, QoE, Cost, Energy, Handover, Mobility, Bandwidth
-
-\input{./sections/subsections/toolkits}
+\input{./sections/subsections/1related_computing_paradigms}
+\input{./sections/subsections/2fog_architecture}
+\input{./sections/subsections/3migration_optimization_in_mobile_fog_environments}
+\input{./sections/subsections/4toolkits}
