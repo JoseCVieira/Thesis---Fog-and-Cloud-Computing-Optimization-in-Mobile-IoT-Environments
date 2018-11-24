@@ -29,8 +29,8 @@ D.~Evans, ``The internet of things: How the next evolution of the internet is
 \bibitem{CiscoVis16:online}
 ``Cisco visual networking index: Global mobile data traffic forecast update,
   2016–2021 white paper - cisco,''
-  \url{https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-
-  c11-520862.html}, (Accessed on 10/25/2018).
+  \url{https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-c11-520862.html},
+  (Accessed on 10/25/2018).
 
 \bibitem{WhatisCl79:online}
 ``What is cloud computing? - amazon web services,''
@@ -97,6 +97,11 @@ M.~Shiraz, A.~Gani, R.~H. Khokhar, and R.~Buyya, ``A review on distributed
   application processing frameworks in smart mobile devices for mobile cloud
   computing,'' \emph{IEEE Communications Surveys \& Tutorials}, vol.~15, no.~3,
   pp. 1294--1313, 2013.
+
+\bibitem{hubaux2001toward}
+J.-P. Hubaux, T.~Gross, J.-Y. Le~Boudec, and M.~Vetterli, ``Toward
+  self-organized mobile ad hoc networks: the terminodes project,'' \emph{IEEE
+  Communications Magazine}, vol.~39, no.~1, pp. 118--124, 2001.
 
 \bibitem{OpenEdge73:online}
 ``Open edge computing,'' \url{http://openedgecomputing.org/about.html},
@@ -200,19 +205,6 @@ X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
   edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
   Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
 
-\bibitem{ye2016scalable}
-D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
-  offloading in bus networks,'' in \emph{Cyber Security and Cloud Computing
-  (CSCloud), 2016 IEEE 3rd International Conference on}.\hskip 1em plus 0.5em
-  minus 0.4em\relax IEEE, 2016, pp. 247--251.
-
-\bibitem{lopes2017myifogsim}
-M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
-  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
-  \emph{Companion Proceedings of the10th International Conference on Utility
-  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
-  47--52.
-
 \bibitem{chang2017energy}
 Z.~Chang, Z.~Zhou, T.~Ristaniemi, and Z.~Niu, ``Energy efficient optimization
   for computation offloading in fog computing system,'' in \emph{GLOBECOM
@@ -251,6 +243,39 @@ C.~Anglano, M.~Canonico, and M.~Guazzone, ``Profit-aware resource management
 Y.~Nan, W.~Li, W.~Bao, F.~C. Delicato, P.~F. Pires, Y.~Dou, and A.~Y. Zomaya,
   ``Adaptive energy-aware computation offloading for cloud of things systems,''
   \emph{IEEE Access}, vol.~5, pp. 23\,947--23\,957, 2017.
+
+\bibitem{bahreini2017efficient}
+T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
+  in edge computing systems,'' in \emph{Proceedings of the Second ACM/IEEE
+  Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2017, p.~5.
+
+\bibitem{gu2017cost}
+L.~Gu, D.~Zeng, S.~Guo, A.~Barnawi, and Y.~Xiang, ``Cost efficient resource
+  management in fog computing supported medical cyber-physical system,''
+  \emph{IEEE Transactions on Emerging Topics in Computing}, vol.~5, no.~1, pp.
+  108--119, 2017.
+
+\bibitem{yang2016cost}
+L.~Yang, J.~Cao, G.~Liang, and X.~Han, ``Cost aware service placement and load
+  dispatching in mobile cloud systems,'' \emph{IEEE Transactions on Computers},
+  vol.~65, no.~5, pp. 1440--1452, 2016.
+
+\bibitem{skarlat2017optimized}
+O.~Skarlat, M.~Nardelli, S.~Schulte, M.~Borkowski, and P.~Leitner, ``Optimized
+  iot service placement in the fog,'' \emph{Service Oriented Computing and
+  Applications}, vol.~11, no.~4, pp. 427--443, 2017.
+
+\bibitem{wang2018service}
+L.~Wang, L.~Jiao, T.~He, J.~Li, and M.~M{\"u}hlh{\"a}user, ``Service entity
+  placement for social virtual reality applications in edge computing,'' in
+  \emph{Proc. INFOCOM}, 2018.
+
+\bibitem{ye2016scalable}
+D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
+  offloading in bus networks,'' in \emph{Cyber Security and Cloud Computing
+  (CSCloud), 2016 IEEE 3rd International Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2016, pp. 247--251.
 
 \bibitem{sun2017avaptive}
 X.~Sun and N.~Ansari, ``Avaptive avatar handoff in the cloudlet network,''
@@ -301,6 +326,13 @@ B.~Wickremasinghe, R.~N. Calheiros, and R.~Buyya, ``Cloudanalyst: A
   applications,'' in \emph{Advanced Information Networking and Applications
   (AINA), 2010 24th IEEE International Conference on}.\hskip 1em plus 0.5em
   minus 0.4em\relax IEEE, 2010, pp. 446--452.
+
+\bibitem{lopes2017myifogsim}
+M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
+  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
+  \emph{Companion Proceedings of the10th International Conference on Utility
+  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
+  47--52.
 
 \bibitem{TheCLOUD47:online}
 ``The clouds lab: Flagship projects - gridbus and cloudbus,''

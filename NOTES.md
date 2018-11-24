@@ -4,23 +4,23 @@ Fields
 | --- | :---: | :---: | :---: |
 | QoS | ✓ | ✗ | - |
 | QoE | ✓ | ✗ | - |
-| Cost | ✓ | ✗ | - |
+| Cost | ✓ | ✓ | - |
 | Energy | ✓ | ✓ | - |
 | Handover | ✓ | ✗ | - |
 | Mobility | ✓ | ✓ | - |
 | Bandwidth | ✓ | ✗ | - |
+| Load Balancing | ✓ | ✗ | Not explicitly but, the algorithm should achieve this feature |
 | Migration Optimization | ✓ | ✓ | - |
 | Vehicular Fog Computing | ✓ | ✗ | Just to provide case studies |
-| Data/Session Consistency | ✗ | - | - |
-| VM/Resource/Job scheduling | ✗ | - | - |
 | Predicted Mobility Patterns | ? | ? | - |
 | Proactive vs. Eeactive Service Migration | ? | ? | - |
-| Load Balancing | ✓ | ✗ | Not explicitly but, the algorithm should achieve this feature |
 | Data placement | ✓ | ✗ | - |
 | VM/Resource/Job scheduling | ✗ | - | - |
 | Virtual Objects | ✓ | ✓ | - |
 | Foglets | ✓ | ✓ | - |
 | Toolkits | ✓ | ✓ | - |
+| Data/Session Consistency | ✗ | - | - |
+| VM/Resource/Job scheduling | ✗ | - | - |
 
 - **Introduction**
 	- **Motivation**
@@ -72,24 +72,9 @@ This paper considers a specific **fog computing network consisting of** a set of
 
 Toolkits
 ----------
-2017 **iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments.** ✓ [REPORT - TOOLKITS]
-
-In this paper they propose a simulator, called iFogSim, to model IoT and Fog environments and measure the impact of resource management techniques in latency, network congestion, energy consumption, and cost.
-
-**Note: important**
-
-----------
+- iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments (2017)
 - [385] Myifogsim: A simulator for virtual machine migration in fog computing (2017)
-
-----------
-[388] 2017 **Edgecloudsim: An environment for performance evaluation of edge computing systems.** ? [REPORT - TOOLKITS]
-
-The authors propose another edge computing simulation environment, EdgeCloudSim, that considers both network and computational resources and covers all aspects of edge computing simulation ,including network and computational modelling. Similar to iFogSim, EdgeCloudSim relies on CloudSim as well. Additionally, EdgeCloudSim provides a modular architecture to provide support for a variety of critical functionality and supports simulating multi-tier scenarios where multiple edge servers are running in coordination with upper layer cloud solutions.
-
-- Possível solução?
-- Edge computing simulation;
-- Fornece uma arquitetura modelar;
-- Suporta simulações de cenários multi-tier onde vários edge servers correm em coordenação com uma layer superior de cloud solutions.
+- [388] Edgecloudsim: An environment for performance evaluation of edge computing systems (2017)
 
 Migration optimization in mobile fog environments
 ----------
@@ -105,7 +90,7 @@ Migration optimization in mobile fog environments
 - Latency-aware with mobile fog servers
 	- Scalable Fog Computing with Service Offloading in Bus Networks (2016)
 
-[Mobility]
+[Vehicular Fog Computing]
 ----------
 [172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.** ✓ [REPORT - MOBILE FOG COMPUTING]
 
@@ -113,7 +98,6 @@ Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures 
 
 **Note: introduction, do not present a model, it will serve for introductory references**
 
-[Vehicular Fog Computing]
 ----------
 [145] 2017 **Cooperative fog computing for dealing with big data in the internet of vehicles: Architecture and hierarchical resource management.** ? 
 
@@ -164,8 +148,6 @@ In this paper a multi tier fog computing model with large-scale data analytics s
 
 **Note: An early effort for mobile fog nodes**
 
-Efficient placement of multi-component applications in edge computing systems (2017) (data placement (ainda não falei nisto mas parece interessante!))
-
 [143] 2018 **Virtual fog: A virtualization enabled fog computing framework for internet of things.** ? (acho que não é interessante)
 
 They propose a layered Fog framework to better support IoT applications through virtualization. The virtualization is divided into object virtualization  (VOs), network function virtualization and service virtualization. VOs to address the protocol inconsistency (lack of unified networking protocols that leads to exaggerated overhead); Network function virtualization maps standard networking services to VOs, thus, minimize the communication process between consumers and producers by minimizing latency, improving security and scalability; Service virtualization that composes the community and Cloud Apps from various vendors to serve local Fog users with high quality of experience (QoE) but at low cost. At last, Foglets are involved to seamless aggregate multiple independent virtual instances, Fog network infrastructures, and software platforms.
@@ -190,7 +172,6 @@ Notes
 	- falta paper do recap e do cloudreports
 	- referencia à imagem dos paradigmas (circulos) no survey
 	- capitulos todos com iniciais maiusculas
-	- falta chapters dos algoritmos de optimização
 	- No final verificar todas as abreviaturas
 	- Ver se na introdução nos objetivos, o multi-objective aborda todos os parametros
 	- Os outros são mesmo "offline" algorithms? (energy-aware)
@@ -200,6 +181,11 @@ Notes
 	- falar das caracteristicas dof ifogsim e do myifogsim e falar das outras caracteristicas a implementar
 	- na tabela falta ver da multi-tier application model, workload, dataplacement, bandwith
 	- first fit heuristic, a genetic algorithm, and an exact optimization method (desenvolvimento)
+	- fazer tabela com acronimos
+	- fazer acronimo para end devices (mobile device (MD)) e end-to-end (E2E) latency
+	- (1) ... ; (2) ... ; and (3) ... .
+	- Load Balancing - Not explicitly but, the algorithm should achieve this feature
+	- ver todas as referencias no report
 - Further research
 	- Movable cloudlets and mobile cloudlets
 	- Bayesian optimization
@@ -209,9 +195,10 @@ Notes
 	- É necessário fazer referência às gateways na arquitetura? -> Assessment of the Suitability of Fog Computing in the Context of Internet of Things
 	- Similar to the traditional cloud computing, fog offers tree types of service models: Software as a Service (SaaS), Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) ?
 	- Software-defined networking?
-	- online vs offline algorithms ? => online heuristic and offline optimizing service orchestration method
 	- minimize the time-average cost of fog computing
 	- QoS inclui limites temporais, energia, QoE e custo?
+	- online vs offline algorithms ? => online heuristic and offline optimizing service orchestration method
+	- Ultra Dense Networks ? => ultra-dense deployment of small cell base stations
 - Not used papers
 	- OpenStack extensions for QoS and energy efficiency in edge computing
 	- A Game-Theoretic Approach to Coalition Formation in Fog Provider Federations
@@ -274,9 +261,35 @@ To guarantee the strict latency requirements, new solutions are required to cope
 
 - Avaptive avatar handoff in the cloudlet network (2017)
 
+Cost
+----------
+- Used:
+	- Efficient Placement of Multi-Component Applications in Edge Computing Systems
+	- Cost efficient resource management in fog computing supported medical cyber-physical system
+	- Cost Aware Service Placement and Load Dispatching in Mobile Cloud Systems
+	- Optimized IoT service placement in the fog (ainda não sei se tiro este..)
+	- Scalable Fog Computing with Service Offloading in Bus Networks
+	- Service Entity Placement for Social Virtual Reality Applications in Edge Computing
+- Could be used:
+	- Asymptotically Optimal Algorithm for Online Reconfiguration of Edge-Clouds
+	- Assessment of the Suitability of Fog Computing in the Context of Internet of Things
+	- MOERA: Mobility-agnostic Online Resource Allocation for Edge Computing
+- Not used:
+	- Towards QoS-aware Fog Service Placement
+	- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks (energy-aware user-centric - acho que é para apagar)
+	- Optimal Placement of Virtual Machines in Mobile Edge Computing (VRCs - acho que é para apagar)
+	- A Decentralized Replica Placement Algorithm for Edge Computing (Replicas - acho que é para apagar)
+	- Fog Computing Micro Datacenter Based Dynamic Resource Estimation and Pricing Model for IoT (previsão, não é sobre migração)
+	- Enabling Low-Latency Applications in Fog-Radio Access Networks (não formula nada)
+	- Availability-aware Mobile Edge Application Placement in 5G Networks (replicas)
+	- Paying Less for More? Combo Plans for Edge-Computing Services (modelo de pagamento)
+	- Fast and Efficient Network Service Embedding Method with Adaptive Offloading to the Edge (cost-aware Virtual Network Function migration)
+
+To implement???
+----------
+
 Bandwidth
 ----------
-- SEGUE: Quality of Service Aware Edge Cloud Service Migration
 - Heuristics to allocate high-performance cloudlets for computation offloading in mobile ad hoc clouds
 - Virtual machine placement for backhaul traffic minimization in fog radio access networks
 - Computation offloading leveraging computing resources from edge cloud and mobile peers (acho que n)
@@ -287,7 +300,6 @@ Bandwidth
 - LAVEA: Latency-aware Video Analytics on Edge Computing Platform
 - Efficient Service Handoff Across Edge Servers via Docker Container Migration
 - A Novel Cost Optimization Framework for MultiCloudlet Environment over Optical Access Networks
-- Availability-aware Mobile Edge Application Placement in 5G Networks
 - ACACIA – Context-aware Edge Computing for Continuous Interactive Applications over Mobile Networks
 - Toward Hierarchical Mobile Edge Computing: An Auction-Based Profit Maximization Approach
 - PRIMAL: PRofIt Maximization Avatar pLacement for Mobile Edge Computing
@@ -319,38 +331,6 @@ Bandwidth
 - Fast Transparent Virtual Machine Migration in Distributed Edge Clouds
 - You Can Teach Elephants to Dance: Agile VM Handoff for Edge Computing
 - Edge Computing with Cloud for Voice Disorder Assessment and Treatment
-
-Cost (user vs service providers)
-----------
-VER: # citacoes e se falam de fog computing e se falam de custos em tabelas graficos etc
-- RAERA: A Robust Auctioning Approach for Edge Resource Allocation
-- Edge Computing Resource Procurement: An Online Optimization Approach
-- Efficient Placement of Multi-Component Applications in Edge Computing Systems
-- Asymptotically Optimal Algorithm for Online Reconfiguration of Edge-Clouds
-- Socially Trusted Collaborative Edge Computing in Ultra Dense Networks
-- Cost Aware Service Placement and Load Dispatching in Mobile Cloud Systems
-- Cost efficient resource management in fog computing supported medical cyber-physical system
-- On the Economics of Fog Computing: Inter-play among Infrastructure and Service Providers, Users, and Edge Resource Owners
-- Paying Less for More? Combo Plans for Edge-Computing Services
-- Service Entity Placement for Social Virtual Reality Applications in Edge Computing
-- Fast and Efficient Network Service Embedding Method with Adaptive Offloading to the Edge
-- MUTE: MUlti-Tier Edge networks
-- Multitier Fog Computing With Large-Scale IoT Data Analytics for Smart Cities
-- Privacy-Aware Offloading in Mobile-Edge Computing
-- A dynamic tradeoff data processing framework for delay-sensitiveapplications in Cloud of Things systems
-- A Decentralized Replica Placement Algorithm for Edge Computing (cost in terms of memory)
-- MigCEP: Operator Migration for Mobility Driven Distributed Complex Event Processing
-- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks
-- Optimal Placement of Virtual Machines in Mobile Edge Computing
-- Distributed Approach to the Holistic Resource Management of a Mobile Cloud Network
-- How beneficial are intermediate layer Data Centers in Mobile Edge Networks?
-- Availability-aware Mobile Edge Application Placement in 5G Networks
-- Enabling Low-Latency Applications in Fog-Radio Access Networks
-- Optimized IoT service placement in the fog
-- Assessment of the Suitability of Fog Computing in the Context of Internet of Things
-- CARDAP: A Scalable Energy-Efficient Context Aware Distributed Mobile Data Analytics Platform for the Fog
-- Towards QoS-aware Fog Service Placement
-- Fog Computing Micro Datacenter Based Dynamic Resource Estimation and Pricing Model for IoT
 
 QoS
 ----------

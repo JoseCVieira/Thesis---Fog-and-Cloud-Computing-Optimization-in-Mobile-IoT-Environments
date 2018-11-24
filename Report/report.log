@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  21 NOV 2018 09:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  24 NOV 2018 15:23
 entering extended mode
 **./report.tex
 (report.tex
@@ -858,17 +858,17 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 (Sections/abstract.tex)
-Overfull \hbox (1.37086pt too wide) in paragraph at lines 5--94
+Overfull \hbox (1.37086pt too wide) in paragraph at lines 5--93
 \OT1/cmr/bx/n/9 Keywords:\OT1/cmr/m/n/9 Cloud com-put-ing, fog com-put-ing, mo-
 bil-ity, op-ti-miza-tion, multi-objective 
  []
@@ -884,48 +884,44 @@ bil-ity, op-ti-miza-tion, multi-objective
  [2
 
 ] (Sections/introduction.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--16
+Underfull \hbox (badness 10000) in paragraph at lines 4--14
 
  []
 
 [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-[5]) (Sections/related_work.tex [6]
-(sections/subsections/1related_computing_paradigms.tex [7] [8] [9]
-<images/computing_paradigms.png, id=36, 836.19785pt x 487.45872pt>
-File: images/computing_paradigms.png Graphic file (type png)
-<use images/computing_paradigms.png>
-Package pdftex.def Info: images/computing_paradigms.png  used on input line 35.
-
-(pdftex.def)             Requested size: 227.62204pt x 132.68668pt.
-)
-(sections/subsections/2fog_architecture.tex [10] [11 <./images/computing_paradi
-gms.png>]
-<images/fog_architecture/fog_architecture.pdf, id=47, 601.24625pt x 493.845pt>
+ [4])
+(Sections/related_work.tex [5]
+(sections/subsections/1related_computing_paradigms.tex [6] [7] [8])
+(sections/subsections/2fog_architecture.tex [9] [10]
+<images/fog_architecture/fog_architecture.pdf, id=42, 601.24625pt x 493.845pt>
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
 input line 21.
 (pdftex.def)             Requested size: 357.73407pt x 293.83765pt.
- [12 <./images/fog_architecture/fog_architecture.pdf
+ [11 <./images/fog_architecture/fog_architecture.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
 >])
 (sections/subsections/3migration_optimization_in_mobile_fog_environments.tex
-[13]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
  []
 
-[14] [15]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-[17]
+ [13]
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+[16] [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18])
@@ -939,116 +935,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []|\OT1/cmr/m/n/7 iFogSimWithData
  []
 
-)) (Sections/algorithms.tex [20]
+)) (Sections/algorithms.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21])
-(Sections/architecture.tex [22]) (Sections/evaluation.tex)
-(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [23]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+ [20]
+[21] [22]) (Sections/architecture.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23])
+(Sections/evaluation.tex) (Sections/schedule.tex) (Sections/conclusion.tex)
+(report.bbl [24]
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 []\OT1/cmr/m/n/9 ``Etsi - multi-access edge com-put-ing,'' https://www.etsi.org
 /technologies-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 []\OT1/cmr/m/n/9 ``Mobile edge com-put-ing vs. multi-access edge com-put-ing,''
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 120--123
 \OT1/cmr/m/n/9 https://www.sdxcentral.com/mec/definitions/mobile-edge-computing
 -vs-multi-access-edge-
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 136--140
+Underfull \hbox (badness 2662) in paragraph at lines 141--145
 []\OT1/cmr/m/n/9 ``Cisco pushes iot an-a-lyt-ics to the ex-treme edge with mist
  com-put-ing - re-think,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 141--145
 \OT1/cmr/m/n/9 https://rethinkresearch.biz/articles/cisco-pushes-iot-analytics-
 extreme-edge-mist-computing-
  []
 
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 306--308
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
 []\OT1/cmr/m/n/9 ``The clouds lab: Flag-ship projects - grid-bus and cloud-bus,
 ''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 356--358
 []\OT1/cmr/m/n/9 ``Web site,'' https://www.arcos.inf.uc3m.es/old/icancloud/Home
 .html, (Ac-cessed on
  []
 
 
-Overfull \hbox (12.63449pt too wide) in paragraph at lines 344--347
+Overfull \hbox (12.63449pt too wide) in paragraph at lines 376--379
 []\OT1/cmr/m/n/9 ``marcbux/dynamiccloudsim: Au-to-mat-i-cally ex-ported from co
 de.google.com/p/dynamiccloudsim,''
  []
 
-
-Underfull \hbox (badness 1127) in paragraph at lines 376--380
+[27]
+Underfull \hbox (badness 1127) in paragraph at lines 408--412
 []\OT1/cmr/m/n/9 ``Cloudsim plus | a mod-ern, full-featured, highly ex-ten-si-b
 le and easier-to-use java 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
+Underfull \hbox (badness 10000) in paragraph at lines 422--426
 []\OT1/cmr/m/n/9 ``manoelcampos/cloudsim-plus-automation: Hu-man read-able sce-
 nario spec-i-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--394
+Underfull \hbox (badness 10000) in paragraph at lines 422--426
 \OT1/cmr/m/n/9 tion for au-to-mated cre-ation of sim-u-la-tions on cloudsim plu
 s and cloudsim,''
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 427--429
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--461
 []\OT1/cmr/m/n/9 ``Udacity2048/cloudsimdisk: A new stor-age mod-el-ing for clou
 dsim sim-u-la-tor.''
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 442--446
+Underfull \hbox (badness 3679) in paragraph at lines 474--478
 \OT1/cmr/m/n/9 age-ment tech-niques in in-ter-net of things, edge and fog com-p
 ut-ing en-vi-ron-ments,''
  []
 
 
-Overfull \hbox (23.8566pt too wide) in paragraph at lines 460--463
+Overfull \hbox (23.8566pt too wide) in paragraph at lines 492--495
 []\OT1/cmr/m/n/9 ``medislam/ifogsimwithdataplacement,'' https://github.com/medi
 slam/iFogSimWithDataPlacement,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 486--488
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 518--520
 []\OT1/cmr/m/n/9 ``di-unipi-socc/fogtorch,'' https://github.com/di-unipi-socc/F
 ogTorch, (Ac-cessed on
  []
 
-) [27] (report.aux) ) 
+) [29] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 10017 strings out of 492970
- 161125 string characters out of 3127037
- 294758 words of memory out of 3000000
- 13638 multiletter control sequences out of 15000+200000
- 13285 words of font info for 50 fonts, out of 3000000 for 9000
+ 10001 strings out of 492970
+ 160922 string characters out of 3127037
+ 296832 words of memory out of 3000000
+ 13632 multiletter control sequences out of 15000+200000
+ 10792 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,42p,2277b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,18n,42p,2289b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
 knappen\ec\dpi600\tcrm1000.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk
 \ljfour\public\bbding\dpi600\bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2
@@ -1057,20 +1057,20 @@ knappen\ec\dpi600\tcrm1000.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Us
 ers/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Jose/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users
-/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pf
-b><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (27 pages, 956635 bytes).
+nts/cm/cmbx7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/User
+s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.p
+fb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on report.pdf (29 pages, 543448 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
