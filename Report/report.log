@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  24 NOV 2018 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  24 NOV 2018 21:47
 entering extended mode
 **./report.tex
 (report.tex
@@ -899,21 +899,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
-input line 21.
+input line 23.
 (pdftex.def)             Requested size: 357.73407pt x 293.83765pt.
- [11 <./images/fog_architecture/fog_architecture.pdf
+)
+(sections/subsections/3migration_optimization_in_mobile_fog_environments.tex
+[11] [12 <./images/fog_architecture/fog_architecture.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
 df): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', ty
 pe <array>); ignored.
->])
-(sections/subsections/3migration_optimization_in_mobile_fog_environments.tex
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
-
- []
-
-
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
@@ -924,8 +919,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [16] [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
-(sections/subsections/4toolkits.tex [19]
+ [18]
+[19]) (sections/subsections/4toolkits.tex
 LaTeX Font Info:    Try loading font information for U+ding on input line 36.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\uding.fd"
@@ -981,61 +976,61 @@ extreme-edge-mist-computing-
  []
 
 [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 338--340
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
 []\OT1/cmr/m/n/9 ``The clouds lab: Flag-ship projects - grid-bus and cloud-bus,
 ''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--358
+Underfull \hbox (badness 10000) in paragraph at lines 355--357
 []\OT1/cmr/m/n/9 ``Web site,'' https://www.arcos.inf.uc3m.es/old/icancloud/Home
 .html, (Ac-cessed on
  []
 
 
-Overfull \hbox (12.63449pt too wide) in paragraph at lines 376--379
+Overfull \hbox (12.63449pt too wide) in paragraph at lines 375--378
 []\OT1/cmr/m/n/9 ``marcbux/dynamiccloudsim: Au-to-mat-i-cally ex-ported from co
 de.google.com/p/dynamiccloudsim,''
  []
 
 [27]
-Underfull \hbox (badness 1127) in paragraph at lines 408--412
+Underfull \hbox (badness 1127) in paragraph at lines 407--411
 []\OT1/cmr/m/n/9 ``Cloudsim plus | a mod-ern, full-featured, highly ex-ten-si-b
 le and easier-to-use java 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+Underfull \hbox (badness 10000) in paragraph at lines 421--425
 []\OT1/cmr/m/n/9 ``manoelcampos/cloudsim-plus-automation: Hu-man read-able sce-
 nario spec-i-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+Underfull \hbox (badness 10000) in paragraph at lines 421--425
 \OT1/cmr/m/n/9 tion for au-to-mated cre-ation of sim-u-la-tions on cloudsim plu
 s and cloudsim,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--461
+Underfull \hbox (badness 10000) in paragraph at lines 458--460
 []\OT1/cmr/m/n/9 ``Udacity2048/cloudsimdisk: A new stor-age mod-el-ing for clou
 dsim sim-u-la-tor.''
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 474--478
+Underfull \hbox (badness 3679) in paragraph at lines 473--477
 \OT1/cmr/m/n/9 age-ment tech-niques in in-ter-net of things, edge and fog com-p
 ut-ing en-vi-ron-ments,''
  []
 
 
-Overfull \hbox (23.8566pt too wide) in paragraph at lines 492--495
+Overfull \hbox (23.8566pt too wide) in paragraph at lines 491--494
 []\OT1/cmr/m/n/9 ``medislam/ifogsimwithdataplacement,'' https://github.com/medi
 slam/iFogSimWithDataPlacement,
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 518--520
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
 []\OT1/cmr/m/n/9 ``di-unipi-socc/fogtorch,'' https://github.com/di-unipi-socc/F
 ogTorch, (Ac-cessed on
  []
@@ -1043,7 +1038,7 @@ ogTorch, (Ac-cessed on
 ) [29] (report.aux) ) 
 Here is how much of TeX's memory you used:
  10001 strings out of 492970
- 160922 string characters out of 3127037
+ 160914 string characters out of 3127037
  296832 words of memory out of 3000000
  13632 multiletter control sequences out of 15000+200000
  10792 words of font info for 40 fonts, out of 3000000 for 9000
@@ -1068,7 +1063,7 @@ fb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (29 pages, 543448 bytes).
+Output written on report.pdf (29 pages, 543650 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -183,7 +183,6 @@ Notes
 	- first fit heuristic, a genetic algorithm, and an exact optimization method (desenvolvimento)
 	- fazer tabela com acronimos
 	- fazer acronimo para end devices (mobile device (MD)) e end-to-end (E2E) latency
-	- (1) ... ; (2) ... ; and (3) ... .
 	- Load Balancing - Not explicitly but, the algorithm should achieve this feature
 	- ver todas as referencias no report
 - Further research
@@ -226,6 +225,7 @@ Keyworks
 - At first sight it seems
 - Ease
 - It is also worth emphasizing that
+- While the former ... , the latter ...
 
 Handover
 ----------

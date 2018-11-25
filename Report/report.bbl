@@ -164,12 +164,11 @@ J.~Gedeon, C.~Meurisch, D.~Bhat, M.~Stein, L.~Wang, and M.~M{\"u}hlh{\"a}user,
   International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
   2017, pp. 145--150.
 
-\bibitem{saurez2016incremental}
-E.~Saurez, K.~Hong, D.~Lillethun, U.~Ramachandran, and B.~Ottenw{\"a}lder,
-  ``Incremental deployment and migration of geo-distributed situation awareness
-  applications in the fog,'' in \emph{Proceedings of the 10th ACM International
-  Conference on Distributed and Event-based Systems}.\hskip 1em plus 0.5em
-  minus 0.4em\relax ACM, 2016, pp. 258--269.
+\bibitem{bonomi2014fog}
+F.~Bonomi, R.~Milito, P.~Natarajan, and J.~Zhu, ``Fog computing: A platform for
+  internet of things and analytics,'' in \emph{Big data and internet of things:
+  A roadmap for smart environments}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2014, pp. 169--186.
 
 \bibitem{ottenwalder2013migcep}
 B.~Ottenw{\"a}lder, B.~Koldehofe, K.~Rothermel, and U.~Ramachandran, ``Migcep:

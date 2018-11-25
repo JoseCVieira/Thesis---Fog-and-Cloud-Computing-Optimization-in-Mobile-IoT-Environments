@@ -1,7 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
 The style file: IEEEtran.bst
 Database file #1: ./references/report.bib
-Repeated entry---line 1052 of file ./references/report.bib
+Repeated entry---line 869 of file ./references/report.bib
+ : @incollection{bonomi2014fog
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1093 of file ./references/report.bib
  : @inproceedings{bahreini2017efficient
  :                                     ,
 I'm skipping whatever remains of this entry
@@ -12,4 +16,4 @@ Warning--empty booktitle in OpenFog0208
 Warning--missing institution in iorga2018fog
 
 Done.
-(There was 1 error message)
+(There were 2 error messages)
