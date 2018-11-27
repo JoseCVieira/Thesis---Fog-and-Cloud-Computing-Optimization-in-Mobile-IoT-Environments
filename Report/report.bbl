@@ -188,32 +188,16 @@ W.~Zhang, Y.~Hu, Y.~Zhang, and D.~Raychaudhuri, ``Segue: Quality of service
   Science (CloudCom), 2016 IEEE International Conference on}.\hskip 1em plus
   0.5em minus 0.4em\relax IEEE, 2016, pp. 344--351.
 
-\bibitem{Zhang2017}
+\bibitem{zhang2017towards}
 W.~Zhang, J.~Chen, Y.~Zhang, and D.~Raychaudhuri, ``Towards efficient edge
   cloud augmentation for virtual reality mmogs,'' in \emph{Proceedings of the
   Second ACM/IEEE Symposium on Edge Computing}.\hskip 1em plus 0.5em minus
   0.4em\relax ACM, 2017, p.~8.
 
-\bibitem{abdelwahab2018clones}
-S.~Abdelwahab, S.~Zhang, A.~Greenacre, K.~Ovesen, K.~Bergman, and B.~Hamdaoui,
-  ``When clones flock near the fog,'' \emph{IEEE Internet of Things Journal},
-  2018.
-
-\bibitem{sun2016primal}
-X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
-  edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
-  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
-
-\bibitem{chang2017energy}
-Z.~Chang, Z.~Zhou, T.~Ristaniemi, and Z.~Niu, ``Energy efficient optimization
-  for computation offloading in fog computing system,'' in \emph{GLOBECOM
-  2017-2017 IEEE Global Communications Conference}.\hskip 1em plus 0.5em minus
-  0.4em\relax IEEE, 2017, pp. 1--6.
-
-\bibitem{dinh2017offloading}
-T.~Q. Dinh, J.~Tang, Q.~D. La, and T.~Q. Quek, ``Offloading in mobile edge
-  computing: Task allocation and computational frequency scaling,'' \emph{IEEE
-  Transactions on Communications}, vol.~65, no.~8, pp. 3571--3584, 2017.
+\bibitem{deng2016optimal}
+R.~Deng, R.~Lu, C.~Lai, T.~H. Luan, and H.~Liang, ``Optimal workload allocation
+  in fog-cloud computing toward balanced delay and power consumption,''
+  \emph{IEEE Internet of Things Journal}, vol.~3, no.~6, pp. 1171--1181, 2016.
 
 \bibitem{xiao2017qoe}
 Y.~Xiao and M.~Krunz, ``Qoe and power efficiency tradeoff for fog computing
@@ -221,33 +205,16 @@ Y.~Xiao and M.~Krunz, ``Qoe and power efficiency tradeoff for fog computing
   on Computer Communications, IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2017, pp. 1--9.
 
-\bibitem{deng2016optimal}
-R.~Deng, R.~Lu, C.~Lai, T.~H. Luan, and H.~Liang, ``Optimal workload allocation
-  in fog-cloud computing toward balanced delay and power consumption,''
-  \emph{IEEE Internet of Things Journal}, vol.~3, no.~6, pp. 1171--1181, 2016.
-
 \bibitem{kattepur2016resource}
 A.~Kattepur, H.~Dohare, V.~Mushunuri, H.~K. Rath, and A.~Simha, ``Resource
   constrained offloading in fog computing,'' in \emph{Proceedings of the 1st
   Workshop on Middleware for Edge Clouds \& Cloudlets}.\hskip 1em plus 0.5em
   minus 0.4em\relax ACM, 2016, p.~1.
 
-\bibitem{anglano2018profit}
-C.~Anglano, M.~Canonico, and M.~Guazzone, ``Profit-aware resource management
-  for edge computing systems,'' in \emph{Proceedings of the 1st International
-  Workshop on Edge Systems, Analytics and Networking}.\hskip 1em plus 0.5em
-  minus 0.4em\relax ACM, 2018, pp. 25--30.
-
 \bibitem{nan2017adaptive}
 Y.~Nan, W.~Li, W.~Bao, F.~C. Delicato, P.~F. Pires, Y.~Dou, and A.~Y. Zomaya,
   ``Adaptive energy-aware computation offloading for cloud of things systems,''
   \emph{IEEE Access}, vol.~5, pp. 23\,947--23\,957, 2017.
-
-\bibitem{bahreini2017efficient}
-T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
-  in edge computing systems,'' in \emph{Proceedings of the Second ACM/IEEE
-  Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
-  2017, p.~5.
 
 \bibitem{gu2017cost}
 L.~Gu, D.~Zeng, S.~Guo, A.~Barnawi, and Y.~Xiang, ``Cost efficient resource
@@ -269,6 +236,17 @@ O.~Skarlat, M.~Nardelli, S.~Schulte, M.~Borkowski, and P.~Leitner, ``Optimized
 L.~Wang, L.~Jiao, T.~He, J.~Li, and M.~M{\"u}hlh{\"a}user, ``Service entity
   placement for social virtual reality applications in edge computing,'' in
   \emph{Proc. INFOCOM}, 2018.
+
+\bibitem{bahreini2017efficient}
+T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
+  in edge computing systems,'' in \emph{Proceedings of the Second ACM/IEEE
+  Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  2017, p.~5.
+
+\bibitem{sun2016primal}
+X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
+  edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
+  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
 
 \bibitem{ye2016scalable}
 D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service

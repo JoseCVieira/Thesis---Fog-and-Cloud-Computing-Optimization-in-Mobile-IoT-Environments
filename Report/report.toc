@@ -14,17 +14,17 @@
 \contentsline {subsubsection}{\numberline {2.1.6}Cloudlet Computing}{9}
 \contentsline {subsubsection}{\numberline {2.1.7}Mist Computing}{9}
 \contentsline {subsubsection}{\numberline {2.1.8}Concluding Remarks}{9}
-\contentsline {subsection}{\numberline {2.2}Fog computing architecture}{10}
-\contentsline {subsection}{\numberline {2.3}Migration optimization in mobile fog environments}{14}
-\contentsline {subsubsection}{\numberline {2.3.1}Cost Migration-Aware}{14}
-\contentsline {subsubsection}{\numberline {2.3.2}Energy-aware}{16}
-\contentsline {subsubsection}{\numberline {2.3.3}Cost-aware}{17}
-\contentsline {subsubsection}{\numberline {2.3.4}Handover}{19}
+\contentsline {subsection}{\numberline {2.2}Fog Computing Architecture}{10}
+\contentsline {subsection}{\numberline {2.3}Migration Optimization in Mobile Fog Environments}{14}
+\contentsline {subsubsection}{\numberline {2.3.1}Network Utilization-Aware}{14}
+\contentsline {subsubsection}{\numberline {2.3.2}Energy-Aware}{16}
+\contentsline {subsubsection}{\numberline {2.3.3}Cost-Aware}{17}
+\contentsline {subsubsection}{\numberline {2.3.4}Handover}{20}
 \contentsline {subsection}{\numberline {2.4}Toolkits}{21}
 \contentsline {section}{\numberline {3}Algoritms}{23}
 \contentsline {subsection}{\numberline {3.1}Genetic Algorithm}{24}
 \contentsline {subsection}{\numberline {3.2}??}{24}
-\contentsline {section}{\numberline {4}Description of the project}{24}
+\contentsline {section}{\numberline {4}Description of the Project}{24}
 \contentsline {section}{\numberline {5}Evaluation}{24}
 \contentsline {section}{\numberline {6}Schedule of Future Work}{24}
 \contentsline {section}{\numberline {7}Conclusion}{24}

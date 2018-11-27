@@ -2,15 +2,12 @@ Fields
 ----------
 | Field | Report | Implemented | Notes |
 | --- | :---: | :---: | :---: |
-| QoS | ✓ | ✗ | - |
-| QoE | ✓ | ✗ | - |
-| Cost | ✓ | ✓ | - |
+| QoS | ✓ | ✓ | - |
+| Bandwidth | ✓ | ✓ | - |
 | Energy | ✓ | ✓ | - |
+| Cost | ✓ | ✓ | - |
 | Handover | ✓ | ✗ | - |
-| Mobility | ✓ | ✓ | - |
-| Bandwidth | ✓ | ✗ | - |
 | Load Balancing | ✓ | ✗ | Not explicitly but, the algorithm should achieve this feature |
-| Migration Optimization | ✓ | ✓ | - |
 | Vehicular Fog Computing | ✓ | ✗ | Just to provide case studies |
 | Predicted Mobility Patterns | ? | ? | - |
 | Proactive vs. Eeactive Service Migration | ? | ? | - |
@@ -25,13 +22,15 @@ Fields
 - **Introduction**
 	- **Motivation**
 	- **Objectives**
+	- **Outline**
 - **Related Work**
 	- **Related Computing Paradigms**
 	- **Fog Computing Architecture**
 			- Developing iot applications in the fog: a distributed dataflow approach (2015)
 			- Incremental deployment and migration of geo-distributed situation awareness applications in the fog (2016)
 			- Router-based brokering for surrogate discovery in edge computing (2017)
-	- **Migration Optimization In Mobile Fog Environments**
+	- **Network Utilization-Aware**
+
 	- **Toolkits**
 - **Algorithms**
 - **Architecture**
@@ -39,46 +38,8 @@ Fields
 - **Schedule of Future Work**
 - **Conclusion**
 
-Load Balancing / Resource Allocation / Data placement
-----------
-
-2015 **An architecture for Load Balancing Techniques for Fog Computing Environment.** ?
-
-This paper **proposes a new architecture based on load balancing algorithm in Fog Computing environment. Users sent the request to the nearby Fog servers which are consistently maintaining the frequently used data. In case, the users don’t get the desired resource in nearby Fog Servers who are also communicating with each other, then that request is forwarded to the cloud servers. To implement this load balancing algorithm they use modified Honey Bee Based algorithm.**
-
-**Note: load balancing ?**
-
-- Nova arquitetura baseada em load balancing em fog;
-- User enviam requests para o fog server mais proximo;
-- Este guarda os dados mais utilizados;
-- Caso não encontre pede aos outros que estão na proximidade;
-- Caso não encontre, envia o request para a cloud;
-- Usa o algoritmo modified Honey Bee Based.
-
-----------
-2017 **Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching.** ?
-
-This paper considers a specific **fog computing network consisting of** a set of **data service operators (DSOs)** each of which controls a set of **fog nodes (FNs)** to provide the required data service to a set of **data service subscribers (DSSs).** They address the problem of **how to allocate the limited computing resources of FNs to all the DSSs to achieve an optimal and stable performance. Therefore, they propose a joint optimization in a distributed fashion. In the framework, they formulate a Stackelberg game to analyze the pricing problem for the DSOs as well as the resource allocation problem for the DSSs.**
-
-**Note: resource allocation ?**
-
-- Rede composta por:
-- data service operators (DSOs);
-- fog nodes (FNs);
-- data service subscribers (DSSs);
-- Pretende dar resposta ao problema de como alocar os recursos limitados dos FNs para todos os DSSs;
-- Propõe joint optimization de forma distribuída;
-- Formulam um Stackelberg game para analisar o problema de pricing para os DSOs e resource allocation para os DSSs.
-
-Toolkits
-----------
-- iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments (2017)
-- [385] Myifogsim: A simulator for virtual machine migration in fog computing (2017)
-- [388] Edgecloudsim: An environment for performance evaluation of edge computing systems (2017)
-
 Migration optimization in mobile fog environments
 ----------
-
 - Latency-aware with mobile IoT devices
 	- [237] Migcep: operator migration for mobility driven distributed complex event processing (2013)
 	- [231] Dynamic service migration and workload scheduling in edge-clouds (2015)
@@ -89,6 +50,48 @@ Migration optimization in mobile fog environments
 	- [247] Towards efficient edge cloud augmentation for virtual reality mmogs (2017)
 - Latency-aware with mobile fog servers
 	- Scalable Fog Computing with Service Offloading in Bus Networks (2016)
+- Not used:
+	- Fast Transparent Virtual Machine Migration in Distributed Edge Clouds
+
+Cost
+----------
+- Used:
+	- Efficient Placement of Multi-Component Applications in Edge Computing Systems
+	- Cost efficient resource management in fog computing supported medical cyber-physical system
+	- Cost Aware Service Placement and Load Dispatching in Mobile Cloud Systems
+	- Optimized IoT service placement in the fog (ainda não sei se tiro este..)
+	- Scalable Fog Computing with Service Offloading in Bus Networks
+	- Service Entity Placement for Social Virtual Reality Applications in Edge Computing
+- Could be used:
+	- Asymptotically Optimal Algorithm for Online Reconfiguration of Edge-Clouds
+	- Assessment of the Suitability of Fog Computing in the Context of Internet of Things
+	- MOERA: Mobility-agnostic Online Resource Allocation for Edge Computing
+- Not used:
+	- Towards QoS-aware Fog Service Placement
+	- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks (energy-aware user-centric - acho que é para apagar)
+	- Optimal Placement of Virtual Machines in Mobile Edge Computing (VRCs - acho que é para apagar)
+	- A Decentralized Replica Placement Algorithm for Edge Computing (Replicas - acho que é para apagar)
+	- Fog Computing Micro Datacenter Based Dynamic Resource Estimation and Pricing Model for IoT (previsão, não é sobre migração)
+	- Enabling Low-Latency Applications in Fog-Radio Access Networks (não formula nada)
+	- Availability-aware Mobile Edge Application Placement in 5G Networks (replicas)
+	- Paying Less for More? Combo Plans for Edge-Computing Services (modelo de pagamento)
+	- Fast and Efficient Network Service Embedding Method with Adaptive Offloading to the Edge (cost-aware Virtual Network Function migration)
+
+	----------
+	2017 **Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching.** ?
+
+	This paper considers a specific **fog computing network consisting of** a set of **data service operators (DSOs)** each of which controls a set of **fog nodes (FNs)** to provide the required data service to a set of **data service subscribers (DSSs).** They address the problem of **how to allocate the limited computing resources of FNs to all the DSSs to achieve an optimal and stable performance. Therefore, they propose a joint optimization in a distributed fashion. In the framework, they formulate a Stackelberg game to analyze the pricing problem for the DSOs as well as the resource allocation problem for the DSSs.**
+
+	**Note: resource allocation ?**
+	- Pretende dar resposta ao problema de como alocar os recursos limitados dos FNs para todos os DSSs;
+	- Propõe joint optimization de forma distribuída;
+	- Formulam um Stackelberg game para analisar o problema de pricing para os DSOs e resource allocation para os DSSs.
+
+Toolkits
+----------
+- iFogSim: A toolkit for modeling and simulation of resource management techniques in the Internet of Things, Edge and Fog computing environments (2017)
+- [385] Myifogsim: A simulator for virtual machine migration in fog computing (2017)
+- [388] Edgecloudsim: An environment for performance evaluation of edge computing systems (2017)
 
 [Vehicular Fog Computing]
 ----------
@@ -184,12 +187,14 @@ Notes
 	- fazer tabela com acronimos
 	- fazer acronimo para end devices (mobile device (MD)) e end-to-end (E2E) latency
 	- Load Balancing - Not explicitly but, the algorithm should achieve this feature
-	- ver todas as referencias no report
+	- ver todas as referencias no report (ver se os nomes têm pontos ex.: L. Ye)
+	- ver se a tabela dos paradigmas corresponde ao texto
 - Further research
 	- Movable cloudlets and mobile cloudlets
 	- Bayesian optimization
 	- Proactive vs reactive migration (ver tb no survey)
 	- VM vs containers (ver tb no survey)
+	- Fog computing data placement
 - Doubts
 	- É necessário fazer referência às gateways na arquitetura? -> Assessment of the Suitability of Fog Computing in the Context of Internet of Things
 	- Similar to the traditional cloud computing, fog offers tree types of service models: Software as a Service (SaaS), Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) ?
@@ -201,11 +206,33 @@ Notes
 - Not used papers
 	- OpenStack extensions for QoS and energy efficiency in edge computing
 	- A Game-Theoretic Approach to Coalition Formation in Fog Provider Federations
-- PAPERS:
 	- Cost of virtual machine live migration in clouds: A performance evaluation
 	- Live virtual machine migration with adaptive, memory compression
 	- Adaptive vm handoff across cloudlets
 	- Particle swarm optimization for bi-level pricing problems in supply chains - pricing problems with the buyer and the vendor
+	- Toward Hierarchical Mobile Edge Computing: An Auction-Based Profit Maximization Approach
+	- SpanEdge: Towards Unifying Stream Processing over Central and Near-the-Edge Data Centers
+	- Fast, scalable and secure onloading of edge functions using AirBox
+	- A Fog-Based Internet of Energy Architecture for Transactive Energy Management Systems
+	- You Can Teach Elephants to Dance: Agile VM Handoff for Edge Computing
+	- Towards Virtual Machine Migration in Fog Computing
+	- Multitier Fog Computing With Large-Scale IoT Data Analytics for Smart Cities
+	- A PSO Model with VM Migration and Transmission Power Control for Low Service Delay in the Multiple Cloudlets ECC Scenari (so fala de delay (QoS))
+	- Supporting Internet-of-Things Analytics in a Fog Computing Platform (so fala de QoS individualmente)
+	- Virtual Machine Placement for Backhaul Traffic Minimization in Fog Radio Access Networks(replicas)
+	- Energy efficient optimization for computation offloading in fog computing system (energy aware user centric)
+	- Offloading in mobile edge computing: Task allocation and computational frequency scaling (energy aware user centric)
+
+	%\noindent\tab S Abdelwahab et al. \cite{abdelwahab2018clones} argue that IoT devices communicate a large number of messages with many devices. Thus, devices with low computing and storage capacities will became another source of latency for large-scale distributed applications. Their experiments show that brokering the messages through a one-hop away broker may reduce significantly the end-to-end latency. Therefore, if devices are cloned in a one-hop away cloudlet, their clones can provide message brokering service, allowing both a communication with minimal latency between devices and to offload intensive computation into rich memory and processing nodes that host the clones. Nonetheless, communicating through a one-hop away clone may still experience long end-to-end latency when the broker service relays messages to distant devices. Hence, they propose FogMQ, a self-deploying brokering clones that discover hosting platforms and autonomously migrate between them according to the measured end-to-end latency. This method does not need a central monitoring and control unit. FogMQ servers expose tomography functionalities that enables clones to take migration decisions without complete knowledge about the hosting platform. It allows to stabilize clones deployment and achieve a near minimum latency given an existing infrastructure limits. [remover???]\\
+	%MM Lopes et al. \cite{lopes2017myifogsim} discuss resource allocation in fog computing in the face of users’ mobility, where mobility is achieved through migration of virtual machines between cloudlets. They present a new migration technique composed of two modules: migration policy which defines when the user VM should be migrated, considering aspects such as the user's speed, direction and geographical position and migration strategy, the destination cloudlet, and how the migration is performed. This work had the objective of study the impact of different migration strategies in the latency with users’ mobility.
+
+	%[172] 2016 **Vehicular fog computing: A viewpoint of vehicles as the infrastructures.**
+	%Xueshi Hou et al. present the idea of utilizing vehicles as the infrastructures for communication and computation, named vehicular fog computing (VFC), which is an architecture that utilizes a collaborative multitude of end-user clients or near-user edge devices to carry out communication and computation, based on better utilization of individual communication and computational resources of each vehicle. They discussed four types of scenarios of moving and parked vehicles or congested traffic. Also, they point out the advantages against vehicular cloud computing (VCC) and the advantages in scenarios like of emergency operations for natural disaster and terrorist attack.\\
+
+	%\subsubsection{Energy-Aware User-Centric}
+	%\noindent Besides, meeting time boundaries of applications, QoS also intends to minimize the energy consumption of its users.\\
+	%\noindent\tab In this context, Z Chang et al. \cite{chang2017energy} investigate the energy efficient computation offloading scheme in a multi-user fog computing system. Because offloading the requests/tasks to the cloud/fog can save the energy at the mobile devices, but an unavoidable delay incurs, based on their energy consumption and delay constraint, users need to make the decision on whether to offload the tasks to the fog node nearby. Using queuing theory, they bring a thorough study on the energy consumption and execution delay of the offloading process. Two queuing models are applied respectively to model the execution processes at the mobile device and at the fog node. Based on the theoretical analysis, they present an energy consumption optimization problem with explicit consideration of delay performance. A energy efficient optimization problem is formulated, which involves minimizing the energy consumption by finding the optimal offloading probability and transmit power, subjects to the delay and power constraints. They propose an Alternating Direction Method of Multipliers (ADMM)-based to address the formulated problem in a distributed manner.\\
+	%Similarly, TQ Dinh et al. \cite{dinh2017offloading} propose an optimization framework of offloading from a single mobile device (MD) to multiple edge devices. The objective of this work is to minimize both total tasks’ execution latency and the mobile device’s energy consumption by jointly optimizing the task allocation decision and the mobile device’s central process unit (CPU) frequency by using Dynamic Voltage Frequency Scalling (DVFS). They consider two case studies: fixed CPU frequency and elastic CPU frequency. The formulation of these problems are NP-hard, so they propose a linear relaxation-based approach and a semidefinite relaxation (SDR)-based approach for the fixed CPU frequency case, and an exhaustive searchbased approach and an SDR-based approach for the elastic CPU frequency case.\\
 
 Keyworks
 ----------
@@ -227,8 +254,10 @@ Keyworks
 - It is also worth emphasizing that
 - While the former ... , the latter ...
 
-Handover
+Handover ???
 ----------
+Efficient Service Handoff Across Edge Servers via Docker Container Migration
+
 [243] 2017 **Follow me fog: Toward seamless handover timing schemes in a fog computing environment.** ✓ [REPORT - HANDOVER]
 
 The authors observe that traditional mobile network handover mechanisms cannot handle the demands of fog computation resources and the low-latency requirements of mobile IoT applications. The authors propose Follow Me Fog framework to guarantee service continuity and reduce latency during handovers. The key idea proposed is to continuously monitor the received signal strength of the fog nodes at the mobile IoT device, and to trigger pre-migration of computation jobs before disconnecting the IoT device from the existing fog node.
@@ -255,83 +284,12 @@ Develop a novel user-centric energy-aware mobility management (EMM) scheme, in o
 Study of mobility support issue in fog computing for guaranteeing service continuity. Propose a novel SDN enabled architecture that is able to facilitate mobility management in fog computing by decoupling mobility management and data forwarding functions. Design an efficient handover scheme by migrating mobility management and route optimization logic to the SDN controller. By employing link layer information, the SDN controller can pre-compute the optimal path by estimating the performance gain of each path.
 
 ----------
-[234] 2017 **Optimizing service replication for mobile delay-sensitive applications in 5g edge network.** ? [REPORT - HANDOVER]
+[234] 2017 **Optimizing service Fb for mobile delay-sensitive applications in 5g edge network.** ? [REPORT - HANDOVER]
 
 To guarantee the strict latency requirements, new solutions are required to cope with the user mobility in a distributed edge cloud environment. The use of proactive replication mechanism seems promising to avoid QoE degradation during service migration between different edge nodes. However, accounting for the limited resources of edge micro data-centers, appropriate optimization solutions must be developed to reduce the cost of service deployment, while guaranteeing the desired QoE. In this paper, Ivan Farris et al., by leveraging on prediction schemes of user mobility patterns, have proposed two linear optimization solutions for replication-based service migration in cellular 5G networks: the min-RM approach aims at minimizing the QoE degradation during user handover; min-NSR approach favors the reduction of service replication cost. Simulation results proved the efficiency of each solution in achieving its design goal and provides useful information for network and service orchestrators in next-generation 5G cloud-based networks.
 
 - Avaptive avatar handoff in the cloudlet network (2017)
 
-Cost
-----------
-- Used:
-	- Efficient Placement of Multi-Component Applications in Edge Computing Systems
-	- Cost efficient resource management in fog computing supported medical cyber-physical system
-	- Cost Aware Service Placement and Load Dispatching in Mobile Cloud Systems
-	- Optimized IoT service placement in the fog (ainda não sei se tiro este..)
-	- Scalable Fog Computing with Service Offloading in Bus Networks
-	- Service Entity Placement for Social Virtual Reality Applications in Edge Computing
-- Could be used:
-	- Asymptotically Optimal Algorithm for Online Reconfiguration of Edge-Clouds
-	- Assessment of the Suitability of Fog Computing in the Context of Internet of Things
-	- MOERA: Mobility-agnostic Online Resource Allocation for Edge Computing
-- Not used:
-	- Towards QoS-aware Fog Service Placement
-	- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks (energy-aware user-centric - acho que é para apagar)
-	- Optimal Placement of Virtual Machines in Mobile Edge Computing (VRCs - acho que é para apagar)
-	- A Decentralized Replica Placement Algorithm for Edge Computing (Replicas - acho que é para apagar)
-	- Fog Computing Micro Datacenter Based Dynamic Resource Estimation and Pricing Model for IoT (previsão, não é sobre migração)
-	- Enabling Low-Latency Applications in Fog-Radio Access Networks (não formula nada)
-	- Availability-aware Mobile Edge Application Placement in 5G Networks (replicas)
-	- Paying Less for More? Combo Plans for Edge-Computing Services (modelo de pagamento)
-	- Fast and Efficient Network Service Embedding Method with Adaptive Offloading to the Edge (cost-aware Virtual Network Function migration)
-
-To implement???
-----------
-
-Bandwidth
-----------
-- Heuristics to allocate high-performance cloudlets for computation offloading in mobile ad hoc clouds
-- Virtual machine placement for backhaul traffic minimization in fog radio access networks
-- Computation offloading leveraging computing resources from edge cloud and mobile peers (acho que n)
-- A pso model with vm migration and transmission power control for low service delay in the multiple cloudlets ecc scenario
-- Supporting Internet-of-Things Analytics in a Fog Computing Platform
-- A Decentralized Replica Placement Algorithm for Edge Computing
-- Improving Quality of Experience in Future Wireless Access Networks through Fog Computing
-- LAVEA: Latency-aware Video Analytics on Edge Computing Platform
-- Efficient Service Handoff Across Edge Servers via Docker Container Migration
-- A Novel Cost Optimization Framework for MultiCloudlet Environment over Optical Access Networks
-- ACACIA – Context-aware Edge Computing for Continuous Interactive Applications over Mobile Networks
-- Toward Hierarchical Mobile Edge Computing: An Auction-Based Profit Maximization Approach
-- PRIMAL: PRofIt Maximization Avatar pLacement for Mobile Edge Computing
-- CloudFog: Leveraging Fog to Extend Cloud Gaming for Thin-Client MMOG with High Quality of Service
-- Cachier: Edge-caching for recognition applications
-- Foggy: a platform for workload orchestration in a Fog Computing environment
-- Traffic-Aware Virtual Machine Placement in Cloudlet Mesh with Adaptive Bandwidth
-- Fog Computing Through Public-Resource Computing and Storage
-- Fast, scalable and secure onloading of edge functions using AirBox
-- VR is on the Edge: How to Deliver 360° Videos in Mobile Networks
-- Learning IoT in Edge: Deep Learning for the Internet of Things with Edge Computing
-- SpanEdge: Towards Unifying Stream Processing over Central and Near-the-Edge Data Centers
-- Towards Efficient Edge Cloud Augmentation for Virtual Reality MMOGs
-- Low-cost Video Transcoding at the Wireless Edge
-- Edgecourier: an edge-hosted personal service for low-bandwidth document synchronization in mobile cloud storage services
-- MUTE: MUlti-Tier Edge networks
-- ApproxIoT: Approximate Analytics for Edge Computing
-- Edge Intelligence: On-Demand Deep Learning Model Co-Inference with Device-Edge Synergy
-- Where’s The Bear?- Automating Wildlife Image Processing Using IoT and Edge Cloud Systems
-- DeepDecision: A Mobile Deep Learning Framework for Edge Video Analytics
-- Slicing WiFi WLAN-Sharing Access Infrastructures to Enhance Ultra-Dense 5G Networking
-- OpenStack extensions for QoS and energy efficiency in edge computing
-- Realizing the Global Edge Cloud
-- Mobile-Edge Computing Versus Centralized Cloud Computing Over a Converged FiWi Access Network
-- A Fog-Based Internet of Energy Architecture for Transactive Energy Management Systems
-- Ensuring Reliability in Geo-Distributed Edge Cloud
-- Gremlin: Scheduling Interactions in Vehicular Computing
-- Fog Computing in Healthcare Internet of Things: A Case Study on ECG Feature Extraction
-- Fast Transparent Virtual Machine Migration in Distributed Edge Clouds
-- You Can Teach Elephants to Dance: Agile VM Handoff for Edge Computing
-- Edge Computing with Cloud for Voice Disorder Assessment and Treatment
-
-QoS
+QoS ??
 ----------
 124, 288, 397, 255, 231, 289, 256, 97, 72, 290, 89, 257, 126, 258, 107, 128, 380, 259, 98, 291, 130, 131, 292, 293, 260, 196, 197, 294, 295, 232, 24, 296, 297, 383, 199, 335, 210, 299, 301, 302, 211, 235, 135, 174, 175, 137, 237, 238, 262, 239, 398, 240, 263, 241, 92, 264, 303, 223, 338, 242, 177, 140, 340, 304, 305, 342, 243, 306, 244, 93, 343, 212, 91, 307, 213, 145, 179, 147, 308, 100, 267, 245, 214, 224, 90, 322, 269, 110, 246, 225, 323, 111, 403, 271, 325, 88, 215, 112, 150, 385, 386, 346, 273, 152, 309, 153, 406, 181, 348, 155, 156, 310, 407, 66, 202, 350, 351, 247, 75, 352, 353, 157, 355, 356, 311, 312, 51, 313, 158, 64, 274, 182, 409, 183, 358, 359, 249, 184, 410, 360, 159, 250, 361, 442, 390, 362, 203, 441, 412, 251, 160, 204, 363, 364, 217, 365, 413, 366, 327, 162, 218, 54, 284, 285, 367, 219, 163, 315, 316, 186, 415, 286, 164, 187, 206, 368, 166, 369, 276, 416, 167, 252, 393, 207, 277, 318, 370, 190, 372, 328, 373, 319, 168, 374, 253, 375, 278, 321, 432, 229, 417, 169, 376, 170, 220, 337, 230, 418, 192, 396, 209, 254, 122, 379, 123
