@@ -21,9 +21,10 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Cost-Aware}{17}
 \contentsline {subsubsection}{\numberline {2.3.4}Handover}{20}
 \contentsline {subsection}{\numberline {2.4}Toolkits}{21}
-\contentsline {section}{\numberline {3}Algoritms}{23}
+\contentsline {section}{\numberline {3}Optimization Algoritms}{23}
 \contentsline {subsection}{\numberline {3.1}Genetic Algorithm}{24}
-\contentsline {subsection}{\numberline {3.2}??}{24}
+\contentsline {subsection}{\numberline {3.2}MDP}{24}
+\contentsline {subsection}{\numberline {3.3}???}{24}
 \contentsline {section}{\numberline {4}Description of the Project}{24}
 \contentsline {section}{\numberline {5}Evaluation}{24}
 \contentsline {section}{\numberline {6}Schedule of Future Work}{24}
