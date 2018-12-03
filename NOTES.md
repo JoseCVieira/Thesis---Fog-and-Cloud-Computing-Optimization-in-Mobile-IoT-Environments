@@ -41,7 +41,8 @@ Notes
 	- While the former ... , the latter ...
 	- have been considered as means to provide
 	- The trend towards edge-clouds is expected
-	- We tackle the edge cloud network design problem
+	- For the sake of tractability we only consider
+	- We tackle the edge cloud network design problem 
 	- Which is, to the best of our knowledge, an untreated problem in the literature
 - TODO:
 	- Organize BibteX
@@ -69,18 +70,19 @@ Notes
 	- Proactive vs reactive migration (survey)
 	- VM vs containers (survey)
 	- Bayesian optimization?
-	- grid/power grid?
+	- Greedy one-shot vs greedy first fit?
 - Not used papers:
 	- Energy-aware user-centric:
-		- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks (described above)
+		- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks (described bellow)
 		- Offloading in mobile edge computing: Task allocation and computational frequency scaling
-		- Adaptive Computation Scaling and Task Offloading in Mobile Edge Computing (described above)
-		- Energy Efficient Optimization for Computation Offloading in Fog Computing System (described above)
+		- Adaptive Computation Scaling and Task Offloading in Mobile Edge Computing (described bellow)
+		- Energy Efficient Optimization for Computation Offloading in Fog Computing System (described bellow)
 	- Replicas:
 		- Optimal Placement of Virtual Machines in Mobile Edge Computing
 		- A Decentralized Replica Placement Algorithm for Edge Computing
+		- Adaptive Avatar Handoff in the Cloudlet Network (described bellow)
 		- Availability-aware Mobile Edge Application Placement in 5G Networks
-		- Virtual Machine Placement for Backhaul Traffic Minimization in Fog Radio Access Networks (described above)
+		- Virtual Machine Placement for Backhaul Traffic Minimization in Fog Radio Access Networks (described bellow)
 	- Handoff:
 		- Towards Virtual Machine Migration in Fog Computing
 		- Adaptive VM Handoff Across Cloudlets (not applied to fog)
@@ -88,27 +90,34 @@ Notes
 		- Live Virtual Machine Migration with Adaptive Memory Compression (not applied to fog)
 		- Cost of Virtual Machine Live Migration in Clouds: A Performance Evaluation (not applied to fog)
 		- Avaptive avatar handoff in the cloudlet network
-		- Mobility support for fog computing: An sdn approach (described above)
-		- Efficient service handoff across edge servers via docker container migration (described above)
-		- Optimizing service Fb for mobile delay-sensitive applications in 5g edge network (described above)
-		- Follow me fog: Toward seamless handover timing schemes in a fog computing environment (described above)
+		- Mobility support for fog computing: An sdn approach (described bellow)
+		- Efficient service handoff across edge servers via docker container migration (described bellow)
+		- Optimizing service Fb for mobile delay-sensitive applications in 5g edge network (described bellow)
+		- Follow me fog: Toward seamless handover timing schemes in a fog computing environment (described bellow)
 		- https://opensource.com/resources/what-docker
 		- Incremental deployment and migration of geo-distributed situation awareness applications in the fog
 	- Pricing:
 		- Paying Less for More? Combo Plans for Edge-Computing Services
+		- Toward Hierarchical Mobile Edge Computing: An Auction-Based Profit Maximization Approach (TO IMPLEMNET.. MAYBE)
 		- Fog Computing Micro Datacenter Based Dynamic Resource Estimation and Pricing Model for IoT (resource estimation)
 		- Particle swarm optimization for bi-level pricing problems in supply chains - pricing problems with the buyer and the vendor (not applied to fog)
 	- Framework:
 		- OpenStack extensions for QoS and energy efficiency in edge computing
 		- SpanEdge: Towards Unifying Stream Processing over Central and Near-the-Edge Data Centers (does not take into account mobility)
-		- Multitier Fog Computing With Large-Scale IoT Data Analytics for Smart Cities (first efforts on mobile fog nodes, described above)
+		- Multitier Fog Computing With Large-Scale IoT Data Analytics for Smart Cities (first efforts on mobile fog nodes, described bellow)
 	- Data placement;
-		- When Clones Flock Near the Fog (described above)
+		- When Clones Flock Near the Fog (described bellow)
+		- Towards QoS-aware Fog Service Placement (just QoS, fog colonies)
+		- On Reducing IoT Service Delay via Fog Offloading (delay, data placement)
+		- Online Placement of Multi-Component Applications in Edge Computing Environments
+		- Asymptotically Optimal Algorithm for Online Reconfiguration of Edge-Clouds (cost-QoS)
 		- Fast Transparent Virtual Machine Migration in Distributed Edge Clouds (network transparency)
-		- Move with Me: Scalably Keeping Virtual Objects Close to Users on the Move (QoS, VOs, described above)
-		- Virtual Fog: A Virtualization Enabled Fog Computing Framework for Internet of Things (described above)
+		- A Game-Theoretic Approach to Coalition Formation in Fog Provider Federations (Profit-aware, QoS)
+		- Move with Me: Scalably Keeping Virtual Objects Close to Users on the Move (QoS, VOs, described bellow)
+		- Virtual Fog: A Virtualization Enabled Fog Computing Framework for Internet of Things (described bellow)
 		- Supporting Internet-of-Things Analytics in a Fog Computing Platform (maximize number of satisfied users, does not consider migration)
-		- Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching (described above)
+		- Traffic-Aware Virtual Machine Placement in Cloudlet Mesh with Adaptive Bandwidth (bandwidth-aware data placement, does not consider mobility)
+		- Computing Resource Allocation in Three-Tier IoT Fog Networks: A Joint Optimization Approach Combining Stackelberg Game and Matching (described bellow)
 	- Vehicular fog computing:
 		- Foud: Integrating Fog and Cloud for 5G-Enabled V2G Networks
 		- Vehicular Fog Computing: A Viewpoint of Vehicles as the Infrastructures
@@ -116,18 +125,6 @@ Notes
 		- Fog Vehicular Computing Augmentation of Fog Computing Using Vehicular Cloud Computing
 		- Toward Efficient Content Delivery for Automated Driving Services: An Edge Computing Solution
 		- Cooperative Fog Computing for Dealing with Big Data in the Internet of Vehicles: Architecture and Hierarchical Resource Management
-	- To implement:
-		- Mobile edge cloud network design optimization (2017-37)
-		- On Reducing IoT Service Delay via Fog Offloading (delay)(2018-13)
-		- Fast and Efficient Network Service Embedding Method with Adaptive Offloading to the Edge (cost-aware Virtual Network Function migration)(2018-1)
-		- A Game-Theoretic Approach to Coalition Formation in Fog Provider Federations(Profit-aware, QoS)(2018-3)
-		- Multiobjective Optimization for Computation Offloading in Fog Computing (energy, cost, QoS)(2018-21)
-		- Asymptotically Optimal Algorithm for Online Reconfiguration of Edge-Clouds (cost-QoS??)(2016-21)
-		- MOERA: Mobility-agnostic Online Resource Allocation for Edge Computing (cost)(2018-0)
-		- Toward Hierarchical Mobile Edge Computing: An Auction-Based Profit Maximization Approach (profit vs QoS)(2017-22)
-		- Towards QoS-aware Fog Service Placement (just QoS, fog colonies)
-		- A PSO Model with VM Migration and Transmission Power Control for Low Service Delay in the Multiple Cloudlets ECC Scenari (QoS)
-		- Traffic-Aware Virtual Machine Placement in Cloudlet Mesh with Adaptive Bandwidth (bandwidth-aware data placement)
 
 ----------
 **Energy Efficient Optimization for Computation Offloading in Fog Computing System**
@@ -209,3 +206,7 @@ Study of mobility support issue in fog computing for guaranteeing service contin
 **Optimizing service Fb for mobile delay-sensitive applications in 5g edge network**
 
 To guarantee the strict latency requirements, new solutions are required to cope with the user mobility in a distributed edge cloud environment. The use of proactive replication mechanism seems promising to avoid QoE degradation during service migration between different edge nodes. However, accounting for the limited resources of edge micro data-centers, appropriate optimization solutions must be developed to reduce the cost of service deployment, while guaranteeing the desired QoE. In this paper, Ivan Farris et al., by leveraging on prediction schemes of user mobility patterns, have proposed two linear optimization solutions for replication-based service migration in cellular 5G networks: the min-RM approach aims at minimizing the QoE degradation during user handover; min-NSR approach favors the reduction of service replication cost. Simulation results proved the efficiency of each solution in achieving its design goal and provides useful information for network and service orchestrators in next-generation 5G cloud-based networks.
+
+**Adaptive Avatar Handoff in the Cloudlet Network**
+
+X. Sun et al. shows an architecture where each User Equipment (UE) has its own Avatar (a private computing and storage resources for the UE) which is deployed to a cloudlet, being the communication characterized by low end-to-end (E2E) latency. When UEs roam away, in order to maintain the end-to-end latency, their Avatars should be handed off among cloudlets accordingly. However, moving such amount of data (the Avatar’s virtual disk) during the handoff time may both incur unbearable migration time and network congestion. In order to overcome those limitations, they propose LatEncy Aware Replica placemeNt (LEARN) algorithm to place a number of replicas of each Avatar’s virtual disk into suitable cloudlets. Meanwhile, by considering the capacity limitation of each cloudlet, they propose the LatEncy aware Avatar hanDoff (LEAD) algorithm to place UEs’ Avatars among the cloudlets such that the average E2E delay is minimized.

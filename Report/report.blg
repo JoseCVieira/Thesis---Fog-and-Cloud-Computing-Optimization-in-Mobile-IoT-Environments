@@ -1,15 +1,14 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
 The style file: IEEEtran.bst
 Database file #1: ./references/report.bib
-Repeated entry---line 839 of file ./references/report.bib
+Repeated entry---line 864 of file ./references/report.bib
  : @incollection{bonomi2014fog
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1043 of file ./references/report.bib
+Repeated entry---line 1038 of file ./references/report.bib
  : @inproceedings{bahreini2017efficient
  :                                     ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "anglano2018profit"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.

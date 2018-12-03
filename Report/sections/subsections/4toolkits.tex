@@ -1,9 +1,10 @@
 %!TEX encoding = UTF-8 Unicode
 \subsection{Toolkits}
 \label{sec:Toolkits}
+is was searched for the available toolkits....
+
 As stated before, in Section \ref{subsec:Objectives}, the proposed solution, which will be described later in Section \ref{sec:Architecture}, will be implemented in a carefully selected toolkit. In order to make this selection, a survey was made on the currently available simulators. Table \ref{tab:toolkits} compares fog and related computing paradigms simulators via comparison of their characteristics.\\
 \noindent\tab \textit{Programming language}: This is important to evaluate the simplicity, level of abstraction offered, maintainability, extensibility, its popularity, etc. As can be observed, almost all are Java-based, being that all opt for object-oriented programming.\\
-\noindent\tab \textit{Availability}: All presented simulators are publicly available, except for RECAP (a H2020 project to develop the next generation of cloud, edge and fog computing capacity provisioning via targeted research advances in cloud infrastructure optimization, simulation and automation) that is still in progress.\\
 \noindent\tab \textit{Documentation}: Unlike the availability, documentation is not always available or sometimes is scarce. In those cases, this is an impediment to the extensibility and maintenance of the corresponding simulators. This parameter includes official documentation, tutorials, community, wiki, etc\\
 \noindent\tab \textit{Graphical support}: Provide a Graphical User Interface (GUI) may be helpful. Instead of defining the entire architecture programmatically, researchers can define it in a user-friendly environment.\\
 \noindent\tab \textit{Energy-aware}: As aforementioned, energy is one of the multi-objectives that this work intends to provide. When implementing the migration optimization algorithm, the more realistic the energy model, the more realistic the algorithm will be. Although CloudSim provides energy-conscious resource management techniques/policies, GreenCloud is a more fine-grained simulator to this end. Its energy models are implemented for every data center element (computing servers, core and rack switches). Moreover, due to the advantage in the simulation resolution, energy models can operate at the packet level as well. This allows updating the levels of energy consumption whenever a new packet leaves or arrives from the link, or whenever a new task execution is started or completed at the server \cite{kliazovich2012greencloud}.\\
@@ -13,12 +14,12 @@ As stated before, in Section \ref{subsec:Objectives}, the proposed solution, whi
 \noindent\tab \textit{Migration support}: This policy allows to apply data placement techiniques (i.e. application and workload migration) to benefit high quality of service.\\
 \noindent\tab \textit{Mobility/Location-aware}: As already explained, mobility/location-aware is quite an essential feature in fog computing. This allows maintaining (as much as possible) the E2E latency as both users and servers move. There are few simulators that support this feature. For instance, in a cloud environment, CloudAnalyst \cite{wickremasinghe2010cloudanalyst} is a tool whose goal is to support the evaluation of social network applications, according to the geographic distribution of users and data centers. On the contrary, in a fog environment, to the best of our knowledge, there are no support for geographic distribution of fog nodes. The only one that provides mobility/location-aware of end devices, which is currently available, is MyiFogSim. MyiFogSim is an extension of iFogSim to support users mobility through migration of VMs between cloudlets \cite{lopes2017myifogsim}.\\
 \begin{table}[!t]
+	\caption{Comparison of fog and related computing paradigms simulators (`*' - extends CloudSim, `**' - extends both CloudSim and iFogSim, `\halfcorrect' - limited, `\textminus' - no information).}
 	\scriptsize
-	\begin{tabular}{>{\arraybackslash}m{1in} >{\centering\arraybackslash}m{0.3in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.3in} >{\centering\arraybackslash}m{0.25in} >{\centering\arraybackslash}m{0.25in}}
+	\begin{tabular}{>{\arraybackslash}m{1in} >{\centering\arraybackslash}m{0.33in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.33in} >{\centering\arraybackslash}m{0.27in} >{\centering\arraybackslash}m{0.27in}}
 		\toprule
 		Simulation Platform &
 		\begin{turn}{90}\shortstack{Programming\\language}\end{turn} &
-		\begin{turn}{90}\shortstack{Availability}\end{turn} &
 		\begin{turn}{90}\shortstack{Documentation}\end{turn} &
 		\begin{turn}{90}\shortstack{Graphical support}\end{turn} &
 		\begin{turn}{90}\shortstack{Energy-aware}\end{turn} &
@@ -33,30 +34,28 @@ As stated before, in Section \ref{subsec:Objectives}, the proposed solution, whi
 		\begin{turn}{90}\shortstack{Web page}\end{turn} &
 		\begin{turn}{90}\shortstack{Paper}\end{turn} \\
 		\toprule
-		CloudSim & Java & \cmark & \cmark &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2016 &  \cite{TheCLOUD47:online} & \cite{calheiros2011cloudsim} \\ \midrule
-		CloudNetSim++ & C++ & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2015 & \cite{cloudnet14:online} & \cite{malik2017cloudnetsim++} \\ \midrule
-		GreenCloud & \shortstack{C++/\\ Otcl} & \cmark & \cmark &  & \cmark &  & \cmark & \cmark & \cmark & \cmark &  &  & 2016 & \cite{Greenclo13:online} & \cite{kliazovich2012greencloud} \\ \midrule
-		iCanCloud & C++ & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  &  & 2015 & \cite{Website18:online} & \cite{nunez2012icancloud} \\ \midrule
-		CloudSched & Java & \cmark &  & \cmark & \cmark &  & \cmark &  &  &  &  &  & 2015 & \cite{CloudSch23:online} & \cite{tian2015toolkit} \\ \midrule
-		CloudAnalyst* & Java & \cmark &  & \cmark &  & \cmark & \cmark & \cmark & \halfcorrect & \cmark & \cmark &  & 2009 & \cite{TheCLOUD47:online} & \cite{wickremasinghe2010cloudanalyst} \\ \midrule
-		DynamicCloudSim* & Java & \cmark &  &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2017 & \cite{marcbuxd5:online} & \cite{bux2015dynamiccloudsim} \\ \midrule
-		CloudReports* & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2012 & \cite{thiagott93:online} & \textminus \\ \midrule
-		RealCloudSim* & Java & \cmark & \halfcorrect & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2013 & \cite{RealClou60:online} & \textminus \\ \midrule
-		DCSim & Java & \cmark & \halfcorrect &  & \cmark &  & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2014 & \cite{digsuwod49:online} & \cite{tighe2012dcsim} \\ \midrule
-		CloudSim Plus* & Java & \cmark & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2018 & \cite{CloudSim79:online} & \cite{silva2017cloudsim} \\ \midrule
-		CloudSim Plus Automation* & Java & \cmark & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2018 & \cite{manoelca57:online} & \textminus \\ \midrule
-		DISSECT-CF & Java & \cmark & \cmark &  & \cmark &  & \cmark &  & \halfcorrect & \cmark &  &  & 2018 & \cite{kecskeme90:online} & \cite{kecskemeti2015dissect} \\ \midrule
-		WorkflowSim* & Java & \cmark & \cmark &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2015 & \cite{Workflow31:online} & \cite{chen2012workflowsim} \\ \midrule
-		Cloud2Sim* & Java & \cmark &  &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2016 & \cite{Cloud2Si98:online} & \cite{kathiravelu2014adaptive} \\ \midrule
-		CloudSimDisk* & Java & \cmark &  &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2015 & \cite{Udacity231:online} & \cite{louis2015cloudsimdisk} \\ \midrule
-		RECAP & Java &  &  & \textminus & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \textminus & \cite{RECAPRel99:online} & \textminus \\ \midrule
-		iFogSim* & Java & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect &  &  & \cmark & 2016 & \cite{Cloudsla14:online} & \cite{gupta2017ifogsim} \\ \midrule
-		MyiFogSim** & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark & \cmark & \cmark & 2017 & \cite{marcioco38:online} & \cite{lopes2017myifogsim} \\ \midrule
-		iFogSimWithData Placement** & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect &  &  & \cmark & 2018 & \cite{medislam49:online} & \cite{naas2018extension} \\ \midrule
-		EdgeCloudSim & Java & \cmark & \cmark &  &  & \cmark & \cmark & \cmark & \cmark &  & \cmark & \cmark & 2018 & \cite{CagatayS20:online} & \cite{sonmez2017edgecloudsim} \\ \midrule
-		YAFS & \shortstack{Pyth-\\on} & \cmark & \cmark &  & \halfcorrect &  &  & \halfcorrect & \halfcorrect &  &  & \cmark & 2018 & \cite{yafsPyP38:online} & \textminus \\ \midrule
-		FogTorch & Java & \cmark &  &  &  &  & \cmark & \cmark & \halfcorrect &  &  & \cmark & 2016 & \cite{diunipis47:online} & \cite{brogi2017qos} \\ \bottomrule \\
+		CloudSim & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2016 &  \cite{TheCLOUD47:online} & \cite{calheiros2011cloudsim} \\ \midrule
+		CloudNetSim++ & C++ &  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2015 & \cite{cloudnet14:online} & \cite{malik2017cloudnetsim++} \\ \midrule
+		GreenCloud & \shortstack{C++/\\ Otcl} & \cmark &  & \cmark &  & \cmark & \cmark & \cmark & \cmark &  &  & 2016 & \cite{Greenclo13:online} & \cite{kliazovich2012greencloud} \\ \midrule
+		iCanCloud & C++ & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  &  & 2015 & \cite{Website18:online} & \cite{nunez2012icancloud} \\ \midrule
+		CloudSched & Java &  & \cmark & \cmark &  & \cmark &  &  &  &  &  & 2015 & \cite{CloudSch23:online} & \cite{tian2015toolkit} \\ \midrule
+		CloudAnalyst* & Java &  & \cmark &  & \cmark & \cmark & \cmark & \halfcorrect & \cmark & \cmark &  & 2009 & \cite{TheCLOUD47:online} & \cite{wickremasinghe2010cloudanalyst} \\ \midrule
+		DynamicCloudSim* & Java &  &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2017 & \cite{marcbuxd5:online} & \cite{bux2015dynamiccloudsim} \\ \midrule
+		CloudReports* & Java &  & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2012 & \cite{thiagott93:online} & \textminus \\ \midrule
+		RealCloudSim* & Java & \halfcorrect & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2013 & \cite{RealClou60:online} & \textminus \\ \midrule
+		DCSim & Java & \halfcorrect &  & \cmark &  & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2014 & \cite{digsuwod49:online} & \cite{tighe2012dcsim} \\ \midrule
+		CloudSim Plus* & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2018 & \cite{CloudSim79:online} & \cite{silva2017cloudsim} \\ \midrule
+		CloudSim Plus Automation* & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark &  &  & 2018 & \cite{manoelca57:online} & \textminus \\ \midrule
+		DISSECT-CF & Java & \cmark &  & \cmark &  & \cmark &  & \halfcorrect & \cmark &  &  & 2018 & \cite{kecskeme90:online} & \cite{kecskemeti2015dissect} \\ \midrule
+		WorkflowSim* & Java & \cmark &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2015 & \cite{Workflow31:online} & \cite{chen2012workflowsim} \\ \midrule
+		Cloud2Sim* & Java &  &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2016 & \cite{Cloud2Si98:online} & \cite{kathiravelu2014adaptive} \\ \midrule
+		CloudSimDisk* & Java &  &  & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark &  &  & 2015 & \cite{Udacity231:online} & \cite{louis2015cloudsimdisk} \\ \midrule
+		iFogSim* & Java & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect &  &  & \cmark & 2016 & \cite{Cloudsla14:online} & \cite{gupta2017ifogsim} \\ \midrule
+		MyiFogSim** & Java &  & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect & \cmark & \cmark & \cmark & 2017 & \cite{marcioco38:online} & \cite{lopes2017myifogsim} \\ \midrule
+		iFogSimWithData Placement** & Java &  & \cmark & \cmark & \cmark & \cmark & \cmark & \halfcorrect &  &  & \cmark & 2018 & \cite{medislam49:online} & \cite{naas2018extension} \\ \midrule
+		EdgeCloudSim & Java & \cmark &  &  & \cmark & \cmark & \cmark & \cmark &  & \cmark & \cmark & 2018 & \cite{CagatayS20:online} & \cite{sonmez2017edgecloudsim} \\ \midrule
+		YAFS & \shortstack{Pyth-\\on} & \cmark &  & \halfcorrect &  &  & \halfcorrect & \halfcorrect &  &  & \cmark & 2018 & \cite{yafsPyP38:online} & \textminus \\ \midrule
+		FogTorch & Java &  &  &  &  & \cmark & \cmark & \halfcorrect &  &  & \cmark & 2016 & \cite{diunipis47:online} & \cite{brogi2017qos} \\ \bottomrule
 	\end{tabular}
-	\caption{Comparison of fog and related computing paradigms simulators (`*' - extends CloudSim, `**' - extends both CloudSim and iFogSim, `\halfcorrect' - limited, `\textminus' - no information).}
 	\label{tab:toolkits}
 \end{table}

@@ -170,17 +170,24 @@ F.~Bonomi, R.~Milito, P.~Natarajan, and J.~Zhu, ``Fog computing: A platform for
   A roadmap for smart environments}.\hskip 1em plus 0.5em minus 0.4em\relax
   Springer, 2014, pp. 169--186.
 
+\bibitem{rodrigues2017pso}
+T.~G. Rodrigues, K.~Suto, H.~Nishiyama, and N.~Kato, ``A pso model with vm
+  migration and transmission power control for low service delay in the
+  multiple cloudlets ecc scenario,'' in \emph{Communications (ICC), 2017 IEEE
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2017, pp. 1--6.
+
+\bibitem{urgaonkar2015dynamic}
+R.~Urgaonkar, S.~Wang, T.~He, M.~Zafer, K.~Chan, and K.~K. Leung, ``Dynamic
+  service migration and workload scheduling in edge-clouds,'' \emph{Performance
+  Evaluation}, vol.~91, pp. 205--228, 2015.
+
 \bibitem{ottenwalder2013migcep}
 B.~Ottenw{\"a}lder, B.~Koldehofe, K.~Rothermel, and U.~Ramachandran, ``Migcep:
   operator migration for mobility driven distributed complex event
   processing,'' in \emph{Proceedings of the 7th ACM international conference on
   Distributed event-based systems}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
   2013, pp. 183--194.
-
-\bibitem{urgaonkar2015dynamic}
-R.~Urgaonkar, S.~Wang, T.~He, M.~Zafer, K.~Chan, and K.~K. Leung, ``Dynamic
-  service migration and workload scheduling in edge-clouds,'' \emph{Performance
-  Evaluation}, vol.~91, pp. 205--228, 2015.
 
 \bibitem{zhang2016segue}
 W.~Zhang, Y.~Hu, Y.~Zhang, and D.~Raychaudhuri, ``Segue: Quality of service
@@ -204,6 +211,12 @@ Y.~Xiao and M.~Krunz, ``Qoe and power efficiency tradeoff for fog computing
   networks with fog node cooperation,'' in \emph{INFOCOM 2017-IEEE Conference
   on Computer Communications, IEEE}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2017, pp. 1--9.
+
+\bibitem{anglano2018profit}
+C.~Anglano, M.~Canonico, and M.~Guazzone, ``Profit-aware resource management
+  for edge computing systems,'' in \emph{Proceedings of the 1st International
+  Workshop on Edge Systems, Analytics and Networking}.\hskip 1em plus 0.5em
+  minus 0.4em\relax ACM, 2018, pp. 25--30.
 
 \bibitem{kattepur2016resource}
 A.~Kattepur, H.~Dohare, V.~Mushunuri, H.~K. Rath, and A.~Simha, ``Resource
@@ -254,9 +267,15 @@ D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
   (CSCloud), 2016 IEEE 3rd International Conference on}.\hskip 1em plus 0.5em
   minus 0.4em\relax IEEE, 2016, pp. 247--251.
 
-\bibitem{sun2017avaptive}
-X.~Sun and N.~Ansari, ``Avaptive avatar handoff in the cloudlet network,''
-  \emph{IEEE Transactions on Cloud Computing}, no.~1, pp. 1--1, 2017.
+\bibitem{liu2018multiobjective}
+L.~Liu, Z.~Chang, X.~Guo, S.~Mao, and T.~Ristaniemi, ``Multiobjective
+  optimization for computation offloading in fog computing,'' \emph{IEEE
+  Internet of Things Journal}, vol.~5, no.~1, pp. 283--294, 2018.
+
+\bibitem{wang2018moera}
+L.~Wang, L.~Jiao, J.~Li, J.~Gedeon, and M.~M{\"u}hlh{\"a}user, ``Moera:
+  Mobility-agnostic online resource allocation for edge computing,'' \emph{IEEE
+  Transactions on Mobile Computing}, 2018.
 
 \bibitem{bao2017follow}
 W.~Bao, D.~Yuan, Z.~Yang, S.~Wang, W.~Li, B.~B. Zhou, and A.~Y. Zomaya,
@@ -441,11 +460,6 @@ B.~Louis, K.~Mitra, S.~Saguna, and C.~{\AA}hlund, ``Cloudsimdisk: Energy-aware
   storage simulation in cloudsim,'' in \emph{Utility and Cloud Computing (UCC),
   2015 IEEE/ACM 8th International Conference on}.\hskip 1em plus 0.5em minus
   0.4em\relax IEEE, 2015, pp. 11--15.
-
-\bibitem{RECAPRel99:online}
-``Recap | reliable capacity provisioning and enhanced remediation for
-  distributed cloud applications,'' \url{https://recap-project.eu/}, (Accessed
-  on 11/15/2018).
 
 \bibitem{Cloudsla14:online}
 ``Cloudslab/ifogsim: The ifogsim toolkit for modeling and simulation of
