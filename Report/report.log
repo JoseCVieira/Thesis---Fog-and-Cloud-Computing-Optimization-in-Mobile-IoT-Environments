@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  3 DEC 2018 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  5 DEC 2018 23:02
 entering extended mode
 **./report.tex
 (report.tex
@@ -977,71 +977,71 @@ extreme-edge-mist-computing-
  []
 
 [26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 334--336
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
 []\OT1/cmr/m/n/9 ``The clouds lab: Flag-ship projects - grid-bus and cloud-bus,
 ''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--354
+Underfull \hbox (badness 10000) in paragraph at lines 358--360
 []\OT1/cmr/m/n/9 ``Web site,'' https://www.arcos.inf.uc3m.es/old/icancloud/Home
 .html, (Ac-cessed on
  []
 
 
-Overfull \hbox (12.63449pt too wide) in paragraph at lines 372--375
+Overfull \hbox (12.63449pt too wide) in paragraph at lines 378--381
 []\OT1/cmr/m/n/9 ``marcbux/dynamiccloudsim: Au-to-mat-i-cally ex-ported from co
 de.google.com/p/dynamiccloudsim,''
  []
 
 [28]
-Underfull \hbox (badness 1127) in paragraph at lines 404--408
+Underfull \hbox (badness 1127) in paragraph at lines 410--414
 []\OT1/cmr/m/n/9 ``Cloudsim plus | a mod-ern, full-featured, highly ex-ten-si-b
 le and easier-to-use java 8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--422
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
 []\OT1/cmr/m/n/9 ``manoelcampos/cloudsim-plus-automation: Hu-man read-able sce-
 nario spec-i-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--422
+Underfull \hbox (badness 10000) in paragraph at lines 424--428
 \OT1/cmr/m/n/9 tion for au-to-mated cre-ation of sim-u-la-tions on cloudsim plu
 s and cloudsim,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--457
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 []\OT1/cmr/m/n/9 ``Udacity2048/cloudsimdisk: A new stor-age mod-el-ing for clou
 dsim sim-u-la-tor.''
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 465--469
+Underfull \hbox (badness 3679) in paragraph at lines 471--475
 \OT1/cmr/m/n/9 age-ment tech-niques in in-ter-net of things, edge and fog com-p
 ut-ing en-vi-ron-ments,''
  []
 
 
-Overfull \hbox (23.8566pt too wide) in paragraph at lines 483--486
+Overfull \hbox (23.8566pt too wide) in paragraph at lines 489--492
 []\OT1/cmr/m/n/9 ``medislam/ifogsimwithdataplacement,'' https://github.com/medi
 slam/iFogSimWithDataPlacement,
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 509--511
+Underfull \hbox (badness 10000) in paragraph at lines 515--517
 []\OT1/cmr/m/n/9 ``di-unipi-socc/fogtorch,'' https://github.com/di-unipi-socc/F
 ogTorch, (Ac-cessed on
  []
 
 ) [30] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 10003 strings out of 492970
- 160950 string characters out of 3127037
- 289938 words of memory out of 3000000
- 13634 multiletter control sequences out of 15000+200000
+ 10004 strings out of 492970
+ 160974 string characters out of 3127037
+ 289943 words of memory out of 3000000
+ 13635 multiletter control sequences out of 15000+200000
  10792 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,42p,2412b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1065,7 +1065,7 @@ s/cm/cmti9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (30 pages, 556902 bytes).
+Output written on report.pdf (30 pages, 557913 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -49,16 +49,20 @@ Notes
 	- Monetary cost model
 	- Single vs Multi-Objective
 	- iFogsim w/ data placement
-	- Paper recap and CloudReports
+	- Paper CloudReports
 	- Remove toolkit that is not available
 	- Check where bus papers was performed
 	- List with all variables of our algorithm
+	- Check Mist Computing (bellow some description and see survey)
 	- Miss multi-tier application model parameter in the toolkit table
 	- Load Balancing - Not explicitly but, the algorithm should achieve this feature
 	- Write about both iFogsim and MyiFogSim characteristics and features to be implemented
 	- First fit heuristic, a genetic algorithm, and an exact optimization method (Architecture)
 	- Check computing paradigms table and compare with the text (attention with the mist computing)
 	- When comparing the toolkits (architecture) refer that iFogSim shadows network problems allowing to choose a delay
+	- Cuidado com o follow me fog e follow me edge....
+	- Remover papers do Handoff - not used...
+	- ver a cena das foglets
 - Final TODO:
 	- Acronym table
 	- Names with dots (e.g., L. Ye)
@@ -67,11 +71,15 @@ Notes
 - Doubts:
 	- Distributed vs centralized fog computing
 	- Online (heuristic) vs offline algorithms
-	- Proactive vs reactive migration (survey)
-	- VM vs containers (survey)
 	- Bayesian optimization?
 	- Greedy one-shot vs greedy first fit?
+	- Será que está suficientement abordada a questão de DDF?
+	- Será que devia expessificar na arquitetura a arquitetura centralizada? (fog colonies)
 - Not used papers:
+	- Introduction:
+		- Google’s self-driving car gathers nearly 1GB/sec
+		- Is Fog Computing The Next Big Thing In Internet of Things?
+		- Fog Computing for the Internet of Mobile Things: Issues and Challenges (some use cases)
 	- Energy-aware user-centric:
 		- EMM: Energy-Aware Mobility Management for Mobile Edge Computing in Ultra Dense Networks (described bellow)
 		- Offloading in mobile edge computing: Task allocation and computational frequency scaling
@@ -83,19 +91,18 @@ Notes
 		- Adaptive Avatar Handoff in the Cloudlet Network (described bellow)
 		- Availability-aware Mobile Edge Application Placement in 5G Networks
 		- Virtual Machine Placement for Backhaul Traffic Minimization in Fog Radio Access Networks (described bellow)
+		- Optimizing Service Replication for Mobile Delay-sensitive Applications in 5G Edge Network (described bellow)
 	- Handoff:
+		- https://opensource.com/resources/what-docker
 		- Towards Virtual Machine Migration in Fog Computing
 		- Adaptive VM Handoff Across Cloudlets (not applied to fog)
 		- You Can Teach Elephants to Dance: Agile VM Handoff for Edge Computing
+		- Mobility Support for Fog Computing: An SDN Approach (described bellow)
 		- Live Virtual Machine Migration with Adaptive Memory Compression (not applied to fog)
 		- Cost of Virtual Machine Live Migration in Clouds: A Performance Evaluation (not applied to fog)
-		- Avaptive avatar handoff in the cloudlet network
-		- Mobility support for fog computing: An sdn approach (described bellow)
-		- Efficient service handoff across edge servers via docker container migration (described bellow)
-		- Optimizing service Fb for mobile delay-sensitive applications in 5g edge network (described bellow)
-		- Follow me fog: Toward seamless handover timing schemes in a fog computing environment (described bellow)
-		- https://opensource.com/resources/what-docker
-		- Incremental deployment and migration of geo-distributed situation awareness applications in the fog
+		- Efficient Service Handoff Across Edge Servers via Docker Container Migration (described bellow)
+		- Incremental Deployment and Migration of Geo-Distributed Situation Awareness Applications in the Fog
+		- Follow Me Fog: Toward Seamless Handover Timing Schemes in a Fog Computing Environment (described bellow)
 	- Pricing:
 		- Paying Less for More? Combo Plans for Edge-Computing Services
 		- Toward Hierarchical Mobile Edge Computing: An Auction-Based Profit Maximization Approach (TO IMPLEMNET.. MAYBE)
@@ -107,6 +114,7 @@ Notes
 		- Multitier Fog Computing With Large-Scale IoT Data Analytics for Smart Cities (first efforts on mobile fog nodes, described bellow)
 	- Data placement;
 		- When Clones Flock Near the Fog (described bellow)
+		- Dynamic Mobile Cloudlet Clustering for Fog Computing
 		- Towards QoS-aware Fog Service Placement (just QoS, fog colonies)
 		- On Reducing IoT Service Delay via Fog Offloading (delay, data placement)
 		- Online Placement of Multi-Component Applications in Edge Computing Environments
@@ -187,11 +195,11 @@ In accordance with the resource restrictions of fog computing, only a limited nu
 
 They propose a two-level edge computing architecture for automated driving services in order to make full use of the intelligence at the wireless edge (i.e., base stations and autonomous vehicles) for coordinated content delivery. Then they investigate the research challenges of wireless edge caching and vehicular content sharing. Finally, they propose potential solutions to these challenges and evaluate them using real and synthetic traces.
 
-**Follow me fog: Toward seamless handover timing schemes in a fog computing environment**
+**Follow Me Fog: Toward Seamless Handover Timing Schemes in a Fog Computing Environment**
 
 The authors observe that traditional mobile network handover mechanisms cannot handle the demands of fog computation resources and the low-latency requirements of mobile IoT applications. The authors propose Follow Me Fog framework to guarantee service continuity and reduce latency during handovers. The key idea proposed is to continuously monitor the received signal strength of the fog nodes at the mobile IoT device, and to trigger pre-migration of computation jobs before disconnecting the IoT device from the existing fog node.
 
-**Efficient service handoff across edge servers via docker container migration**
+**Efficient Service Handoff Across Edge Servers via Docker Container Migration**
 
 Present a novel service handoff system which seamlessly migrates offloading services to the nearest edge server, while the mobile client is moving. Service handoff is achieved via container migration. They have identified an important performance problem during Docker container migration, proposing a migration method which leverages the layered storage system to reduce file system synchronization overhead, without dependence on the distributed file system.
 
@@ -199,14 +207,18 @@ Present a novel service handoff system which seamlessly migrates offloading serv
 
 Develop a novel user-centric energy-aware mobility management (EMM) scheme, in order to optimize the delay, under energy consumption constraint of the user. Based on Lyapunov optimization and multi-armed bandit theories, EMM works in an online fashion. Theoretical analysis explicitly takes radio handover and computation migration cost into consideration and proves a bounded deviation on both the delay performance and energy consumption compared with the oracle solution with exact and complete future system information. The proposed algorithm also effectively handles the scenario in which candidate BSs randomly switch ON/OFF during the offloading process of a task.
 
-**Mobility support for fog computing: An sdn approach**
+**Mobility Support for Fog Computing: An SDN Approach**
 
 Study of mobility support issue in fog computing for guaranteeing service continuity. Propose a novel SDN enabled architecture that is able to facilitate mobility management in fog computing by decoupling mobility management and data forwarding functions. Design an efficient handover scheme by migrating mobility management and route optimization logic to the SDN controller. By employing link layer information, the SDN controller can pre-compute the optimal path by estimating the performance gain of each path.
 
-**Optimizing service Fb for mobile delay-sensitive applications in 5g edge network**
+**Optimizing Service Replication for Mobile Delay-sensitive Applications in 5G Edge Network**
 
 To guarantee the strict latency requirements, new solutions are required to cope with the user mobility in a distributed edge cloud environment. The use of proactive replication mechanism seems promising to avoid QoE degradation during service migration between different edge nodes. However, accounting for the limited resources of edge micro data-centers, appropriate optimization solutions must be developed to reduce the cost of service deployment, while guaranteeing the desired QoE. In this paper, Ivan Farris et al., by leveraging on prediction schemes of user mobility patterns, have proposed two linear optimization solutions for replication-based service migration in cellular 5G networks: the min-RM approach aims at minimizing the QoE degradation during user handover; min-NSR approach favors the reduction of service replication cost. Simulation results proved the efficiency of each solution in achieving its design goal and provides useful information for network and service orchestrators in next-generation 5G cloud-based networks.
 
 **Adaptive Avatar Handoff in the Cloudlet Network**
 
 X. Sun et al. shows an architecture where each User Equipment (UE) has its own Avatar (a private computing and storage resources for the UE) which is deployed to a cloudlet, being the communication characterized by low end-to-end (E2E) latency. When UEs roam away, in order to maintain the end-to-end latency, their Avatars should be handed off among cloudlets accordingly. However, moving such amount of data (the Avatar’s virtual disk) during the handoff time may both incur unbearable migration time and network congestion. In order to overcome those limitations, they propose LatEncy Aware Replica placemeNt (LEARN) algorithm to place a number of replicas of each Avatar’s virtual disk into suitable cloudlets. Meanwhile, by considering the capacity limitation of each cloudlet, they propose the LatEncy aware Avatar hanDoff (LEAD) algorithm to place UEs’ Avatars among the cloudlets such that the average E2E delay is minimized.
+
+**Mist Computing**
+
+Mist computing pushes processing even further to the network edge, involving the sensor and actuator devices. This decreases latency and increases subsystems’ autonomy. In such scenarios, self-awareness of every device is critical as the computation and actuation are dependent on the device’s perception of the situation. The challenge with implementing mist computing systems lies in the complexity and interactions of the resulting network, which must be managed by the devices themselves as central management of such systems is not feasible.

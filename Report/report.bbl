@@ -277,6 +277,12 @@ L.~Wang, L.~Jiao, J.~Li, J.~Gedeon, and M.~M{\"u}hlh{\"a}user, ``Moera:
   Mobility-agnostic online resource allocation for edge computing,'' \emph{IEEE
   Transactions on Mobile Computing}, 2018.
 
+\bibitem{bittencourt2015towards}
+L.~F. Bittencourt, M.~M. Lopes, I.~Petri, and O.~F. Rana, ``Towards virtual
+  machine migration in fog computing,'' in \emph{P2P, Parallel, Grid, Cloud and
+  Internet Computing (3PGCIC), 2015 10th International Conference on}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2015, pp. 1--8.
+
 \bibitem{bao2017follow}
 W.~Bao, D.~Yuan, Z.~Yang, S.~Wang, W.~Li, B.~B. Zhou, and A.~Y. Zomaya,
   ``Follow me fog: Toward seamless handover timing schemes in a fog computing
