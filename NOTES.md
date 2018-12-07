@@ -1,23 +1,23 @@
 Fields
 ----------
-| Field 									| Report 	| Implemented 	| Notes 														|
-| --- 										| :---: 	| :---: 		| :---: 														|
-| QoS 										| ✓ 		| ✓ 			| - 															|
-| Bandwidth 								| ✓ 		| ✓ 			| - 															|
-| Energy 									| ✓ 		| ✓ 			| - 															|
-| Cost 										| ✓ 		| ✓ 			| - 															|
-| Handover 									| ✓ 		| ✗ 			| - 															|
-| Load Balancing 							| ✓ 		| ✗ 			| Not explicitly but, the algorithm should achieve this feature |
-| Vehicular Fog Computing 					| ✓ 		| ✗ 			| Just to provide case studies 									|
-| Predicted Mobility Patterns 				| ? 		| ? 			| - 															|
-| Proactive vs. Reactive Service Migration 	| ? 		| ? 			| - 															|
-| Data placement 							| ✓ 		| ✗ 			| - 															|
-| VM/Resource/Job scheduling 				| ✗ 		| - 			| - 															|
-| Virtual Objects 							| ✓ 		| ✓ 			| - 															|
-| Foglets 									| ✓ 		| ✓ 			| - 															|
-| Toolkits 									| ✓ 		| ✓ 			| - 															|
-| Data/Session Consistency 					| ✗ 		| - 			| - 															|
-| VM/Resource/Job scheduling 				| ✗ 		| - 			| - 															|
+| Field 									| Report 	| Implemented 	| Notes 																|
+| --- 										| :---: 	| :---: 		| :---: 																|
+| QoS 										| ✓ 		| ✓ 			| - 																	|
+| Bandwidth 								| ✓ 		| ✓ 			| - 																	|
+| Energy 									| ✓ 		| ✓ 			| - 																	|
+| Cost 										| ✓ 		| ✓ 			| - 																	|
+| Load Balancing 							| ✓ 		| ✗ 			| Not explicitly but, the algorithm should achieve this feature 		|
+| Vehicular Fog Computing 					| ✓ 		| ✗ 			| Just to provide case studies 											|
+| Service Migration 						| ✓ 		| ✓ 			| Proactive vs. reactive, VM vs container, live vs non-live migration	|
+| (Des)Centralized Service Migration 		| ✓ 		| ✓ 			| -																		|
+| Foglets 									| ✓ 		| ✓ 			| - 																	|
+| Toolkits 									| ✓ 		| ✓ 			| - 																	|
+| Data placement 							| ✗ 		| - 			| - 																	|
+| Data/Session Consistency 					| ✗ 		| - 			| - 																	|
+| VM/Resource/Job scheduling 				| ✗ 		| - 			| - 																	|
+| Predicted Mobility Patterns 				| ✗ 		| - 			| - 																	|
+| Virtual Objects 							| ✗ 		| - 			| - 																	|
+| Handover 									| ✗ 		| - 			| - 																	|
 
 Notes
 ----------
@@ -67,7 +67,6 @@ Notes
 	- Sections with capital letters
 	- Check again objectives in the introduction
 - Doubts:
-	- Distributed vs centralized fog computing
 	- Online (heuristic) vs offline algorithms
 	- Bayesian optimization?
 	- Greedy one-shot vs greedy first fit?
