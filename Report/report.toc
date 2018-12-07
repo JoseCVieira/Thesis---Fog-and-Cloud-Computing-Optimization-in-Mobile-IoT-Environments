@@ -15,13 +15,14 @@
 \contentsline {subsubsection}{\numberline {2.1.7}Mist Computing}{9}
 \contentsline {subsubsection}{\numberline {2.1.8}Concluding Remarks}{9}
 \contentsline {subsection}{\numberline {2.2}Fog Computing Architecture}{10}
-\contentsline {subsection}{\numberline {2.3}Migration Optimization in Mobile Fog Environments}{14}
-\contentsline {subsubsection}{\numberline {2.3.1}QoS-Aware}{14}
-\contentsline {subsubsection}{\numberline {2.3.2}Bandwidth-Aware}{15}
-\contentsline {subsubsection}{\numberline {2.3.3}Energy-Aware}{16}
-\contentsline {subsubsection}{\numberline {2.3.4}Cost-Aware}{18}
-\contentsline {subsubsection}{\numberline {2.3.5}Multi-Objective}{20}
-\contentsline {subsubsection}{\numberline {2.3.6}Handover}{21}
+\contentsline {subsubsection}{\numberline {2.2.1}Actors}{11}
+\contentsline {subsubsection}{\numberline {2.2.2}Orchestration}{13}
+\contentsline {subsection}{\numberline {2.3}Migration Optimization in Mobile Fog Environments}{15}
+\contentsline {subsubsection}{\numberline {2.3.1}QoS-Aware}{15}
+\contentsline {subsubsection}{\numberline {2.3.2}Bandwidth-Aware}{16}
+\contentsline {subsubsection}{\numberline {2.3.3}Energy-Aware}{17}
+\contentsline {subsubsection}{\numberline {2.3.4}Cost-Aware}{19}
+\contentsline {subsubsection}{\numberline {2.3.5}Multi-Objective}{21}
 \contentsline {subsection}{\numberline {2.4}Toolkits}{22}
 \contentsline {section}{\numberline {3}Optimization Algoritms}{24}
 \contentsline {subsection}{\numberline {3.1}Genetic Algorithm}{25}

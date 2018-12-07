@@ -4,8 +4,7 @@ Database file #1: ./references/report.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty booktitle in OpenFog0208
 Warning--missing institution in iorga2018fog
 
 Done.
-(There were 2 warnings)
+(There was 1 warning)

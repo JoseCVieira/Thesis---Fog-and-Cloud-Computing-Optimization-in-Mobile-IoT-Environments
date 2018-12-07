@@ -61,8 +61,6 @@ Notes
 	- Check computing paradigms table and compare with the text (attention with the mist computing)
 	- When comparing the toolkits (architecture) refer that iFogSim shadows network problems allowing to choose a delay
 	- Cuidado com o follow me fog e follow me edge....
-	- Remover papers do Handoff - not used...
-	- ver a cena das foglets
 - Final TODO:
 	- Acronym table
 	- Names with dots (e.g., L. Ye)
@@ -74,7 +72,6 @@ Notes
 	- Bayesian optimization?
 	- Greedy one-shot vs greedy first fit?
 	- Será que está suficientement abordada a questão de DDF?
-	- Será que devia expessificar na arquitetura a arquitetura centralizada? (fog colonies)
 - Not used papers:
 	- Introduction:
 		- Google’s self-driving car gathers nearly 1GB/sec
@@ -100,8 +97,6 @@ Notes
 		- Mobility Support for Fog Computing: An SDN Approach (described bellow)
 		- Live Virtual Machine Migration with Adaptive Memory Compression (not applied to fog)
 		- Cost of Virtual Machine Live Migration in Clouds: A Performance Evaluation (not applied to fog)
-		- Efficient Service Handoff Across Edge Servers via Docker Container Migration (described bellow)
-		- Incremental Deployment and Migration of Geo-Distributed Situation Awareness Applications in the Fog
 		- Follow Me Fog: Toward Seamless Handover Timing Schemes in a Fog Computing Environment (described bellow)
 	- Pricing:
 		- Paying Less for More? Combo Plans for Edge-Computing Services
