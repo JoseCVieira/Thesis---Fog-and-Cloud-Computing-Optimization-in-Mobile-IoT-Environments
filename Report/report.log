@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  7 DEC 2018 12:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  11 DEC 2018 15:12
 entering extended mode
 **./report.tex
 (report.tex
@@ -912,35 +912,39 @@ pe <array>); ignored.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-[15] [16] [17]
+[15] [16] [17] [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-[19]
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20])
-(sections/subsections/4toolkits.tex [21]
-LaTeX Font Info:    Try loading font information for U+ding on input line 17.
+ [20]
+[21]) (sections/subsections/4toolkits.tex
+LaTeX Font Info:    Try loading font information for U+ding on input line 7.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\uding.fd"
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 []|\OT1/cmr/m/n/7 iFogSimWithData
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--61
+Underfull \hbox (badness 10000) in paragraph at lines 9--51
 [][]
  []
 
-)) (Sections/algorithms.tex [22] [23]) (Sections/architecture.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+)) (Sections/algorithms.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--2
 
- [24])
-(Sections/evaluation.tex) (Sections/schedule.tex) (Sections/conclusion.tex)
-(report.bbl [25]
+ []
+
+[22]
+Underfull \vbox (badness 1888) has occurred while \output is active []
+
+ [23])
+(Sections/architecture.tex) (Sections/evaluation.tex [24])
+(Sections/schedule.tex) (Sections/conclusion.tex) (report.bbl [25]
 Underfull \hbox (badness 10000) in paragraph at lines 107--109
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
@@ -994,80 +998,78 @@ Overfull \hbox (12.63449pt too wide) in paragraph at lines 376--379
 de.google.com/p/dynamiccloudsim,''
  []
 
-[28]
-Underfull \hbox (badness 1127) in paragraph at lines 408--412
+
+Underfull \hbox (badness 1127) in paragraph at lines 414--418
 []\OT1/cmr/m/n/9 ``Cloudsim plus | a mod-ern, full-featured, highly ex-ten-si-b
 le and easier-to-use java 8
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
 []\OT1/cmr/m/n/9 ``manoelcampos/cloudsim-plus-automation: Hu-man read-able sce-
 nario spec-i-fi-ca-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+Underfull \hbox (badness 10000) in paragraph at lines 428--432
 \OT1/cmr/m/n/9 tion for au-to-mated cre-ation of sim-u-la-tions on cloudsim plu
 s and cloudsim,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--461
+Underfull \hbox (badness 10000) in paragraph at lines 465--467
 []\OT1/cmr/m/n/9 ``Udacity2048/cloudsimdisk: A new stor-age mod-el-ing for clou
 dsim sim-u-la-tor.''
  []
 
 
-Underfull \hbox (badness 3679) in paragraph at lines 469--473
+Underfull \hbox (badness 3679) in paragraph at lines 475--479
 \OT1/cmr/m/n/9 age-ment tech-niques in in-ter-net of things, edge and fog com-p
 ut-ing en-vi-ron-ments,''
  []
 
 
-Overfull \hbox (23.8566pt too wide) in paragraph at lines 487--490
+Overfull \hbox (23.8566pt too wide) in paragraph at lines 493--496
 []\OT1/cmr/m/n/9 ``medislam/ifogsimwithdataplacement,'' https://github.com/medi
 slam/iFogSimWithDataPlacement,
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 513--515
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
 []\OT1/cmr/m/n/9 ``di-unipi-socc/fogtorch,'' https://github.com/di-unipi-socc/F
 ogTorch, (Ac-cessed on
  []
 
-) [30] (report.aux) ) 
+) [29] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 10003 strings out of 492970
- 160976 string characters out of 3127037
- 290938 words of memory out of 3000000
- 13634 multiletter control sequences out of 15000+200000
- 10792 words of font info for 40 fonts, out of 3000000 for 9000
+ 10007 strings out of 492970
+ 161072 string characters out of 3127037
+ 290175 words of memory out of 3000000
+ 13640 multiletter control sequences out of 15000+200000
+ 10118 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,42p,2412b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\tcrm0700.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\public\bbding\dpi420\bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk> <C:\Users\Jose\AppData\Local
-\MiKTeX\2.9\fonts\pk\ljfour\public\bbding\dpi600\bbding10.pk><C:/Users/Jose/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Us
-ers/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbx7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/User
-s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
-pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmti9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (30 pages, 557732 bytes).
+ 44i,18n,42p,2381b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\p
+ublic\bbding\dpi420\bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\public\bbding\dpi600\bbding10.pk><C:/Users/Jose/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Jo
+se/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
+C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Jose/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Jose
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:
+/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbo
+ls/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/urw/zapfding/uzdr.pfb>
+Output written on report.pdf (29 pages, 555408 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
+ 209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

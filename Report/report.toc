@@ -21,14 +21,15 @@
 \contentsline {subsubsection}{\numberline {2.3.1}QoS-Aware}{15}
 \contentsline {subsubsection}{\numberline {2.3.2}Bandwidth-Aware}{16}
 \contentsline {subsubsection}{\numberline {2.3.3}Energy-Aware}{17}
-\contentsline {subsubsection}{\numberline {2.3.4}Cost-Aware}{19}
+\contentsline {subsubsection}{\numberline {2.3.4}Cost-Aware}{18}
 \contentsline {subsubsection}{\numberline {2.3.5}Multi-Objective}{21}
+\contentsline {subsubsection}{\numberline {2.3.6}Concluding Remarks}{22}
 \contentsline {subsection}{\numberline {2.4}Toolkits}{22}
 \contentsline {section}{\numberline {3}Optimization Algoritms}{24}
-\contentsline {subsection}{\numberline {3.1}Genetic Algorithm}{25}
-\contentsline {subsection}{\numberline {3.2}MDP}{25}
-\contentsline {subsection}{\numberline {3.3}???}{25}
-\contentsline {section}{\numberline {4}Description of the Project}{25}
+\contentsline {subsection}{\numberline {3.1}Genetic Algorithm}{24}
+\contentsline {subsection}{\numberline {3.2}MDP}{24}
+\contentsline {subsection}{\numberline {3.3}???}{24}
+\contentsline {section}{\numberline {4}Description of the Project}{24}
 \contentsline {section}{\numberline {5}Evaluation}{25}
 \contentsline {section}{\numberline {6}Schedule of Future Work}{25}
 \contentsline {section}{\numberline {7}Conclusion}{25}

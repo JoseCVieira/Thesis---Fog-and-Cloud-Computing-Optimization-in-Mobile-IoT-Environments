@@ -44,6 +44,7 @@ Notes
 	- For the sake of tractability we only consider
 	- We tackle the edge cloud network design problem 
 	- Which is, to the best of our knowledge, an untreated problem in the literature
+	- (refer to Fig. 1)
 - TODO:
 	- Organize BibteX
 	- Monetary cost model
@@ -61,6 +62,7 @@ Notes
 	- Check computing paradigms table and compare with the text (attention with the mist computing)
 	- When comparing the toolkits (architecture) refer that iFogSim shadows network problems allowing to choose a delay
 	- Cuidado com o follow me fog e follow me edge....
+	- trade-off!!
 - Final TODO:
 	- Acronym table
 	- Names with dots (e.g., L. Ye)

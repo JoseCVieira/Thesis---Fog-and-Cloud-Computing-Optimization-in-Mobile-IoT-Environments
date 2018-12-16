@@ -214,6 +214,11 @@ T.~G. Rodrigues, K.~Suto, H.~Nishiyama, and N.~Kato, ``A pso model with vm
   International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
   2017, pp. 1--6.
 
+\bibitem{sun2016primal}
+X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
+  edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
+  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
+
 \bibitem{urgaonkar2015dynamic}
 R.~Urgaonkar, S.~Wang, T.~He, M.~Zafer, K.~Chan, and K.~K. Leung, ``Dynamic
   service migration and workload scheduling in edge-clouds,'' \emph{Performance
@@ -287,11 +292,6 @@ T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
   in edge computing systems,'' in \emph{Proceedings of the Second ACM/IEEE
   Symposium on Edge Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
   2017, p.~5.
-
-\bibitem{sun2016primal}
-X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
-  edge computing,'' in \emph{Communications (ICC), 2016 IEEE International
-  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 1--6.
 
 \bibitem{ye2016scalable}
 D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
@@ -386,6 +386,12 @@ M.~Bux and U.~Leser, ``Dynamiccloudsim: Simulating heterogeneity in
 ``thiagotts/cloudreports: An extensible simulation tool for energy-aware cloud
   computing environments,'' \url{https://github.com/thiagotts/CloudReports},
   (Accessed on 11/15/2018).
+
+\bibitem{sa2014cloudreports}
+T.~T. S{\'a}, R.~N. Calheiros, and D.~G. Gomes, ``Cloudreports: an extensible
+  simulation tool for energy-aware cloud computing environments,'' in
+  \emph{cloud computing}.\hskip 1em plus 0.5em minus 0.4em\relax Springer,
+  2014, pp. 127--142.
 
 \bibitem{RealClou60:online}
 ``Realcloudsim download | sourceforge.net,''
