@@ -68,6 +68,8 @@ Notes
 	- Names with dots (e.g., L. Ye)
 	- Sections with capital letters
 	- Check again objectives in the introduction
+	- end-devices ou end devices
+	- CPU nao tem nome completo..
 - Doubts:
 	- Online (heuristic) vs offline algorithms
 	- Bayesian optimization?
@@ -218,3 +220,5 @@ X. Sun et al. shows an architecture where each User Equipment (UE) has its own A
 **Mist Computing**
 
 Mist computing pushes processing even further to the network edge, involving the sensor and actuator devices. This decreases latency and increases subsystems’ autonomy. In such scenarios, self-awareness of every device is critical as the computation and actuation are dependent on the device’s perception of the situation. The challenge with implementing mist computing systems lies in the complexity and interactions of the resulting network, which must be managed by the devices themselves as central management of such systems is not feasible.
+
+State Collection Module gathers and stores real time network states, edge cloud workloads, and client mobility patterns. Then SEGUE estimates the expected response time for any user moving around a geographical region with access to an edge cloud under dynamic network states and varying edge cloud workloads. This prediction is performed by the QoS Prediction Module which recomputes it whenever there are a user moves, or there are changes in server or network workloads. This module answers the WHEN to migrate. The Edge Cloud Selection Module uses outputs provided by the State Collection Module and the QoS Prediction Module to solve the problem of finding an optimal edge cloud to migrate to. Thus it answers the WHERE to migrate by using MDP. They assume whenever a user needs to connect to a fog node, it is connected to the one with minimal hop count. The Service Migration Module is, responsible to preparate the application environment and initialize the application VM. To realize network and server states they use server push and client proxy probe. The server push is responsible for constantly monitoring and reporting response time whenever there is a response time shift that exceeds a predefined threshold (it clusters response time from anywhere in the network thus it reflects the server state but cannot distinguish the network link state). The client proxy periodically sends probing requests to all potential fog nodes, reflecting the network state between them (this generates big overhead). To predict QoS based on the user mobility, we integrate the linearity of expectation into the Autoregressive Integrated Moving Average(ARIMA) forecaster. We then weight the QoS prediction by a factor of mobility uncertainty. The QoS prediction module assumes that mobile location, follows the one dimensional mobility pattern (in t+1 the user can move back (n-1), n+1 or stay at n). The problem formulation is then formulated as a cost-reward between the predicted long term QoS improvement and the service downtime.
