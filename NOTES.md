@@ -63,6 +63,12 @@ Notes
 	- When comparing the toolkits (architecture) refer that iFogSim shadows network problems allowing to choose a delay
 	- Cuidado com o follow me fog e follow me edge....
 	- trade-off!!
+	- end-to-end
+	- end user?
+	- post-copy?
+	- propose / purpose
+	- perform / preform
+	- below / bellow??
 - Final TODO:
 	- Acronym table
 	- Names with dots (e.g., L. Ye)

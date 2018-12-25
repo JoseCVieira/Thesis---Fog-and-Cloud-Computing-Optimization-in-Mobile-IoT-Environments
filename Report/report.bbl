@@ -522,4 +522,18 @@ A.~Brogi and S.~Forti, ``Qos-aware deployment of iot applications through the
 D.~Whitley, ``A genetic algorithm tutorial,'' \emph{Statistics and computing},
   vol.~4, no.~2, pp. 65--85, 1994.
 
+\bibitem{kennedy2011particle}
+J.~Kennedy, ``Particle swarm optimization,'' in \emph{Encyclopedia of machine
+  learning}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2011, pp.
+  760--766.
+
+\bibitem{bellman1957markovian}
+R.~Bellman, ``A markovian decision process,'' \emph{Journal of Mathematics and
+  Mechanics}, pp. 679--684, 1957.
+
+\bibitem{bertsekas2005dynamic}
+D.~P. Bertsekas, D.~P. Bertsekas, D.~P. Bertsekas, and D.~P. Bertsekas,
+  \emph{Dynamic programming and optimal control}.\hskip 1em plus 0.5em minus
+  0.4em\relax Athena scientific Belmont, MA, 2005, vol.~1, no.~3.
+
 \end{thebibliography}
