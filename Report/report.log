@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  25 DEC 2018 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  26 DEC 2018 12:12
 entering extended mode
 **./report.tex
 (report.tex
@@ -893,8 +893,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 [5]) (Sections/related_work.tex
-(sections/subsections/1related_computing_paradigms.tex [6] [7] [8])
-(sections/subsections/2fog_architecture.tex [9] [10]
+(sections/subsections/1related_computing_paradigms.tex [6] [7] [8] [9])
+(sections/subsections/2fog_architecture.tex [10]
 <images/fog_architecture/fog_architecture.pdf, id=42, 601.24625pt x 493.845pt>
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
@@ -925,7 +925,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-[20]) (sections/subsections/4toolkits.tex [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+[21]) (sections/subsections/4toolkits.tex
 LaTeX Font Info:    Try loading font information for U+ding on input line 7.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\uding.fd"
@@ -940,37 +943,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--51
 [][]
  []
 
-)) (Sections/architecture.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--2
-
- []
-
-[22]
-Underfull \vbox (badness 1888) has occurred while \output is active []
+)) (Sections/architecture.tex [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
-[24] [25]
-<images/sw_architecture/sw_architecture.pdf, id=147, 1398.86812pt x 1033.94275p
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [24]
+[25] [26]
+<images/sw_architecture/sw_architecture.pdf, id=151, 1398.86812pt x 1033.94275p
 t>
 File: images/sw_architecture/sw_architecture.pdf Graphic file (type pdf)
 <use images/sw_architecture/sw_architecture.pdf>
 Package pdftex.def Info: images/sw_architecture/sw_architecture.pdf  used on in
-put line 50.
+put line 49.
 (pdftex.def)             Requested size: 397.485pt x 293.79324pt.
- [26] [27 <./images/sw_architecture/sw_architecture.pdf>] [28])
-(Sections/evaluation.tex
-<images/evaluation/evaluation.png, id=174, 618.90282pt x 442.83563pt>
+ [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./images/sw_architecture/sw_architecture.pdf>]) (Sections/evaluation.tex 
+[29]
+<images/evaluation/evaluation.png, id=179, 618.90282pt x 442.83563pt>
 File: images/evaluation/evaluation.png Graphic file (type png)
 <use images/evaluation/evaluation.png>
 Package pdftex.def Info: images/evaluation/evaluation.png  used on input line 2
 8.
 (pdftex.def)             Requested size: 278.23828pt x 199.09175pt.
-) (Sections/schedule.tex [29]) (Sections/conclusion.tex) (report.bbl [30 <./ima
-ges/evaluation/evaluation.png>]
+)
+(Sections/schedule.tex [30 <./images/evaluation/evaluation.png>])
+(Sections/conclusion.tex) (report.bbl [31]
 Underfull \hbox (badness 10000) in paragraph at lines 107--109
 []\OT1/cmr/m/n/9 ``Open edge com-put-ing,'' http://openedgecomputing.org/about.
 html, (Ac-cessed on
@@ -994,7 +1000,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--123
 -vs-multi-access-edge-
  []
 
-[31]
+
 Underfull \hbox (badness 2662) in paragraph at lines 141--145
 []\OT1/cmr/m/n/9 ``Cisco pushes iot an-a-lyt-ics to the ex-treme edge with mist
  com-put-ing - re-think,''
@@ -1006,7 +1012,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--145
 extreme-edge-mist-computing-
  []
 
-[32]
+[32] [33]
 Underfull \hbox (badness 10000) in paragraph at lines 302--304
 []\OT1/cmr/m/n/9 ``The clouds lab: Flag-ship projects - grid-bus and cloud-bus,
 ''
@@ -1018,7 +1024,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--333
 .html, (Ac-cessed on
  []
 
-[33]
+
 Overfull \hbox (12.63449pt too wide) in paragraph at lines 358--361
 []\OT1/cmr/m/n/9 ``marcbux/dynamiccloudsim: Au-to-mat-i-cally ex-ported from co
 de.google.com/p/dynamiccloudsim,''
@@ -1030,7 +1036,7 @@ Underfull \hbox (badness 1127) in paragraph at lines 396--400
 le and easier-to-use java 8
  []
 
-
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 410--414
 []\OT1/cmr/m/n/9 ``manoelcampos/cloudsim-plus-automation: Hu-man read-able sce-
 nario spec-i-fi-ca-
@@ -1048,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--449
 dsim sim-u-la-tor.''
  []
 
-[34]
+
 Underfull \hbox (badness 3679) in paragraph at lines 457--461
 \OT1/cmr/m/n/9 age-ment tech-niques in in-ter-net of things, edge and fog com-p
 ut-ing en-vi-ron-ments,''
@@ -1072,38 +1078,38 @@ Underfull \hbox (badness 1715) in paragraph at lines 517--520
 rix or-der-ing | karypis lab,''
  []
 
-) [35] (report.aux) ) 
+[35]) [36] (report.aux) ) 
 Here is how much of TeX's memory you used:
  10023 strings out of 492970
  161535 string characters out of 3127037
- 287278 words of memory out of 3000000
+ 289279 words of memory out of 3000000
  13655 multiletter control sequences out of 15000+200000
  10118 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,42p,2384b,380s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\p
-ublic\bbding\dpi420\bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\public\bbding\dpi600\bbding10.pk><C:/Users/Jose/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Jo
-se/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
-C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Jose
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
-/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmti9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (35 pages, 767813 bytes).
+ 44i,18n,42p,2375b,382s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\public\bbding\dpi420\bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\public\bbding\dpi600\bbding10.pk><C:/Users/Jose/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Jose/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/User
+s/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.p
+fb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Jose/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Jose/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti10.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmti9.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/symbols/msbm5.pfb><C:/Users/Jose/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/Jose/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on report.pdf (36 pages, 768996 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
+ 260 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
