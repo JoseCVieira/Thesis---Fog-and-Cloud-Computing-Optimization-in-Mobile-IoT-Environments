@@ -82,10 +82,6 @@ A.~Yousefpour, C.~Fung, T.~Nguyen, K.~Kadiyala, F.~Jalali, A.~Niakanlahiji,
   related edge computing paradigms: A complete survey,'' \emph{arXiv preprint
   arXiv:1808.05283}, 2018.
 
-\bibitem{Cloudlet83:online}
-``Cloudlet - wikipedia,'' \url{https://en.wikipedia.org/wiki/Cloudlet},
-  (Accessed on 10/31/2018).
-
 \bibitem{satyanarayanan1996fundamental}
 M.~Satyanarayanan, ``Fundamental challenges in mobile computing,'' in
   \emph{Proceedings of the fifteenth annual ACM symposium on Principles of
@@ -110,22 +106,6 @@ J.-P. Hubaux, T.~Gross, J.-Y. Le~Boudec, and M.~Vetterli, ``Toward
 \bibitem{openfog2017openfog}
 O.~C. A.~W. Group \emph{et~al.}, ``Openfog reference architecture for fog
   computing,'' \emph{OPFRA001}, vol. 20817, p. 162, 2017.
-
-\bibitem{ETSIMult81:online}
-``Etsi - multi-access edge computing,''
-  \url{https://www.etsi.org/technologies-clusters/technologies/multi-access-edge-computing},
-  (Accessed on 10/25/2018).
-
-\bibitem{MobileEd74:online}
-``Mobile edge computing vs. multi-access edge computing,''
-  \url{https://www.sdxcentral.com/mec/definitions/mobile-edge-computing-vs-multi-access-edge-computing/},
-  (Accessed on 10/25/2018).
-
-\bibitem{taleb2017multi}
-T.~Taleb, K.~Samdanis, B.~Mada, H.~Flinck, S.~Dutta, and D.~Sabella, ``On
-  multi-access edge computing: A survey of the emerging 5g network edge cloud
-  architecture and orchestration,'' \emph{IEEE Communications Surveys \&
-  Tutorials}, vol.~19, no.~3, pp. 1657--1681, 2017.
 
 \bibitem{satyanarayanan2009case}
 M.~Satyanarayanan, V.~Bahl, R.~Caceres, and N.~Davies, ``The case for vm-based
@@ -298,6 +278,54 @@ L.~Wang, L.~Jiao, J.~Li, J.~Gedeon, and M.~M{\"u}hlh{\"a}user, ``Moera:
   Mobility-agnostic online resource allocation for edge computing,'' \emph{IEEE
   Transactions on Mobile Computing}, 2018.
 
+\bibitem{kliazovich2012greencloud}
+D.~Kliazovich, P.~Bouvry, and S.~U. Khan, ``Greencloud: a packet-level
+  simulator of energy-aware cloud computing data centers,'' \emph{The Journal
+  of Supercomputing}, vol.~62, no.~3, pp. 1263--1283, 2012.
+
+\bibitem{malik2017cloudnetsim++}
+A.~W. Malik, K.~Bilal, S.~Malik, Z.~Anwar, K.~Aziz, D.~Kliazovich, N.~Ghani,
+  S.~U. Khan, and R.~Buyya, ``Cloudnetsim++: a gui based framework for modeling
+  and simulation of data centers in omnet++,'' \emph{IEEE Transactions on
+  Services Computing}, no.~4, pp. 506--519, 2017.
+
+\bibitem{wickremasinghe2010cloudanalyst}
+B.~Wickremasinghe, R.~N. Calheiros, and R.~Buyya, ``Cloudanalyst: A
+  cloudsim-based visual modeller for analysing cloud computing environments and
+  applications,'' in \emph{Advanced Information Networking and Applications
+  (AINA), 2010 24th IEEE International Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2010, pp. 446--452.
+
+\bibitem{lopes2017myifogsim}
+M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
+  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
+  \emph{Companion Proceedings of the10th International Conference on Utility
+  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
+  47--52.
+
+\bibitem{METISSer49:online}
+``Metis - serial graph partitioning and fill-reducing matrix ordering | karypis
+  lab,'' \url{http://glaros.dtc.umn.edu/gkhome/metis/metis/overview}, (Accessed
+  on 12/20/2018).
+
+\bibitem{whitley1994genetic}
+D.~Whitley, ``A genetic algorithm tutorial,'' \emph{Statistics and computing},
+  vol.~4, no.~2, pp. 65--85, 1994.
+
+\bibitem{kennedy2011particle}
+J.~Kennedy, ``Particle swarm optimization,'' in \emph{Encyclopedia of machine
+  learning}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2011, pp.
+  760--766.
+
+\bibitem{bellman1957markovian}
+R.~Bellman, ``A markovian decision process,'' \emph{Journal of Mathematics and
+  Mechanics}, pp. 679--684, 1957.
+
+\bibitem{bertsekas2005dynamic}
+D.~P. Bertsekas, D.~P. Bertsekas, D.~P. Bertsekas, and D.~P. Bertsekas,
+  \emph{Dynamic programming and optimal control}.\hskip 1em plus 0.5em minus
+  0.4em\relax Athena scientific Belmont, MA, 2005, vol.~1, no.~3.
+
 \bibitem{TheCLOUD47:online}
 ``The clouds lab: Flagship projects - gridbus and cloudbus,''
   \url{http://www.cloudbus.org/cloudsim/}, (Accessed on 11/15/2018).
@@ -312,20 +340,9 @@ R.~N. Calheiros, R.~Ranjan, A.~Beloglazov, C.~A. De~Rose, and R.~Buyya,
 ``cloudnetsim.seecs.edu.pk,'' \url{http://cloudnetsim.seecs.edu.pk/}, (Accessed
   on 11/15/2018).
 
-\bibitem{malik2017cloudnetsim++}
-A.~W. Malik, K.~Bilal, S.~Malik, Z.~Anwar, K.~Aziz, D.~Kliazovich, N.~Ghani,
-  S.~U. Khan, and R.~Buyya, ``Cloudnetsim++: a gui based framework for modeling
-  and simulation of data centers in omnet++,'' \emph{IEEE Transactions on
-  Services Computing}, no.~4, pp. 506--519, 2017.
-
 \bibitem{Greenclo13:online}
 ``Greencloud - the green cloud simulator,''
   \url{https://greencloud.gforge.uni.lu/}, (Accessed on 11/15/2018).
-
-\bibitem{kliazovich2012greencloud}
-D.~Kliazovich, P.~Bouvry, and S.~U. Khan, ``Greencloud: a packet-level
-  simulator of energy-aware cloud computing data centers,'' \emph{The Journal
-  of Supercomputing}, vol.~62, no.~3, pp. 1263--1283, 2012.
 
 \bibitem{Website18:online}
 ``Web site,'' \url{https://www.arcos.inf.uc3m.es/old/icancloud/Home.html},
@@ -346,13 +363,6 @@ W.~Tian, Y.~Zhao, M.~Xu, Y.~Zhong, and X.~Sun, ``A toolkit for modeling and
   simulation of real-time virtual machine allocation in a cloud data center,''
   \emph{IEEE Transactions on Automation Science and Engineering}, vol.~12,
   no.~1, pp. 153--161, 2015.
-
-\bibitem{wickremasinghe2010cloudanalyst}
-B.~Wickremasinghe, R.~N. Calheiros, and R.~Buyya, ``Cloudanalyst: A
-  cloudsim-based visual modeller for analysing cloud computing environments and
-  applications,'' in \emph{Advanced Information Networking and Applications
-  (AINA), 2010 24th IEEE International Conference on}.\hskip 1em plus 0.5em
-  minus 0.4em\relax IEEE, 2010, pp. 446--452.
 
 \bibitem{marcbuxd5:online}
 ``marcbux/dynamiccloudsim: Automatically exported from
@@ -471,13 +481,6 @@ H.~Gupta, A.~Vahid~Dastjerdi, S.~K. Ghosh, and R.~Buyya, ``ifogsim: A toolkit
   for mobile users,'' \url{https://github.com/marciocomp/myifogsim}, (Accessed
   on 11/15/2018).
 
-\bibitem{lopes2017myifogsim}
-M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
-  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
-  \emph{Companion Proceedings of the10th International Conference on Utility
-  and Cloud Computing}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2017, pp.
-  47--52.
-
 \bibitem{medislam49:online}
 ``medislam/ifogsimwithdataplacement,''
   \url{https://github.com/medislam/iFogSimWithDataPlacement}, (Accessed on
@@ -512,28 +515,5 @@ C.~Sonmez, A.~Ozgovde, and C.~Ersoy, ``Edgecloudsim: An environment for
 A.~Brogi and S.~Forti, ``Qos-aware deployment of iot applications through the
   fog,'' \emph{IEEE Internet of Things Journal}, vol.~4, no.~5, pp. 1185--1192,
   2017.
-
-\bibitem{METISSer49:online}
-``Metis - serial graph partitioning and fill-reducing matrix ordering | karypis
-  lab,'' \url{http://glaros.dtc.umn.edu/gkhome/metis/metis/overview}, (Accessed
-  on 12/20/2018).
-
-\bibitem{whitley1994genetic}
-D.~Whitley, ``A genetic algorithm tutorial,'' \emph{Statistics and computing},
-  vol.~4, no.~2, pp. 65--85, 1994.
-
-\bibitem{kennedy2011particle}
-J.~Kennedy, ``Particle swarm optimization,'' in \emph{Encyclopedia of machine
-  learning}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2011, pp.
-  760--766.
-
-\bibitem{bellman1957markovian}
-R.~Bellman, ``A markovian decision process,'' \emph{Journal of Mathematics and
-  Mechanics}, pp. 679--684, 1957.
-
-\bibitem{bertsekas2005dynamic}
-D.~P. Bertsekas, D.~P. Bertsekas, D.~P. Bertsekas, and D.~P. Bertsekas,
-  \emph{Dynamic programming and optimal control}.\hskip 1em plus 0.5em minus
-  0.4em\relax Athena scientific Belmont, MA, 2005, vol.~1, no.~3.
 
 \end{thebibliography}
