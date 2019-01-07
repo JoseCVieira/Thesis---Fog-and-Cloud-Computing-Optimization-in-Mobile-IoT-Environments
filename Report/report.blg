@@ -1,10 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
-The style file: IEEEtran.bst
+The style file: ieeetr.bst
+Illegal, another \bibstyle command---line 227 of file report.aux
+ : \bibstyle
+ :          {IEEEtran}
+I'm skipping whatever remains of this command
 Database file #1: ./references/report.bib
--- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--missing institution in iorga2018fog
-
-Done.
-(There was 1 warning)
+Warning--can't use both volume and number fields in ellis2004generalizeability
+Warning--empty institution in iorga2018fog
+Warning--can't use both volume and number fields in bertsekas2005dynamic
+(There was 1 error message)
