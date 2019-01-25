@@ -108,6 +108,11 @@ Notes
 		- Fog Vehicular Computing Augmentation of Fog Computing Using Vehicular Cloud Computing
 		- Toward Efficient Content Delivery for Automated Driving Services: An Edge Computing Solution
 		- Cooperative Fog Computing for Dealing with Big Data in the Internet of Vehicles: Architecture and Hierarchical Resource Management
+	- Last Removed papers
+		- Dynamic service migration and workload scheduling in edge-clouds
+		- Towards efficient edge cloud augmentation for virtual reality MMOGs
+		- Profit-aware Resource Management for Edge Computing Systems
+		- Resource Constrained Offloading in Fog Computing
 
 ----------
 **Energy Efficient Optimization for Computation Offloading in Fog Computing System**
@@ -199,3 +204,46 @@ X. Sun et al. shows an architecture where each User Equipment (UE) has its own A
 Mist computing pushes processing even further to the network edge, involving the sensor and actuator devices. This decreases latency and increases subsystems’ autonomy. In such scenarios, self-awareness of every device is critical as the computation and actuation are dependent on the device’s perception of the situation. The challenge with implementing mist computing systems lies in the complexity and interactions of the resulting network, which must be managed by the devices themselves as central management of such systems is not feasible.
 
 State Collection Module gathers and stores real time network states, edge cloud workloads, and client mobility patterns. Then SEGUE estimates the expected response time for any user moving around a geographical region with access to an edge cloud under dynamic network states and varying edge cloud workloads. This prediction is performed by the QoS Prediction Module which recomputes it whenever there are a user moves, or there are changes in server or network workloads. This module answers the WHEN to migrate. The Edge Cloud Selection Module uses outputs provided by the State Collection Module and the QoS Prediction Module to solve the problem of finding an optimal edge cloud to migrate to. Thus it answers the WHERE to migrate by using MDP. They assume whenever a user needs to connect to a fog node, it is connected to the one with minimal hop count. The Service Migration Module is, responsible to preparate the application environment and initialize the application VM. To realize network and server states they use server push and client proxy probe. The server push is responsible for constantly monitoring and reporting response time whenever there is a response time shift that exceeds a predefined threshold (it clusters response time from anywhere in the network thus it reflects the server state but cannot distinguish the network link state). The client proxy periodically sends probing requests to all potential fog nodes, reflecting the network state between them (this generates big overhead). To predict QoS based on the user mobility, we integrate the linearity of expectation into the Autoregressive Integrated Moving Average(ARIMA) forecaster. We then weight the QoS prediction by a factor of mobility uncertainty. The QoS prediction module assumes that mobile location, follows the one dimensional mobility pattern (in t+1 the user can move back (n-1), n+1 or stay at n). The problem formulation is then formulated as a cost-reward between the predicted long term QoS improvement and the service downtime.
+
+----------
+**Alternating Direction Method of Multipliers ADMM**
+- Same principal of penalty methods
+- Introduce another term into the cost function (Lagrange multiplier)
+- Uses partial updates in Gauss-Seidel method
+- Gauss-Seidel method:
+	- Similar to Jacobi method to solve linear equations
+	- Converge assuredly for quadratic matrices with dominant diagonal
+	- Or with symmetric and positive definite
+
+**Mixed-Integer Linear Programming**
+- Linear programming maximizes (or minimizes) a linear objective function subject to one or more constraints (linear equalities/inequalities)
+- Mixed integer programming adds one additional condition that at least one of the variables can only take on integer values
+- Its feasible region is a convex polytopes, which is a set defined as the intersection of finitely many half spaces, each of which is defined by a linear inequality.
+
+**Mixed-Integer Quadratic Programming**
+- Quadratic programming (QP) is the process of solving a (linearly constrained) quadratic optimization problem
+- The problem of optimizing a quadratic function of several variables subject to linear constraints on these variables
+- Quadratic programming is a particular type of nonlinear programming
+
+**Interior Point Method**
+- Barrier methods (similar to the penalty method but the barrier is in place to bias the iterates to remain away from the boundary of the feasible region)
+- Class of algorithms that solve linear and nonlinear convex optimization problems
+
+**Minimum Graph Cuts**
+- Cut (a partition of the vertices of a graph into two disjoint subsets; that are joined by at least one edge) that is minimal in some sense.
+
+**Lyapunov optimization**
+- Lyapunov optimization refers to the use of a Lyapunov function to optimally control a dynamical system
+- Ensures different forms of system stability
+
+
+----------
+Melhorar a
+abreviações cannot etc..
+where is,
+apresentar um exemplo na introdução
+objetivos não muito claros (optimização na literatura é relevante mas falta a parte de mobilidade, por exemplo)
+comparar o tempo de execução
+procurar um ambiente de mais baio nivel omnet++
+mobility support tem de mais especifico(vm mig. e mobilidade dos users)
+myifog sim - is not perfect at all -> apontar para uma tabela comparativa de trabalhos relacionados
