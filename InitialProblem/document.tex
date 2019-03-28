@@ -1,0 +1,115 @@
+\documentclass{article}
+\usepackage[legalpaper, margin=0.5in]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+\newcommand{\SubItem}[1]{
+    {\setlength\itemindent{15pt} \item[-] #1}
+}
+
+\noindent\textbf{Multi-objective Optimization}\\[12pt]
+
+\noindent\textbf{Features:}\\[6pt]
+\begin{itemize}
+\item QoS
+    \SubItem{latency ($lat_{A \rightarrow B} = lat_{A \leftarrow B}$)}
+\item Cost
+    \SubItem{CPU}
+    \SubItem{RAM}
+    \SubItem{MEM}
+    \SubItem{BW}
+\item Energy
+    \SubItem{busyPower}
+    \SubItem{idlePower}
+    \SubItem{bandwidthUsage $\times$ powerConsumption}
+\item Bandwidth\\[12pt]
+    
+\item Distributed Data Flow
+\item Fog nodes mobility
+\item IoT devices mobility
+\item Migration support
+\item Partitioning techniques
+\item Data placement optimization
+\item Migration Optimization
+\end{itemize}
+
+\vspace*{12pt}
+
+\noindent\textbf{Static optimization}\\[12pt]
+\noindent\textbf{Notations:}
+\begin{itemize}
+	\item $n$ fog nodes $S=\{s_1, ..., s_n\}$
+	\item $m$ users $U=\{u_1, ..., u_m\}$
+	\item $d(s, s')$ delay between fog node $s$ and fog node $s'$\\
+	
+	\item $C^{MIPS}_{s}$ MIPS capacity of fog node $s$
+	\item $C^{MEM}_{s}$ memory capacity of fog node $s$
+	\item $C^{STRG}_{s}$ storage capacity of fog node $s$
+	\item $C^{BW}_{s}$ bandwidth capacity of fog node $s$\\
+	
+	\item $a^{MIPS}_{s}$ MIPS price of fog node $s$ per unit
+	\item $a^{MEM}_{s}$ memory price of fog node $s$ per unit
+	\item $a^{STRG}_{s}$ storage price of fog node $s$ per unit
+	\item $a^{BW}_{s}$ bandwidth price of fog node $s$ per unit
+	\item $a^b_{s}$ busy power consumption at fog node $s$
+	\item $a^i_{s}$ idle power consumption at fog node $s$\\
+	
+	\item $\lambda^{MIPS}_{u}$ MIPS user $u$ needs
+	\item $\lambda^{MEM}_{u}$ memory user $u$ needs
+	\item $\lambda^{STRG}_{u}$ storage user $u$ needs
+	\item $\lambda^{BW}_{u}$ bandwidth user $u$ needs\\
+	
+	\item $x^{MIPS}_{s,u}$ user $u$ allocates some MIPS at fog node $s$
+	\item $x^{MEM}_{s,u}$ user $u$ allocates some memory at fog node $s$
+	\item $x^{STRG}_{s,u}$ user $u$ allocates some storage at fog node $s$
+	\item $x^{BW}_{s,u}$ user $u$ allocates some bandwidth at fog node $s$\\
+\end{itemize}
+
+\pagebreak
+\noindent\textbf{Problem formulation:}\\[6pt]
+The cost function is mainly characterized by two components: Operational Cost and Service Quality Cost.\\[6pt]
+
+\noindent\textbf{Operational Cost} ($C_O$) is characterized by the resources allocated in each fog node to support all users' computations, namely: CPU, memory, storage, bandwidth, busy/idle power.
+\begin{equation}
+C_O = \sum_{s \in S} \left( c_{mips} + c_{mem} + c_ {strg} + c_{bw} + a_{s}\right)
+\end{equation}
+Where:
+
+\begin{gather}
+c_{mips} = a^{MIPS}_{s} \times \sum_{u \in U} x^{MIPS}_{s,u}\\[6pt]
+c_{mem} =  a^{MEM}_{s} \times \sum_{u \in U} x^{MEM}_{s,u}\\[6pt]
+c_ {strg} =  a^{STRG}_{s} \times \sum_{u \in U} x^{STRG}_{s,u}\\[6pt]
+c_{bw} = a^{BW}_{s} \times \sum_{u \in U} x^{BW}_{s,u}\\[6pt]
+a_{s} = \left\{ \begin{array}{ll} a^i_{s}, & \text{ if }\sum_{u=1}^Ux^{MIPS}_{s,u} = 0 \\[6pt]
+a^b_{s}, & \text{ \text{ otherwise } } \end{array} \right.
+\end{gather}
+
+\vspace{12pt}
+\noindent\textbf{Service Quality Cost} ($C_Q$) is characterized by the user perceived quality of service, which depends on the sum of the delays between the user and each fog node hosting modules of that user's application. The allocated bandwidth by the user in each fog node acts as a weight as follows:
+\begin{equation}
+C_Q = \sum_{u \in U} \left( ?? \right)
+\end{equation}
+
+\noindent\textbf{Final problem:}\\[6pt]
+\begin{equation*}
+\begin{aligned}
+& \underset{X}{\text{minimize}}
+& & C = \alpha C_O + \beta C_Q \\
+& \text{subject to}
+& & \sum_{s=1}^{S} x^{MIPS}_{s,u} = \lambda^{MIPS}_{u}, \forall u, \\
+&&& \sum_{s=1}^{S} x^{MEM}_{s,u} = \lambda^{MEM}_{u}, \forall u, \\
+&&& \sum_{s=1}^{S} x^{STRG}_{s,u} = \lambda^{STRG}_{u}, \forall u, \\
+&&& \sum_{s=1}^{S}x^{BW}_{s,u} = \lambda^{BW}_{u}, \forall u, \\
+&&& \sum_{u=1}^U x^{MIPS}_{s,u} \leq C^{MIPS}_{s}, \forall s, \\
+&&& \sum_{u=1}^U x^{MEM}_{s,u} \leq C^{MEM}_{s}, \forall s, \\
+&&& \sum_{u=1}^U x^{STRG}_{s,u} \leq C^{STRG}_{s}, \forall s, \\
+&&& \sum_{u=1}^U x^{BW}_{s,u} \leq C^{BW}_{s}, \forall s.
+\end{aligned}
+\end{equation*}
+
+\end{document}
