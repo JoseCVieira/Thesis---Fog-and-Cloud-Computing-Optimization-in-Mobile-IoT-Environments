@@ -41,74 +41,121 @@
 \end{itemize}
 
 \pagebreak
-\noindent\textbf{Static optimization}\\[12pt]
 \noindent\textbf{Notations:}
 \begin{itemize}
-	\item $N$ fog nodes $S=\{s_1, ..., s_n\}$
-	\item $M$ users $U=\{u_1, ..., u_m\}$\\
+	\item $N~-$ fog nodes $S=\{s_1, ..., s_n\}$
+	\item $M~-$ modules $U=\{u_1, ..., u_m\}$\\
 	
-	\item $C^{MIPS}=$ matrix $N\times 1$ representing the MIPS capacity of each fog node
-	\item $C^{MEM}=$ matrix $N\times 1$ representing the memory capacity of each fog node
-	\item $C^{STRG}=$ matrix $N\times 1$ representing the storage capacity of each fog node
-	\item $C^{BW}=$ matrix $N\times 1$ representing the bandwidth capacity of each fog node\\
+	\item $fP^{Mips}~-$ matrix $1\times N$ representing the MIPS price of each fog node per unit
+	\item $fP^{Ram}~-$ matrix $1\times N$ representing the memory price of each fog node per unit
+	\item $fP^{Strg}~-$ matrix $1\times N$ representing the storage price of each fog node per unit
+	\item $fP^{Bw}~-$ matrix $1\times N$ representing the bandwidth price of each fog node per unit\\
 	
-	\item $a^{MIPS}=$ matrix $1\times N$ representing the MIPS price of each fog node per unit
-	\item $a^{MEM}=$ matrix $1\times N$ representing the memory price of each fog node per unit
-	\item $a^{STRG}=$ matrix $1\times N$ representing the storage price of each fog node per unit
-	\item $a^{BW}=$ matrix $1\times N$ representing the bandwidth price of each fog node per unit
-	\item $a^{bPw}=$ matrix $1\times N$ representing the busy power consumption of each fog node per unit
-	\item $a^{iPw}=$ matrix $1\times N$ representing the idle power consumption of each fog node per unit\\
+	\item $f^{Mips}~-$ matrix $N\times 1$ representing the MIPS capacity of each fog node
+	\item $f^{Ram}~-$ matrix $N\times 1$ representing the memory capacity of each fog node
+	\item $f^{Strg}~-$ matrix $N\times 1$ representing the storage capacity of each fog node
+	\item $f^{Bw}~-$ matrix $N\times 1$ representing the bandwidth capacity of each fog node
+	\item $f^{bPw}=$ matrix $N\times 1$ representing the busy power consumption of each fog node per unit
+	\item $f^{iPw}~-$ matrix $N\times 1$ representing the idle power consumption of each fog node per unit
+	\item $f^{wPw}~-$ matrix $N\times 1$ representing the weight of energy consumption ($willing\_to\_waste\_energy^{-1}$)\\
 	
-	\item $x^{MIPS}=$ matrix $M\times 1$ representing the MIPS needed for each application's module
-	\item $x^{MEM}=$ matrix $M\times 1$ representing the memory needed for each application's module
-	\item $x^{STRG}=$ matrix $M\times 1$ representing the storage needed for each application's module
-	\item $x^{BW}=$ matrix $M\times 1$ representing the bandwidth needed for each application's module\\
+	\item $m^{Mips}~-$ matrix $M\times 1$ representing the MIPS needed for each application's module
+	\item $m^{Ram}~-$ matrix $M\times 1$ representing the memory needed for each application's module
+	\item $m^{Strg}~-$ matrix $M\times 1$ representing the storage needed for each application's module
+	\item $m^{Bw}~-$ matrix $M\times 1$ representing the bandwidth needed for each application's module\\
 	
-	\item $B$ = matrix $N\times M$ representing the solution of the problem (mapping between modules and nodes)
-	\item $D$ = matrix $M\times M$ representing the dependencies between modules ($D_{ij}=1$, if $i$ sends data to $j$)
-	\item $S$ = matrix $M\times M$ representing the NW tuple size sent between modules ($S_{ij}=$, sum of tuple sizes sent from $i$ to $j$)
-	\item $L=$ matrix $N\times N$ representing the latency between each two nodes (result from dijkstra method)
-	\item $Bw=$ matrix $N-1 \times N\times N$ representing the bandwidth between each two nodes (result from dijkstra method)
-	\item $e=$ matrix $1\times N$, with all cells to 1
+	\item $K~-$ total number of dependencies/edges
+	\item $e^{Cpu}~-$ matrix $1\times K$ representing the tuple CPU size (MI) needed to be processed
+	\item $e^{Nw}~-$ matrix $1\times K$ representing the tuple network size (MB) needed to be sent
+	\item $e^{Prob}~-$ matrix $1\times K$ representing the probability of sending the tuple
+	\item $e^{Pe}~-$ matrix $1\times K$ representing the periodicity of the producer (i.e., periodic sources)
+	\item $e^{S}~-$ matrix $1\times K$ representing the edge source
+	\item $e^{D}~-$ matrix $1\times K$ representing the edge destination\\
+	
+	\item $Z~-$ total number of dependencies/edges between different pairs of nodes
+	\item $l^S~-$ matrix $N\times 1$ representing the starting nodes of each pair of nodes
+	\item $l^D~-$ matrix $N\times 1$ representing the ending nodes of each pair of nodes\\
+	
+	\item $mD~-$ matrix $M\times M$ representing the dependencies between modules
+	\item $mB~-$ matrix $M\times M$ representing the bandwidth needed between modules\\
+	
+	\item $fL~-$ matrix $N\times N$ representing the latency between each two direct nodes
+	\item $fB~-$ matrix $N\times N$ representing the bandwidth between each two direct nodes\\
+	
+	\item $D~-$ matrix $N\times M$ representing the nodes where each module can be deployed\\
+	
+	\item $P~-$ matrix $N\times M$ representing the placement mapping between modules and nodes
+	\item $R~-$ matrix $K\times N\times N$ representing the routing map between modules\\
+	
+	\item $e~-$ matrix 1xN, with all entries to 1\\
+	
+	\item $\alpha~-$ operational weight
+	\item $\beta~-$ energetic weight
+	\item $\gamma~-$ processing weight
+	\item $\delta~-$ transmission weight
+	\item $\zeta~-$ transition cost
+	
 \end{itemize}
 
 \pagebreak
+
+\noindent\textbf{Preliminary computations:}\\[6pt]
+\begin{equation}
+\begin{split}
+& m^{Mips}_{i} = \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Cpu}_k}{e^{Pe}_k}\right), e_k^{D} = i\\[6pt]
+& m^{Bw}_{i} = \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i\\[6pt]
+& mB_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j\\[6pt]
+& mD_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j
+\end{split}
+\end{equation}\\[6pt]
+
 \noindent\textbf{Problem formulation:}\\[6pt]
 The cost function is mainly characterized by two components: Operational Cost and Service Quality Cost.\\[6pt]
 
 \noindent\textbf{Operational Cost} ($C_O$) is characterized by the resources allocated in each fog node to support all users' computations, namely: CPU, memory, storage, bandwidth.\\[6pt]
+
+\begin{equation}
+\begin{split}
+	& C_O = fP^{Mips} \times P \times m^{Mips} + fP^{Ram} \times P \times m^{Ram} + fP^{Strg}\times P\times m^{Strg} + e \sum_{z\in Z} R_z \times (fP^{Bw})' \times mB_{l^S_z,l^D_z}
+\end{split}
+\end{equation}\\[6pt]
+
+\noindent\textbf{Energetic Cost} ($C_E$) is characterized by the busy/idle power in each fog node to support all users' computations as well as the willing to wast energy to prevent users to process the whole application.\\[6pt]
 \begin{equation*}
 \begin{aligned}
-	C_O = a^{MIPS} B x^{MIPS} + a^{MEM} B x^{MEM} + a^{STRG} B x^{STRG} + a^{BW} B x^{BW}
+C_E = \left(f^{wPw} .* (f^{bPw} - f^{iPw})\right)' \times \frac{P \times m^{Mips}}{f^{Mips}}
 \end{aligned}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Energetic Cost} ($C_E$) is characterized by the busy/idle power in each fog node to support all users' computations.\\[6pt]
+\noindent\textbf{Processing Cost} ($C_P$) is characterized by the percentage of unused MIPS.\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_E = (a^{bPw} - a^{iPw}) \times ((B x^{MIPS})~./~C^{MIPS})
+C_P = e \frac{P \times m^{Mips}}{f^{Mips}}
 \end{aligned}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Quality Cost} ($C_Q$) is characterized by the total latency (sense-process-actuate).\\[6pt]
-\begin{equation*}
-\begin{aligned}
-C_Q = e[(BDB').*L + \sum_{i=1}^{N-1}\left((BSB').*Bw_i\right)]e'
-\end{aligned}
-\end{equation*}\\[6pt]
-
+\noindent\textbf{Transmission Cost} ($C_T$) is characterized by the total latency of tuple transmission.\\[6pt]
+\begin{equation}
+\begin{split}
+& C_T = e \left(\sum_{z\in Z} mD_{l^S_z,l^D_z} \times R_z .* fL + mB_{l^S_z,l^D_z} \times R_z ./ (fL + \epsilon) \right) e'
+\end{split}
+\end{equation}\\[6pt]
+                      
 \noindent\textbf{Final problem:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
-& \underset{B}{\text{minimize}}
-& & C = \alpha C_O + \beta C_E + \gamma C_Q \\
+& \underset{P, R}{\text{minimize}}
+& & C = \alpha C_O + \beta C_E + \gamma C_P  + \delta C_T + \zeta \times R\\
 & \text{subject to}
-& & B x^{MIPS} \leq C^{MIPS}, \\
-&&& B x^{MEM} \leq C^{MEM}, \\
-&&& B x^{STRG} \leq C^{STRG}, \\
-&&& B x^{BW} \leq C^{BW}, \\
-&&& B_{i,j} \in \{0, 1\}, \forall i \in [0, N], \forall j \in [0, M],\\
-&&& \sum_{i=1}^{N} B_{i,j} = 1, \forall j \in [0, M]
+& & P\times m^{Mips} \leq f^{Mips}, \\
+&&& P\times m^{Ram} \leq f^{Ram}, \\
+&&& P\times m^{Strg} \leq f^{Strg}, \\
+&&& P\times m^{Bw} \leq f^{Bw}, \\
+&&& P\leq D\\
+&&& P_{i,j} \in \{0, 1\}, \forall i \in [0, N], \forall j \in [0, M],\\
+&&& \sum_{i \in N} P_{i,j} = 1, \forall j \in [0, M]\\
+&&& R_{z, i,j} \in \{0, 1\}, \forall z \in [0, Z], \forall i \in [0, N], \forall j \in [0, N],\\
+&&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z], \forall i \in [0, N]
 \end{aligned}
 \end{equation*}
 
