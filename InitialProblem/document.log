@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  3 MAY 2019 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  4 MAY 2019 15:44
 entering extended mode
 **./document.tex
 (document.tex
@@ -404,15 +404,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
 [3] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3160 strings out of 494865
  42487 string characters out of 3178377
- 118444 words of memory out of 3000000
+ 119444 words of memory out of 3000000
  6775 multiletter control sequences out of 15000+200000
  5647 words of font info for 23 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,17n,32p,277b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,17n,32p,277b,148s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
 s/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
@@ -422,7 +432,7 @@ mi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10
 .pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
 ></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on document.pdf (3 pages, 116668 bytes).
+Output written on document.pdf (3 pages, 119916 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -92,65 +92,71 @@
 	\item $\alpha~-$ operational weight
 	\item $\beta~-$ energetic weight
 	\item $\gamma~-$ processing weight
-	\item $\delta~-$ transmission weight
-	\item $\zeta~-$ transition cost
+	\item $\delta~-$ latency weight
+	\item $\zeta~-$ bandwidth weight
 	
 \end{itemize}
 
 \pagebreak
 
 \noindent\textbf{Preliminary computations:}\\[6pt]
-\begin{equation}
+\begin{equation*}
 \begin{split}
 & m^{Mips}_{i} = \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Cpu}_k}{e^{Pe}_k}\right), e_k^{D} = i\\[6pt]
 & m^{Bw}_{i} = \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i\\[6pt]
 & mB_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j\\[6pt]
 & mD_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j
 \end{split}
-\end{equation}\\[6pt]
+\end{equation*}\\[6pt]
 
 \noindent\textbf{Problem formulation:}\\[6pt]
 The cost function is mainly characterized by two components: Operational Cost and Service Quality Cost.\\[6pt]
 
-\noindent\textbf{Operational Cost} ($C_O$) is characterized by the resources allocated in each fog node to support all users' computations, namely: CPU, memory, storage, bandwidth.\\[6pt]
+\noindent\textbf{Operational Cost} ($C_O$) is characterized by the resources allocated in each fog node to support all users' computations, namely: CPU, memory, storage, and bandwidth.\\[6pt]
 
-\begin{equation}
+\begin{equation*}
 \begin{split}
-	& C_O = fP^{Mips} \times P \times m^{Mips} + fP^{Ram} \times P \times m^{Ram} + fP^{Strg}\times P\times m^{Strg} + e \sum_{z\in Z} R_z \times (fP^{Bw})' \times mB_{l^S_z,l^D_z}
+	& C_O = fP^{Mips} \times P \times m^{Mips} + fP^{Ram} \times P \times m^{Ram} + fP^{Strg}\times P\times m^{Strg} + \left(fP^{Bw} \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_z\right)e'
 \end{split}
-\end{equation}\\[6pt]
+\end{equation*}\\[6pt]
 
-\noindent\textbf{Energetic Cost} ($C_E$) is characterized by the busy/idle power in each fog node to support all users' computations as well as the willing to wast energy to prevent users to process the whole application.\\[6pt]
+\noindent\textbf{Power Cost} ($C_{Pw}$) is characterized by the busy/idle power in each fog node to support all users' computations as well as the willing to wast energy to prevent clients to process the whole application.\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_E = \left(f^{wPw} .* (f^{bPw} - f^{iPw})\right)' \times \frac{P \times m^{Mips}}{f^{Mips}}
+C_{Pw} = \sum_{n\in N}\left(f_n^{iPw} + f_n^{wPw} (f_n^{bPw} - f_n^{iPw}) \times\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)
 \end{aligned}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Processing Cost} ($C_P$) is characterized by the percentage of unused MIPS.\\[6pt]
+\noindent\textbf{Processing Cost} ($C_P$) is characterized by the percentage of unused MIPS using the Jain's fairness index.\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_P = e \frac{P \times m^{Mips}}{f^{Mips}}
+C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}{N\times \sum_{n\in N} \left(\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
 \end{aligned}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Transmission Cost} ($C_T$) is characterized by the total latency of tuple transmission.\\[6pt]
-\begin{equation}
+\noindent\textbf{Latency Cost} ($C_L$) is characterized by the total latency on the tuple transmission.\\[6pt]
+\begin{equation*}
+\begin{aligned}
+& C_L = e \left(fL .* \sum_{z\in Z} mD_{l^S_z,l^D_z} \times R_z\right) e'
+\end{aligned}
+\end{equation*}\\[6pt]
+
+\noindent\textbf{Bandwidth Cost} ($C_B$) is characterized by the bandwidth usage on the tuple transmission.\\[6pt]
+\begin{equation*}
 \begin{split}
-& C_T = e \left(\sum_{z\in Z} mD_{l^S_z,l^D_z} \times R_z .* fL + mB_{l^S_z,l^D_z} \times R_z ./ (fL + \epsilon) \right) e'
+& C_B = e \left(1./(fB + \epsilon)~.* \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_z\right) e'~, \epsilon = 1^{-9}
 \end{split}
-\end{equation}\\[6pt]
+\end{equation*}\\[6pt]
                       
 \noindent\textbf{Final problem:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
 & \underset{P, R}{\text{minimize}}
-& & C = \alpha C_O + \beta C_E + \gamma C_P  + \delta C_T + \zeta \times R\\
+& & C = \alpha C_O + \beta C_{Pw} + \gamma C_P  + \delta C_L + \zeta C_B\\
 & \text{subject to}
 & & P\times m^{Mips} \leq f^{Mips}, \\
 &&& P\times m^{Ram} \leq f^{Ram}, \\
 &&& P\times m^{Strg} \leq f^{Strg}, \\
-&&& P\times m^{Bw} \leq f^{Bw}, \\
 &&& P\leq D\\
 &&& P_{i,j} \in \{0, 1\}, \forall i \in [0, N], \forall j \in [0, M],\\
 &&& \sum_{i \in N} P_{i,j} = 1, \forall j \in [0, M]\\
