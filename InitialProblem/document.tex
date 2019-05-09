@@ -129,7 +129,7 @@ C_{Pw} = \sum_{n\in N}\left(f_n^{iPw} + f_n^{wPw} (f_n^{bPw} - f_n^{iPw}) \times
 \noindent\textbf{Processing Cost} ($C_P$) is characterized by the percentage of unused MIPS using the Jain's fairness index.\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}{N\times \sum_{n\in N} \left(\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
+C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}{N\times \sum_{n\in N} \left(\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}~~ -OR- ~~ C_P = \sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}
 \end{aligned}
 \end{equation*}\\[6pt]
 
@@ -146,7 +146,9 @@ C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
 & C_B = e \left(1./(fB + \epsilon)~.* \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_z\right) e'~, \epsilon = 1^{-9}
 \end{split}
 \end{equation*}\\[6pt]
-                      
+
+\pagebreak
+
 \noindent\textbf{Final problem:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
@@ -157,10 +159,11 @@ C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
 &&& P\times m^{Ram} \leq f^{Ram}, \\
 &&& P\times m^{Strg} \leq f^{Strg}, \\
 &&& P\leq D\\
-&&& P_{i,j} \in \{0, 1\}, \forall i \in [0, N], \forall j \in [0, M],\\
+&&& P_{i,j} \in \{0, 1\}, \forall i \in [0, N], \forall j \in [0, M]\\
 &&& \sum_{i \in N} P_{i,j} = 1, \forall j \in [0, M]\\
-&&& R_{z, i,j} \in \{0, 1\}, \forall z \in [0, Z], \forall i \in [0, N], \forall j \in [0, N],\\
-&&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z], \forall i \in [0, N]
+&&& R_{z, i,j} \in \{0, 1\}, \forall z \in [0, Z], \forall i \in [0, N], \forall j \in [0, N]\\
+&&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z], \forall i \in [0, N]\\
+&&& \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_{z, i,j} \le fB_{i,j}~~, \forall i \in [0, N], \forall j \in [0, N]
 \end{aligned}
 \end{equation*}
 

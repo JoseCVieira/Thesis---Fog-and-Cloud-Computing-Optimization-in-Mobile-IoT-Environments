@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  5 MAY 2019 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  9 MAY 2019 18:33
 entering extended mode
 **./document.tex
 (document.tex
@@ -409,16 +409,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[3] (document.aux) ) 
+[4] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3160 strings out of 494865
  42487 string characters out of 3178377
- 119444 words of memory out of 3000000
+ 117444 words of memory out of 3000000
  6775 multiletter control sequences out of 15000+200000
  5647 words of font info for 23 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -432,9 +432,9 @@ mi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10
 .pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
 ></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on document.pdf (3 pages, 119915 bytes).
+Output written on document.pdf (4 pages, 121039 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
