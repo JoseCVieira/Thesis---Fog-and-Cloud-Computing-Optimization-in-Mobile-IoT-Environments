@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[legalpaper, margin=0.5in]{geometry}
+\usepackage[legalpaper, margin=1in]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage{natbib}
@@ -79,22 +79,27 @@
 	\item $fL~-$ matrix $N\times N$ representing the latency between each two direct nodes
 	\item $fB~-$ matrix $N\times N$ representing the bandwidth between each two direct nodes\\
 	
-	\item $D~-$ matrix $N\times M$ representing the nodes where each module can be deployed\\
+	\item $D~-$ matrix $N\times M$ representing the nodes where each module can be deployed
+	\item $C~-$ matrix $N\times M$ current module placement\\
 	
-	\item $P~-$ matrix $N\times M$ representing the placement mapping between modules and nodes
-	\item $R~-$ matrix $Z\times N\times N$ representing the routing map between modules\\
-	
-	\item $e~-$ matrix 1xN, with all entries to 1
-	\item $h~-$ matrix NxN, with all entries to 1 except for diagonal which is filled with zeros\\
+	\item $e~-$ matrix 1xN, with all entries to 1\\
 	
 	\item $\alpha~-$ operational weight
 	\item $\beta~-$ energetic weight
 	\item $\gamma~-$ processing weight
 	\item $\delta~-$ transmission weight
 	\item $\zeta~-$ bandwidth weight
+	\item $\eta~-$ migration weight
 \end{itemize}
 
 \pagebreak
+\noindent\textbf{Variables:}
+\begin{itemize}
+	\item $P~-$ matrix $N\times M$ representing the placement mapping between modules and nodes
+	\item $R~-$ matrix $Z\times N\times N$ representing the tuple routing map between modules
+	\item $V~-$ matrix $M\times N\times N$ representing the VM routing map
+\end{itemize}
+\vspace*{12pt}
 
 \noindent\textbf{Preliminary computations:}\\[6pt]
 \begin{equation*}
@@ -144,11 +149,19 @@ C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
 \end{split}
 \end{equation*}\\[6pt]
 
+\noindent\textbf{Migration Cost} ($C_M$)\\[6pt]
+\begin{equation*}
+\begin{split}
+& C_M = \sum_{i\in N}\sum_{j\in N} \frac{\sum_{z\in M}\left(\left(m^{Mips}_{z} + \times m^{Ram}_{z}\right) \times V_{z, i,j} \right)}{fB_{i,j}} + fL_{i,j}\times V_{z, i,j}
+\end{split}
+\end{equation*}\\[6pt]
+
+\pagebreak
 \noindent\textbf{Final problem:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
 & \underset{P, R}{\text{minimize}}
-& & C = \alpha C_O + \beta C_{Pw} + \gamma C_P  + \delta C_T + \zeta C_B\\
+& & C = \alpha C_O + \beta C_{Pw} + \gamma C_P  + \delta C_T + \zeta C_B + \eta C_M\\
 & \text{subject to}
 & & P\times m^{Mips} \leq f^{Mips}, \\
 &&& P\times m^{Ram} \leq f^{Ram}, \\
@@ -158,7 +171,8 @@ C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
 &&& \sum_{i \in N} P_{i,j} = 1, \forall j \in [0, M]\\
 &&& R_{z, i,j} \in \{0, 1\}, \forall z \in [0, Z], \forall i \in [0, N], \forall j \in [0, N]\\
 &&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z], \forall i \in [0, N]\\
-&&& \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_{z, i,j} \le fB_{i,j}~~, \forall i \in [0, N], \forall j \in [0, N]
+&&& \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_{z, i,j} \le fB_{i,j}~~, \forall i \in [0, N], \forall j \in [0, N]\\
+&&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~, \forall z \in [0, M], \forall i \in [0, N]
 \end{aligned}
 \end{equation*}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  27 MAY 2019 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  21 JUN 2019 13:37
 entering extended mode
 **./document.tex
 (document.tex
@@ -175,15 +175,15 @@ LaTeX Font Info:    ... okay on input line 10.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
-* v-part:(T,H,B)=(36.135pt, 939.51001pt, 36.135pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 867.24002pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=1011.78pt
-* \textwidth=542.02501pt
-* \textheight=939.51001pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
-* \topmargin=-73.135pt
+* \textwidth=469.75502pt
+* \textheight=867.24002pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -330,7 +330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
@@ -339,23 +339,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
@@ -365,13 +350,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
+ []
+
+
+Overfull \hbox (26.58255pt too wide) detected at line 122
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Overfull \hbox (3.47949pt too wide) in paragraph at lines 124--125
+\OT1/cmr/bx/n/10 Power Cost \OT1/cmr/m/n/10 ($\OML/cmm/m/it/10 C[]$\OT1/cmr/m/n
+/10 ) is characterized by the busy/idle power in each fog node to support all u
+sers' computations
  []
 
 
@@ -380,7 +382,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
@@ -390,7 +392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
@@ -400,7 +402,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--139
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
@@ -410,19 +412,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[3] (document.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+[4] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3160 strings out of 494865
  42487 string characters out of 3178377
- 120444 words of memory out of 3000000
+ 118418 words of memory out of 3000000
  6775 multiletter control sequences out of 15000+200000
  5647 words of font info for 23 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,17n,32p,277b,150s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,18n,32p,277b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
 s/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
@@ -432,9 +449,9 @@ mi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10
 .pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
 ></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 /home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on document.pdf (3 pages, 120317 bytes).
+Output written on document.pdf (4 pages, 122091 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
