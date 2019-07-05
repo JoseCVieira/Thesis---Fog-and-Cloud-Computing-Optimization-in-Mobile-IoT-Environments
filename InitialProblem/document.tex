@@ -82,7 +82,7 @@
 	\item $D~-$ matrix $N\times M$ representing the nodes where each module can be deployed
 	\item $C~-$ matrix $N\times M$ current module placement\\
 	
-	\item $e~-$ matrix 1xN, with all entries to 1\\
+	\item $e~-$ matrix $1\times N$ with all entries set to 1\\
 	
 	\item $\alpha~-$ operational weight
 	\item $\beta~-$ energetic weight
@@ -110,39 +110,38 @@
 \end{split}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Problem formulation:}\\[6pt]
-The cost function is mainly characterized by two components: Operational Cost and Service Quality Cost.\\[6pt]
-
-\noindent\textbf{Operational Cost} ($C_O$) is characterized by the resources allocated in each fog node to support all users' computations, namely: CPU, memory, storage, and bandwidth.\\[6pt]
-
+\noindent\textbf{Problem formulation:}\\[12pt]
+\noindent\textbf{Operational Cost} ($C_O$)\\[6pt]
 \begin{equation*}
 \begin{split}
-	& C_O = fP^{Mips} \times P \times m^{Mips} + fP^{Ram} \times P \times m^{Ram} + fP^{Strg}\times P\times m^{Strg} + \left(fP^{Bw} \times h .* \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_z\right)e'
+	& C_O = fP^{Mips} \times P \times m^{Mips} + fP^{Ram} \times P \times m^{Ram} + fP^{Strg}\times P\times m^{Strg} + \left(fP^{Bw} \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_z\right)e'
 \end{split}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Power Cost} ($C_{Pw}$) is characterized by the busy/idle power in each fog node to support all users' computations as well as the willing to wast energy to prevent clients to process the whole application.\\[6pt]
+\noindent\textbf{Power Cost} ($C_{Pw}$)\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_{Pw} = \sum_{n\in N}\left(f_n^{iPw} + (f_n^{bPw} - f_n^{iPw}) \times\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)
+C_{Pw} = & \sum_{n\in N}\left(f_n^{iPw} + (f_n^{bPw} - f_n^{iPw}) \times\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right) +\\
+& \sum_{i\in N}\sum_{j\in N} f^{Tx}_{i, j}\left[ fL_{i,j}\sum_{z\in Z}\left( mD_{l^S_z,l^D_z} \times R_{z, i,j} \right) + \frac{\sum_{z\in Z}\left( mB_{l^S_z,l^D_z} \times R_{z, i,j} \right)}{fB_{i,j}}  \right]\\
+& \sum_{i\in N}\sum_{j\in N} f^{Tx}_{i, j}\left[ \frac{\sum_{z\in M}\left(m^{Mips}_{z} + \times m^{Ram}_{z}\right) \times V_{z, i,j}}{fB_{i,j}} + fL_{i,j} \sum_{z\in M} \times V_{z, i,j} \right]
 \end{aligned}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Processing Cost} ($C_P$) is characterized by the percentage of unused MIPS using the Jain's fairness index.\\[6pt]
+\noindent\textbf{Processing Cost} ($C_P$)\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}{N\times \sum_{n\in N} \left(\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}~~ -OR- ~~ C_P = \sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}
+& C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}{N\times \sum_{n\in N} \left(\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}~~ -OR- ~~ C_P = \sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}
 \end{aligned}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Transmission Cost} ($C_T$) is characterized by the total latency on the tuple transmission ($Total_{lat}=lat + \frac{tuple\_size}{Bw}$).\\[6pt]
+\noindent\textbf{Transmission Cost} ($C_T$)\\[6pt]
 \begin{equation*}
-\begin{aligned}
-& C_T = e \left(fL .* \sum_{z\in Z} \left( mD_{l^S_z,l^D_z} \times R_z \right) + 1./(fB + \epsilon)~.* \sum_{z\in Z} \left( mB_{l^S_z,l^D_z} \times R_z\right)\right) e' ~, \epsilon = 1^{-9}
-\end{aligned}
+\begin{split}
+& C_T = \sum_{i\in N}\sum_{j\in N} fL_{i,j}\sum_{z\in Z}\left( mD_{l^S_z,l^D_z} \times R_{z, i,j} \right)
+\end{split}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Bandwidth Cost} ($C_B$) is characterized by the percentage of unused MIPS using the Jain's fairness index.\\[6pt]
+\noindent\textbf{Bandwidth Cost} ($C_B$)\\[6pt]
 \begin{equation*}
 \begin{split}
 & C_B = \sum_{i\in N}\sum_{j\in N} \frac{\sum_{z\in Z}\left( mB_{l^S_z,l^D_z} \times R_{z, i,j} \right)}{fB_{i,j}}
@@ -152,7 +151,7 @@ C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}
 \noindent\textbf{Migration Cost} ($C_M$)\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_M = \sum_{i\in N}\sum_{j\in N} \frac{\sum_{z\in M}\left(\left(m^{Mips}_{z} + \times m^{Ram}_{z}\right) \times V_{z, i,j} \right)}{fB_{i,j}} + fL_{i,j}\times V_{z, i,j}
+& C_M = \sum_{i\in N}\sum_{j\in N} \left[ \frac{\sum_{z\in M}\left(m^{Mips}_{z} + \times m^{Ram}_{z}\right) \times V_{z, i,j}}{fB_{i,j}} + fL_{i,j} \sum_{z\in M} \times V_{z, i,j} \right]
 \end{split}
 \end{equation*}\\[6pt]
 
