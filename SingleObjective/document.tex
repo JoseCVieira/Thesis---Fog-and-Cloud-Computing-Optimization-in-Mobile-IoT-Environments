@@ -13,7 +13,7 @@
 }
 
 \pagebreak
-\noindent\textbf{Single-objective Optimization}\\[12pt]
+\noindent\textbf{Single-objective Optimization}\\[6pt]
 \noindent\textbf{Notations:}
 \begin{itemize}
 	\item $N~-$ number of nodes
@@ -49,17 +49,19 @@
 	\item $l^S~-$ matrix $N\times 1$ representing the starting nodes of each pair of modules
 	\item $l^D~-$ matrix $N\times 1$ representing the ending nodes of each pair of modules\\
 	
-	\item $mD~-$ matrix $M\times M$ representing the dependencies between modules
-	\item $mB~-$ matrix $M\times M$ representing the bandwidth needed between modules\\
+	\item $m^D~-$ matrix $M\times M$ representing the dependencies between modules
+	\item $m^B~-$ matrix $M\times M$ representing the bandwidth needed between modules\\
 	
 	\item $f^L~-$ matrix $N\times N$ representing the latency between each two nodes
-	\item $f^B~-$ matrix $N\times N$ representing the bandwidth between each two nodes
+	\item $f^B~-$ matrix $N\times N$ representing the bandwidth between each two nodes\\
 	
 	\item $D~-$ matrix $N\times M$ representing the nodes where each module can be deployed
 	\item $C~-$ matrix $N\times M$ current module placement\\
 	
 	\item $A^L~-$ matrix $Q\times M$ representing the loop module list
 	\item $A^D~-$ matrix $Q\times 1$ representing the loop deadline list\\
+	
+	\item $e~-$ matrix $1\times N$ with all entries set to 1\\
 	
 	\item $t^{Boot}~-$ constant representing the average virtual machine boot time
 	\item $t^{Min}~-$ constant representing the minimum time interval between events
@@ -79,8 +81,8 @@
 \begin{equation*}
 \begin{split}
 & m^{Mips}_{i} = \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Cpu}_k}{e^{Pe}_k}\right), e_k^{D} = i\\[6pt]
-& mB_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j\\[6pt]
-& mD_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j
+& m^B_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j\\[6pt]
+& m^D_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -88,11 +90,9 @@
 \noindent\textbf{Operational Cost} ($C_O$)\\[6pt]
 \begin{equation*}
 \begin{aligned}
-	C_O = & P^{Mips} \times P \times m^{Mips} + P^{Ram} \times P \times m^{Ram} + P^{Strg}\times P\times m^{Strg} + \left(P^{Bw} \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_z\right)e' + C_{Pw}^P + C_{Pw}^M~,\\
+	C_O & = P^{Mips} \times P \times m^{Mips} + P^{Ram} \times P \times m^{Ram} + P^{Strg}\times P\times m^{Strg} + \left(P^{Bw} \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_z\right)e' + C_{Pw}~,\\
 	& where~ :\\
-	& C_{Pw}^P = \sum_{i\in N} P^{En}_i \left[ f_i^{iPw} + (f_i^{bPw} - f_i^{iPw}) \times\frac{P_i \times m^{Mips}}{f_i^{Mips}} + f^{Tx}_{i} \sum_{j\in N}\sum_{z\in Z} R_{z, i,j} \times \left(\frac{ mB_{l^S_z,l^D_z}}{f^B_{i,j}\times b} + f^L_{i,j} \right) \right] \\[10pt]
-	& C_{Pw}^M = \sum_{i\in N} P^{En}_i~ f^{Tx}_i \sum_{j\in N}\sum_{z\in M} V_{z, i,j} \times \left(\frac{m^{Strg}_{z} + m^{Ram}_{z}}{f^B_{i,j} \times (1- b)}  + f^L_{i,j}\right)
-	%% & C_{Pw} = \sum_{i\in N} P^{En}_i \left[ \left(f_i^{iPw} + (f_i^{bPw} - f_i^{iPw}) \times\frac{P_i \times m^{Mips}}{f_i^{Mips}}\right) + \sum_{j\in N} f^{Tx}_{i, j} \times  \frac{\sum_{z\in Z}\left( mB_{l^S_z,l^D_z} \times R_{z, i,j} + \left(m^{Strg}_{z} + \times m^{Ram}_{z}\right) \times V_{z, i,j} \right)}{f^B_{i,j}} \right]
+	& C_{Pw} = \sum_{i\in N} P^{En}_i \left[ f_i^{iPw} + (f_i^{bPw} - f_i^{iPw}) \times\frac{P_i \times m^{Mips}}{f_i^{Mips}} + f^{Tx}_{i} \sum_{j\in N}\sum_{z\in Z} R_{z, i,j} \times \left(\frac{ m^B_{l^S_z,l^D_z}}{f^B_{i,j}\times b} + f^L_{i,j} \times m^D_{l_z^S, l_z^D} \right) \right]
 \end{aligned}
 \end{equation*}\\[6pt]
 
@@ -114,7 +114,7 @@
 &&& V_{z, i,j} \in \{0, 1\},~ \forall z \in [0, M],~ \forall i \in [0, N],~ \forall j \in [0, N]\\
 &&& \sum_{i \in N} P_{i,j} = 1,~ \forall j \in [0, M]\\
 &&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z],~ \forall i \in [0, N]\\
-&&& \sum_{z\in Z} mB_{l^S_z,l^D_z} \times R_{z, i,j} \le f^B_{i,j} \times b ~~,~ \forall i \in [0, N],~ \forall j \in [0, N]\\
+&&& \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_{z, i,j} \le f^B_{i,j} \times b ~~,~ \forall i \in [0, N],~ \forall j \in [0, N]\\
 &&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N]\\
 &&& L^P_q + L^T_q + L^M_q < A^D_q,~ \forall q \in [0, Q]
 \end{aligned}&&&
@@ -129,11 +129,12 @@
 
 \begin{flalign*}
 \begin{aligned}
-L^T_q = \sum_{i=0}^{M-1}~ \sum_{j=i+1}^{M} A^L_{q,i}~ A^L_{q,j} & \sum_{l\in N}\sum_{k\in N} \left( fL_{l,k} \times R_{z,l,k} + \frac{mB_{l^S_z,l^D_z} \times R_{z,l,k}}{f^B_{l,k} \times b} \right),\\[6pt]
+L^T_q = \sum_{i=0}^{M-1}~ \sum_{j=i+1}^{M} A^L_{q,i}~ A^L_{q,j} & \sum_{l\in N}\sum_{k\in N} \left( fL_{l,k} \times R_{z,l,k} + \frac{m^B_{l^S_z,l^D_z} \times R_{z,l,k}}{f^B_{l,k} \times b - \sum_{r\in Z} m^B_{l^S_r,l^D_r} \times R_{r, l, k} } \right),\\[6pt]
 & i<j,\\
 & \sum_{t=i+1}^{j-1} A^L_{q, t} = 0\\
 & \sum_{t_2 \in N} R_{z, t_1, t_2} - \sum_{t_2\in N} R_{z, t_1, t_2}' = 1,~ t_1 = \sum_{t \in N}t \times P_{t, i},~ z \in Z \\
-& \sum_{t_2 \in N} R_{z, t_1, t_2} - \sum_{t_2\in N} R_{z, t_1, t_2}' = -1,~ t_1 = \sum_{t \in N}t \times P_{t, j},~ z \in Z
+& \sum_{t_2 \in N} R_{z, t_1, t_2} - \sum_{t_2\in N} R_{z, t_1, t_2}' = -1,~ t_1 = \sum_{t \in N}t \times P_{t, j},~ z \in Z\\[6pt]
+& l_r^S \neq l_z^S \cap l_r^D \neq l_z^D
 \end{aligned}&&&
 \end{flalign*}
 

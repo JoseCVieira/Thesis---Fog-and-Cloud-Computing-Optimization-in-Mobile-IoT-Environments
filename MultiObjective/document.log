@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  23 JUL 2019 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  29 JUL 2019 11:31
 entering extended mode
 **./document.tex
 (document.tex
@@ -257,50 +257,69 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
 (/home/jcrv/.miktex/texmfs/install/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+
+(/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+
+(/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[1
 
-{/home/jcrv/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for U+msa on input line 46.
-
-(/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 46.
-
-(/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
@@ -309,88 +328,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
+[1
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+{/home/jcrv/.miktex/texmfs/data/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
@@ -399,42 +410,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-[4] (document.aux) ) 
+[3] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3159 strings out of 494865
  42469 string characters out of 3178377
- 119418 words of memory out of 3000000
+ 122418 words of memory out of 3000000
  6774 multiletter control sequences out of 15000+200000
  5647 words of font info for 23 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,18n,32p,277b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,19n,32p,300b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
 s/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm
-/cmmi5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb
-></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on document.pdf (4 pages, 120058 bytes).
+cmextra/cmex7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmmi5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.p
+fb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></h
+ome/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home
+/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on document.pdf (3 pages, 143489 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  26 JUL 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  29 JUL 2019 11:31
 entering extended mode
 **./document.tex
 (document.tex
@@ -309,6 +309,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
@@ -318,25 +323,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
 [1
 
 {/home/jcrv/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
 
-Overfull \hbox (41.50862pt too wide) detected at line 97
+Overfull \hbox (8.24013pt too wide) detected at line 97
 [][]
  []
 
@@ -359,11 +369,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 Here is how much of TeX's memory you used:
  3159 strings out of 494865
  42473 string characters out of 3178377
- 121418 words of memory out of 3000000
+ 122418 words of memory out of 3000000
  6774 multiletter control sequences out of 15000+200000
  5647 words of font info for 23 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,19n,32p,350b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,19n,32p,303b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
 </home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
 nts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
 s/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
@@ -376,7 +386,7 @@ fb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><
 /home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></h
 ome/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home
 /jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on document.pdf (3 pages, 140338 bytes).
+Output written on document.pdf (3 pages, 140574 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
