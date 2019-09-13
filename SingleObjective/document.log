@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  29 JUL 2019 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  3 SEP 2019 09:34
 entering extended mode
 **./document.tex
 (document.tex
@@ -151,21 +151,24 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(document.aux)
+(/home/jcrv/.miktex/texmfs/install/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box29
+) (document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -205,7 +208,7 @@ LaTeX Font Info:    ... okay on input line 10.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen122
-\scratchbox=\box29
+\scratchbox=\box30
 \nofMPsegments=\count105
 \nofMParguments=\count106
 \everyMPshowfont=\toks23
@@ -257,54 +260,49 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 20.
 
 (/home/jcrv/.miktex/texmfs/install/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
 
 (/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
 
 (/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
@@ -318,77 +316,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
 [1
 
 {/home/jcrv/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 
-Overfull \hbox (8.24013pt too wide) detected at line 97
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Overfull \hbox (15.27145pt too wide) detected at line 100
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-[3] (document.aux) ) 
+[3] [4] (document.aux) ) 
 Here is how much of TeX's memory you used:
- 3159 strings out of 494865
- 42473 string characters out of 3178377
- 122418 words of memory out of 3000000
- 6774 multiletter control sequences out of 15000+200000
- 5647 words of font info for 23 fonts, out of 3000000 for 9000
+ 3222 strings out of 494865
+ 43384 string characters out of 3178377
+ 120742 words of memory out of 3000000
+ 6832 multiletter control sequences out of 15000+200000
+ 5764 words of font info for 24 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,19n,32p,303b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
-</home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
-cmextra/cmex7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmmi5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmmi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.p
-fb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></h
-ome/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home
-/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on document.pdf (3 pages, 140574 bytes).
+ 41i,20n,32p,277b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/jcrv/.miktex/texmfs/install/fonts/type1/public/a
+msfonts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/ams
+fonts/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.
+pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+></home/jcrv/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb>
+Output written on document.pdf (4 pages, 124164 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

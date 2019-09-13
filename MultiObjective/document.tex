@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{eurosym}
 
 \begin{document}
 \newcommand{\SubItem}[1]{
@@ -18,113 +19,111 @@
 	\item $N~-$ number of nodes
 	\item $M~-$ number of modules
 	\item $K~-$ number of dependencies
-	\item $Z~-$ number of dependencies between different pairs of modules
+	\item $Z~-$ number of module pairs with dependencies
 	\item $Q~-$ number of loop deadlines\\
 	
-	\item $P^{Mips}~-$ matrix $1\times N$ representing the MIPS price of each fog node per unit
-	\item $P^{Ram}~-$ matrix $1\times N$ representing the memory price of each fog node per unit
-	\item $P^{Strg}~-$ matrix $1\times N$ representing the storage price of each fog node per unit
-	\item $P^{Bw}~-$ matrix $1\times N$ representing the bandwidth price of each fog node per unit
-	\item $P^{En}~-$ matrix $1\times N$ representing the energy price of each fog node per unit\\
+	\item $P^{Mips}~[\mbox{\euro}]~$, $1\times N$ matrix representing the price of using processing resources in each fog node
+	\item $P^{Ram}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using memory resources in each fog node
+	\item $P^{Strg}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using storage resources in each fog node
+	\item $P^{Bw}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using network resources in each fog node
+	\item $P^{Pw}~[\mbox{\euro}]$, $1\times N$ matrix representing the power price in each fog node\\
 	
-	\item $f^{Mips}~-$ matrix $N\times 1$ representing the MIPS capacity of each fog node
-	\item $f^{Ram}~-$ matrix $N\times 1$ representing the memory capacity of each fog node
-	\item $f^{Strg}~-$ matrix $N\times 1$ representing the storage capacity of each fog node
-	\item $f^{bPw}=$ matrix $N\times 1$ representing the busy power consumption of each fog node per unit
-	\item $f^{iPw}~-$ matrix $N\times 1$ representing the idle power consumption of each fog node per unit
-	\item $f^{Tx}~-$ matrix $N\times 1$ representing the transmitter power ($f^{Tx}_n$ is non 0 if $n$ is a mobile node)\\
+	\item $f^{Mips}~[MIPS]$, $N\times 1$ matrix representing the processing capacity of each fog node
+	\item $f^{Ram}~[Byte]$, $N\times 1$ matrix representing the memory capacity of each fog node
+	\item $f^{Strg}~[Byte]$, $N\times 1$ matrix representing the storage capacity of each fog node
+	\item $f^{bPw}~[W]$, $N\times 1$ matrix representing the busy power consumption of each fog node
+	\item $f^{iPw}~[W]$, $N\times 1$ matrix representing the idle power consumption of each fog node
+	\item $f^{Tx}~[W]$, $N\times 1$ matrix representing the transmitter power ($f^{Tx}_n$ is non 0 if $n$ is a mobile node)\\
 	
-	\item $m^{Mips}~-$ matrix $M\times 1$ representing the MIPS needed for each application's module
-	\item $m^{Ram}~-$ matrix $M\times 1$ representing the memory needed for each application's module
-	\item $m^{Strg}~-$ matrix $M\times 1$ representing the storage needed for each application's module\\
+	\item $m^{Mips}~[MIPS]$, $M\times 1$ matrix representing the processing resources needed for each module
+	\item $m^{Ram}~[Byte]$, $M\times 1$ matrix representing the memory resources needed for each module
+	\item $m^{Strg}~[Byte]$, $M\times 1$ matrix representing the storage resources needed for each module\\
 	
-	\item $e^{Cpu}~-$ matrix $1\times K$ representing the tuple CPU size (MI) needed to be processed
-	\item $e^{Nw}~-$ matrix $1\times K$ representing the tuple network size (MB) needed to be sent
-	\item $e^{Prob}~-$ matrix $1\times K$ representing the probability of sending the tuple
-	\item $e^{Pe}~-$ matrix $1\times K$ representing the periodicity of the producer (i.e., periodic sources)
-	\item $e^{S}~-$ matrix $1\times K$ representing the edge source
-	\item $e^{D}~-$ matrix $1\times K$ representing the edge destination\\
+	\item $e^{Cpu}~[MI]$, $K\times 1$ matrix representing the tuple CPU size needed to be processed for each dependency
+	\item $e^{Nw}~[Byte]$, $K\times 1$ matrix representing the tuple network size needed to be sent for each dependency
+	\item $e^{Pe}~[s]$, $K\times 1$ matrix representing the periodicity of sending the tuple for each dependency
+	\item $e^{Prob}~[\%]$, $K\times 1$ matrix representing the probability of sending the tuple for each dependency
+	\item $e^{S}$, $K\times 1$ matrix representing the source module for each dependency
+	\item $e^{D}$, $K\times 1$ matrix representing the destination module for each dependency\\
 	
-	\item $l^S~-$ matrix $N\times 1$ representing the starting nodes of each pair of modules
-	\item $l^D~-$ matrix $N\times 1$ representing the ending nodes of each pair of modules\\
+	\item $l^S$, $Z\times 1$ matrix representing the source module for each pair of modules with dependencies
+	\item $l^D$, $Z\times 1$ matrix representing the destination module for each pair of modules with dependencies\\
 	
-	\item $m^D~-$ matrix $M\times M$ representing the dependencies between modules
-	\item $m^B~-$ matrix $M\times M$ representing the bandwidth needed between modules\\
+	\item $m^D$, $M\times M$ matrix representing the dependencies between modules
+	\item $m^B$, $M\times M$ matrix representing the bandwidth needed between modules\\
 	
-	\item $f^L~-$ matrix $N\times N$ representing the latency between each two nodes
-	\item $f^B~-$ matrix $N\times N$ representing the bandwidth between each two nodes\\
+	item $f^L$, $N\times N$ matrix representing the link latency between each two nodes
+	\item $f^B$, $N\times N$ matrix representing the link bandwidth between each two nodes\\
 	
-	\item $D~-$ matrix $N\times M$ representing the nodes where each module can be deployed
-	\item $C~-$ matrix $N\times M$ current module placement\\
+	\item $D$, $N\times M$ binary matrix representing the nodes where each module can be deployed
+	\item $C$, $N\times M$ binary matrix representing the current module placement\\
 	
-	\item $A^L~-$ matrix $Q\times M$ representing the loop module list
-	\item $A^D~-$ matrix $Q\times 1$ representing the loop deadline list\\
-	
-	\item $e~-$ matrix $1\times N$ with all entries set to 1\\
-	
-	\item $t^{Boot}~-$ constant representing the average virtual machine boot time
-	\item $t^{Min}~-$ constant representing the minimum time interval between events
-	\item $b~-$ constant representing the percentage of bandwidth used for periodic tuples
+	\item $b$, constant representing the percentage of link bandwidth allocated for sending tuples
+	\item $\epsilon$ small constant
 \end{itemize}
 
 \pagebreak
 \noindent\textbf{Variables:}
 \begin{itemize}
-	\item $P~-$ matrix $N\times M$ representing the placement mapping between modules and nodes
-	\item $R~-$ matrix $Z\times N\times N$ representing the tuple routing map between modules
-	\item $V~-$ matrix $M\times N\times N$ representing the VM routing map
+	\item $P$, $N\times M$ binary matrix representing the placement mapping between modules and nodes
+	\item $R$, $Z\times N\times N$ binary matrix representing the tuple routing map between modules
+	\item $V$, $M\times N\times N$ binary matrix representing the module migration routing map
 \end{itemize}
 \vspace*{12pt}
 
 \noindent\textbf{Preliminary computations:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& m^{Mips}_{i} = \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Cpu}_k}{e^{Pe}_k}\right), e_k^{D} = i\\[6pt]
-& m^B_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j\\[6pt]
-& m^D_{i,j}= \sum_{k\in K} \left(\frac{e^{Prob}_k}{e^{Pe}_k}\right), e^{S}_k = i,~e^{D}_k = j
+& m^{Mips}_{i} = \sum_{k\in K} \frac{e^{Prob}_k e^{Cpu}_k}{e^{Pe}_k},~ e_k^{D} = i\\[6pt]
+& m^B_{i,j}= \sum_{k\in K} \frac{e^{Prob}_k e^{Nw}_k}{e^{Pe}_k},~ e^{S}_k = i,~e^{D}_k = j\\[6pt]
+& m^D_{i,j}= \sum_{k\in K} \frac{e^{Prob}_k}{e^{Pe}_k},~ e^{S}_k = i,~e^{D}_k = j\\[6pt]
 \end{split}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Problem formulation:}\\[12pt]
+\noindent\textbf{Objectives:}\\[12pt]
 \noindent\textbf{Operational Cost} ($C_O$)\\[6pt]
 \begin{equation*}
 \begin{split}
-	& C_O = P^{Mips} \times P \times m^{Mips} + P^{Ram} \times P \times m^{Ram} + P^{Strg}\times P\times m^{Strg} + \left(P^{Bw} \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_z\right)e'
+	& C_O = P^{Mips} \times P \times m^{Mips} + P^{Ram} \times P \times m^{Ram} + P^{Strg}\times P\times m^{Strg} + \left(P^{Bw} \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_z\right)1N + C_{Pw}(P^{Pw'})
 \end{split}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Power Cost} ($C_{Pw}$)\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_{Pw} = \sum_{i\in N} P^{En}_i \left[ f_i^{iPw} + (f_i^{bPw} - f_i^{iPw}) \times\frac{P_i \times m^{Mips}}{f_i^{Mips}} + f^{Tx}_{i} \sum_{j\in N}\sum_{z\in Z} R_{z, i,j} \times \left(\frac{ m^B_{l^S_z,l^D_z}}{f^B_{i,j}\times b} + f^L_{i,j} \times m^D_{l_z^S, l_z^D} \right) \right]
+& C_{Pw}(x) = C_P(x.\times(f^{bPw} - f^{iPw})) + C_B(x.\times f^{Tx}),\\[6pt]
+& x = 1N
 \end{aligned}
 \end{equation*}\\[6pt]
+
 
 \noindent\textbf{Processing Cost} ($C_P$)\\[6pt]
 \begin{equation*}
 \begin{aligned}
-& C_P = \frac{\left(\sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}{N\times \sum_{n\in N} \left(\frac{P_n \times m^{Mips}}{f_n^{Mips}}\right)^2}~~ -OR- ~~ C_P = \sum_{n\in N} \frac{P_n \times m^{Mips}}{f_n^{Mips}}
+& C_P(x) = \sum_{n\in N} x_n \frac{P_n \times m^{Mips}}{f_n^{Mips}},\\[6pt]
+& x = 1N
 \end{aligned}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Transmission Cost} ($C_T$)\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} \times R_{z, i,j} \right)
+C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} \times R_{z, i,j} \right)
 \end{split}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Bandwidth Cost} ($C_B$)\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_B = \sum_{i\in N}\sum_{j\in N} \frac{\sum_{z\in Z}\left( m^B_{l^S_z,l^D_z} \times R_{z, i,j} \right)}{f^B_{i,j} \times b}
+& C_B(x) = \sum_{z\in Z} m^B_{l^S_z,l^D_z} \sum_{i\in N} x_i \sum_{j\in N} \frac{R_{z, i,j}}{f^B_{i,j} \times b + \epsilon},\\[6pt]
+& x = 1N
 \end{split}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Migration Cost} ($C_M$)\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_M = \sum_{i\in N}\sum_{j\in N} \sum_{z\in M} V_{z, i,j} \times \left(\frac{m^{Mips}_{z} + m^{Ram}_{z}}{f^B_{i,j}\times (1-b)} + f^L_{i,j} \right)
+& C_M = \sum_{i\in N}\sum_{j\in N} \sum_{m\in M} V_{m, i,j} \times \left(\frac{m^{Strg}_{m} + m^{Ram}_{m}}{f^B_{i,j}\times (1-b)} + f^L_{i,j} \right)
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -133,7 +132,7 @@ C_{Pw} = \sum_{i\in N} P^{En}_i \left[ f_i^{iPw} + (f_i^{bPw} - f_i^{iPw}) \time
 \begin{flalign*}
 \begin{aligned}
 & \underset{P, R}{\text{minimize}}
-& & C = C_O + C_{Pw} + C_P  + C_T + C_B + C_M\\
+& & C_O,~ C_E,~ C_P,~ C_T,~ C_B,~ C_M\\
 & \text{subject to}
 & & P\times m^{Mips} \leq f^{Mips}, \\
 &&& P\times m^{Ram} \leq f^{Ram}, \\
@@ -145,36 +144,8 @@ C_{Pw} = \sum_{i\in N} P^{En}_i \left[ f_i^{iPw} + (f_i^{bPw} - f_i^{iPw}) \time
 &&& \sum_{i \in N} P_{i,j} = 1,~ \forall j \in [0, M]\\
 &&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z],~ \forall i \in [0, N]\\
 &&& \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_{z, i,j} \le f^B_{i,j} \times b ~~,~ \forall i \in [0, N],~ \forall j \in [0, N]\\
-&&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N]\\
-&&& L^P_q + L^T_q + L^M_q < A^D_q,~ \forall q \in [0, Q]
+&&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N]
 \end{aligned}&&&
 \end{flalign*}\\[6pt]
-
-
-\begin{flalign*}
-\begin{aligned}
-& where:\\
-& L^P_q = \sum_{i\in M} A^L_{q,i} \times \left(\frac{m^{Mips}_i}{\sum_{j\in N}\frac{f^{Mips}_j\times P_{j, i}}{\sum_{l\in M} P_{j, i} \times P_{j, l}}} + t^{Min}\right)
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-L^T_q = \sum_{i=0}^{M-1}~ \sum_{j=i+1}^{M} A^L_{q,i}~ A^L_{q,j} & \sum_{l\in N}\sum_{k\in N} \left( fL_{l,k} \times R_{z,l,k} + \frac{m^B_{l^S_z,l^D_z} \times R_{z,l,k}}{f^B_{l,k} \times b - \sum_{r\in Z} m^B_{l^S_r,l^D_r} \times R_{r, l, k} } \right),\\[6pt]
-& i<j,\\
-& \sum_{t=i+1}^{j-1} A^L_{q, t} = 0\\
-& \sum_{t_2 \in N} R_{z, t_1, t_2} - \sum_{t_2\in N} R_{z, t_1, t_2}' = 1,~ t_1 = \sum_{t \in N}t \times P_{t, i},~ z \in Z \\
-& \sum_{t_2 \in N} R_{z, t_1, t_2} - \sum_{t_2\in N} R_{z, t_1, t_2}' = -1,~ t_1 = \sum_{t \in N}t \times P_{t, j},~ z \in Z\\[6pt]
-& l_r^S \neq l_z^S \cap l_r^D \neq l_z^D
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-L^M_q = \sum_{i\in M} A^L_{q,i} \times & \left(\sum_{l\in N}\sum_{k\in N}\left( fL_{l,k} \times V_{z,l,k} + \frac{\left(m^{Strg}_{z} + \times m^{Ram}_{z}\right) \times V_{z,l,k}}{f^B_{l,k} \times (1-b)}\right) + t^{Boot}\right),\\[6pt]
-& \sum_{t_2 \in N} V_{z, t_1, t_2} - \sum_{t_2\in N} V_{z, t_1, t_2}' = 1,~ t_1 = \sum_{t \in N}t \times C_{t, i},~ z \in M \\
-& \sum_{t_2 \in N} V_{z, t_1, t_2} - \sum_{t_2\in N} V_{z, t_1, t_2}' = -1,~ t_1 = \sum_{t \in N}t \times P_{t, i},~ z \in M
-\end{aligned}&&&
-\end{flalign*}
 
 \end{document}
