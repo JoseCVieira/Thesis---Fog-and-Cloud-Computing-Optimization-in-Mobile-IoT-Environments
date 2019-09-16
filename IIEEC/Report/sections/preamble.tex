@@ -1,0 +1,561 @@
+% ----------------------------------------------------------------------
+% Define document language.
+% ----------------------------------------------------------------------
+
+% 'inputenc' package
+%
+% Accept different input encodings.
+% http://www.ctan.org/tex-archive/macros/latex/base/
+%
+% > allows typing non-english text in LaTeX sources.
+%
+% ******************************* SELECT *******************************
+%\usepackage[latin1]{inputenc} % <<<<< Windows
+\usepackage[utf8]{inputenc}   % <<<<< Linux
+% ******************************* SELECT *******************************
+
+
+% 'babel' package
+%\RequirePackage[english]{babel} 
+
+%
+% Multilingual support for Plain TeX or LaTeX.
+% http://www.ctan.org/tex-archive/macros/latex/required/babel/
+%
+% > sets the variable names according to the language selected
+%
+% ******************************* SELECT *******************************
+%\usepackage[portuguese]{babel} % <<<<< Portuguese
+\usepackage[english]{babel} % <<<<< English
+% ******************************* SELECT *******************************
+
+
+% List of LaTeX variable names: \abstractname, \appendixname, \bibname,
+%   \chaptername, \contentsname, \listfigurename, \listtablename, ...)
+% http://www.tex.ac.uk/cgi-bin/texfaq2html?label=fixnam
+%
+% Changing the words babel uses (uncomment and redefine as necessary...)
+%
+\newcommand{\acknowledgments}{@undefined} % new LaTeX variable name
+%
+% > English
+%
+%\addto\captionsenglish{\renewcommand{\acknowledgments}{Acknowledgments}}
+%\addto\captionsenglish{\renewcommand{\contentsname}{Contents}}
+%\addto\captionsenglish{\renewcommand{\listtablename}{List of Tables}}
+%\addto\captionsenglish{\renewcommand{\listfigurename}{List of Figures}}
+%\addto\captionsenglish{\renewcommand{\nomname}{Nomenclature}}
+%\addto\captionsenglish{\renewcommand{\glossaryname}{Glossary}}
+%\addto\captionsenglish{\renewcommand{\acronymname}{List of Acronyms}}
+%\addto\captionsenglish{\renewcommand{\bibname}{References}} % Bibliography
+%\addto\captionsenglish{\renewcommand{\appendixname}{Appendix}}
+
+% > Portuguese
+%
+%\addto\captionsportuguese{\renewcommand{\acknowledgments}{Agradecimentos}}
+%\addto\captionsportuguese{\renewcommand{\contentsname}{Conte\'{u}do}}
+%\addto\captionsportuguese{\renewcommand{\listtablename}{Lista de Figuras}}
+%\addto\captionsportuguese{\renewcommand{\listfigurename}{Lista de Tabelas}}
+%\addto\captionsportuguese{\renewcommand{\nomname}{Lista de S\'{i}mbolos}} % Nomenclatura
+%\addto\captionsportuguese{\renewcommand{\glossary}{Gloss\'{a}rio}}
+%\addto\captionsportuguese{\renewcommand{\acronymname}{Lista de Abrevia\c{c}\~{o}es}}
+%\addto\captionsportuguese{\renewcommand{\bibname}{Refer\^{e}ncias}} % Bibliografia
+%\addto\captionsportuguese{\renewcommand{\appendixname}{Anexo}} % Apendice
+
+
+% ----------------------------------------------------------------------
+% Define cover fields in both english and portuguese.
+% ----------------------------------------------------------------------
+%
+\newcommand{\coverThesis}{@undefined} % new LaTeX variable name
+\newcommand{\coverSupervisors}{@undefined} % new LaTeX variable name
+\newcommand{\coverExaminationCommittee}{@undefined} % new LaTeX variable name
+\newcommand{\coverChairperson}{@undefined} % new LaTeX variable name
+\newcommand{\coverSupervisor}{@undefined} % new LaTeX variable name
+\newcommand{\coverMemberCommittee}{@undefined} % new LaTeX variable name
+% > English
+\addto\captionsenglish{\renewcommand{\coverThesis}{Thesis to obtain the Master of Science Degree in}}
+\addto\captionsenglish{\renewcommand{\coverSupervisors}{Supervisor(s)}}
+\addto\captionsenglish{\renewcommand{\coverExaminationCommittee}{Examination Committee}}
+\addto\captionsenglish{\renewcommand{\coverChairperson}{Chairperson}}
+\addto\captionsenglish{\renewcommand{\coverSupervisor}{Supervisor}}
+\addto\captionsenglish{\renewcommand{\coverMemberCommittee}{Member of the Committee}}
+% > Portuguese
+% \addto\captionsportuguese{\renewcommand{\coverThesis}{Disserta\c{c}\~{a}o para obten\c{c}\~{a}o do Grau de Mestre em}}
+% \addto\captionsportuguese{\renewcommand{\coverSupervisors}{Orientador(es)}}
+% \addto\captionsportuguese{\renewcommand{\coverExaminationCommittee}{J\'{u}ri}}
+% \addto\captionsportuguese{\renewcommand{\coverChairperson}{Presidente}}
+% \addto\captionsportuguese{\renewcommand{\coverSupervisor}{Orientador}}
+% \addto\captionsportuguese{\renewcommand{\coverMemberCommittee}{Vogal}}
+
+
+% ----------------------------------------------------------------------
+% Define default and cover page fonts.
+% ----------------------------------------------------------------------
+
+% Use Arial font as default
+%
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+% Define cover page fonts
+%
+%         encoding     family       series      shape
+%  \usefont{T1}     {phv}=helvetica  {b}=bold    {n}=normal
+%                   {ptm}=times      {m}=normal  {sl}=slanted
+%                                                {it}=italic
+% see more examples at
+% http://julien.coron.free.fr/languages/latex/fonts/
+%
+\def\FontLn{% 16 pt normal
+  \usefont{T1}{phv}{m}{n}\fontsize{16pt}{16pt}\selectfont}
+\def\FontLb{% 16 pt bold
+  \usefont{T1}{phv}{b}{n}\fontsize{16pt}{16pt}\selectfont}
+\def\FontMn{% 14 pt normal
+  \usefont{T1}{phv}{m}{n}\fontsize{14pt}{14pt}\selectfont}
+\def\FontMb{% 14 pt bold
+  \usefont{T1}{phv}{b}{n}\fontsize{14pt}{14pt}\selectfont}
+\def\FontSn{% 12 pt normal
+  \usefont{T1}{phv}{m}{n}\fontsize{12pt}{12pt}\selectfont}
+
+
+% ----------------------------------------------------------------------
+% Define page margins and line spacing.
+% ----------------------------------------------------------------------
+
+% 'geometry' package
+%
+% Flexible and complete interface to document dimensions.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/geometry/
+%
+% > set the page margins (2.5cm minimum in every side, as per IST rules)
+%
+\usepackage{geometry}	
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+
+% 'setspace' package
+%
+% Set space between lines.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/setspace/
+%
+% > allow setting line spacing (line spacing of 1.5, as per IST rules)
+%
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.5}
+
+
+% ----------------------------------------------------------------------
+% Include external packages.
+% Note that not all of these packages may be available on all system
+% installations. If necessary, include the .sty files locally in
+% the <jobname>.tex file directory.
+% ----------------------------------------------------------------------
+
+% 'graphicx' package
+%
+% Enhanced support for graphics.
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+%
+% > extends arguments of the \includegraphics command
+%
+\usepackage{graphicx}
+
+
+% 'color' package
+%
+% Colour control for LaTeX documents.
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+%
+% > defines color macros: \color{<color name>}
+%
+\usepackage{color}
+
+
+% 'amsmath' package
+%
+% Mathematical enhancements for LaTeX.
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/
+%
+% > American Mathematical Society plain Tex macros
+%
+\usepackage{amsmath}  % AMS mathematical facilities for LaTeX.
+\usepackage{amsthm}   % Typesetting theorems (AMS style).
+\usepackage{amsfonts} % 
+
+
+% 'wrapfig' package
+%
+% Produces figures which text can flow around.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/wrapfig/
+%
+% > wrap figures/tables in text (i.e., Di Vinci style)
+%
+% \usepackage{wrapfig}
+
+
+% 'subfigure' package
+%
+% Deprecated: Figures divided into subfigures.
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+%
+% > subcaptions for subfigures
+%
+\usepackage{subfigure}
+
+
+% 'subfigmat' package
+%
+% Automates layout when using the subfigure package.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfigmat/
+%
+% > matrices of similar subfigures
+%
+\usepackage{subfigmat}
+
+
+% 'url' package
+%
+% Verbatim with URL-sensitive line breaks.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/url/
+%
+% > URLs in BibTex
+%
+\usepackage{url}
+
+
+% 'varioref' package
+%
+% Intelligent page references.
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+%
+% > smart page, figure, table and equation referencing
+%
+\usepackage{varioref}
+
+
+% 'dcolumn' package
+%
+% Align on the decimal point of numbers in tabular columns.
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+%
+% > decimal-aligned tabular math columns
+%
+\usepackage{dcolumn}
+\newcolumntype{d}{D{.}{.}{-1}} % column aligned by the point separator '.'
+\newcolumntype{e}{D{E}{E}{-1}} % column aligned by the exponent 'E'
+
+
+% 'verbatim' package
+%
+% Reimplementation of and extensions to LaTeX verbatim.
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+%
+% > provides the verbatim environment (\begin{verbatim},\end{verbatim})
+%   and a comment environment (\begin{comment},  \end{comment})
+%
+\usepackage{verbatim}
+
+
+% 'moreverb' package
+%
+% Extended verbatim.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/moreverb/
+%
+% > supports tab expansion and line numbering
+%
+\usepackage{moreverb}
+
+
+
+% 'nomencl' package
+%
+% Produce lists of symbols as in nomenclature.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/nomencl/
+%
+% The nomencl package makes use of the MakeIndex program
+% in order to produce the nomenclature list.
+%
+% Nomenclature
+% 1) On running the file through LATEX, the command \makenomenclature
+%    in the preamble instructs it to create/open the nomenclature file
+%    <jobname>.nlo corresponding to the LATEX file <jobname>.tex and
+%    writes the information from the \nomenclature commands to this file.
+% 2) The next step is to invoke MakeIndex in order to produce the
+%    <jobname>.nls file. This can be achieved by making use of the
+%    command: makeindex <jobname>.nlo -s nomencl.ist -o <jobname>.nls
+% 3) The last step is to invoke LATEX on the <jobname>.tex file once
+%    more. There, the \printnomenclature in the document will input the
+%    <jobname>.nls file and process it according to the given options.
+%
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/nomencl.pdf
+%
+% Nomenclature (produces *.nlo *.nls files)
+\usepackage{nomencl}
+\makenomenclature
+%
+% Group variables according to their symbol type
+%
+\RequirePackage{ifthen} 
+\ifthenelse{\equal{\languagename}{english}}%
+    { % English
+    \renewcommand{\nomgroup}[1]{%
+      \ifthenelse{\equal{#1}{R}}{%
+        \item[\textbf{Roman symbols}]}{%
+        \ifthenelse{\equal{#1}{G}}{%
+          \item[\textbf{Greek symbols}]}{%
+          \ifthenelse{\equal{#1}{S}}{%
+            \item[\textbf{Subscripts}]}{%
+            \ifthenelse{\equal{#1}{T}}{%
+              \item[\textbf{Superscripts}]}{}}}}}%
+    }{% Portuguese
+    \renewcommand{\nomgroup}[1]{%
+      \ifthenelse{\equal{#1}{R}}{%
+        \item[\textbf{Simbolos romanos}]}{%
+        \ifthenelse{\equal{#1}{G}}{%
+          \item[\textbf{Simbolos gregos}]}{%
+          \ifthenelse{\equal{#1}{S}}{%
+            \item[\textbf{Subscritos}]}{%
+            \ifthenelse{\equal{#1}{T}}{%
+              \item[\textbf{Sobrescritos}]}{}}}}}%
+    }%
+
+
+% 'glossary' package
+%
+% Create a glossary.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/glossary/
+%
+% % Glossary (produces *.glo *.ist files)
+% \usepackage[number=none]{glossary}
+% % (remove blank line between groups)
+% \setglossary{gloskip={}}
+% % (redefine glossary style file)
+% %\renewcommand{\istfilename}{myGlossaryStyle.ist}
+% \makeglossary
+
+
+% 'rotating' package
+%
+% Rotation tools, including rotated full-page floats.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/rotating/
+%
+% > show wide figures and tables in landscape format:
+%   use \begin{sidewaystable} and \begin{sidewaysfigure}
+%   instead of 'table' and 'figure', respectively.
+%
+\usepackage{rotating}
+
+
+% 'hyperref' package
+%
+% Extensive support for hypertext in LaTeX.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/hyperref/
+%
+% > Extends the functionality of all the LATEX cross-referencing
+%   commands (including the table of contents, bibliographies etc) to
+%   produce \special commands which a driver can turn into hypertext
+%   links; Also provides new commands to allow the user to write adhoc
+%   hypertext links, including those to external documents and URLs.
+%
+\usepackage[pdftex]{hyperref} % enhance documents that are to be
+                              % output as HTML and PDF
+\hypersetup{colorlinks,       % color text of links and anchors,
+                              % eliminates borders around links
+%            linkcolor=red,    % color for normal internal links
+            linkcolor=black,  % color for normal internal links
+            anchorcolor=black,% color for anchor text
+%            citecolor=green,  % color for bibliographical citations
+            citecolor=black,  % color for bibliographical citations
+%            filecolor=magenta,% color for URLs which open local files
+            filecolor=black,  % color for URLs which open local files
+%            menucolor=red,    % color for Acrobat menu items
+            menucolor=black,  % color for Acrobat menu items
+%            pagecolor=red,    % color for links to other pages
+%            pagecolor=black,  % color for links to other pages
+%            urlcolor=cyan,    % color for linked URLs
+            urlcolor=black,   % color for linked URLs
+%	          bookmarks=true,         % create PDF bookmarks
+	          bookmarksopen=false,    % don't expand bookmarks
+	          bookmarksnumbered=true, % number bookmarks
+	          pdftitle={Thesis},
+            pdfauthor={Andre C. Marta},
+            pdfsubject={Thesis Title},
+            pdfkeywords={Thesis Keywords},
+            pdfstartview=FitV,
+            pdfdisplaydoctitle=true}
+
+
+% 'hypcap' package
+%
+% Adjusting the anchors of captions.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
+%
+% > fixes the problem with hyperref, that links to floats points
+%   below the caption and not at the beginning of the float.
+%
+\usepackage[figure,table]{hypcap}
+
+
+% 'natbib' package
+%
+% Flexible bibliography support.
+% http://www.ctan.org/tex-archive/macros/latex/contrib/natbib/
+%
+% > produce author-year style citations
+%
+% \citet  and \citep  for textual and parenthetical citations, respectively
+% \citet* and \citep* that print the full author list, and not just the abbreviated one
+% \citealt is the same as \citet but without parentheses. Similarly, \citealp is \citep without parentheses
+% \citeauthor
+% \citeyear
+% \citeyearpar
+%
+%% natbib options can be provided when package is loaded \usepackage[options]{natbib}
+%%
+%% Following options are valid:
+%%
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon (default)
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   authoryear - for author–year citations (default)
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts, as in Nature
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+% ******************************* SELECT *******************************
+%\usepackage{natbib}          % <<<<< References in alphabetical list Correia, Silva, ...
+\usepackage[numbers,sort&compress]{natbib} % <<<<< References in numbered list [1],[2],...
+% ******************************* SELECT *******************************
+
+
+% 'notoccite' package
+%
+% Prevent trouble from citations in table of contents, etc.
+% http://ctan.org/pkg/notoccite
+%
+% > If you have \cite com­mands in \sec­tion-like com­mands, or in \cap­tion,
+%   the ci­ta­tion will also ap­pear in the ta­ble of con­tents, or list of what­ever.
+%   If you are also us­ing an un­srt-like bib­li­og­ra­phy style, these ci­ta­tions will
+%   come at the very start of the bib­li­og­ra­phy, which is con­fus­ing. This pack­age
+%   sup­presses the ef­fect.
+%
+\usepackage{notoccite}
+
+
+% 'multirow' package
+%
+% Create tabular cells spanning multiple rows
+% http://www.ctan.org/pkg/multirow
+%
+\usepackage{multirow}
+
+
+% 'booktabs' package
+%
+% Publication quality tables in LaTeX
+% http://www.ctan.org/pkg/booktabs
+%
+% > en­hance the qual­ity of ta­bles in LaTeX, pro­vid­ing ex­tra com­mands.
+%
+% \renewcommand{\arraystretch}{<ratio>} % space between rows
+%
+\usepackage{booktabs}
+%\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+
+
+% 'pdfpages' package
+%
+% Include PDF documents in LaTeX
+% http://www.ctan.org/pkg/pdfpages
+%
+% > in­clu­sion of ex­ter­nal multi-page PDF doc­u­ments in LaTeX doc­u­ments.
+%   Pages may be freely se­lected and sim­i­lar to psnup it is pos­si­ble to put
+%   sev­eral log­i­cal pages onto each sheet of pa­per.
+%
+% \includepdf{filename.pdf}
+% \includepdf[pages={4-9},nup=2x3,landscape=true]{filename.pdf}
+%
+\usepackage{pdfpages}
+
+
+% ----------------------------------------------------------------------
+% Define new commands to assure consistent treatment throughout document
+% ----------------------------------------------------------------------
+
+\newcommand{\ud}{\mathrm{d}}                % total derivative
+\newcommand{\degree}{\ensuremath{^\circ\,}} % degrees
+
+% Abbreviations
+
+\newcommand{\mcol}{\multicolumn}            % table format
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+\newcommand{\class}[1]{\texttt{#1}}
+\newcommand{\package}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{#1}}
+\newcommand{\BibTeX}{\textsc{Bib}\TeX}
+
+% Typefaces ( example: {\bf Bold text here} )
+%
+% > pre-defined
+%   \bf % bold face
+%   \it % italic
+%   \tt % typewriter
+%
+% > newly defined
+\newcommand{\tr}[1]{{\ensuremath{\textrm{#1}}}}   % text roman
+\newcommand{\tb}[1]{{\ensuremath{\textbf{#1}}}}   % text bold face
+\newcommand{\ti}[1]{{\ensuremath{\textit{#1}}}}   % text italic
+\newcommand{\mc}[1]{{\ensuremath{\mathcal{#1}}}}  % math calygraphy
+\newcommand{\mco}[1]{{\ensuremath{\mathcalold{#1}}}}% math old calygraphy
+\newcommand{\mr}[1]{{\ensuremath{\mathrm{#1}}}}   % math roman
+\newcommand{\mb}[1]{{\ensuremath{\mathbf{#1}}}}   % math bold face
+\newcommand{\bs}[1]{\ensuremath{\boldsymbol{#1}}} % math symbol
+\def\bm#1{\mathchoice                             % math bold
+  {\mbox{\boldmath$\displaystyle#1$}}%
+  {\mbox{\boldmath$#1$}}%
+  {\mbox{\boldmath$\scriptstyle#1$}}%
+  {\mbox{\boldmath$\scriptscriptstyle#1$}}}
+\newcommand{\boldcal}[1]{{\ensuremath{\boldsymbol{\mathcal{#1}}}}}% math bold calygraphy
+
+\usepackage{float}
+\graphicspath{{eps/}{png/}}
+%Section Reference: \cref{sec:foo}
+\usepackage{cleveref}
+\usepackage{babel}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\huge}{\thechapter}{1em}{}
+\titlespacing{\chapter}{0pt}{0pt}{1cm}
+
+
+%packages for tables
+\usepackage{bbding}
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{calc}
+
+%package for side-by-side list
+\usepackage{multicol}
+
+%packages for checkmark marks on table
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\newcommand{\halfcorrect}[0]{\Checkmark\textsuperscript{\kern-0.9em$\diagdown$}}
+
+%package to reduce item spacing
+\usepackage{enumitem}
+
+%order citations
+\bibliographystyle{ieeetr}
+
+%Comando para permitir usar \tab
+\newcommand{\tab}{\hspace*{2em}}

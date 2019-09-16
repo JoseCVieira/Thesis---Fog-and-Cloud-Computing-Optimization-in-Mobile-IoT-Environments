@@ -1,0 +1,11 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
+The style file: ieeetr.bst
+Illegal, another \bibstyle command---line 227 of file report.aux
+ : \bibstyle
+ :          {IEEEtran}
+I'm skipping whatever remains of this command
+Database file #1: ./references/report.bib
+Warning--can't use both volume and number fields in ellis2004generalizeability
+Warning--empty institution in iorga2018fog
+Warning--can't use both volume and number fields in bertsekas2005dynamic
+(There was 1 error message)

@@ -1,0 +1,474 @@
+\begin{thebibliography}{10}
+
+\bibitem{evans2011internet}
+D.~Evans, ``The internet of things: How the next evolution of the internet is
+  changing everything,'' {\em CISCO white paper}, vol.~1, no.~2011, pp.~1--11,
+  2011.
+
+\bibitem{CiscoVis16:online}
+``Cisco visual networking index: Global mobile data traffic forecast update,
+  2016–2021 white paper - cisco.''
+  \url{https://www.cisco.com/c/en/us/solutions/collateral/service-provider/visual-networking-index-vni/mobile-white-paper-c11-520862.html}.
+\newblock (Accessed on 10/25/2018).
+
+\bibitem{WhatisCl79:online}
+``What is cloud computing? - amazon web services.''
+  \url{https://aws.amazon.com/what-is-cloud-computing/}.
+\newblock (Accessed on 11/01/2018).
+
+\bibitem{ellis2004generalizeability}
+S.~R. Ellis, K.~Mania, B.~D. Adelstein, and M.~I. Hill, ``Generalizeability of
+  latency detection in a variety of virtual environments,'' in {\em Proceedings
+  of the Human Factors and Ergonomics Society Annual Meeting}, vol.~48,
+  pp.~2632--2636, SAGE Publications Sage CA: Los Angeles, CA, 2004.
+
+\bibitem{taylor2015virtual}
+B.~Taylor, Y.~Abe, A.~Dey, M.~Satyanarayanan, D.~Siewiorek, and A.~Smailagic,
+  ``Virtual machines for remote computing: Measuring the user experience,''
+  {\em Carnegie Mellon University}, 2015.
+
+\bibitem{szigeti2005end}
+T.~Szigeti and C.~Hattingh, {\em End-to-end qos network design}.
+\newblock Cisco press, 2005.
+
+\bibitem{satyanarayanan2013cloudlets}
+M.~Satyanarayanan, ``Cloudlets: at the leading edge of cloud-mobile
+  convergence,'' in {\em Proceedings of the 9th international ACM Sigsoft
+  conference on Quality of software architectures}, pp.~1--2, ACM, 2013.
+
+\bibitem{bonomi2012fog}
+F.~Bonomi, R.~Milito, J.~Zhu, and S.~Addepalli, ``Fog computing and its role in
+  the internet of things,'' in {\em Proceedings of the first edition of the MCC
+  workshop on Mobile cloud computing}, pp.~13--16, ACM, 2012.
+
+\bibitem{davy2014challenges}
+S.~Davy, J.~Famaey, J.~Serrat-Fernandez, J.~L. Gorricho, A.~Miron,
+  M.~Dramitinos, P.~M. Neves, S.~Latr{\'e}, and E.~Goshen, ``Challenges to
+  support edge-as-a-service,'' {\em IEEE Communications Magazine}, vol.~52,
+  no.~1, pp.~132--139, 2014.
+
+\bibitem{taleb2013follow}
+T.~Taleb and A.~Ksentini, ``Follow me cloud: interworking federated clouds and
+  distributed mobile networks,'' {\em IEEE Network}, vol.~27, no.~5,
+  pp.~12--19, 2013.
+
+\bibitem{yousefpour2018all}
+A.~Yousefpour, C.~Fung, T.~Nguyen, K.~Kadiyala, F.~Jalali, A.~Niakanlahiji,
+  J.~Kong, and J.~P. Jue, ``All one needs to know about fog computing and
+  related edge computing paradigms: A complete survey,'' {\em arXiv preprint
+  arXiv:1808.05283}, 2018.
+
+\bibitem{satyanarayanan1996fundamental}
+M.~Satyanarayanan, ``Fundamental challenges in mobile computing,'' in {\em
+  Proceedings of the fifteenth annual ACM symposium on Principles of
+  distributed computing}, pp.~1--7, Acm, 1996.
+
+\bibitem{shiraz2013review}
+M.~Shiraz, A.~Gani, R.~H. Khokhar, and R.~Buyya, ``A review on distributed
+  application processing frameworks in smart mobile devices for mobile cloud
+  computing,'' {\em IEEE Communications Surveys \& Tutorials}, vol.~15, no.~3,
+  pp.~1294--1313, 2013.
+
+\bibitem{hubaux2001toward}
+J.-P. Hubaux, T.~Gross, J.-Y. Le~Boudec, and M.~Vetterli, ``Toward
+  self-organized mobile ad hoc networks: the terminodes project,'' {\em IEEE
+  Communications Magazine}, vol.~39, no.~1, pp.~118--124, 2001.
+
+\bibitem{OpenEdge73:online}
+``Open edge computing.'' \url{http://openedgecomputing.org/about.html}.
+\newblock (Accessed on 10/24/2018).
+
+\bibitem{openfog2017openfog}
+O.~C. A.~W. Group {\em et~al.}, ``Openfog reference architecture for fog
+  computing,'' {\em OPFRA001}, vol.~20817, p.~162, 2017.
+
+\bibitem{satyanarayanan2009case}
+M.~Satyanarayanan, V.~Bahl, R.~Caceres, and N.~Davies, ``The case for vm-based
+  cloudlets in mobile computing,'' {\em IEEE pervasive Computing}, 2009.
+
+\bibitem{jararweh2013resource}
+Y.~Jararweh, L.~Tawalbeh, F.~Ababneh, and F.~Dosari, ``Resource efficient
+  mobile computing using cloudlet infrastructure,'' in {\em Mobile Ad-hoc and
+  Sensor Networks (MSN), 2013 IEEE Ninth International Conference on},
+  pp.~373--377, IEEE, 2013.
+
+\bibitem{Ciscopus95:online}
+``Cisco pushes iot analytics to the extreme edge with mist computing -
+  rethink.''
+  \url{https://rethinkresearch.biz/articles/cisco-pushes-iot-analytics-extreme-edge-mist-computing-2/}.
+\newblock (Accessed on 10/25/2018).
+
+\bibitem{iorga2018fog}
+M.~Iorga, L.~Feldman, R.~Barton, M.~J. Martin, N.~S. Goren, and C.~Mahmoudi,
+  ``Fog computing conceptual model,'' tech. rep., 2018.
+
+\bibitem{giang2015developing}
+N.~K. Giang, M.~Blackstock, R.~Lea, and V.~C. Leung, ``Developing iot
+  applications in the fog: a distributed dataflow approach,'' in {\em Internet
+  of Things (IOT), 2015 5th International Conference on the}, pp.~155--162,
+  IEEE, 2015.
+
+\bibitem{gedeon2017router}
+J.~Gedeon, C.~Meurisch, D.~Bhat, M.~Stein, L.~Wang, and M.~M{\"u}hlh{\"a}user,
+  ``Router-based brokering for surrogate discovery in edge computing,'' in {\em
+  Distributed Computing Systems Workshops (ICDCSW), 2017 IEEE 37th
+  International Conference on}, pp.~145--150, IEEE, 2017.
+
+\bibitem{guerrero2018influence}
+C.~Guerrero, I.~Lera, and C.~Juiz, ``On the influence of fog colonies
+  partitioning in fog application makespan,'' in {\em 2018 IEEE 6th
+  International Conference on Future Internet of Things and Cloud (FiCloud)},
+  pp.~377--384, IEEE, 2018.
+
+\bibitem{skarlat2016resource}
+O.~Skarlat, S.~Schulte, M.~Borkowski, and P.~Leitner, ``Resource provisioning
+  for iot services in the fog,'' in {\em 2016 IEEE 9th Conference on
+  Service-Oriented Computing and Applications (SOCA)}, pp.~32--39, IEEE, 2016.
+
+\bibitem{skarlat2017optimized}
+O.~Skarlat, M.~Nardelli, S.~Schulte, M.~Borkowski, and P.~Leitner, ``Optimized
+  iot service placement in the fog,'' {\em Service Oriented Computing and
+  Applications}, vol.~11, no.~4, pp.~427--443, 2017.
+
+\bibitem{bonomi2014fog}
+F.~Bonomi, R.~Milito, P.~Natarajan, and J.~Zhu, ``Fog computing: A platform for
+  internet of things and analytics,'' in {\em Big data and internet of things:
+  A roadmap for smart environments}, pp.~169--186, Springer, 2014.
+
+\bibitem{ma2017efficient}
+L.~Ma, S.~Yi, and Q.~Li, ``Efficient service handoff across edge servers via
+  docker container migration,'' in {\em Proceedings of the Second ACM/IEEE
+  Symposium on Edge Computing}, p.~11, ACM, 2017.
+
+\bibitem{hines2009post}
+M.~R. Hines, U.~Deshpande, and K.~Gopalan, ``Post-copy live migration of
+  virtual machines,'' {\em ACM SIGOPS operating systems review}, vol.~43,
+  no.~3, pp.~14--26, 2009.
+
+\bibitem{saurez2016incremental}
+E.~Saurez, K.~Hong, D.~Lillethun, U.~Ramachandran, and B.~Ottenw{\"a}lder,
+  ``Incremental deployment and migration of geo-distributed situation awareness
+  applications in the fog,'' in {\em Proceedings of the 10th ACM International
+  Conference on Distributed and Event-based Systems}, pp.~258--269, ACM, 2016.
+
+\bibitem{farris2017optimizing}
+I.~Farris, T.~Taleb, M.~Bagaa, and H.~Flick, ``Optimizing service replication
+  for mobile delay-sensitive applications in 5g edge network,'' in {\em
+  Communications (ICC), 2017 IEEE International Conference on}, pp.~1--6, IEEE,
+  2017.
+
+\bibitem{rodrigues2017pso}
+T.~G. Rodrigues, K.~Suto, H.~Nishiyama, and N.~Kato, ``A pso model with vm
+  migration and transmission power control for low service delay in the
+  multiple cloudlets ecc scenario,'' in {\em Communications (ICC), 2017 IEEE
+  International Conference on}, pp.~1--6, IEEE, 2017.
+
+\bibitem{sun2016primal}
+X.~Sun and N.~Ansari, ``Primal: Profit maximization avatar placement for mobile
+  edge computing,'' in {\em Communications (ICC), 2016 IEEE International
+  Conference on}, pp.~1--6, IEEE, 2016.
+
+\bibitem{ottenwalder2013migcep}
+B.~Ottenw{\"a}lder, B.~Koldehofe, K.~Rothermel, and U.~Ramachandran, ``Migcep:
+  operator migration for mobility driven distributed complex event
+  processing,'' in {\em Proceedings of the 7th ACM international conference on
+  Distributed event-based systems}, pp.~183--194, ACM, 2013.
+
+\bibitem{zhang2016segue}
+W.~Zhang, Y.~Hu, Y.~Zhang, and D.~Raychaudhuri, ``Segue: Quality of service
+  aware edge cloud service migration,'' in {\em Cloud Computing Technology and
+  Science (CloudCom), 2016 IEEE International Conference on}, pp.~344--351,
+  IEEE, 2016.
+
+\bibitem{deng2016optimal}
+R.~Deng, R.~Lu, C.~Lai, T.~H. Luan, and H.~Liang, ``Optimal workload allocation
+  in fog-cloud computing toward balanced delay and power consumption,'' {\em
+  IEEE Internet of Things Journal}, vol.~3, no.~6, pp.~1171--1181, 2016.
+
+\bibitem{xiao2017qoe}
+Y.~Xiao and M.~Krunz, ``Qoe and power efficiency tradeoff for fog computing
+  networks with fog node cooperation,'' in {\em INFOCOM 2017-IEEE Conference on
+  Computer Communications, IEEE}, pp.~1--9, IEEE, 2017.
+
+\bibitem{nan2017adaptive}
+Y.~Nan, W.~Li, W.~Bao, F.~C. Delicato, P.~F. Pires, Y.~Dou, and A.~Y. Zomaya,
+  ``Adaptive energy-aware computation offloading for cloud of things systems,''
+  {\em IEEE Access}, vol.~5, pp.~23947--23957, 2017.
+
+\bibitem{gu2017cost}
+L.~Gu, D.~Zeng, S.~Guo, A.~Barnawi, and Y.~Xiang, ``Cost efficient resource
+  management in fog computing supported medical cyber-physical system,'' {\em
+  IEEE Transactions on Emerging Topics in Computing}, vol.~5, no.~1,
+  pp.~108--119, 2017.
+
+\bibitem{yang2016cost}
+L.~Yang, J.~Cao, G.~Liang, and X.~Han, ``Cost aware service placement and load
+  dispatching in mobile cloud systems,'' {\em IEEE Transactions on Computers},
+  vol.~65, no.~5, pp.~1440--1452, 2016.
+
+\bibitem{wang2018service}
+L.~Wang, L.~Jiao, T.~He, J.~Li, and M.~M{\"u}hlh{\"a}user, ``Service entity
+  placement for social virtual reality applications in edge computing,'' in
+  {\em Proc. INFOCOM}, 2018.
+
+\bibitem{bahreini2017efficient}
+T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
+  in edge computing systems,'' in {\em Proceedings of the Second ACM/IEEE
+  Symposium on Edge Computing}, p.~5, ACM, 2017.
+
+\bibitem{ye2016scalable}
+D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
+  offloading in bus networks,'' in {\em Cyber Security and Cloud Computing
+  (CSCloud), 2016 IEEE 3rd International Conference on}, pp.~247--251, IEEE,
+  2016.
+
+\bibitem{liu2018multiobjective}
+L.~Liu, Z.~Chang, X.~Guo, S.~Mao, and T.~Ristaniemi, ``Multiobjective
+  optimization for computation offloading in fog computing,'' {\em IEEE
+  Internet of Things Journal}, vol.~5, no.~1, pp.~283--294, 2018.
+
+\bibitem{wang2018moera}
+L.~Wang, L.~Jiao, J.~Li, J.~Gedeon, and M.~M{\"u}hlh{\"a}user, ``Moera:
+  Mobility-agnostic online resource allocation for edge computing,'' {\em IEEE
+  Transactions on Mobile Computing}, 2018.
+
+\bibitem{TheCLOUD47:online}
+``The clouds lab: Flagship projects - gridbus and cloudbus.''
+  \url{http://www.cloudbus.org/cloudsim/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{calheiros2011cloudsim}
+R.~N. Calheiros, R.~Ranjan, A.~Beloglazov, C.~A. De~Rose, and R.~Buyya,
+  ``Cloudsim: a toolkit for modeling and simulation of cloud computing
+  environments and evaluation of resource provisioning algorithms,'' {\em
+  Software: Practice and experience}, vol.~41, no.~1, pp.~23--50, 2011.
+
+\bibitem{cloudnet14:online}
+``cloudnetsim.seecs.edu.pk.'' \url{http://cloudnetsim.seecs.edu.pk/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{malik2017cloudnetsim++}
+A.~W. Malik, K.~Bilal, S.~Malik, Z.~Anwar, K.~Aziz, D.~Kliazovich, N.~Ghani,
+  S.~U. Khan, and R.~Buyya, ``Cloudnetsim++: a gui based framework for modeling
+  and simulation of data centers in omnet++,'' {\em IEEE Transactions on
+  Services Computing}, no.~4, pp.~506--519, 2017.
+
+\bibitem{Greenclo13:online}
+``Greencloud - the green cloud simulator.''
+  \url{https://greencloud.gforge.uni.lu/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{kliazovich2012greencloud}
+D.~Kliazovich, P.~Bouvry, and S.~U. Khan, ``Greencloud: a packet-level
+  simulator of energy-aware cloud computing data centers,'' {\em The Journal of
+  Supercomputing}, vol.~62, no.~3, pp.~1263--1283, 2012.
+
+\bibitem{Website18:online}
+``Web site.'' \url{https://www.arcos.inf.uc3m.es/old/icancloud/Home.html}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{nunez2012icancloud}
+A.~N{\'u}{\~n}ez, J.~L. V{\'a}zquez-Poletti, A.~C. Caminero, G.~G.
+  Casta{\~n}{\'e}, J.~Carretero, and I.~M. Llorente, ``icancloud: A flexible
+  and scalable cloud infrastructure simulator,'' {\em Journal of Grid
+  Computing}, vol.~10, no.~1, pp.~185--209, 2012.
+
+\bibitem{CloudSch23:online}
+``Cloudsched download | sourceforge.net.''
+  \url{https://sourceforge.net/projects/cloudsched/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{tian2015toolkit}
+W.~Tian, Y.~Zhao, M.~Xu, Y.~Zhong, and X.~Sun, ``A toolkit for modeling and
+  simulation of real-time virtual machine allocation in a cloud data center,''
+  {\em IEEE Transactions on Automation Science and Engineering}, vol.~12,
+  no.~1, pp.~153--161, 2015.
+
+\bibitem{wickremasinghe2010cloudanalyst}
+B.~Wickremasinghe, R.~N. Calheiros, and R.~Buyya, ``Cloudanalyst: A
+  cloudsim-based visual modeller for analysing cloud computing environments and
+  applications,'' in {\em Advanced Information Networking and Applications
+  (AINA), 2010 24th IEEE International Conference on}, pp.~446--452, IEEE,
+  2010.
+
+\bibitem{marcbuxd5:online}
+``marcbux/dynamiccloudsim: Automatically exported from
+  code.google.com/p/dynamiccloudsim.''
+  \url{https://github.com/marcbux/dynamiccloudsim}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{bux2015dynamiccloudsim}
+M.~Bux and U.~Leser, ``Dynamiccloudsim: Simulating heterogeneity in
+  computational clouds,'' {\em Future Generation Computer Systems}, vol.~46,
+  pp.~85--99, 2015.
+
+\bibitem{thiagott93:online}
+``thiagotts/cloudreports: An extensible simulation tool for energy-aware cloud
+  computing environments.'' \url{https://github.com/thiagotts/CloudReports}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{sa2014cloudreports}
+T.~T. S{\'a}, R.~N. Calheiros, and D.~G. Gomes, ``Cloudreports: an extensible
+  simulation tool for energy-aware cloud computing environments,'' in {\em
+  cloud computing}, pp.~127--142, Springer, 2014.
+
+\bibitem{RealClou60:online}
+``Realcloudsim download | sourceforge.net.''
+  \url{https://sourceforge.net/projects/realcloudsim/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{digsuwod49:online}
+``digs-uwo/dcsim: Dcsim: A data centre simulation tool for evaluating dynamic
+  virtualized resource management.'' \url{https://github.com/digs-uwo/dcsim}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{tighe2012dcsim}
+M.~Tighe, G.~Keller, M.~Bauer, and H.~Lutfiyya, ``Dcsim: A data centre
+  simulation tool for evaluating dynamic virtualized resource management,'' in
+  {\em Network and service management (cnsm), 2012 8th international conference
+  and 2012 workshop on systems virtualiztion management (svm)}, pp.~385--392,
+  IEEE, 2012.
+
+\bibitem{CloudSim79:online}
+``Cloudsim plus | a modern, full-featured, highly extensible and easier-to-use
+  java 8 framework for modeling and simulation of cloud computing
+  infrastructures and services.'' \url{http://cloudsimplus.org/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{silva2017cloudsim}
+M.~C. Silva~Filho, R.~L. Oliveira, C.~C. Monteiro, P.~R. In{\'a}cio, and M.~M.
+  Freire, ``Cloudsim plus: a cloud computing simulation framework pursuing
+  software engineering principles for improved modularity, extensibility and
+  correctness,'' in {\em Integrated Network and Service Management (IM), 2017
+  IFIP/IEEE Symposium on}, pp.~400--406, IEEE, 2017.
+
+\bibitem{manoelca57:online}
+``manoelcampos/cloudsim-plus-automation: Human readable scenario specification
+  for automated creation of simulations on cloudsim plus and cloudsim.''
+  \url{https://github.com/manoelcampos/cloudsim-plus-automation}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{kecskeme90:online}
+``kecskemeti/dissect-cf: Discrete event based energy consumption simulator for
+  clouds and federations.'' \url{https://github.com/kecskemeti/dissect-cf}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{kecskemeti2015dissect}
+G.~Kecskemeti, ``Dissect-cf: a simulator to foster energy-aware scheduling in
+  infrastructure clouds,'' {\em Simulation Modelling Practice and Theory},
+  vol.~58, pp.~188--218, 2015.
+
+\bibitem{Workflow31:online}
+``Workflowsim/workflowsim-1.0: Wiki pages.''
+  \url{https://github.com/WorkflowSim/WorkflowSim-1.0}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{chen2012workflowsim}
+W.~Chen and E.~Deelman, ``Workflowsim: A toolkit for simulating scientific
+  workflows in distributed environments,'' in {\em E-science (e-science), 2012
+  IEEE 8th International Conference on}, pp.~1--8, IEEE, 2012.
+
+\bibitem{Cloud2Si98:online}
+``Cloud2sim download | sourceforge.net.''
+  \url{https://sourceforge.net/projects/cloud2sim/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{kathiravelu2014adaptive}
+P.~Kathiravelu and L.~Veiga, ``An adaptive distributed simulator for cloud and
+  mapreduce algorithms and architectures,'' in {\em Utility and Cloud Computing
+  (UCC), 2014 IEEE/ACM 7th International Conference on}, pp.~79--88, IEEE,
+  2014.
+
+\bibitem{Udacity231:online}
+``Udacity2048/cloudsimdisk: A new storage modeling for cloudsim simulator..''
+  \url{https://github.com/Udacity2048/CloudSimDisk}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{louis2015cloudsimdisk}
+B.~Louis, K.~Mitra, S.~Saguna, and C.~{\AA}hlund, ``Cloudsimdisk: Energy-aware
+  storage simulation in cloudsim,'' in {\em Utility and Cloud Computing (UCC),
+  2015 IEEE/ACM 8th International Conference on}, pp.~11--15, IEEE, 2015.
+
+\bibitem{Cloudsla14:online}
+``Cloudslab/ifogsim: The ifogsim toolkit for modeling and simulation of
+  resource management techniques in internet of things, edge and fog computing
+  environments.'' \url{https://github.com/Cloudslab/iFogSim}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{gupta2017ifogsim}
+H.~Gupta, A.~Vahid~Dastjerdi, S.~K. Ghosh, and R.~Buyya, ``ifogsim: A toolkit
+  for modeling and simulation of resource management techniques in the internet
+  of things, edge and fog computing environments,'' {\em Software: Practice and
+  Experience}, vol.~47, no.~9, pp.~1275--1296, 2017.
+
+\bibitem{marcioco38:online}
+``marciocomp/myifogsim: Myifogsim is a simulator for fog computing concerns. it
+  extends the ifogsim simulator to support virtual machine migration policies
+  for mobile users.'' \url{https://github.com/marciocomp/myifogsim}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{lopes2017myifogsim}
+M.~M. Lopes, W.~A. Higashino, M.~A. Capretz, and L.~F. Bittencourt,
+  ``Myifogsim: A simulator for virtual machine migration in fog computing,'' in
+  {\em Companion Proceedings of the10th International Conference on Utility and
+  Cloud Computing}, pp.~47--52, ACM, 2017.
+
+\bibitem{medislam49:online}
+``medislam/ifogsimwithdataplacement.''
+  \url{https://github.com/medislam/iFogSimWithDataPlacement}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{naas2018extension}
+M.~I. Naas, J.~Boukhobza, P.~R. Parvedy, and L.~Lemarchand, ``An extension to
+  ifogsim to enable the design of data placement strategies,'' in {\em Fog and
+  Edge Computing (ICFEC), 2018 IEEE 2nd International Conference on}, pp.~1--8,
+  IEEE, 2018.
+
+\bibitem{CagatayS20:online}
+``Cagataysonmez/edgecloudsim: Edgecloudsim: An environment for performance
+  evaluation of edge computing systems.''
+  \url{https://github.com/CagataySonmez/EdgeCloudSim}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{sonmez2017edgecloudsim}
+C.~Sonmez, A.~Ozgovde, and C.~Ersoy, ``Edgecloudsim: An environment for
+  performance evaluation of edge computing systems,'' in {\em Fog and Mobile
+  Edge Computing (FMEC), 2017 Second International Conference on}, pp.~39--44,
+  IEEE, 2017.
+
+\bibitem{yafsPyP38:online}
+``yafs pypi.'' \url{https://pypi.org/project/yafs/}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{diunipis47:online}
+``di-unipi-socc/fogtorch.'' \url{https://github.com/di-unipi-socc/FogTorch}.
+\newblock (Accessed on 11/15/2018).
+
+\bibitem{brogi2017qos}
+A.~Brogi and S.~Forti, ``Qos-aware deployment of iot applications through the
+  fog,'' {\em IEEE Internet of Things Journal}, vol.~4, no.~5, pp.~1185--1192,
+  2017.
+
+\bibitem{METISSer49:online}
+``Metis - serial graph partitioning and fill-reducing matrix ordering | karypis
+  lab.'' \url{http://glaros.dtc.umn.edu/gkhome/metis/metis/overview}.
+\newblock (Accessed on 12/20/2018).
+
+\bibitem{whitley1994genetic}
+D.~Whitley, ``A genetic algorithm tutorial,'' {\em Statistics and computing},
+  vol.~4, no.~2, pp.~65--85, 1994.
+
+\bibitem{kennedy2011particle}
+J.~Kennedy, ``Particle swarm optimization,'' in {\em Encyclopedia of machine
+  learning}, pp.~760--766, Springer, 2011.
+
+\bibitem{bellman1957markovian}
+R.~Bellman, ``A markovian decision process,'' {\em Journal of Mathematics and
+  Mechanics}, pp.~679--684, 1957.
+
+\bibitem{bertsekas2005dynamic}
+D.~P. Bertsekas, D.~P. Bertsekas, D.~P. Bertsekas, and D.~P. Bertsekas, {\em
+  Dynamic programming and optimal control}, vol.~1.
+\newblock Athena scientific Belmont, MA, 2005.
+
+\end{thebibliography}

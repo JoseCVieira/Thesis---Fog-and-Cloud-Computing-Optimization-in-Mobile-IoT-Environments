@@ -1,0 +1,24 @@
+﻿Simulation Platform,Programming language,Source code available,Documentation available ,Graphical support (GUI),Energy-aware,Cost-aware,Virtual machine (VM) support,Application Models,Communication model,Migration Support,Mobility-aware / Location-aware,Fog/Edge support,Last commit
+CloudSim,Java,✓,✓,,✓,✓,✓,✓,✓ (l),✓,,,2016
+CloudNetSim++,C++,✓,,✓,✓,✓,✓,✓,✓,✓,,,2015
+GreenCloud,C++/ Otcl,✓,✓,,✓,,✓,✓,✓,✓,,,2016
+iCanCloud,C++,✓,✓,✓,✓,✓,✓,✓,✓,,,,2015
+CloudSched,Java,✓,,✓,✓,,✓,,,,,,2015
+CloudAnalyst*,Java,✓,,✓,,✓,✓,✓,✓ (l),✓,✓,,2009
+DynamicCloudSim*,Java,✓,,,✓,✓,✓,✓,✓ (l),✓,,,2017
+CloudReports*,Java,✓,,✓,✓,N/A,✓,N/A,N/A,✓,,,2012
+RealCloudSim*,Java,✓,✓ (l),✓,✓,✓,✓,✓,✓,✓,,,2013
+DCSim,Java,✓,✓ (l),,✓,,✓,✓,✓ (l),✓,,,2014
+CloudSim Plus*,Java,✓,✓,,✓,✓,✓,✓,✓,✓,,,2018
+CloudSim Plus Automation*,Java,✓,✓,,✓,✓,✓,✓,✓,✓,,,2018
+DISSECT-CF,Java,✓,✓,,✓,,✓,,✓ (l),✓,,,2018
+WorkflowSim*,Java,✓,✓,,✓,✓,✓,✓,✓ (l),✓,,,2015
+Cloud2Sim*,Java,✓,,,✓,✓,✓,✓,✓ (l),✓,,,2016
+CloudSimDisk*,Java,✓,,,✓,✓,✓,✓,✓ (l),✓,,,2015
+RECAP,Java,,,N/A,✓,✓,✓,✓,✓,✓,✓,✓,N/A
+iFogSim*,Java,✓,✓,✓,✓,✓,✓,✓,✓ (l),,,✓,2016
+MyiFogSim**,Java,✓,,✓,✓,✓,✓,✓,✓ (l),✓,✓,✓,2017
+iFogSimWithDataPlacement**,Java,✓,,✓,✓,✓,✓,✓,✓ (l),,,✓,2018
+EdgeCloudSim,Java,✓,✓,,,✓,✓,✓,✓,,✓,✓,2018
+YAFS,Python,✓,✓,,✓ (l),,,✓ (l),✓ (l),,,✓,2018
+FogTorch,Java,✓,,,,,✓,✓,✓ (l),,,✓,2016
