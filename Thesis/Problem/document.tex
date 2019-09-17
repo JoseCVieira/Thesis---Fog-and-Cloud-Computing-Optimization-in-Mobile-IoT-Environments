@@ -129,7 +129,7 @@ C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} 
 \noindent\textbf{Migration Cost:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_M = \sum_{i\in N}\sum_{j\in N} \sum_{m\in M} V_{m, i,j} \times \left(\frac{m^{Strg}_{m} + m^{Ram}_{m}}{f^B_{i,j}\times (1-b) + \epsilon} + f^L_{i,j} \right)
+& C_M = \sum_{m\in M} \sum_{i\in N}\sum_{j\in N}  V_{m, i,j} \times \left(\frac{m^{Strg}_{m} + m^{Ram}_{m}}{f^B_{i,j}\times (1-b) + \epsilon} + f^L_{i,j} \right)\times \sum_{l\in M} m^D_{l, m}
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -137,7 +137,7 @@ C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} 
 \noindent\textbf{Multiple-objective:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& F = C_O,~ C_{Pw}(1N),~ C_P(1N),~ C_T,~ C_B(1N),~ C_M
+& F = \{C_O,~ C_{Pw}(1N),~ C_P(1N),~ C_T,~ C_B(1N),~ C_M\}
 %%C_O,~ C_E,~ C_P,~ C_T,~ C_B,~ C_M
 \end{split}
 \end{equation*}\\[6pt]
@@ -166,9 +166,9 @@ C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} 
 &&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z],~ \forall i \in [0, N]\\
 &&& \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_{z, i,j} \le f^B_{i,j} \times b ~~,~ \forall i \in [0, N],~ \forall j \in [0, N]\\
 &&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N]\\
-&&& L^P_q + L^T_q + L^M_q < A^D_q,~ \forall q \in [0, Q]
+&&& L^P_q + L^T_q + L^M_q < A^D_q,~ \forall q \in [0, Q],
 \end{aligned}&&&
-\end{flalign*}\\[6pt]
+\end{flalign*}
 
 \begin{flalign*}
 \begin{aligned}
