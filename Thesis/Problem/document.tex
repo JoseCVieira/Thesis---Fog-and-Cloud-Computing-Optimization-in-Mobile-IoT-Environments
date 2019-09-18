@@ -22,20 +22,20 @@
 	\item $Q~-$ number of loop deadlines\\
 	
 	\item $P^{Mips}~[\mbox{\euro}]~$, $1\times N$ matrix representing the price of using processing resources in each fog node
-	\item $P^{Ram}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using memory resources in each fog node
+	\item $P^{Mem}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using memory resources in each fog node
 	\item $P^{Strg}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using storage resources in each fog node
 	\item $P^{Bw}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using network resources in each fog node
 	\item $P^{Pw}~[\mbox{\euro}]$, $1\times N$ matrix representing the power price in each fog node\\
 	
 	\item $f^{Mips}~[MIPS]$, $N\times 1$ matrix representing the processing capacity of each fog node
-	\item $f^{Ram}~[Byte]$, $N\times 1$ matrix representing the memory capacity of each fog node
+	\item $f^{Mem}~[Byte]$, $N\times 1$ matrix representing the memory capacity of each fog node
 	\item $f^{Strg}~[Byte]$, $N\times 1$ matrix representing the storage capacity of each fog node
 	\item $f^{bPw}~[W]$, $N\times 1$ matrix representing the busy power consumption of each fog node
 	\item $f^{iPw}~[W]$, $N\times 1$ matrix representing the idle power consumption of each fog node
 	\item $f^{Tx}~[W]$, $N\times 1$ matrix representing the transmitter power ($f^{Tx}_n$ is non 0 if $n$ is a mobile node)\\
 	
 	\item $m^{Mips}~[MIPS]$, $M\times 1$ matrix representing the processing resources needed for each module
-	\item $m^{Ram}~[Byte]$, $M\times 1$ matrix representing the memory resources needed for each module
+	\item $m^{Mem}~[Byte]$, $M\times 1$ matrix representing the memory resources needed for each module
 	\item $m^{Strg}~[Byte]$, $M\times 1$ matrix representing the storage resources needed for each module\\
 	
 	\item $e^{Cpu}~[MI]$, $K\times 1$ matrix representing the tuple CPU size needed to be processed for each dependency
@@ -63,8 +63,11 @@
 	\item $A^L$, $Q\times M\times M$ binary matrix representing the loop module list
 	\item $A^D$, $Q\times 1$ matrix representing the loop deadline list\\
 	
+	\item $\alpha^p$, the percentage of processing capacity which is not used for control operations
+	\item $\alpha^m$, the percentage of memory capacity which is not used for control operations
+	\item $\alpha^s$, the percentage of storage capacity which is not used for control operations
+	\item $\alpha^b$, the percentage of bandwidth capacity which is not used both for control operations and migrations
 	\item $t^{Boot}$, constant representing the average virtual machine boot time
-	\item $b$, constant representing the percentage of link bandwidth allocated for sending tuples
 	\item $\epsilon$ small positive constant
 \end{itemize}
 
@@ -93,7 +96,7 @@
 \noindent\textbf{Operational Cost:}\\[6pt]
 \begin{equation*}
 \begin{split}
-	& C_O = P^{Mips} \times P \times m^{Mips} + P^{Ram} \times P \times m^{Ram} + P^{Strg}\times P\times m^{Strg} + \left(P^{Bw} \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_z\right)1N + C_{Pw}(P^{Pw'})
+	& C_O = P^{Mips} \times P \times m^{Mips} + P^{Mem} \times P \times m^{Mem} + P^{Strg}\times P\times m^{Strg} + \left(P^{Bw} \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_z\right)1N + C_{Pw}(P^{Pw'})
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -104,32 +107,25 @@
 \end{aligned}
 \end{equation*}\\[6pt]
 
-
 \noindent\textbf{Processing Cost:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
-& C_P(x) = \sum_{n\in N} x_n \frac{P_n \times m^{Mips}}{f_n^{Mips}}
+& C_P(x) = \sum_{n\in N} x_n \frac{P_n \times m^{Mips}}{\alpha^p \times f_n^{Mips}}
 \end{aligned}
-\end{equation*}\\[6pt]
-
-\noindent\textbf{Transmission Cost:}\\[6pt]
-\begin{equation*}
-\begin{split}
-C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} \times R_{z, i,j} \right)
-\end{split}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Bandwidth Cost:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_B(x) = \sum_{z\in Z} m^B_{l^S_z,l^D_z} \sum_{i\in N} x_i \sum_{j\in N} \frac{R_{z, i,j}}{f^B_{i,j} \times b + \epsilon}
+& C_B(x) = \sum_{z\in Z} m^B_{l^S_z,l^D_z} \sum_{i\in N} x_i \sum_{j\in N} \frac{R_{z, i,j}}{\alpha^b \times f^B_{i,j} + \epsilon}
 \end{split}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Migration Cost:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_M = \sum_{m\in M} \sum_{i\in N}\sum_{j\in N}  V_{m, i,j} \times \left(\frac{m^{Strg}_{m} + m^{Ram}_{m}}{f^B_{i,j}\times (1-b) + \epsilon} + f^L_{i,j} \right)\times \sum_{l\in M} m^D_{l, m}
+& C_M(x) = \sum_{m\in M} s_m \sum_{i\in N} x_i \sum_{j\in N} \frac{V_{m, i,j} \times \sum_{l\in M} m^D_{l, m} }{\left(1 - \alpha^b\right) \times f^B_{i,j} + \epsilon}, \\[6pt]
+& s_m = m^{Strg}_{m} + m^{Mem}_{m}
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -137,8 +133,7 @@ C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} 
 \noindent\textbf{Multiple-objective:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& F = \{C_O,~ C_{Pw}(1N),~ C_P(1N),~ C_T,~ C_B(1N),~ C_M\}
-%%C_O,~ C_E,~ C_P,~ C_T,~ C_B,~ C_M
+& F = \{C_{Pw}(1N),~ C_P(1N),~ C_B(1N),~ C_M(1N)\}
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -155,24 +150,56 @@ C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} 
 & \underset{P, R, V}{\text{minimize}}
 & & F\\
 & \text{subject to}
-& & P\times m^{Mips} \leq f^{Mips}, \\
-&&& P\times m^{Ram} \leq f^{Ram}, \\
-&&& P\times m^{Strg} \leq f^{Strg}, \\
-&&& P\leq D\\
-&&& P_{i,j} \in \{0, 1\},~ \forall i \in [0, N],~ \forall j \in [0, M]\\
-&&& R_{z, i,j} \in \{0, 1\},~ \forall z \in [0, Z],~ \forall i \in [0, N],~ \forall j \in [0, N]\\
-&&& V_{z, i,j} \in \{0, 1\},~ \forall z \in [0, M],~ \forall i \in [0, N],~ \forall j \in [0, N]\\
-&&& \sum_{i \in N} P_{i,j} = 1,~ \forall j \in [0, M]\\
-&&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z],~ \forall i \in [0, N]\\
-&&& \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_{z, i,j} \le f^B_{i,j} \times b ~~,~ \forall i \in [0, N],~ \forall j \in [0, N]\\
-&&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N]\\
-&&& L^P_q + L^T_q + L^M_q < A^D_q,~ \forall q \in [0, Q],
+& & P_{i,j} \in \{0, 1\},~ \forall i \in [0, N],~ \forall j \in [0, M] \\[6pt]
+&&& R_{z, i,j} \in \{0, 1\},~ \forall z \in [0, Z],~ \forall i \in [0, N],~ \forall j \in [0, N] \\[6pt]
+&&& V_{z, i,j} \in \{0, 1\},~ \forall z \in [0, M],~ \forall i \in [0, N],~ \forall j \in [0, N] \\[6pt]
+&&& P\times m^{Mips} \leq \alpha^p \times f^{Mips} \\[6pt]
+&&& P\times m^{Mem} \leq \alpha^m \times f^{Mem} \\[6pt]
+&&& P\times m^{Strg} \leq \alpha^s \times \leq f^{Strg} \\[6pt]
+&&& \sum_{z\in Z} m^B_{l^S_z,l^D_z} \times R_{z, i,j} \leq \alpha^b \times f^B_{i,j} ~~,~ \forall i \in [0, N],~ \forall j \in [0, N] \\[6pt]
+&&& \sum_{i \in N} P_{i,j} = 1,~ \forall j \in [0, M] \\[6pt]
+&&& P\leq D \\[6pt]
+&&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z],~ \forall i \in [0, N] \\[6pt]
+&&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N] \\[6pt]
+&&& L^P_q + L^T_q \leq A^D_q,~ \forall q \in [0, Q] \\[6pt]
+&&& L^M_m \leq 1,~ \forall m \in [0, M]
 \end{aligned}&&&
 \end{flalign*}
 
 \begin{flalign*}
 \begin{aligned}
 & where:\\
+& L^P_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{n\in N}  P_{n, j}~ \frac{\sum_{l\in M}\sum_{k\in M} m^{CPU}_{l,k} \times P_{n, k}}{f^{Mips}_n}
+\end{aligned}&&&
+\end{flalign*}
+
+\begin{flalign*}
+\begin{aligned}
+L^T_q = & \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{l\in N}\sum_{k\in N} R_{z',l,k} \left( \frac{\sum_{z\in Z} R_{z,l,k} \times m^{NW}_{l^S_z, l^D_z}}{\alpha^b \times f^B_{l,k} + \epsilon} + f^L_{l,k}\right),\\[6pt]
+& l^S_{z'} = i,~ l^D_{z'} = j
+\end{aligned}&&&
+\end{flalign*}
+
+\begin{flalign*}
+\begin{aligned}
+L^M_m = & ~b \times t^{Boot} + \sum_{i\in N} \sum_{j\in N}  V_{m, i,j} \times \left(\frac{m^{Strg}_{m} + m^{Mem}_{m}}{\left(1 - \alpha^b \right) \times f^B_{i,j} + \epsilon} + f^L_{i,j} \right) \\[6pt]
+& b = C_{n, i} - P_{n, i}, ~ C_{n, i} = 1, \sum_{n'\in N} C_{n', i} = 1
+\end{aligned}&&&
+\end{flalign*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\noindent \textbf{Abandoned ideas}\\[12pt]
+Transmission Cost:\\[6pt]
+\begin{equation*}
+\begin{split}
+C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} \times R_{z, i,j} \right)
+\end{split}
+\end{equation*}\\[20pt]
+
+\noindent Constraint:
+\begin{flalign*}
+\begin{aligned}
 & L^P_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \times ~ \frac{m^{CPU}_{i,j}}{m^{Mips}_j}, ~ m^{Mips}_j \neq 0
 \end{aligned}&&&
 \end{flalign*}
@@ -185,69 +212,10 @@ C_T = \sum_{i\in N}\sum_{j\in N} f^L_{i,j}\sum_{z\in Z}\left( m^D_{l^S_z,l^D_z} 
 
 \begin{flalign*}
 \begin{aligned}
-L^M_q = & \sum_{i\in M} A_i \times \left( \sum_{l\in N}\sum_{k\in N} V_{i,l,k} \left( \frac{m^{Strg}_{i} + m^{Ram}_{i} }{f^B_{l,k} + \epsilon} + f^L_{l,k} \right) + B_i \times t^{Boot}\right), \\[6pt]
+L^M_q = & \sum_{i\in M} A_i \times \left( \sum_{l\in N}\sum_{k\in N} V_{i,l,k} \left( \frac{m^{Strg}_{i} + m^{Mem}_{i} }{f^B_{l,k} + \epsilon} + f^L_{l,k} \right) + B_i \times t^{Boot}\right), \\[6pt]
 & A_i = \min \Bigl\{ \sum_{j\in M} A^L_{q, i, j} + A^L_{q, j, i},~ 1 \Bigr\}, \\[6pt]
 & B_i = C_{n, i} - P_{n, i}, ~ C_{n, i} = 1, \sum_{n'\in N} C_{n', i} = 1
 \end{aligned}&&&
 \end{flalign*}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagebreak
-
-\begin{flalign*}
-\begin{aligned}
-& where:\\
-& L^P_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{n\in N}  P_{n, j}~ \frac{\sum_{l\in M}\sum_{k\in M} m^{CPU}_{l,k} \times P_{n, k}}{f^{Mips}_n}
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-& L^T_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{l\in N}\sum_{k\in N} R_{z',l,k} \left( \frac{\sum_{z\in Z} R_{z,l,k} \times m^{NW}_{l^S_z, l^D_z}}{f^B_{l,k}\times b + \epsilon} + f^L_{l,k}\right),\\[6pt]
-& l^S_{z'} = i,~ l^D_{z'} = j
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-& L^M_q = \sum_{i\in M} A_{i} \left( \sum_{l\in N}\sum_{k\in N} V_{i,l,k} \left( \frac{m^{Strg}_{i} + m^{Ram}_{i} }{f^B_{l,k} \times (1-b)  + \epsilon} + f^L_{l,k} \right) + t^{Boot}\right),\\[6pt]
-& A_i=\begin{cases} 1,~ \sum_{j\in M} A^L_{q, i, j} + A^L_{q, j, i} \ge 1\\ 0,~ Otherwise\end{cases}
-\end{aligned}&&&
-\end{flalign*}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\pagebreak
-
-\begin{flalign*}
-\begin{aligned}
-& where:\\
-& L^P_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j}\times m^{CPU}_{i,j} \times \sum_{n\in N}  P_{n, j} \frac{\sum_{l\in M} P_{n, l}}{f^{Mips}_n}
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-& L^L_q = \sum_{j\in N}\sum_{j\in N} A_{i,j} \times f^L_{i,j},\\[6pt]
-& A_{i,j}=\begin{cases} 1,~ \sum_{z\in Z} R_{z,i,j} + \sum_{m\in M} V_{m,i,j} \ge 1\\ 0,~ Otherwise\end{cases}
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-& L^T_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{l\in N}\sum_{k\in N} R_{z',l,k} \left( \frac{\sum_{z\in Z} R_{z,l,k} \times m^{NW}_{l^S_z, l^D_z}}{f^B_{l,k} + \epsilon}\right),\\[6pt]
-& l^S_{z'} = i,\\[6pt]
-& l^D_{z'} = j
-\end{aligned}&&&
-\end{flalign*}
-
-\begin{flalign*}
-\begin{aligned}
-& L^M_q = \sum_{i\in M} A_{i} \left( \sum_{l\in N}\sum_{k\in N} V_{i,l,k} \left( \frac{ \sum_{j\in M} V_{j,l,k} \times \left(m^{Strg}_{j} + m^{Ram}_{j}\right) }{f^B_{l,k} + \epsilon} \right) + t^{Boot}\right),\\[6pt]
-& A_i=\begin{cases} 1,~ \sum_{j\in M} A^L_{q, i, j} + A^L_{q, j, i} \ge 1\\ 0,~ Otherwise\end{cases}
-\end{aligned}&&&
-\end{flalign*}
-
 
 \end{document}

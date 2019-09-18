@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  17 SEP 2019 13:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  18 SEP 2019 12:40
 entering extended mode
 **./document.tex
 (document.tex
@@ -324,37 +324,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
 
-Overfull \hbox (36.17566pt too wide) detected at line 98
+Overfull \hbox (39.72122pt too wide) detected at line 101
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
@@ -364,7 +359,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
@@ -374,7 +369,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
@@ -384,27 +379,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
@@ -414,16 +409,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
-[4] [5] [6] (document.aux) ) 
+[5] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3222 strings out of 494865
  43380 string characters out of 3178377
@@ -431,21 +431,20 @@ Here is how much of TeX's memory you used:
  6832 multiletter control sequences out of 15000+200000
  5764 words of font info for 24 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 41i,20n,32p,277b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
-</home/jcrv/.miktex/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/a
-msfonts/cm/cmmi10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
-sy5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb>
-
-Output written on document.pdf (6 pages, 130020 bytes).
+ 41i,19n,32p,277b,196s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm
+/cmmi5.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
+</home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></h
+ome/jcrv/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb>
+Output written on document.pdf (5 pages, 127274 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
