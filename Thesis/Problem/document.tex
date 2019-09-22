@@ -36,7 +36,8 @@
 	
 	\item $m^{Mips}~[MIPS]$, $M\times 1$ matrix representing the processing resources needed for each module
 	\item $m^{Mem}~[Byte]$, $M\times 1$ matrix representing the memory resources needed for each module
-	\item $m^{Strg}~[Byte]$, $M\times 1$ matrix representing the storage resources needed for each module\\
+	\item $m^{Strg}~[Byte]$, $M\times 1$ matrix representing the storage resources needed for each module
+	\item $m^{MigD}~[s]$, $M\times 1$ matrix representing the migration deadline for each module\\
 	
 	\item $e^{Cpu}~[MI]$, $K\times 1$ matrix representing the tuple CPU size needed to be processed for each dependency
 	\item $e^{Nw}~[Byte]$, $K\times 1$ matrix representing the tuple network size needed to be sent for each dependency
@@ -130,14 +131,14 @@
 \end{equation*}\\[6pt]
 
 \pagebreak
-\noindent\textbf{Multiple-objective:}\\[6pt]
+\noindent\textbf{Multiple-objective (Fog service provider):}\\[6pt]
 \begin{equation*}
 \begin{split}
 & F = \{C_{Pw}(1N),~ C_P(1N),~ C_B(1N),~ C_M(1N)\}
 \end{split}
 \end{equation*}\\[6pt]
 
-\noindent\textbf{Single-objective:}\\[6pt]
+\noindent\textbf{Single-objective (Broker):}\\[6pt]
 \begin{equation*}
 \begin{split}
 & F = C_O
@@ -162,14 +163,14 @@
 &&& \sum_{j\in N} R_{z, i, j} - \sum_{j\in N} R_{z, i, j}' = P_{i, l^S_z} - P_{i, l^D_z}~~, \forall z \in [0, Z],~ \forall i \in [0, N] \\[6pt]
 &&& \sum_{j\in N} V_{z, i, j} - \sum_{j\in N} V_{z, i, j}' = C_{j, i} - P_{j, i}~~,~ \forall z \in [0, M],~ \forall i \in [0, N] \\[6pt]
 &&& L^P_q + L^T_q \leq A^D_q,~ \forall q \in [0, Q] \\[6pt]
-&&& L^M_m \leq 1,~ \forall m \in [0, M]
+&&& L^M_m \leq m^{MigD}_m,~ \forall m \in [0, M]
 \end{aligned}&&&
 \end{flalign*}
 
 \begin{flalign*}
 \begin{aligned}
 & where:\\
-& L^P_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{n\in N}  P_{n, j}~ \frac{\sum_{l\in M}\sum_{k\in M} m^{CPU}_{l,k} \times P_{n, k}}{f^{Mips}_n}
+& L^P_q = \sum_{i\in M}\sum_{j\in M} A^L_{q,i,j} \sum_{n\in N}  P_{n, j}~ \frac{\sum_{l\in M}\sum_{k\in M} m^{CPU}_{l,k} \times P_{n, k}}{\alpha^p \times f^{Mips}_n}
 \end{aligned}&&&
 \end{flalign*}
 
