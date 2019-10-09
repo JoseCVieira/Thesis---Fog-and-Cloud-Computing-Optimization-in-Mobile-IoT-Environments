@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  3 APR 2019 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.13)  2 OCT 2019 13:55
 entering extended mode
 **./report.tex
 (report.tex
@@ -948,7 +948,7 @@ Chapter 1.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
+Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
 
@@ -962,7 +962,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 15.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 16.
 
 Underfull \vbox (badness 3439) has occurred while \output is active []
 
@@ -971,44 +971,52 @@ Underfull \vbox (badness 3439) has occurred while \output is active []
 Chapter 2.
 (sections/subsections/1related_computing_paradigms.tex
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 7.
  [5
 
-] [6] [7]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 38.
+] [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in alignment at lines 36--51
+ [7]
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 50.
+
+Underfull \hbox (badness 10000) in alignment at lines 48--63
 [][][][][][][][][] 
  []
 
-) (sections/subsections/2fog_architecture.tex [8]
+) (sections/subsections/2fog_architecture.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.5 \begin{itemize}[noitemsep]
+                              ]
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 6.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1phv.fd"
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
-[9pdfTeX warning (ext4): destination with the same identifier (name{table.2.1})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.15 	\item \textbf
-                   {Predominance of wireless access}. Most of the end device...
-]
-<images/fog_architecture/fog_architecture.pdf, id=231, 601.24625pt x 493.845pt>
+<images/fog_architecture/fog_architecture.pdf, id=228, 601.24625pt x 493.845pt>
 
 File: images/fog_architecture/fog_architecture.pdf Graphic file (type pdf)
 <use images/fog_architecture/fog_architecture.pdf>
 Package pdftex.def Info: images/fog_architecture/fog_architecture.pdf  used on 
-input line 24.
+input line 25.
 (pdftex.def)             Requested size: 273.14923pt x 224.36072pt.
+
+[9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.40 
+l.41 
       <./images/fog_architecture/fog_architecture.pdf
 
 pdfTeX warning: pdflatex.exe (file ./images/fog_architecture/fog_architecture.p
@@ -1020,38 +1028,139 @@ pe <array>); ignored.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-Underfull \vbox (badness 3439) has occurred while \output is active []
-
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 8--14
+Underfull \hbox (badness 10000) in paragraph at lines 8--16
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--23
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
+[14] [15] [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
+[18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-[19]) (sections/subsections/4toolkits.tex
+ [19]
+Overfull \hbox (1.78775pt too wide) in paragraph at lines 150--150
+[]|\OT1/phv/m/n/7 Ref.| 
+ []
+
+
+Overfull \hbox (0.83675pt too wide) in paragraph at lines 156--156
+ []|[]| 
+ []
+
+
+Overfull \hbox (0.83319pt too wide) in paragraph at lines 158--158
+ []|[]| 
+ []
+
+
+Overfull \hbox (0.83319pt too wide) in paragraph at lines 159--159
+ []|[]| 
+ []
+
+
+Overfull \hbox (0.83319pt too wide) in paragraph at lines 164--164
+ []|[]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 167--167
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 169--169
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 171--171
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 173--173
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 175--175
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 177--177
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 179--179
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 181--181
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 183--183
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 185--185
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 187--187
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 189--189
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 191--191
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 193--193
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+
+Overfull \hbox (0.8357pt too wide) in paragraph at lines 195--195
+[]|\OT1/phv/m/n/7 [[]]| 
+ []
+
+) (sections/subsections/4toolkits.tex [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [21]
+[22pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2 \section{Toolkits}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{table.2.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.2 \section{Toolkits}
+                      ]
 LaTeX Font Info:    Try loading font information for U+ding on input line 7.
 
 ("C:\Users\Jose\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bbding\uding.fd"
@@ -1096,16 +1205,22 @@ Overfull \hbox (1.88402pt too wide) in paragraph at lines 47--47
  []|[]| 
  []
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{table.2.2}
-) has been already used, duplicate ignored
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23]
+Underfull \vbox (badness 1478) has occurred while \output is active []
+
+ [24pdfTeX warning (ext4): destination with the same identifier (name{table.2.4
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.57 \item \textbf
-                  {Energy-aware}. As aforementioned, energy is one of the mu...
-])) (sections/architecture.tex [22]
+l.59 \item \textbf
+                  {Application models}. This is an important feature in term...
+])) (sections/architecture.tex [25]
 Chapter 3.
-[23
+[26
 
 ]
 Overfull \vbox (10.01959pt too high) has occurred while \output is active []
@@ -1117,30 +1232,30 @@ Overfull \vbox (10.01959pt too high) has occurred while \output is active []
 Overfull \vbox (10.01959pt too high) has occurred while \output is active []
 
 
-[24] [25]
-<images/sw_architecture/sw_architecture.pdf, id=530, 1398.86812pt x 1033.94275p
+[27] [28]
+<images/sw_architecture/sw_architecture.pdf, id=588, 1398.86812pt x 1033.94275p
 t>
 File: images/sw_architecture/sw_architecture.pdf Graphic file (type pdf)
 <use images/sw_architecture/sw_architecture.pdf>
 Package pdftex.def Info: images/sw_architecture/sw_architecture.pdf  used on in
 put line 49.
 (pdftex.def)             Requested size: 409.71692pt x 302.83328pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.60 
       <./images/sw_architecture/sw_architecture.pdf>]) (sections/evaluation.tex
-[27]
+[30]
 Chapter 4.
-<images/evaluation/evaluation.png, id=574, 618.90282pt x 442.83563pt>
+<images/evaluation/evaluation.png, id=633, 618.90282pt x 442.83563pt>
 File: images/evaluation/evaluation.png Graphic file (type png)
 <use images/evaluation/evaluation.png>
 Package pdftex.def Info: images/evaluation/evaluation.png  used on input line 2
 6.
 (pdftex.def)             Requested size: 204.85846pt x 146.58217pt.
-) (sections/schedule.tex [28
+) (sections/schedule.tex [31
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
 has been already used, duplicate ignored
@@ -1154,12 +1269,12 @@ Chapter 5.
 
 pdfTeX warning: pdflatex.exe (file ./images/schedule/schedule.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<images/schedule/schedule.pdf, id=583, 722.54138pt x 188.02946pt>
+<images/schedule/schedule.pdf, id=642, 722.54138pt x 188.02946pt>
 File: images/schedule/schedule.pdf Graphic file (type pdf)
 <use images/schedule/schedule.pdf>
 Package pdftex.def Info: images/schedule/schedule.pdf  used on input line 19.
 (pdftex.def)             Requested size: 455.24411pt x 118.47066pt.
-) (sections/conclusion.tex [29
+) (sections/conclusion.tex [32
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
@@ -1172,7 +1287,7 @@ Chapter 6.
 ) (report.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30
+ [33
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 9--13
@@ -1192,7 +1307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--18
 \OT1/cmtt/m/n/10 https : / / aws . amazon . com /
  []
 
-[31
+[34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 78--80
@@ -1212,20 +1327,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--100
 hinkresearch . biz / articles /
  []
 
-[32] [33]
+[35] [36]
 Underfull \hbox (badness 5756) in paragraph at lines 267--269
 []\OT1/phv/m/n/10 ``Web site.'' [][]$\OT1/cmtt/m/n/10 https : / / www . arcos .
  inf . uc3m . es / old / icancloud / Home . html$[][]\OT1/phv/m/n/10 .  (Ac-ces
 sed on
  []
 
-[34]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 316--319
 []\OT1/phv/m/n/10 ``Realcloudsim down-load | source-forge.net.'' [][]$\OT1/cmtt
 /m/n/10 https : / / sourceforge . net / projects /
  []
 
-[35]
+[38]
 Underfull \hbox (badness 1552) in paragraph at lines 372--375
 []\OT1/phv/m/n/10 ``Cloud2sim down-load | source-forge.net.'' [][]$\OT1/cmtt/m/
 n/10 https : / / sourceforge . net / projects / cloud2sim/$[][]\OT1/phv/m/n/10 
@@ -1238,7 +1353,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 417--420
 https : / / github . com / medislam /
  []
 
-[36]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 444--446
 []\OT1/phv/m/n/10 ``di-unipi-socc/fogtorch.'' [][]$\OT1/cmtt/m/n/10 https : / /
  github . com / di-[]unipi-[]socc / FogTorch$[][]\OT1/phv/m/n/10 .  (Ac-cessed 
@@ -1247,7 +1362,7 @@ on
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
- [37]
+ [40]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
@@ -1257,13 +1372,13 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 31.
  ) 
 Here is how much of TeX's memory you used:
- 12653 strings out of 492970
- 204676 string characters out of 3127037
- 336364 words of memory out of 3000000
- 16053 multiletter control sequences out of 15000+200000
+ 12664 strings out of 492970
+ 204562 string characters out of 3127037
+ 359656 words of memory out of 3000000
+ 16059 multiletter control sequences out of 15000+200000
  39040 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,16n,32p,2384b,762s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,16n,32p,2385b,762s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\bbding\dpi420
 \bbding10.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\bb
 ding\dpi600\bbding10.pk>{C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fonts/
@@ -1279,9 +1394,9 @@ pe1/urw/helvetic/uhvb8a.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Jose/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/Jose/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on report.pdf (39 pages, 1356546 bytes).
+Output written on report.pdf (42 pages, 1374299 bytes).
 PDF statistics:
- 791 PDF objects out of 1000 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
+ 850 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
  170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

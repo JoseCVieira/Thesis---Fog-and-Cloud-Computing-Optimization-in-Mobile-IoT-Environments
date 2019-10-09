@@ -82,15 +82,15 @@ J.-P. Hubaux, T.~Gross, J.-Y. Le~Boudec, and M.~Vetterli, ``Toward
 O.~C. A.~W. Group {\em et~al.}, ``Openfog reference architecture for fog
   computing,'' {\em OPFRA001}, vol.~20817, p.~162, 2017.
 
-\bibitem{satyanarayanan2009case}
-M.~Satyanarayanan, V.~Bahl, R.~Caceres, and N.~Davies, ``The case for vm-based
-  cloudlets in mobile computing,'' {\em IEEE pervasive Computing}, 2009.
-
 \bibitem{jararweh2013resource}
 Y.~Jararweh, L.~Tawalbeh, F.~Ababneh, and F.~Dosari, ``Resource efficient
   mobile computing using cloudlet infrastructure,'' in {\em Mobile Ad-hoc and
   Sensor Networks (MSN), 2013 IEEE Ninth International Conference on},
   pp.~373--377, IEEE, 2013.
+
+\bibitem{satyanarayanan2009case}
+M.~Satyanarayanan, V.~Bahl, R.~Caceres, and N.~Davies, ``The case for vm-based
+  cloudlets in mobile computing,'' {\em IEEE pervasive Computing}, 2009.
 
 \bibitem{Ciscopus95:online}
 ``Cisco pushes iot analytics to the extreme edge with mist computing -
@@ -190,26 +190,11 @@ Y.~Xiao and M.~Krunz, ``Qoe and power efficiency tradeoff for fog computing
   networks with fog node cooperation,'' in {\em INFOCOM 2017-IEEE Conference on
   Computer Communications, IEEE}, pp.~1--9, IEEE, 2017.
 
-\bibitem{nan2017adaptive}
-Y.~Nan, W.~Li, W.~Bao, F.~C. Delicato, P.~F. Pires, Y.~Dou, and A.~Y. Zomaya,
-  ``Adaptive energy-aware computation offloading for cloud of things systems,''
-  {\em IEEE Access}, vol.~5, pp.~23947--23957, 2017.
-
 \bibitem{gu2017cost}
 L.~Gu, D.~Zeng, S.~Guo, A.~Barnawi, and Y.~Xiang, ``Cost efficient resource
   management in fog computing supported medical cyber-physical system,'' {\em
   IEEE Transactions on Emerging Topics in Computing}, vol.~5, no.~1,
   pp.~108--119, 2017.
-
-\bibitem{yang2016cost}
-L.~Yang, J.~Cao, G.~Liang, and X.~Han, ``Cost aware service placement and load
-  dispatching in mobile cloud systems,'' {\em IEEE Transactions on Computers},
-  vol.~65, no.~5, pp.~1440--1452, 2016.
-
-\bibitem{wang2018service}
-L.~Wang, L.~Jiao, T.~He, J.~Li, and M.~M{\"u}hlh{\"a}user, ``Service entity
-  placement for social virtual reality applications in edge computing,'' in
-  {\em Proc. INFOCOM}, 2018.
 
 \bibitem{bahreini2017efficient}
 T.~Bahreini and D.~Grosu, ``Efficient placement of multi-component applications
@@ -221,6 +206,21 @@ D.~Ye, M.~Wu, S.~Tang, and R.~Yu, ``Scalable fog computing with service
   offloading in bus networks,'' in {\em Cyber Security and Cloud Computing
   (CSCloud), 2016 IEEE 3rd International Conference on}, pp.~247--251, IEEE,
   2016.
+
+\bibitem{nan2017adaptive}
+Y.~Nan, W.~Li, W.~Bao, F.~C. Delicato, P.~F. Pires, Y.~Dou, and A.~Y. Zomaya,
+  ``Adaptive energy-aware computation offloading for cloud of things systems,''
+  {\em IEEE Access}, vol.~5, pp.~23947--23957, 2017.
+
+\bibitem{yang2016cost}
+L.~Yang, J.~Cao, G.~Liang, and X.~Han, ``Cost aware service placement and load
+  dispatching in mobile cloud systems,'' {\em IEEE Transactions on Computers},
+  vol.~65, no.~5, pp.~1440--1452, 2016.
+
+\bibitem{wang2018service}
+L.~Wang, L.~Jiao, T.~He, J.~Li, and M.~M{\"u}hlh{\"a}user, ``Service entity
+  placement for social virtual reality applications in edge computing,'' in
+  {\em Proc. INFOCOM}, 2018.
 
 \bibitem{liu2018multiobjective}
 L.~Liu, Z.~Chang, X.~Guo, S.~Mao, and T.~Ristaniemi, ``Multiobjective
