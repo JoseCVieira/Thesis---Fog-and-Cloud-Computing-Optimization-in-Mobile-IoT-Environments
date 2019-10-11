@@ -27,6 +27,7 @@
 	\item $P^{Bw}~[\mbox{\euro}]$, $1\times N$ matrix representing the price of using network resources in each fog node
 	\item $P^{Pw}~[\mbox{\euro}]$, $1\times N$ matrix representing the power price in each fog node\\
 	
+	\item $f^{F}$, $N\times 1$ binary matrix representing whether nodes are clients or not ($f^{F}_n$ is 0 if $n$ is a client)
 	\item $f^{Mips}~[MIPS]$, $N\times 1$ matrix representing the processing capacity of each fog node
 	\item $f^{Mem}~[Byte]$, $N\times 1$ matrix representing the memory capacity of each fog node
 	\item $f^{Strg}~[Byte]$, $N\times 1$ matrix representing the storage capacity of each fog node
@@ -111,22 +112,24 @@
 \noindent\textbf{Processing Cost:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
-& C_P(x) = \sum_{n\in N} x_n \frac{P_n \times m^{Mips}}{\alpha^p \times f_n^{Mips}}
+& C_P(x) = \sum_{n\in N} f^{F}_n x_n \frac{P_n \times m^{Mips}}{\alpha^p \times f_n^{Mips}}
 \end{aligned}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Bandwidth Cost:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_B(x) = \sum_{z\in Z} m^B_{l^S_z,l^D_z} \sum_{i\in N} x_i \sum_{j\in N} \frac{R_{z, i,j}}{\alpha^b \times f^B_{i,j} + \epsilon}
+& C_B(x) = \sum_{z\in Z} m^B_{l^S_z,l^D_z} \sum_{i\in N} f^{F}_i x_i \sum_{j\in N} \frac{R_{z, i,j}}{\alpha^b \times f^B_{i,j} + \epsilon}
 \end{split}
 \end{equation*}\\[6pt]
 
 \noindent\textbf{Migration Cost:}\\[6pt]
 \begin{equation*}
 \begin{split}
-& C_M(x) = \sum_{m\in M} s_m \sum_{i\in N} x_i \sum_{j\in N} \frac{V_{m, i,j} \times \sum_{l\in M} m^D_{l, m} }{\left(1 - \alpha^b\right) \times f^B_{i,j} + \epsilon}, \\[6pt]
+& C_M(x) = \sum_{m\in M} s_m \sum_{i\in N} f^{F}_i x_i \sum_{j\in N} \frac{V_{m, i,j}}{\left(1 - \alpha^b\right) \times f^B_{i,j} + \epsilon}, \\[6pt]
 & s_m = m^{Strg}_{m} + m^{Mem}_{m}
+%& C_M(x) = \sum_{m\in M} s_m \sum_{i\in N} x_i \sum_{j\in N} \frac{V_{m, i,j} \times \sum_{l\in M} m^D_{l, m} }{\left(1 - \alpha^b\right) \times f^B_{i,j} + \epsilon}, \\[6pt]
+%& s_m = m^{Strg}_{m} + m^{Mem}_{m}
 \end{split}
 \end{equation*}\\[6pt]
 
