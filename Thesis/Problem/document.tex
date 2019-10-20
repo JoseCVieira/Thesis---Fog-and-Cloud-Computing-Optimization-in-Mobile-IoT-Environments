@@ -16,6 +16,7 @@
 \noindent\textbf{Notation:}
 \begin{itemize}
 	\item $N~-$ number of nodes
+	\item $A~-$ number of applications
 	\item $M~-$ number of modules
 	\item $K~-$ number of dependencies
 	\item $Z~-$ number of module pairs with dependencies
@@ -66,7 +67,8 @@
 	
 	\item $A^L$, $Q\times M\times M$ binary matrix representing the loop module list
 	\item $A^D~[s]$, $Q\times 1$ matrix representing the loop deadline list
-	\item $A^P~[\mbox{\euro}]$, $Q\times 1$ matrix representing the price for not accomplishing the loop deadline\\
+	\item $A^A$, $Q\times 1$ matrix representing the application index of each loop
+	\item $A^P~[\mbox{\euro}]$, $A\times 1$ matrix representing the price for not accomplishing the application loops deadline\\
 	
 	\item $\alpha^p$, the percentage of processing capacity which is not used for control operations
 	\item $\alpha^m$, the percentage of memory capacity which is not used for control operations
@@ -107,8 +109,9 @@ C_O = & P^{Mips} \times P \times m^{Mips} + P^{Mem} \times P \times m^{Mem} + P^
 \noindent\textbf{QoS Cost:}\\[6pt]
 \begin{equation*}
 \begin{aligned}
-C_{Q}(x) = & \sum_{q \in Q} a_q~ x_q,\\[6pt]
-& a_q = \left\{
+C_{Q}(x) = & \sum_{a \in A} e_a~ x_a,\\[6pt]
+& e_a = min\left(\sum_{q \in Q} e_q,~ 1\right), A^A_q = a,\\[6pt]
+& e_q = \left\{
 			\begin{array}{ll}
 			1, \qquad ~~~ if ~L^P_q + L^T_q > A^D_q;\\[6pt]
 			0, \qquad ~~~ otherwise.
@@ -151,7 +154,7 @@ C_M(x) = & \sum_{m\in M} s_m \sum_{e\in E} f^{Fog}_i x_i \frac{V_{m, e}}{\left(1
 \noindent\textbf{Multiple-objective (Fog service provider):}\\[6pt]
 \begin{equation*}
 \begin{split}
-& F = \{C_{Q}(1N),~ C_{Pw}(1N),~ C_P(1N),~ C_B(1N),~ C_M(1N)\}
+& F = \left[~C_{Q}(1N),~ C_{Pw}(1N),~ C_P(1N),~ C_B(1N),~ C_M(1N)~\right]^T
 \end{split}
 \end{equation*}\\[6pt]
 
@@ -171,6 +174,8 @@ C_M(x) = & \sum_{m\in M} s_m \sum_{e\in E} f^{Fog}_i x_i \frac{V_{m, e}}{\left(1
 & & P_{n,m} \in \{0, 1\},~ \forall n \in [0, N],~ \forall m \in [0, M] \\[6pt]
 &&& R_{z,e} \in \{0, 1\},~ \forall z \in [0, Z],~ \forall e \in [0, E] \\[6pt]
 &&& V_{m,e} \in \{0, 1\},~ \forall m \in [0, M],~ \forall e \in [0, E] \\[6pt]
+&&& f^{Mips}_n > 0,~ \forall n \in [0, N] \\[6pt]
+&&& E^{Bw}_e > 0,~ \forall e \in [0, E] \\[6pt]
 &&& P\times m^{Mips} \leq \alpha^p \times f^{Mips} \\[6pt]
 &&& P\times m^{Mem} \leq \alpha^m \times f^{Mem} \\[6pt]
 &&& P\times m^{Strg} \leq \alpha^s \times \leq f^{Strg} \\[6pt]

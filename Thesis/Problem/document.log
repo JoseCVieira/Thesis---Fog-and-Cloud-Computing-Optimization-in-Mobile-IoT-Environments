@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  14 OCT 2019 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6980) (preloaded format=pdflatex 2019.3.28)  20 OCT 2019 20:20
 entering extended mode
 **./document.tex
 (document.tex
@@ -277,69 +277,64 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 (/home/jcrv/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
 [1
 
 {/home/jcrv/.miktex/texmfs/data/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
@@ -349,80 +344,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[3]
+
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 [4] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3222 strings out of 494865
- 43324 string characters out of 3178377
- 120742 words of memory out of 3000000
+ 43380 string characters out of 3178377
+ 121742 words of memory out of 3000000
  6832 multiletter control sequences out of 15000+200000
  5764 words of font info for 24 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
@@ -437,7 +437,7 @@ mi7.pfb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10
 fb></home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
 </home/jcrv/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></h
 ome/jcrv/.miktex/texmfs/install/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on document.pdf (4 pages, 126650 bytes).
+Output written on document.pdf (4 pages, 127894 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
