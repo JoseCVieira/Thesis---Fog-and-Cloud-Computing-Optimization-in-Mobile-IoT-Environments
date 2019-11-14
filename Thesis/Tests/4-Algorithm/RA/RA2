@@ -1,0 +1,344 @@
+RA2
+
+Generating Test Static topology...
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_9   motion_detector_9    object_tracker_9    user_interface_9   object_detector_8   motion_detector_8    object_tracker_8    user_interface_8   object_detector_11  motion_detector_11  object_tracker_11   user_interface_11   object_detector_10  motion_detector_10  object_tracker_10   user_interface_10        CAMERA_9         PTZ_CONTROL_9          CAMERA_8         PTZ_CONTROL_8         CAMERA_11         PTZ_CONTROL_11        CAMERA_10         PTZ_CONTROL_10   
+       cloud                 -                   -                   1                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   1                   -                   -                   -                   -                   -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-2                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-3                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   1                   1                   -                   -                   -                   -          
+        m-1                  1                   -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   1                   1                   -                   -                   -                   -                   -                   -          
+        m-2                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -                   -                   1                   1          
+        m-3                  -                   -                   -                   -                   -                   -                   -                   -                   -                   1                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_9  To: object_tracker_9      ..........         m-1          ->         d-1          ->     proxy-server     ->         d-0          ->     proxy-server     ->         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud        
+From: object_detector_9  To: user_interface_9      ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_9  To: object_detector_9     ..........         d-1          ->     proxy-server     ->         d-0          ->     proxy-server     ->        cloud         ->         d-3          ->        cloud         ->     proxy-server     ->         d-1          ->         m-1         
+From: object_tracker_9   To: PTZ_CONTROL_9         ..........        cloud         ->     proxy-server     ->         m-2          ->     proxy-server     ->         d-2          ->     proxy-server     ->         d-2          ->     proxy-server     ->         d-1          ->         m-1         
+From: object_detector_8  To: object_tracker_8      ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: object_detector_8  To: user_interface_8      ..........        cloud         ->     proxy-server     ->         d-1          ->         m-1          ->         d-1          ->         m-1          ->         d-1          ->     proxy-server     ->        cloud         ->         m-0         
+From: motion_detector_8  To: object_detector_8     ..........         m-0          ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_tracker_8   To: PTZ_CONTROL_8         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: object_detector_11 To: object_tracker_11     ..........         d-1          ->     proxy-server     ->         d-2          ->     proxy-server     ->         d-2          ->     proxy-server     ->         m-3          ->     proxy-server     ->        cloud         ->         d-3         
+From: object_detector_11 To: user_interface_11     ..........         d-1          ->     proxy-server     ->        cloud         ->         d-3          ->        cloud         ->     proxy-server     ->         d-0          ->     proxy-server     ->         m-3          ->         m-3         
+From: motion_detector_11 To: object_detector_11    ..........         m-3          ->     proxy-server     ->         m-2          ->     proxy-server     ->         m-3          ->     proxy-server     ->         m-2          ->     proxy-server     ->         d-1          ->         d-1         
+From: object_tracker_11  To: PTZ_CONTROL_11        ..........         d-3          ->        cloud         ->         m-0          ->        cloud         ->         d-3          ->        cloud         ->     proxy-server     ->         d-1          ->     proxy-server     ->         m-3         
+From: object_detector_10 To: object_tracker_10     ..........     proxy-server     ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+From: object_detector_10 To: user_interface_10     ..........     proxy-server     ->         d-2          ->     proxy-server     ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+From: motion_detector_10 To: object_detector_10    ..........         m-2          ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+From: object_tracker_10  To: PTZ_CONTROL_10        ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+From: CAMERA_9           To: motion_detector_9     ..........         m-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: CAMERA_8           To: motion_detector_8     ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_11          To: motion_detector_11    ..........         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3         
+From: CAMERA_10          To: motion_detector_10    ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_9 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: motion_detector_9 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_9 ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: user_interface_9 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_8 ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: motion_detector_8 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: object_tracker_8 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: user_interface_8 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: object_detector_11 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_11 ..........         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3         
+VM name: object_tracker_11 ..........         d-3          ->         d-3          ->         d-3          ->         d-3          ->         d-3          ->         d-3          ->         d-3          ->         d-3          ->         d-3          ->         d-3         
+VM name: user_interface_11 ..........         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3         
+VM name: object_detector_10 ..........     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+VM name: motion_detector_10 ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+VM name: object_tracker_10 ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+VM name: user_interface_10 ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+VM name: CAMERA_9         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_9    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_8         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_8    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_11        ..........         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3         
+VM name: PTZ_CONTROL_11   ..........         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3          ->         m-3         
+VM name: CAMERA_10        ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+VM name: PTZ_CONTROL_10   ..........         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2          ->         m-2         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 2.0
+Function: Power      priority: 4 cost: 21.289583134810925
+Function: Processing priority: 3 cost: 0.8733395989974936
+Function: Bandwidth  priority: 2 cost: 0.29343389892578137
+Function: Migration  priority: 1 cost: 0.0
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 8 | Number of violated deadlines: 2
+
+Loop 0: [ motion_detector_9 -> object_detector_9 -> object_tracker_9 ] -> latency (worst case): 400.35655 sec, deadline: 12.0 sec
+Loop 1: [ object_tracker_9 -> PTZ_CONTROL_9 ] -> latency (worst case): 152.57541 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_8 -> object_detector_8 -> object_tracker_8 ] -> latency (worst case): 4.45571 sec, deadline: 12.0 sec
+Loop 3: [ object_tracker_8 -> PTZ_CONTROL_8 ] -> latency (worst case): 0.00000 sec, deadline: 10.0 sec
+Loop 4: [ motion_detector_11 -> object_detector_11 -> object_tracker_11 ] -> latency (worst case): 169.07929 sec, deadline: 12.0 sec
+Loop 5: [ object_tracker_11 -> PTZ_CONTROL_11 ] -> latency (worst case): 122.76296 sec, deadline: 10.0 sec
+Loop 6: [ motion_detector_10 -> object_detector_10 -> object_tracker_10 ] -> latency (worst case): 4.49268 sec, deadline: 12.0 sec
+Loop 7: [ object_tracker_10 -> PTZ_CONTROL_10 ] -> latency (worst case): 0.00000 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_9   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  motion_detector_9   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:   object_tracker_9   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:   user_interface_9   -> latency (worst case): 0.00000 sec, deadline: 25.0 sec
+Module:  object_detector_8   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  motion_detector_8   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:   object_tracker_8   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:   user_interface_8   -> latency (worst case): 0.00000 sec, deadline: 25.0 sec
+Module:  object_detector_11  -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  motion_detector_11  -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  object_tracker_11   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  user_interface_11   -> latency (worst case): 0.00000 sec, deadline: 25.0 sec
+Module:  object_detector_10  -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  motion_detector_10  -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  object_tracker_10   -> latency (worst case): 0.00000 sec, deadline: 30.0 sec
+Module:  user_interface_10   -> latency (worst case): 0.00000 sec, deadline: 25.0 sec
+Module:       CAMERA_9       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_9     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_8       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_8     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:      CAMERA_11       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_11    -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:      CAMERA_10       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_10    -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 6031 ms**
+
+
+Starting simulation...
+Clock=0.00000000000-> Submitted application DCNS_TEST
+Clock=0.00000000000-> Creating object_tracker_9 on device cloud
+Clock=0.00000000000-> Creating object_detector_8 on device cloud
+Clock=0.00000000000-> Creating object_detector_10 on device proxy-server
+Clock=0.00000000000-> Creating motion_detector_9 on device d-1
+Clock=0.00000000000-> Creating object_detector_11 on device d-1
+Clock=0.00000000000-> Creating object_tracker_11 on device d-3
+Clock=0.00000000000-> Creating motion_detector_8 on device m-0
+Clock=0.00000000000-> Creating object_tracker_8 on device m-0
+Clock=0.00000000000-> Creating user_interface_8 on device m-0
+Clock=0.00000000000-> Creating object_detector_9 on device m-1
+Clock=0.00000000000-> Creating user_interface_9 on device m-1
+Clock=0.00000000000-> Creating motion_detector_10 on device m-2
+Clock=0.00000000000-> Creating object_tracker_10 on device m-2
+Clock=0.00000000000-> Creating user_interface_10 on device m-2
+Clock=0.00000000000-> Creating motion_detector_11 on device m-3
+Clock=0.00000000000-> Creating user_interface_11 on device m-3
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                               EXECUTION TIME [s]                                                                                                                |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                      1405                                                                                                                       |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                    APPLICATION LOOP DELAYS (AVERAGE VALUES)                                                                                                     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         LOOP                                                         |        CPU [s]         |         NW [s]         |       TOTAL [s]        |      DEADLINE [s]      |       VIOLATED       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                               [motion_detector_9, object_detector_9, object_tracker_9]                               |    3.079155219780101   |    0.465700822590943   |    3.544856042371044   |   12.000000000000000   |        false         |
+|                                          [object_tracker_9, PTZ_CONTROL_9]                                           |    0.000000000000000   |   11.230410452083786   |   11.230410452083786   |   10.000000000000000   |         true         |
+|                               [motion_detector_8, object_detector_8, object_tracker_8]                               |    1.578328070493224   |    0.400033447967880   |    1.978361518461104   |   12.000000000000000   |        false         |
+|                                          [object_tracker_8, PTZ_CONTROL_8]                                           |    0.000000000000000   |    0.000000000000000   |    0.000000000000000   |   10.000000000000000   |        false         |
+|                             [motion_detector_11, object_detector_11, object_tracker_11]                              |    2.766666666666848   |    0.681774494878745   |    3.448441161545593   |   12.000000000000000   |        false         |
+|                                         [object_tracker_11, PTZ_CONTROL_11]                                          |    0.000000000000000   |    1.420411977962506   |    1.420411977962506   |   10.000000000000000   |        false         |
+|                             [motion_detector_10, object_detector_10, object_tracker_10]                              |    1.618224100621865   |    0.400033554832836   |    2.018257655454701   |   12.000000000000000   |        false         |
+|                                         [object_tracker_10, PTZ_CONTROL_10]                                          |    0.000000000000000   |    0.000000000000000   |    0.000000000000000   |   10.000000000000000   |        false         |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                    APPLICATION TUPLE DELAYS (AVERAGE VALUES)                                                                                                    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                        TUPLE                                                         |                CPU [s]                 |                 NW [s]                 |               TOTAL [s]                |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                MOTION_VIDEO_STREAM_9                                                 |            3.076923076923077           |            0.200030517578151           |            3.276953594501228           |
+|                                                MOTION_VIDEO_STREAM_8                                                 |            0.004464285714334           |            0.200030517578151           |            0.204494803292485           |
+|                                                       CAMERA_9                                                       |            1.333333333333343           |            0.200305175781276           |            1.533638509114619           |
+|                                                       CAMERA_8                                                       |            1.538461538461549           |            0.000000000000000           |            1.538461538461549           |
+|                                                  DETECTED_OBJECT_10                                                  |            0.769230769230629           |            0.200030517578148           |            0.969261286808777           |
+|                                                  DETECTED_OBJECT_11                                                  |            2.302503067407578           |           10.400030517578202           |           12.702533584985780           |
+|                                                      CAMERA_11                                                       |            1.538461538461549           |            0.000000000000000           |            1.538461538461549           |
+|                                                      CAMERA_10                                                       |            1.538461538461549           |            0.000000000000000           |            1.538461538461549           |
+|                                                  OBJECT_LOCATION_8                                                   |            1.573863784778890           |            0.200002930389729           |            1.773866715168619           |
+|                                                  OBJECT_LOCATION_9                                                   |            0.002232142857024           |            0.265670305012792           |            0.267902447869815           |
+|                                                  DETECTED_OBJECT_8                                                   |            0.769230769230635           |            0.200030517578154           |            0.969261286808789           |
+|                                                MOTION_VIDEO_STREAM_10                                                |            0.041666666666657           |            0.200030517578151           |            0.241697184244808           |
+|                                                MOTION_VIDEO_STREAM_11                                                |            2.666666666666657           |            0.405038028845078           |            3.071704695511735           |
+|                                                  DETECTED_OBJECT_9                                                   |            0.769230769230630           |            0.000000000000000           |            0.769230769230630           |
+|                                                  OBJECT_LOCATION_11                                                  |            0.100000000000191           |            0.276736466033667           |            0.376736466033858           |
+|                                                  OBJECT_LOCATION_10                                                  |            1.576557433955208           |            0.200003037254685           |            1.776560471209894           |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                             APPLICATION LOOP DELAYS                                                                                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         LOOP                                                         |      MIN [s]       |      AVG [s]       |      MAX [s]       |      S.D. [s]      |      # LOOPS       |   # VIOLATED    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                         [object_tracker_10, PTZ_CONTROL_10]                                          |  0.000000000000000 |  0.000000000000000 |  0.000000000000000 |  0.000000000000000 |         99         |        0        |
+|                                         [object_tracker_11, PTZ_CONTROL_11]                                          |100.400003814695080 |100.400003814697200 |100.400003814697810 |  0.000000000001004 |         98         |       98        |
+|                               [motion_detector_8, object_detector_8, object_tracker_8]                               |  1.942957867631776 |  1.978361518461104 |  2.712217628562939 |  0.161186803058362 |        1999        |        0        |
+|                               [motion_detector_9, object_detector_9, object_tracker_9]                               |113.489188026174820 |113.489188026173170 |113.489188026177540 |  0.000000000003565 |        1976        |      1976       |
+|                             [motion_detector_10, object_detector_10, object_tracker_10]                              |  1.980160248584070 |  2.018257655454701 |  2.749420009515234 |  0.166899339993534 |        1999        |        0        |
+|                                          [object_tracker_8, PTZ_CONTROL_8]                                           |  0.000000000000000 |  0.000000000000000 |  0.000000000000000 |  0.000000000000000 |         99         |        0        |
+|                                          [object_tracker_9, PTZ_CONTROL_9]                                           |110.210002288817120 |110.210002288818470 |110.210002288818940 |  0.000000000000692 |         98         |       98        |
+|                             [motion_detector_11, object_detector_11, object_tracker_11]                              |123.376699473062220 |123.387737447749830 |123.576699473063850 |  0.045670100192523 |        1975        |      1975       |
+===================================================================================================================================================================================================================================================
+Loop percentage: 0.0
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                              APPLICATION MODULE MIGRATION DELAYS (AVERAGE VALUES)                                                                                               |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|               NAME               |              NW [s]              |             BOOT [s]             |            TOTAL [s]             |           DEADLINE [s]           |             VIOLATED             |             # MIG             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        object_detector_9         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        motion_detector_9         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|         object_tracker_9         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|         user_interface_9         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        25.000000000000000        |              false               |               0               |
+|        object_detector_8         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        motion_detector_8         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|         object_tracker_8         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|         user_interface_8         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        25.000000000000000        |              false               |               0               |
+|        object_detector_11        |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        motion_detector_11        |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        object_tracker_11         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        user_interface_11         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        25.000000000000000        |              false               |               0               |
+|        object_detector_10        |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        motion_detector_10        |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        object_tracker_10         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        30.000000000000000        |              false               |               0               |
+|        user_interface_10         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |        25.000000000000000        |              false               |               0               |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                       APPLICATION MODULE MIGRATION DELAYS                                                                                                       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         NAME                                                         |      MIN [s]       |      AVG [s]       |      MAX [s]       |      S.D. [s]      |       # MIG        |   # VIOLATED    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                     ENERGY                                                                                                                      |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|          ID           |                                              NAME                                              |                                                       VALUE [J]                                                        |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           2           |                                             cloud                                              |                                                   13324213.803571932000000                                             |
+|           3           |                                          proxy-server                                          |                                                     836324.145595820900000                                             |
+|           4           |                                              d-0                                               |                                                          0.000000000000000                                             |
+|           5           |                                              d-1                                               |                                                    1025355.480133239900000                                             |
+|           6           |                                              d-2                                               |                                                     834332.999999998700000                                             |
+|           7           |                                              d-3                                               |                                                     839054.375749995100000                                             |
+|           8           |                                              m-0                                               |                                                          0.000000000000000                                             |
+|           9           |                                              m-1                                               |                                                          0.000000000000000                                             |
+|          10           |                                              m-2                                               |                                                          0.000000000000000                                             |
+|          11           |                                              m-3                                               |                                                          0.000000000000000                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                   TOTAL [J] =       16859280.805050984000000                                                                                                    |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                    PROCESSOR                                                                                                                    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|          ID           |                                              NAME                                               |             CAPACITY [MI]              |             PROCESSED [MI]             |           OCCUPATION [%]            |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           2           |                                              cloud                                              |                   4.48E8               |                5.94822E5               |           0.132772767857143         |
+|           3           |                                          proxy-server                                           |                    4.8E7               |                3.98896E5               |           0.831033333333333         |
+|           4           |                                               d-0                                               |                    7.5E5               |                      0E0               |           0.000000000000000         |
+|           5           |                                               d-1                                               |                    7.5E5               |                  5.973E5               |          79.640000000000000         |
+|           6           |                                               d-2                                               |                    7.5E5               |                      0E0               |           0.000000000000000         |
+|           7           |                                               d-3                                               |                      1E7               |                1.96859E5               |           1.968590000000000         |
+|           8           |                                               m-0                                               |                    6.5E5               |                 4.0235E5               |          61.900000000000000         |
+|           9           |                                               m-1                                               |                    6.5E5               |                4.03781E5               |          62.120153846153850         |
+|          10           |                                               m-2                                               |                    6.5E5               |                4.02695E5               |          61.953076923076920         |
+|          11           |                                               m-3                                               |                    6.5E5               |                2.04251E5               |          31.423230769230770         |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                TOTAL (FOG/CLOUD DEVICES)                                                |                 5.0825E8               |               1.787877E6               |          82.572396101190480         |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                         JFI (FOG/CLOUD DEVICES) [ wcs = 0.16667 ; bcs = 1.0 ] = 0.17904                                                                                         |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                     NETWORK                                                                                                                     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                       FROM -> TO                                                       |              CAPACITY [B]              |            TRANSFERRED [B]             |            OCCUPATION [%]            |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                 cloud -> proxy-server                                                  |               1.31072E12               |                   1.98E4               |           0.000001510620117          |
+|                                                      cloud -> d-3                                                      |                6.5536E11               |                  1.975E5               |           0.000030136108398          |
+|                                                      cloud -> m-0                                                      |                6.5536E11               |                  3.839E5               |           0.000058578491211          |
+|                                                 proxy-server -> cloud                                                  |               1.31072E12               |                  3.991E5               |           0.000030448913574          |
+|                                                  proxy-server -> d-0                                                   |                      1E8               |                      0E0               |           0.000000000000000          |
+|                                                  proxy-server -> d-1                                                   |                      1E8               |                 4.0078E6               |           4.007800000000000          |
+|                                                  proxy-server -> d-2                                                   |                      1E8               |                      0E0               |           0.000000000000000          |
+|                                                  proxy-server -> m-2                                                   |                6.5536E11               |                  3.979E5               |           0.000060714721680          |
+|                                                  proxy-server -> m-3                                                   |                6.5536E11               |                  2.278E5               |           0.000034759521484          |
+|                                                  d-0 -> proxy-server                                                   |                      1E8               |                      0E0               |           0.000000000000000          |
+|                                                  d-1 -> proxy-server                                                   |                      1E8               |                  6.175E5               |           0.617500000000000          |
+|                                                       d-1 -> m-1                                                       |                6.5536E11               |                 4.0078E6               |           0.000611541748047          |
+|                                                  d-2 -> proxy-server                                                   |                      1E8               |                      0E0               |           0.000000000000000          |
+|                                                      d-3 -> cloud                                                      |                6.5536E11               |                    9.9E3               |           0.000001510620117          |
+|                                                      m-0 -> cloud                                                      |                6.5536E11               |                  3.998E6               |           0.000610046386719          |
+|                                                       m-1 -> d-1                                                       |                6.5536E11               |                4.01799E7               |           0.006130966186523          |
+|                                                  m-2 -> proxy-server                                                   |                6.5536E11               |                  3.998E6               |           0.000610046386719          |
+|                                                  m-3 -> proxy-server                                                   |                6.5536E11               |                  3.998E6               |           0.000610046386719          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                               TOTAL (FOG/CLOUD DEVICES)                                                |                6.5542E12               |                 1.0269E7               |           4.626129200744628          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                         JFI (FOG/CLOUD DEVICES) [ wcs = 0.07143 ; bcs = 1.0 ] = 0.09296                                                                                         |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                      COST                                                                                                                       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|          ID           |                                              NAME                                              |                                                       VALUE [€]                                                        |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           2           |                                             cloud                                              |                                                     902311.366722282000000                                             |
+|           3           |                                          proxy-server                                          |                                                       1062.770533244453600                                             |
+|           4           |                                              d-0                                               |                                                          0.000000000000000                                             |
+|           5           |                                              d-1                                               |                                                     528479.107402364300000                                             |
+|           6           |                                              d-2                                               |                                                      41716.649999999960000                                             |
+|           7           |                                              d-3                                               |                                                     145410.218849456140000                                             |
+|           8           |                                              m-0                                               |                                                          0.000000000000000                                             |
+|           9           |                                              m-1                                               |                                                          0.000000000000000                                             |
+|          10           |                                              m-2                                               |                                                          0.000000000000000                                             |
+|          11           |                                              m-3                                               |                                                          0.000000000000000                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                   TOTAL [€] =        1618980.113507347000000                                                                                                    |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                 NETWORK DETAILS                                                                                                                 |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                        COUNTER                                                         |                                                         VALUE                                                          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                     Packet success                                                     |                                                         24346                                                          |
+|                                                      Packet drop                                                       |                                                           0                                                            |
+|                                                        Handover                                                        |                                                           0                                                            |
+|                                                       Migration                                                        |                                                           0                                                            |
+===================================================================================================================================================================================================================================================
+nrEnsuredApps: 2

@@ -1,0 +1,7 @@
+RA UPDATE
+
+/** Maximum number of iterations to solve the problem through random algorithm */
+public static final int MAX_ITER_RANDOM = 1000000;
+
+/** Maximum number of equal cost solutions of the problem through random algorithm to stop it */
+public static final int MAX_ITER_CONVERGENCE_RANDOM = 13000;

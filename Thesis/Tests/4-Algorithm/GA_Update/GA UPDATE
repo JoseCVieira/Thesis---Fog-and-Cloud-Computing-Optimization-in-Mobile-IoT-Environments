@@ -1,0 +1,17 @@
+/** Number of individuals running in the Genetic Algorithm placement */
+public static final int POPULATION_SIZE_GA_PLACEMENT = 12;
+
+/** Number of individuals running in the Genetic Algorithm routing */
+public static final int POPULATION_SIZE_GA_ROUTING = 5;
+
+/** Maximum number of iterations to solve the module placement through genetic algorithm */
+public static final int MAX_ITER_PLACEMENT_GA = 100000;
+
+/** Maximum number of iterations to solve the tuple routing through genetic algorithm */
+public static final int MAX_ITER_ROUTING_GA = 50;
+
+/** Maximum number of equal cost solutions of module placement through genetic algorithm to stop it */
+public static final int MAX_ITER_PLACEMENT_CONVERGENCE_GA = 25;
+
+/** Maximum number of equal cost solutions of tuple routing through genetic algorithm to stop it */
+public static final int MAX_ITER_ROUTING_CONVERGENCE_GA = 7;

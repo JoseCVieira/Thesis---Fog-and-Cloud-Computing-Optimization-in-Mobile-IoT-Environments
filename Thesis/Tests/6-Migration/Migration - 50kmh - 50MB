@@ -1,0 +1,1001 @@
+Migration - 50kmh - 50MB
+
+Generating Test Static topology...
+Clock=0.00000000000-> Creating connection between: d-1 <-> cloud
+Clock=0.00000000000-> Creating connection between: m-1 <-> cloud
+Clock=0.00000000000-> Creating connection between: m-0 <-> cloud
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  1                   1                   1                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_7  To: user_interface_7      ..........         d-1          ->        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........         d-1          ->        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_6  To: user_interface_6      ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_7 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_7 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_6 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_6 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 1.9980024326218815E-4
+Function: Processing priority: 3 cost: 0.16842105263157894
+Function: Bandwidth  priority: 2 cost: 0.19274052033264666
+Function: Migration  priority: 1 cost: 0.0
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 1.68421 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 1.39231 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 1.68421 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 1.39231 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 1238 ms**
+
+
+Starting simulation...
+Clock=0.00000000000-> Submitted application DCNS_TEST_DYNAMIC
+Clock=0.00000000000-> Creating object_detector_7 on device d-1
+Clock=0.00000000000-> Creating motion_detector_7 on device d-1
+Clock=0.00000000000-> Creating object_tracker_7 on device d-1
+Clock=0.00000000000-> Creating object_detector_6 on device d-1
+Clock=0.00000000000-> Creating motion_detector_6 on device d-1
+Clock=0.00000000000-> Creating object_tracker_6 on device d-1
+Clock=0.00000000000-> Creating user_interface_6 on device m-0
+Clock=0.00000000000-> Creating user_interface_7 on device m-1
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-0          ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+From: object_detector_7  To: user_interface_7      ..........         d-0          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_6  To: user_interface_6      ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_7 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_7 ..........         d-1          ->        cloud         ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_6 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_6 ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.10494946152513987
+Function: Processing priority: 3 cost: 0.15175438596491228
+Function: Bandwidth  priority: 2 cost: 0.19319352254520483
+Function: Migration  priority: 1 cost: 40000.617990386825
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 10.68165 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.27200 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.92119 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 1242 ms**
+
+
+Clock=2000.00000000000-> Creating connection between: m-1 <-> proxy-server
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-0          ->     proxy-server     ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_7  To: user_interface_7      ..........         d-0          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........         d-1          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_detector_6  To: user_interface_6      ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_7 ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_7 ..........     proxy-server     ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-1          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: motion_detector_6 ..........         d-1          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: object_tracker_6 ..........         d-1          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.5939897195546641
+Function: Processing priority: 3 cost: 0.08609022556390977
+Function: Bandwidth  priority: 2 cost: 0.0978246356908522
+Function: Migration  priority: 1 cost: 35000.54074158847
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 10.88403 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.55772 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.01880 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.25947 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 15000.27725 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 1218 ms**
+
+
+Clock=54000.00000000000-> Creating connection between: d-1 <-> proxy-server
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 1                   1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_detector_7  To: user_interface_7      ..........        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_detector_6  To: user_interface_6      ..........         d-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: motion_detector_7 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: object_tracker_7 ..........         d-1          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_6 ..........     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_6 ..........     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.593984962406015
+Function: Processing priority: 3 cost: 0.08609022556390977
+Function: Bandwidth  priority: 2 cost: 0.0010013733119707026
+Function: Migration  priority: 1 cost: 45000.69523918518
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 0.01880 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.25947 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.67112 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 15010.07725 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 15010.07725 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 15010.07725 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 757 ms**
+
+
+Clock=55000.00000000000-> Creating connection between: m-1 <-> cloud
+Clock=55000.00000000000-> Creating connection between: m-0 <-> d-0
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-0          ->     proxy-server     ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_7  To: user_interface_7      ..........         d-0          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........         d-1          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_detector_6  To: user_interface_6      ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_7 ..........        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_7 ..........        cloud         ->     proxy-server     ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: motion_detector_6 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: object_tracker_6 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.5939897195546641
+Function: Processing priority: 3 cost: 0.08609022556390977
+Function: Bandwidth  priority: 2 cost: 0.0978246356908522
+Function: Migration  priority: 1 cost: 60000.92698558025
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 10.88403 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.55772 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.01880 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.25947 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 1140 ms**
+
+
+Clock=107000.00000000000-> Creating connection between: m-1 <-> proxy-server
+Clock=107000.00000000000-> Creating connection between: m-0 <-> cloud
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-0          ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+From: object_detector_7  To: user_interface_7      ..........         d-0          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_6  To: user_interface_6      ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_7 ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_7 ..........         d-1          ->        cloud         ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_6 ..........        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_6 ..........        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.10494946152513987
+Function: Processing priority: 3 cost: 0.15175438596491228
+Function: Bandwidth  priority: 2 cost: 0.19319352254520483
+Function: Migration  priority: 1 cost: 25000.386243991765
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 10.68165 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.27200 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.92119 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 15000.27725 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 15000.27725 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 15000.27725 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 1012 ms**
+
+
+Clock=127000.00000000000-> Creating connection between: d-1 <-> cloud
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        d-1                  1                   1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_7  To: user_interface_7      ..........         d-1          ->        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........         d-1          ->        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_detector_6  To: user_interface_6      ..........         d-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-0          ->     proxy-server     ->        cloud         ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_7 ..........         d-0          ->     proxy-server     ->        cloud         ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_7 ..........     proxy-server     ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_6 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_6 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 9.990012163109407E-5
+Function: Processing priority: 3 cost: 0.16842105263157894
+Function: Bandwidth  priority: 2 cost: 0.09687094682230868
+Function: Migration  priority: 1 cost: 85001.313229572
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.92119 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.67112 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 782 ms**
+
+
+Clock=159000.00000000000-> Creating connection between: m-1 <-> cloud
+Clock=159000.00000000000-> Creating connection between: m-0 <-> d-0
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-0          ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+From: object_detector_7  To: user_interface_7      ..........         d-0          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_detector_6  To: user_interface_6      ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-1          ->        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->         d-1          ->         d-1          ->         d-1          ->         d-1         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_7 ..........         d-1          ->        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_7 ..........         d-1          ->        cloud         ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-0          ->     proxy-server     ->        cloud         ->         d-1          ->         d-1          ->         d-1         
+VM name: motion_detector_6 ..........         d-0          ->     proxy-server     ->        cloud         ->         d-1          ->         d-1          ->         d-1         
+VM name: object_tracker_6 ..........         d-0          ->     proxy-server     ->        cloud         ->         d-1          ->         d-1          ->         d-1         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.10494946152513984
+Function: Processing priority: 3 cost: 0.15175438596491225
+Function: Bandwidth  priority: 2 cost: 0.19319352254520483
+Function: Migration  priority: 1 cost: 85001.313229572
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 10.68165 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.27200 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.92119 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 20100.35450 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 943 ms**
+
+
+Clock=211000.00000000000-> Creating connection between: m-1 <-> proxy-server
+Clock=211000.00000000000-> Creating connection between: m-0 <-> cloud
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........         d-0          ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+From: object_detector_7  To: user_interface_7      ..........         d-0          ->     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........     proxy-server     ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_detector_6  To: user_interface_6      ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........        cloud         ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_7 ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_7 ..........     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server     ->     proxy-server    
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........         d-1          ->         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud        
+VM name: motion_detector_6 ..........         d-1          ->         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud        
+VM name: object_tracker_6 ..........         d-1          ->         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud        
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.6988345238095237
+Function: Processing priority: 3 cost: 0.06942355889724311
+Function: Bandwidth  priority: 2 cost: 0.09732394903486685
+Function: Migration  priority: 1 cost: 45000.69523918518
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 10.68165 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.27200 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.01880 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.25947 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): -0.00000 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 25110.43175 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 973 ms**
+
+
+Clock=228000.00000000000-> Creating connection between: d-1 <-> d-0
+
+
+*******************************************************
+		ALGORITHM OUTPUT:
+*******************************************************
+
+
+****************** MODULE PLACEMENT MAP ********************
+
+                     object_detector_7   motion_detector_7    object_tracker_7    user_interface_7   object_detector_6   motion_detector_6    object_tracker_6    user_interface_6        CAMERA_7         PTZ_CONTROL_7          CAMERA_6         PTZ_CONTROL_6    
+       cloud                 1                   1                   1                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+    proxy-server             -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        d-0                  -                   -                   -                   -                   1                   1                   1                   -                   -                   -                   -                   -          
+        d-1                  -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -                   -          
+        m-0                  -                   -                   -                   -                   -                   -                   -                   1                   -                   -                   1                   1          
+        m-1                  -                   -                   -                   1                   -                   -                   -                   -                   1                   1                   -                   -          
+
+******************** TUPLE ROUTING MAP *********************
+
+From: object_detector_7  To: object_tracker_7      ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_detector_7  To: user_interface_7      ..........        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: motion_detector_7  To: object_detector_7     ..........        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: object_tracker_7   To: PTZ_CONTROL_7         ..........        cloud         ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+From: object_detector_6  To: object_tracker_6      ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_detector_6  To: user_interface_6      ..........         d-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: motion_detector_6  To: object_detector_6     ..........         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+From: object_tracker_6   To: PTZ_CONTROL_6         ..........         d-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+From: CAMERA_7           To: motion_detector_7     ..........         m-1          ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+From: CAMERA_6           To: motion_detector_6     ..........         m-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+
+****************** MIGRATION ROUTING MAP *******************
+
+VM name: object_detector_7 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: motion_detector_7 ..........         d-0          ->     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: object_tracker_7 ..........     proxy-server     ->        cloud         ->        cloud         ->        cloud         ->        cloud         ->        cloud        
+VM name: user_interface_7 ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: object_detector_6 ..........        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: motion_detector_6 ..........        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: object_tracker_6 ..........        cloud         ->     proxy-server     ->         d-0          ->         d-0          ->         d-0          ->         d-0         
+VM name: user_interface_6 ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: CAMERA_7         ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: PTZ_CONTROL_7    ..........         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1          ->         m-1         
+VM name: CAMERA_6         ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+VM name: PTZ_CONTROL_6    ..........         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0          ->         m-0         
+
+********************* COST FUNCTIONS ***********************
+
+Function: QoS        priority: 5 cost: 0.0
+Function: Power      priority: 4 cost: 0.593984962406015
+Function: Processing priority: 3 cost: 0.08609022556390977
+Function: Bandwidth  priority: 2 cost: 0.0010013733119707026
+Function: Migration  priority: 1 cost: 55000.84973678189
+
+********************* LOOP DEADLINES ***********************
+
+Number of loops: 4 | Number of violated deadlines: 0
+
+Loop 0: [ motion_detector_7 -> object_detector_7 -> object_tracker_7 ] -> latency (worst case): 0.01880 sec, deadline: 15.0 sec
+Loop 1: [ object_tracker_7 -> PTZ_CONTROL_7 ] -> latency (worst case): 0.25947 sec, deadline: 10.0 sec
+Loop 2: [ motion_detector_6 -> object_detector_6 -> object_tracker_6 ] -> latency (worst case): 0.84211 sec, deadline: 15.0 sec
+Loop 3: [ object_tracker_6 -> PTZ_CONTROL_6 ] -> latency (worst case): 0.67112 sec, deadline: 10.0 sec
+
+******************* MIGRATION DEADLINES ********************
+
+Module:  object_detector_7   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:  motion_detector_7   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   object_tracker_7   -> latency (worst case): 15100.07725 sec, deadline: 360000.0 sec
+Module:   user_interface_7   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:  object_detector_6   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:  motion_detector_6   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   object_tracker_6   -> latency (worst case): 20110.15450 sec, deadline: 360000.0 sec
+Module:   user_interface_6   -> latency (worst case): 0.00000 sec, deadline: 360000.0 sec
+Module:       CAMERA_7       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_7     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:       CAMERA_6       -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+Module:    PTZ_CONTROL_6     -> latency (worst case): 0.00000 sec, deadline: 0.0 sec
+
+**Algorithm Elapsed time: 711 ms**
+
+
+Clock=263000.00000000000-> Creating connection between: m-1 <-> cloud
+Clock=263000.00000000000-> Creating connection between: m-0 <-> d-0
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                               EXECUTION TIME [s]                                                                                                                |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                                      14240                                                                                                                      |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                    APPLICATION LOOP DELAYS (AVERAGE VALUES)                                                                                                     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         LOOP                                                         |        CPU [s]         |         NW [s]         |       TOTAL [s]        |      DEADLINE [s]      |       VIOLATED       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                               [motion_detector_7, object_detector_7, object_tracker_7]                               |    0.201031924870872   |    0.083259174894755   |    0.284291099765628   |   15.000000000000000   |        false         |
+|                                          [object_tracker_7, PTZ_CONTROL_7]                                           |    0.000000000000000   |    0.248350963422825   |    0.248350963422825   |   10.000000000000000   |        false         |
+|                               [motion_detector_6, object_detector_6, object_tracker_6]                               |    0.261034944905348   |    0.000000000000000   |    0.261034944905348   |   15.000000000000000   |        false         |
+|                                          [object_tracker_6, PTZ_CONTROL_6]                                           |    0.000000000000000   |    1.732015567742059   |    1.732015567742059   |   10.000000000000000   |        false         |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                    APPLICATION TUPLE DELAYS (AVERAGE VALUES)                                                                                                    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                        TUPLE                                                         |                CPU [s]                 |                 NW [s]                 |               TOTAL [s]                |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                MOTION_VIDEO_STREAM_7                                                 |            0.143676383843531           |            0.000000000000000           |            0.143676383843531           |
+|                                                MOTION_VIDEO_STREAM_6                                                 |            0.173680618058867           |            0.000000000000000           |            0.173680618058867           |
+|                                                  OBJECT_LOCATION_6                                                   |            0.087354326846482           |            0.000000000000000           |            0.087354326846482           |
+|                                                  DETECTED_OBJECT_6                                                   |          110.004683665337000           |            1.658215054997990           |          111.662898720335000           |
+|                                                  OBJECT_LOCATION_7                                                   |            0.057355541027341           |            0.083259174894755           |            0.140614715922097           |
+|                                                  DETECTED_OBJECT_7                                                   |           79.665605327838680           |            6.629192843641653           |           86.294798171480320           |
+|                                                       CAMERA_7                                                       |            0.072007755042808           |            0.893026840881472           |            0.965034595924280           |
+|                                                       CAMERA_6                                                       |            0.086840309028630           |            0.797905057569343           |            0.884745366597973           |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                             APPLICATION LOOP DELAYS                                                                                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         LOOP                                                         |      MIN [s]       |      AVG [s]       |      MAX [s]       |      S.D. [s]      |      # LOOPS       |   # VIOLATED    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                               [motion_detector_7, object_detector_7, object_tracker_7]                               |  0.006696428565192 | 12.636484158423570 |1010.976376172620800| 70.917772356965940 |       40584        |       601       |
+|                                          [object_tracker_7, PTZ_CONTROL_7]                                           |  0.201907377733733 |  0.248350963422825 |  0.403814755496569 |  0.084972324596167 |        2065        |        0        |
+|                                          [object_tracker_6, PTZ_CONTROL_6]                                           |  0.201907377733733 | 22.189966540028284 |2900.452071412222700|206.440914538664660 |        1986        |       29        |
+|                               [motion_detector_6, object_detector_6, object_tracker_6]                               |  0.006696428565192 |  0.262062980541036 |  0.300000000017462 |  0.098426855340230 |       39855        |        0        |
+===================================================================================================================================================================================================================================================
+Loop percentage: 6.578341871001805
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                              APPLICATION MODULE MIGRATION DELAYS (AVERAGE VALUES)                                                                                               |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|               NAME               |              NW [s]              |             BOOT [s]             |            TOTAL [s]             |           DEADLINE [s]           |             VIOLATED             |             # MIG             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        object_detector_7         |       2621.315285725131000       |      10000.000000000000000       |      12621.315285725132000       |      360000.000000000000000      |              false               |               6               |
+|        motion_detector_7         |       3672.194141806979600       |      10000.000000000000000       |      13672.194141806980000       |      360000.000000000000000      |              false               |               6               |
+|         object_tracker_7         |       3244.475193190110500       |      10000.000000000000000       |      13244.475193190110000       |      360000.000000000000000      |              false               |               7               |
+|         user_interface_7         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |      360000.000000000000000      |              false               |               0               |
+|        object_detector_6         |       2365.892456593530400       |      10000.000000000000000       |      12365.892456593530000       |      360000.000000000000000      |              false               |               7               |
+|        motion_detector_6         |       3376.943448974840500       |      10000.000000000000000       |      13376.943448974840000       |      360000.000000000000000      |              false               |               7               |
+|         object_tracker_6         |       4387.972642753446000       |      10000.000000000000000       |      14387.972642753446000       |      360000.000000000000000      |              false               |               7               |
+|         user_interface_6         |         0.000000000000000        |         0.000000000000000        |         0.000000000000000        |      360000.000000000000000      |              false               |               0               |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                       APPLICATION MODULE MIGRATION DELAYS                                                                                                       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                         NAME                                                         |      MIN [s]       |      AVG [s]       |      MAX [s]       |      S.D. [s]      |       # MIG        |   # VIOLATED    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                   object_tracker_7                                                   |1100.015449759666800|3244.475193190110500|5110.061799038667000|1357.246497834139000|         7          |        0        |
+|                                                  object_detector_6                                                   |1000.215449759663900|2365.892456593530400|3110.246349279012000|735.302392180066200 |         7          |        0        |
+|                                                  motion_detector_6                                                   |2000.230899519330700|3376.943448974840500|4186.556908521859000|746.865594523764900 |         7          |        0        |
+|                                                  motion_detector_7                                                   |3110.046349279000400|3672.194141806979600|4253.614969099872000|537.783005039719800 |         6          |        0        |
+|                                                  object_detector_7                                                   |2110.030899519333600|2621.315285725131000|3177.304409857024400|511.772754234144800 |         6          |        0        |
+|                                                   object_tracker_6                                                   |3000.246349278997500|4387.972642753446000|5262.867467764707000|759.167356414719000 |         7          |        0        |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                     ENERGY                                                                                                                      |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|          ID           |                                              NAME                                              |                                                       VALUE [J]                                                        |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           2           |                                             cloud                                              |                                                  399650675.678668100000000                                             |
+|           3           |                                          proxy-server                                          |                                                   25039502.476436317000000                                             |
+|           4           |                                              d-0                                               |                                                          0.000000000000000                                             |
+|           5           |                                              d-1                                               |                                                       3392.209785992660300                                             |
+|           6           |                                              m-0                                               |                                                          0.000000000000000                                             |
+|           7           |                                              m-1                                               |                                                          0.000000000000000                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                   TOTAL [J] =      424693570.364890400000000                                                                                                    |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                    PROCESSOR                                                                                                                    |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|          ID           |                                              NAME                                               |             CAPACITY [MI]              |             PROCESSED [MI]             |           OCCUPATION [%]            |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           2           |                                              cloud                                              |                 1.344E10               |               7.143428E6               |           0.053150505952381         |
+|           3           |                                          proxy-server                                           |                   1.44E9               |               1.906475E6               |           0.132394097222222         |
+|           4           |                                               d-0                                               |                      3E8               |               1.497472E7               |           4.991572000000000         |
+|           5           |                                               d-1                                               |                      3E8               |               9.376896E6               |           3.125632000000000         |
+|           6           |                                               m-0                                               |                      3E5               |                 8.0462E4               |          26.820666666666668         |
+|           7           |                                               m-1                                               |                      3E5               |                 9.0048E4               |          30.016000000000000         |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                TOTAL (FOG/CLOUD DEVICES)                                                |                 1.548E10               |               3.340152E7               |           8.302748603174603         |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                         JFI (FOG/CLOUD DEVICES) [ wcs = 0.25000 ; bcs = 1.0 ] = 0.49657                                                                                         |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                     NETWORK                                                                                                                     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                       FROM -> TO                                                       |              CAPACITY [B]              |            TRANSFERRED [B]             |            OCCUPATION [%]            |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                 cloud -> proxy-server                                                  |               1.57284E10               |                8.38861E8               |           5.333415732051575          |
+|                                                      cloud -> d-1                                                      |                8.12634E9               |               1.099819E9               |          13.534005345579930          |
+|                                                      cloud -> m-0                                                      |               8.336052E9               |                 2.2161E6               |           0.026584527063891          |
+|                                                      cloud -> m-1                                                      |               7.497204E9               |                 2.1873E6               |           0.029174876393920          |
+|                                                 proxy-server -> cloud                                                  |               1.57284E10               |               9.437186E8               |           6.000092698558023          |
+|                                                  proxy-server -> d-0                                                   |               1.57284E10               |               1.414432E9               |           8.992854645100582          |
+|                                                  proxy-server -> d-1                                                   |               3.827244E9               |               1.050136E8               |           2.743844395601639          |
+|                                                  proxy-server -> m-1                                                   |               8.231196E9               |                 2.5232E6               |           0.030654111504574          |
+|                                                  d-0 -> proxy-server                                                   |               1.57284E10               |               7.911628E8               |           5.030154052541898          |
+|                                                       d-0 -> d-1                                                       |               3.774816E9               |                      0E0               |           0.000000000000000          |
+|                                                       d-0 -> m-0                                                       |               7.392348E9               |                 2.0545E6               |           0.027792252204577          |
+|                                                      d-1 -> cloud                                                      |                8.12634E9               |               5.267443E8               |           6.481937748112927          |
+|                                                  d-1 -> proxy-server                                                   |               3.827244E9               |                2.09721E8               |           5.479688256092373          |
+|                                                       d-1 -> d-0                                                       |               3.774816E9               |               1.572864E8               |           4.166731040665294          |
+|                                                      m-0 -> cloud                                                      |               8.336052E9               |                 6.3598E8               |           7.629271026620275          |
+|                                                       m-0 -> d-0                                                       |               7.392348E9               |                   5.64E8               |           7.629510948348211          |
+|                                                      m-1 -> cloud                                                      |               7.497204E9               |                 5.7198E8               |           7.629244182231136          |
+|                                                  m-1 -> proxy-server                                                   |               8.231196E9               |                   6.28E8               |           7.629510948348211          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                               TOTAL (FOG/CLOUD DEVICES)                                                |              1.258272E11               |                6.09574E9               |          57.876929681471196          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                         JFI (FOG/CLOUD DEVICES) [ wcs = 0.07143 ; bcs = 1.0 ] = 0.53085                                                                                         |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                      COST                                                                                                                       |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|          ID           |                                              NAME                                              |                                                       VALUE [€]                                                        |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           2           |                                             cloud                                              |                                                20753184240.313324000000000                                             |
+|           3           |                                          proxy-server                                          |                                                   65847346.370978440000000                                             |
+|           4           |                                              d-0                                               |                                                36126553976.468254000000000                                             |
+|           5           |                                              d-1                                               |                                                24062417278.696327000000000                                             |
+|           6           |                                              m-0                                               |                                                          0.000000000000000                                             |
+|           7           |                                              m-1                                               |                                                          0.000000000000000                                             |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                   TOTAL [€] =    81008002841.848880000000000                                                                                                    |
+===================================================================================================================================================================================================================================================
+
+
+===================================================================================================================================================================================================================================================
+|                                                                                                                 NETWORK DETAILS                                                                                                                 |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                        COUNTER                                                         |                                                         VALUE                                                          |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                     Packet success                                                     |                                                         254447                                                         |
+|                                                      Packet drop                                                       |                                                         39561                                                          |
+|                                                        Handover                                                        |                                                           14                                                           |
+|                                                       Migration                                                        |                                                           40                                                           |
+===================================================================================================================================================================================================================================================
+nrEnsuredApps: 2
